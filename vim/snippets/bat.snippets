@@ -1,0 +1,140 @@
+snippet batch_start
+	@echo off
+	setlocal
+	echo.
+	${1:make your script here}
+	endlocal
+	pause>nul
+snippet comment
+	REM echo I'm comment
+	:: echo I'm comment
+snippet terminal_color_change
+	color fc
+	REM f = background, c : character, you can choose 0~F
+	color
+snippet echo_special_character
+	echo ^<html^>
+snippet set 
+	set ${1:var}=${2:text, num}
+	echo your variable is : %${3:var}%
+	echo your partial variable is : %${4:var:~start_index,count}%
+snippet set_user_input
+	set /p ${1:var}=input your name:
+snippet set_calc
+	set /a ${1:var}=${2:expression}	
+	echo your variable is : %${3:var}%
+snippet if_number
+	set /p age=input your age:
+	if %age% EQU 19 echo your age is 19
+	if %age% NEQ 19 echo your age is not 19
+	if %age% LSS 19 echo your age is under 19
+	if %age% LEQ 19 echo your age is under 19 or 19
+	if %age% GTR 19 echo your age is beyond 19
+	if %age% GEQ 19 echo your age is beyond 19 or 19
+	echo your age is %age%
+snippet if_string 
+	set /p input=input web-page you want to go:
+	if /i "%input%" == "${1:str}" explorer "http://sso.lge.com" 
+	rem /i == in bash ignore A/a in string
+snippet if_exist
+	set /p file=input filename what you are finding:
+	if not exist "%file%" (
+		echo file is exist 
+	)else (
+		echo file is not exist
+	)
+snippet if_not
+	set /p passwd=input password:
+	if not "%passwd%"=="${1:str}" exit
+	echo password OK
+snippet if_parameter_null
+	if !%${1:param_number}==! echo no parameter
+snippet delete
+	del /p /f /s /q "${1:filename_or_regular_expression}"
+	rem /p == in bash asking to delete /f == in bash delete read-only file as well
+	rem /s == in bash recursive delete /q == in bash no asking to delete
+snippet for_default_file
+	for %%i in (*.*) do (
+	type "%%i"
+	pause
+	)
+snippet for_default_dir
+	for /d /r %%i in (*.*) do (
+		echo "%%i"
+		pause
+	)
+snippet for_dual
+	call :func_trace 192.168 1 2 1 2
+
+	:func_trace
+	for /L %%i in (%2,1,%3) do (
+		for /L %%j in (%4,1,%5) do(
+			tracert -d -w 2 -h 5 %1.%%i.%%j > %1.%%i.%%j.txt
+			echo "%1.%%i.%%j OK"
+		)
+	)
+snippet for_dual
+	set count=0
+	for /f "delims=" %%${1:var1} in (${2:list}) do (
+		call :for2
+		set /a count=%count% + 1
+	)
+	goto end
+	:for2
+	for /f "delims=" %%${3:var2} in (${4:list} do (
+		echo %count% %%var1 %%var2 
+	)
+snippet function_parameter
+	:main
+	set temp=1
+	echo main function was called
+	call :func1 "hello" "world"
+	goto :eof
+
+	:func1
+	echo function1 was called with %1 %2
+	call :func2 123 456
+
+	:func2
+	echo function2 was called with %1 %2
+	goto  
+snippet commands
+	assign == "ln" in bash
+	attrib == "chmod" in bash
+	cd == "cd" in bash
+	chdir == "cd" in bash
+	copy == "cp" in bash
+	xcopy == "cp" in bash
+	ren == "mv" in bash
+	move == "mv" in bash
+	rename == "mv" in bash
+	del == "rm" in bash
+	deltree == "rm -rf" in bash
+	erase == "rm" in bash
+	rd == "rmdir" in bash
+	rmdir == "rmdir" in bash
+	dir == "ls -l" in bash
+	exit == "exit" in bash
+	fc == "comm, cmp" in bash : fc a.txt b.txt
+	comp == "diff, comm, cmp" in bash : comp a.txt b.txt
+	find == "grep" in bash : find "string" filename
+	findstr == "grep" in bash : findstr -v str filename
+	md == "mkdir" in bash
+	mkdir == "mkdir" in bash
+	more == "more" in bash : more<input.txt
+	path == "echo $PATH" in bash
+	sort == "sort" in bash : sort<input.txt
+	time == "date" in bash
+	type == "cat" in bash
+	cls == "clear" in bash
+	start == "exec" in bash
+	setlocal == "{" in bash
+	endlocal == "}" in bash
+snippet system_info
+	type config.sys
+	set
+snippet reserved_file
+	con == consol : copy con a.bat 
+	prn == LPT1 : copy a.bat prn
+	aux == rs-232c : 
+	nul == null : copy a.bat nul

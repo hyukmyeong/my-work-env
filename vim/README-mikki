@@ -1,0 +1,2 @@
+1. c.snippet / cpp.snippet은 c.snippet만 있으면 된다
+2. cygwin에서 acp.vim가 이상동작해서 지움

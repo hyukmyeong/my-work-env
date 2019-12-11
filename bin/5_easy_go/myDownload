@@ -1,0 +1,54 @@
+#!/bin/bash
+
+#declare -i USER_INPUT
+#declare TEMP_FILE="temporary.txt"
+
+#echo "1:lk     2:kernel     3:sbl3" 
+
+#echo $PWD | awk -F'/' '{ print $4 }' >$TEMP_FILE 
+#echo "your directory : `cat $TEMP_FILE`"
+
+#read USER_INPUT
+
+#case "$USER_INPUT" in
+#1)
+#       echo "you selected lk, thanks"
+#       ;;
+#2)
+#       echo "you selected kernel, thanks"
+#       ;;
+#3)
+#       echo "you selected sbl3, thanks"
+#       ;;
+#*)
+#       echo "wrong number"
+#       echo 1
+#       ;;
+#esac
+
+#if [ "$USER_INPUT" == "1" ]
+#then
+#       echo "copy file :"
+#       ls -l ~/`cat $TEMP_FILE`/android/out-geefhd4g_lgu_kr/target/product/geefhd4g/emmc_appsboot.mbn
+#       echo
+#       cp ~/`cat $TEMP_FILE`/android/out-geefhd4g_lgu_kr/target/product/geefhd4g/emmc_appsboot.mbn ~/bin/3_d_download
+#elif [ "$USER_INPUT" == "2" ]
+#then
+#       echo "copy file :" 
+#       ls -l ~/`cat $TEMP_FILE`/android/out-geefhd4g_lgu_kr/target/product/geefhd4g/boot.img
+#       echo
+#       cp ~/`cat $TEMP_FILE`/android/out-geefhd4g_lgu_kr/target/product/geefhd4g/boot.img ~/bin/3_d_download
+#elif [ "$USER_INPUT" == "3" ]
+#then
+#       cd ~/`cat $TEMP_FILE`/non_HLOS
+#       echo "copy file :" 
+#       ls -l `myFind sbl3.mbn`
+#       echo "file information :"
+#       cp `myFind sbl3.mbn` ~/bin/3_d_download
+#fi
+
+#rm "$TEMP_FILE"
+
+cp ~/msm8974_0513/android/out-z_lgu_kr/target/product/zee/boot.img ~/bin/3_download/
+cp ~/msm8974_0513/android/out-z_lgu_kr/target/product/zee/emmc_appsboot.mbn ~/bin/3_download/
+ls -l ~/msm8974_0513/android/out-z_lgu_kr/target/product/zee/

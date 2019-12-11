@@ -1,0 +1,9 @@
+#!/bin/bash
+
+if [ -z $1 ]
+then
+       echo 'usage: myScp [1:from(dir/file)] [2:target_server_ID] [3:target_server_IP] [4:target_sever_dir]'
+else
+       scp -r $1 $2@$3:$4
+fi
+

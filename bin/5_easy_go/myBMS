@@ -1,0 +1,158 @@
+#!/bin/bash
+
+declare -i input #r,ead/i,nteger/a,rray/f,unc/e,x,port
+declare PARAM1=""
+declare PARAM2=""
+declare PARAM3=""
+declare CHECK_COMPLETE_1=""
+declare CHECK_COMPLETE_2=""
+
+# eabi : embedded application binary interface
+
+function menu()
+{
+	echo "#######################################################################################################"
+	echo "# (1)8974_kk build (2)8974_jb build (3)8960_kk build (4)8974_kk sync (5)8974_jb sync (6)8960_kk sync  #"
+	echo "#######################################################################################################"
+	read -p "you selected : " input 
+	echo
+}
+
+function work_8974_kk()
+{
+if [ "$1" == "kernel" ]; then # num op : -eq / -ne / -lt / -gt / -ge
+	if [ -e /home001/hyuk.myeong/src/msm8974_kk/android/out-z_lgu_kr/target/product/zee/boot.img ]; then # file op : -e/-b/-c/-d/-e/-f/-L/-p/-S/-r/-w/-x/-s
+		rm /home001/hyuk.myeong/src/msm8974_kk/android/out-z_lgu_kr/target/product/zee/boot.img
+		echo $1
+		bms -b build8974 -a1 $1
+	else
+		echo $1
+		bms -b build8974 -a1 $1
+	fi
+
+	while true; 
+	do
+		if [ -e /home001/hyuk.myeong/src/msm8974_kk/android/out-z_lgu_kr/target/product/zee/boot.img ]; then # file op : -e/-b/-c/-d/-e/-f/-L/-p/-S/-r/-w/-x/-s
+			cp /home001/hyuk.myeong/src/msm8974_kk/android/out-z_lgu_kr/target/product/zee/boot.img "/home001/hyuk.myeong/bin/3_download/boot.img_zee_kk_$2"
+			break
+		fi
+		sleep 5
+	done &
+elif [ "$1" == "aboot" ]; then # num op : -eq / -ne / -lt / -gt / -ge
+	if [ -e /home001/hyuk.myeong/src/msm8974_kk/android/out-z_lgu_kr/target/product/zee/emmc_appsboot.mbn ]; then # file op : -e/-b/-c/-d/-e/-f/-L/-p/-S/-r/-w/-x/-s
+		rm /home001/hyuk.myeong/src/msm8974_kk/android/out-z_lgu_kr/target/product/zee/emmc_appsboot.mbn
+		bms -b build8974 -a1 $1
+	else
+		bms -b build8974 -a1 $1
+	fi
+
+	while true; 
+	do
+		if [ -e /home001/hyuk.myeong/src/msm8974_kk/android/out-z_lgu_kr/target/product/zee/emmc_appsboot.mbn ]; then # file op : -e/-b/-c/-d/-e/-f/-L/-p/-S/-r/-w/-x/-s
+			cp /home001/hyuk.myeong/src/msm8974_kk/android/out-z_lgu_kr/target/product/zee/emmc_appsboot.mbn "/home001/hyuk.myeong/bin/3_download/emmc_appsboot.mbn_zee_kk_$2"
+			break
+		fi
+		sleep 5
+	done &
+fi
+}
+
+function work_8974_jb()
+{
+if [ "$1" == "kernel" ]; then # num op : -eq / -ne / -lt / -gt / -ge
+	if [ -e /home001/hyuk.myeong/src/msm8974_jb/android/out-z_skt_kr/target/product/zee/boot.img ]; then # file op : -e/-b/-c/-d/-e/-f/-L/-p/-S/-r/-w/-x/-s
+		rm /home001/hyuk.myeong/src/msm8974_jb/android/out-z_skt_kr/target/product/zee/boot.img
+		bms -b build8974jb -a1 $1
+	else
+		bms -b build8974jb -a1 $1
+	fi
+
+	while true; 
+	do
+		if [ -e /home001/hyuk.myeong/src/msm8974_jb/android/out-z_skt_kr/target/product/zee/boot.img ]; then # file op : -e/-b/-c/-d/-e/-f/-L/-p/-S/-r/-w/-x/-s
+			cp /home001/hyuk.myeong/src/msm8974_jb/android/out-z_skt_kr/target/product/zee/boot.img "/home001/hyuk.myeong/bin/3_download/boot.img_zee_jb_$2"
+			break
+		fi
+		sleep 5
+	done &
+elif [ "$1" == "aboot" ]; then # num op : -eq / -ne / -lt / -gt / -ge
+	if [ -e /home001/hyuk.myeong/src/msm8974_jb/android/out-z_skt_kr/target/product/zee/emmc_appsboot.mbn ]; then # file op : -e/-b/-c/-d/-e/-f/-L/-p/-S/-r/-w/-x/-s
+		rm /home001/hyuk.myeong/src/msm8974_jb/android/out-z_skt_kr/target/product/zee/emmc_appsboot.mbn
+		bms -b build8974jb -a1 $1
+	else
+		bms -b build8974jb -a1 $1
+	fi
+
+	while true; 
+	do
+		if [ -e /home001/hyuk.myeong/src/msm8974_jb/android/out-z_skt_kr/target/product/zee/emmc_appsboot.mbn ]; then # file op : -e/-b/-c/-d/-e/-f/-L/-p/-S/-r/-w/-x/-s
+			cp /home001/hyuk.myeong/src/msm8974_jb/android/out-z_skt_kr/target/product/zee/emmc_appsboot.mbn "/home001/hyuk.myeong/bin/3_download/emmc_appsboot.mbn_zee_jb_$2"
+			break
+		fi
+		sleep 5
+	done &
+fi
+}
+
+function work_8960_kk()
+{
+if [ "$1" == "kernel" ]; then # num op : -eq / -ne / -lt / -gt / -ge
+	if [ -e /home001/hyuk.myeong/src/msm8960_kk/android/out-fx1sk_skt_kr/target/product/fx1sk/boot.img ]; then # file op : -e/-b/-c/-d/-e/-f/-L/-p/-S/-r/-w/-x/-s
+		rm /home001/hyuk.myeong/src/msm8960_kk/android/out-fx1sk_skt_kr/target/product/fx1sk/boot.img
+		bms -b build8960 -a1 $1
+	else
+		bms -b build8960 -a1 $1
+	fi
+
+	while true; 
+	do
+		if [ -e /home001/hyuk.myeong/src/msm8960_kk/android/out-fx1sk_skt_kr/target/product/fx1sk/boot.img ]; then # file op : -e/-b/-c/-d/-e/-f/-L/-p/-S/-r/-w/-x/-s
+			cp /home001/hyuk.myeong/src/msm8960_kk/android/out-fx1sk_skt_kr/target/product/fx1sk/boot.img "/home001/hyuk.myeong/bin/3_download/boot.img_fx1sk_kk_$2"
+			break
+		fi
+		sleep 5
+	done &
+elif [ "$1" == "aboot" ]; then # num op : -eq / -ne / -lt / -gt / -ge
+	if [ -e /home001/hyuk.myeong/src/msm8960_kk/android/out-fx1sk_skt_kr/target/product/fx1sk/emmc_appsboot.mbn ]; then # file op : -e/-b/-c/-d/-e/-f/-L/-p/-S/-r/-w/-x/-s
+		rm /home001/hyuk.myeong/src/msm8960_kk/android/out-fx1sk_skt_kr/target/product/fx1sk/emmc_appsboot.mbn
+		bms -b build8960 -a1 $1
+	else
+		bms -b build8960 -a1 $1
+	fi
+
+	while true; 
+	do
+		if [ -e /home001/hyuk.myeong/src/msm8960_kk/android/out-fx1sk_skt_kr/target/product/fx1sk/emmc_appsboot.mbn ]; then # file op : -e/-b/-c/-d/-e/-f/-L/-p/-S/-r/-w/-x/-s
+			cp /home001/hyuk.myeong/src/msm8960_kk/android/out-fx1sk_skt_kr/target/product/fx1sk/emmc_appsboot.mbn "/home001/hyuk.myeong/bin/3_download/emmc_appsboot.mbn_fx1sk_kk_$2"
+			break
+		fi
+		sleep 5
+	done &
+fi
+}
+
+function main()
+{
+	if [ "$input" -eq 1 ]; then
+		read -p "input task(eg:kernel,aboot(lk),etc.) : " PARAM1
+		read -p "input additional information : " PARAM2
+		work_8974_kk $PARAM1 $PARAM2
+	elif [ "$input" -eq 2 ]; then
+		read -p "input task(eg:kernel,aboot(lk),etc.) : " PARAM1
+		read -p "input additional information : " PARAM2
+		work_8974_jb $PARAM1 $PARAM2
+	elif [ "$input" -eq 3 ]; then
+		read -p "input task(eg:kernel,aboot(lk),etc.) : " PARAM1
+		read -p "input additional information : " PARAM2
+		work_8960_kk $PARAM1 $PARAM2
+	elif [ "$input" -eq 4 ]; then
+		bms -b repolap8974
+	elif [ "$input" -eq 5 ]; then
+		bms -b repolap8974_jb
+	elif [ "$input" -eq 6 ]; then
+		bms -b repolap8960
+	fi
+}
+
+menu
+main

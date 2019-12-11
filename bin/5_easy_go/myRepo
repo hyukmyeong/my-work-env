@@ -1,0 +1,38 @@
+#!/bin/bash
+
+declare -i input #r,ead/i,nteger/a,rray/f,unc/e,x,port
+
+echo "what do you want?"
+echo "1.new repo(main)   2.new repo(MP)   3.renew repo"
+read -p "you selected : " input
+
+echo -n "wait"
+for (( i = 0; i < 3; i++ ))
+do
+       echo -n .
+       sleep 1
+done
+
+
+if [ "$input" -eq 1 ]; then
+       repolap -b msm8974_jb_mr1_release -m "$1.xml" --reference=/home001/mirror/lap/
+       repo sync -j10
+       repo start msm8974 --all
+       myMD5SUM
+elif [ "$input" -eq 2 ]; then
+       repolap -b $1 --reference=/home001/mirror/lap/
+       repo sync -j10
+       repo start $1 --all
+       myMD5SUM
+elif [ "$input" -eq 3 ]; then
+#       repo forall -c git reset --hard HEAD
+#       repo forall -c git clean -xdf
+       pushd ./android/kernel
+              make clean
+              make mrproper
+              make distclean
+       popd
+       repo init -m "$1.xml" --reference=/home001/mirror/lap/
+       repo sync -d -c -j10
+       myMD5SUM
+fi

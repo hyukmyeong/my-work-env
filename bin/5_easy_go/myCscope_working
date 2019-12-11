@@ -1,0 +1,34 @@
+#!/bin/bash
+
+pushd $1/android/kernel/
+rm -rf cscope.*
+find . \
+  -path "./arch/*" ! -path "./arch/arm*" -prune -o \
+  -path "./arch/arm/boot*" -o \
+  -path "./arch/arm/common*" -o \
+  -path "./arch/arm/configs*" -o \
+  -path "./arch/arm/include*" -o \
+  -path "./arch/arm/kernel*" -o \
+  -path "./arch/arm/lib*" -o \
+  ! -path "./arch/arm/mach-msm*" -prune -o \
+  -name "*.[ch]" -print >cscope.files
+#cscope -bqv -i cscope.files
+cscope -b
+popd
+
+pushd $1/android/bootable/bootloader/lk
+rm -rf cscope.*
+find . \
+  -path "./arch/*" ! -path "$./arch/arm" -prune -o \
+  -name "*.[ch]" -print >cscope.files
+#cscope -bqv -i cscope.files
+cscope -b
+popd
+
+pushd $1/android/vendor/lge/
+rm -rf cscope.*
+find ${PWD} -name '*.java' >cscope.files
+#cscope -bqv -i cscope.files
+cscope -b
+popd
+

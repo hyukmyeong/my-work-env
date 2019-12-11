@@ -1,0 +1,31 @@
+#!/bin/bash
+
+declare -i input #r,ead/i,nteger/a,rray/f,unc/e,x,port
+
+echo "do you want find with special file type?"
+echo "1.c 2.cpp 3.java 4.mk 5.all"
+read -p "you selected : " input 
+
+echo -n "wait"
+#for (( i = 0; i < 2; i++ ))
+#do
+#       echo -n .
+#       sleep 1 
+#done
+echo
+echo =================================== result ======================================
+
+if [ "$input" == "c" ] || [ "$input" -eq 1 ]; then
+       egrep -Rin "$1" . --include="*.c"
+elif [ "$input" == "cpp" ] || [ "$input" -eq 2 ]; then
+       egrep -Rin "$1" --include="*.cpp" .
+elif [ "$input" == "java" ] || [ "$input" -eq 3 ]; then
+       egrep -Rin "$1" --include="*.java" .
+elif [ "$input" == "mk" ] || [ "$input" -eq 4 ]; then
+       egrep -Rin "$1" --include="*.mk" .
+elif [ "$input" == "all" ] || [ "$input" -eq 5 ]; then
+       egrep -Rin "$1" . --exclude="*.o" --exclude="*.lib" --exclude-dir=".git" --exclude="cscope.out" --exclude="cscope.out.po" --exclude="cscope.out.in" -- exclude="cscope.files" --exclude="tags" --exclude="log.txt"
+else
+       echo do nothing
+fi
+

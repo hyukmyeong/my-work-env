@@ -1,0 +1,1 @@
+dtc -I dtb -O dts ./obj/KERNEL_OBJ/arch/arm/boot/msm8974-v2-z-kr.dtb > msm8974-v2-z-kr.dts

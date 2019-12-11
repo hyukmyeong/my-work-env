@@ -1,0 +1,114 @@
+#!/bin/bash
+
+declare EXEC_FILE=""
+declare COMFILE_TYPE=""
+declare OPT_INFO=""
+declare WARN_LEVEL=""
+declare INCLUDE_LIBRARY=""
+declare INCLUDE_HEADER_DIR=""
+declare LOG_FILE="build_log"
+declare -a SOURCE_FILES
+declare -a HEADER_DIRS
+declare -a LIB_DIRS
+declare -a LIB_FILES 
+
+function normal_compile()
+{
+       gcc -v -O$OPT_INFO -o $EXEC_FILE ${SOURCE_FILES[@]} >$LOG_FILE 2>&1
+       echo "complete compile"
+}
+
+function debug_compile()
+{
+       gcc -v -O$OPT_INFO -g3 -pg -o $EXEC_FILE ${SOURCE_FILES[@]} >$LOG_FILE 2>&1
+       echo "complete compile for debug"
+}
+
+function pre_compile()
+{
+       gcc -v -E ${SOURCE_FILES[@]} >$LOG_FILE 2>&1
+       echo "complete compile for pre-compiler"
+}
+
+function assembly_compile()
+{
+       gcc -v -S ${SOURCE_FILES[@]} >$LOG_FILE 2>&1
+       echo "complete compile for assembly"
+}
+
+function warning_level()
+{
+       while true
+       do
+              read -p "Select Warning Level(no/rough/all/error): " WARN_LEVEL 
+              echo "$WARN_LEVEL"
+
+              if [[ "$WARN_LEVEL" == "1" || "$WARN_LEVEL" == "2" || "$WARN_LEVEL" == "3" || "$WARN_LEVEL" == "4" ]]; then
+                     break;
+              elif [[ "$WARN_LEVEL" == "no" || "$WARN_LEVEL" == "rough" || "$WARN_LEVEL" == "all" || "$WARN_LEVEL" == "error" ]]; then
+                     break;
+              else
+                     echo "Please type again"
+              fi
+       done
+}
+
+function optimizion_level()
+{
+       while true
+       do
+              read -p "Select Optimizion Level(1/2/3/4/s): " OPT_INFO 
+              echo "$OPT_INFO"
+
+              if [[ "$OPT_INFO" == "1" || "$OPT_INFO" == "2" || "$OPT_INFO" == "3" || "$OPT_INFO" == "4" || "$OPT_INFO" == "s" ]]; then
+                     break;
+              else
+                     echo "Please type again"
+              fi
+       done
+}
+
+
+while true
+do
+       read -p "choose compile type(normal/debug/pre/assembly): " COMFILE_TYPE
+       echo "$COMFILE_TYPE"
+
+       if [[ "$COMFILE_TYPE" == "1" || "$COMFILE_TYPE" == "2" || "$COMFILE_TYPE" == "3" || "$COMFILE_TYPE" == "4" ]]; then
+              break;
+       elif [[ "$COMFILE_TYPE" == "normal" || "$COMFILE_TYPE" == "debug" || "$COMFILE_TYPE" == "pre" || "$COMFILE_TYPE" == "assembly" ]]; then
+              break;
+       else
+              echo "Please type again"
+       fi
+done
+
+case "$COMFILE_TYPE" in
+       "1"|"normal")        normal_compile;;
+       "2"|"debug")         debug_compile;;    
+       "3"|"pre")           pre_compile;;      
+       "4"|"assembly")      assembly_compile;;
+       @) break;;
+esac
+
+
+echo -n "Input all source files name: " 
+read -a SOURCE_FILES
+echo ${SOURCE_FILES[@]}
+
+read -p "Input result file name: " EXEC_FILE
+echo ${EXEC_FILE[@]}
+
+if false; then
+echo -n "Input header file directories"
+read -a HEADER_DIRS 
+echo ${HEADER_DIRS[@]}
+
+echo -n "Input additional library files " 
+read -a LIB_FILES 
+echo ${LIB_FILES[@]}
+
+echo -n "Input additional library directories"
+read -a LIB_DIRS
+echo ${LIB_DIRS[@]}
+fi

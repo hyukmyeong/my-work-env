@@ -1,0 +1,34 @@
+defflow auto
+
+#Scrollback buffer size in lines
+defscrollback 5000
+
+# modify the termcap/terminfo when I'm using XTerm.
+terminfo xterm* LP
+
+# Support alternate screens so that, for example, when you 
+# quit out of vi, the display is redrawn as it was before vi
+# redrew the full screen.
+altscreen on
+
+# don't display the copyright page
+startup_message off
+
+# detach on hangup - if my dial-up session fails, screen will simply
+# detach and let me re re-attach later.
+autodetach on
+
+ # 1 second messages
+msgwait 2
+
+# use current bg color for erased chars
+defbce on
+
+# allow bold colors - necessary for some reason
+attrcolor b ".I"
+
+term screen-256color
+terminfo xterm* LP
+
+# tell screen how to set colors. AB = background, AF=foreground
+termcapinfo xterm 'Co#256:AB=\E[48;5;%dm:AF=\E[38;5;%dm' 

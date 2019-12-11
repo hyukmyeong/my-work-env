@@ -1,0 +1,15 @@
+type=user
+speed=400
+start data >>
+DispatchPointer(0, 0, 0, 960, 1098, 0, 0, 0, 0, 0, 0, 0)
+DispatchPointer(0, 0, 1, 960, 1098, 0, 0, 0, 0, 0, 0, 0)
+UserWait(100) // wait 100 msec
+DispatchPointer(0, 0, 0, 960, 1304, 0, 0, 0, 0, 0, 0, 0)
+DispatchPointer(0, 0, 1, 960, 1304, 0, 0, 0, 0, 0, 0, 0)
+UserWait(100) // wait 100 msec
+DispatchPointer(0, 0, 0, 960, 1504, 0, 0, 0, 0, 0, 0, 0)
+DispatchPointer(0, 0, 1, 960, 1504, 0, 0, 0, 0, 0, 0, 0)
+UserWait(100) // wait 100 msec
+DispatchPointer(0, 0, 0, 960, 1688, 0, 0, 0, 0, 0, 0, 0)
+DispatchPointer(0, 0, 1, 960, 1688, 0, 0, 0, 0, 0, 0, 0)
+UserWait(100) // wait 100 msec

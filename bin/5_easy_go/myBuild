@@ -1,0 +1,58 @@
+#!/bin/bash
+declare -i input #r,ead/i,nteger/a,rray/f,unc/e,x,port
+declare SRC_FILE=""
+
+function env_setup()
+{
+make -C . O=../out-w3voip_lgu_kr/target/product/w3voip/obj/KERNEL_OBJ ARCH=arm CROSS_COMPILE=/home001/hyuk.myeong/src/070_6t/android/prebuilts/gcc/linux-x86/arm/arm-eabi-4.7/bin/arm-eabi- w3voip_lgu_kr_defconfig
+
+make -C . O=../out-w3voip_lgu_kr/target/product/w3voip/obj/KERNEL_OBJ ARCH=arm CROSS_COMPILE=/home001/hyuk.myeong/src/070_6t/android/prebuilts/gcc/linux-x86/arm/arm-eabi-4.7/bin/arm-eabi- headers_install
+
+}
+
+function main()
+{
+echo "### start with src=$SRC_FILE"
+make -C . O=../out-w3voip_lgu_kr/target/product/w3voip/obj/KERNEL_OBJ ARCH=arm CROSS_COMPILE=/home001/hyuk.myeong/src/070_6t/android/prebuilts/gcc/linux-x86/arm/arm-eabi-4.7/bin/arm-eabi- $SRC_FILE
+}
+
+function make_bootimage()
+{
+cd ..
+mkbootimg  --kernel out-w3voip_lgu_kr/target/product/w3voip/obj/KERNEL_OBJ/arch/arm/boot/zImage --ramdisk out-w3voip_lgu_kr/target/product/w3voip/ramdisk.img --cmdline "console=ttyHSL0,115200,n8 androidboot.hardware=w3voip lpj=67667" --base 0x00008000 --pagesize 2048 --offset 0x02000000 --output out-w3voip_lgu_kr/target/product/w3voip/boot.img
+security_tool boot out-w3voip_lgu_kr/target/product/w3voip/boot.img lock md5
+cd -
+}
+
+function menu()
+{
+	echo "#################################################################################"
+	echo "# you should be in kerel dir						#"
+	echo "# choose command to debug							#"
+	echo "# (1)env_setup (2)make(pre) (3)make(object) (4)make(assem) (5)make_bootimage #"
+	echo "#################################################################################"
+	read -p "### you selected : " input 
+	if [ "$input" -eq 1 ]; then
+		echo "### compile env setup"
+		env_setup
+	elif [ "$input" -eq 2 ]; then
+		echo "### input (path/src.i)"
+		read -p "src(path from .): " SRC_FILE
+		main $1
+	elif [ "$input" -eq 3 ]; then
+		echo "### input (path/src.o)"
+		read -p "src(path from .): " SRC_FILE
+		main $1
+		echo "### input (path/src.s)"
+		read -p "src(path from .): " SRC_FILE
+		main $1
+	elif [ "$input" -eq 5 ]; then
+		echo "### make bootimage (you need 3-files : makebootimg.dat, security_tool.dat, ramdisk.img)"
+		make_bootimage
+	fi
+	echo
+}
+
+menu
+cp ../out-w3voip_lgu_kr/target/product/w3voip/obj/KERNEL_OBJ/$SRC_FILE $SRC_FILE
+echo "### please check $SRC_FILE"

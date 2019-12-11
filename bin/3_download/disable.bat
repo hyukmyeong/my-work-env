@@ -1,0 +1,1 @@
+adb shell "echo 0x55 0x00 > sys/class/graphics/fb0/ie_mode_cmd1; echo 0x65 0x00 > sys/class/graphics/fb0/ie_mode_cmd2; echo 0x66 0x00 > sys/class/graphics/fb0/ie_mode_cmd2; echo 0x67 0x00 > sys/class/graphics/fb0/ie_mode_cmd2; echo 0x68 0x00 > sys/class/graphics/fb0/ie_mode_cmd2; echo 0x55 0xB0 > sys/class/graphics/fb0/ie_mode_cmd1"

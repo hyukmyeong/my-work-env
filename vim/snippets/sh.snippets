@@ -1,0 +1,249 @@
+snippet bash 
+	#!/bin/bash
+
+	exit 0 # success
+snippet if_normal
+	if [ "$VAR" == "str" ] && [ "$NUM" -eq num ] || [ "$NUM" -eq num ]; then # num op : -eq / -ne / -lt / -gt / -ge
+		${1:#statements}
+	elif [ "$VAR" -eq num -a -z "$BB" ]; then # str op : -z / -n 
+		${2:#statements}
+	elif [[ -e h && ! -z mikki.sh ]]; then # file op : -e/-b/-c/-d/-e/-f/-L/-p/-S/-r/-w/-x/-s
+		${3:#statements}
+	else
+		${4:#statements}
+	fi
+	${4}
+snippet if_true_false
+	if true; then #false
+		${1:#statements}
+	else
+		${2:#statements}
+	fi
+	${3}
+snippet for_argument
+	for arg # work with parameters if no list
+	do
+		echo -n "$arg"
+	done
+	${1}
+snippet for_seq
+	for data in `seq 10`
+	do
+		echo -n "$data "
+	done
+	${1}
+snippet for_file_control
+	for file in ${1:dir}*
+		whatis `basename $file`
+	do
+		echo -n "$data "
+	done
+	${1}
+snippet for_character
+	for data in "a b c d e" # var="a b c d e" $var 
+	do
+		echo -n "$data"
+	done
+	${1}
+snippet for_array
+	declare -a data
+	declare -i temp 
+	read -a data
+
+	#echo ${data[@]}
+	for temp in "${data[@]}"
+	do
+		echo "$temp"
+	done
+snippet for_c_like
+	for (( ${2:i} = 0; $2 < ${1:limit}; $2++ ))
+	do
+		${3:#statements}
+	done
+	${4}
+snippet while_normal
+	declare -i COUNT=0
+	declare -i LIMIT=${1}
+
+	while [ "$COUNT" -lt "$LIMIT" ]
+	do
+		${2:#statements}
+		let "COUNT += 1"
+	done
+	${3}
+snippet while_c_like
+	declare -i COUNT=0
+	declare -i LIMIT=${1}
+
+	while (( COUNT <= LIMIT )) # true / false
+	do
+		${2:#statement}
+		(( COUNT += 1 ))
+	done
+	${3}
+snippet while_file
+	while read TEMP
+	do
+		echo $TEMP | awk -F' ' '{ print $1 }' > ${1:#output file}
+
+		if [ "`cat ${2:#output file}`" == "${5:#string}" ]
+		then
+			${6:#statement}	
+		fi
+	done < ${3:#input file} > ${4:#log file}
+snippet while_array
+	declare -a data
+	declare -i count
+	declare -i index=0
+	read -a data
+
+	unset data[3]
+	count=${#data[@]}
+
+	while [ "$index" -lt "$count" ]
+	do
+		echo ${data[$index]}
+		let "index = $index + 1"
+	done
+snippet until
+	until [ $# == "0" ]
+	do
+		if [ $1 == "exit" ]
+		then
+			break # continue : same to C language
+		fi
+		shift
+	done
+	${3}
+snippet case
+	case ${1:word} in # "$VAR"
+		${2:pattern}) # "A"|"a" )
+			${3:statements}
+			${4:statements}
+			;;
+		${5:pattern}) # [a-zA-Z]*|[0-9]* )
+			${5:statements}
+			${6:statements}
+			;;
+		@) # *)
+			${7:statements}
+			${8:statements}
+			;;
+	esac
+	${7}
+snippet function
+	function ${1:variable}()
+	{
+		local ${2:variable}
+		echo "number of parameters : $@"
+		echo "values of parameters : $#"
+	}
+	$3
+snippet getopts
+	while getops ":mnop:rs" Option
+	do
+		case $Option information
+			m ) echo "m";;
+			n ) echo "n";;
+			o | p ) echo "o or p";;
+			p ) echo "p: needs additional parameter";;
+			r | s ) echo "r or s";;
+			* ) echo "no option";;
+		esac
+		shift $(($OPTIND - 1))
+	done
+snippet basename
+	echo basename $PWD
+snippet dirname
+	echo dirname $PWD
+snippet type
+	type -a ${1:command} # show parameter command's path for shell command
+snippet help 
+	help ${1:command} # show where is parameter command's information for shell command
+snippet which
+	which ${1:command} # show parameter command's path : rm,ls, etc.
+snippet whereis
+	whereis ${1:command} # show parameter command's path + manual page path : rm,ls, etc.
+snippet whatis 
+	whatis ${1:command} # show where is parameter command's information : rm,ls, etc.
+snippet strings
+	strings ${1:filename} # show text data from every type of file
+snippet set
+	set `uname -a` # save data into variable
+	echo "$1"
+	echo "$2"
+	echo "$3"
+snippet unset
+	declare var="test"
+	unset var
+	echo "$var" # print null
+	${1}
+snippet echo
+	echo "test" # -n/-e : to use \n,\t,etc.
+	$1
+snippet read_1
+	read -s -n1 -p "input key " keypress
+	echo "input is "\"$keypress\""
+	$1
+snippet read_2
+	IFS_TEMP=$IFS
+	IFS=: # to use ":" for seperator instead of " "
+	while read name passwd uid gid fullname ignore
+	do
+		echo "$name ($fullname)"
+	done </etc/passwd
+	IFS=$IFS_TEMP
+	$1
+snippet tee
+	pa -al | sort | tee log.txt | grep aa > result.txt  # tee doesn't disturb anything
+snippet declare
+	declare -${1:type} ${2:symbol} #r,ead/i,nteger/a,rray/f,unc/e,x,port
+snippet tar
+	tar cvfz ${1:dest} ${2:src}
+	tar xvfz ${1:filename}
+snippet sed
+	sed s/${1:[a-z]*:}/${2:new_\&:}/g ${3:filename} > result.txt
+snippet awk
+	awk -F' ' '{ print "result is" $1 "thank you" }'
+snippet trap
+	trap 'echo "I got exit signal"' EXIT
+	exit 0
+snippet passwd
+	echo -n "Enter password"
+	stty -echo
+	read password
+	stty echo
+	$1
+snippet select 
+	select veg in "a b c"
+	do
+		echo
+		echo "mii $veg"
+		echo
+		break
+	done
+snippet debugging
+	nm ${1:filename} #show nmemonic
+	strip ${2:filename} #delete debugging information
+	ldd ${3:filename} # show shared library for file
+	sync # write to HDD from buffer
+snippet adminiatrator
+	who		# show all users
+	whoami		# show who am i
+	w		# show user and more information
+	last		# show last login time
+	groups		# show current user's group
+	tty		# show current user's terminal info
+	stty		# show and modify terminal setting
+	wall ""	# send messages to all users
+	uname -a	# show kernel information
+	lastlog	# show all logs for all users
+	lsof		# show all open files
+	strace cmd	# track system call 
+	free		# show meemrory information
+	stat file	# show specific information
+	vmstat		# show virtual memory stat
+	hostname	# show hostname (cat /etc/hosts)
+	nice		# change process prioriry
+			# 19(low) ~ -20(high) : only root set minus value 
+	whois domain	# show domain information

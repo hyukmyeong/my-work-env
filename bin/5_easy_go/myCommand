@@ -1,0 +1,38 @@
+1. 서버 변경
+repo init -u ssh://lapX.lge.com:29475/platform/manifest.git -b apq8064_jb_release
+
+2. git remote push 서버 변경
+git remote set-url --push lap ssh://lap.lge.com:029475/${REPO_PROJECT}
+
+3. BCM 빌드
+m TARGET_HAS_BCM=yes BCM_HW_OOB=yes –j16
+
+4. 특정 브랜치 upload 하기
+git push lap HEAD:브랜치명
+
+5. 특정 서버 + 특정 manifest init 하기
+repo init -u ssh://lap2.lge.com:29475/platform/manifest.git -b apq8064_jb_release -m LAP8064JR121105_brcm.xml
+
+6. ram parse방법
+ramparse.bat -a d:\dump -v d:\dump\vmlinux --force-hardware apq8064 -r
+
+7. t32_startup_script.cmm 의 4번째 줄에 주석처리
+sys.cpu SCORPION
+sys.up
+data.load.binary C:\Android\tools\ramparser\1124\EBICS0.BIN 0x80000000
+;data.load.binary C:\Android\tools\ramparser\1124\EBI1CS1.BIN 0xc0000000
+
+8. git remote 서버 추가
+git remote add name git://android.git.kernel.org/kernel/common.git 
+
+9. ./arm-eabi-objdump -dSl vmlinux > dump.out (소스파일이 경로에 있다면 좋음)
+
+10. ./arm-eabi-addr2line -fe vmlinux > dump.out
+
+11. ./arm-eabi-readelf -lh vmlinux
+
+12. ./arm-eabi-readelf -d vmlinux (동적 library 확인)
+
+12. ./arm-eabi-nm -f sysv -A vmlinux 
+
+13. ./arm-eabi-nm --demangle cpp_binary

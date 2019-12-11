@@ -1,0 +1,4 @@
+#!/bin/bash
+
+find . -iname "*$1*" -print
+#find . -iname "*$1*" -exec mv {} ~/temp/

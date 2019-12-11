@@ -1,0 +1,11 @@
+Host polar.lge.com
+Hostname polar.lge.com
+User hyuk.myeong
+Port 29438
+StrictHostKeyChecking no
+
+Host wall.lge.com
+Hostname wall.lge.com
+User hyuk.myeong 
+Port 29448
+StrictHostKeyChecking no

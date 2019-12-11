@@ -1,0 +1,1 @@
+adb shell "NUM=0; echo "================="; while true; do for NUM in 'cpu0' 'cpu1' 'cpu2' 'cpu3' 'cpu4' 'cpu5' 'cpu6' 'cpu7'; do echo -n $NUM=; if [ -e /sys/devices/system/cpu/$NUM/cpufreq/cpuinfo_cur_freq ]; then cat /sys/devices/system/cpu/$NUM/cpufreq/cpuinfo_cur_freq; else echo; fi; done; echo "================="; sleep 0.5; done"
