@@ -41,14 +41,20 @@
 (add-hook 'c++-mode-hook 'helm-gtags-mode)
 (add-hook 'asm-mode-hook 'helm-gtags-mode)
 
-(define-key helm-gtags-mode-map (kbd "C-c g a") 'helm-gtags-tags-in-this-function)
-(define-key helm-gtags-mode-map (kbd "C-j") 'helm-gtags-select)
-(define-key helm-gtags-mode-map (kbd "M-.") 'helm-gtags-dwim)
-(define-key helm-gtags-mode-map (kbd "M-,") 'helm-gtags-pop-stack)
-(define-key helm-gtags-mode-map (kbd "C-c <") 'helm-gtags-previous-history)
-(define-key helm-gtags-mode-map (kbd "C-c >") 'helm-gtags-next-history)
-
 ;; mikki start
+
+;(define-key helm-gtags-mode-map (kbd "C-c g a") 'helm-gtags-tags-in-this-function)
+;(define-key helm-gtags-mode-map (kbd "C-j") 'helm-gtags-select)
+;(define-key helm-gtags-mode-map (kbd "M-.") 'helm-gtags-dwim)
+;(define-key helm-gtags-mode-map (kbd "M-,") 'helm-gtags-pop-stack)
+;(define-key helm-gtags-mode-map (kbd "C-c <") 'helm-gtags-previous-history)
+;(define-key helm-gtags-mode-map (kbd "C-c >") 'helm-gtags-next-history)
+(define-key helm-gtags-mode-map (kbd "M-g a") 'helm-gtags-tags-in-this-function)
+(define-key helm-gtags-mode-map (kbd "M-g j") 'helm-gtags-select)
+(define-key helm-gtags-mode-map (kbd "M-g .") 'helm-gtags-dwim)
+(define-key helm-gtags-mode-map (kbd "M-g ,") 'helm-gtags-pop-stack)
+(define-key helm-gtags-mode-map (kbd "M-g <") 'helm-gtags-previous-history)
+(define-key helm-gtags-mode-map (kbd "M-g >") 'helm-gtags-next-history)
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; 1. helm에서 유용한 기능들 ;;
@@ -56,9 +62,25 @@
 (global-set-key (kbd "M-s") 'helm-swoop)
 ;(global-set-key (kbd "M-t") 'helm-for-files)
 (global-set-key (kbd "M-t") 'helm-projectile-find-file)
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; 2. helm cscope            ;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; cscope를 파일이 있는 폴더에 직접 만들어버리기 때문에 전역적인 것을 사용하지 못 함
+;; ~/.emacs.d/helm-cscope.el 파일 하단에 (add-to-list 'load-path ".") 를 추가해야 함
+(require 'xcscope)
 (require 'helm-cscope)
-;;(require 'xcscope)
+;; Enable helm-cscope-mode
+(add-hook 'c-mode-hook 'helm-cscope-mode)
+(add-hook 'c++-mode-hook 'helm-cscope-mode)
+;; Set key bindings
+(eval-after-load "helm-cscope"
+  '(progn
+     (define-key helm-cscope-mode-map (kbd "M-.") 'helm-cscope-find-this-symbol)
+;     (define-key helm-cscope-mode-map (kbd "M-g g") 'helm-cscope-find-this-global-definition)
+;     (define-key helm-cscope-mode-map (kbd "M-g c") 'helm-cscope-find-called-function)
+;     (define-key helm-cscope-mode-map (kbd "M-g p") 'helm-cscope-find-calling-this-funtcion)
+     (define-key helm-cscope-mode-map (kbd "M-,") 'helm-cscope-pop-mark)))
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; 2. evil 	             ;;

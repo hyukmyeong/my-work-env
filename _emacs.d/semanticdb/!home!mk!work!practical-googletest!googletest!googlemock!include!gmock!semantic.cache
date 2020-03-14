@@ -7,6 +7,7 @@
       :major-mode c-mode
       :tags 
         '( ("GMOCK_INCLUDE_GMOCK_GMOCK_SPEC_BUILDERS_H_" variable (:constant-flag t) nil [2567 2609])
+            ("GMOCK_INCLUDE_GMOCK_GMOCK_SPEC_BUILDERS_H_" variable (:constant-flag t) nil [2567 2609])
             ("functional" include (:system-flag t) nil [2611 2632])
             ("map" include (:system-flag t) nil [2633 2647])
             ("memory" include (:system-flag t) nil [2648 2665])
@@ -1205,11 +1206,6 @@
       :unmatched-syntax nil
       :lexical-table 
         '(("GMOCK_INCLUDE_GMOCK_GMOCK_SPEC_BUILDERS_H_")
-          ("ON_CALL" (spp-arg-list ("obj" "call") 74326 . 74337) . ((symbol "GMOCK_ON_CALL_IMPL_" 74342 . 74361) (semantic-list "(obj, InternalDefaultActionSetAt, call)" 74361 . 74400)))
-          ("GMOCK_ON_CALL_IMPL_" (spp-arg-list ("mock_expr" "Setter" "call") 74062 . 74087) . 
-              ((semantic-list "((mock_expr).gmock_##call)" 74111 . 74137) (semantic-list "(::testing::internal::GetWithoutMatchers(), \\
-                             nullptr)" 74137 . 74220) (punctuation "." 74263 . 74264) (symbol "Setter" 74264 . 74270) (semantic-list "(__FILE__, __LINE__, #mock_expr, #call)" 74270 . 74309)))
-          ("EXPECT_CALL" (spp-arg-list ("obj" "call") 74421 . 74432) . ((symbol "GMOCK_ON_CALL_IMPL_" 74437 . 74456) (semantic-list "(obj, InternalExpectedAt, call)" 74456 . 74487)))
           )
 )
     (semanticdb-table "semanticdb-table"

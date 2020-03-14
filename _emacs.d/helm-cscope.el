@@ -347,3 +347,5 @@
 ;; End:
 
 ;;; helm-cscope.el ends here
+
+(add-to-list 'load-path ".")
