@@ -1,0 +1,23 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode makefile-automake-mode
+      :tags 
+        '( ("$(top_srcdir)/fragment.am" include nil nil [967 1001])
+            ("pythondir" variable (:default-value ("$(prefix)/$(python_mod_dir)")) nil [1059 1099])
+            ("pythondir" variable (:default-value ("$(datadir)/gcc-$(gcc_version)/python")) nil [1104 1153])
+            ("all-local" function (:arguments ("gdb.py")) nil [1160 1178])
+            ("nobase_python_DATA" variable (:default-value ("libstdcxx/v6/printers.py" "libstdcxx/v6/xmethods.py" "libstdcxx/v6/__init__.py" "libstdcxx/__init__.py")) nil [1179 1321])
+            ("gdb.py" function (:arguments ("hook.in" "Makefile")) nil [1322 1460])
+            ("install-data-local" function (:arguments ("gdb.py")) nil [1461 1529]))          
+      :file "Makefile.am"
+      :pointmax 2272
+      :fsize 2271
+      :lastmodtime '(23951 21818 154363 830000)
+      :unmatched-syntax '((shell-command 1838 . 2271) (bol 1837 . 1837))))
+  :file "!home!mk!work!gcc!libstdc++-v3!python!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,63 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("iostream" include (:system-flag t) nil [1 20])
+            ("chrono" include (:system-flag t) nil [21 38])
+            ("gtest/gtest.h" include nil nil [39 63])
+            ("dosleep.h" include nil nil [64 84])
+            ("testing" using (:type ("testing" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [86 110])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [111 131])
+            ("chrono" using (:type ("chrono" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [132 155])
+            ("TEST" function
+               (:arguments 
+                  ( ("" variable (:type ("DurationTest" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [162 175])
+                    ("" variable (:type ("nSingleThread" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [176 189]))                  
+                :type "int")
+                nil [157 387])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [398 407])
+                    ("argv" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [408 420]))                  
+                :type "int")
+                nil [389 496]))          
+      :file "gtest_main.cpp"
+      :pointmax 497
+      :fsize 496
+      :lastmodtime '(24149 2631 507642 25000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("iostream" include (:system-flag t) nil [1 20])
+            ("DoSleep" function
+               (:typemodifiers ("inline")
+                :arguments 
+                  ( ("seconds" variable (:type "int") (reparse-symbol arg-sub-list) [42 54])
+                    ("milli_seconds" variable (:type "int") (reparse-symbol arg-sub-list) [55 73]))                  
+                :type "void")
+                nil [22 239]))          
+      :file "dosleep.h"
+      :pointmax 240
+      :fsize 239
+      :lastmodtime '(24149 2631 503642 319000)
+      :unmatched-syntax nil))
+  :file "!home!mk!work!practical-googletest!5.various_cases!3.duration!1.sync_task!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

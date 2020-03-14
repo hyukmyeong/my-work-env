@@ -1,0 +1,36 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode makefile-automake-mode
+      :tags 
+        '( ("$(top_srcdir)/fragment.am" include nil nil [959 993])
+            ("locale_installdir" variable (:default-value ("$(DESTDIR)$(datadir)/locale")) nil [1034 1082])
+            ("locale_builddir" variable (:default-value ("$(glibcxx_localedir)")) nil [1082 1121])
+            ("SUFFIXES" variable (:default-value (".po" ".mo")) nil [1163 1182])
+            ("LOCALE_IN" variable (:default-value ("$(glibcxx_POFILES)")) nil [1183 1214])
+            ("LOCALE_OUT" variable (:default-value ("$(glibcxx_MOFILES)")) nil [1214 1246])
+            ("MSGFMT" variable (:default-value ("msgfmt")) nil [1247 1263])
+            ("EXTRA_DIST" variable (:default-value ("string_literals.cc" "POTFILES.in" "$(PACKAGE).pot" "$(LOCALE_IN)")) nil [1283 1355])
+            (".po.mo" function nil nil [1356 1384])
+            ("all-local" function (:arguments ("all-local-$(USE_NLS)")) nil [1385 1417])
+            ("all-local-no" function nil nil [1417 1431])
+            ("all-local-yes" function (:arguments ("$(LOCALE_OUT)")) nil [1431 1460])
+            ("check" function (:arguments ("check-$(USE_NLS)")) nil [1527 1551])
+            ("check-no" function nil nil [1551 1561])
+            ("check-yes" function nil nil [1561 1892])
+            ("install-data-local" function (:arguments ("install-data-local-$(USE_NLS)")) nil [1982 2032])
+            ("install-data-local-no" function nil nil [2032 2055])
+            ("install-data-local-yes" function (:arguments ("all-local-yes")) nil [2055 2417])
+            ("pot" function nil nil [2534 2719])
+            ("CLEANFILES" variable (:default-value ("$(LOCALE_OUT)")) nil [2769 2796]))          
+      :file "Makefile.am"
+      :pointmax 2796
+      :fsize 2795
+      :lastmodtime '(23951 21818 154363 830000)
+      :unmatched-syntax nil))
+  :file "!home!mk!work!gcc!libstdc++-v3!po!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

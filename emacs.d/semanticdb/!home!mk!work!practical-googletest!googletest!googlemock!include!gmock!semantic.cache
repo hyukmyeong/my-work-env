@@ -1,0 +1,1229 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("GMOCK_INCLUDE_GMOCK_GMOCK_SPEC_BUILDERS_H_" variable (:constant-flag t) nil [2567 2609])
+            ("functional" include (:system-flag t) nil [2611 2632])
+            ("map" include (:system-flag t) nil [2633 2647])
+            ("memory" include (:system-flag t) nil [2648 2665])
+            ("set" include (:system-flag t) nil [2666 2680])
+            ("sstream" include (:system-flag t) nil [2681 2699])
+            ("string" include (:system-flag t) nil [2700 2717])
+            ("type_traits" include (:system-flag t) nil [2718 2740])
+            ("utility" include (:system-flag t) nil [2741 2759])
+            ("vector" include (:system-flag t) nil [2760 2777])
+            ("gmock/gmock-actions.h" include nil nil [2778 2810])
+            ("gmock/gmock-cardinalities.h" include nil nil [2811 2849])
+            ("gmock/gmock-matchers.h" include nil nil [2850 2883])
+            ("gmock/internal/gmock-internal-utils.h" include nil nil [2884 2932])
+            ("gmock/internal/gmock-port.h" include nil nil [2933 2971])
+            ("gtest/gtest.h" include nil nil [2972 2996])
+            ("testing" type
+               (:members 
+                  ( ("Expectation" type
+                       (:prototype t
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [3243 3261])
+                    ("ExpectationSet" type
+                       (:prototype t
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [3296 3317])
+                    ("internal" type
+                       (:members 
+                          ( ("FunctionMocker" type
+                               (:template 
+                                  ( ("F" type (:type "class") nil nil))                                  
+                                :type "class"
+                                :prototype t)
+                                (reparse-symbol namespacesubparts) [3483 3526])
+                            ("ExpectationBase" type
+                               (:prototype t
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [3560 3582])
+                            ("TypedExpectation" type
+                               (:template 
+                                  ( ("F" type (:type "class") nil nil))                                  
+                                :type "class"
+                                :prototype t)
+                                (reparse-symbol namespacesubparts) [3614 3659])
+                            ("ExpectationTester" type
+                               (:prototype t
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [3721 3745])
+                            ("GTEST_DECLARE_STATIC_MUTEX_" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("" variable (:type ("g_gmock_mutex" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4427 4441]))                                  
+                                :type ("GTEST_API_" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [4388 4442])
+                            ("UntypedActionResultHolderBase" type
+                               (:prototype t
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [4493 4529])
+                            ("UntypedFunctionMockerBase" variable (:type ("GTEST_API_" type
+                                 (:prototype t
+                                  :type "class")
+                                  nil nil)) (reparse-symbol namespacesubparts) [4706 9735])
+                            ("UntypedOnCallSpecBase" type
+                               (:members 
+                                  ( ("public" label nil (reparse-symbol classsubparts) [9845 9852])
+                                    ("UntypedOnCallSpecBase" function
+                                       (:constructor-flag t
+                                        :arguments 
+                                          ( ("a_file" variable
+                                               (:pointer 1
+                                                :constant-flag t
+                                                :type "char")
+                                                (reparse-symbol arg-sub-list) [9941 9960])
+                                            ("a_line" variable (:type "int") (reparse-symbol arg-sub-list) [9961 9972]))                                          
+                                        :type ("UntypedOnCallSpecBase" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [9919 10033])
+                                    ("file" function
+                                       (:methodconst-flag t
+                                        :pointer 1
+                                        :constant-flag t
+                                        :type "char")
+                                        (reparse-symbol classsubparts) [10104 10146])
+                                    ("line" function
+                                       (:methodconst-flag t
+                                        :type "int")
+                                        (reparse-symbol classsubparts) [10149 10183])
+                                    ("protected" label nil (reparse-symbol classsubparts) [10186 10196])
+                                    ("Clause" type
+                                       (:members 
+                                          ( ("kNone" variable
+                                               (:constant-flag t
+                                                :type "int")
+                                                (reparse-symbol enumsubparts) [10378 10384])
+                                            ("kWith" variable
+                                               (:constant-flag t
+                                                :type "int")
+                                                (reparse-symbol enumsubparts) [10389 10395])
+                                            ("kWillByDefault" variable
+                                               (:constant-flag t
+                                                :type "int")
+                                                (reparse-symbol enumsubparts) [10400 10418]))                                          
+                                        :type "enum")
+                                        (reparse-symbol classsubparts) [10257 10419])
+                                    ("AssertSpecProperty" function
+                                       (:methodconst-flag t
+                                        :arguments 
+                                          ( ("property" variable (:type "bool") (reparse-symbol arg-sub-list) [10513 10527])
+                                            ("failure_message" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("std::string" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [10554 10589]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [10489 10654])
+                                    ("ExpectSpecProperty" function
+                                       (:methodconst-flag t
+                                        :arguments 
+                                          ( ("property" variable (:type "bool") (reparse-symbol arg-sub-list) [10748 10762])
+                                            ("failure_message" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("std::string" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [10789 10824]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [10724 10889])
+                                    ("file_" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type "char")
+                                        (reparse-symbol classsubparts) [10893 10911])
+                                    ("line_" variable (:type "int") (reparse-symbol classsubparts) [10914 10924])
+                                    ("last_clause_" variable (:type ("Clause" type (:type "class") nil nil)) (reparse-symbol classsubparts) [11053 11073]))                                  
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [9814 11076])
+                            ("OnCallSpec" type
+                               (:template 
+                                  ( ("F" type (:type "class") nil nil))                                  
+                                :type "class"
+                                :members 
+                                  ( ("public" label nil (reparse-symbol classsubparts) [11234 11241])
+                                    ("ArgumentTuple" variable (:type ("ArgumentTuple" type (:type "class") nil nil)) (reparse-symbol classsubparts) [11274 11302])
+                                    ("ArgumentMatcherTuple" variable (:type ("ArgumentMatcherTuple" type (:type "class") nil nil)) (reparse-symbol classsubparts) [11335 11377])
+                                    ("OnCallSpec" function
+                                       (:constructor-flag t
+                                        :arguments 
+                                          ( ("a_file" variable
+                                               (:pointer 1
+                                                :constant-flag t
+                                                :type "char")
+                                                (reparse-symbol arg-sub-list) [11505 11524])
+                                            ("a_line" variable (:type "int") (reparse-symbol arg-sub-list) [11525 11536])
+                                            ("matchers" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("ArgumentMatcherTuple" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [11550 11587]))                                          
+                                        :type ("OnCallSpec" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [11494 11934])
+                                    ("With" function
+                                       (:arguments 
+                                          ( ("m" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("Matcher" type
+                                                     (:template-specifier 
+                                                        ( ("ArgumentTuple" type
+                                                             (:reference 1
+                                                              :constant-flag t)
+                                                              nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil))
+                                                (reparse-symbol arg-sub-list) [11991 12030]))                                          
+                                        :type ("OnCallSpec" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [11974 12304])
+                                    ("WillByDefault" function
+                                       (:arguments 
+                                          ( ("action" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("Action" type
+                                                     (:template-specifier 
+                                                        ( ("F" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil))
+                                                (reparse-symbol arg-sub-list) [12379 12403]))                                          
+                                        :type ("OnCallSpec" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [12353 12765])
+                                    ("Matches" function
+                                       (:methodconst-flag t
+                                        :arguments 
+                                          ( ("args" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("ArgumentTuple" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [12855 12881]))                                          
+                                        :type "bool")
+                                        (reparse-symbol classsubparts) [12842 12967])
+                                    ("GetAction" function
+                                       (:methodconst-flag t
+                                        :constant-flag t
+                                        :type ("Action" type
+                                             (:template-specifier 
+                                                ( ("F" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol classsubparts) [13018 13245])
+                                    ("private" label nil (reparse-symbol classsubparts) [13248 13256])
+                                    ("matchers_" variable (:type ("ArgumentMatcherTuple" type (:type "class") nil nil)) (reparse-symbol classsubparts) [13773 13804])
+                                    ("extra_matcher_" variable (:type ("Matcher" type
+                                         (:template-specifier 
+                                            ( ("ArgumentTuple" type
+                                                 (:reference 1
+                                                  :constant-flag t)
+                                                  nil nil))                                            
+                                          :type "class")
+                                          nil nil)) (reparse-symbol classsubparts) [13807 13852])
+                                    ("action_" variable (:type ("Action" type
+                                         (:template-specifier 
+                                            ( ("F" type nil nil nil))                                            
+                                          :type "class")
+                                          nil nil)) (reparse-symbol classsubparts) [13855 13873]))                                  
+                                :superclasses 
+                                  ( ("UntypedOnCallSpecBase" type
+                                       (:protection "public"
+                                        :type "class")
+                                        nil nil))                                  )
+                                (reparse-symbol namespacesubparts) [11161 13876])
+                            ("CallReaction" type
+                               (:members 
+                                  ( ("kAllow" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [13967 13974])
+                                    ("kWarn" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [13977 13983])
+                                    ("kFail" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [13986 13992]))                                  
+                                :type "enum")
+                                (reparse-symbol namespacesubparts) [13945 13995]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [3430 13998])
+                    ("Mock" variable (:type ("GTEST_API_" type
+                         (:prototype t
+                          :type "class")
+                          nil nil)) (reparse-symbol namespacesubparts) [14067 18280])
+                    ("Expectation" variable (:type ("GTEST_API_" type
+                         (:prototype t
+                          :type "class")
+                          nil nil)) (reparse-symbol namespacesubparts) [18913 20985])
+                    ("ExpectationSet" type
+                       (:members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [21459 21466])
+                            ("const_iterator" type
+                               (:typedef ("Expectation::Set::const_iterator" type (:type "class") nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [21541 21597])
+                            ("value_type" type
+                               (:typedef ("Expectation::Set::value_type" type (:type "class") nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [21669 21717])
+                            ("ExpectationSet" function
+                               (:constructor-flag t
+                                :type ("ExpectationSet" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [21751 21770])
+                            ("ExpectationSet" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("exp" variable
+                                       (:reference 1
+                                        :type ("internal::ExpectationBase" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [21924 21955]))                                  
+                                :type ("ExpectationSet" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [21909 22003])
+                            ("ExpectationSet" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("e" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Expectation" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [22222 22243]))                                  
+                                :type ("ExpectationSet" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [22207 22276])
+                            ("==" function
+                               (:methodconst-flag t
+                                :operator-flag t
+                                :arguments 
+                                  ( ("rhs" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("ExpectationSet" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [22513 22539]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [22497 22598])
+                            ("!=" function
+                               (:methodconst-flag t
+                                :operator-flag t
+                                :arguments 
+                                  ( ("rhs" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("ExpectationSet" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [22618 22644]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [22602 22678])
+                            ("+=" function
+                               (:operator-flag t
+                                :arguments 
+                                  ( ("e" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Expectation" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [22780 22801]))                                  
+                                :type ("ExpectationSet" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [22753 22854])
+                            ("size" function
+                               (:methodconst-flag t
+                                :type "int")
+                                (reparse-symbol classsubparts) [22858 22925])
+                            ("begin" function
+                               (:methodconst-flag t
+                                :type ("const_iterator" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [22929 22991])
+                            ("end" function
+                               (:methodconst-flag t
+                                :type ("const_iterator" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [22994 23052])
+                            ("private" label nil (reparse-symbol classsubparts) [23055 23063])
+                            ("expectations_" variable (:type ("Expectation::Set" type (:type "class") nil nil)) (reparse-symbol classsubparts) [23066 23097]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [21435 23100])
+                    ("Sequence" variable (:type ("GTEST_API_" type
+                         (:prototype t
+                          :type "class")
+                          nil nil)) (reparse-symbol namespacesubparts) [23313 23812])
+                    ("GTEST_ATTRIBUTE_UNUSED_" variable (:type "int") (reparse-symbol namespacesubparts) [24983 25007])
+                    ("internal" type
+                       (:members 
+                          ( ("g_gmock_implicit_sequence" variable
+                               (:typemodifiers ("extern")
+                                :type ("ThreadLocal" type
+                                     (:template-specifier 
+                                        ( ("Sequence" type (:pointer 1) nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol namespacesubparts) [25161 25217])
+                            ("ExpectationBase" variable (:type ("GTEST_API_" type
+                                 (:prototype t
+                                  :type "class")
+                                  nil nil)) (reparse-symbol namespacesubparts) [25806 32658])
+                            ("TypedExpectation" type
+                               (:template 
+                                  ( ("F" type (:type "class") nil nil))                                  
+                                :type "class"
+                                :members 
+                                  ( ("public" label nil (reparse-symbol classsubparts) [32816 32823])
+                                    ("ArgumentTuple" variable (:type ("ArgumentTuple" type (:type "class") nil nil)) (reparse-symbol classsubparts) [32856 32884])
+                                    ("ArgumentMatcherTuple" variable (:type ("ArgumentMatcherTuple" type (:type "class") nil nil)) (reparse-symbol classsubparts) [32917 32959])
+                                    ("Result" variable (:type ("Result" type (:type "class") nil nil)) (reparse-symbol classsubparts) [32992 33006])
+                                    ("TypedExpectation" function
+                                       (:constructor-flag t
+                                        :arguments 
+                                          ( ("owner" variable
+                                               (:pointer 1
+                                                :type ("FunctionMocker" type
+                                                     (:template-specifier 
+                                                        ( ("F" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil))
+                                                (reparse-symbol arg-sub-list) [33027 33052])
+                                            ("a_file" variable
+                                               (:pointer 1
+                                                :constant-flag t
+                                                :type "char")
+                                                (reparse-symbol arg-sub-list) [33053 33072])
+                                            ("a_line" variable (:type "int") (reparse-symbol arg-sub-list) [33073 33084])
+                                            ("a_source_text" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("std::string" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [33104 33137])
+                                            ("m" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("ArgumentMatcherTuple" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [33157 33187]))                                          
+                                        :type ("TypedExpectation" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [33010 33598])
+                                    ("With" function
+                                       (:arguments 
+                                          ( ("m" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("Matcher" type
+                                                     (:template-specifier 
+                                                        ( ("ArgumentTuple" type
+                                                             (:reference 1
+                                                              :constant-flag t)
+                                                              nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil))
+                                                (reparse-symbol arg-sub-list) [34035 34074]))                                          
+                                        :type ("TypedExpectation" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [34012 34543])
+                                    ("Times" function
+                                       (:arguments 
+                                          ( ("a_cardinality" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("Cardinality" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [34608 34641]))                                          
+                                        :type ("TypedExpectation" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [34584 34715])
+                                    ("Times" function
+                                       (:arguments 
+                                          ( ("n" variable (:type "int") (reparse-symbol arg-sub-list) [34780 34786]))                                          
+                                        :type ("TypedExpectation" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [34756 34822])
+                                    ("InSequence" function
+                                       (:arguments 
+                                          ( ("s" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("Sequence" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [34897 34915]))                                          
+                                        :type ("TypedExpectation" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [34868 35241])
+                                    ("InSequence" function
+                                       (:arguments 
+                                          ( ("s1" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("Sequence" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [35273 35292])
+                                            ("s2" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("Sequence" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [35293 35312]))                                          
+                                        :type ("TypedExpectation" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [35244 35360])
+                                    ("InSequence" function
+                                       (:arguments 
+                                          ( ("s1" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("Sequence" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [35392 35411])
+                                            ("s2" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("Sequence" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [35412 35431])
+                                            ("s3" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("Sequence" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [35463 35482]))                                          
+                                        :type ("TypedExpectation" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [35363 35534])
+                                    ("InSequence" function
+                                       (:arguments 
+                                          ( ("s1" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("Sequence" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [35566 35585])
+                                            ("s2" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("Sequence" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [35586 35605])
+                                            ("s3" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("Sequence" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [35637 35656])
+                                            ("s4" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("Sequence" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [35657 35676]))                                          
+                                        :type ("TypedExpectation" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [35537 35732])
+                                    ("InSequence" function
+                                       (:arguments 
+                                          ( ("s1" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("Sequence" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [35764 35783])
+                                            ("s2" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("Sequence" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [35784 35803])
+                                            ("s3" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("Sequence" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [35835 35854])
+                                            ("s4" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("Sequence" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [35855 35874])
+                                            ("s5" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("Sequence" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [35906 35925]))                                          
+                                        :type ("TypedExpectation" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [35735 35985])
+                                    ("After" function
+                                       (:arguments 
+                                          ( ("s" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("ExpectationSet" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [36051 36075]))                                          
+                                        :type ("TypedExpectation" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [36027 36465])
+                                    ("After" function
+                                       (:arguments 
+                                          ( ("s1" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("ExpectationSet" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [36492 36517])
+                                            ("s2" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("ExpectationSet" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [36518 36543]))                                          
+                                        :type ("TypedExpectation" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [36468 36581])
+                                    ("After" function
+                                       (:arguments 
+                                          ( ("s1" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("ExpectationSet" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [36608 36633])
+                                            ("s2" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("ExpectationSet" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [36634 36659])
+                                            ("s3" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("ExpectationSet" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [36686 36711]))                                          
+                                        :type ("TypedExpectation" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [36584 36753])
+                                    ("After" function
+                                       (:arguments 
+                                          ( ("s1" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("ExpectationSet" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [36780 36805])
+                                            ("s2" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("ExpectationSet" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [36806 36831])
+                                            ("s3" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("ExpectationSet" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [36858 36883])
+                                            ("s4" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("ExpectationSet" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [36884 36909]))                                          
+                                        :type ("TypedExpectation" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [36756 36955])
+                                    ("After" function
+                                       (:arguments 
+                                          ( ("s1" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("ExpectationSet" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [36982 37007])
+                                            ("s2" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("ExpectationSet" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [37008 37033])
+                                            ("s3" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("ExpectationSet" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [37060 37085])
+                                            ("s4" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("ExpectationSet" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [37086 37111])
+                                            ("s5" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("ExpectationSet" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [37138 37163]))                                          
+                                        :type ("TypedExpectation" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [36958 37213])
+                                    ("WillOnce" function
+                                       (:arguments 
+                                          ( ("action" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("Action" type
+                                                     (:template-specifier 
+                                                        ( ("F" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil))
+                                                (reparse-symbol arg-sub-list) [37284 37308]))                                          
+                                        :type ("TypedExpectation" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [37257 37715])
+                                    ("WillRepeatedly" function
+                                       (:arguments 
+                                          ( ("action" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("Action" type
+                                                     (:template-specifier 
+                                                        ( ("F" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil))
+                                                (reparse-symbol arg-sub-list) [37798 37822]))                                          
+                                        :type ("TypedExpectation" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [37765 38605])
+                                    ("RetiresOnSaturation" function (:type ("TypedExpectation" type (:type "class") nil nil)) (reparse-symbol classsubparts) [38660 39105])
+                                    ("matchers" function
+                                       (:methodconst-flag t
+                                        :constant-flag t
+                                        :type ("ArgumentMatcherTuple" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [39203 39275])
+                                    ("extra_matcher" function
+                                       (:methodconst-flag t
+                                        :constant-flag t
+                                        :type ("Matcher" type
+                                             (:template-specifier 
+                                                ( ("ArgumentTuple" type
+                                                     (:reference 1
+                                                      :constant-flag t)
+                                                      nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol classsubparts) [39337 39428])
+                                    ("repeated_action" function
+                                       (:methodconst-flag t
+                                        :constant-flag t
+                                        :type ("Action" type
+                                             (:template-specifier 
+                                                ( ("F" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol classsubparts) [39499 39568])
+                                    ("private" label nil (reparse-symbol classsubparts) [39879 39887])
+                                    ("FunctionMocker" type
+                                       (:template 
+                                          ( ("Function" type (:type "class") nil nil))                                          
+                                        :type "class"
+                                        :prototype t)
+                                        (reparse-symbol classsubparts) [39890 39949])
+                                    ("GTEST_EXCLUSIVE_LOCK_REQUIRED_" function
+                                       (:constant-flag t
+                                        :arguments 
+                                          ( ("" variable (:type ("g_gmock_mutex" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [40425 40439]))                                          
+                                        :type "int")
+                                        (reparse-symbol classsubparts) [40382 40551])
+                                    ("GTEST_EXCLUSIVE_LOCK_REQUIRED_" function
+                                       (:constant-flag t
+                                        :arguments 
+                                          ( ("" variable (:type ("g_gmock_mutex" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [40742 40756]))                                          
+                                        :type "int")
+                                        (reparse-symbol classsubparts) [40699 41151])
+                                    ("GTEST_EXCLUSIVE_LOCK_REQUIRED_" function
+                                       (:constant-flag t
+                                        :arguments 
+                                          ( ("" variable (:type ("g_gmock_mutex" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [41392 41406]))                                          
+                                        :type "int")
+                                        (reparse-symbol classsubparts) [41345 42995])
+                                    ("GTEST_EXCLUSIVE_LOCK_REQUIRED_" function
+                                       (:constant-flag t
+                                        :arguments 
+                                          ( ("" variable (:type ("g_gmock_mutex" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [43245 43259]))                                          
+                                        :type "int")
+                                        (reparse-symbol classsubparts) [43202 44354])
+                                    ("GTEST_EXCLUSIVE_LOCK_REQUIRED_" function
+                                       (:arguments 
+                                          ( ("" variable (:type ("g_gmock_mutex" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [45075 45089]))                                          
+                                        :type "int")
+                                        (reparse-symbol classsubparts) [45044 45809])
+                                    ("owner_" variable
+                                       (:pointer 1
+                                        :type ("FunctionMocker" type
+                                             (:template-specifier 
+                                                ( ("F" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol classsubparts) [45900 45932])
+                                    ("matchers_" variable (:type ("ArgumentMatcherTuple" type (:type "class") nil nil)) (reparse-symbol classsubparts) [45935 45966])
+                                    ("extra_matcher_" variable (:type ("Matcher" type
+                                         (:template-specifier 
+                                            ( ("ArgumentTuple" type
+                                                 (:reference 1
+                                                  :constant-flag t)
+                                                  nil nil))                                            
+                                          :type "class")
+                                          nil nil)) (reparse-symbol classsubparts) [45969 46014])
+                                    ("repeated_action_" variable (:type ("Action" type
+                                         (:template-specifier 
+                                            ( ("F" type nil nil nil))                                            
+                                          :type "class")
+                                          nil nil)) (reparse-symbol classsubparts) [46017 46044])
+                                    ("GTEST_DISALLOW_COPY_AND_ASSIGN_" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("" variable (:type ("TypedExpectation" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [46080 46097]))                                          
+                                        :type "int")
+                                        (reparse-symbol classsubparts) [46048 46098]))                                  
+                                :superclasses 
+                                  ( ("ExpectationBase" type
+                                       (:protection "public"
+                                        :type "class")
+                                        nil nil))                                  )
+                                (reparse-symbol namespacesubparts) [32743 46101])
+                            ("LogWithLocation" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("severity" variable (:type ("testing::internal::LogSeverity" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [46684 46724])
+                                    ("file" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type "char")
+                                        (reparse-symbol arg-sub-list) [46757 46774])
+                                    ("line" variable (:type "int") (reparse-symbol arg-sub-list) [46775 46784])
+                                    ("message" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [46817 46844]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [46663 46845])
+                            ("MockSpec" type
+                               (:template 
+                                  ( ("F" type (:type "class") nil nil))                                  
+                                :type "class"
+                                :members 
+                                  ( ("public" label nil (reparse-symbol classsubparts) [46887 46894])
+                                    ("ArgumentTuple" type
+                                       (:typedef ("internal::Function::ArgumentTuple" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [46897 46965])
+                                    ("ArgumentMatcherTuple" type
+                                       (:typedef ("internal::Function::ArgumentMatcherTuple" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [46968 47056])
+                                    ("MockSpec" function
+                                       (:constructor-flag t
+                                        :arguments 
+                                          ( ("function_mocker" variable
+                                               (:pointer 1
+                                                :type ("internal::FunctionMocker" type
+                                                     (:template-specifier 
+                                                        ( ("F" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil))
+                                                (reparse-symbol arg-sub-list) [47176 47221])
+                                            ("matchers" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("ArgumentMatcherTuple" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [47233 47270]))                                          
+                                        :type ("MockSpec" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [47167 47336])
+                                    ("InternalDefaultActionSetAt" function
+                                       (:arguments 
+                                          ( ("file" variable
+                                               (:pointer 1
+                                                :constant-flag t
+                                                :type "char")
+                                                (reparse-symbol arg-sub-list) [47499 47516])
+                                            ("line" variable (:type "int") (reparse-symbol arg-sub-list) [47517 47526])
+                                            ("obj" variable
+                                               (:pointer 1
+                                                :constant-flag t
+                                                :type "char")
+                                                (reparse-symbol arg-sub-list) [47527 47543])
+                                            ("call" variable
+                                               (:pointer 1
+                                                :constant-flag t
+                                                :type "char")
+                                                (reparse-symbol arg-sub-list) [47544 47561]))                                          
+                                        :type ("internal::OnCallSpec" type
+                                             (:template-specifier 
+                                                ( ("F" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol classsubparts) [47440 47766])
+                                    ("InternalExpectedAt" function
+                                       (:arguments 
+                                          ( ("file" variable
+                                               (:pointer 1
+                                                :constant-flag t
+                                                :type "char")
+                                                (reparse-symbol arg-sub-list) [47924 47941])
+                                            ("line" variable (:type "int") (reparse-symbol arg-sub-list) [47942 47951])
+                                            ("obj" variable
+                                               (:pointer 1
+                                                :constant-flag t
+                                                :type "char")
+                                                (reparse-symbol arg-sub-list) [47952 47968])
+                                            ("call" variable
+                                               (:pointer 1
+                                                :constant-flag t
+                                                :type "char")
+                                                (reparse-symbol arg-sub-list) [47969 47986]))                                          
+                                        :type ("internal::TypedExpectation" type
+                                             (:template-specifier 
+                                                ( ("F" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol classsubparts) [47867 48285])
+                                    ("()" function
+                                       (:operator-flag t
+                                        :arguments 
+                                          ( ("" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("internal::WithoutMatchers" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [48487 48520])
+                                            ("" variable
+                                               (:pointer 1
+                                                :type "void")
+                                                (reparse-symbol arg-sub-list) [48521 48533]))                                          
+                                        :type ("MockSpec" type
+                                             (:template-specifier 
+                                                ( ("F" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol classsubparts) [48463 48557])
+                                    ("private" label nil (reparse-symbol classsubparts) [48560 48568])
+                                    ("FunctionMocker" type
+                                       (:template 
+                                          ( ("Function" type (:type "class") nil nil))                                          
+                                        :type "class"
+                                        :prototype t
+                                        :parent "internal")
+                                        (reparse-symbol classsubparts) [48571 48640])
+                                    ("function_mocker_" variable
+                                       (:pointer 1
+                                        :type ("internal::FunctionMocker" type
+                                             (:template-specifier 
+                                                ( ("F" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol classsubparts) [48690 48742])
+                                    ("matchers_" variable (:type ("ArgumentMatcherTuple" type (:type "class") nil nil)) (reparse-symbol classsubparts) [48795 48826])
+                                    ("GTEST_DISALLOW_ASSIGN_" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("" variable (:type ("MockSpec" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [48853 48862]))                                          
+                                        :type "int")
+                                        (reparse-symbol classsubparts) [48830 48863]))                                  )
+                                (reparse-symbol namespacesubparts) [46847 48866])
+                            ("ReferenceOrValueWrapper" type
+                               (:template 
+                                  ( ("T" type (:type "class") nil nil))                                  
+                                :type "class"
+                                :members 
+                                  ( ("public" label nil (reparse-symbol classsubparts) [49463 49470])
+                                    ("ReferenceOrValueWrapper" function
+                                       (:constructor-flag t
+                                        :arguments 
+                                          ( ("value" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [49564 49572]))                                          
+                                        :type ("ReferenceOrValueWrapper" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [49540 49611])
+                                    ("Unwrap" function (:type ("T" type (:type "class") nil nil)) (reparse-symbol classsubparts) [49791 49831])
+                                    ("Peek" function
+                                       (:methodconst-flag t
+                                        :constant-flag t
+                                        :type ("T" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [50099 50145])
+                                    ("private" label nil (reparse-symbol classsubparts) [50148 50156])
+                                    ("value_" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol classsubparts) [50159 50168]))                                  )
+                                (reparse-symbol namespacesubparts) [49408 50171])
+                            ("ReferenceOrValueWrapper" type
+                               (:template 
+                                  ( ("T" type (:type "class") nil nil))                                  
+                                :type "class"
+                                :members 
+                                  ( ("public" label nil (reparse-symbol classsubparts) [50321 50328])
+                                    ("reference" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol classsubparts) [50462 50475])
+                                    ("ReferenceOrValueWrapper" function
+                                       (:constructor-flag t
+                                        :arguments 
+                                          ( ("ref" variable (:type ("reference" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [50511 50525]))                                          
+                                        :type ("ReferenceOrValueWrapper" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [50487 50553])
+                                    ("Unwrap" function (:type ("T" type (:type "class") nil nil)) (reparse-symbol classsubparts) [50556 50591])
+                                    ("Peek" function
+                                       (:methodconst-flag t
+                                        :constant-flag t
+                                        :type ("T" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [50594 50639])
+                                    ("private" label nil (reparse-symbol classsubparts) [50642 50650])
+                                    ("value_ptr_" variable
+                                       (:pointer 1
+                                        :type ("T" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [50653 50667]))                                  
+                                :template-specifier 
+                                  ( ("T" type (:reference 1) nil nil))                                  )
+                                (reparse-symbol namespacesubparts) [50262 50670])
+                            ("UntypedActionResultHolderBase" type
+                               (:members 
+                                  ( ("public" label nil (reparse-symbol classsubparts) [51207 51214])
+                                    ("UntypedActionResultHolderBase" function
+                                       (:destructor-flag t
+                                        :typemodifiers ("virtual")
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [51217 51260])
+                                    ("PrintAsActionResult" function
+                                       (:pure-virtual-flag t
+                                        :prototype-flag t
+                                        :methodconst-flag t
+                                        :typemodifiers ("virtual")
+                                        :arguments 
+                                          ( ("os" variable
+                                               (:pointer 1
+                                                :type ("std::ostream" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [51355 51372]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [51320 51383]))                                  
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [51168 51386])
+                            ("ActionResultHolder" type
+                               (:template 
+                                  ( ("T" type (:type "class") nil nil))                                  
+                                :type "class"
+                                :members 
+                                  ( ("public" label nil (reparse-symbol classsubparts) [51532 51539])
+                                    ("Unwrap" function (:type ("T" type (:type "class") nil nil)) (reparse-symbol classsubparts) [51606 51651])
+                                    ("PerformDefaultAction" function
+                                       (:template 
+                                          ( ("F" type (:type "class") nil nil))                                          
+                                        :type ("ActionResultHolder" type (:type "class") nil nil)
+                                        :arguments 
+                                          ( ("func_mocker" variable
+                                               (:pointer 1
+                                                :constant-flag t
+                                                :type ("FunctionMocker" type
+                                                     (:template-specifier 
+                                                        ( ("F" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil))
+                                                (reparse-symbol arg-sub-list) [52130 52167])
+                                            ("" variable
+                                               (:typemodifiers ("typename")
+                                                :type ("Function" type
+                                                     (:template-specifier 
+                                                        ( ("F" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil))
+                                                (reparse-symbol arg-sub-list) [52174 52195])
+                                            ("" variable
+                                               (:reference 1
+                                                :type ("ArgumentTuple" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [52196 52211])
+                                            ("" variable (:type ("args" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [52212 52217])
+                                            ("call_description" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("std::string" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [52224 52260]))                                          
+                                        :typemodifiers ("static")
+                                        :pointer 1)
+                                        (reparse-symbol classsubparts) [52051 52389])
+                                    ("PerformAction" function
+                                       (:template 
+                                          ( ("F" type (:type "class") nil nil))                                          
+                                        :type ("ActionResultHolder" type (:type "class") nil nil)
+                                        :arguments 
+                                          ( ("action" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("Action" type
+                                                     (:template-specifier 
+                                                        ( ("F" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil))
+                                                (reparse-symbol arg-sub-list) [52556 52580])
+                                            ("" variable
+                                               (:typemodifiers ("typename")
+                                                :type ("Function" type
+                                                     (:template-specifier 
+                                                        ( ("F" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil))
+                                                (reparse-symbol arg-sub-list) [52581 52602])
+                                            ("" variable
+                                               (:reference 1
+                                                :type ("ArgumentTuple" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [52603 52618])
+                                            ("" variable (:type ("args" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [52619 52624]))                                          
+                                        :typemodifiers ("static")
+                                        :pointer 1)
+                                        (reparse-symbol classsubparts) [52484 52716])
+                                    ("private" label nil (reparse-symbol classsubparts) [52719 52727])
+                                    ("Wrapper" type
+                                       (:typedef ("ReferenceOrValueWrapper" type
+                                             (:template-specifier 
+                                                ( ("T" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [52730 52773])
+                                    ("ActionResultHolder" function
+                                       (:constructor-flag t
+                                        :arguments 
+                                          ( ("result" variable (:type ("Wrapper" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [52805 52820]))                                          
+                                        :type ("ActionResultHolder" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [52786 52861])
+                                    ("result_" variable (:type ("Wrapper" type (:type "class") nil nil)) (reparse-symbol classsubparts) [52865 52881])
+                                    ("GTEST_DISALLOW_COPY_AND_ASSIGN_" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("" variable (:type ("ActionResultHolder" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [52917 52936]))                                          
+                                        :type "int")
+                                        (reparse-symbol classsubparts) [52885 52937]))                                  
+                                :superclasses 
+                                  ( ("UntypedActionResultHolderBase" type
+                                       (:protection "public"
+                                        :type "class")
+                                        nil nil))                                  )
+                                (reparse-symbol namespacesubparts) [51443 52940])
+                            ("ActionResultHolder" type
+                               (:type "class"
+                                :members 
+                                  ( ("public" label nil (reparse-symbol classsubparts) [53059 53066])
+                                    ("Unwrap" function (:type "void") (reparse-symbol classsubparts) [53069 53086])
+                                    ("PerformDefaultAction" function
+                                       (:template 
+                                          ( ("F" type (:type "class") nil nil))                                          
+                                        :type ("ActionResultHolder" type (:type "class") nil nil)
+                                        :arguments 
+                                          ( ("func_mocker" variable
+                                               (:pointer 1
+                                                :constant-flag t
+                                                :type ("FunctionMocker" type
+                                                     (:template-specifier 
+                                                        ( ("F" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil))
+                                                (reparse-symbol arg-sub-list) [53356 53393])
+                                            ("" variable
+                                               (:typemodifiers ("typename")
+                                                :type ("Function" type
+                                                     (:template-specifier 
+                                                        ( ("F" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil))
+                                                (reparse-symbol arg-sub-list) [53400 53421])
+                                            ("" variable
+                                               (:reference 1
+                                                :type ("ArgumentTuple" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [53422 53437])
+                                            ("" variable (:type ("args" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [53438 53443])
+                                            ("call_description" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("std::string" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [53450 53486]))                                          
+                                        :typemodifiers ("static")
+                                        :pointer 1)
+                                        (reparse-symbol classsubparts) [53277 53601])
+                                    ("PerformAction" function
+                                       (:template 
+                                          ( ("F" type (:type "class") nil nil))                                          
+                                        :type ("ActionResultHolder" type (:type "class") nil nil)
+                                        :arguments 
+                                          ( ("action" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("Action" type
+                                                     (:template-specifier 
+                                                        ( ("F" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil))
+                                                (reparse-symbol arg-sub-list) [53768 53792])
+                                            ("" variable
+                                               (:typemodifiers ("typename")
+                                                :type ("Function" type
+                                                     (:template-specifier 
+                                                        ( ("F" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil))
+                                                (reparse-symbol arg-sub-list) [53793 53814])
+                                            ("" variable
+                                               (:reference 1
+                                                :type ("ArgumentTuple" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [53815 53830])
+                                            ("" variable (:type ("args" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [53831 53836]))                                          
+                                        :typemodifiers ("static")
+                                        :pointer 1)
+                                        (reparse-symbol classsubparts) [53696 53914])
+                                    ("private" label nil (reparse-symbol classsubparts) [53917 53925])
+                                    ("ActionResultHolder" function
+                                       (:constructor-flag t
+                                        :type ("ActionResultHolder" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [53928 53951])
+                                    ("GTEST_DISALLOW_COPY_AND_ASSIGN_" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("" variable (:type ("ActionResultHolder" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [53986 54005]))                                          
+                                        :type "int")
+                                        (reparse-symbol classsubparts) [53954 54006]))                                  
+                                :superclasses 
+                                  ( ("UntypedActionResultHolderBase" type
+                                       (:protection "public"
+                                        :type "class")
+                                        nil nil))                                  
+                                :template-specifier 
+                                  ( ("void" type nil nil nil))                                  )
+                                (reparse-symbol namespacesubparts) [52974 54009])
+                            ("FunctionMocker" type
+                               (:template 
+                                  ( ("F" type (:type "class") nil nil))                                  
+                                :type "class"
+                                :prototype t)
+                                (reparse-symbol namespacesubparts) [54011 54054])
+                            ("UntypedFunctionMockerBase" variable (:type "int") (reparse-symbol namespacesubparts) [54144 67339])
+                            ("ReportUninterestingCall" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("reaction" variable (:type ("CallReaction" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [67500 67522])
+                                    ("msg" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [67523 67546]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [67471 67547]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [25009 67550])
+                    ("MockFunction" type
+                       (:template 
+                          ( ("F" type (:type "class") nil nil))                          
+                        :type "class"
+                        :prototype t)
+                        (reparse-symbol namespacesubparts) [69137 69178])
+                    ("internal::MockSpec" using (:type ("internal::MockSpec" type
+                         (:prototype t
+                          :type "class")
+                          nil nil)) (reparse-symbol namespacesubparts) [70456 70481])
+                    ("Const" function
+                       (:template 
+                          ( ("T" type (:type "class") nil nil))                          
+                        :type ("T" type (:type "class") nil nil)
+                        :arguments 
+                          ( ("x" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [71019 71030]))                          
+                        :constant-flag t
+                        :typemodifiers ("inline"))
+                        (reparse-symbol namespacesubparts) [70975 71044])
+                    ("Expectation" function
+                       (:constructor-flag t
+                        :parent "Expectation"
+                        :typemodifiers ("inline")
+                        :arguments 
+                          ( ("exp" variable
+                               (:reference 1
+                                :type ("internal::ExpectationBase" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [71147 71178]))                          
+                        :type ("Expectation" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [71115 71252]))                  
+                :type "namespace")
+                nil [3181 71255])
+            ("GMOCK_ON_CALL_IMPL_" variable (:constant-flag t) nil [74043 74062])
+            ("ON_CALL" variable (:constant-flag t) nil [74319 74326])
+            ("EXPECT_CALL" variable (:constant-flag t) nil [74410 74421]))          
+      :file "gmock-spec-builders.h"
+      :pointmax 74543
+      :fsize 74542
+      :lastmodtime '(24171 48250 189988 493000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("GMOCK_INCLUDE_GMOCK_GMOCK_SPEC_BUILDERS_H_")
+          ("ON_CALL" (spp-arg-list ("obj" "call") 74326 . 74337) . ((symbol "GMOCK_ON_CALL_IMPL_" 74342 . 74361) (semantic-list "(obj, InternalDefaultActionSetAt, call)" 74361 . 74400)))
+          ("GMOCK_ON_CALL_IMPL_" (spp-arg-list ("mock_expr" "Setter" "call") 74062 . 74087) . 
+              ((semantic-list "((mock_expr).gmock_##call)" 74111 . 74137) (semantic-list "(::testing::internal::GetWithoutMatchers(), \\
+                             nullptr)" 74137 . 74220) (punctuation "." 74263 . 74264) (symbol "Setter" 74264 . 74270) (semantic-list "(__FILE__, __LINE__, #mock_expr, #call)" 74270 . 74309)))
+          ("EXPECT_CALL" (spp-arg-list ("obj" "call") 74421 . 74432) . ((symbol "GMOCK_ON_CALL_IMPL_" 74437 . 74456) (semantic-list "(obj, InternalExpectedAt, call)" 74456 . 74487)))
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :file "gmock-actions.h"
+      :fsize 58502
+      :lastmodtime '(24169 289 33138 934000))
+    (semanticdb-table "semanticdb-table"
+      :file "gmock-cardinalities.h"
+      :fsize 6037
+      :lastmodtime '(24169 181 558858 617000))
+    (semanticdb-table "semanticdb-table"
+      :file "gmock-matchers.h"
+      :fsize 185283
+      :lastmodtime '(24169 289 33138 934000)))
+  :file "!home!mk!work!practical-googletest!googletest!googlemock!include!gmock!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

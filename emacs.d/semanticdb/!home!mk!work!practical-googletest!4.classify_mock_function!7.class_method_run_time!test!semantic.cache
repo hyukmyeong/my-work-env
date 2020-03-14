@@ -1,0 +1,52 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("iostream" include (:system-flag t) nil [1 20])
+            ("string" include (:system-flag t) nil [21 38])
+            ("gtest/gtest.h" include nil nil [39 63])
+            ("gmock/gmock.h" include nil nil [64 88])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [90 110])
+            ("testing" variable (:type "int") nil [129 137])
+            ("MockDOC" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [155 162])
+                    ("MOCK_METHOD1" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type ("foo" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [180 184])
+                            ("" variable (:type "int") (reparse-symbol arg-sub-list) [185 197]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [167 199]))                  
+                :type "class")
+                nil [139 202])
+            ("TEST" function
+               (:arguments 
+                  ( ("" variable (:type ("SequenceTest" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [209 222])
+                    ("" variable (:type ("InSequenceClass" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [223 239]))                  
+                :type "int")
+                nil [204 972])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [983 992])
+                    ("argv" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [993 1005]))                  
+                :type "int")
+                nil [974 1081]))          
+      :file "gtest_main.cpp"
+      :pointmax 1082
+      :fsize 1081
+      :lastmodtime '(24171 48751 532450 271000)
+      :unmatched-syntax '((semantic-list 188 . 197) (punctuation 128 . 129) (USING 111 . 116))))
+  :file "!home!mk!work!practical-googletest!4.classify_mock_function!7.class_method_run_time!test!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,59 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode makefile-automake-mode
+      :tags 
+        '( ("AUTOMAKE_OPTIONS" variable (:default-value ("nostdinc")) nil [966 994])
+            ("RUNTESTDEFAULTFLAGS" variable (:default-value ("--tool" "$$tool" "--srcdir" "$$srcdir")) nil [994 1048])
+            ("EXPECT" variable (:default-value ("expect")) nil [1048 1064])
+            ("$(top_srcdir)/fragment.am" include nil nil [1065 1099])
+            ("lists_of_files" variable (:default-value ("testsuite_files" "testsuite_files_interactive" "testsuite_files_performance")) nil [1222 1326])
+            ("${lists_of_files}" function nil nil [1392 1511])
+            ("site.exp" function (:arguments ("Makefile")) nil [1788 3012])
+            ("extract_symvers" variable (:default-value ("$(glibcxx_builddir)/scripts/extract_symvers")) nil [3014 3076])
+            ("baseline_subdir" variable (:default-value ("$(shell $(CXX) $(baseline_subdir_switch))")) nil [3077 3138])
+            ("baseline_symbols" function nil nil [3139 3391])
+            ("new-abi-baseline" function nil nil [3392 3792])
+            ("%/site.exp" function (:arguments ("site.exp")) nil [3793 4157])
+            ("check_p_numbers0" variable (:default-value ("1" "2" "3" "4" "5" "6" "7" "8" "9")) nil [4158 4194])
+            ("check_p_numbers1" variable (:default-value ("0" "$(check_p_numbers0)")) nil [4194 4234])
+            ("check_p_numbers2" variable (:default-value ("$(foreach i,$(check_p_numbers0),$(addprefix $(i),$(check_p_numbers1)))")) nil [4234 4323])
+            ("check_p_numbers3" variable (:default-value ("$(addprefix 0,$(check_p_numbers1))" "$(check_p_numbers2)")) nil [4323 4396])
+            ("check_p_numbers4" variable (:default-value ("$(foreach i,$(check_p_numbers0),$(addprefix $(i),$(check_p_numbers3)))")) nil [4396 4485])
+            ("check_p_numbers5" variable (:default-value ("$(addprefix 0,$(check_p_numbers3))" "$(check_p_numbers4)")) nil [4485 4558])
+            ("check_p_numbers6" variable (:default-value ("$(foreach i,$(check_p_numbers0),$(addprefix $(i),$(check_p_numbers5)))")) nil [4558 4647])
+            ("check_p_numbers" variable (:default-value ("$(check_p_numbers0)" "$(check_p_numbers2)" "$(check_p_numbers4)" "$(check_p_numbers6)")) nil [4647 4744])
+            ("check_p_subdirs" variable (:default-value ("$(wordlist 1,$(if $(GCC_TEST_PARALLEL_SLOTS),$(GCC_TEST_PARALLEL_SLOTS),128),$(check_p_numbers))")) nil [4744 4857])
+            ("check_DEJAGNU_normal_targets" variable (:default-value ("$(addprefix check-DEJAGNUnormal,$(check_p_subdirs))")) nil [4857 4940])
+            ("$(check_DEJAGNU_normal_targets)" function (:arguments ("check-DEJAGNUnormal%:" "normal%/site.exp")) nil [4940 5012])
+            ("$(check_DEJAGNU_normal_targets)" function (:arguments ("check-DEJAGNU%:" "site.exp")) nil [5049 6622])
+            ("check-DEJAGNU" function (:arguments ("check-DEJAGNU%:" "site.exp")) nil [5049 6622])
+            ("check-am" function nil nil [6623 6672])
+            (".PHONY" function (:arguments ("check-DEJAGNU")) nil [6672 6694])
+            ("check-abi" function (:arguments ("site.exp" "baseline_symbols")) nil [6817 6926])
+            ("compile_script" variable (:default-value ("${glibcxx_srcdir}/scripts/check_compile")) nil [7112 7167])
+            ("check-compile" function (:arguments ("testsuite_files" "${compile_script}")) nil [7167 7309])
+            ("check_performance_script" variable (:default-value ("${glibcxx_srcdir}/scripts/check_performance")) nil [7561 7630])
+            ("check-performance" function (:arguments ("testsuite_files_performance" "${performance_script}")) nil [7630 7812])
+            ("debug_flags" variable (:default-value ("\"unix/-D_GLIBCXX_DEBUG\"")) nil [7849 7887])
+            ("libgomp_dir" variable (:default-value ("${glibcxx_builddir}/../libgomp")) nil [7927 7970])
+            ("libgomp_flags" variable (:default-value ("-B${glibcxx_builddir}/../libgomp" "-I${glibcxx_builddir}/../libgomp" "-L${glibcxx_builddir}/../libgomp/.libs" "-lgomp")) nil [7970 8121])
+            ("atomic_flags" variable (:default-value ("$(ATOMIC_FLAGS)")) nil [8122 8151])
+            ("parallel_flags" variable (:default-value ("\"unix/-D_GLIBCXX_PARALLEL/-fopenmp\"")) nil [8151 8202])
+            ("check-debug" function (:arguments ("site.exp")) nil [8203 8570])
+            ("check-parallel" function (:arguments ("site.exp")) nil [8571 9120])
+            ("check-performance-parallel" function (:arguments ("testsuite_files_performance" "${performance_script}")) nil [9121 9404])
+            (".PHONY" function (:arguments ("baseline_symbols" "new-abi-baseline" "check-abi" "check-compile" "check-performance" "check-parallel")) nil [9405 9507])
+            ("CLEANFILES" variable (:default-value ("*.txt" "*.tst" "*.exe" "core*" "filebuf_*" "tmp*" "ostream_*" "*.log" "*.sum" "testsuite_*" "site.exp" "abi_check" "baseline_symbols" "*TEST*" "*.dat" "*.ii" "*.s" "*.o" "*.cc" "*.x" "*.a" "*.so" "*.xml" "*.raw" "*.out" "*.gdb")) nil [9581 9787])
+            ("clean-local" function nil nil [9813 9872]))          
+      :file "Makefile.am"
+      :pointmax 9872
+      :fsize 9871
+      :lastmodtime '(23951 21818 382362 90000)
+      :unmatched-syntax '((shell-command 9827 . 9871) (bol 9826 . 9826))))
+  :file "!home!mk!work!gcc!libstdc++-v3!testsuite!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

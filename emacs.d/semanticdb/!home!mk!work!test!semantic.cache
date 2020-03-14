@@ -1,0 +1,75 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("iostream" include (:system-flag t) nil [1 20])
+            ("thread" include (:system-flag t) nil [21 38])
+            ("unistd.h" include (:system-flag t) nil [39 58])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [60 80])
+            ("var" variable
+               (:typemodifiers ("extern")
+                :type "int")
+                nil [82 97])
+            ("ref" variable
+               (:default-value "var"
+                :type "int")
+                nil [98 113])
+            ("boo" function
+               (:prototype-flag t
+                :type "int")
+                nil [117 127])
+            ("main" function (:type "int") nil [129 259]))          
+      :file "main.cpp"
+      :pointmax 260
+      :fsize 259
+      :lastmodtime '(24164 48831 438441 244000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("iostream" include (:system-flag t) nil [1 20])
+            ("var" variable
+               (:typemodifiers ("extern")
+                :default-value "3"
+                :type "int")
+                nil [22 41])
+            ("boo" function
+               (:typemodifiers ("extern")
+                :type "int")
+                nil [43 76]))          
+      :file "foo.cpp"
+      :pointmax 77
+      :fsize 76
+      :lastmodtime '(24164 48584 74851 266000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode makefile-gmake-mode
+      :tags 
+        '( (".PHONY" function (:arguments ("clean" "install")) nil [1 23])
+            (".SILENT" function (:arguments ("install")) nil [23 40])
+            ("CXX" variable (:default-value ("g++")) nil [41 57])
+            ("CXXFLAGS" variable (:default-value ("-Wall" "-Wextra")) nil [57 83])
+            ("SHELL" variable (:default-value ("/bin/bash")) nil [84 106])
+            ("DESTDIR" variable (:default-value ("./bin")) nil [106 124])
+            ("all" function (:arguments ("a.out" "install")) nil [125 144])
+            ("a.out" function (:arguments ("main.o" "libfoo.a")) nil [145 207])
+            ("main.o" function (:arguments ("main.cpp")) nil [208 257])
+            ("foo.o" function (:arguments ("foo.cpp")) nil [258 305])
+            ("libfoo.a" function (:arguments ("foo.o")) nil [306 346])
+            ("clean" function nil nil [347 366])
+            ("install" function nil nil [367 547]))          
+      :file "Makefile"
+      :pointmax 547
+      :fsize 546
+      :lastmodtime '(24164 49744 420496 169000)
+      :unmatched-syntax nil))
+  :file "!home!mk!work!test!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

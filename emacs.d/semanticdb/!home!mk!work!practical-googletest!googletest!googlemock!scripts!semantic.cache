@@ -1,0 +1,107 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode python-mode
+      :tags 
+        '( ("\"\"\"fuse_gmock_files.py v0.1.0
+Fuses Google Mock and Google Test source code into two .h files and a .cc file.
+
+SYNOPSIS
+       fuse_gmock_files.py [GMOCK_ROOT_DIR] OUTPUT_DIR
+
+       Scans GMOCK_ROOT_DIR for Google Mock and Google Test source
+       code, assuming Google Test is in the GMOCK_ROOT_DIR/../googletest
+       directory, and generates three files:
+       OUTPUT_DIR/gtest/gtest.h, OUTPUT_DIR/gmock/gmock.h, and
+       OUTPUT_DIR/gmock-gtest-all.cc.  Then you can build your tests
+       by adding OUTPUT_DIR to the include search path and linking
+       with OUTPUT_DIR/gmock-gtest-all.cc.  These three files contain
+       everything you need to use Google Mock.  Hence you can
+       \"install\" Google Mock by copying them to wherever you want.
+
+       GMOCK_ROOT_DIR can be omitted and defaults to the parent
+       directory of the directory holding this script.
+
+EXAMPLES
+       ./fuse_gmock_files.py fused_gmock
+       ./fuse_gmock_files.py path/to/unpacked/gmock fused_gmock
+
+This tool is experimental.  In particular, it assumes that there is no
+conditional inclusion of Google Mock or Google Test headers.  Please
+report any problems to googlemock@googlegroups.com.  You can read
+https://github.com/google/googletest/blob/master/googlemock/docs/cook_book.md for more
+information.
+\"\"\"" code nil nil [1554 2858])
+            ("__author__" variable nil nil [2860 2904])
+            ("os" include nil nil [2906 2915])
+            ("re" include nil nil [2916 2925])
+            ("sets" include nil nil [2926 2937])
+            ("sys" include nil nil [2938 2948])
+            ("DEFAULT_GMOCK_ROOT_DIR" variable nil nil [3043 3113])
+            ("sys" code nil nil [3178 3256])
+            ("fuse_gtest_files" include nil nil [3257 3280])
+            ("gtest" variable nil nil [3281 3305])
+            ("INCLUDE_GMOCK_FILE_REGEX" variable nil nil [3352 3424])
+            ("GMOCK_H_SEED" variable nil nil [3465 3503])
+            ("GMOCK_ALL_CC_SEED" variable nil nil [3504 3542])
+            ("GTEST_H_OUTPUT" variable nil nil [3580 3612])
+            ("GMOCK_H_OUTPUT" variable nil nil [3613 3645])
+            ("GMOCK_GTEST_ALL_CC_OUTPUT" variable nil nil [3646 3694])
+            ("GetGTestRootDir" function
+               (:documentation "Returns the root directory of Google Test."
+                :arguments 
+                  ( ("gmock_root" variable nil (reparse-symbol function_parameters) [3717 3727]))                  )
+                nil [3697 3833])
+            ("ValidateGMockRootDir" function
+               (:documentation "Makes sure gmock_root points to a valid gmock root directory.
+
+  The function aborts the program on failure.
+  "
+                :arguments 
+                  ( ("gmock_root" variable nil (reparse-symbol function_parameters) [3860 3870]))                  )
+                nil [3835 4159])
+            ("ValidateOutputDir" function
+               (:documentation "Makes sure output_dir points to a valid output directory.
+
+  The function aborts the program on failure.
+  "
+                :arguments 
+                  ( ("output_dir" variable nil (reparse-symbol function_parameters) [4183 4193]))                  )
+                nil [4161 4489])
+            ("FuseGMockH" function
+               (:documentation "Scans folder gmock_root to generate gmock/gmock.h in output_dir."
+                :arguments 
+                  ( ("gmock_root" variable nil (reparse-symbol function_parameters) [4506 4516])
+                    ("output_dir" variable nil (reparse-symbol function_parameters) [4518 4528]))                  )
+                nil [4491 5955])
+            ("FuseGMockAllCcToFile" function
+               (:documentation "Scans folder gmock_root to fuse gmock-all.cc into output_file."
+                :arguments 
+                  ( ("gmock_root" variable nil (reparse-symbol function_parameters) [5982 5992])
+                    ("output_file" variable nil (reparse-symbol function_parameters) [5994 6005]))                  )
+                nil [5957 7558])
+            ("FuseGMockGTestAllCc" function
+               (:documentation "Scans folder gmock_root to generate gmock-gtest-all.cc in output_dir."
+                :arguments 
+                  ( ("gmock_root" variable nil (reparse-symbol function_parameters) [7584 7594])
+                    ("output_dir" variable nil (reparse-symbol function_parameters) [7596 7606]))                  )
+                nil [7560 8021])
+            ("FuseGMock" function
+               (:documentation "Fuses gtest.h, gmock.h, and gmock-gtest-all.h."
+                :arguments 
+                  ( ("gmock_root" variable nil (reparse-symbol function_parameters) [8037 8047])
+                    ("output_dir" variable nil (reparse-symbol function_parameters) [8049 8059]))                  )
+                nil [8023 8329])
+            ("main" function nil nil [8331 8622])
+            ("if" code nil nil [8624 8660]))          
+      :file "fuse_gmock_files.py"
+      :pointmax 8660
+      :fsize 8659
+      :lastmodtime '(24169 181 570858 414000)
+      :unmatched-syntax nil))
+  :file "!home!mk!work!practical-googletest!googletest!googlemock!scripts!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,107 @@
+ls
+..
+ls
+rm -rf practical-googletest/
+ll
+ls
+ls -l
+clear
+
+ls
+git clone https://github.com/hyukmyeong/practical-googletest.git
+ls
+rm -rf luna-service2/
+rm -rf ls2-helpers/
+rm -rf googletest_ex/
+cd backup/
+ls
+..
+rm -rf backup/
+ll
+ls
+cd trash/
+ls
+..
+rm -rf trash/
+ll
+ls
+cd bionic/
+ls
+..
+ls
+cd gcc/
+ls
+ls
+..
+ls
+cd algoritm/
+ls
+vi main.cpp 
+ls
+..
+ls
+cd algoritm/
+emacs main.cpp 
+ls
+rm #	
+rm #main.cpp#
+ls
+rm #main.cpp#
+ls
+rm \#main.cpp\#
+ls
+..
+ls
+git clone https://github.com/google/googletest.git
+git clone https://github.com/isocpp/CppCoreGuidelines.git
+ls
+exit
+ls
+..
+ls
+cd practical-googletest/
+ls
+cd 2.matcher/
+ls
+..
+ls
+cat README.md 
+ls
+git clone -b 'release-1.10.0' https://github.com/google/googletest.git
+ls
+cat README.md 
+ls
+cd googletest && mkdir build && cd build && cmake .. && make && cd ../../
+mkdir build
+cd build/
+cmake ..
+make
+h
+history
+..
+..
+ls
+cd 3.action/1.invoke/
+ls
+make
+./gtest 
+ll
+clear
+
+ls -l
+cd
+cd work/
+ls
+ls
+mv CppCoreGuidelines/ CppCoreGuidelines_original
+ls
+ls
+git clone https://github.com/hyukmyeong/CppCoreGuidelines.git
+ls
+cd CppCoreGuidelines_original/
+..
+ls
+cd CppCoreGuidelines/
+ls
+git branch
+git log .

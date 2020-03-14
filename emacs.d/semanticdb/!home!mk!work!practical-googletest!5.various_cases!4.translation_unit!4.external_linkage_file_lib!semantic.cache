@@ -1,0 +1,72 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("iostream" include (:system-flag t) nil [1 20])
+            ("DOC" variable (:constant-flag t) nil [30 33])
+            ("doc.h" include nil nil [43 59])
+            ("DOC" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [84 91])
+                    ("whoami" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [96 110]))                  
+                :type "class")
+                nil [72 113])
+            ("whoami" function
+               (:parent "DOC"
+                :type "void")
+                nil [115 183])
+            ("sut.h" include nil nil [185 201])
+            ("main" function (:type "int") nil [204 249]))          
+      :file "main.cpp"
+      :pointmax 250
+      :fsize 249
+      :lastmodtime '(24157 318 769816 630000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("iostream" include (:system-flag t) nil [14 33])
+            ("DOC" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [47 54])
+                    ("whoami" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [59 73]))                  
+                :type "class")
+                nil [35 76]))          
+      :file "doc.h"
+      :pointmax 77
+      :fsize 159
+      :lastmodtime '(24157 548 521714 474000)
+      :unmatched-syntax '((symbol 9 . 13) (symbol 2 . 8) (punctuation 1 . 2)))
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("iostream" include (:system-flag t) nil [14 33])
+            ("doc.h" include nil nil [34 50])
+            ("SUT" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [64 71])
+                    ("doc" variable (:type ("DOC" type (:type "class") nil nil)) (reparse-symbol classsubparts) [76 84])
+                    ("whoami" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [89 103]))                  
+                :type "class")
+                nil [52 106]))          
+      :file "sut.h"
+      :pointmax 107
+      :fsize 89
+      :lastmodtime '(24157 563 198001 747000)
+      :unmatched-syntax '((symbol 9 . 13) (symbol 2 . 8) (punctuation 1 . 2))))
+  :file "!home!mk!work!practical-googletest!5.various_cases!4.translation_unit!4.external_linkage_file_lib!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")
