@@ -1,0 +1,24 @@
+[user]
+	name = Hyuk Myeong
+	email = hyuk.myeong@lge.com
+[difftool]
+        prompt = false
+[merge]
+        tool = vimdiff
+[color]
+        ui = true
+[core]
+        editors = VIM
+        autocrlf = input
+        whitespace = trailing-space,space-before-tab,indent-with-non-tab,cr-at-eol
+[apply]
+        whitespace = fix
+[commit]
+	template = /home/mk/.gitmessage.txt
+[alias]
+        st = status
+        mylog = log --pretty=format:\"%H - %Cred %ai, %Creset %an : %s\"
+[credential]
+        helper = cache
+[push]
+	default = current

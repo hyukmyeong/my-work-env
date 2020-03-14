@@ -1,0 +1,23 @@
+alias mybt1 bt -sxfFtT -I c043ab34 -S d40cfda0
+alias mybt2 bt -r 268
+alias myforeachkernel foreach kernel bt
+alias myforeachuser foreach user bt
+alias myps ps | grep surfaceflinger 
+alias mystruct1 p mdp_instance
+alias mystruct2 struct -h kgsl_process_private c93bd9c0
+alias mystruct3 struct -h kgsl_process_private.list c93bd9c0
+alias myset1 set -c cpu
+alias myset2 set 268 
+alias myps1 ps -c 268
+alias myps2 ps -p 268
+alias nrhang struct -x hrtimer_cpu_base.nr_hangs hrtimer_bases:a
+alias mytask task
+alias mykmem kmem
+alias myrd rd -S 0xc0008000 -e 0xc000F000
+alias mysearch search addr
+alias mydump dump memory test_dump 0xc0000000 0xc1000000 (gdb command, dump raw little-endian) 
+
+# p : for global variable, struct : every struct with adrress
+# 268 : pid example, c043ab34 : pc, d40cfda0 : sp, etc. : vaddr example
+# alias nrhang struct -x hrtimer_cpu_base.nr_hangs hrtimer_bases:a
+# ls : just type ls, rm : type !rm

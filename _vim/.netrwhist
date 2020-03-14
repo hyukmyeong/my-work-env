@@ -1,0 +1,5 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =3
+let g:netrw_dirhist_1='/usr/share/icons/hicolor/128x128/apps'
+let g:netrw_dirhist_2='/usr/share/icons/hicolor/128x128'
+let g:netrw_dirhist_3='/usr/share/icons/hicolor/128x128/apps'
