@@ -1,0 +1,181 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("stdlib.h" include (:system-flag t) nil [1601 1620])
+            ("iostream" include (:system-flag t) nil [1621 1640])
+            ("gtest/gtest.h" include nil nil [1641 1665])
+            ("src/gtest-internal-inl.h" include nil nil [1666 1701])
+            ("testing" type
+               (:members 
+                  ( ("GTEST_DECLARE_string_" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type ("death_test_style" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1746 1763]))                          
+                        :type "int")
+                        (reparse-symbol namespacesubparts) [1724 1764])
+                    ("GTEST_DECLARE_string_" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type ("filter" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1787 1794]))                          
+                        :type "int")
+                        (reparse-symbol namespacesubparts) [1765 1795])
+                    ("GTEST_DECLARE_int32_" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type ("repeat" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1817 1824]))                          
+                        :type "int")
+                        (reparse-symbol namespacesubparts) [1796 1825]))                  
+                :type "namespace")
+                nil [1703 1828])
+            ("unnamed" type
+               (:members 
+                  ( ("GTEST_CHECK_INT_EQ_" variable (:constant-flag t) (reparse-symbol namespacesubparts) [2096 2115])
+                    ("g_environment_set_up_count" variable
+                       (:default-value "0"
+                        :type "int")
+                        (reparse-symbol namespacesubparts) [2714 2749])
+                    ("g_environment_tear_down_count" variable
+                       (:default-value "0"
+                        :type "int")
+                        (reparse-symbol namespacesubparts) [2750 2788])
+                    ("MyEnvironment" type
+                       (:superclasses 
+                          ( ("testing::Environment" type
+                               (:protection "public"
+                                :type "class")
+                                nil nil))                          
+                        :members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [2843 2850])
+                            ("MyEnvironment" function
+                               (:constructor-flag t
+                                :type ("MyEnvironment" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [2853 2871]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [2790 2996])
+                    ("g_should_fail_count" variable
+                       (:default-value "0"
+                        :type "int")
+                        (reparse-symbol namespacesubparts) [3027 3055])
+                    ("TEST" function
+                       (:arguments 
+                          ( ("" variable (:type ("FooTest" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3062 3070])
+                            ("" variable (:type ("ShouldFail" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3071 3082]))                          
+                        :type "int")
+                        (reparse-symbol namespacesubparts) [3057 3153])
+                    ("g_should_pass_count" variable
+                       (:default-value "0"
+                        :type "int")
+                        (reparse-symbol namespacesubparts) [3184 3212])
+                    ("TEST" function
+                       (:arguments 
+                          ( ("" variable (:type ("FooTest" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3219 3227])
+                            ("" variable (:type ("ShouldPass" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3228 3239]))                          
+                        :type "int")
+                        (reparse-symbol namespacesubparts) [3214 3268])
+                    ("g_death_test_count" variable
+                       (:default-value "0"
+                        :type "int")
+                        (reparse-symbol namespacesubparts) [3362 3389])
+                    ("TEST" function
+                       (:arguments 
+                          ( ("" variable (:type ("BarDeathTest" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3396 3409])
+                            ("" variable (:type ("ThreadSafeAndFast" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3410 3428]))                          
+                        :type "int")
+                        (reparse-symbol namespacesubparts) [3391 3686])
+                    ("g_param_test_count" variable
+                       (:default-value "0"
+                        :type "int")
+                        (reparse-symbol namespacesubparts) [3688 3715])
+                    ("kNumberOfParamTests" variable
+                       (:constant-flag t
+                        :default-value "10"
+                        :type "int")
+                        (reparse-symbol namespacesubparts) [3717 3752])
+                    ("MyParamTest" type
+                       (:superclasses 
+                          ( ("testing::TestWithParam" type
+                               (:protection "public"
+                                :type "class")
+                                nil nil))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [3754 3812])
+                    ("TEST_P" function
+                       (:arguments 
+                          ( ("" variable (:type ("MyParamTest" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3821 3833])
+                            ("" variable (:type ("ShouldPass" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3834 3845]))                          
+                        :type "int")
+                        (reparse-symbol namespacesubparts) [3814 3950])
+                    ("INSTANTIATE_TEST_SUITE_P" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type ("MyParamSequence" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3976 3992])
+                            ("" variable (:type ("MyParamTest" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4018 4030])
+                            ("" variable (:type ("testing::Range" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4056 4094]))                          
+                        :type "int")
+                        (reparse-symbol namespacesubparts) [3951 4096])
+                    ("ResetCounts" function (:type "void") (reparse-symbol namespacesubparts) [4133 4332])
+                    ("CheckCounts" function
+                       (:arguments 
+                          ( ("expected" variable (:type "int") (reparse-symbol arg-sub-list) [4403 4416]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [4386 4781])
+                    ("TestRepeatUnspecified" function (:type "void") (reparse-symbol namespacesubparts) [4858 4968])
+                    ("TestRepeat" function
+                       (:arguments 
+                          ( ("repeat" variable (:type "int") (reparse-symbol arg-sub-list) [5064 5075]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [5048 5211])
+                    ("TestRepeatWithEmptyFilter" function
+                       (:arguments 
+                          ( ("repeat" variable (:type "int") (reparse-symbol arg-sub-list) [5330 5341]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [5299 5486])
+                    ("TestRepeatWithFilterForSuccessfulTests" function
+                       (:arguments 
+                          ( ("repeat" variable (:type "int") (reparse-symbol arg-sub-list) [5622 5633]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [5578 6113])
+                    ("TestRepeatWithFilterForFailedTests" function
+                       (:arguments 
+                          ( ("repeat" variable (:type "int") (reparse-symbol arg-sub-list) [6241 6252]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [6201 6698]))                  
+                :type "namespace")
+                nil [1968 6701])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [6726 6735])
+                    ("argv" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [6736 6748]))                  
+                :type "int")
+                nil [6717 7417]))          
+      :file "gtest_repeat_test.cc"
+      :pointmax 7418
+      :fsize 7417
+      :lastmodtime '(24174 20141 44888 642000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("GTEST_CHECK_INT_EQ_" (spp-arg-list ("expected" "actual") 2115 . 2133) . 
+              ((DO "do" 2138 . 2140) (semantic-list "{\\
+    const int expected_val = (expected);\\
+    const int actual_val = (actual);\\
+    if (::testing::internal::IsTrue(expected_val != actual_val)) {\\
+      ::std::cout << \"Value of: \" #actual \"\\n\"\\
+                  << \"  Actual: \" << actual_val << \"\\n\"\\
+                  << \"Expected: \" #expected \"\\n\"\\
+                  << \"Which is: \" << expected_val << \"\\n\";\\
+      ::testing::internal::posix::Abort();\\
+    }\\
+  }" 2141 . 2561) (WHILE "while" 2562 . 2567) (semantic-list "(::testing::internal::AlwaysFalse())" 2568 . 2604)))
+          )
+))
+  :file "!home!mk!work!practical-googletest!googletest!googletest!test!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -3,12 +3,14 @@
 (semanticdb-project-database-file "semanticdb-project-database-file"
   :tables
   (list
+
     (semanticdb-table "semanticdb-table"
       :major-mode c++-mode
-      :tags nil
-      :file "gtest_main.cpp"
-      :pointmax 1
-      :unmatched-syntax '((symbol 1 . 2))))
+      :tags 
+        '( ("main" function (:type "int") nil [1 29]))          
+      :file "foo.cpp"
+      :pointmax 30
+      :unmatched-syntax nil))
   :file "!home!mk!semantic.cache"
   :semantic-tag-version "2.0"
   :semanticdb-version "2.2")

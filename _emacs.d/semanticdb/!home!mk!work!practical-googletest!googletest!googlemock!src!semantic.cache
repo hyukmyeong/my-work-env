@@ -8,15 +8,14 @@
       :tags 
         '( ("gmock/gmock-spec-builders.h" include nil nil [1700 1738])
             ("stdlib.h" include (:system-flag t) nil [1740 1759])
-            ("iostream" include (:system-flag t) nil [1761 1780])
-            ("map" include (:system-flag t) nil [1792 1806])
-            ("memory" include (:system-flag t) nil [1807 1824])
-            ("set" include (:system-flag t) nil [1825 1839])
-            ("string" include (:system-flag t) nil [1840 1857])
-            ("vector" include (:system-flag t) nil [1858 1875])
-            ("gmock/gmock.h" include nil nil [1877 1901])
-            ("gtest/gtest.h" include nil nil [1902 1926])
-            ("gtest/internal/gtest-port.h" include nil nil [1927 1965])
+            ("iostream" include (:system-flag t) nil [1760 1779])
+            ("map" include (:system-flag t) nil [1791 1805])
+            ("memory" include (:system-flag t) nil [1806 1823])
+            ("set" include (:system-flag t) nil [1824 1838])
+            ("string" include (:system-flag t) nil [1839 1856])
+            ("vector" include (:system-flag t) nil [1857 1874])
+            ("gmock/gmock.h" include nil nil [1875 1899])
+            ("gtest/gtest.h" include nil nil [1900 1924])
             ("testing" type
                (:members 
                   ( ("internal" type
@@ -24,25 +23,25 @@
                           ( ("GTEST_DEFINE_STATIC_MUTEX_" function
                                (:prototype-flag t
                                 :arguments 
-                                  ( ("" variable (:type ("g_gmock_mutex" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2446 2460]))                                  
+                                  ( ("" variable (:type ("g_gmock_mutex" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2405 2419]))                                  
                                 :type ("GTEST_API_" type (:type "class") nil nil))
-                                (reparse-symbol namespacesubparts) [2408 2461])
+                                (reparse-symbol namespacesubparts) [2367 2420])
                             ("LogWithLocation" function
                                (:arguments 
-                                  ( ("severity" variable (:type ("testing::internal::LogSeverity" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2557 2597])
+                                  ( ("severity" variable (:type ("testing::internal::LogSeverity" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2516 2556])
                                     ("file" variable
                                        (:pointer 1
                                         :constant-flag t
                                         :type "char")
-                                        (reparse-symbol arg-sub-list) [2630 2647])
-                                    ("line" variable (:type "int") (reparse-symbol arg-sub-list) [2648 2657])
+                                        (reparse-symbol arg-sub-list) [2589 2606])
+                                    ("line" variable (:type "int") (reparse-symbol arg-sub-list) [2607 2616])
                                     ("message" variable
                                        (:reference 1
                                         :constant-flag t
                                         :type ("std::string" type (:type "class") nil nil))
-                                        (reparse-symbol arg-sub-list) [2690 2717]))                                  
+                                        (reparse-symbol arg-sub-list) [2649 2676]))                                  
                                 :type "void")
-                                (reparse-symbol namespacesubparts) [2536 2862])
+                                (reparse-symbol namespacesubparts) [2495 2797])
                             ("ExpectationBase" function
                                (:constructor-flag t
                                 :parent "ExpectationBase"
@@ -51,20 +50,20 @@
                                        (:pointer 1
                                         :constant-flag t
                                         :type "char")
-                                        (reparse-symbol arg-sub-list) [2941 2960])
-                                    ("a_line" variable (:type "int") (reparse-symbol arg-sub-list) [2961 2972])
+                                        (reparse-symbol arg-sub-list) [2873 2892])
+                                    ("a_line" variable (:type "int") (reparse-symbol arg-sub-list) [2893 2904])
                                     ("a_source_text" variable
                                        (:reference 1
                                         :constant-flag t
                                         :type ("std::string" type (:type "class") nil nil))
-                                        (reparse-symbol arg-sub-list) [3006 3039]))                                  
+                                        (reparse-symbol arg-sub-list) [2938 2971]))                                  
                                 :type ("ExpectationBase" type (:type "class") nil nil))
-                                (reparse-symbol namespacesubparts) [2908 3412])
+                                (reparse-symbol namespacesubparts) [2840 3344])
                             ("ExpectationBase" function
                                (:destructor-flag t
                                 :parent "ExpectationBase"
                                 :type "void")
-                                (reparse-symbol namespacesubparts) [3454 3492])
+                                (reparse-symbol namespacesubparts) [3386 3424])
                             ("SpecifyCardinality" function
                                (:parent "ExpectationBase"
                                 :arguments 
@@ -72,38 +71,38 @@
                                        (:reference 1
                                         :constant-flag t
                                         :type ("Cardinality" type (:type "class") nil nil))
-                                        (reparse-symbol arg-sub-list) [3657 3690]))                                  
+                                        (reparse-symbol arg-sub-list) [3589 3622]))                                  
                                 :type "void")
-                                (reparse-symbol namespacesubparts) [3616 3759])
+                                (reparse-symbol namespacesubparts) [3548 3691])
                             ("GTEST_EXCLUSIVE_LOCK_REQUIRED_" function
                                (:arguments 
-                                  ( ("" variable (:type ("g_gmock_mutex" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3894 3908]))                                  
+                                  ( ("" variable (:type ("g_gmock_mutex" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3826 3840]))                                  
                                 :type "int")
-                                (reparse-symbol namespacesubparts) [3863 4915])
+                                (reparse-symbol namespacesubparts) [3795 4503])
                             ("GTEST_EXCLUSIVE_LOCK_REQUIRED_" function
                                (:constant-flag t
                                 :arguments 
-                                  ( ("" variable (:type ("g_gmock_mutex" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5105 5119]))                                  
+                                  ( ("" variable (:type ("g_gmock_mutex" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4693 4707]))                                  
                                 :type "int")
-                                (reparse-symbol namespacesubparts) [5064 5664])
+                                (reparse-symbol namespacesubparts) [4652 5252])
                             ("GTEST_EXCLUSIVE_LOCK_REQUIRED_" function
                                (:constant-flag t
                                 :arguments 
-                                  ( ("" variable (:type ("g_gmock_mutex" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5850 5864]))                                  
+                                  ( ("" variable (:type ("g_gmock_mutex" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5438 5452]))                                  
                                 :type "int")
-                                (reparse-symbol namespacesubparts) [5809 6786])
+                                (reparse-symbol namespacesubparts) [5397 6374])
                             ("GTEST_EXCLUSIVE_LOCK_REQUIRED_" function
                                (:constant-flag t
                                 :arguments 
-                                  ( ("" variable (:type ("g_gmock_mutex" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6978 6992]))                                  
+                                  ( ("" variable (:type ("g_gmock_mutex" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6566 6580]))                                  
                                 :type "int")
-                                (reparse-symbol namespacesubparts) [6937 7585])
+                                (reparse-symbol namespacesubparts) [6525 7173])
                             ("GTEST_LOCK_EXCLUDED_" function
                                (:constant-flag t
                                 :arguments 
-                                  ( ("" variable (:type ("mutex_" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7882 7889]))                                  
+                                  ( ("" variable (:type ("mutex_" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7470 7477]))                                  
                                 :type "int")
-                                (reparse-symbol namespacesubparts) [7851 9429])
+                                (reparse-symbol namespacesubparts) [7439 9017])
                             ("UntypedTimes" function
                                (:parent "ExpectationBase"
                                 :arguments 
@@ -111,82 +110,82 @@
                                        (:reference 1
                                         :constant-flag t
                                         :type ("Cardinality" type (:type "class") nil nil))
-                                        (reparse-symbol arg-sub-list) [9501 9534]))                                  
+                                        (reparse-symbol arg-sub-list) [9089 9122]))                                  
                                 :type "void")
-                                (reparse-symbol namespacesubparts) [9466 10018])
+                                (reparse-symbol namespacesubparts) [9054 9606])
                             ("g_gmock_implicit_sequence" variable (:type ("ThreadLocal" type
                                  (:template-specifier 
                                     ( ("Sequence" type (:pointer 1) nil nil))                                    
                                   :type "class")
-                                  nil nil)) (reparse-symbol namespacesubparts) [10150 10199])
+                                  nil nil)) (reparse-symbol namespacesubparts) [9738 9787])
                             ("ReportUninterestingCall" function
                                (:arguments 
-                                  ( ("reaction" variable (:type ("CallReaction" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10335 10357])
+                                  ( ("reaction" variable (:type ("CallReaction" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9923 9945])
                                     ("msg" variable
                                        (:reference 1
                                         :constant-flag t
                                         :type ("std::string" type (:type "class") nil nil))
-                                        (reparse-symbol arg-sub-list) [10358 10381]))                                  
+                                        (reparse-symbol arg-sub-list) [9946 9969]))                                  
                                 :type "void")
-                                (reparse-symbol namespacesubparts) [10306 11222])
+                                (reparse-symbol namespacesubparts) [9894 10810])
                             ("UntypedFunctionMockerBase" function
                                (:constructor-flag t
                                 :parent "UntypedFunctionMockerBase"
                                 :type ("UntypedFunctionMockerBase" type (:type "class") nil nil))
-                                (reparse-symbol namespacesubparts) [11224 11317])
+                                (reparse-symbol namespacesubparts) [10812 10905])
                             ("UntypedFunctionMockerBase" function
                                (:destructor-flag t
                                 :parent "UntypedFunctionMockerBase"
                                 :type "void")
-                                (reparse-symbol namespacesubparts) [11319 11377])
+                                (reparse-symbol namespacesubparts) [10907 10965])
                             ("GTEST_LOCK_EXCLUDED_" function
                                (:arguments 
-                                  ( ("" variable (:type ("g_gmock_mutex" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11682 11696]))                                  
+                                  ( ("" variable (:type ("g_gmock_mutex" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11270 11284]))                                  
                                 :type "int")
-                                (reparse-symbol namespacesubparts) [11661 11801])
+                                (reparse-symbol namespacesubparts) [11249 11389])
                             ("GTEST_LOCK_EXCLUDED_" function
                                (:arguments 
-                                  ( ("" variable (:type ("g_gmock_mutex" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12123 12137]))                                  
+                                  ( ("" variable (:type ("g_gmock_mutex" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11711 11725]))                                  
                                 :type "int")
-                                (reparse-symbol namespacesubparts) [12102 12327])
+                                (reparse-symbol namespacesubparts) [11690 11915])
                             ("GTEST_LOCK_EXCLUDED_" function
                                (:constant-flag t
                                 :arguments 
-                                  ( ("" variable (:type ("g_gmock_mutex" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12541 12555]))                                  
+                                  ( ("" variable (:type ("g_gmock_mutex" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12129 12143]))                                  
                                 :type "int")
-                                (reparse-symbol namespacesubparts) [12510 12967])
+                                (reparse-symbol namespacesubparts) [12098 12555])
                             ("GTEST_LOCK_EXCLUDED_" function
                                (:constant-flag t
                                 :arguments 
-                                  ( ("" variable (:type ("g_gmock_mutex" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13147 13161]))                                  
+                                  ( ("" variable (:type ("g_gmock_mutex" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12735 12749]))                                  
                                 :type "int")
-                                (reparse-symbol namespacesubparts) [13116 13524])
+                                (reparse-symbol namespacesubparts) [12704 13112])
                             ("GTEST_LOCK_EXCLUDED_" function
                                (:arguments 
-                                  ( ("" variable (:type ("g_gmock_mutex" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13821 13835]))                                  
+                                  ( ("" variable (:type ("g_gmock_mutex" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13409 13423]))                                  
                                 :type "int")
-                                (reparse-symbol namespacesubparts) [13800 18001])
+                                (reparse-symbol namespacesubparts) [13388 17589])
                             ("GetHandleOf" function
                                (:parent "UntypedFunctionMockerBase"
                                 :arguments 
                                   ( ("exp" variable
                                        (:pointer 1
                                         :type ("ExpectationBase" type (:type "class") nil nil))
-                                        (reparse-symbol arg-sub-list) [18175 18196]))                                  
+                                        (reparse-symbol arg-sub-list) [17763 17784]))                                  
                                 :type ("Expectation" type (:type "class") nil nil))
-                                (reparse-symbol namespacesubparts) [18124 18687])
+                                (reparse-symbol namespacesubparts) [17712 18275])
                             ("GTEST_EXCLUSIVE_LOCK_REQUIRED_" function
                                (:arguments 
-                                  ( ("" variable (:type ("g_gmock_mutex" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [18952 18966]))                                  
+                                  ( ("" variable (:type ("g_gmock_mutex" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [18540 18554]))                                  
                                 :type "int")
-                                (reparse-symbol namespacesubparts) [18921 20797])
+                                (reparse-symbol namespacesubparts) [18509 20385])
                             ("intToCallReaction" function
                                (:arguments 
-                                  ( ("mock_behavior" variable (:type "int") (reparse-symbol arg-sub-list) [20830 20848]))                                  
+                                  ( ("mock_behavior" variable (:type "int") (reparse-symbol arg-sub-list) [20418 20436]))                                  
                                 :type ("CallReaction" type (:type "class") nil nil))
-                                (reparse-symbol namespacesubparts) [20799 20994]))                          
+                                (reparse-symbol namespacesubparts) [20387 20582]))                          
                         :type "namespace")
-                        (reparse-symbol namespacesubparts) [2285 20997])
+                        (reparse-symbol namespacesubparts) [2244 20585])
                     ("unnamed" type
                        (:members 
                           ( ("FunctionMockers" type
@@ -196,28 +195,28 @@
                                       :type "class")
                                       nil nil)
                                 :type "typedef")
-                                (reparse-symbol namespacesubparts) [21051 21122])
+                                (reparse-symbol namespacesubparts) [20639 20710])
                             ("MockObjectState" type
                                (:members 
                                   ( ("MockObjectState" function
                                        (:constructor-flag t
                                         :type ("MockObjectState" type (:type "struct") nil nil))
-                                        (reparse-symbol classsubparts) [21306 21397])
+                                        (reparse-symbol classsubparts) [20894 20985])
                                     ("first_used_file" variable
                                        (:pointer 1
                                         :constant-flag t
                                         :type "char")
-                                        (reparse-symbol classsubparts) [21500 21528])
-                                    ("first_used_line" variable (:type "int") (reparse-symbol classsubparts) [21531 21551])
-                                    ("first_used_test_suite" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [21556 21590])
-                                    ("first_used_test" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [21595 21623])
-                                    ("leakable" variable (:type "bool") (reparse-symbol classsubparts) [21626 21640])
-                                    ("function_mockers" variable (:type ("FunctionMockers" type (:type "class") nil nil)) (reparse-symbol classsubparts) [21695 21728]))                                  
+                                        (reparse-symbol classsubparts) [21088 21116])
+                                    ("first_used_line" variable (:type "int") (reparse-symbol classsubparts) [21119 21139])
+                                    ("first_used_test_suite" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [21144 21178])
+                                    ("first_used_test" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [21183 21211])
+                                    ("leakable" variable (:type "bool") (reparse-symbol classsubparts) [21214 21228])
+                                    ("function_mockers" variable (:type ("FunctionMockers" type (:type "class") nil nil)) (reparse-symbol classsubparts) [21283 21316]))                                  
                                 :type "struct")
-                                (reparse-symbol namespacesubparts) [21279 21773])
+                                (reparse-symbol namespacesubparts) [20867 21361])
                             ("MockObjectRegistry" type
                                (:members 
-                                  ( ("public" label nil (reparse-symbol classsubparts) [22073 22080])
+                                  ( ("public" label nil (reparse-symbol classsubparts) [21661 21668])
                                     ("StateMap" type
                                        (:typedef ("std::map" type
                                              (:template-specifier 
@@ -229,17 +228,17 @@
                                               :type "class")
                                               nil nil)
                                         :type "typedef")
-                                        (reparse-symbol classsubparts) [22149 22205])
+                                        (reparse-symbol classsubparts) [21737 21793])
                                     ("MockObjectRegistry" function
                                        (:destructor-flag t
                                         :type "void")
-                                        (reparse-symbol classsubparts) [22473 24467])
-                                    ("states" function (:type ("StateMap" type (:type "class") nil nil)) (reparse-symbol classsubparts) [24471 24509])
-                                    ("private" label nil (reparse-symbol classsubparts) [24512 24520])
-                                    ("states_" variable (:type ("StateMap" type (:type "class") nil nil)) (reparse-symbol classsubparts) [24523 24540]))                                  
+                                        (reparse-symbol classsubparts) [22061 24055])
+                                    ("states" function (:type ("StateMap" type (:type "class") nil nil)) (reparse-symbol classsubparts) [24059 24097])
+                                    ("private" label nil (reparse-symbol classsubparts) [24100 24108])
+                                    ("states_" variable (:type ("StateMap" type (:type "class") nil nil)) (reparse-symbol classsubparts) [24111 24128]))                                  
                                 :type "class")
-                                (reparse-symbol namespacesubparts) [22045 24543])
-                            ("g_mock_object_registry" variable (:type ("MockObjectRegistry" type (:type "class") nil nil)) (reparse-symbol namespacesubparts) [24576 24618])
+                                (reparse-symbol namespacesubparts) [21633 24131])
+                            ("g_mock_object_registry" variable (:type ("MockObjectRegistry" type (:type "class") nil nil)) (reparse-symbol namespacesubparts) [24164 24206])
                             ("g_uninteresting_call_reaction" variable (:type ("std::map" type
                                  (:template-specifier 
                                     ( ("void" type
@@ -248,99 +247,99 @@
                                           nil nil)
                                       ("internal::CallReaction" type nil nil nil))                                    
                                   :type "class")
-                                  nil nil)) (reparse-symbol namespacesubparts) [24754 24830])
+                                  nil nil)) (reparse-symbol namespacesubparts) [24342 24418])
                             ("GTEST_LOCK_EXCLUDED_" function
                                (:arguments 
-                                  ( ("" variable (:type ("internal::g_gmock_mutex" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [25099 25123]))                                  
+                                  ( ("" variable (:type ("internal::g_gmock_mutex" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [24687 24711]))                                  
                                 :type "int")
-                                (reparse-symbol namespacesubparts) [25078 25232]))                          
+                                (reparse-symbol namespacesubparts) [24666 24820]))                          
                         :type "namespace")
-                        (reparse-symbol namespacesubparts) [21038 25235])
+                        (reparse-symbol namespacesubparts) [20626 24823])
                     ("GTEST_LOCK_EXCLUDED_" function
                        (:arguments 
-                          ( ("" variable (:type ("internal::g_gmock_mutex" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [25412 25436]))                          
+                          ( ("" variable (:type ("internal::g_gmock_mutex" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [25000 25024]))                          
                         :type "int")
-                        (reparse-symbol namespacesubparts) [25391 25503])
+                        (reparse-symbol namespacesubparts) [24979 25091])
                     ("GTEST_LOCK_EXCLUDED_" function
                        (:arguments 
-                          ( ("" variable (:type ("internal::g_gmock_mutex" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [25679 25703]))                          
+                          ( ("" variable (:type ("internal::g_gmock_mutex" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [25267 25291]))                          
                         :type "int")
-                        (reparse-symbol namespacesubparts) [25658 25769])
+                        (reparse-symbol namespacesubparts) [25246 25357])
                     ("GTEST_LOCK_EXCLUDED_" function
                        (:arguments 
-                          ( ("" variable (:type ("internal::g_gmock_mutex" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [25930 25954]))                          
+                          ( ("" variable (:type ("internal::g_gmock_mutex" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [25518 25542]))                          
                         :type "int")
-                        (reparse-symbol namespacesubparts) [25909 26020])
+                        (reparse-symbol namespacesubparts) [25497 25608])
                     ("GTEST_LOCK_EXCLUDED_" function
                        (:arguments 
-                          ( ("" variable (:type ("internal::g_gmock_mutex" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [26228 26252]))                          
+                          ( ("" variable (:type ("internal::g_gmock_mutex" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [25816 25840]))                          
                         :type "int")
-                        (reparse-symbol namespacesubparts) [26207 26356])
+                        (reparse-symbol namespacesubparts) [25795 25944])
                     ("GTEST_LOCK_EXCLUDED_" function
                        (:arguments 
-                          ( ("" variable (:type ("internal::g_gmock_mutex" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [26578 26602]))                          
+                          ( ("" variable (:type ("internal::g_gmock_mutex" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [26166 26190]))                          
                         :type "int")
-                        (reparse-symbol namespacesubparts) [26557 26839])
+                        (reparse-symbol namespacesubparts) [26145 26427])
                     ("GTEST_LOCK_EXCLUDED_" function
                        (:arguments 
-                          ( ("" variable (:type ("internal::g_gmock_mutex" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [26991 27015]))                          
+                          ( ("" variable (:type ("internal::g_gmock_mutex" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [26579 26603]))                          
                         :type "int")
-                        (reparse-symbol namespacesubparts) [26970 27131])
+                        (reparse-symbol namespacesubparts) [26558 26719])
                     ("GTEST_LOCK_EXCLUDED_" function
                        (:arguments 
-                          ( ("" variable (:type ("internal::g_gmock_mutex" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [27395 27419]))                          
+                          ( ("" variable (:type ("internal::g_gmock_mutex" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [26983 27007]))                          
                         :type "int")
-                        (reparse-symbol namespacesubparts) [27374 27527])
+                        (reparse-symbol namespacesubparts) [26962 27115])
                     ("GTEST_LOCK_EXCLUDED_" function
                        (:arguments 
-                          ( ("" variable (:type ("internal::g_gmock_mutex" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [27767 27791]))                          
+                          ( ("" variable (:type ("internal::g_gmock_mutex" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [27355 27379]))                          
                         :type "int")
-                        (reparse-symbol namespacesubparts) [27746 27938])
+                        (reparse-symbol namespacesubparts) [27334 27526])
                     ("GTEST_EXCLUSIVE_LOCK_REQUIRED_" function
                        (:arguments 
-                          ( ("" variable (:type ("internal::g_gmock_mutex" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [28218 28242]))                          
+                          ( ("" variable (:type ("internal::g_gmock_mutex" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [27806 27830]))                          
                         :type "int")
-                        (reparse-symbol namespacesubparts) [28187 28978])
+                        (reparse-symbol namespacesubparts) [27775 28566])
                     ("GTEST_LOCK_EXCLUDED_" function
                        (:arguments 
-                          ( ("" variable (:type ("internal::g_gmock_mutex" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [29040 29064]))                          
+                          ( ("" variable (:type ("internal::g_gmock_mutex" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [28628 28652]))                          
                         :type "int")
-                        (reparse-symbol namespacesubparts) [29019 29145])
+                        (reparse-symbol namespacesubparts) [28607 28733])
                     ("GTEST_LOCK_EXCLUDED_" function
                        (:arguments 
-                          ( ("" variable (:type ("internal::g_gmock_mutex" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [29205 29229]))                          
+                          ( ("" variable (:type ("internal::g_gmock_mutex" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [28793 28817]))                          
                         :type "int")
-                        (reparse-symbol namespacesubparts) [29184 29311])
+                        (reparse-symbol namespacesubparts) [28772 28899])
                     ("GTEST_LOCK_EXCLUDED_" function
                        (:arguments 
-                          ( ("" variable (:type ("internal::g_gmock_mutex" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [29373 29397]))                          
+                          ( ("" variable (:type ("internal::g_gmock_mutex" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [28961 28985]))                          
                         :type "int")
-                        (reparse-symbol namespacesubparts) [29352 29478])
+                        (reparse-symbol namespacesubparts) [28940 29066])
                     ("GTEST_LOCK_EXCLUDED_" function
                        (:arguments 
-                          ( ("" variable (:type ("internal::g_gmock_mutex" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [29666 29690]))                          
+                          ( ("" variable (:type ("internal::g_gmock_mutex" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [29254 29278]))                          
                         :type "int")
-                        (reparse-symbol namespacesubparts) [29645 29822])
+                        (reparse-symbol namespacesubparts) [29233 29410])
                     ("GTEST_LOCK_EXCLUDED_" function
                        (:arguments 
-                          ( ("" variable (:type ("internal::g_gmock_mutex" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [30174 30198]))                          
+                          ( ("" variable (:type ("internal::g_gmock_mutex" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [29762 29786]))                          
                         :type "int")
-                        (reparse-symbol namespacesubparts) [30153 30682])
+                        (reparse-symbol namespacesubparts) [29741 30270])
                     ("GTEST_EXCLUSIVE_LOCK_REQUIRED_" function
                        (:arguments 
-                          ( ("" variable (:type ("internal::g_gmock_mutex" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [31010 31034]))                          
+                          ( ("" variable (:type ("internal::g_gmock_mutex" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [30598 30622]))                          
                         :type "int")
-                        (reparse-symbol namespacesubparts) [30979 31508])
+                        (reparse-symbol namespacesubparts) [30567 31096])
                     ("GTEST_EXCLUSIVE_LOCK_REQUIRED_" function
                        (:arguments 
-                          ( ("" variable (:type ("internal::g_gmock_mutex" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [31653 31677]))                          
+                          ( ("" variable (:type ("internal::g_gmock_mutex" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [31241 31265]))                          
                         :type "int")
-                        (reparse-symbol namespacesubparts) [31622 32292])
+                        (reparse-symbol namespacesubparts) [31210 31880])
                     ("Expectation" function
                        (:constructor-flag t
                         :parent "Expectation"
                         :type ("Expectation" type (:type "class") nil nil))
-                        (reparse-symbol namespacesubparts) [32294 32323])
+                        (reparse-symbol namespacesubparts) [31882 31911])
                     ("Expectation" function
                        (:constructor-flag t
                         :parent "Expectation"
@@ -353,14 +352,14 @@
                                         ( ("internal::ExpectationBase" type nil nil nil))                                        
                                       :type "class")
                                       nil nil))
-                                (reparse-symbol arg-sub-list) [32355 32425]))                          
+                                (reparse-symbol arg-sub-list) [31943 32013]))                          
                         :type ("Expectation" type (:type "class") nil nil))
-                        (reparse-symbol namespacesubparts) [32325 32473])
+                        (reparse-symbol namespacesubparts) [31913 32061])
                     ("Expectation" function
                        (:destructor-flag t
                         :parent "Expectation"
                         :type "void")
-                        (reparse-symbol namespacesubparts) [32475 32505])
+                        (reparse-symbol namespacesubparts) [32063 32093])
                     ("AddExpectation" function
                        (:methodconst-flag t
                         :parent "Sequence"
@@ -369,26 +368,134 @@
                                (:reference 1
                                 :constant-flag t
                                 :type ("Expectation" type (:type "class") nil nil))
-                                (reparse-symbol arg-sub-list) [32575 32606]))                          
+                                (reparse-symbol arg-sub-list) [32163 32194]))                          
                         :type "void")
-                        (reparse-symbol namespacesubparts) [32545 32863])
+                        (reparse-symbol namespacesubparts) [32133 32451])
                     ("InSequence" function
                        (:constructor-flag t
                         :parent "InSequence"
                         :type ("InSequence" type (:type "class") nil nil))
-                        (reparse-symbol namespacesubparts) [32918 33143])
+                        (reparse-symbol namespacesubparts) [32506 32731])
                     ("InSequence" function
                        (:destructor-flag t
                         :parent "InSequence"
                         :type "void")
-                        (reparse-symbol namespacesubparts) [33234 33402]))                  
+                        (reparse-symbol namespacesubparts) [32822 32990]))                  
                 :type "namespace")
-                nil [2265 33405]))          
+                nil [2224 32993]))          
       :file "gmock-spec-builders.cc"
-      :pointmax 33503
-      :fsize 33502
-      :lastmodtime '(24172 41374 792780 420000)
-      :unmatched-syntax nil))
+      :pointmax 33091
+      :fsize 33090
+      :lastmodtime '(24174 5277 26661 992000)
+      :unmatched-syntax '((semantic-list 31189 . 31205) (symbol 31164 . 31189) (punctuation 31163 . 31164) (punctuation 31162 . 31163) (symbol 31158 . 31162) (VOID 31153 . 31157) (semantic-list 30517 . 30562) (symbol 30501 . 30517) (punctuation 30500 . 30501) (punctuation 30499 . 30500) (symbol 30495 . 30499) (VOID 30490 . 30494) (semantic-list 29643 . 29736) (symbol 29612 . 29643) (punctuation 29611 . 29612) (punctuation 29610 . 29611) (symbol 29606 . 29610) (VOID 29601 . 29605) (semantic-list 29141 . 29228) (symbol 29133 . 29141) (punctuation 29132 . 29133) (punctuation 29131 . 29132) (symbol 29127 . 29131) (VOID 29122 . 29126) (semantic-list 28919 . 28935) (symbol 28911 . 28919) (punctuation 28910 . 28911) (punctuation 28909 . 28910) (symbol 28905 . 28909) (BOOL 28900 . 28904) (semantic-list 28751 . 28767) (symbol 28745 . 28751) (punctuation 28744 . 28745) (punctuation 28743 . 28744) (symbol 28739 . 28743) (BOOL 28734 . 28738) (semantic-list 28586 . 28602) (symbol 28579 . 28586) (punctuation 28578 . 28579) (punctuation 28577 . 28578) (symbol 28573 . 28577) (BOOL 28568 . 28572) (semantic-list 27754 . 27770) (symbol 27722 . 27754) (punctuation 27721 . 27722) (punctuation 27720 . 27721) (symbol 27716 . 27720) (BOOL 27711 . 27715) (semantic-list 27313 . 27329) (symbol 27299 . 27313) (punctuation 27298 . 27299) (punctuation 27297 . 27298) (symbol 27293 . 27297) (BOOL 27288 . 27292) (semantic-list 26941 . 26957) (symbol 26915 . 26941) (punctuation 26914 . 26915) (punctuation 26913 . 26914) (symbol 26909 . 26913) (BOOL 26904 . 26908) (semantic-list 26531 . 26553) (symbol 26522 . 26531) (punctuation 26521 . 26522) (punctuation 26520 . 26521) (symbol 26516 . 26520) (VOID 26511 . 26515) (semantic-list 26109 . 26136) (symbol 26078 . 26109) (punctuation 26077 . 26078) (punctuation 26076 . 26077) (symbol 26072 . 26076) (symbol 26059 . 26071) (punctuation 26058 . 26059) (punctuation 26057 . 26058) (symbol 26049 . 26057) (semantic-list 25768 . 25790) (symbol 25746 . 25768) (punctuation 25745 . 25746) (punctuation 25744 . 25745) (symbol 25740 . 25744) (VOID 25735 . 25739) (semantic-list 25470 . 25492) (symbol 25448 . 25470) (punctuation 25447 . 25448) (punctuation 25446 . 25447) (symbol 25442 . 25446) (VOID 25437 . 25441) (semantic-list 25219 . 25241) (symbol 25197 . 25219) (punctuation 25196 . 25197) (punctuation 25195 . 25196) (symbol 25191 . 25195) (VOID 25186 . 25190) (semantic-list 24952 . 24974) (symbol 24929 . 24952) (punctuation 24928 . 24929) (punctuation 24927 . 24928) (symbol 24923 . 24927) (VOID 24918 . 24922) (semantic-list 24569 . 24661) (symbol 24538 . 24569) (VOID 24533 . 24537) (punctuation 21182 . 21183) (punctuation 21181 . 21182) (punctuation 21143 . 21144) (punctuation 21142 . 21143) (semantic-list 18502 . 18504) (symbol 18470 . 18502) (punctuation 18469 . 18470) (punctuation 18468 . 18469) (symbol 18443 . 18468) (BOOL 18438 . 18442) (semantic-list 13356 . 13387) (symbol 13339 . 13356) (punctuation 13338 . 13339) (punctuation 13337 . 13338) (symbol 13312 . 13337) (punctuation 13310 . 13311) (symbol 13281 . 13310) (semantic-list 12701 . 12703) (symbol 12697 . 12701) (punctuation 12696 . 12697) (punctuation 12695 . 12696) (symbol 12670 . 12695) (punctuation 12668 . 12669) (CHAR 12664 . 12668) (CONST 12658 . 12663) (semantic-list 12095 . 12097) (symbol 12085 . 12095) (punctuation 12084 . 12085) (punctuation 12083 . 12084) (symbol 12058 . 12083) (punctuation 12056 . 12057) (VOID 12052 . 12056) (CONST 12046 . 12051) (semantic-list 11597 . 11685) (symbol 11582 . 11597) (punctuation 11581 . 11582) (punctuation 11580 . 11581) (symbol 11555 . 11580) (VOID 11550 . 11554) (semantic-list 11222 . 11244) (symbol 11209 . 11222) (punctuation 11208 . 11209) (punctuation 11207 . 11208) (symbol 11182 . 11207) (VOID 11177 . 11181) (symbol 9727 . 9737) (semantic-list 7436 . 7438) (symbol 7411 . 7436) (punctuation 7410 . 7411) (punctuation 7409 . 7410) (symbol 7394 . 7409) (VOID 7389 . 7393) (semantic-list 6504 . 6524) (symbol 6485 . 6504) (punctuation 6506 . 6507) (punctuation 6505 . 6506) (punctuation 6484 . 6485) (punctuation 6483 . 6484) (symbol 6468 . 6483) (punctuation 6506 . 6507) (punctuation 6505 . 6506) (VOID 6463 . 6467) (punctuation 6506 . 6507) (punctuation 6505 . 6506) (semantic-list 5372 . 5396) (symbol 5344 . 5372) (punctuation 5343 . 5344) (punctuation 5342 . 5343) (symbol 5327 . 5342) (VOID 5322 . 5326) (semantic-list 4649 . 4651) (symbol 4621 . 4649) (punctuation 4620 . 4621) (punctuation 4619 . 4620) (symbol 4604 . 4619) (BOOL 4599 . 4603) (semantic-list 3788 . 3790) (symbol 3766 . 3788) (punctuation 3765 . 3766) (punctuation 3764 . 3765) (symbol 3749 . 3764) (VOID 3744 . 3748) (symbol 2484 . 2494)))
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("gmock/gmock-cardinalities.h" include nil nil [1661 1699])
+            ("limits.h" include (:system-flag t) nil [1701 1720])
+            ("ostream" include (:system-flag t) nil [1721 1739])
+            ("sstream" include (:system-flag t) nil [1751 1769])
+            ("string" include (:system-flag t) nil [1770 1787])
+            ("gmock/internal/gmock-internal-utils.h" include nil nil [1788 1836])
+            ("gtest/gtest.h" include nil nil [1837 1861])
+            ("testing" type
+               (:members 
+                  ( ("unnamed" type
+                       (:members 
+                          ( ("BetweenCardinalityImpl" type
+                               (:superclasses 
+                                  ( ("CardinalityInterface" type
+                                       (:protection "public"
+                                        :type "class")
+                                        nil nil))                                  
+                                :members 
+                                  ( ("public" label nil (reparse-symbol classsubparts) [2004 2011])
+                                    ("BetweenCardinalityImpl" function
+                                       (:constructor-flag t
+                                        :arguments 
+                                          ( ("min" variable (:type "int") (reparse-symbol arg-sub-list) [2037 2045])
+                                            ("max" variable (:type "int") (reparse-symbol arg-sub-list) [2046 2054]))                                          
+                                        :type ("BetweenCardinalityImpl" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [2014 2756])
+                                    ("override" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol classsubparts) [3232 3247])
+                                    ("private" label nil (reparse-symbol classsubparts) [3250 3258])
+                                    ("min_" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol classsubparts) [3261 3276])
+                                    ("max_" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol classsubparts) [3279 3294])
+                                    ("GTEST_DISALLOW_COPY_AND_ASSIGN_" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("" variable (:type ("BetweenCardinalityImpl" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3330 3353]))                                          
+                                        :type "int")
+                                        (reparse-symbol classsubparts) [3298 3354]))                                  
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [1942 3357])
+                            ("FormatTimes" function
+                               (:typemodifiers ("inline")
+                                :arguments 
+                                  ( ("n" variable (:type "int") (reparse-symbol arg-sub-list) [3436 3442]))                                  
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [3405 3611])
+                            ("DescribeTo" function
+                               (:methodconst-flag t
+                                :parent "BetweenCardinalityImpl"
+                                :arguments 
+                                  ( ("os" variable
+                                       (:pointer 1
+                                        :type ("std::ostream" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3722 3739]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [3680 4240]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [1884 4243])
+                    ("DescribeActualCallCountTo" function
+                       (:parent "Cardinality"
+                        :arguments 
+                          ( ("actual_call_count" variable (:type "int") (reparse-symbol arg-sub-list) [4360 4382])
+                            ("os" variable
+                               (:pointer 1
+                                :type ("std::ostream" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4429 4446]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [4316 4579])
+                    ("AtLeast" function
+                       (:arguments 
+                          ( ("n" variable (:type "int") (reparse-symbol arg-sub-list) [4667 4673]))                          
+                        :type ("Cardinality" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [4647 4705])
+                    ("AtMost" function
+                       (:arguments 
+                          ( ("n" variable (:type "int") (reparse-symbol arg-sub-list) [4791 4797]))                          
+                        :type ("Cardinality" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [4772 4823])
+                    ("AnyNumber" function (:type ("Cardinality" type (:type "class") nil nil)) (reparse-symbol namespacesubparts) [4894 4940])
+                    ("Between" function
+                       (:arguments 
+                          ( ("min" variable (:type "int") (reparse-symbol arg-sub-list) [5037 5045])
+                            ("max" variable (:type "int") (reparse-symbol arg-sub-list) [5046 5054]))                          
+                        :type ("Cardinality" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [5017 5118])
+                    ("Exactly" function
+                       (:arguments 
+                          ( ("n" variable (:type "int") (reparse-symbol arg-sub-list) [5205 5211]))                          
+                        :type ("Cardinality" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [5185 5237]))                  
+                :type "namespace")
+                nil [1863 5240]))          
+      :file "gmock-cardinalities.cc"
+      :pointmax 5263
+      :fsize 5262
+      :lastmodtime '(24174 5277 26661 992000)
+      :unmatched-syntax '((symbol 5174 . 5184) (symbol 5006 . 5016) (symbol 4883 . 4893) (symbol 4761 . 4771) (symbol 4636 . 4646) (punctuation 4428 . 4429) (punctuation 4427 . 4428) (punctuation 3721 . 3722) (punctuation 3720 . 3721) (semantic-list 3211 . 3231) (symbol 3201 . 3211) (punctuation 3213 . 3214) (punctuation 3212 . 3213) (VOID 3196 . 3200) (punctuation 3213 . 3214) (punctuation 3212 . 3213) (semantic-list 3156 . 3192) (symbol 3147 . 3155) (CONST 3141 . 3146) (semantic-list 3124 . 3140) (symbol 3102 . 3124) (BOOL 3097 . 3101) (semantic-list 3035 . 3093) (symbol 3026 . 3034) (CONST 3020 . 3025) (semantic-list 3003 . 3019) (symbol 2981 . 3003) (BOOL 2976 . 2980) (semantic-list 2956 . 2972) (symbol 2947 . 2955) (CONST 2941 . 2946) (semantic-list 2938 . 2940) (symbol 2916 . 2938) (INT 2912 . 2915) (semantic-list 2893 . 2909) (symbol 2884 . 2892) (CONST 2878 . 2883) (semantic-list 2875 . 2877) (symbol 2853 . 2875) (INT 2849 . 2852)))
+)
   :file "!home!mk!work!practical-googletest!googletest!googlemock!src!semantic.cache"
   :semantic-tag-version "2.0"
   :semanticdb-version "2.2")

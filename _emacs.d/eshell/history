@@ -1,72 +1,3 @@
-ls
-..
-ls
-rm -rf practical-googletest/
-ll
-ls
-ls -l
-clear
-
-ls
-git clone https://github.com/hyukmyeong/practical-googletest.git
-ls
-rm -rf luna-service2/
-rm -rf ls2-helpers/
-rm -rf googletest_ex/
-cd backup/
-ls
-..
-rm -rf backup/
-ll
-ls
-cd trash/
-ls
-..
-rm -rf trash/
-ll
-ls
-cd bionic/
-ls
-..
-ls
-cd gcc/
-ls
-ls
-..
-ls
-cd algoritm/
-ls
-vi main.cpp 
-ls
-..
-ls
-cd algoritm/
-emacs main.cpp 
-ls
-rm #	
-rm #main.cpp#
-ls
-rm #main.cpp#
-ls
-rm \#main.cpp\#
-ls
-..
-ls
-git clone https://github.com/google/googletest.git
-git clone https://github.com/isocpp/CppCoreGuidelines.git
-ls
-exit
-ls
-..
-ls
-cd practical-googletest/
-ls
-cd 2.matcher/
-ls
-..
-ls
-cat README.md 
-ls
 git clone -b 'release-1.10.0' https://github.com/google/googletest.git
 ls
 cat README.md 
@@ -105,3 +36,93 @@ cd CppCoreGuidelines/
 ls
 git branch
 git log .
+ls
+cat ../README.md 
+mkdir build && cd build && cmake .. && make && cd ../../  
+rm -rf build && mkdir build && cd build && cmake .. && make && cd ../
+rm -rf build && mkdir build && cd build && cmake .. && make && cd ../
+rm -rf build && mkdir build && cd build && cmake .. && make && cd ..
+ls
+mkdir build
+ls
+rm -rf build
+rm -rf build && mkdir build && cd build && cmake ..
+ls
+rm -rf build && mkdir build && cd build
+ls
+mkdir build
+ls
+cd build
+ls
+cmake ..
+make 
+rm -rf build && mkdir build && cd build && cmake .. && make && cd ../
+clear
+
+mkdir build && cd build && cmake .. && make && cd ../../
+mkdir build && cd build
+rm -rf build && mkdir build && cd build
+..
+rm -rf build && mkdir build && cd build && cmake ..
+rm -rf build && mkdir build && cd build 
+..
+..
+git log .
+git show 
+cd ..
+..
+ls
+..
+grep -Rin GTEST_HAS_ABSL .
+ls
+./a.out 
+make
+./a.out 
+ke
+make
+clear
+
+./a.out 
+make
+./g
+./a.out 
+make
+./a.out 
+make
+./a.out 
+exit
+ls
+ls
+ls
+cd ..
+ls
+git clone https://github.com/hyukmyeong/algorithm.git
+ls
+git clone https://github.com/hyukmyeong/algorithm.git
+ls
+rm disjointset.h
+rm disjointset.h.gch 
+ls
+ls
+ls
+rm cscope.out 
+ls
+GTAGS
+gtags
+ls
+ls
+exit
+ls
+./a.out 
+ls
+..
+ls
+mkdir LAN
+ls
+mkdir TPATH
+ls
+git status
+..
+ls
+t status
+git status

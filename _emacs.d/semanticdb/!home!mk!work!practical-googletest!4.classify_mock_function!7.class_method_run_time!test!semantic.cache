@@ -9,44 +9,51 @@
         '( ("iostream" include (:system-flag t) nil [1 20])
             ("string" include (:system-flag t) nil [21 38])
             ("gtest/gtest.h" include nil nil [39 63])
-            ("gmock/gmock.h" include nil nil [64 88])
+            ("gtest/gtest-spi.h" include nil nil [64 92])
+            ("gmock/gmock.h" include nil nil [93 117])
             ("std" using (:type ("std" type
                  (:prototype t
                   :type "namespace")
-                  nil nil)) nil [90 110])
-            ("testing" variable (:type "int") nil [129 137])
+                  nil nil)) nil [119 139])
+            ("testing" variable (:type "int") nil [158 166])
             ("MockDOC" type
                (:members 
-                  ( ("public" label nil (reparse-symbol classsubparts) [155 162])
+                  ( ("public" label nil (reparse-symbol classsubparts) [184 191])
                     ("MOCK_METHOD1" function
                        (:prototype-flag t
                         :arguments 
-                          ( ("" variable (:type ("foo" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [180 184])
-                            ("" variable (:type "int") (reparse-symbol arg-sub-list) [185 197]))                          
+                          ( ("" variable (:type ("foo" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [209 213])
+                            ("" variable (:type ("string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [214 229]))                          
                         :type "int")
-                        (reparse-symbol classsubparts) [167 199]))                  
+                        (reparse-symbol classsubparts) [196 231]))                  
                 :type "class")
-                nil [139 202])
+                nil [168 234])
             ("TEST" function
                (:arguments 
-                  ( ("" variable (:type ("SequenceTest" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [209 222])
-                    ("" variable (:type ("InSequenceClass" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [223 239]))                  
+                  ( ("" variable (:type ("SequenceTest" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [241 254])
+                    ("" variable (:type ("InSequenceClass" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [255 271]))                  
                 :type "int")
-                nil [204 972])
+                nil [236 808])
+            ("TEST" function
+               (:arguments 
+                  ( ("" variable (:type ("SequenceTest" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [815 828])
+                    ("" variable (:type ("InSequencePartial" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [829 847]))                  
+                :type "int")
+                nil [810 1400])
             ("main" function
                (:arguments 
-                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [983 992])
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [1411 1420])
                     ("argv" variable
                        (:pointer 2
                         :type "char")
-                        (reparse-symbol arg-sub-list) [993 1005]))                  
+                        (reparse-symbol arg-sub-list) [1421 1433]))                  
                 :type "int")
-                nil [974 1081]))          
+                nil [1402 1505]))          
       :file "gtest_main.cpp"
-      :pointmax 1082
-      :fsize 1081
-      :lastmodtime '(24171 48751 532450 271000)
-      :unmatched-syntax '((semantic-list 188 . 197) (punctuation 128 . 129) (USING 111 . 116))))
+      :pointmax 1506
+      :fsize 1505
+      :lastmodtime '(24174 248 916759 376000)
+      :unmatched-syntax nil))
   :file "!home!mk!work!practical-googletest!4.classify_mock_function!7.class_method_run_time!test!semantic.cache"
   :semantic-tag-version "2.0"
   :semanticdb-version "2.2")

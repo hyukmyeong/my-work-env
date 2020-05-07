@@ -1,0 +1,2291 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("GTEST_INCLUDE_GTEST_INTERNAL_GTEST_PORT_H_" variable (:constant-flag t) nil [2206 2248])
+            ("ctype.h" include (:system-flag t) nil [11534 11552])
+            ("stddef.h" include (:system-flag t) nil [11575 11594])
+            ("stdio.h" include (:system-flag t) nil [11613 11631])
+            ("stdlib.h" include (:system-flag t) nil [11632 11651])
+            ("string.h" include (:system-flag t) nil [11652 11671])
+            ("memory" include (:system-flag t) nil [11672 11689])
+            ("type_traits" include (:system-flag t) nil [11690 11712])
+            ("sys/types.h" include (:system-flag t) nil [11733 11756])
+            ("sys/stat.h" include (:system-flag t) nil [11757 11779])
+            ("algorithm" include (:system-flag t) nil [11900 11920])
+            ("iostream" include (:system-flag t) nil [11932 11951])
+            ("sstream" include (:system-flag t) nil [11964 11982])
+            ("string" include (:system-flag t) nil [11996 12013])
+            ("tuple" include (:system-flag t) nil [12028 12044])
+            ("utility" include (:system-flag t) nil [12045 12063])
+            ("vector" include (:system-flag t) nil [12064 12081])
+            ("gtest/internal/gtest-port-arch.h" include nil nil [12094 12137])
+            ("gtest/internal/custom/gtest-port.h" include nil nil [12138 12183])
+            ("GTEST_DEV_EMAIL_" variable (:constant-flag t) nil [12225 12241])
+            ("GTEST_FLAG_PREFIX_" variable (:constant-flag t) nil [12291 12309])
+            ("GTEST_FLAG_PREFIX_DASH_" variable (:constant-flag t) nil [12328 12351])
+            ("GTEST_FLAG_PREFIX_UPPER_" variable (:constant-flag t) nil [12370 12394])
+            ("GTEST_NAME_" variable (:constant-flag t) nil [12413 12424])
+            ("GTEST_PROJECT_URL_" variable (:constant-flag t) nil [12448 12466])
+            ("GTEST_INIT_GOOGLE_TEST_NAME_" variable (:constant-flag t) nil [12598 12626])
+            ("GTEST_GCC_VER_" variable (:constant-flag t) nil [12822 12836])
+            ("GTEST_DISABLE_MSC_WARNINGS_PUSH_" variable (:constant-flag t) nil [13421 13453])
+            ("GTEST_DISABLE_MSC_WARNINGS_POP_" variable (:constant-flag t) nil [13473 13504])
+            ("GTEST_DISABLE_MSC_DEPRECATED_PUSH_" variable (:constant-flag t) nil [14052 14086])
+            ("GTEST_DISABLE_MSC_DEPRECATED_POP_" variable (:constant-flag t) nil [14143 14176])
+            ("unistd.h" include (:system-flag t) nil [15244 15264])
+            ("strings.h" include (:system-flag t) nil [15265 15286])
+            ("GTEST_HAS_POSIX_RE" variable (:constant-flag t) nil [15747 15765])
+            ("GTEST_USES_SIMPLE_RE" variable (:constant-flag t) nil [16460 16480])
+            ("GTEST_HAS_EXCEPTIONS" variable (:constant-flag t) nil [17889 17909])
+            ("GTEST_HAS_EXCEPTIONS" variable (:constant-flag t) nil [18612 18632])
+            ("GTEST_HAS_STD_STRING" variable (:constant-flag t) nil [18873 18893])
+            ("GTEST_HAS_STD_WSTRING" variable (:constant-flag t) nil [19369 19390])
+            ("GTEST_HAS_RTTI" variable (:constant-flag t) nil [20395 20409])
+            ("GTEST_HAS_RTTI" variable (:constant-flag t) nil [21170 21184])
+            ("typeinfo" include (:system-flag t) nil [21341 21361])
+            ("GTEST_HAS_PTHREAD" variable (:constant-flag t) nil [21693 21710])
+            ("GTEST_HAS_CLONE" variable (:constant-flag t) nil [23061 23076])
+            ("GTEST_HAS_STREAM_REDIRECTION" variable (:constant-flag t) nil [23564 23592])
+            ("GTEST_HAS_TYPED_TEST" variable (:constant-flag t) nil [24581 24601])
+            ("GTEST_HAS_TYPED_TEST_P" variable (:constant-flag t) nil [24613 24635])
+            ("GTEST_WIDE_STRING_USES_UTF16_" variable (:constant-flag t) nil [24735 24764])
+            ("GTEST_AMBIGUOUS_ELSE_BLOCKER_" variable (:constant-flag t) nil [25533 25562])
+            ("GTEST_ATTRIBUTE_UNUSED_" variable (:constant-flag t) nil [26116 26139])
+            ("GTEST_ATTRIBUTE_PRINTF_" variable (:constant-flag t) nil [26935 26958])
+            ("GTEST_DISALLOW_ASSIGN_" variable (:constant-flag t) nil [27260 27282])
+            ("GTEST_DISALLOW_COPY_AND_ASSIGN_" variable (:constant-flag t) nil [27459 27490])
+            ("GTEST_MUST_USE_RESULT_" variable (:constant-flag t) nil [27864 27886])
+            ("GTEST_INTENTIONAL_CONST_COND_PUSH_" variable (:constant-flag t) nil [28329 28363])
+            ("GTEST_INTENTIONAL_CONST_COND_POP_" variable (:constant-flag t) nil [28420 28453])
+            ("GTEST_HAS_SEH" variable (:constant-flag t) nil [28925 28938])
+            ("GTEST_IS_THREADSAFE" variable (:constant-flag t) nil [29013 29032])
+            ("GTEST_API_" variable (:constant-flag t) nil [29742 29752])
+            ("GTEST_DEFAULT_DEATH_TEST_STYLE" variable (:constant-flag t) nil [29947 29977])
+            ("GTEST_NO_INLINE_" variable (:constant-flag t) nil [30108 30124])
+            ("GTEST_HAS_CXXABI_H_" variable (:constant-flag t) nil [30388 30407])
+            ("GTEST_ATTRIBUTE_NO_SANITIZE_MEMORY_" variable (:constant-flag t) nil [30846 30881])
+            ("GTEST_ATTRIBUTE_NO_SANITIZE_ADDRESS_" variable (:constant-flag t) nil [31247 31283])
+            ("GTEST_ATTRIBUTE_NO_SANITIZE_HWADDRESS_" variable (:constant-flag t) nil [31664 31702])
+            ("GTEST_ATTRIBUTE_NO_SANITIZE_THREAD_" variable (:constant-flag t) nil [32062 32097])
+            ("testing" type
+               (:members 
+                  ( ("Message" type
+                       (:prototype t
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [32141 32155])
+                    ("std::get" using (:type ("std::get" type
+                         (:prototype t
+                          :type "class")
+                          nil nil)) (reparse-symbol namespacesubparts) [32249 32264])
+                    ("std::make_tuple" using (:type ("std::make_tuple" type
+                         (:prototype t
+                          :type "class")
+                          nil nil)) (reparse-symbol namespacesubparts) [32265 32287])
+                    ("std::tuple" using (:type ("std::tuple" type
+                         (:prototype t
+                          :type "class")
+                          nil nil)) (reparse-symbol namespacesubparts) [32288 32305])
+                    ("std::tuple_element" using (:type ("std::tuple_element" type
+                         (:prototype t
+                          :type "class")
+                          nil nil)) (reparse-symbol namespacesubparts) [32306 32331])
+                    ("std::tuple_size" using (:type ("std::tuple_size" type
+                         (:prototype t
+                          :type "class")
+                          nil nil)) (reparse-symbol namespacesubparts) [32332 32354])
+                    ("internal" type
+                       (:members 
+                          ( ("Secret" type
+                               (:prototype t
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [32553 32566])
+                            ("GTEST_COMPILE_ASSERT_" variable (:constant-flag t) (reparse-symbol namespacesubparts) [33071 33092])
+                            ("GTEST_ARRAY_SIZE_" variable (:constant-flag t) (reparse-symbol namespacesubparts) [33190 33207])
+                            ("IsTrue" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("condition" variable (:type "bool") (reparse-symbol arg-sub-list) [33367 33382]))                                  
+                                :type "bool")
+                                (reparse-symbol namespacesubparts) [33355 33383])
+                            ("RE" type
+                               (:members 
+                                  ( ("public" label nil (reparse-symbol classsubparts) [33644 33651])
+                                    ("RE" function
+                                       (:constructor-flag t
+                                        :arguments 
+                                          ( ("other" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("RE" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [33761 33777]))                                          
+                                        :type ("RE" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [33758 33804])
+                                    ("RE" function
+                                       (:constructor-flag t
+                                        :arguments 
+                                          ( ("regex" variable
+                                               (:reference 1
+                                                :type ("std::string" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [33856 33875]))                                          
+                                        :type ("RE" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [33845 33900])
+                                    ("RE" function
+                                       (:constructor-flag t
+                                        :arguments 
+                                          ( ("regex" variable
+                                               (:pointer 1
+                                                :constant-flag t
+                                                :type "char")
+                                                (reparse-symbol arg-sub-list) [33918 33936]))                                          
+                                        :type ("RE" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [33915 33953])
+                                    ("RE" function
+                                       (:prototype-flag t
+                                        :destructor-flag t
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [33967 33973])
+                                    ("pattern" function
+                                       (:methodconst-flag t
+                                        :pointer 1
+                                        :constant-flag t
+                                        :type "char")
+                                        (reparse-symbol classsubparts) [34030 34078])
+                                    ("FullMatch" function
+                                       (:typemodifiers ("static")
+                                        :arguments 
+                                          ( ("str" variable
+                                               (:reference 1
+                                                :type ("std::string" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [34348 34365])
+                                            ("re" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("RE" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [34366 34379]))                                          
+                                        :type "bool")
+                                        (reparse-symbol classsubparts) [34318 34424])
+                                    ("PartialMatch" function
+                                       (:typemodifiers ("static")
+                                        :arguments 
+                                          ( ("str" variable
+                                               (:reference 1
+                                                :type ("std::string" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [34460 34477])
+                                            ("re" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("RE" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [34478 34491]))                                          
+                                        :type "bool")
+                                        (reparse-symbol classsubparts) [34427 34539])
+                                    ("FullMatch" function
+                                       (:prototype-flag t
+                                        :typemodifiers ("static")
+                                        :arguments 
+                                          ( ("str" variable
+                                               (:pointer 1
+                                                :constant-flag t
+                                                :type "char")
+                                                (reparse-symbol arg-sub-list) [34565 34581])
+                                            ("re" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("RE" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [34582 34595]))                                          
+                                        :type "bool")
+                                        (reparse-symbol classsubparts) [34543 34596])
+                                    ("PartialMatch" function
+                                       (:prototype-flag t
+                                        :typemodifiers ("static")
+                                        :arguments 
+                                          ( ("str" variable
+                                               (:pointer 1
+                                                :constant-flag t
+                                                :type "char")
+                                                (reparse-symbol arg-sub-list) [34624 34640])
+                                            ("re" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("RE" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [34641 34654]))                                          
+                                        :type "bool")
+                                        (reparse-symbol classsubparts) [34599 34655])
+                                    ("private" label nil (reparse-symbol classsubparts) [34658 34666])
+                                    ("Init" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("regex" variable
+                                               (:pointer 1
+                                                :constant-flag t
+                                                :type "char")
+                                                (reparse-symbol arg-sub-list) [34679 34697]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [34669 34698])
+                                    ("pattern_" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type "char")
+                                        (reparse-symbol classsubparts) [34701 34722])
+                                    ("is_valid_" variable (:type "bool") (reparse-symbol classsubparts) [34725 34740])
+                                    ("full_pattern_" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type "char")
+                                        (reparse-symbol classsubparts) [34901 34927]))                                  
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [33621 34991])
+                            ("FormatFileLocation" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("file" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type "char")
+                                        (reparse-symbol arg-sub-list) [35202 35219])
+                                    ("line" variable (:type "int") (reparse-symbol arg-sub-list) [35220 35229]))                                  
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [35171 35230])
+                            ("FormatCompilerIndependentFileLocation" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("file" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type "char")
+                                        (reparse-symbol arg-sub-list) [35492 35509])
+                                    ("line" variable (:type "int") (reparse-symbol arg-sub-list) [35573 35582]))                                  
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [35442 35583])
+                            ("GTestLogSeverity" type
+                               (:members 
+                                  ( ("GTEST_INFO" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [35908 35919])
+                                    ("GTEST_WARNING" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [35922 35936])
+                                    ("GTEST_ERROR" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [35939 35951])
+                                    ("GTEST_FATAL" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [35954 35967]))                                  
+                                :type "enum")
+                                (reparse-symbol namespacesubparts) [35882 35968])
+                            ("GTestLog" type
+                               (:members 
+                                  ( ("public" label nil (reparse-symbol classsubparts) [36159 36166])
+                                    ("GTestLog" function
+                                       (:prototype-flag t
+                                        :constructor-flag t
+                                        :arguments 
+                                          ( ("severity" variable (:type ("GTestLogSeverity" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [36178 36204])
+                                            ("file" variable
+                                               (:pointer 1
+                                                :constant-flag t
+                                                :type "char")
+                                                (reparse-symbol arg-sub-list) [36205 36222])
+                                            ("line" variable (:type "int") (reparse-symbol arg-sub-list) [36223 36232]))                                          
+                                        :type ("GTestLog" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [36169 36233])
+                                    ("GTestLog" function
+                                       (:prototype-flag t
+                                        :destructor-flag t
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [36315 36327])
+                                    ("GetStream" function (:type ("std::ostream" type (:type "class") nil nil)) (reparse-symbol classsubparts) [36333 36382])
+                                    ("private" label nil (reparse-symbol classsubparts) [36385 36393])
+                                    ("severity_" variable
+                                       (:constant-flag t
+                                        :type ("GTestLogSeverity" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [36396 36429]))                                  
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [36130 36478])
+                            ("GTEST_LOG_" variable (:constant-flag t) (reparse-symbol namespacesubparts) [36515 36525])
+                            ("LogToStderr" function
+                               (:typemodifiers ("inline")
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [36680 36708])
+                            ("FlushInfoLog" function
+                               (:typemodifiers ("inline")
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [36709 36756])
+                            ("GTEST_CHECK_" variable (:constant-flag t) (reparse-symbol namespacesubparts) [37440 37452])
+                            ("GTEST_CHECK_POSIX_SUCCESS_" variable (:constant-flag t) (reparse-symbol namespacesubparts) [37955 37981])
+                            ("ConstRef" type
+                               (:template 
+                                  ( ("T" type (:type "class") nil nil))                                  
+                                :type "struct"
+                                :members 
+                                  ( ("type" variable
+                                       (:constant-flag t
+                                        :type ("T" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [38687 38701]))                                  )
+                                (reparse-symbol namespacesubparts) [38639 38704])
+                            ("ConstRef" type
+                               (:template 
+                                  ( ("T" type (:type "class") nil nil))                                  
+                                :type "struct"
+                                :members 
+                                  ( ("type" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol classsubparts) [38757 38765]))                                  
+                                :template-specifier 
+                                  ( ("T" type (:reference 1) nil nil))                                  )
+                                (reparse-symbol namespacesubparts) [38705 38768])
+                            ("GTEST_REFERENCE_TO_CONST_" variable (:constant-flag t) (reparse-symbol namespacesubparts) [38837 38862])
+                            ("ImplicitCast_" function
+                               (:template 
+                                  ( ("To" type (:type "class") nil nil))                                  
+                                :type ("To" type (:type "class") nil nil)
+                                :arguments 
+                                  ( ("x" variable (:type ("To" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [39942 39947]))                                  
+                                :typemodifiers ("inline"))
+                                (reparse-symbol namespacesubparts) [39896 39961])
+                            ("DownCast_" function
+                               (:template 
+                                  ( ("To" type (:type "class") nil nil)
+                                    ("From" type (:type "class") nil nil))                                  
+                                :type ("To" type (:type "class") nil nil)
+                                :arguments 
+                                  ( ("f" variable
+                                       (:pointer 1
+                                        :type ("From" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [41348 41356]))                                  
+                                :typemodifiers ("inline"))
+                                (reparse-symbol namespacesubparts) [41252 41922])
+                            ("CheckedDowncastToActualType" function
+                               (:template 
+                                  ( ("Derived" type (:type "class") nil nil)
+                                    ("Base" type (:type "class") nil nil))                                  
+                                :type ("Derived" type (:type "class") nil nil)
+                                :arguments 
+                                  ( ("base" variable
+                                       (:pointer 1
+                                        :type ("Base" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [42252 42263]))                                  
+                                :pointer 1)
+                                (reparse-symbol namespacesubparts) [42178 42553])
+                            ("CaptureStdout" function
+                               (:prototype-flag t
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [42897 42918])
+                            ("GetCapturedStdout" function
+                               (:prototype-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [42930 42962])
+                            ("CaptureStderr" function
+                               (:prototype-flag t
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [42974 42995])
+                            ("GetCapturedStderr" function
+                               (:prototype-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [43007 43039])
+                            ("GetFileSize" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("file" variable
+                                       (:pointer 1
+                                        :type ("FILE" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [43153 43164]))                                  
+                                :type ("size_t" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [43134 43165])
+                            ("ReadEntireFile" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("file" variable
+                                       (:pointer 1
+                                        :type ("FILE" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [43256 43267]))                                  
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [43229 43268])
+                            ("GetArgvs" function
+                               (:prototype-flag t
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("std::string" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol namespacesubparts) [43312 43348])
+                            ("Mutex" type
+                               (:members 
+                                  ( ("public" label nil (reparse-symbol classsubparts) [66581 66588])
+                                    ("Mutex" function
+                                       (:constructor-flag t
+                                        :type ("Mutex" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [66591 66601])
+                                    ("Lock" function (:type "void") (reparse-symbol classsubparts) [66604 66618])
+                                    ("Unlock" function (:type "void") (reparse-symbol classsubparts) [66621 66637])
+                                    ("AssertHeld" function
+                                       (:methodconst-flag t
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [66640 66666]))                                  
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [66566 66669])
+                            ("GTEST_DECLARE_STATIC_MUTEX_" variable (:constant-flag t) (reparse-symbol namespacesubparts) [66680 66707])
+                            ("GTEST_DEFINE_STATIC_MUTEX_" variable (:constant-flag t) (reparse-symbol namespacesubparts) [66769 66795])
+                            ("GTestMutexLock" type
+                               (:members 
+                                  ( ("public" label nil (reparse-symbol classsubparts) [67202 67209])
+                                    ("GTestMutexLock" function
+                                       (:constructor-flag t
+                                        :arguments 
+                                          ( ("" variable
+                                               (:pointer 1
+                                                :type ("Mutex" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [67236 67243]))                                          
+                                        :type ("GTestMutexLock" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [67221 67246]))                                  
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [67178 67260])
+                            ("MutexLock" type
+                               (:typedef ("GTestMutexLock" type (:type "class") nil nil)
+                                :type "typedef")
+                                (reparse-symbol namespacesubparts) [67262 67295])
+                            ("ThreadLocal" type
+                               (:template 
+                                  ( ("T" type (:type "class") nil nil))                                  
+                                :type "class"
+                                :members 
+                                  ( ("public" label nil (reparse-symbol classsubparts) [67351 67358])
+                                    ("ThreadLocal" function
+                                       (:constructor-flag t
+                                        :type ("ThreadLocal" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [67361 67388])
+                                    ("ThreadLocal" function
+                                       (:constructor-flag t
+                                        :arguments 
+                                          ( ("value" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("T" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [67412 67427]))                                          
+                                        :type ("ThreadLocal" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [67400 67446])
+                                    ("pointer" function
+                                       (:pointer 1
+                                        :type ("T" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [67449 67481])
+                                    ("pointer" function
+                                       (:methodconst-flag t
+                                        :pointer 1
+                                        :constant-flag t
+                                        :type ("T" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [67484 67528])
+                                    ("get" function
+                                       (:methodconst-flag t
+                                        :constant-flag t
+                                        :type ("T" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [67531 67570])
+                                    ("set" function
+                                       (:arguments 
+                                          ( ("value" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("T" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [67582 67597]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [67573 67617])
+                                    ("private" label nil (reparse-symbol classsubparts) [67619 67627])
+                                    ("value_" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol classsubparts) [67630 67639]))                                  )
+                                (reparse-symbol namespacesubparts) [67297 67642])
+                            ("GetThreadCount" function
+                               (:prototype-flag t
+                                :type ("size_t" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [67790 67814])
+                            ("std::integral_constant" variable (:type "int") (reparse-symbol namespacesubparts) [67856 67888])
+                            ("GTEST_PATH_SEP_" variable (:constant-flag t) (reparse-symbol namespacesubparts) [68077 68092])
+                            ("GTEST_HAS_ALT_PATH_SEP_" variable (:constant-flag t) (reparse-symbol namespacesubparts) [68106 68129])
+                            ("BiggestInt" type
+                               (:typedef ("long long")
+                                :type "typedef")
+                                (reparse-symbol namespacesubparts) [68132 68161])
+                            ("IsAlpha" function
+                               (:typemodifiers ("inline")
+                                :arguments 
+                                  ( ("ch" variable (:type "char") (reparse-symbol arg-sub-list) [68468 68476]))                                  
+                                :type "bool")
+                                (reparse-symbol namespacesubparts) [68448 68535])
+                            ("IsAlNum" function
+                               (:typemodifiers ("inline")
+                                :arguments 
+                                  ( ("ch" variable (:type "char") (reparse-symbol arg-sub-list) [68556 68564]))                                  
+                                :type "bool")
+                                (reparse-symbol namespacesubparts) [68536 68623])
+                            ("IsDigit" function
+                               (:typemodifiers ("inline")
+                                :arguments 
+                                  ( ("ch" variable (:type "char") (reparse-symbol arg-sub-list) [68644 68652]))                                  
+                                :type "bool")
+                                (reparse-symbol namespacesubparts) [68624 68711])
+                            ("IsLower" function
+                               (:typemodifiers ("inline")
+                                :arguments 
+                                  ( ("ch" variable (:type "char") (reparse-symbol arg-sub-list) [68732 68740]))                                  
+                                :type "bool")
+                                (reparse-symbol namespacesubparts) [68712 68799])
+                            ("IsSpace" function
+                               (:typemodifiers ("inline")
+                                :arguments 
+                                  ( ("ch" variable (:type "char") (reparse-symbol arg-sub-list) [68820 68828]))                                  
+                                :type "bool")
+                                (reparse-symbol namespacesubparts) [68800 68887])
+                            ("IsUpper" function
+                               (:typemodifiers ("inline")
+                                :arguments 
+                                  ( ("ch" variable (:type "char") (reparse-symbol arg-sub-list) [68908 68916]))                                  
+                                :type "bool")
+                                (reparse-symbol namespacesubparts) [68888 68975])
+                            ("IsXDigit" function
+                               (:typemodifiers ("inline")
+                                :arguments 
+                                  ( ("ch" variable (:type "char") (reparse-symbol arg-sub-list) [68997 69005]))                                  
+                                :type "bool")
+                                (reparse-symbol namespacesubparts) [68976 69065])
+                            ("IsXDigit" function
+                               (:typemodifiers ("inline")
+                                :arguments 
+                                  ( ("ch" variable (:type "wchar_t") (reparse-symbol arg-sub-list) [69087 69098]))                                  
+                                :type "bool")
+                                (reparse-symbol namespacesubparts) [69066 69219])
+                            ("ToLower" function
+                               (:typemodifiers ("inline")
+                                :arguments 
+                                  ( ("ch" variable (:type "char") (reparse-symbol arg-sub-list) [69241 69249]))                                  
+                                :type "char")
+                                (reparse-symbol namespacesubparts) [69221 69322])
+                            ("ToUpper" function
+                               (:typemodifiers ("inline")
+                                :arguments 
+                                  ( ("ch" variable (:type "char") (reparse-symbol arg-sub-list) [69343 69351]))                                  
+                                :type "char")
+                                (reparse-symbol namespacesubparts) [69323 69424])
+                            ("StripTrailingSpaces" function
+                               (:typemodifiers ("inline")
+                                :arguments 
+                                  ( ("str" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [69465 69481]))                                  
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [69426 69609])
+                            ("posix" type
+                               (:members 
+                                  ( ("StatStruct" type
+                                       (:typedef ("stat" type
+                                             (:prototype t
+                                              :type "struct")
+                                              nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol namespacesubparts) [71162 71193])
+                                    ("FileNo" function
+                                       (:typemodifiers ("inline")
+                                        :arguments 
+                                          ( ("file" variable
+                                               (:pointer 1
+                                                :type ("FILE" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [71213 71224]))                                          
+                                        :type "int")
+                                        (reparse-symbol namespacesubparts) [71195 71249])
+                                    ("IsATTY" function
+                                       (:typemodifiers ("inline")
+                                        :arguments 
+                                          ( ("fd" variable (:type "int") (reparse-symbol arg-sub-list) [71268 71275]))                                          
+                                        :type "int")
+                                        (reparse-symbol namespacesubparts) [71250 71298])
+                                    ("Stat" function
+                                       (:typemodifiers ("inline")
+                                        :arguments 
+                                          ( ("path" variable
+                                               (:pointer 1
+                                                :constant-flag t
+                                                :type "char")
+                                                (reparse-symbol arg-sub-list) [71315 71332])
+                                            ("buf" variable
+                                               (:pointer 1
+                                                :type ("StatStruct" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [71333 71349]))                                          
+                                        :type "int")
+                                        (reparse-symbol namespacesubparts) [71299 71377])
+                                    ("StrCaseCmp" function
+                                       (:typemodifiers ("inline")
+                                        :arguments 
+                                          ( ("s1" variable
+                                               (:pointer 1
+                                                :constant-flag t
+                                                :type "char")
+                                                (reparse-symbol arg-sub-list) [71400 71415])
+                                            ("s2" variable
+                                               (:pointer 1
+                                                :constant-flag t
+                                                :type "char")
+                                                (reparse-symbol arg-sub-list) [71416 71431]))                                          
+                                        :type "int")
+                                        (reparse-symbol namespacesubparts) [71378 71464])
+                                    ("StrDup" function
+                                       (:pointer 1
+                                        :typemodifiers ("inline")
+                                        :arguments 
+                                          ( ("src" variable
+                                               (:pointer 1
+                                                :constant-flag t
+                                                :type "char")
+                                                (reparse-symbol arg-sub-list) [71485 71501]))                                          
+                                        :type "char")
+                                        (reparse-symbol namespacesubparts) [71465 71525])
+                                    ("RmDir" function
+                                       (:typemodifiers ("inline")
+                                        :arguments 
+                                          ( ("dir" variable
+                                               (:pointer 1
+                                                :constant-flag t
+                                                :type "char")
+                                                (reparse-symbol arg-sub-list) [71543 71559]))                                          
+                                        :type "int")
+                                        (reparse-symbol namespacesubparts) [71526 71582])
+                                    ("IsDir" function
+                                       (:typemodifiers ("inline")
+                                        :arguments 
+                                          ( ("st" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("StatStruct" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [71601 71622]))                                          
+                                        :type "bool")
+                                        (reparse-symbol namespacesubparts) [71583 71654])
+                                    ("StrNCpy" function
+                                       (:pointer 1
+                                        :typemodifiers ("inline")
+                                        :constant-flag t
+                                        :arguments 
+                                          ( ("dest" variable
+                                               (:pointer 1
+                                                :type "char")
+                                                (reparse-symbol arg-sub-list) [71788 71799])
+                                            ("src" variable
+                                               (:pointer 1
+                                                :constant-flag t
+                                                :type "char")
+                                                (reparse-symbol arg-sub-list) [71800 71816])
+                                            ("n" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [71817 71826]))                                          
+                                        :type "char")
+                                        (reparse-symbol namespacesubparts) [71761 71862])
+                                    ("ChDir" function
+                                       (:typemodifiers ("inline")
+                                        :arguments 
+                                          ( ("dir" variable
+                                               (:pointer 1
+                                                :constant-flag t
+                                                :type "char")
+                                                (reparse-symbol arg-sub-list) [72111 72127]))                                          
+                                        :type "int")
+                                        (reparse-symbol namespacesubparts) [72094 72150])
+                                    ("FOpen" function
+                                       (:pointer 1
+                                        :typemodifiers ("inline")
+                                        :arguments 
+                                          ( ("path" variable
+                                               (:pointer 1
+                                                :constant-flag t
+                                                :type "char")
+                                                (reparse-symbol arg-sub-list) [72177 72194])
+                                            ("mode" variable
+                                               (:pointer 1
+                                                :constant-flag t
+                                                :type "char")
+                                                (reparse-symbol arg-sub-list) [72195 72212]))                                          
+                                        :type ("FILE" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [72158 72244])
+                                    ("FReopen" function
+                                       (:pointer 1
+                                        :typemodifiers ("inline")
+                                        :arguments 
+                                          ( ("path" variable
+                                               (:pointer 1
+                                                :constant-flag t
+                                                :type "char")
+                                                (reparse-symbol arg-sub-list) [72295 72312])
+                                            ("mode" variable
+                                               (:pointer 1
+                                                :constant-flag t
+                                                :type "char")
+                                                (reparse-symbol arg-sub-list) [72313 72330])
+                                            ("stream" variable
+                                               (:pointer 1
+                                                :type ("FILE" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [72331 72344]))                                          
+                                        :type ("FILE" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [72274 72386])
+                                    ("FDOpen" function
+                                       (:pointer 1
+                                        :typemodifiers ("inline")
+                                        :arguments 
+                                          ( ("fd" variable (:type "int") (reparse-symbol arg-sub-list) [72407 72414])
+                                            ("mode" variable
+                                               (:pointer 1
+                                                :constant-flag t
+                                                :type "char")
+                                                (reparse-symbol arg-sub-list) [72415 72432]))                                          
+                                        :type ("FILE" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [72387 72461])
+                                    ("FClose" function
+                                       (:typemodifiers ("inline")
+                                        :arguments 
+                                          ( ("fp" variable
+                                               (:pointer 1
+                                                :type ("FILE" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [72487 72496]))                                          
+                                        :type "int")
+                                        (reparse-symbol namespacesubparts) [72469 72519])
+                                    ("Read" function
+                                       (:typemodifiers ("inline")
+                                        :arguments 
+                                          ( ("fd" variable (:type "int") (reparse-symbol arg-sub-list) [72565 72572])
+                                            ("buf" variable
+                                               (:pointer 1
+                                                :type "void")
+                                                (reparse-symbol arg-sub-list) [72573 72583])
+                                            ("count" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [72584 72603]))                                          
+                                        :type "int")
+                                        (reparse-symbol namespacesubparts) [72549 72656])
+                                    ("Write" function
+                                       (:typemodifiers ("inline")
+                                        :arguments 
+                                          ( ("fd" variable (:type "int") (reparse-symbol arg-sub-list) [72674 72681])
+                                            ("buf" variable
+                                               (:pointer 1
+                                                :constant-flag t
+                                                :type "void")
+                                                (reparse-symbol arg-sub-list) [72682 72698])
+                                            ("count" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [72699 72718]))                                          
+                                        :type "int")
+                                        (reparse-symbol namespacesubparts) [72657 72772])
+                                    ("Close" function
+                                       (:typemodifiers ("inline")
+                                        :arguments 
+                                          ( ("fd" variable (:type "int") (reparse-symbol arg-sub-list) [72790 72797]))                                          
+                                        :type "int")
+                                        (reparse-symbol namespacesubparts) [72773 72819])
+                                    ("StrError" function
+                                       (:pointer 1
+                                        :typemodifiers ("inline")
+                                        :constant-flag t
+                                        :arguments 
+                                          ( ("errnum" variable (:type "int") (reparse-symbol arg-sub-list) [72848 72859]))                                          
+                                        :type "char")
+                                        (reparse-symbol namespacesubparts) [72820 72888])
+                                    ("GetEnv" function
+                                       (:pointer 1
+                                        :typemodifiers ("inline")
+                                        :constant-flag t
+                                        :arguments 
+                                          ( ("name" variable
+                                               (:pointer 1
+                                                :constant-flag t
+                                                :type "char")
+                                                (reparse-symbol arg-sub-list) [72922 72939]))                                          
+                                        :type "char")
+                                        (reparse-symbol namespacesubparts) [72896 73524])
+                                    ("Abort" function
+                                       (:typemodifiers ("inline")
+                                        :type "void")
+                                        (reparse-symbol namespacesubparts) [73813 73845]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [69914 73883])
+                            ("GTEST_SNPRINTF_" variable (:constant-flag t) (reparse-symbol namespacesubparts) [74564 74579])
+                            ("TypeWithSize" type
+                               (:template 
+                                  ( ("size_t" type (:typevar "size") nil nil))                                  
+                                :type "class"
+                                :members 
+                                  ( ("public" label nil (reparse-symbol classsubparts) [75639 75646])
+                                    ("UInt" type
+                                       (:typedef ("void")
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [75737 75755]))                                  )
+                                (reparse-symbol namespacesubparts) [75594 75758])
+                            ("TypeWithSize" type
+                               (:type "class"
+                                :members 
+                                  ( ("public" label nil (reparse-symbol classsubparts) [75831 75838])
+                                    ("Int" type
+                                       (:typedef ("int")
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [76000 76016])
+                                    ("UInt" type
+                                       (:typedef ("unsigned int")
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [76019 76045]))                                  
+                                :template-specifier (("4")))
+                                (reparse-symbol namespacesubparts) [75794 76048])
+                            ("TypeWithSize" type
+                               (:type "class"
+                                :members 
+                                  ( ("public" label nil (reparse-symbol classsubparts) [76121 76128])
+                                    ("Int" type
+                                       (:typedef ("long long")
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [76214 76236])
+                                    ("UInt" type
+                                       (:typedef ("unsigned long long")
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [76250 76282]))                                  
+                                :template-specifier (("8")))
+                                (reparse-symbol namespacesubparts) [76084 76324])
+                            ("Int32" variable (:type ("Int" type (:type "class") nil nil)) (reparse-symbol namespacesubparts) [76384 76394])
+                            ("UInt32" variable (:type ("UInt" type (:type "class") nil nil)) (reparse-symbol namespacesubparts) [76420 76432])
+                            ("Int64" variable (:type ("Int" type (:type "class") nil nil)) (reparse-symbol namespacesubparts) [76458 76468])
+                            ("UInt64" variable (:type ("UInt" type (:type "class") nil nil)) (reparse-symbol namespacesubparts) [76494 76506])
+                            ("TimeInMillis" variable (:type ("Int" type (:type "class") nil nil)) (reparse-symbol namespacesubparts) [76532 76549])
+                            ("GTEST_FLAG" variable (:constant-flag t) (reparse-symbol namespacesubparts) [76718 76728])
+                            ("GTEST_USE_OWN_FLAGFILE_FLAG_" variable (:constant-flag t) (reparse-symbol namespacesubparts) [76839 76867])
+                            ("GTEST_FLAG_SAVER_" variable (:constant-flag t) (reparse-symbol namespacesubparts) [76964 76981])
+                            ("GTEST_DECLARE_bool_" variable (:constant-flag t) (reparse-symbol namespacesubparts) [77059 77078])
+                            ("GTEST_DECLARE_int32_" variable (:constant-flag t) (reparse-symbol namespacesubparts) [77134 77154])
+                            ("GTEST_DECLARE_string_" variable (:constant-flag t) (reparse-symbol namespacesubparts) [77238 77259])
+                            ("GTEST_DEFINE_bool_" variable (:constant-flag t) (reparse-symbol namespacesubparts) [77361 77379])
+                            ("GTEST_DEFINE_int32_" variable (:constant-flag t) (reparse-symbol namespacesubparts) [77468 77487])
+                            ("GTEST_DEFINE_string_" variable (:constant-flag t) (reparse-symbol namespacesubparts) [77598 77618])
+                            ("GTEST_EXCLUSIVE_LOCK_REQUIRED_" variable (:constant-flag t) (reparse-symbol namespacesubparts) [77826 77856])
+                            ("GTEST_LOCK_EXCLUDED_" variable (:constant-flag t) (reparse-symbol namespacesubparts) [77873 77893])
+                            ("ParseInt32" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("src_text" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Message" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [78136 78160])
+                                    ("str" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type "char")
+                                        (reparse-symbol arg-sub-list) [78161 78177])
+                                    ("value" variable
+                                       (:pointer 1
+                                        :type ("Int32" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [78178 78191]))                                  
+                                :type "bool")
+                                (reparse-symbol namespacesubparts) [78120 78192])
+                            ("BoolFromGTestEnv" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("flag" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type "char")
+                                        (reparse-symbol arg-sub-list) [78324 78341])
+                                    ("default_val" variable (:type "bool") (reparse-symbol arg-sub-list) [78342 78359]))                                  
+                                :type "bool")
+                                (reparse-symbol namespacesubparts) [78302 78360])
+                            ("Int32FromGTestEnv" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("flag" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type "char")
+                                        (reparse-symbol arg-sub-list) [78396 78413])
+                                    ("default_val" variable (:type ("Int32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [78414 78432]))                                  
+                                :type ("Int32" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [78372 78433])
+                            ("OutputFlagAlsoCheckEnvVar" function
+                               (:prototype-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [78434 78474])
+                            ("StringFromGTestEnv" function
+                               (:prototype-flag t
+                                :pointer 1
+                                :constant-flag t
+                                :arguments 
+                                  ( ("flag" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type "char")
+                                        (reparse-symbol arg-sub-list) [78506 78523])
+                                    ("default_val" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type "char")
+                                        (reparse-symbol arg-sub-list) [78524 78548]))                                  
+                                :type "char")
+                                (reparse-symbol namespacesubparts) [78475 78549]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [32356 78552]))                  
+                :type "namespace")
+                nil [32120 78577])
+            ("GTEST_INTERNAL_DEPRECATED" variable (:constant-flag t) nil [79271 79296]))          
+      :file "gtest-port.h"
+      :pointmax 79502
+      :fsize 79501
+      :lastmodtime '(24174 5277 42662 251000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("GTEST_NO_INLINE_" . ((symbol "__attribute__" 30125 . 30138) (semantic-list "((noinline))" 30138 . 30150)))
+          ("GTEST_CHECK_POSIX_SUCCESS_" (spp-arg-list ("posix_call") 37981 . 37993) . 
+              ((IF "if" 37998 . 38000) (semantic-list "(const int gtest_error = (posix_call))" 38001 . 38039) (symbol "GTEST_LOG_" 38046 . 38056) (semantic-list "(FATAL)" 38056 . 38063) (punctuation "<" 38064 . 38065) (punctuation "<" 38065 . 38066) (punctuation "#" 38067 . 38068) (symbol "posix_call" 38068 . 38078) (punctuation "<" 38079 . 38080) (punctuation "<" 38080 . 38081) (string "\"failed with error \"" 38082 . 38102) (punctuation "<" 38127 . 38128) (punctuation "<" 38128 . 38129) (symbol "gtest_error" 38130 . 38141)))
+          ("GTEST_USES_SIMPLE_RE" . ((number "1" 16481 . 16482)))
+          ("GTEST_HAS_STD_STRING" . ((number "1" 18894 . 18895)))
+          ("GTEST_HAS_STD_WSTRING" . ((semantic-list "(!(GTEST_OS_LINUX_ANDROID || GTEST_OS_CYGWIN || GTEST_OS_SOLARIS || \\
+     GTEST_OS_HAIKU))" 19435 . 19526)))
+          ("GTEST_HAS_TYPED_TEST" . ((number "1" 24602 . 24603)))
+          ("GTEST_FLAG_SAVER_" . 
+              ((punctuation ":" 76982 . 76983) (punctuation ":" 76983 . 76984) (symbol "testing" 76984 . 76991) (punctuation ":" 76991 . 76992) (punctuation ":" 76992 . 76993) (symbol "internal" 76993 . 77001) (punctuation ":" 77001 . 77002) (punctuation ":" 77002 . 77003) (symbol "GTestFlagSaver" 77003 . 77017)))
+          ("GTEST_DECLARE_bool_" (spp-arg-list ("name") 77078 . 77084) . 
+              ((symbol "GTEST_API_" 77085 . 77095) (EXTERN "extern" 77096 . 77102) (BOOL "bool" 77103 . 77107) (symbol "GTEST_FLAG" 77108 . 77118) (semantic-list "(name)" 77118 . 77124)))
+          ("GTEST_FLAG_PREFIX_" . ((string "\"gtest_\"" 12310 . 12318)))
+          ("GTEST_ATTRIBUTE_UNUSED_" . ((symbol "__attribute__" 26140 . 26153) (semantic-list "((unused))" 26154 . 26164)))
+          ("GTEST_MUST_USE_RESULT_" . ((symbol "__attribute__" 27887 . 27900) (semantic-list "((warn_unused_result))" 27901 . 27923)))
+          ("GTEST_HAS_ALT_PATH_SEP_" . ((number "0" 68130 . 68131)))
+          ("GTEST_DECLARE_string_" (spp-arg-list ("name") 77259 . 77265) . 
+              ((symbol "GTEST_API_" 77272 . 77282) (EXTERN "extern" 77283 . 77289) (punctuation ":" 77290 . 77291) (punctuation ":" 77291 . 77292) (symbol "std" 77292 . 77295) (punctuation ":" 77295 . 77296) (punctuation ":" 77296 . 77297) (symbol "string" 77297 . 77303) (symbol "GTEST_FLAG" 77304 . 77314) (semantic-list "(name)" 77314 . 77320)))
+          ("GTEST_DEFINE_string_" (spp-arg-list ("name" "default_val" "doc") 77618 . 77642) . 
+              ((symbol "GTEST_API_" 77649 . 77659) (punctuation ":" 77660 . 77661) (punctuation ":" 77661 . 77662) (symbol "std" 77662 . 77665) (punctuation ":" 77665 . 77666) (punctuation ":" 77666 . 77667) (symbol "string" 77667 . 77673) (symbol "GTEST_FLAG" 77674 . 77684) (semantic-list "(name)" 77684 . 77690) (punctuation "=" 77691 . 77692) (semantic-list "(default_val)" 77693 . 77706)))
+          ("GTEST_ATTRIBUTE_PRINTF_" (spp-arg-list ("string_index" "first_to_check") 26958 . 26988) . ((symbol "__attribute__" 26998 . 27011) (semantic-list "((__format__(__printf__, string_index, first_to_check)))" 27011 . 27067)))
+          ("GTEST_LOG_" (spp-arg-list ("severity") 36525 . 36535) . 
+              ((punctuation ":" 36542 . 36543) (punctuation ":" 36543 . 36544) (symbol "testing" 36544 . 36551) (punctuation ":" 36551 . 36552) (punctuation ":" 36552 . 36553) (symbol "internal" 36553 . 36561) (punctuation ":" 36561 . 36562) (punctuation ":" 36562 . 36563) (symbol "GTestLog" 36563 . 36571) (semantic-list "(::testing::internal::GTEST_##severity, \\
+                                  __FILE__, __LINE__)" 36571 . 36666) (punctuation "." 36666 . 36667) (symbol "GetStream" 36667 . 36676) (semantic-list "()" 36676 . 36678)))
+          ("GTEST_DECLARE_STATIC_MUTEX_" (spp-arg-list ("mutex") 66707 . 66714) . 
+              ((EXTERN "extern" 66719 . 66725) (punctuation ":" 66726 . 66727) (punctuation ":" 66727 . 66728) (symbol "testing" 66728 . 66735) (punctuation ":" 66735 . 66736) (punctuation ":" 66736 . 66737) (symbol "internal" 66737 . 66745) (punctuation ":" 66745 . 66746) (punctuation ":" 66746 . 66747) (symbol "Mutex" 66747 . 66752) (symbol "mutex" 66753 . 66758)))
+          ("GTEST_FLAG_PREFIX_UPPER_" . ((string "\"GTEST_\"" 12395 . 12403)))
+          ("GTEST_DISABLE_MSC_WARNINGS_PUSH_" (spp-arg-list ("warnings") 13453 . 13463))
+          ("GTEST_DISABLE_MSC_DEPRECATED_POP_" (spp-arg-list nil 14176 . 14178) . ((symbol "GTEST_DISABLE_MSC_WARNINGS_POP_" 14185 . 14216) (semantic-list "()" 14216 . 14218)))
+          ("GTEST_HAS_POSIX_RE" . ((semantic-list "(!GTEST_OS_WINDOWS)" 15766 . 15785)))
+          ("GTEST_HAS_CLONE" . ((number "0" 23077 . 23078)))
+          ("GTEST_AMBIGUOUS_ELSE_BLOCKER_" . 
+              ((SWITCH "switch" 25563 . 25569) (semantic-list "(0)" 25570 . 25573) (CASE "case" 25574 . 25578) (number "0" 25579 . 25580) (punctuation ":" 25580 . 25581) (DEFAULT "default" 25582 . 25589) (punctuation ":" 25589 . 25590)))
+          ("GTEST_INTENTIONAL_CONST_COND_PUSH_" (spp-arg-list nil 28363 . 28365) . ((symbol "GTEST_DISABLE_MSC_WARNINGS_PUSH_" 28372 . 28404) (semantic-list "(4127)" 28404 . 28410)))
+          ("GTEST_INTERNAL_DEPRECATED" (spp-arg-list ("message") 79296 . 79305) . ((symbol "__attribute__" 79306 . 79319) (semantic-list "((deprecated(message)))" 79319 . 79342)))
+          ("GTEST_COMPILE_ASSERT_" (spp-arg-list ("expr" "msg") 33092 . 33103) . ((symbol "static_assert" 33104 . 33117) (semantic-list "(expr, #msg)" 33117 . 33129)))
+          ("GTEST_ARRAY_SIZE_" (spp-arg-list ("array") 33207 . 33214) . ((semantic-list "(sizeof(array) / sizeof(array[0]))" 33215 . 33249)))
+          ("GTEST_CHECK_" (spp-arg-list ("condition") 37452 . 37463) . 
+              ((symbol "GTEST_AMBIGUOUS_ELSE_BLOCKER_" 37470 . 37499) (IF "if" 37506 . 37508) (semantic-list "(::testing::internal::IsTrue(condition))" 37509 . 37549) (punctuation ";" 37558 . 37559) (ELSE "else" 37566 . 37570) (symbol "GTEST_LOG_" 37579 . 37589) (semantic-list "(FATAL)" 37589 . 37596) (punctuation "<" 37597 . 37598) (punctuation "<" 37598 . 37599) (string "\"Condition \"" 37600 . 37612) (punctuation "#" 37613 . 37614) (symbol "condition" 37614 . 37623) (string "\" failed. \"" 37624 . 37635)))
+          ("GTEST_DISALLOW_ASSIGN_" (spp-arg-list ("type") 27282 . 27288) . 
+              ((VOID "void" 27293 . 27297) (OPERATOR "operator" 27298 . 27306) (punctuation "=" 27306 . 27307) (semantic-list "(type const &)" 27307 . 27321) (punctuation "=" 27322 . 27323) (DELETE "delete" 27324 . 27330)))
+          ("GTEST_ATTRIBUTE_NO_SANITIZE_ADDRESS_")
+          ("GTEST_DEV_EMAIL_" . ((string "\"googletestframework@@googlegroups.com\"" 12242 . 12281)))
+          ("GTEST_GCC_VER_" . ((semantic-list "(__GNUC__*10000 + __GNUC_MINOR__*100 + __GNUC_PATCHLEVEL__)" 12843 . 12902)))
+          ("GTEST_HAS_RTTI" . ((number "1" 21185 . 21186)))
+          ("GTEST_WIDE_STRING_USES_UTF16_" . ((semantic-list "(GTEST_OS_WINDOWS || GTEST_OS_CYGWIN || GTEST_OS_AIX || GTEST_OS_OS2)" 24769 . 24838)))
+          ("GTEST_ATTRIBUTE_NO_SANITIZE_MEMORY_")
+          ("GTEST_FLAG" (spp-arg-list ("name") 76728 . 76734) . ((spp-symbol-merge ((symbol "FLAGS_gtest_" 76735 . 76747) (symbol "name" 76749 . 76753)) 76735 . 76753)))
+          ("GTEST_DECLARE_int32_" (spp-arg-list ("name") 77154 . 77160) . 
+              ((symbol "GTEST_API_" 77167 . 77177) (EXTERN "extern" 77178 . 77184) (punctuation ":" 77185 . 77186) (punctuation ":" 77186 . 77187) (symbol "testing" 77187 . 77194) (punctuation ":" 77194 . 77195) (punctuation ":" 77195 . 77196) (symbol "internal" 77196 . 77204) (punctuation ":" 77204 . 77205) (punctuation ":" 77205 . 77206) (symbol "Int32" 77206 . 77211) (symbol "GTEST_FLAG" 77212 . 77222) (semantic-list "(name)" 77222 . 77228)))
+          ("GTEST_LOCK_EXCLUDED_" (spp-arg-list ("locks") 77893 . 77900))
+          ("GTEST_INCLUDE_GTEST_INTERNAL_GTEST_PORT_H_")
+          ("GTEST_NAME_" . ((string "\"Google Test\"" 12425 . 12438)))
+          ("GTEST_DISABLE_MSC_WARNINGS_POP_" (spp-arg-list nil 13504 . 13506))
+          ("GTEST_HAS_PTHREAD" . ((semantic-list "(GTEST_OS_LINUX || GTEST_OS_MAC || GTEST_OS_HPUX || GTEST_OS_QNX ||          \\
+   GTEST_OS_FREEBSD || GTEST_OS_NACL || GTEST_OS_NETBSD || GTEST_OS_FUCHSIA || \\
+   GTEST_OS_DRAGONFLY || GTEST_OS_GNU_KFREEBSD || GTEST_OS_OPENBSD ||          \\
+   GTEST_OS_HAIKU)" 21768 . 22027)))
+          ("GTEST_HAS_STREAM_REDIRECTION" . ((number "1" 23593 . 23594)))
+          ("GTEST_INTENTIONAL_CONST_COND_POP_" (spp-arg-list nil 28453 . 28455) . ((symbol "GTEST_DISABLE_MSC_WARNINGS_POP_" 28462 . 28493) (semantic-list "()" 28493 . 28495)))
+          ("GTEST_API_" . ((symbol "__attribute__" 29753 . 29766) (semantic-list "((visibility (\"default\")))" 29766 . 29792)))
+          ("GTEST_HAS_CXXABI_H_" . ((number "1" 30408 . 30409)))
+          ("GTEST_REFERENCE_TO_CONST_" (spp-arg-list ("T") 38862 . 38865) . 
+              ((TYPENAME "typename" 38870 . 38878) (punctuation ":" 38879 . 38880) (punctuation ":" 38880 . 38881) (symbol "testing" 38881 . 38888) (punctuation ":" 38888 . 38889) (punctuation ":" 38889 . 38890) (symbol "internal" 38890 . 38898) (punctuation ":" 38898 . 38899) (punctuation ":" 38899 . 38900) (symbol "ConstRef" 38900 . 38908) (punctuation "<" 38908 . 38909) (symbol "T" 38909 . 38910) (punctuation ">" 38910 . 38911) (punctuation ":" 38911 . 38912) (punctuation ":" 38912 . 38913) (symbol "type" 38913 . 38917)))
+          ("GTEST_PATH_SEP_" . ((string "\"/\"" 68093 . 68096)))
+          ("GTEST_PROJECT_URL_" . ((string "\"https://github.com/google/googletest/\"" 12467 . 12506)))
+          ("GTEST_DISABLE_MSC_DEPRECATED_PUSH_" (spp-arg-list nil 14086 . 14088) . ((symbol "GTEST_DISABLE_MSC_WARNINGS_PUSH_" 14095 . 14127) (semantic-list "(4996)" 14127 . 14133)))
+          ("GTEST_IS_THREADSAFE" . ((semantic-list "(GTEST_HAS_MUTEX_AND_THREAD_LOCAL_ ||                                     \\
+   (GTEST_OS_WINDOWS && !GTEST_OS_WINDOWS_PHONE && !GTEST_OS_WINDOWS_RT) || \\
+   GTEST_HAS_PTHREAD)" 29085 . 29260)))
+          ("GTEST_DEFAULT_DEATH_TEST_STYLE" . ((string "\"fast\"" 29979 . 29985)))
+          ("GTEST_ATTRIBUTE_NO_SANITIZE_HWADDRESS_")
+          ("GTEST_USE_OWN_FLAGFILE_FLAG_" . ((number "1" 76868 . 76869)))
+          ("GTEST_FLAG_PREFIX_DASH_" . ((string "\"gtest-\"" 12352 . 12360)))
+          ("GTEST_HAS_TYPED_TEST_P" . ((number "1" 24636 . 24637)))
+          ("GTEST_DEFINE_int32_" (spp-arg-list ("name" "default_val" "doc") 77487 . 77511) . 
+              ((symbol "GTEST_API_" 77518 . 77528) (punctuation ":" 77529 . 77530) (punctuation ":" 77530 . 77531) (symbol "testing" 77531 . 77538) (punctuation ":" 77538 . 77539) (punctuation ":" 77539 . 77540) (symbol "internal" 77540 . 77548) (punctuation ":" 77548 . 77549) (punctuation ":" 77549 . 77550) (symbol "Int32" 77550 . 77555) (symbol "GTEST_FLAG" 77556 . 77566) (semantic-list "(name)" 77566 . 77572) (punctuation "=" 77573 . 77574) (semantic-list "(default_val)" 77575 . 77588)))
+          ("GTEST_INIT_GOOGLE_TEST_NAME_" . ((string "\"testing::InitGoogleTest\"" 12627 . 12652)))
+          ("GTEST_DISALLOW_COPY_AND_ASSIGN_" (spp-arg-list ("type") 27490 . 27496) . 
+              ((symbol "type" 27501 . 27505) (semantic-list "(type const &)" 27505 . 27519) (punctuation "=" 27520 . 27521) (DELETE "delete" 27522 . 27528) (punctuation ";" 27528 . 27529) (symbol "GTEST_DISALLOW_ASSIGN_" 27534 . 27556) (semantic-list "(type)" 27556 . 27562)))
+          ("GTEST_DEFINE_STATIC_MUTEX_" (spp-arg-list ("mutex") 66795 . 66802) . 
+              ((punctuation ":" 66803 . 66804) (punctuation ":" 66804 . 66805) (symbol "testing" 66805 . 66812) (punctuation ":" 66812 . 66813) (punctuation ":" 66813 . 66814) (symbol "internal" 66814 . 66822) (punctuation ":" 66822 . 66823) (punctuation ":" 66823 . 66824) (symbol "Mutex" 66824 . 66829) (symbol "mutex" 66830 . 66835)))
+          ("GTEST_HAS_EXCEPTIONS" . ((number "0" 18633 . 18634)))
+          ("GTEST_ATTRIBUTE_NO_SANITIZE_THREAD_")
+          ("GTEST_SNPRINTF_" . ((symbol "snprintf" 74580 . 74588)))
+          ("GTEST_EXCLUSIVE_LOCK_REQUIRED_" (spp-arg-list ("locks") 77856 . 77863))
+          ("GTEST_HAS_SEH" . ((number "0" 28939 . 28940)))
+          ("GTEST_DEFINE_bool_" (spp-arg-list ("name" "default_val" "doc") 77379 . 77403) . 
+              ((symbol "GTEST_API_" 77410 . 77420) (BOOL "bool" 77421 . 77425) (symbol "GTEST_FLAG" 77426 . 77436) (semantic-list "(name)" 77436 . 77442) (punctuation "=" 77443 . 77444) (semantic-list "(default_val)" 77445 . 77458)))
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("GTEST_INCLUDE_GTEST_INTERNAL_GTEST_PORT_ARCH_H_" variable (:constant-flag t) nil [1820 1867])
+            ("GTEST_OS_LINUX" variable (:constant-flag t) nil [3333 3347]))          
+      :file "gtest-port-arch.h"
+      :pointmax 3964
+      :fsize 3963
+      :lastmodtime '(24174 5277 42662 251000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("GTEST_INCLUDE_GTEST_INTERNAL_GTEST_PORT_ARCH_H_")
+          ("GTEST_OS_LINUX" . ((number "1" 3348 . 3349)))
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("GTEST_INCLUDE_GTEST_INTERNAL_GTEST_INTERNAL_H_" variable (:constant-flag t) nil [1854 1900])
+            ("gtest/internal/gtest-port.h" include nil nil [1902 1940])
+            ("ctype.h" include (:system-flag t) nil [2132 2150])
+            ("float.h" include (:system-flag t) nil [2151 2169])
+            ("string.h" include (:system-flag t) nil [2170 2189])
+            ("iomanip" include (:system-flag t) nil [2190 2208])
+            ("limits" include (:system-flag t) nil [2209 2226])
+            ("map" include (:system-flag t) nil [2227 2241])
+            ("set" include (:system-flag t) nil [2242 2256])
+            ("string" include (:system-flag t) nil [2257 2274])
+            ("type_traits" include (:system-flag t) nil [2275 2297])
+            ("vector" include (:system-flag t) nil [2298 2315])
+            ("gtest/gtest-message.h" include nil nil [2317 2349])
+            ("gtest/internal/gtest-filepath.h" include nil nil [2350 2392])
+            ("gtest/internal/gtest-string.h" include nil nil [2393 2433])
+            ("gtest/internal/gtest-type-util.h" include nil nil [2434 2477])
+            ("GTEST_CONCAT_TOKEN_" variable (:constant-flag t) nil [2843 2862])
+            ("GTEST_CONCAT_TOKEN_IMPL_" variable (:constant-flag t) nil [2916 2940])
+            ("GTEST_STRINGIFY_" variable (:constant-flag t) nil [3000 3016])
+            ("proto2" type
+               (:members 
+                  ( ("Message" type
+                       (:prototype t
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [3049 3063]))                  
+                :type "namespace")
+                nil [3030 3065])
+            ("testing" type
+               (:members 
+                  ( ("AssertionResult" type
+                       (:prototype t
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [3114 3136])
+                    ("Message" type
+                       (:prototype t
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [3180 3194])
+                    ("Test" type
+                       (:prototype t
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [3252 3263])
+                    ("TestInfo" type
+                       (:prototype t
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [3313 3328])
+                    ("TestPartResult" type
+                       (:prototype t
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [3381 3402])
+                    ("UnitTest" type
+                       (:prototype t
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [3446 3461])
+                    ("PrintToString" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("value" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3568 3583]))                          
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [3542 3584])
+                    ("internal" type
+                       (:members 
+                          ( ("TraceInfo" type
+                               (:prototype t
+                                :type "struct")
+                                (reparse-symbol namespacesubparts) [3608 3625])
+                            ("TestInfoImpl" type
+                               (:prototype t
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [3683 3702])
+                            ("UnitTestImpl" type
+                               (:prototype t
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [3759 3778])
+                            ("kStackTraceMarker" variable
+                               (:dereference 1
+                                :typemodifiers ("extern")
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol namespacesubparts) [3929 3967])
+                            ("IgnoredValue" type
+                               (:members 
+                                  ( ("Sink" type (:type "struct") (reparse-symbol classsubparts) [4064 4079])
+                                    ("public" label nil (reparse-symbol classsubparts) [4081 4088])
+                                    ("IgnoredValue" function
+                                       (:constructor-flag t
+                                        :arguments 
+                                          ( ("" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("T" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [4657 4680]))                                          
+                                        :type ("IgnoredValue" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [4644 4683]))                                  
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [4041 4715])
+                            ("AppendUserMessage" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("gtest_msg" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4838 4867])
+                                    ("user_msg" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Message" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4868 4892]))                                  
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [4803 4893])
+                            ("edit_distance" type
+                               (:members 
+                                  ( ("EditType" type
+                                       (:members 
+                                          ( ("kMatch" variable
+                                               (:constant-flag t
+                                                :type "int")
+                                                (reparse-symbol enumsubparts) [5968 5975])
+                                            ("kAdd" variable
+                                               (:constant-flag t
+                                                :type "int")
+                                                (reparse-symbol enumsubparts) [5976 5981])
+                                            ("kRemove" variable
+                                               (:constant-flag t
+                                                :type "int")
+                                                (reparse-symbol enumsubparts) [5982 5990])
+                                            ("kReplace" variable
+                                               (:constant-flag t
+                                                :type "int")
+                                                (reparse-symbol enumsubparts) [5991 6001]))                                          
+                                        :type "enum")
+                                        (reparse-symbol namespacesubparts) [5952 6002])
+                                    ("CalculateOptimalEdits" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("left" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("std::vector" type
+                                                     (:template-specifier 
+                                                        ( ("size_t" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil))
+                                                (reparse-symbol arg-sub-list) [6063 6095])
+                                            ("right" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("std::vector" type
+                                                     (:template-specifier 
+                                                        ( ("size_t" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil))
+                                                (reparse-symbol arg-sub-list) [6096 6129]))                                          
+                                        :type ("std::vector" type
+                                             (:template-specifier 
+                                                ( ("EditType" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol namespacesubparts) [6014 6130])
+                                    ("CalculateOptimalEdits" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("left" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("std::vector" type
+                                                     (:template-specifier 
+                                                        ( ("std::string" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil))
+                                                (reparse-symbol arg-sub-list) [6251 6288])
+                                            ("right" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("std::vector" type
+                                                     (:template-specifier 
+                                                        ( ("std::string" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil))
+                                                (reparse-symbol arg-sub-list) [6293 6331]))                                          
+                                        :type ("std::vector" type
+                                             (:template-specifier 
+                                                ( ("EditType" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol namespacesubparts) [6202 6332])
+                                    ("CreateUnifiedDiff" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("left" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("std::vector" type
+                                                     (:template-specifier 
+                                                        ( ("std::string" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil))
+                                                (reparse-symbol arg-sub-list) [6437 6474])
+                                            ("right" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("std::vector" type
+                                                     (:template-specifier 
+                                                        ( ("std::string" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil))
+                                                (reparse-symbol arg-sub-list) [6516 6554])
+                                            ("context" variable
+                                               (:default-value "2"
+                                                :type ("size_t" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [6596 6614]))                                          
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [6407 6616]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [5665 6619])
+                            ("DiffStrings" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("left" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [6871 6895])
+                                    ("right" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [6931 6956])
+                                    ("total_line_count" variable
+                                       (:pointer 1
+                                        :type ("size_t" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [6992 7017]))                                  
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [6847 7018])
+                            ("EqFailure" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("expected_expression" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type "char")
+                                        (reparse-symbol arg-sub-list) [7660 7692])
+                                    ("actual_expression" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type "char")
+                                        (reparse-symbol arg-sub-list) [7730 7760])
+                                    ("expected_value" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [7798 7832])
+                                    ("actual_value" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [7870 7902])
+                                    ("ignoring_case" variable (:type "bool") (reparse-symbol arg-sub-list) [7940 7959]))                                  
+                                :type ("AssertionResult" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [7634 7960])
+                            ("GetBoolAssertionFailureMessage" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("assertion_result" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("AssertionResult" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [8097 8137])
+                                    ("expression_text" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type "char")
+                                        (reparse-symbol arg-sub-list) [8142 8170])
+                                    ("actual_predicate_value" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type "char")
+                                        (reparse-symbol arg-sub-list) [8175 8210])
+                                    ("expected_predicate_value" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type "char")
+                                        (reparse-symbol arg-sub-list) [8215 8252]))                                  
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [8049 8253])
+                            ("FloatingPoint" type
+                               (:template 
+                                  ( ("RawType" type (:type "class") nil nil))                                  
+                                :type "class"
+                                :members 
+                                  ( ("public" label nil (reparse-symbol classsubparts) [9307 9314])
+                                    ("Bits" variable (:type ("UInt" type (:type "class") nil nil)) (reparse-symbol classsubparts) [9462 9472])
+                                    ("kFractionBitCount" variable (:type "int") (reparse-symbol classsubparts) [9794 9812])
+                                    ("kMaxUlps" variable
+                                       (:typemodifiers ("static")
+                                        :constant-flag t
+                                        :default-value "4"
+                                        :type ("size_t" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [10834 10867])
+                                    ("FloatingPoint" function
+                                       (:constructor-flag t
+                                        :arguments 
+                                          ( ("x" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("RawType" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [11214 11231]))                                          
+                                        :type ("FloatingPoint" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [11200 11250])
+                                    ("ReinterpretBits" function
+                                       (:typemodifiers ("static")
+                                        :arguments 
+                                          ( ("bits" variable
+                                               (:constant-flag t
+                                                :type ("Bits" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [11435 11451]))                                          
+                                        :type ("RawType" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [11404 11531])
+                                    ("Infinity" function
+                                       (:typemodifiers ("static")
+                                        :type ("RawType" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [11608 11685])
+                                    ("Max" function
+                                       (:prototype-flag t
+                                        :typemodifiers ("static")
+                                        :type ("RawType" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [11758 11779])
+                                    ("bits" function
+                                       (:methodconst-flag t
+                                        :constant-flag t
+                                        :type ("Bits" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [11859 11904])
+                                    ("exponent_bits" function
+                                       (:methodconst-flag t
+                                        :type ("Bits" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [11955 12021])
+                                    ("fraction_bits" function
+                                       (:methodconst-flag t
+                                        :type ("Bits" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [12072 12138])
+                                    ("sign_bit" function
+                                       (:methodconst-flag t
+                                        :type ("Bits" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [12184 12241])
+                                    ("is_nan" function
+                                       (:methodconst-flag t
+                                        :type "bool")
+                                        (reparse-symbol classsubparts) [12306 12512])
+                                    ("AlmostEquals" function
+                                       (:methodconst-flag t
+                                        :arguments 
+                                          ( ("rhs" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("FloatingPoint" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [12838 12863]))                                          
+                                        :type "bool")
+                                        (reparse-symbol classsubparts) [12820 13121])
+                                    ("private" label nil (reparse-symbol classsubparts) [13124 13132])
+                                    ("FloatingPointUnion" type
+                                       (:members 
+                                          ( ("value_" variable (:type ("RawType" type (:type "class") nil nil)) (reparse-symbol classsubparts) [13233 13248])
+                                            ("bits_" variable (:type ("Bits" type (:type "class") nil nil)) (reparse-symbol classsubparts) [13288 13299]))                                          
+                                        :type "union")
+                                        (reparse-symbol classsubparts) [13202 13348])
+                                    ("SignAndMagnitudeToBiased" function
+                                       (:typemodifiers ("static")
+                                        :arguments 
+                                          ( ("sam" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("Bits" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [14048 14064]))                                          
+                                        :type ("Bits" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [14011 14261])
+                                    ("DistanceBetweenSignAndMagnitudeNumbers" function
+                                       (:typemodifiers ("static")
+                                        :arguments 
+                                          ( ("sam1" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("Bits" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [14443 14460])
+                                            ("sam2" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("Bits" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [14514 14531]))                                          
+                                        :type ("Bits" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [14392 14728])
+                                    ("u_" variable (:type ("FloatingPointUnion" type (:type "class") nil nil)) (reparse-symbol classsubparts) [14732 14754]))                                  )
+                                (reparse-symbol namespacesubparts) [9256 14757])
+                            ("Max" function
+                               (:type "float"
+                                :typemodifiers ("inline")
+                                :parent "FloatingPoint")
+                                (reparse-symbol namespacesubparts) [14868 14940])
+                            ("Max" function
+                               (:type "double"
+                                :typemodifiers ("inline")
+                                :parent "FloatingPoint")
+                                (reparse-symbol namespacesubparts) [14941 15015])
+                            ("Float" type
+                               (:typedef ("FloatingPoint" type
+                                     (:template-specifier 
+                                        ( ("float" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :type "typedef")
+                                (reparse-symbol namespacesubparts) [15103 15138])
+                            ("Double" type
+                               (:typedef ("FloatingPoint" type
+                                     (:template-specifier 
+                                        ( ("double" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :type "typedef")
+                                (reparse-symbol namespacesubparts) [15139 15176])
+                            ("TypeId" type
+                               (:typedef ("void")
+                                :pointer 1
+                                :type "typedef")
+                                (reparse-symbol namespacesubparts) [15564 15591])
+                            ("TypeIdHelper" type
+                               (:template 
+                                  ( ("T" type (:type "class") nil nil))                                  
+                                :type "class"
+                                :members 
+                                  ( ("public" label nil (reparse-symbol classsubparts) [15637 15644])
+                                    ("dummy_" variable
+                                       (:typemodifiers ("static")
+                                        :type "bool")
+                                        (reparse-symbol classsubparts) [15835 15854]))                                  )
+                                (reparse-symbol namespacesubparts) [15593 15857])
+                            ("TypeIdHelper::dummy_" variable
+                               (:default-value "false"
+                                :type "bool")
+                                (reparse-symbol namespacesubparts) [15859 15918])
+                            ("GetTypeId" function
+                               (:template 
+                                  ( ("T" type (:type "class") nil nil))                                  
+                                :type ("TypeId" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [16119 16409])
+                            ("GetTestTypeId" function
+                               (:prototype-flag t
+                                :type ("TypeId" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [16697 16720])
+                            ("TestFactoryBase" type
+                               (:members 
+                                  ( ("public" label nil (reparse-symbol classsubparts) [16833 16840])
+                                    ("TestFactoryBase" function
+                                       (:destructor-flag t
+                                        :typemodifiers ("virtual")
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [16843 16872])
+                                    ("CreateTest" function
+                                       (:pure-virtual-flag t
+                                        :prototype-flag t
+                                        :pointer 1
+                                        :typemodifiers ("virtual")
+                                        :type ("Test" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [16988 17019])
+                                    ("protected" label nil (reparse-symbol classsubparts) [17022 17032])
+                                    ("TestFactoryBase" function
+                                       (:constructor-flag t
+                                        :type ("TestFactoryBase" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [17035 17055])
+                                    ("private" label nil (reparse-symbol classsubparts) [17058 17066])
+                                    ("GTEST_DISALLOW_COPY_AND_ASSIGN_" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("" variable (:type ("TestFactoryBase" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [17101 17117]))                                          
+                                        :type "int")
+                                        (reparse-symbol classsubparts) [17069 17118]))                                  
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [16808 17121])
+                            ("TestFactoryImpl" type
+                               (:template 
+                                  ( ("TestClass" type (:type "class") nil nil))                                  
+                                :type "class"
+                                :members 
+                                  ( ("public" label nil (reparse-symbol classsubparts) [17310 17317]))                                  
+                                :superclasses 
+                                  ( ("TestFactoryBase" type
+                                       (:protection "public"
+                                        :type "class")
+                                        nil nil))                                  )
+                                (reparse-symbol namespacesubparts) [17233 17376])
+                            ("" function
+                               (:prototype-flag t
+                                :operator-flag t
+                                :function-pointer t
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [17991 18002])
+                            ("" function
+                               (:prototype-flag t
+                                :operator-flag t
+                                :function-pointer t
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [18033 18044])
+                            ("CodeLocation" type
+                               (:members 
+                                  ( ("CodeLocation" function
+                                       (:constructor-flag t
+                                        :arguments 
+                                          ( ("a_file" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("std::string" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [18083 18109])
+                                            ("a_line" variable (:type "int") (reparse-symbol arg-sub-list) [18110 18121]))                                          
+                                        :type ("CodeLocation" type (:type "struct") nil nil))
+                                        (reparse-symbol classsubparts) [18070 18159])
+                                    ("file" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [18163 18180])
+                                    ("line" variable (:type "int") (reparse-symbol classsubparts) [18183 18192]))                                  
+                                :type "struct")
+                                (reparse-symbol namespacesubparts) [18046 18195])
+                            ("" function
+                               (:prototype-flag t
+                                :operator-flag t
+                                :function-pointer t
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [18433 18444])
+                            ("GetNotDefaultOrNull" function
+                               (:typemodifiers ("inline")
+                                :arguments 
+                                  ( ("a" variable (:type ("SetUpTearDownSuiteFuncType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [18505 18534])
+                                    ("def" variable (:type ("SetUpTearDownSuiteFuncType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [18535 18566]))                                  
+                                :type ("SetUpTearDownSuiteFuncType" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [18446 18603])
+                            ("SuiteApiResolver" type
+                               (:template 
+                                  ( ("T" type (:type "class") nil nil))                                  
+                                :type "struct"
+                                :members 
+                                  ( ("type" variable (:type "int") (reparse-symbol classsubparts) [19037 19042])
+                                    ("GetSetUpCaseOrSuite" function
+                                       (:typemodifiers ("static")
+                                        :arguments 
+                                          ( ("filename" variable
+                                               (:pointer 1
+                                                :constant-flag t
+                                                :type "char")
+                                                (reparse-symbol arg-sub-list) [19100 19121])
+                                            ("line_num" variable (:type "int") (reparse-symbol arg-sub-list) [19178 19191]))                                          
+                                        :type ("SetUpTearDownSuiteFuncType" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [19046 19725])
+                                    ("GetTearDownCaseOrSuite" function
+                                       (:typemodifiers ("static")
+                                        :arguments 
+                                          ( ("filename" variable
+                                               (:pointer 1
+                                                :constant-flag t
+                                                :type "char")
+                                                (reparse-symbol arg-sub-list) [19786 19807])
+                                            ("line_num" variable (:type "int") (reparse-symbol arg-sub-list) [19867 19880]))                                          
+                                        :type ("SetUpTearDownSuiteFuncType" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [19729 20431]))                                  
+                                :superclasses 
+                                  ( ("T" type
+                                       (:protection "unspecified"
+                                        :type "class")
+                                        nil nil))                                  )
+                                (reparse-symbol namespacesubparts) [18605 20434])
+                            ("MakeAndRegisterTestInfo" function
+                               (:prototype-flag t
+                                :pointer 1
+                                :arguments 
+                                  ( ("test_suite_name" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type "char")
+                                        (reparse-symbol arg-sub-list) [21454 21482])
+                                    ("name" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type "char")
+                                        (reparse-symbol arg-sub-list) [21483 21500])
+                                    ("type_param" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type "char")
+                                        (reparse-symbol arg-sub-list) [21501 21524])
+                                    ("value_param" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type "char")
+                                        (reparse-symbol arg-sub-list) [21529 21553])
+                                    ("code_location" variable (:type ("CodeLocation" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [21554 21581])
+                                    ("fixture_class_id" variable (:type ("TypeId" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [21586 21610])
+                                    ("set_up_tc" variable (:type ("SetUpTestSuiteFunc" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [21611 21640])
+                                    ("tear_down_tc" variable (:type ("TearDownTestSuiteFunc" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [21645 21680])
+                                    ("factory" variable
+                                       (:pointer 1
+                                        :type ("TestFactoryBase" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [21681 21706]))                                  
+                                :type ("TestInfo" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [21415 21707])
+                            ("SkipPrefix" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("prefix" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type "char")
+                                        (reparse-symbol arg-sub-list) [21943 21962])
+                                    ("pstr" variable
+                                       (:pointer 2
+                                        :constant-flag t
+                                        :type "char")
+                                        (reparse-symbol arg-sub-list) [21963 21981]))                                  
+                                :type "bool")
+                                (reparse-symbol namespacesubparts) [21927 21982])
+                            ("GetCurrentOsStackTraceExceptTop" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("unit_test" variable
+                                       (:pointer 1
+                                        :type ("UnitTest" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [31851 31871])
+                                    ("skip_count" variable (:type "int") (reparse-symbol arg-sub-list) [31872 31887]))                                  
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [31802 31888])
+                            ("AlwaysTrue" function
+                               (:prototype-flag t
+                                :type "bool")
+                                (reparse-symbol namespacesubparts) [32008 32026])
+                            ("AlwaysFalse" function
+                               (:typemodifiers ("inline")
+                                :type "bool")
+                                (reparse-symbol namespacesubparts) [32053 32104])
+                            ("ConstCharPtr" variable (:type ("GTEST_API_" type
+                                 (:prototype t
+                                  :type "struct")
+                                  nil nil)) (reparse-symbol namespacesubparts) [32264 32409])
+                            ("Random" variable (:type ("GTEST_API_" type
+                                 (:prototype t
+                                  :type "class")
+                                  nil nil)) (reparse-symbol namespacesubparts) [32727 33115])
+                            ("GTEST_REMOVE_REFERENCE_AND_CONST_" variable (:constant-flag t) (reparse-symbol namespacesubparts) [33175 33208])
+                            ("IsContainer" type
+                               (:typedef ("int")
+                                :type "typedef")
+                                (reparse-symbol namespacesubparts) [34952 34976])
+                            ("IsContainerTest" function
+                               (:arguments 
+                                  ( ("" variable (:type "int") (reparse-symbol arg-sub-list) [35321 35337]))                                  
+                                :type ("IsContainer" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [35293 35353])
+                            ("IsNotContainer" type
+                               (:typedef ("char")
+                                :type "typedef")
+                                (reparse-symbol namespacesubparts) [35355 35383])
+                            ("IsContainerTest" function
+                               (:template 
+                                  ( ("C" type (:type "class") nil nil))                                  
+                                :type ("IsNotContainer" type (:type "class") nil nil)
+                                :arguments 
+                                  ( ("" variable (:type "long") (reparse-symbol arg-sub-list) [35434 35451]))                                  )
+                                (reparse-symbol namespacesubparts) [35384 35468])
+                            ("IsHashTable" type
+                               (:template 
+                                  ( ("T" type (:type "class") nil nil))                                  
+                                :type "struct"
+                                :members 
+                                  ( ("private" label nil (reparse-symbol classsubparts) [35774 35782])
+                                    ("test" function
+                                       (:template 
+                                          ( ("U" type (:type "class") nil nil))                                          
+                                        :type "char"
+                                        :arguments 
+                                          ( ("" variable
+                                               (:pointer 1
+                                                :typemodifiers ("typename")
+                                                :type ("U::hasher" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [35826 35846])
+                                            ("" variable
+                                               (:pointer 1
+                                                :typemodifiers ("typename")
+                                                :type ("U::reverse_iterator" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [35847 35877]))                                          
+                                        :typemodifiers ("static")
+                                        :prototype-flag t)
+                                        (reparse-symbol classsubparts) [35785 35878])
+                                    ("test" function
+                                       (:template 
+                                          ( ("U" type (:type "class") nil nil))                                          
+                                        :type "int"
+                                        :arguments 
+                                          ( ("" variable
+                                               (:pointer 1
+                                                :typemodifiers ("typename")
+                                                :type ("U::hasher" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [35921 35941])
+                                            ("..." variable (:type "vararg") (reparse-symbol arg-sub-list) [35942 35946]))                                          
+                                        :typemodifiers ("static")
+                                        :prototype-flag t)
+                                        (reparse-symbol classsubparts) [35881 35947])
+                                    ("test" function
+                                       (:template 
+                                          ( ("U" type (:type "class") nil nil))                                          
+                                        :type "char"
+                                        :arguments 
+                                          ( ("..." variable (:type "vararg") (reparse-symbol arg-sub-list) [35991 35995]))                                          
+                                        :typemodifiers ("static")
+                                        :prototype-flag t)
+                                        (reparse-symbol classsubparts) [35950 35996])
+                                    ("public" label nil (reparse-symbol classsubparts) [35999 36006]))                                  )
+                                (reparse-symbol namespacesubparts) [35730 36087])
+                            ("IsHashTable::value" variable
+                               (:constant-flag t
+                                :type "bool")
+                                (reparse-symbol namespacesubparts) [36089 36144])
+                            ("IsRecursiveContainerImpl" type
+                               (:prototype t
+                                :type "struct")
+                                (reparse-symbol namespacesubparts) [36239 36271])
+                            ("IsRecursiveContainerImpl" type
+                               (:template 
+                                  ( ("C" type (:type "class") nil nil))                                  
+                                :type "struct"
+                                :superclasses 
+                                  ( ("std::false_type" type
+                                       (:protection "public"
+                                        :type "class")
+                                        nil nil))                                  
+                                :template-specifier 
+                                  ( ("C" type nil nil nil)
+                                    ("false" type nil nil nil))                                  )
+                                (reparse-symbol namespacesubparts) [36273 36365])
+                            ("IsRecursiveContainerImpl" type
+                               (:template 
+                                  ( ("C" type (:type "class") nil nil))                                  
+                                :type "struct"
+                                :members 
+                                  ( ("value_type" variable
+                                       (:default-value "decltype(*std::declval<typename C::const_iterator>())"
+                                        :type "int")
+                                        (reparse-symbol classsubparts) [36728 36795]))                                  
+                                :template-specifier 
+                                  ( ("C" type nil nil nil)
+                                    ("true" type nil nil nil))                                  )
+                                (reparse-symbol namespacesubparts) [36655 36963])
+                            ("IsRecursiveContainer" type
+                               (:template 
+                                  ( ("C" type (:type "class") nil nil))                                  
+                                :type "struct"
+                                :superclasses 
+                                  ( ("IsRecursiveContainerImpl::type" type
+                                       (:protection "public"
+                                        :type "class")
+                                        nil nil))                                  )
+                                (reparse-symbol namespacesubparts) [37347 37443])
+                            ("ArrayEq" function
+                               (:template 
+                                  ( ("T" type (:type "class") nil nil)
+                                    ("U" type (:type "class") nil nil))                                  
+                                :type "bool"
+                                :arguments 
+                                  ( ("lhs" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type ("T" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [37727 37740])
+                                    ("size" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [37741 37753])
+                                    ("rhs" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type ("U" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [37754 37767]))                                  
+                                :prototype-flag t)
+                                (reparse-symbol namespacesubparts) [37680 37768])
+                            ("ArrayEq" function
+                               (:template 
+                                  ( ("T" type (:type "class") nil nil)
+                                    ("U" type (:type "class") nil nil))                                  
+                                :type "bool"
+                                :arguments 
+                                  ( ("lhs" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("T" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [37869 37882])
+                                    ("rhs" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("U" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [37883 37896]))                                  
+                                :typemodifiers ("inline"))
+                                (reparse-symbol namespacesubparts) [37815 37919])
+                            ("ArrayEq" function
+                               (:template 
+                                  ( ("T" type (:type "class") nil nil)
+                                    ("U" type (:type "class") nil nil)
+                                    ("size_t" type (:typevar "N") nil nil))                                  
+                                :type "bool"
+                                :arguments 
+                                  ( ("" variable
+                                       (:constant-flag t
+                                        :type ("T" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [38023 38036])
+                                    ("" variable
+                                       (:constant-flag t
+                                        :type ("U" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [38041 38054]))                                  
+                                :typemodifiers ("inline"))
+                                (reparse-symbol namespacesubparts) [37959 38103])
+                            ("ArrayEq" function
+                               (:template 
+                                  ( ("T" type (:type "class") nil nil)
+                                    ("U" type (:type "class") nil nil))                                  
+                                :type "bool"
+                                :arguments 
+                                  ( ("lhs" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type ("T" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [38343 38356])
+                                    ("size" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [38357 38369])
+                                    ("rhs" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type ("U" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [38370 38383]))                                  )
+                                (reparse-symbol namespacesubparts) [38296 38509])
+                            ("ArrayAwareFind" function
+                               (:template 
+                                  ( ("Iter" type (:type "class") nil nil)
+                                    ("Element" type (:type "class") nil nil))                                  
+                                :type ("Iter" type (:type "class") nil nil)
+                                :arguments 
+                                  ( ("begin" variable (:type ("Iter" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [38701 38712])
+                                    ("end" variable (:type ("Iter" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [38713 38722])
+                                    ("elem" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Element" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [38723 38743]))                                  )
+                                (reparse-symbol namespacesubparts) [38638 38863])
+                            ("CopyArray" function
+                               (:template 
+                                  ( ("T" type (:type "class") nil nil)
+                                    ("U" type (:type "class") nil nil))                                  
+                                :type "void"
+                                :arguments 
+                                  ( ("from" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type ("T" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [39103 39117])
+                                    ("size" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [39118 39130])
+                                    ("to" variable
+                                       (:pointer 1
+                                        :type ("U" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [39131 39137]))                                  
+                                :prototype-flag t)
+                                (reparse-symbol namespacesubparts) [39054 39138])
+                            ("CopyArray" function
+                               (:template 
+                                  ( ("T" type (:type "class") nil nil)
+                                    ("U" type (:type "class") nil nil))                                  
+                                :type "void"
+                                :arguments 
+                                  ( ("from" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("T" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [39241 39255])
+                                    ("to" variable
+                                       (:pointer 1
+                                        :type ("U" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [39256 39262]))                                  
+                                :typemodifiers ("inline"))
+                                (reparse-symbol namespacesubparts) [39185 39278])
+                            ("CopyArray" function
+                               (:template 
+                                  ( ("T" type (:type "class") nil nil)
+                                    ("U" type (:type "class") nil nil)
+                                    ("size_t" type (:typevar "N") nil nil))                                  
+                                :type "void"
+                                :arguments 
+                                  ( ("" variable
+                                       (:constant-flag t
+                                        :type ("T" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [39384 39398])
+                                    ("" variable (:type ("U" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [39403 39409]))                                  
+                                :typemodifiers ("inline"))
+                                (reparse-symbol namespacesubparts) [39318 39454])
+                            ("CopyArray" function
+                               (:template 
+                                  ( ("T" type (:type "class") nil nil)
+                                    ("U" type (:type "class") nil nil))                                  
+                                :type "void"
+                                :arguments 
+                                  ( ("from" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type ("T" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [39698 39712])
+                                    ("size" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [39713 39725])
+                                    ("to" variable
+                                       (:pointer 1
+                                        :type ("U" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [39726 39732]))                                  )
+                                (reparse-symbol namespacesubparts) [39649 39821])
+                            ("RelationToSourceReference" type (:type "struct") (reparse-symbol namespacesubparts) [40043 40079])
+                            ("RelationToSourceCopy" type (:type "struct") (reparse-symbol namespacesubparts) [40080 40111])
+                            ("NativeArray" type
+                               (:template 
+                                  ( ("Element" type (:type "class") nil nil))                                  
+                                :type "class"
+                                :members 
+                                  ( ("public" label nil (reparse-symbol classsubparts) [40692 40699])
+                                    ("value_type" type
+                                       (:typedef ("Element" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [40737 40764])
+                                    ("iterator" type
+                                       (:typedef ("Element" type (:type "class") nil nil)
+                                        :pointer 1
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [40767 40793])
+                                    ("const_iterator" type
+                                       (:typedef ("Element" type (:type "class") nil nil)
+                                        :pointer 1
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [40796 40834])
+                                    ("NativeArray" function
+                                       (:constructor-flag t
+                                        :arguments 
+                                          ( ("array" variable
+                                               (:pointer 1
+                                                :constant-flag t
+                                                :type ("Element" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [40910 40931])
+                                            ("count" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [40932 40945])
+                                            ("" variable (:type ("RelationToSourceReference" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [40946 40972]))                                          
+                                        :type ("NativeArray" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [40898 41005])
+                                    ("NativeArray" function
+                                       (:constructor-flag t
+                                        :arguments 
+                                          ( ("array" variable
+                                               (:pointer 1
+                                                :constant-flag t
+                                                :type ("Element" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [41077 41098])
+                                            ("count" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [41099 41112])
+                                            ("" variable (:type ("RelationToSourceCopy" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [41113 41134]))                                          
+                                        :type ("NativeArray" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [41065 41168])
+                                    ("NativeArray" function
+                                       (:constructor-flag t
+                                        :arguments 
+                                          ( ("rhs" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("NativeArray" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [41207 41230]))                                          
+                                        :type ("NativeArray" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [41195 41284])
+                                    ("NativeArray" function
+                                       (:destructor-flag t
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [41288 41372])
+                                    ("size" function
+                                       (:methodconst-flag t
+                                        :type ("size_t" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [41410 41447])
+                                    ("begin" function
+                                       (:methodconst-flag t
+                                        :type ("const_iterator" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [41450 41497])
+                                    ("end" function
+                                       (:methodconst-flag t
+                                        :type ("const_iterator" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [41500 41553])
+                                    ("==" function
+                                       (:methodconst-flag t
+                                        :operator-flag t
+                                        :arguments 
+                                          ( ("rhs" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("NativeArray" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [41572 41595]))                                          
+                                        :type "bool")
+                                        (reparse-symbol classsubparts) [41556 41689])
+                                    ("private" label nil (reparse-symbol classsubparts) [41692 41700])
+                                    ("static_assert" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("" variable (:type ("std::is_const::value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [41718 41748]))                                          
+                                        :type "int")
+                                        (reparse-symbol classsubparts) [41703 41775])
+                                    ("static_assert" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("" variable (:type ("std::is_reference::value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [41793 41827]))                                          
+                                        :type "int")
+                                        (reparse-symbol classsubparts) [41778 41876])
+                                    ("InitCopy" function
+                                       (:arguments 
+                                          ( ("array" variable
+                                               (:pointer 1
+                                                :constant-flag t
+                                                :type ("Element" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [41949 41970])
+                                            ("a_size" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [41971 41985]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [41935 42150])
+                                    ("InitRef" function
+                                       (:arguments 
+                                          ( ("array" variable
+                                               (:pointer 1
+                                                :constant-flag t
+                                                :type ("Element" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [42227 42248])
+                                            ("a_size" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [42249 42263]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [42214 42345])
+                                    ("array_" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type ("Element" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [42349 42371])
+                                    ("size_" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [42374 42387])
+                                    ("GTEST_DISALLOW_ASSIGN_" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("" variable (:type ("NativeArray" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [42469 42481]))                                          
+                                        :type "int")
+                                        (reparse-symbol classsubparts) [42446 42482]))                                  )
+                                (reparse-symbol namespacesubparts) [40643 42485])
+                            ("IndexSequence" type
+                               (:members 
+                                  ( ("type" variable
+                                       (:default-value "IndexSequence"
+                                        :type "int")
+                                        (reparse-symbol classsubparts) [42578 42599]))                                  
+                                :type "struct")
+                                (reparse-symbol namespacesubparts) [42547 42602])
+                            ("DoubleSequence" type
+                               (:template 
+                                  ( ("bool" type (:typevar "plus_one") nil nil)
+                                    ("T" type (:type "class") nil nil)
+                                    ("size_t" type (:typevar "sizeofT") nil nil))                                  
+                                :type "struct"
+                                :prototype t)
+                                (reparse-symbol namespacesubparts) [42662 42737])
+                            ("type" variable (:type "int") (reparse-symbol namespacesubparts) [43295 43303])
+                            ("MakeIndexSequence" type
+                               (:type "struct"
+                                :superclasses 
+                                  ( ("IndexSequence" type
+                                       (:protection "unspecified"
+                                        :type "class")
+                                        nil nil))                                  
+                                :template-specifier (("0")))
+                                (reparse-symbol namespacesubparts) [43305 43366])
+                            ("ElemFromListImpl" type
+                               (:template 
+                                  ( ("T" type (:type "class") nil nil)
+                                    ("size_t" type nil nil nil)
+                                    ("size_t" type nil nil nil))                                  
+                                :type "struct")
+                                (reparse-symbol namespacesubparts) [43578 43643])
+                            ("ElemFromListImpl" type
+                               (:template 
+                                  ( ("T" type (:type "class") nil nil)
+                                    ("size_t" type (:typevar "I") nil nil))                                  
+                                :type "struct"
+                                :members 
+                                  ( ("type" variable
+                                       (:default-value "T"
+                                        :type "int")
+                                        (reparse-symbol classsubparts) [43720 43729]))                                  
+                                :template-specifier 
+                                  ( ("T" type nil nil nil)
+                                    ("I" type nil nil nil)
+                                    ("I" type nil nil nil))                                  )
+                                (reparse-symbol namespacesubparts) [43645 43732])
+                            ("ElemFromList" type
+                               (:prototype t
+                                :type "struct")
+                                (reparse-symbol namespacesubparts) [43851 43871])
+                            ("FlatTuple" type
+                               (:prototype t
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [44036 44052])
+                            ("FlatTupleElemBase" type
+                               (:template 
+                                  ( ("Derived" type (:type "class") nil nil)
+                                    ("size_t" type (:typevar "I") nil nil))                                  
+                                :type "struct"
+                                :prototype t)
+                                (reparse-symbol namespacesubparts) [44054 44117])
+                            ("FlatTupleBase" type
+                               (:template 
+                                  ( ("Derived" type (:type "class") nil nil)
+                                    ("Idx" type (:type "class") nil nil))                                  
+                                :type "struct"
+                                :prototype t)
+                                (reparse-symbol namespacesubparts) [44467 44530])
+                            ("InstantiateTestCase_P_IsDeprecated" function (:type "bool") (reparse-symbol namespacesubparts) [46236 46294])
+                            ("TypedTestCase_P_IsDeprecated" function (:type "bool") (reparse-symbol namespacesubparts) [46410 46462])
+                            ("TypedTestCaseIsDeprecated" function (:type "bool") (reparse-symbol namespacesubparts) [46574 46623])
+                            ("RegisterTypedTestCase_P_IsDeprecated" function (:type "bool") (reparse-symbol namespacesubparts) [46757 46817])
+                            ("InstantiateTypedTestCase_P_IsDeprecated" function (:type "bool") (reparse-symbol namespacesubparts) [46957 47020]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [3586 47023]))                  
+                :type "namespace")
+                nil [3067 47048])
+            ("GTEST_MESSAGE_AT_" variable (:constant-flag t) nil [47080 47097])
+            ("GTEST_MESSAGE_" variable (:constant-flag t) nil [47242 47256])
+            ("GTEST_FATAL_FAILURE_" variable (:constant-flag t) nil [47352 47372])
+            ("GTEST_NONFATAL_FAILURE_" variable (:constant-flag t) nil [47468 47491])
+            ("GTEST_SUCCESS_" variable (:constant-flag t) nil [47583 47597])
+            ("GTEST_SKIP_" variable (:constant-flag t) nil [47681 47692])
+            ("GTEST_SUPPRESS_UNREACHABLE_CODE_WARNING_BELOW_" variable (:constant-flag t) nil [47941 47987])
+            ("GTEST_TEST_THROW_" variable (:constant-flag t) nil [48066 48083])
+            ("GTEST_TEST_NO_THROW_" variable (:constant-flag t) nil [49082 49102])
+            ("GTEST_TEST_ANY_THROW_" variable (:constant-flag t) nil [49574 49595])
+            ("GTEST_TEST_BOOLEAN_" variable (:constant-flag t) nil [50392 50411])
+            ("GTEST_TEST_NO_FATAL_FAILURE_" variable (:constant-flag t) nil [50734 50762])
+            ("GTEST_TEST_CLASS_NAME_" variable (:constant-flag t) nil [51451 51473])
+            ("GTEST_TEST_" variable (:constant-flag t) nil [51588 51599]))          
+      :file "gtest-internal.h"
+      :pointmax 53949
+      :fsize 53948
+      :lastmodtime '(24174 5277 42662 251000)
+      :unmatched-syntax '((symbol 46947 . 46956) (semantic-list 46844 . 46946) (symbol 46819 . 46844) (string 46913 . 46945) (string 46850 . 46908) (symbol 46747 . 46756) (semantic-list 46650 . 46746) (symbol 46625 . 46650) (string 46716 . 46745) (string 46656 . 46711) (symbol 46564 . 46573) (semantic-list 46489 . 46563) (symbol 46464 . 46489) (string 46544 . 46562) (string 46495 . 46539) (symbol 46400 . 46409) (semantic-list 46321 . 46399) (symbol 46296 . 46321) (string 46378 . 46398) (string 46327 . 46373) (symbol 46226 . 46235) (semantic-list 46135 . 46225) (symbol 46110 . 46135) (string 46198 . 46224) (string 46141 . 46193) (punctuation 46019 . 46020) (semantic-list 45515 . 46019) (punctuation 45513 . 45514) (symbol 45509 . 45513) (punctuation 45508 . 45509) (punctuation 45507 . 45508) (punctuation 45506 . 45507) (semantic-list 45503 . 45506) (punctuation 45502 . 45503) (punctuation 45501 . 45502) (punctuation 45500 . 45501) (SIZEOF 45494 . 45500) (punctuation 45493 . 45494) (symbol 45476 . 45493) (TYPENAME 45467 . 45475) (punctuation 45437 . 45438) (punctuation 45436 . 45437) (punctuation 45435 . 45436) (punctuation 45434 . 45435) (punctuation 45433 . 45434) (symbol 45432 . 45433) (punctuation 45431 . 45432) (symbol 45422 . 45431) (punctuation 45421 . 45422) (symbol 45408 . 45421) (PRIVATE 45400 . 45407) (punctuation 45398 . 45399) (symbol 45384 . 45393) (CLASS 45378 . 45383) (punctuation 45376 . 45377) (symbol 45375 . 45376) (punctuation 45373 . 45374) (punctuation 45372 . 45373) (punctuation 45371 . 45372) (TYPENAME 45363 . 45371) (punctuation 45362 . 45363) (TEMPLATE 45353 . 45361) (punctuation 44856 . 44857) (semantic-list 44682 . 44856) (punctuation 44680 . 44681) (punctuation 44679 . 44680) (punctuation 44678 . 44679) (punctuation 44677 . 44678) (symbol 44674 . 44677) (punctuation 44672 . 44673) (punctuation 44671 . 44672) (punctuation 44670 . 44671) (punctuation 44669 . 44670) (punctuation 44668 . 44669) (symbol 44667 . 44668) (punctuation 44666 . 44667) (symbol 44657 . 44666) (punctuation 44656 . 44657) (symbol 44639 . 44656) (punctuation 44637 . 44638) (punctuation 44631 . 44632) (punctuation 44630 . 44631) (punctuation 44629 . 44630) (punctuation 44628 . 44629) (punctuation 44627 . 44628) (symbol 44624 . 44627) (punctuation 44623 . 44624) (symbol 44610 . 44623) (punctuation 44608 . 44609) (punctuation 44607 . 44608) (punctuation 44606 . 44607) (punctuation 44605 . 44606) (punctuation 44604 . 44605) (symbol 44603 . 44604) (punctuation 44602 . 44603) (symbol 44593 . 44602) (punctuation 44592 . 44593) (symbol 44579 . 44592) (STRUCT 44572 . 44578) (punctuation 44570 . 44571) (symbol 44569 . 44570) (punctuation 44567 . 44568) (punctuation 44566 . 44567) (punctuation 44565 . 44566) (TYPENAME 44557 . 44565) (punctuation 44555 . 44556) (symbol 44552 . 44555) (punctuation 44550 . 44551) (punctuation 44549 . 44550) (punctuation 44548 . 44549) (symbol 44542 . 44548) (punctuation 44541 . 44542) (TEMPLATE 44532 . 44540) (punctuation 44464 . 44465) (semantic-list 44199 . 44464) (punctuation 44197 . 44198) (symbol 44196 . 44197) (punctuation 44194 . 44195) (punctuation 44193 . 44194) (punctuation 44192 . 44193) (punctuation 44191 . 44192) (punctuation 44190 . 44191) (symbol 44189 . 44190) (punctuation 44188 . 44189) (symbol 44179 . 44188) (punctuation 44178 . 44179) (symbol 44161 . 44178) (STRUCT 44154 . 44160) (punctuation 44152 . 44153) (symbol 44151 . 44152) (symbol 44144 . 44150) (punctuation 44142 . 44143) (symbol 44141 . 44142) (punctuation 44139 . 44140) (punctuation 44138 . 44139) (punctuation 44137 . 44138) (TYPENAME 44129 . 44137) (punctuation 44128 . 44129) (TEMPLATE 44119 . 44127) (punctuation 44034 . 44035) (symbol 44033 . 44034) (punctuation 44031 . 44032) (punctuation 44030 . 44031) (punctuation 44029 . 44030) (TYPENAME 44021 . 44029) (punctuation 44020 . 44021) (TEMPLATE 44011 . 44019) (punctuation 44008 . 44009) (semantic-list 44006 . 44008) (punctuation 44004 . 44005) (punctuation 44003 . 44004) (punctuation 44002 . 44003) (punctuation 44001 . 44002) (symbol 44000 . 44001) (punctuation 43998 . 43999) (symbol 43997 . 43998) (punctuation 43995 . 43996) (symbol 43994 . 43995) (punctuation 43993 . 43994) (symbol 43977 . 43993) (punctuation 43975 . 43976) (punctuation 43969 . 43970) (punctuation 43968 . 43969) (punctuation 43967 . 43968) (punctuation 43966 . 43967) (symbol 43965 . 43966) (punctuation 43963 . 43964) (punctuation 43962 . 43963) (punctuation 43961 . 43962) (punctuation 43960 . 43961) (punctuation 43959 . 43960) (symbol 43958 . 43959) (punctuation 43957 . 43958) (symbol 43944 . 43957) (punctuation 43942 . 43943) (symbol 43941 . 43942) (punctuation 43940 . 43941) (symbol 43928 . 43940) (STRUCT 43921 . 43927) (punctuation 43919 . 43920) (symbol 43918 . 43919) (punctuation 43916 . 43917) (punctuation 43915 . 43916) (punctuation 43914 . 43915) (TYPENAME 43906 . 43914) (punctuation 43904 . 43905) (symbol 43903 . 43904) (punctuation 43901 . 43902) (punctuation 43900 . 43901) (punctuation 43899 . 43900) (symbol 43893 . 43899) (punctuation 43891 . 43892) (symbol 43890 . 43891) (symbol 43883 . 43889) (punctuation 43882 . 43883) (TEMPLATE 43873 . 43881) (punctuation 43849 . 43850) (symbol 43848 . 43849) (punctuation 43846 . 43847) (punctuation 43845 . 43846) (punctuation 43844 . 43845) (TYPENAME 43836 . 43844) (punctuation 43834 . 43835) (symbol 43833 . 43834) (TYPENAME 43824 . 43832) (punctuation 43822 . 43823) (symbol 43821 . 43822) (symbol 43814 . 43820) (punctuation 43813 . 43814) (TEMPLATE 43804 . 43812) (USING 43714 . 43719) (punctuation 43294 . 43295) (punctuation 43293 . 43294) (punctuation 43292 . 43293) (number 43291 . 43292) (punctuation 43289 . 43290) (symbol 43287 . 43288) (punctuation 43264 . 43265) (symbol 43260 . 43264) (punctuation 43259 . 43260) (punctuation 43258 . 43259) (punctuation 43257 . 43258) (number 43256 . 43257) (punctuation 43254 . 43255) (symbol 43252 . 43253) (punctuation 43251 . 43252) (symbol 43234 . 43251) (TYPENAME 43225 . 43233) (punctuation 43223 . 43224) (number 43222 . 43223) (punctuation 43220 . 43221) (punctuation 43219 . 43220) (number 43217 . 43218) (punctuation 43215 . 43216) (symbol 43213 . 43214) (punctuation 43212 . 43213) (symbol 43198 . 43212) (punctuation 43196 . 43197) (symbol 43174 . 43191) (STRUCT 43167 . 43173) (punctuation 43165 . 43166) (symbol 43164 . 43165) (symbol 43157 . 43163) (punctuation 43156 . 43157) (TEMPLATE 43147 . 43155) (punctuation 43062 . 43063) (semantic-list 43005 . 43062) (punctuation 43003 . 43004) (symbol 42996 . 43003) (punctuation 42994 . 42995) (punctuation 42993 . 42994) (punctuation 42992 . 42993) (punctuation 42991 . 42992) (punctuation 42990 . 42991) (symbol 42989 . 42990) (punctuation 42988 . 42989) (symbol 42975 . 42988) (punctuation 42973 . 42974) (symbol 42968 . 42973) (punctuation 42967 . 42968) (symbol 42953 . 42967) (STRUCT 42946 . 42952) (punctuation 42944 . 42945) (symbol 42937 . 42944) (symbol 42930 . 42936) (punctuation 42928 . 42929) (symbol 42927 . 42928) (punctuation 42925 . 42926) (punctuation 42924 . 42925) (punctuation 42923 . 42924) (symbol 42917 . 42923) (punctuation 42916 . 42917) (TEMPLATE 42907 . 42915) (punctuation 42905 . 42906) (semantic-list 42835 . 42905) (punctuation 42833 . 42834) (symbol 42826 . 42833) (punctuation 42824 . 42825) (punctuation 42823 . 42824) (punctuation 42822 . 42823) (punctuation 42821 . 42822) (punctuation 42820 . 42821) (symbol 42819 . 42820) (punctuation 42818 . 42819) (symbol 42805 . 42818) (punctuation 42803 . 42804) (symbol 42799 . 42803) (punctuation 42798 . 42799) (symbol 42784 . 42798) (STRUCT 42777 . 42783) (punctuation 42775 . 42776) (symbol 42768 . 42775) (symbol 42761 . 42767) (punctuation 42759 . 42760) (symbol 42758 . 42759) (punctuation 42756 . 42757) (punctuation 42755 . 42756) (punctuation 42754 . 42755) (symbol 42748 . 42754) (punctuation 42747 . 42748) (TEMPLATE 42738 . 42746) (USING 42572 . 42577) (punctuation 42545 . 42546) (symbol 42543 . 42545) (punctuation 42541 . 42542) (punctuation 42540 . 42541) (punctuation 42539 . 42540) (symbol 42533 . 42539) (punctuation 42532 . 42533) (TEMPLATE 42523 . 42531) (punctuation 42441 . 42442) (semantic-list 42417 . 42441) (semantic-list 42395 . 42417) (VOID 42390 . 42394) (string 41844 . 41874) (punctuation 41792 . 41793) (string 41749 . 41773) (punctuation 41717 . 41718) (semantic-list 39409 . 39412) (semantic-list 39404 . 39409) (semantic-list 39398 . 39401) (semantic-list 39391 . 39398) (semantic-list 38054 . 38057) (semantic-list 38048 . 38054) (semantic-list 38036 . 38039) (semantic-list 38030 . 38036) (punctuation 36959 . 36960) (punctuation 36958 . 36959) (symbol 36957 . 36958) (punctuation 36936 . 36937) (symbol 36932 . 36936) (punctuation 36931 . 36932) (punctuation 36930 . 36931) (punctuation 36929 . 36930) (symbol 36925 . 36929) (punctuation 36924 . 36925) (punctuation 36923 . 36924) (punctuation 36922 . 36923) (symbol 36912 . 36922) (punctuation 36911 . 36912) (symbol 36895 . 36911) (punctuation 36894 . 36895) (punctuation 36893 . 36894) (symbol 36890 . 36893) (TYPENAME 36881 . 36889) (punctuation 36856 . 36857) (symbol 36844 . 36856) (punctuation 36843 . 36844) (punctuation 36842 . 36843) (symbol 36839 . 36842) (TYPENAME 36830 . 36838) (punctuation 36829 . 36830) (symbol 36822 . 36829) (punctuation 36821 . 36822) (punctuation 36820 . 36821) (symbol 36817 . 36820) (punctuation 36809 . 36810) (symbol 36804 . 36808) (USING 36798 . 36803) (USING 36722 . 36727) (punctuation 36237 . 36238) (semantic-list 36224 . 36237) (SIZEOF 36218 . 36224) (punctuation 36216 . 36217) (punctuation 36215 . 36216) (semantic-list 36191 . 36214) (SIZEOF 36185 . 36191) (punctuation 36183 . 36184) (BOOL 36178 . 36182) (punctuation 36166 . 36167) (symbol 36165 . 36166) (TYPENAME 36156 . 36164) (punctuation 36155 . 36156) (TEMPLATE 36146 . 36154) (punctuation 36083 . 36084) (semantic-list 36078 . 36083) (SIZEOF 36072 . 36078) (punctuation 36070 . 36071) (punctuation 36069 . 36070) (semantic-list 36041 . 36068) (SIZEOF 36035 . 36041) (punctuation 36033 . 36034) (symbol 36027 . 36032) (BOOL 36022 . 36026) (CONST 36016 . 36021) (STATIC 36009 . 36015) (punctuation 35291 . 35292) (symbol 35277 . 35291) (punctuation 35276 . 35277) (punctuation 35275 . 35276) (symbol 35274 . 35275) (TYPENAME 35265 . 35273) (punctuation 35263 . 35264) (CLASS 35257 . 35262) (punctuation 35245 . 35246) (semantic-list 35216 . 35245) (symbol 35208 . 35216) (semantic-list 35242 . 35244) (punctuation 35219 . 35220) (punctuation 35218 . 35219) (punctuation 35217 . 35218) (punctuation 35206 . 35207) (CLASS 35200 . 35205) (punctuation 35188 . 35189) (semantic-list 35157 . 35188) (symbol 35149 . 35157) (semantic-list 35185 . 35187) (punctuation 35161 . 35162) (punctuation 35160 . 35161) (punctuation 35159 . 35160) (punctuation 35158 . 35159) (punctuation 35147 . 35148) (CLASS 35141 . 35146) (punctuation 35129 . 35130) (semantic-list 35095 . 35129) (symbol 35087 . 35095) (semantic-list 35126 . 35128) (punctuation 35122 . 35123) (semantic-list 35120 . 35122) (punctuation 35097 . 35098) (punctuation 35096 . 35097) (punctuation 35085 . 35086) (CLASS 35079 . 35084) (punctuation 35067 . 35068) (semantic-list 35031 . 35067) (symbol 35023 . 35031) (semantic-list 35064 . 35066) (punctuation 35058 . 35059) (semantic-list 35056 . 35058) (punctuation 35033 . 35034) (punctuation 35032 . 35033) (punctuation 35021 . 35022) (symbol 35012 . 35020) (CLASS 35006 . 35011) (punctuation 34994 . 34995) (symbol 34993 . 34994) (CLASS 34987 . 34992) (punctuation 34986 . 34987) (TEMPLATE 34977 . 34985) (punctuation 33584 . 33585) (semantic-list 33582 . 33584) (punctuation 33580 . 33581) (symbol 33575 . 33580) (punctuation 33574 . 33575) (punctuation 33573 . 33574) (punctuation 33572 . 33573) (punctuation 33571 . 33572) (symbol 33564 . 33571) (punctuation 33563 . 33564) (punctuation 33562 . 33563) (symbol 33556 . 33562) (punctuation 33555 . 33556) (punctuation 33554 . 33555) (CONST 33548 . 33553) (punctuation 33546 . 33547) (punctuation 33545 . 33546) (symbol 33544 . 33545) (CONST 33538 . 33543) (punctuation 33537 . 33538) (symbol 33523 . 33537) (punctuation 33522 . 33523) (punctuation 33521 . 33522) (symbol 33518 . 33521) (punctuation 33506 . 33507) (symbol 33493 . 33506) (PUBLIC 33486 . 33492) (punctuation 33484 . 33485) (symbol 33461 . 33479) (STRUCT 33454 . 33460) (punctuation 33452 . 33453) (symbol 33451 . 33452) (TYPENAME 33442 . 33450) (punctuation 33441 . 33442) (TEMPLATE 33432 . 33440) (symbol 31997 . 32007) (symbol 31791 . 31801) (symbol 21916 . 21926) (symbol 21404 . 21414) (punctuation 19036 . 19037) (punctuation 19035 . 19036) (punctuation 19034 . 19035) (VOID 19030 . 19034) (punctuation 19028 . 19029) (symbol 19024 . 19028) (punctuation 19023 . 19024) (punctuation 19022 . 19023) (symbol 19015 . 19022) (punctuation 19014 . 19015) (punctuation 19013 . 19014) (punctuation 19011 . 19012) (number 19010 . 19011) (punctuation 19008 . 19009) (punctuation 19007 . 19008) (semantic-list 19003 . 19006) (SIZEOF 18997 . 19003) (punctuation 18996 . 18997) (symbol 18985 . 18996) (punctuation 18984 . 18985) (punctuation 18983 . 18984) (symbol 18980 . 18983) (TYPENAME 18971 . 18979) (punctuation 18963 . 18964) (symbol 18958 . 18962) (USING 18952 . 18957) (punctuation 18431 . 18432) (symbol 18404 . 18430) (USING 18398 . 18403) (punctuation 18031 . 18032) (symbol 18009 . 18030) (USING 18003 . 18008) (punctuation 17989 . 17990) (symbol 17970 . 17988) (USING 17964 . 17969) (semantic-list 17348 . 17373) (symbol 17339 . 17347) (semantic-list 17336 . 17338) (symbol 17326 . 17336) (punctuation 17324 . 17325) (symbol 17320 . 17324) (symbol 16686 . 16696) (EXPLICIT 11191 . 11199) (punctuation 10164 . 10165) (semantic-list 10131 . 10164) (punctuation 10130 . 10131) (punctuation 10128 . 10129) (symbol 10111 . 10127) (symbol 10106 . 10110) (CONST 10100 . 10105) (STATIC 10093 . 10099) (punctuation 10051 . 10052) (semantic-list 10028 . 10051) (punctuation 10026 . 10027) (punctuation 10025 . 10026) (semantic-list 10021 . 10024) (punctuation 10020 . 10021) (symbol 10016 . 10020) (punctuation 10015 . 10016) (symbol 10004 . 10015) (number 10022 . 10023) (punctuation 10003 . 10004) (number 10022 . 10023) (punctuation 9997 . 9998) (symbol 9980 . 9996) (symbol 9975 . 9979) (CONST 9969 . 9974) (STATIC 9962 . 9968) (punctuation 9920 . 9921) (semantic-list 9905 . 9920) (punctuation 9903 . 9904) (punctuation 9902 . 9903) (semantic-list 9898 . 9901) (punctuation 9897 . 9898) (symbol 9893 . 9897) (punctuation 9892 . 9893) (symbol 9881 . 9892) (number 9899 . 9900) (punctuation 9879 . 9880) (symbol 9866 . 9878) (symbol 9861 . 9865) (CONST 9855 . 9860) (STATIC 9848 . 9854) (punctuation 9792 . 9793) (number 9790 . 9791) (punctuation 9788 . 9789) (symbol 9778 . 9787) (punctuation 9776 . 9777) (symbol 9758 . 9775) (symbol 9751 . 9757) (CONST 9745 . 9750) (STATIC 9738 . 9744) (punctuation 9696 . 9697) (number 9695 . 9696) (punctuation 9693 . 9694) (symbol 9686 . 9692) (punctuation 9685 . 9686) (punctuation 9684 . 9685) (punctuation 9683 . 9684) (symbol 9676 . 9683) (punctuation 9675 . 9676) (symbol 9661 . 9675) (punctuation 9660 . 9661) (punctuation 9659 . 9660) (symbol 9656 . 9659) (punctuation 9650 . 9651) (symbol 9632 . 9649) (symbol 9625 . 9631) (CONST 9619 . 9624) (STATIC 9612 . 9618) (punctuation 9570 . 9571) (semantic-list 9561 . 9570) (SIZEOF 9555 . 9561) (punctuation 9554 . 9555) (number 9553 . 9554) (punctuation 9551 . 9552) (symbol 9541 . 9550) (symbol 9534 . 9540) (CONST 9528 . 9533) (STATIC 9521 . 9527) (punctuation 9461 . 9462) (punctuation 9460 . 9461) (punctuation 9459 . 9460) (semantic-list 9450 . 9459) (SIZEOF 9444 . 9450) (punctuation 9443 . 9444) (symbol 9431 . 9443) (TYPENAME 9422 . 9430) (TYPEDEF 9414 . 9421) (symbol 8038 . 8048) (symbol 7623 . 7633) (symbol 6836 . 6846) (symbol 6396 . 6406) (symbol 6191 . 6201) (symbol 6003 . 6013) (symbol 4792 . 4802) (punctuation 4640 . 4641) (number 4639 . 4640) (punctuation 4637 . 4638) (symbol 4632 . 4636) (punctuation 4631 . 4632) (punctuation 4630 . 4631) (punctuation 4629 . 4630) (INT 4626 . 4629) (punctuation 4588 . 4589) (symbol 4583 . 4588) (punctuation 4582 . 4583) (punctuation 4581 . 4582) (punctuation 4580 . 4581) (symbol 4576 . 4580) (punctuation 4574 . 4575) (symbol 4573 . 4574) (punctuation 4572 . 4573) (symbol 4558 . 4572) (punctuation 4557 . 4558) (punctuation 4556 . 4557) (symbol 4553 . 4556) (punctuation 4552 . 4553) (punctuation 4551 . 4552) (symbol 4542 . 4551) (punctuation 4541 . 4542) (punctuation 4540 . 4541) (symbol 4537 . 4540) (TYPENAME 4528 . 4536) (punctuation 4514 . 4515) (symbol 4513 . 4514) (TYPENAME 4504 . 4512) (punctuation 4503 . 4504) (TEMPLATE 4494 . 4502) (symbol 3918 . 3928) (punctuation 3541 . 3542) (punctuation 3540 . 3541) (punctuation 3538 . 3539) (symbol 3537 . 3538) (TYPENAME 3528 . 3536) (punctuation 3527 . 3528) (TEMPLATE 3518 . 3526))
+      :lexical-table 
+        '(("GTEST_NONFATAL_FAILURE_" (spp-arg-list ("message") 47491 . 47500) . ((symbol "GTEST_MESSAGE_" 47505 . 47519) (semantic-list "(message, ::testing::TestPartResult::kNonFatalFailure)" 47519 . 47573)))
+          ("GTEST_TEST_CLASS_NAME_" (spp-arg-list ("test_suite_name" "test_name") 51473 . 51501) . ((spp-symbol-merge ((spp-symbol-merge ((spp-symbol-merge ((symbol "test_suite_name" 51506 . 51521) (symbol "_" 51523 . 51524)) 51506 . 51524) (symbol "test_name" 51526 . 51535)) 51506 . 51535) (symbol "_Test" 51537 . 51542)) 51506 . 51542)))
+          ("GTEST_MESSAGE_AT_" (spp-arg-list ("file" "line" "message" "result_type") 47097 . 47131) . 
+              ((punctuation ":" 47136 . 47137) (punctuation ":" 47137 . 47138) (symbol "testing" 47138 . 47145) (punctuation ":" 47145 . 47146) (punctuation ":" 47146 . 47147) (symbol "internal" 47147 . 47155) (punctuation ":" 47155 . 47156) (punctuation ":" 47156 . 47157) (symbol "AssertHelper" 47157 . 47169) (semantic-list "(result_type, file, line, message)" 47169 . 47203) (punctuation "=" 47210 . 47211) (punctuation ":" 47212 . 47213) (punctuation ":" 47213 . 47214) (symbol "testing" 47214 . 47221) (punctuation ":" 47221 . 47222) (punctuation ":" 47222 . 47223) (symbol "Message" 47223 . 47230) (semantic-list "()" 47230 . 47232)))
+          ("GTEST_MESSAGE_" (spp-arg-list ("message" "result_type") 47256 . 47278) . ((symbol "GTEST_MESSAGE_AT_" 47283 . 47300) (semantic-list "(__FILE__, __LINE__, message, result_type)" 47300 . 47342)))
+          ("GTEST_FATAL_FAILURE_" (spp-arg-list ("message") 47372 . 47381) . 
+              ((RETURN "return" 47386 . 47392) (symbol "GTEST_MESSAGE_" 47393 . 47407) (semantic-list "(message, ::testing::TestPartResult::kFatalFailure)" 47407 . 47458)))
+          ("GTEST_TEST_ANY_THROW_" (spp-arg-list ("statement" "fail") 49595 . 49612) . 
+              ((symbol "GTEST_AMBIGUOUS_ELSE_BLOCKER_" 49617 . 49646) (IF "if" 49651 . 49653) (semantic-list "(::testing::internal::AlwaysTrue())" 49654 . 49689) (semantic-list "{ \\
+    bool gtest_caught_any = false; \\
+    try { \\
+      GTEST_SUPPRESS_UNREACHABLE_CODE_WARNING_BELOW_(statement); \\
+    } \\
+    catch (...) { \\
+      gtest_caught_any = true; \\
+    } \\
+    if (!gtest_caught_any) { \\
+      goto GTEST_CONCAT_TOKEN_(gtest_label_testanythrow_, __LINE__); \\
+    } \\
+  }" 49690 . 49992) (ELSE "else" 49993 . 49997) (symbol "GTEST_CONCAT_TOKEN_" 50004 . 50023) (semantic-list "(gtest_label_testanythrow_, __LINE__)" 50023 . 50060) (punctuation ":" 50060 . 50061) (symbol "fail" 50070 . 50074) (semantic-list "(\"Expected: \" #statement \" throws an exception.\\n\" \\
+           \"  Actual: it doesn't.\")" 50074 . 50162)))
+          ("GTEST_SKIP_" (spp-arg-list ("message") 47692 . 47701) . 
+              ((RETURN "return" 47706 . 47712) (symbol "GTEST_MESSAGE_" 47713 . 47727) (semantic-list "(message, ::testing::TestPartResult::kSkip)" 47727 . 47770)))
+          ("GTEST_SUPPRESS_UNREACHABLE_CODE_WARNING_BELOW_" (spp-arg-list ("statement") 47987 . 47998) . 
+              ((IF "if" 48003 . 48005) (semantic-list "(::testing::internal::AlwaysTrue())" 48006 . 48041) (semantic-list "{ statement; }" 48042 . 48056)))
+          ("GTEST_TEST_THROW_" (spp-arg-list ("statement" "expected_exception" "fail") 48083 . 48120) . 
+              ((symbol "GTEST_AMBIGUOUS_ELSE_BLOCKER_" 48125 . 48154) (IF "if" 48159 . 48161) (semantic-list "(::testing::internal::ConstCharPtr gtest_msg = \"\")" 48162 . 48212) (semantic-list "{ \\
+    bool gtest_caught_expected = false; \\
+    try { \\
+      GTEST_SUPPRESS_UNREACHABLE_CODE_WARNING_BELOW_(statement); \\
+    } \\
+    catch (expected_exception const&) { \\
+      gtest_caught_expected = true; \\
+    } \\
+    catch (...) { \\
+      gtest_msg.value = \\
+          \"Expected: \" #statement \" throws an exception of type \" \\
+          #expected_exception \".\\n  Actual: it throws a different type.\"; \\
+      goto GTEST_CONCAT_TOKEN_(gtest_label_testthrow_, __LINE__); \\
+    } \\
+    if (!gtest_caught_expected) { \\
+      gtest_msg.value = \\
+          \"Expected: \" #statement \" throws an exception of type \" \\
+          #expected_exception \".\\n  Actual: it throws nothing.\"; \\
+      goto GTEST_CONCAT_TOKEN_(gtest_label_testthrow_, __LINE__); \\
+    } \\
+  }" 48213 . 48976) (ELSE "else" 48977 . 48981) (symbol "GTEST_CONCAT_TOKEN_" 48988 . 49007) (semantic-list "(gtest_label_testthrow_, __LINE__)" 49007 . 49041) (punctuation ":" 49041 . 49042) (symbol "fail" 49051 . 49055) (semantic-list "(gtest_msg.value)" 49055 . 49072)))
+          ("GTEST_TEST_BOOLEAN_" (spp-arg-list ("expression" "text" "actual" "expected" "fail") 50411 . 50453) . 
+              ((symbol "GTEST_AMBIGUOUS_ELSE_BLOCKER_" 50458 . 50487) (IF "if" 50492 . 50494) (semantic-list "(const ::testing::AssertionResult gtest_ar_ = \\
+      ::testing::AssertionResult(expression))" 50495 . 50588) (punctuation ";" 50595 . 50596) (ELSE "else" 50601 . 50605) (symbol "fail" 50612 . 50616) (semantic-list "(::testing::internal::GetBoolAssertionFailureMessage(\\
+        gtest_ar_, text, #actual, #expected).c_str())" 50616 . 50724)))
+          ("GTEST_TEST_NO_FATAL_FAILURE_" (spp-arg-list ("statement" "fail") 50762 . 50779) . 
+              ((symbol "GTEST_AMBIGUOUS_ELSE_BLOCKER_" 50784 . 50813) (IF "if" 50818 . 50820) (semantic-list "(::testing::internal::AlwaysTrue())" 50821 . 50856) (semantic-list "{ \\
+    ::testing::internal::HasNewFatalFailureHelper gtest_fatal_failure_checker; \\
+    GTEST_SUPPRESS_UNREACHABLE_CODE_WARNING_BELOW_(statement); \\
+    if (gtest_fatal_failure_checker.has_new_fatal_failure()) { \\
+      goto GTEST_CONCAT_TOKEN_(gtest_label_testnofatal_, __LINE__); \\
+    } \\
+  }" 50857 . 51153) (ELSE "else" 51154 . 51158) (symbol "GTEST_CONCAT_TOKEN_" 51165 . 51184) (semantic-list "(gtest_label_testnofatal_, __LINE__)" 51184 . 51220) (punctuation ":" 51220 . 51221) (symbol "fail" 51230 . 51234) (semantic-list "(\"Expected: \" #statement \" doesn't generate new fatal \" \\
+           \"failures in the current thread.\\n\" \\
+           \"  Actual: it does.\")" 51234 . 51373)))
+          ("GTEST_CONCAT_TOKEN_" (spp-arg-list ("foo" "bar") 2862 . 2872) . ((symbol "GTEST_CONCAT_TOKEN_IMPL_" 2873 . 2897) (semantic-list "(foo, bar)" 2897 . 2907)))
+          ("GTEST_CONCAT_TOKEN_IMPL_" (spp-arg-list ("foo" "bar") 2940 . 2950) . ((spp-symbol-merge ((symbol "foo" 2951 . 2954) (symbol "bar" 2958 . 2961)) 2951 . 2961)))
+          ("GTEST_INCLUDE_GTEST_INTERNAL_GTEST_INTERNAL_H_")
+          ("GTEST_STRINGIFY_" (spp-arg-list ("name") 3016 . 3022) . ((punctuation "#" 3023 . 3024) (symbol "name" 3024 . 3028)))
+          ("GTEST_SUCCESS_" (spp-arg-list ("message") 47597 . 47606) . ((symbol "GTEST_MESSAGE_" 47611 . 47625) (semantic-list "(message, ::testing::TestPartResult::kSuccess)" 47625 . 47671)))
+          ("GTEST_TEST_" (spp-arg-list ("test_suite_name" "test_name" "parent_class" "parent_id") 51599 . 51652) . 
+              ((symbol "static_assert" 51662 . 51675) (semantic-list "(sizeof(GTEST_STRINGIFY_(test_suite_name)) > 1,                \\
+                \"test_suite_name must not be empty\")" 51675 . 51792) (punctuation ";" 51792 . 51793) (symbol "static_assert" 51822 . 51835) (semantic-list "(sizeof(GTEST_STRINGIFY_(test_name)) > 1,                      \\
+                \"test_name must not be empty\")" 51835 . 51946) (punctuation ";" 51946 . 51947) (CLASS "class" 51982 . 51987) (symbol "GTEST_TEST_CLASS_NAME_" 51988 . 52010) (semantic-list "(test_suite_name, test_name)" 52010 . 52038) (punctuation ":" 52066 . 52067) (PUBLIC "public" 52068 . 52074) (symbol "parent_class" 52075 . 52087) (semantic-list "{                                                 \\
+   public:                                                                    \\
+    GTEST_TEST_CLASS_NAME_(test_suite_name, test_name)() {}                   \\
+                                                                              \\
+   private:                                                                   \\
+    virtual void TestBody();                                                  \\
+    static ::testing::TestInfo* const test_info_ GTEST_ATTRIBUTE_UNUSED_;     \\
+    GTEST_DISALLOW_COPY_AND_ASSIGN_(GTEST_TEST_CLASS_NAME_(test_suite_name,   \\
+                                                           test_name));       \\
+  }" 52088 . 52783) (punctuation ";" 52783 . 52784) (punctuation ":" 52942 . 52943) (punctuation ":" 52943 . 52944) (symbol "testing" 52944 . 52951) (punctuation ":" 52951 . 52952) (punctuation ":" 52952 . 52953) (symbol "TestInfo" 52953 . 52961) (punctuation "*" 52961 . 52962) (CONST "const" 52963 . 52968) (symbol "GTEST_TEST_CLASS_NAME_" 52969 . 52991) (semantic-list "(test_suite_name,          \\
+                                                    test_name)" 52991 . 53082) (punctuation ":" 53082 . 53083) (punctuation ":" 53083 . 53084) (symbol "test_info_" 53084 . 53094) (punctuation "=" 53095 . 53096) (punctuation ":" 53106 . 53107) (punctuation ":" 53107 . 53108) (symbol "testing" 53108 . 53115) (punctuation ":" 53115 . 53116) (punctuation ":" 53116 . 53117) (symbol "internal" 53117 . 53125) (punctuation ":" 53125 . 53126) (punctuation ":" 53126 . 53127) (symbol "MakeAndRegisterTestInfo" 53127 . 53150) (semantic-list "(                           \\
+          #test_suite_name, #test_name, nullptr, nullptr,                     \\
+          ::testing::internal::CodeLocation(__FILE__, __LINE__), (parent_id), \\
+          ::testing::internal::SuiteApiResolver<                              \\
+              parent_class>::GetSetUpCaseOrSuite(__FILE__, __LINE__),         \\
+          ::testing::internal::SuiteApiResolver<                              \\
+              parent_class>::GetTearDownCaseOrSuite(__FILE__, __LINE__),      \\
+          new ::testing::internal::TestFactoryImpl<GTEST_TEST_CLASS_NAME_(    \\
+              test_suite_name, test_name)>)" 53150 . 53783) (punctuation ";" 53783 . 53784) (VOID "void" 53822 . 53826) (symbol "GTEST_TEST_CLASS_NAME_" 53827 . 53849) (semantic-list "(test_suite_name, test_name)" 53849 . 53877) (punctuation ":" 53877 . 53878) (punctuation ":" 53878 . 53879) (symbol "TestBody" 53879 . 53887) (semantic-list "()" 53887 . 53889)))
+          ("GTEST_REMOVE_REFERENCE_AND_CONST_" (spp-arg-list ("T") 33208 . 33211) . 
+              ((TYPENAME "typename" 33216 . 33224) (symbol "std" 33225 . 33228) (punctuation ":" 33228 . 33229) (punctuation ":" 33229 . 33230) (symbol "remove_const" 33230 . 33242) (punctuation "<" 33242 . 33243) (TYPENAME "typename" 33243 . 33251) (symbol "std" 33252 . 33255) (punctuation ":" 33255 . 33256) (punctuation ":" 33256 . 33257) (symbol "remove_reference" 33257 . 33273) (punctuation "<" 33273 . 33274) (symbol "T" 33274 . 33275) (punctuation ">" 33275 . 33276) (punctuation ":" 33276 . 33277) (punctuation ":" 33277 . 33278) (symbol "type" 33278 . 33282) (punctuation ">" 33282 . 33283) (punctuation ":" 33283 . 33284) (punctuation ":" 33284 . 33285) (symbol "type" 33285 . 33289)))
+          ("GTEST_TEST_NO_THROW_" (spp-arg-list ("statement" "fail") 49102 . 49119) . 
+              ((symbol "GTEST_AMBIGUOUS_ELSE_BLOCKER_" 49124 . 49153) (IF "if" 49158 . 49160) (semantic-list "(::testing::internal::AlwaysTrue())" 49161 . 49196) (semantic-list "{ \\
+    try { \\
+      GTEST_SUPPRESS_UNREACHABLE_CODE_WARNING_BELOW_(statement); \\
+    } \\
+    catch (...) { \\
+      goto GTEST_CONCAT_TOKEN_(gtest_label_testnothrow_, __LINE__); \\
+    } \\
+  }" 49197 . 49389) (ELSE "else" 49390 . 49394) (symbol "GTEST_CONCAT_TOKEN_" 49401 . 49420) (semantic-list "(gtest_label_testnothrow_, __LINE__)" 49420 . 49456) (punctuation ":" 49456 . 49457) (symbol "fail" 49466 . 49470) (semantic-list "(\"Expected: \" #statement \" doesn't throw an exception.\\n\" \\
+           \"  Actual: it throws.\")" 49470 . 49564)))
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :file "gtest-filepath.h"
+      :fsize 9764
+      :lastmodtime '(24174 5277 42662 251000))
+    (semanticdb-table "semanticdb-table"
+      :file "gtest-string.h"
+      :fsize 7070
+      :lastmodtime '(24174 5277 42662 251000))
+    (semanticdb-table "semanticdb-table"
+      :file "gtest-type-util.h"
+      :fsize 186064
+      :lastmodtime '(24174 5277 46662 315000)))
+  :file "!home!mk!work!practical-googletest!googletest!googletest!include!gtest!internal!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")
