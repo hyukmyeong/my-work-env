@@ -64,8 +64,12 @@
 ;; 1. helm에서 유용한 기능들 ;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 (global-set-key (kbd "M-s") 'helm-swoop)
-;(global-set-key (kbd "M-t") 'helm-for-files)
-(global-set-key (kbd "M-t") 'helm-projectile-find-file)
+;(global-set-key (kbd "M-,") 'helm-for-files)
+;(global-set-key (kbd "M-.") 'helm-projectile-find-file)
+; helm-projectile-find-file은 어디에서 실행했든 .git을 인식하고
+; projectile-find-file은 실행한 폴더에서만 파일을 찾아줌
+(global-set-key (kbd "M-,") 'projectile-dired)
+(global-set-key (kbd "M-.") 'projectile-find-file)
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; 2. helm cscope            ;;
@@ -80,30 +84,30 @@
 ;; Set key bindings
 (eval-after-load "helm-cscope"
   '(progn
-     (define-key helm-cscope-mode-map (kbd "M-.") 'helm-cscope-find-this-symbol)
-;     (define-key helm-cscope-mode-map (kbd "M-g g") 'helm-cscope-find-this-global-definition)
-;     (define-key helm-cscope-mode-map (kbd "M-g c") 'helm-cscope-find-called-function)
-;     (define-key helm-cscope-mode-map (kbd "M-g p") 'helm-cscope-find-calling-this-funtcion)
-     (define-key helm-cscope-mode-map (kbd "M-,") 'helm-cscope-pop-mark)))
+     (define-key helm-cscope-mode-map (kbd "C-\\ s") 'helm-cscope-find-this-symbol)
+     (define-key helm-cscope-mode-map (kbd "C-\\ g") 'helm-cscope-find-global-definition)
+     (define-key helm-cscope-mode-map (kbd "C-\\ e") 'helm-cscope-find-called-function)
+     (define-key helm-cscope-mode-map (kbd "C-\\ c") 'helm-cscope-find-calling-this-function)
+     (define-key helm-cscope-mode-map (kbd "C-t") 'helm-cscope-pop-mark)))
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; 2. evil 	             ;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-(add-to-list 'load-path "~/.emacs.d/evil")
-(require 'evil)
-(evil-mode 1)
+;(add-to-list 'load-path "~/.emacs.d/evil")
+;(require 'evil)
+;(evil-mode 1)
 
-(defun evil-keyboard-quit ()
-  "Keyboard quit and force normal state."
-  (interactive)
-  (and evil-mode (evil-force-normal-state))
-  (keyboard-quit))
+;(defun evil-keyboard-quit ()
+;  "Keyboard quit and force normal state."
+;  (interactive)
+;  (and evil-mode (evil-force-normal-state))
+;  (keyboard-quit))
 
-(define-key evil-normal-state-map   (kbd "C-g") #'evil-keyboard-quit)
-(define-key evil-motion-state-map   (kbd "C-g") #'evil-keyboard-quit)
-(define-key evil-insert-state-map   (kbd "C-g") #'evil-keyboard-quit)
-(define-key evil-window-map         (kbd "C-g") #'evil-keyboard-quit)
-(define-key evil-operator-state-map (kbd "C-g") #'evil-keyboard-quit)
+;(define-key evil-normal-state-map   (kbd "C-g") #'evil-keyboard-quit)
+;(define-key evil-motion-state-map   (kbd "C-g") #'evil-keyboard-quit)
+;(define-key evil-insert-state-map   (kbd "C-g") #'evil-keyboard-quit)
+;(define-key evil-window-map         (kbd "C-g") #'evil-keyboard-quit)
+;(define-key evil-operator-state-map (kbd "C-g") #'evil-keyboard-quit)
 
 ;; evil을 사용하면 helm의 M-. 가 동작하지 않기 때문에 아래 내용을 주석처리함
 ;; 위치 : ~/.emacs.d/evil/evil-maps.el
@@ -111,7 +115,9 @@
 ;;(define-key evil-normal-state-map (kbd "M-.") 'evil-repeat-pop-next)
 
 ; 윈도우 이동 : shift + arrow
-(windmove-default-keybindings)
+;(windmove-default-keybindings)
+;(windmove-default-keybindings 'meta)
+(windmove-default-keybindings 'control)
 
 ;; scroll 부드럽게
 ;; for smooth scrolling and disabling the automatical recentering of emacs when moving the cursor
@@ -224,7 +230,3 @@ scroll-down-aggressively 0.01)
  )
 
 (put 'erase-buffer 'disabled nil)
-
-;(windmove-default-keybindings)
-;(windmove-default-keybindings 'meta)
-(windmove-default-keybindings 'control)

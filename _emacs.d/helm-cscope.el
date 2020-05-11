@@ -191,7 +191,7 @@
 (defun helm-cscope-find-this-symbol (symbol)
   "Locate a symbol in source code."
   (interactive
-   (list (cscope-prompt-for-symbol
+   (list (cscope-find-this-symbol
           "Find this symbol " nil nil t)))
   (helm-cscope--find-common "-0" symbol))
 
@@ -207,9 +207,9 @@
 (defun helm-cscope-find-global-definition (symbol)
   "Find a symbol's global definition."
   (interactive
-   (list (cscope-prompt-for-symbol
+   (list (cscope-find-global-definition
           "Find this global definition " nil nil t)))
-  (helm-cscope--find-common "-1" symbol))
+  (helm-cscope--find-common "-0" symbol))
 
 ;;;###autoload
 (defun helm-cscope-find-global-definition-no-prompt()
@@ -223,9 +223,9 @@
 (defun helm-cscope-find-called-function (symbol)
   "Display functions called by a function."
   (interactive
-   (list (cscope-prompt-for-symbol
+   (list (cscope-find-called-functions
           "Find functions called by this function " nil nil t)))
-  (helm-cscope--find-common "-2" symbol))
+  (helm-cscope--find-common "-0" symbol))
 
 ;;;###autoload
 (defun helm-cscope-find-called-function-no-prompt ()
@@ -239,9 +239,9 @@
 (defun helm-cscope-find-calling-this-function (symbol)
   "Display functions calling a function."
   (interactive
-   (list (cscope-prompt-for-symbol
+   (list (cscope-find-functions-calling-this-function
           "Find functions calling this function " nil nil t)))
-  (helm-cscope--find-common "-3" symbol))
+  (helm-cscope--find-common "-0" symbol))
 
 ;;;###autoload
 (defun helm-cscope-find-calling-this-function-no-prompt()
