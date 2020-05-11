@@ -225,6 +225,6 @@ scroll-down-aggressively 0.01)
 
 (put 'erase-buffer 'disabled nil)
 
-(windmove-default-keybindings)
+;(windmove-default-keybindings)
 ;(windmove-default-keybindings 'meta)
-;(windmove-default-keybindings 'control)
+(windmove-default-keybindings 'control)
