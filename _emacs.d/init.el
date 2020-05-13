@@ -42,7 +42,7 @@
 (add-hook 'asm-mode-hook 'helm-gtags-mode)
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;; mikki start                                        ;;
+;; mikki start				              ;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 (setq-default package-check-signature nil)
@@ -130,7 +130,7 @@
      (define-key helm-cscope-mode-map (kbd "C-t") 'helm-cscope-pop-mark)))
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;; 2. evil                   ;;
+;; 2. evil 	             ;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;(add-to-list 'load-path "~/.emacs.d/evil")
 ;(require 'evil)
@@ -195,7 +195,7 @@ scroll-down-aggressively 0.01)
 
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;; mikki finish                                       ;;
+;; mikki finish 				      ;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 ;; function-args
