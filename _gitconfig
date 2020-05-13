@@ -8,13 +8,13 @@
 [color]
         ui = true
 [core]
-	editor = vim
         autocrlf = input
         whitespace = trailing-space,space-before-tab,indent-with-non-tab,cr-at-eol
+	editor = vim
 [apply]
         whitespace = fix
 [commit]
-	template = /home/mk/.gitmessage.txt
+	template = /home/hyuk.myeong/.gitmessage.txt
 [alias]
         st = status
         mylog = log --pretty=format:\"%H - %Cred %ai, %Creset %an : %s\"

@@ -1,1 +1,29 @@
-good
+[component] title
+
+:Notes:
+blahhhhh
+(If there are dependent commits)
+[+]http://text.lge.com/swp/gerrit/xxxxxx (ara-api)
+[+]http://text.lge.com/swp/gerrit/xxxxxx (meta-lara)
+
+:Test performed:
+explain how you test this commit
+
+:Issues addressed:
+[LARA-XX] title of the ticket
+
+
+[Diag][ICAS3*] Adding apps and services factors to LG SOME/IP configuration file
+
+:Notes:
+Adding apps and services factors to LG SOME/IP configuration file
+- speed_app
+- soc_app
+[+]http://text.lge.com/swp/gerrit/95793
+[+]http://text.lge.com/swp/gerrit/95710
+
+:Test performed:
+build and run on target
+
+:Issues addressed:
+[LARA-218][SCM][ICAS3*] Adding apps and services factors to LG SOME/IP configuration file
