@@ -42,7 +42,7 @@
 (add-hook 'asm-mode-hook 'helm-gtags-mode)
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;; mikki start				              ;;
+;; mikki start                                        ;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 (setq-default package-check-signature nil)
@@ -68,8 +68,47 @@
 ;(global-set-key (kbd "M-.") 'helm-projectile-find-file)
 ; helm-projectile-find-file은 어디에서 실행했든 .git을 인식하고
 ; projectile-find-file은 실행한 폴더에서만 파일을 찾아줌
-(global-set-key (kbd "M-,") 'projectile-dired)
-(global-set-key (kbd "M-.") 'projectile-find-file)
+(global-set-key (kbd "M-p p") 'projectile-dired)
+(global-set-key (kbd "M-p f") 'projectile-find-file)
+(global-set-key (kbd "M-p d") 'projectile-switch-project)
+(global-set-key (kbd "M-p s") 'sr-speedbar-toggle)
+
+;(require 'sr-speedbar)
+(setq speedbar-show-unknown-files t)
+(setq sr-speedbar-auto-refresh nil)
+(setq speedbar-use-images nil) ; use text for buttons
+;(setq sr-speedbar-right-side nil) ; put on left side
+;  (with-current-buffer sr-speedbar-buffer-name
+;(setq window-size-fixed 'width))
+;(setq sr-speedbar-width 35)
+(setq sr-speedbar-max-width 35)
+
+;(use-package dashboard
+;  :ensure t
+;  :defer t
+;  :init
+;  (dashboard-setup-startup-hook)
+;  :config
+;  (sr-speedbar-open)
+;  )
+
+;(use-package sr-speedbar
+;  :ensure t
+;  :defer t
+;  :init
+;  (setq sr-speedbar-right-side nil)
+;  (setq speedbar-show-unknown-files t)
+;  (setq sr-speedbar-width 35)
+;  (setq sr-speedbar-max-width 35)
+;  (setq speedbar-use-images t)
+;  (setq speedbar-initial-expansion-list-name "quick buffers")
+;  (define-key speedbar-mode-map "\M-p" nil)
+  ;(sr-speedbar-open)
+;  :config
+;  (with-current-buffer sr-speedbar-buffer-name
+;    (setq window-size-fixed 'width)
+;   )
+
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; 2. helm cscope            ;;
@@ -91,7 +130,7 @@
      (define-key helm-cscope-mode-map (kbd "C-t") 'helm-cscope-pop-mark)))
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;; 2. evil 	             ;;
+;; 2. evil                   ;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;(add-to-list 'load-path "~/.emacs.d/evil")
 ;(require 'evil)
@@ -150,8 +189,13 @@ scroll-down-aggressively 0.01)
 ;  (setq indent-tabs-mode nil) ;; no tab
 ;))
 
+
+;; other options
+(show-paren-mode 1)
+
+
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;; mikki finish 				      ;;
+;; mikki finish                                       ;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 ;; function-args
