@@ -6,16 +6,16 @@
     (semanticdb-table "semanticdb-table"
       :major-mode c++-mode
       :tags 
-        '( ("iostream" include (:system-flag t) nil [437 456])
-            ("ara/log/logging.h" include nil nil [458 486])
-            ("runtime_dm.h" include nil nil [487 510])
+        '( ("iostream" include (:system-flag t) nil [838 857])
+            ("ara/log/logging.h" include nil nil [859 887])
+            ("runtime_dm.h" include nil nil [888 911])
             ("ara::log" using (:type ("ara::log" type
                  (:prototype t
                   :type "namespace")
-                  nil nil)) nil [512 537])
-            ("main" function (:type "int") nil [683 1269]))          
+                  nil nil)) nil [913 938])
+            ("main" function (:type "int") nil [1084 1670]))          
       :file "main.cpp"
-      :pointmax 1270
+      :pointmax 1671
       :fsize 1710
       :lastmodtime '(24254 25711 751743 518000)
       :unmatched-syntax nil)
