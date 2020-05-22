@@ -1,0 +1,269 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("ara/log/logging.h" include nil nil [729 757])
+            ("common/config/dm_config.h" include nil nil [758 794])
+            ("dcm/runtime_context/dcm_runtime_context.h" include nil nil [795 847])
+            ("dcm/diagnostic_communication_manager.h" include nil nil [848 897])
+            ("common/data_element.h" include nil nil [898 930])
+            ("ara" type
+               (:members 
+                  ( ("diag" type
+                       (:members 
+                          ( ("dcm" type
+                               (:members 
+                                  ( ("ara::log" using (:type ("ara::log" type
+                                         (:prototype t
+                                          :type "namespace")
+                                          nil nil)) (reparse-symbol namespacesubparts) [1125 1150])
+                                    ("ara::diag::config::DMConfig" using (:type ("ara::diag::config::DMConfig" type
+                                         (:prototype t
+                                          :type "class")
+                                          nil nil)) (reparse-symbol namespacesubparts) [1151 1185])
+                                    ("unnamed" type
+                                       (:members 
+                                          ( ("kInvalidInstanceId" function
+                                               (:prototype-flag t
+                                                :arguments 
+                                                  ( ("" variable (:type ("65535U" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1242 1249]))                                                  
+                                                :type ("std::uint16_t" type (:type "class") nil nil))
+                                                (reparse-symbol namespacesubparts) [1209 1250])
+                                            ("kByteSize" function
+                                               (:prototype-flag t
+                                                :arguments 
+                                                  ( ("" variable (:type ("1U" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1284 1287]))                                                  
+                                                :type ("std::uint8_t" type (:type "class") nil nil))
+                                                (reparse-symbol namespacesubparts) [1261 1288]))                                          
+                                        :type "namespace")
+                                        (reparse-symbol namespacesubparts) [1187 1291])
+                                    ("DataElement" function
+                                       (:constructor-flag t
+                                        :parent "DataElement"
+                                        :arguments 
+                                          ( ("dcmRuntimeContext" variable (:type ("std::shared_ptr" type
+                                                 (:template-specifier 
+                                                    ( ("runtime::DcmRuntimeContext" type nil nil nil))                                                    
+                                                  :type "class")
+                                                  nil nil)) (reparse-symbol arg-sub-list) [1331 1393]))                                          
+                                        :type ("DataElement" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [1306 1528])
+                                    ("GetDataElementValue" function
+                                       (:parent "DataElement"
+                                        :arguments 
+                                          ( ("dataElementId" variable
+                                               (:constant-flag t
+                                                :type ("std::uint32_t" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [1616 1650])
+                                            ("metaInfo" variable
+                                               (:constant-flag t
+                                                :type ("uds_transport::UdsMessage::MetaInfoMap" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [1655 1709])
+                                            ("dataElementValue" variable
+                                               (:reference 1
+                                                :type ("ByteVector" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [1710 1739]))                                          
+                                        :type "bool")
+                                        (reparse-symbol namespacesubparts) [1578 2115])
+                                    ("GetDataElementUint8" function
+                                       (:parent "DataElement"
+                                        :arguments 
+                                          ( ("dataElementId" variable
+                                               (:constant-flag t
+                                                :type ("std::uint32_t" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [2202 2236])
+                                            ("metaInfo" variable
+                                               (:constant-flag t
+                                                :type ("uds_transport::UdsMessage::MetaInfoMap" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [2241 2295])
+                                            ("dataElementValue" variable
+                                               (:reference 1
+                                                :type ("ByteVector" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [2296 2325]))                                          
+                                        :type "bool")
+                                        (reparse-symbol namespacesubparts) [2164 4977])
+                                    ("GetDataElementVector" function
+                                       (:parent "DataElement"
+                                        :arguments 
+                                          ( ("dataElementId" variable
+                                               (:constant-flag t
+                                                :type ("std::uint32_t" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [5058 5092])
+                                            ("metaInfo" variable
+                                               (:constant-flag t
+                                                :type ("uds_transport::UdsMessage::MetaInfoMap" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [5097 5151])
+                                            ("dataElementValue" variable
+                                               (:reference 1
+                                                :type ("ByteVector" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [5152 5181]))                                          
+                                        :type "bool")
+                                        (reparse-symbol namespacesubparts) [5019 7967])
+                                    ("GetExternalDataElementValue" function
+                                       (:parent "DataElement"
+                                        :arguments 
+                                          ( ("dataElementId" variable
+                                               (:constant-flag t
+                                                :type ("std::uint32_t" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [8071 8105])
+                                            ("metaInfo" variable
+                                               (:constant-flag t
+                                                :type ("uds_transport::UdsMessage::MetaInfoMap" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [8110 8164])
+                                            ("dataElementValue" variable
+                                               (:reference 1
+                                                :type ("ByteVector" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [8165 8194]))                                          
+                                        :type "bool")
+                                        (reparse-symbol namespacesubparts) [8025 10676])
+                                    ("HandleDataElementRead" function
+                                       (:parent "DataElement"
+                                        :arguments 
+                                          ( ("dataElementId" variable
+                                               (:constant-flag t
+                                                :type ("std::uint32_t" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [10760 10794])
+                                            ("metaInfo" variable
+                                               (:constant-flag t
+                                                :type ("uds_transport::UdsMessage::MetaInfoMap" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [10799 10853])
+                                            ("dataElementValue" variable
+                                               (:reference 1
+                                                :type ("ByteVector" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [10854 10883]))                                          
+                                        :type "bool")
+                                        (reparse-symbol namespacesubparts) [10720 11736]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [1109 11739]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [1040 11758]))                  
+                :type "namespace")
+                nil [985 11778]))          
+      :file "data_element.cpp"
+      :pointmax 11796
+      :fsize 12110
+      :lastmodtime '(24251 50669 382144 637000)
+      :unmatched-syntax '((symbol 1251 . 1260) (symbol 1199 . 1208) (symbol 1251 . 1260) (symbol 1199 . 1208)))
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("exception" include (:system-flag t) nil [724 744])
+            ("common/thread_pool.h" include nil nil [746 777])
+            ("ara" type
+               (:members 
+                  ( ("diag" type
+                       (:members 
+                          ( ("common" type
+                               (:members 
+                                  ( ("ThreadPool" function
+                                       (:constructor-flag t
+                                        :parent "ThreadPool"
+                                        :arguments 
+                                          ( ("capacity" variable
+                                               (:constant-flag t
+                                                :type "unsigned int")
+                                                (reparse-symbol arg-sub-list) [854 878]))                                          
+                                        :type ("ThreadPool" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [831 1155])
+                                    ("ThreadPool" function
+                                       (:destructor-flag t
+                                        :parent "ThreadPool"
+                                        :type "void")
+                                        (reparse-symbol namespacesubparts) [1157 1287])
+                                    ("SubmitWork" function
+                                       (:parent "ThreadPool"
+                                        :arguments 
+                                          ( ("work_unit" variable (:type ("WorkUnit::Ptr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1317 1341]))                                          
+                                        :type "void")
+                                        (reparse-symbol namespacesubparts) [1289 1475])
+                                    ("Worker" function
+                                       (:parent "ThreadPool"
+                                        :type "void")
+                                        (reparse-symbol namespacesubparts) [1477 1546])
+                                    ("WorkOne" function
+                                       (:parent "ThreadPool"
+                                        :type "void")
+                                        (reparse-symbol namespacesubparts) [1548 2282]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [812 2285]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [795 2307]))                  
+                :type "namespace")
+                nil [779 2327]))          
+      :file "thread_pool.cpp"
+      :pointmax 2345
+      :fsize 2428
+      :lastmodtime '(24251 50669 382144 637000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("unistd.h" include (:system-flag t) nil [731 750])
+            ("csignal" include (:system-flag t) nil [751 769])
+            ("exception" include (:system-flag t) nil [770 790])
+            ("iostream" include (:system-flag t) nil [791 810])
+            ("memory" include (:system-flag t) nil [811 828])
+            ("thread" include (:system-flag t) nil [829 846])
+            ("common/runtime.h" include nil nil [848 875])
+            ("ara/log/logging.h" include nil nil [876 904])
+            ("common/exception/errno_exception.h" include nil nil [905 950])
+            ("ara" type
+               (:members 
+                  ( ("diag" type
+                       (:members 
+                          ( ("ara::log" using (:type ("ara::log" type
+                                 (:prototype t
+                                  :type "namespace")
+                                  nil nil)) (reparse-symbol namespacesubparts) [985 1010])
+                            ("Runtime::instanceMutex_" variable (:type ("std::mutex" type (:type "class") nil nil)) (reparse-symbol namespacesubparts) [1012 1047])
+                            ("Runtime::instance_" variable (:type ("std::unique_ptr" type
+                                 (:template-specifier 
+                                    ( ("Runtime" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol namespacesubparts) [1048 1101])
+                            ("Runtime" function
+                               (:constructor-flag t
+                                :parent "Runtime"
+                                :type ("Runtime" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [1103 1173])
+                            ("Runtime" function
+                               (:destructor-flag t
+                                :parent "Runtime"
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [1175 1197])
+                            ("HandleSignal" function
+                               (:parent "Runtime"
+                                :arguments 
+                                  ( ("signum" variable (:type ("std::int32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1226 1246]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [1199 1425])
+                            ("SignalHandler" function
+                               (:parent "Runtime"
+                                :arguments 
+                                  ( ("signum" variable (:type ("std::int32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1455 1475]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [1427 1526])
+                            ("WaitUntilTermination" function
+                               (:parent "Runtime"
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [1528 1711])
+                            ("GetInstance" function
+                               (:parent "Runtime"
+                                :type ("Runtime" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [1713 1777]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [968 1780]))                  
+                :type "namespace")
+                nil [952 1800]))          
+      :file "runtime.cpp"
+      :pointmax 1818
+      :fsize 1882
+      :lastmodtime '(24251 50669 382144 637000)
+      :unmatched-syntax nil))
+  :file "!home!hyukmyeong!work!ICAS_Apps!Apps!source!autosar!avin!avin-ap!dm!source!src!diagnostic-manager!common!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

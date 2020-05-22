@@ -1,0 +1,103 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("ostream" include (:system-flag t) nil [730 748])
+            ("utility" include (:system-flag t) nil [749 767])
+            ("dcm/service/work_unit_service.h" include nil nil [769 811])
+            ("ara/log/logging.h" include nil nil [812 840])
+            ("dcm/connection/connection.h" include nil nil [841 879])
+            ("uds/session_type.h" include nil nil [880 909])
+            ("uds/uds_error_code.h" include nil nil [910 941])
+            ("uds_transport/uds_message_ext.h" include nil nil [942 984])
+            ("dcm/conversation/conversation.h" include nil nil [985 1027])
+            ("dcm/conversation/conversation_manager.h" include nil nil [1028 1078])
+            ("dcm/service/service_dispatch_table.h" include nil nil [1079 1126])
+            ("ara::diag::uds::UdsNegativeResponseCode" using (:type ("ara::diag::uds::UdsNegativeResponseCode" type
+                 (:prototype t
+                  :type "class")
+                  nil nil)) nil [1128 1174])
+            ("ara::diag::uds::sessiontype::SessionType" using (:type ("ara::diag::uds::sessiontype::SessionType" type
+                 (:prototype t
+                  :type "class")
+                  nil nil)) nil [1175 1222])
+            ("ara::diag::uds_transport::UdsMessageExt" using (:type ("ara::diag::uds_transport::UdsMessageExt" type
+                 (:prototype t
+                  :type "class")
+                  nil nil)) nil [1223 1269])
+            ("ara" type
+               (:members 
+                  ( ("diag" type
+                       (:members 
+                          ( ("dcm" type
+                               (:members 
+                                  ( ("service" type
+                                       (:members 
+                                          ( ("WorkUnitService" function
+                                               (:constructor-flag t
+                                                :parent "WorkUnitService"
+                                                :arguments 
+                                                  ( ("service_processor" variable (:type ("ServiceProcessor::ServiceProcessorSharedPtr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1373 1435])
+                                                    ("conversation" variable (:type ("conversation::Conversation::Ptr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1440 1485])
+                                                    ("message" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("UdsMessageExt" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [1486 1515])
+                                                    ("request_handle" variable
+                                                       (:constant-flag t
+                                                        :type "unsigned int")
+                                                        (reparse-symbol arg-sub-list) [1520 1550]))                                                  
+                                                :type ("WorkUnitService" type (:type "class") nil nil))
+                                                (reparse-symbol namespacesubparts) [1340 1693])
+                                            ("Run" function
+                                               (:parent "WorkUnitService"
+                                                :type "void")
+                                                (reparse-symbol namespacesubparts) [1695 1875])
+                                            ("PrintToStream" function
+                                               (:methodconst-flag t
+                                                :parent "WorkUnitService"
+                                                :arguments 
+                                                  ( ("stream" variable
+                                                       (:reference 1
+                                                        :type ("ara::log::LogStream" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [1913 1941]))                                                  
+                                                :type "void")
+                                                (reparse-symbol namespacesubparts) [1877 2163])
+                                            ("MemberCompare" function
+                                               (:methodconst-flag t
+                                                :parent "WorkUnitService"
+                                                :arguments 
+                                                  ( ("other" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("WorkUnitService" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [2201 2230]))                                                  
+                                                :type "bool")
+                                                (reparse-symbol namespacesubparts) [2165 2381])
+                                            ("GetResponse" function
+                                               (:parent "WorkUnitService"
+                                                :arguments 
+                                                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2439 2444]))                                                  
+                                                :type ("ServiceProcessor::Response" type (:type "class") nil nil))
+                                                (reparse-symbol namespacesubparts) [2383 3350]))                                          
+                                        :type "namespace")
+                                        (reparse-symbol namespacesubparts) [1320 3353]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [1304 3376]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [1287 3395]))                  
+                :type "namespace")
+                nil [1271 3415]))          
+      :file "work_unit_service.cpp"
+      :pointmax 3433
+      :fsize 3525
+      :lastmodtime '(24251 50669 390144 759000)
+      :unmatched-syntax nil))
+  :file "!home!hyukmyeong!work!ICAS_Apps!Apps!source!autosar!avin!avin-ap!dm!source!src!libdcm!service!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

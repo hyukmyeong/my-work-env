@@ -1,0 +1,63 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("fcntl.h" include (:system-flag t) nil [737 755])
+            ("sys/stat.h" include (:system-flag t) nil [756 777])
+            ("sys/types.h" include (:system-flag t) nil [778 800])
+            ("sys/unistd.h" include (:system-flag t) nil [819 842])
+            ("stdlib.h" include (:system-flag t) nil [876 895])
+            ("fstream" include (:system-flag t) nil [896 914])
+            ("iostream" include (:system-flag t) nil [915 934])
+            ("string" include (:system-flag t) nil [935 952])
+            ("cstdint" include (:system-flag t) nil [953 971])
+            ("set" include (:system-flag t) nil [972 986])
+            ("common/config/dm_config.h" include nil nil [987 1023])
+            ("dcm/runtime_context/dcm_runtime_context.h" include nil nil [1024 1076])
+            ("ara/core/vector.h" include nil nil [1077 1105])
+            ("ara/log/logging.h" include nil nil [1106 1134])
+            ("ara" type
+               (:members 
+                  ( ("diag" type
+                       (:members 
+                          ( ("dcm" type
+                               (:members 
+                                  ( ("runtime" type
+                                       (:members 
+                                          ( ("DcmRuntimeContext" function
+                                               (:constructor-flag t
+                                                :parent "DcmRuntimeContext"
+                                                :type ("DcmRuntimeContext" type (:type "class") nil nil))
+                                                (reparse-symbol namespacesubparts) [1433 1713])
+                                            ("InitProxies" function
+                                               (:parent "DcmRuntimeContext"
+                                                :type "void")
+                                                (reparse-symbol namespacesubparts) [1753 1793])
+                                            ("OfferServices" function
+                                               (:parent "DcmRuntimeContext"
+                                                :type "void")
+                                                (reparse-symbol namespacesubparts) [1795 1864])
+                                            ("StopOfferServices" function
+                                               (:parent "DcmRuntimeContext"
+                                                :type "void")
+                                                (reparse-symbol namespacesubparts) [1866 1943]))                                          
+                                        :type "namespace")
+                                        (reparse-symbol namespacesubparts) [1368 1946]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [1313 1969]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [1244 1988]))                  
+                :type "namespace")
+                nil [1189 2008]))          
+      :file "dcm_runtime_context.cpp"
+      :pointmax 2026
+      :fsize 2025
+      :lastmodtime '(24251 50669 386144 698000)
+      :unmatched-syntax nil))
+  :file "!home!hyukmyeong!work!Apps!source!autosar!avin!avin-ap!dm!source!src!libdcm!runtime_context!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

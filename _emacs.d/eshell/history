@@ -1,55 +1,3 @@
-git clone -b 'release-1.10.0' https://github.com/google/googletest.git
-ls
-cat README.md 
-ls
-cd googletest && mkdir build && cd build && cmake .. && make && cd ../../
-mkdir build
-cd build/
-cmake ..
-make
-h
-history
-..
-..
-ls
-cd 3.action/1.invoke/
-ls
-make
-./gtest 
-ll
-clear
-
-ls -l
-cd
-cd work/
-ls
-ls
-mv CppCoreGuidelines/ CppCoreGuidelines_original
-ls
-ls
-git clone https://github.com/hyukmyeong/CppCoreGuidelines.git
-ls
-cd CppCoreGuidelines_original/
-..
-ls
-cd CppCoreGuidelines/
-ls
-git branch
-git log .
-ls
-cat ../README.md 
-mkdir build && cd build && cmake .. && make && cd ../../  
-rm -rf build && mkdir build && cd build && cmake .. && make && cd ../
-rm -rf build && mkdir build && cd build && cmake .. && make && cd ../
-rm -rf build && mkdir build && cd build && cmake .. && make && cd ..
-ls
-mkdir build
-ls
-rm -rf build
-rm -rf build && mkdir build && cd build && cmake ..
-ls
-rm -rf build && mkdir build && cd build
-ls
 mkdir build
 ls
 cd build
@@ -126,3 +74,55 @@ git status
 ls
 t status
 git status
+ls
+ssh -l hyuk.myeong 10.178.97.152
+ls
+ssh
+ls
+ls
+sls
+ls
+...
+ls
+..
+ls
+..
+ls
+c.
+ll
+..
+ls
+..
+ls
+..
+ls
+cd .
+ls
+..
+h
+history
+ls
+cd build/
+ls
+./RUN_clean_all.sh
+ls
+./RUN_build_all.sh
+ls
+source RUN_clean_all.sh 
+s
+ls
+source RUN_build_all.sh
+ssh -l hyuk.myeong  10.178.97.152
+ll
+ssh -l hyuk.myeong  10.178.97.152ssh -l hyuk.myeong  10.178.97.152ssh -l hyuk.myeong  10.178.97.152ssh -l hyuk.myeong  10.178.97.152
+ssh -l hyuk.myeong  10.178.97.152
+ls
+ls
+ssh -l hyuk.myeong  10.178.97.152
+source RUN_	ls
+ls
+source RUN_clean_all.sh
+ls
+. RUN_build_all.sh 
+ls
+ssh -l hyuk.myeong  10.178.97.152

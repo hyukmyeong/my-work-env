@@ -382,6 +382,298 @@
         '(("____sigset_t_defined")
           ("_SIGSET_NWORDS" . ((semantic-list "(1024 / (8 * sizeof (unsigned long int)))" 83 . 124)))
           )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("__sigstack_defined" variable (:constant-flag t) nil [852 870])
+            ("sigstack" type
+               (:members 
+                  ( ("ss_sp" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol classsubparts) [953 965])
+                    ("ss_onstack" variable (:type "int") (reparse-symbol classsubparts) [1000 1015]))                  
+                :type "struct")
+                nil [929 1064]))          
+      :file "struct_sigstack.h"
+      :pointmax 1073
+      :fsize 1072
+      :lastmodtime '(23253 1052 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("__sigstack_defined" . ((number "1" 871 . 872)))
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("__stack_t_defined" variable (:constant-flag t) nil [859 876])
+            ("__need_size_t" variable (:constant-flag t) nil [888 901])
+            ("stddef.h" include (:system-flag t) nil [902 921])
+            ("stack_t" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("ss_sp" variable
+                             (:pointer 1
+                              :type "void")
+                              (reparse-symbol classsubparts) [990 1002])
+                          ("ss_flags" variable (:type "int") (reparse-symbol classsubparts) [1007 1020])
+                          ("ss_size" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1025 1040]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [967 1053]))          
+      :file "stack_t.h"
+      :pointmax 1062
+      :fsize 1061
+      :lastmodtime '(23253 1052 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("__need_size_t")
+          ("__stack_t_defined" . ((number "1" 877 . 878)))
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("__sigval_t_defined" variable (:constant-flag t) nil [36 54])
+            ("bits/types/__sigval_t.h" include (:system-flag t) nil [56 90])
+            ("sigval_t" type
+               (:typedef ("__sigval_t" type (:type "class") nil nil)
+                :type "typedef")
+                nil [563 591]))          
+      :file "sigval_t.h"
+      :pointmax 600
+      :fsize 599
+      :lastmodtime '(23253 1052 0 0)
+      :unmatched-syntax '((string 496 . 554) (symbol 490 . 495) (punctuation 488 . 489))
+      :lexical-table 
+        '(("__sigval_t_defined")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("__siginfo_t_defined" variable (:constant-flag t) nil [37 56])
+            ("bits/wordsize.h" include (:system-flag t) nil [60 86])
+            ("bits/types.h" include (:system-flag t) nil [87 110])
+            ("bits/types/__sigval_t.h" include (:system-flag t) nil [111 145])
+            ("__SI_MAX_SIZE" variable (:constant-flag t) nil [155 168])
+            ("__SI_PAD_SIZE" variable (:constant-flag t) nil [269 282])
+            ("bits/siginfo-arch.h" include (:system-flag t) nil [399 429])
+            ("__SI_ALIGNMENT" variable (:constant-flag t) nil [462 476])
+            ("__SI_BAND_TYPE" variable (:constant-flag t) nil [531 545])
+            ("__SI_CLOCK_T" variable (:constant-flag t) nil [593 605])
+            ("__SI_ERRNO_THEN_CODE" variable (:constant-flag t) nil [662 682])
+            ("__SI_HAVE_SIGSYS" variable (:constant-flag t) nil [726 742])
+            ("__SI_SIGFAULT_ADDL" variable (:constant-flag t) nil [788 806])
+            ("siginfo_t" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("si_signo" variable (:type "int") (reparse-symbol classsubparts) [852 865])
+                          ("si_errno" variable (:type "int") (reparse-symbol classsubparts) [918 931])
+                          ("si_code" variable (:type "int") (reparse-symbol classsubparts) [1033 1045])
+                          ("_sifields" variable (:type ("" type
+                               (:members 
+                                  ( ("_pad" variable
+                                       (:dereference 1
+                                        :type "int")
+                                        (reparse-symbol classsubparts) [1206 1230])
+                                    ("_kill" variable (:type ("" type
+                                         (:members 
+                                            ( ("si_pid" variable (:type "int") (reparse-symbol classsubparts) [1275 1282])
+                                              ("si_uid" variable (:type "int") (reparse-symbol classsubparts) [1323 1330]))                                            
+                                          :type "struct")
+                                          nil nil)) (reparse-symbol classsubparts) [1250 1382])
+                                    ("_timer" variable (:type ("" type
+                                         (:members 
+                                            ( ("si_tid" variable (:type "int") (reparse-symbol classsubparts) [1427 1438])
+                                              ("si_overrun" variable (:type "int") (reparse-symbol classsubparts) [1466 1477])
+                                              ("si_sigval" variable (:type ("__sigval_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1505 1526]))                                            
+                                          :type "struct")
+                                          nil nil)) (reparse-symbol classsubparts) [1410 1560])
+                                    ("_rt" variable (:type ("" type
+                                         (:members 
+                                            ( ("si_pid" variable (:type "int") (reparse-symbol classsubparts) [1614 1621])
+                                              ("si_uid" variable (:type "int") (reparse-symbol classsubparts) [1662 1669])
+                                              ("si_sigval" variable (:type ("__sigval_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1715 1736]))                                            
+                                          :type "struct")
+                                          nil nil)) (reparse-symbol classsubparts) [1589 1767])
+                                    ("_sigchld" variable (:type ("" type
+                                         (:members 
+                                            ( ("si_pid" variable (:type "int") (reparse-symbol classsubparts) [1812 1819])
+                                              ("si_uid" variable (:type "int") (reparse-symbol classsubparts) [1853 1860])
+                                              ("si_status" variable (:type "int") (reparse-symbol classsubparts) [1910 1920])
+                                              ("si_utime" variable (:type "int") (reparse-symbol classsubparts) [1968 1977])
+                                              ("si_stime" variable (:type "int") (reparse-symbol classsubparts) [1996 2005]))                                            
+                                          :type "struct")
+                                          nil nil)) (reparse-symbol classsubparts) [1787 2020])
+                                    ("_sigfault" variable (:type ("" type
+                                         (:members 
+                                            ( ("si_addr" variable (:type "int") (reparse-symbol classsubparts) [2087 2095])
+                                              ("si_addr_lsb" variable (:type "int") (reparse-symbol classsubparts) [2172 2184])
+                                              ("_bounds" variable (:type ("" type
+                                                   (:members 
+                                                      ( ("_addr_bnd" variable (:type ("" type
+                                                             (:members 
+                                                                ( ("_lower" variable
+                                                                     (:pointer 1
+                                                                      :type "void")
+                                                                      (reparse-symbol classsubparts) [2307 2320])
+                                                                  ("_upper" variable
+                                                                     (:pointer 1
+                                                                      :type "void")
+                                                                      (reparse-symbol classsubparts) [2327 2340]))                                                                
+                                                              :type "struct")
+                                                              nil nil)) (reparse-symbol classsubparts) [2288 2357])
+                                                        ("_pkey" variable (:type ("__uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2398 2415]))                                                      
+                                                    :type "union")
+                                                    nil nil)) (reparse-symbol classsubparts) [2233 2433]))                                            
+                                          :type "struct")
+                                          nil nil)) (reparse-symbol classsubparts) [2064 2449])
+                                    ("_sigpoll" variable (:type ("" type
+                                         (:members 
+                                            ( ("si_band" variable (:type "int") (reparse-symbol classsubparts) [2495 2503])
+                                              ("si_fd" variable (:type "int") (reparse-symbol classsubparts) [2544 2550]))                                            
+                                          :type "struct")
+                                          nil nil)) (reparse-symbol classsubparts) [2469 2565])
+                                    ("_sigsys" variable (:type ("" type
+                                         (:members 
+                                            ( ("_call_addr" variable
+                                                 (:pointer 1
+                                                  :type "void")
+                                                  (reparse-symbol classsubparts) [2622 2639])
+                                              ("_syscall" variable (:type "int") (reparse-symbol classsubparts) [2671 2684])
+                                              ("_arch" variable (:type "unsigned int") (reparse-symbol classsubparts) [2728 2747]))                                            
+                                          :type "struct")
+                                          nil nil)) (reparse-symbol classsubparts) [2605 2793]))                                  
+                                :type "union")
+                                nil nil)) (reparse-symbol classsubparts) [1191 2819]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [829 2849])
+            ("si_pid" variable (:constant-flag t) nil [2918 2924])
+            ("si_uid" variable (:constant-flag t) nil [2957 2963])
+            ("si_timerid" variable (:constant-flag t) nil [2996 3006])
+            ("si_overrun" variable (:constant-flag t) nil [3039 3049])
+            ("si_status" variable (:constant-flag t) nil [3086 3095])
+            ("si_utime" variable (:constant-flag t) nil [3133 3141])
+            ("si_stime" variable (:constant-flag t) nil [3178 3186])
+            ("si_value" variable (:constant-flag t) nil [3223 3231])
+            ("si_int" variable (:constant-flag t) nil [3264 3270])
+            ("si_ptr" variable (:constant-flag t) nil [3314 3320])
+            ("si_addr" variable (:constant-flag t) nil [3364 3371])
+            ("si_addr_lsb" variable (:constant-flag t) nil [3409 3420])
+            ("si_lower" variable (:constant-flag t) nil [3461 3469])
+            ("si_upper" variable (:constant-flag t) nil [3523 3531])
+            ("si_pkey" variable (:constant-flag t) nil [3585 3592])
+            ("si_band" variable (:constant-flag t) nil [3636 3643])
+            ("si_fd" variable (:constant-flag t) nil [3680 3685])
+            ("si_call_addr" variable (:constant-flag t) nil [3742 3754])
+            ("si_syscall" variable (:constant-flag t) nil [3793 3803])
+            ("si_arch" variable (:constant-flag t) nil [3840 3847]))          
+      :file "siginfo_t.h"
+      :pointmax 3887
+      :fsize 3886
+      :lastmodtime '(23253 1052 0 0)
+      :unmatched-syntax '((punctuation "." 2544 . 2549) (symbol "_sigpoll" 2544 . 2549) (punctuation "." 2544 . 2549) (symbol "_sifields" 2544 . 2549) (INT 2540 . 2543) (punctuation "." 2495 . 2502) (symbol "_sigpoll" 2495 . 2502) (punctuation "." 2495 . 2502) (symbol "_sifields" 2495 . 2502) (INT 2491 . 2494) (LONG 2486 . 2490) (punctuation "." 2172 . 2183) (symbol "_sigfault" 2172 . 2183) (punctuation "." 2172 . 2183) (symbol "_sifields" 2172 . 2183) (INT 2168 . 2171) (SHORT 2162 . 2167) (punctuation "." 2087 . 2094) (symbol "_sigfault" 2087 . 2094) (punctuation "." 2087 . 2094) (symbol "_sifields" 2087 . 2094) (punctuation 2086 . 2087) (VOID 2081 . 2085) (punctuation "." 1996 . 2004) (symbol "_sigchld" 1996 . 2004) (punctuation "." 1996 . 2004) (symbol "_sifields" 1996 . 2004) (symbol "__clock_t" 1983 . 1995) (punctuation "." 1968 . 1976) (symbol "_sigchld" 1968 . 1976) (punctuation "." 1968 . 1976) (symbol "_sifields" 1968 . 1976) (symbol "__clock_t" 1955 . 1967) (punctuation "." 1910 . 1919) (symbol "_sigchld" 1910 . 1919) (punctuation "." 1910 . 1919) (symbol "_sifields" 1910 . 1919) (INT 1906 . 1909) (punctuation "." 1853 . 1859) (symbol "_kill" 1853 . 1859) (punctuation "." 1853 . 1859) (symbol "_sifields" 1853 . 1859) (symbol 1845 . 1852) (punctuation "." 1812 . 1818) (symbol "_kill" 1812 . 1818) (punctuation "." 1812 . 1818) (symbol "_sifields" 1812 . 1818) (symbol 1804 . 1811) (punctuation "." 1662 . 1668) (symbol "_kill" 1662 . 1668) (punctuation "." 1662 . 1668) (symbol "_sifields" 1662 . 1668) (symbol 1654 . 1661) (punctuation "." 1614 . 1620) (symbol "_kill" 1614 . 1620) (punctuation "." 1614 . 1620) (symbol "_sifields" 1614 . 1620) (symbol 1606 . 1613) (punctuation "." 1466 . 1476) (symbol "_timer" 1466 . 1476) (punctuation "." 1466 . 1476) (symbol "_sifields" 1466 . 1476) (INT 1462 . 1465) (punctuation "." 1323 . 1329) (symbol "_kill" 1323 . 1329) (punctuation "." 1323 . 1329) (symbol "_sifields" 1323 . 1329) (symbol 1315 . 1322) (punctuation "." 1275 . 1281) (symbol "_kill" 1275 . 1281) (punctuation "." 1275 . 1281) (symbol "_sifields" 1275 . 1281) (symbol 1267 . 1274))
+      :lexical-table 
+        '(("__SI_CLOCK_T" . ((symbol "__clock_t" 607 . 616)))
+          ("si_addr" . 
+              ((symbol "_sifields" 3373 . 3382) (punctuation "." 3382 . 3383) (symbol "_sigfault" 3383 . 3392) (punctuation "." 3392 . 3393) (symbol "si_addr" 3393 . 3400)))
+          ("__SI_PAD_SIZE" . ((semantic-list "((__SI_MAX_SIZE / sizeof (int)) - 3)" 283 . 319)))
+          ("si_uid" . 
+              ((symbol "_sifields" 2965 . 2974) (punctuation "." 2974 . 2975) (symbol "_kill" 2975 . 2980) (punctuation "." 2980 . 2981) (symbol "si_uid" 2981 . 2987)))
+          ("__SI_SIGFAULT_ADDL")
+          ("si_overrun" . 
+              ((symbol "_sifields" 3050 . 3059) (punctuation "." 3059 . 3060) (symbol "_timer" 3060 . 3066) (punctuation "." 3066 . 3067) (symbol "si_overrun" 3067 . 3077)))
+          ("si_status" . 
+              ((symbol "_sifields" 3096 . 3105) (punctuation "." 3105 . 3106) (symbol "_sigchld" 3106 . 3114) (punctuation "." 3114 . 3115) (symbol "si_status" 3115 . 3124)))
+          ("si_int" . 
+              ((symbol "_sifields" 3272 . 3281) (punctuation "." 3281 . 3282) (symbol "_rt" 3282 . 3285) (punctuation "." 3285 . 3286) (symbol "si_sigval" 3286 . 3295) (punctuation "." 3295 . 3296) (symbol "sival_int" 3296 . 3305)))
+          ("si_addr_lsb" . 
+              ((symbol "_sifields" 3421 . 3430) (punctuation "." 3430 . 3431) (symbol "_sigfault" 3431 . 3440) (punctuation "." 3440 . 3441) (symbol "si_addr_lsb" 3441 . 3452)))
+          ("__SI_MAX_SIZE" . ((number "128" 169 . 172)))
+          ("__SI_HAVE_SIGSYS" . ((number "1" 743 . 744)))
+          ("si_ptr" . 
+              ((symbol "_sifields" 3322 . 3331) (punctuation "." 3331 . 3332) (symbol "_rt" 3332 . 3335) (punctuation "." 3335 . 3336) (symbol "si_sigval" 3336 . 3345) (punctuation "." 3345 . 3346) (symbol "sival_ptr" 3346 . 3355)))
+          ("si_band" . 
+              ((symbol "_sifields" 3645 . 3654) (punctuation "." 3654 . 3655) (symbol "_sigpoll" 3655 . 3663) (punctuation "." 3663 . 3664) (symbol "si_band" 3664 . 3671)))
+          ("__SI_ALIGNMENT")
+          ("si_lower" . 
+              ((symbol "_sifields" 3470 . 3479) (punctuation "." 3479 . 3480) (symbol "_sigfault" 3480 . 3489) (punctuation "." 3489 . 3490) (symbol "_bounds" 3490 . 3497) (punctuation "." 3497 . 3498) (symbol "_addr_bnd" 3498 . 3507) (punctuation "." 3507 . 3508) (symbol "_lower" 3508 . 3514)))
+          ("__SI_BAND_TYPE" . ((LONG "long" 547 . 551) (INT "int" 552 . 555)))
+          ("si_stime" . 
+              ((symbol "_sifields" 3187 . 3196) (punctuation "." 3196 . 3197) (symbol "_sigchld" 3197 . 3205) (punctuation "." 3205 . 3206) (symbol "si_stime" 3206 . 3214)))
+          ("__SI_ERRNO_THEN_CODE" . ((number "1" 683 . 684)))
+          ("si_pid" . 
+              ((symbol "_sifields" 2926 . 2935) (punctuation "." 2935 . 2936) (symbol "_kill" 2936 . 2941) (punctuation "." 2941 . 2942) (symbol "si_pid" 2942 . 2948)))
+          ("si_value" . 
+              ((symbol "_sifields" 3232 . 3241) (punctuation "." 3241 . 3242) (symbol "_rt" 3242 . 3245) (punctuation "." 3245 . 3246) (symbol "si_sigval" 3246 . 3255)))
+          ("si_upper" . 
+              ((symbol "_sifields" 3532 . 3541) (punctuation "." 3541 . 3542) (symbol "_sigfault" 3542 . 3551) (punctuation "." 3551 . 3552) (symbol "_bounds" 3552 . 3559) (punctuation "." 3559 . 3560) (symbol "_addr_bnd" 3560 . 3569) (punctuation "." 3569 . 3570) (symbol "_upper" 3570 . 3576)))
+          ("si_fd" . 
+              ((symbol "_sifields" 3687 . 3696) (punctuation "." 3696 . 3697) (symbol "_sigpoll" 3697 . 3705) (punctuation "." 3705 . 3706) (symbol "si_fd" 3706 . 3711)))
+          ("si_call_addr" . 
+              ((symbol "_sifields" 3755 . 3764) (punctuation "." 3764 . 3765) (symbol "_sigsys" 3765 . 3772) (punctuation "." 3772 . 3773) (symbol "_call_addr" 3773 . 3783)))
+          ("si_syscall" . 
+              ((symbol "_sifields" 3804 . 3813) (punctuation "." 3813 . 3814) (symbol "_sigsys" 3814 . 3821) (punctuation "." 3821 . 3822) (symbol "_syscall" 3822 . 3830)))
+          ("si_arch" . 
+              ((symbol "_sifields" 3848 . 3857) (punctuation "." 3857 . 3858) (symbol "_sigsys" 3858 . 3865) (punctuation "." 3865 . 3866) (symbol "_arch" 3866 . 3871)))
+          ("si_pkey" . 
+              ((symbol "_sifields" 3594 . 3603) (punctuation "." 3603 . 3604) (symbol "_sigfault" 3604 . 3613) (punctuation "." 3613 . 3614) (symbol "_bounds" 3614 . 3621) (punctuation "." 3621 . 3622) (symbol "_pkey" 3622 . 3627)))
+          ("__siginfo_t_defined" . ((number "1" 57 . 58)))
+          ("si_timerid" . 
+              ((symbol "_sifields" 3007 . 3016) (punctuation "." 3016 . 3017) (symbol "_timer" 3017 . 3023) (punctuation "." 3023 . 3024) (symbol "si_tid" 3024 . 3030)))
+          ("si_utime" . 
+              ((symbol "_sifields" 3142 . 3151) (punctuation "." 3151 . 3152) (symbol "_sigchld" 3152 . 3160) (punctuation "." 3160 . 3161) (symbol "si_utime" 3161 . 3169)))
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("__sig_atomic_t_defined" variable (:constant-flag t) nil [40 62])
+            ("bits/types.h" include (:system-flag t) nil [66 89])
+            ("sig_atomic_t" type
+               (:typedef ("__sig_atomic_t" type (:type "class") nil nil)
+                :type "typedef")
+                nil [228 264]))          
+      :file "sig_atomic_t.h"
+      :pointmax 273
+      :fsize 272
+      :lastmodtime '(23253 1052 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("__sig_atomic_t_defined" . ((number "1" 63 . 64)))
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("____sigval_t_defined" variable (:constant-flag t) nil [849 869])
+            ("__sigval" type
+               (:members 
+                  ( ("__sival_int" variable (:type "int") (reparse-symbol classsubparts) [1056 1072])
+                    ("__sival_ptr" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol classsubparts) [1075 1093]))                  
+                :type "union")
+                nil [1037 1096])
+            ("__sigval_t" type
+               (:typedef ("__sigval" type (:type "union") nil nil)
+                :type "typedef")
+                nil [1098 1132]))          
+      :file "__sigval_t.h"
+      :pointmax 1148
+      :fsize 1147
+      :lastmodtime '(23253 1052 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("____sigval_t_defined")
+          )
 ))
   :file "!usr!include!x86_64-linux-gnu!bits!types!semantic.cache"
   :semantic-tag-version "2.0"

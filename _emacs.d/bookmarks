@@ -1,0 +1,16 @@
+;;;; Emacs Bookmark Format Version 1 ;;;; -*- coding: utf-8-emacs -*- 
+;;; This format is meant to be slightly human-readable;
+;;; nevertheless, you probably don't want to edit it.
+;;; -*- End Of Bookmark File Format Version Stamp -*-
+(("main.cpp"
+ (filename .
+           #("/ssh:hyuk.myeong@10.178.97.152:/home/hyuk.myeong/work/ICAS/Apps/source/autosar/avin/avin-ap/dm/source/src/diagnostic-manager/main.cpp" 1 4
+             (helm-ff-exe t helm-ff-file t)
+             5 16
+             (helm-ff-exe t helm-ff-file t)
+             17 30
+             (helm-ff-exe t helm-ff-file t)))
+ (front-context-string . "logging.h\"\n#incl")
+ (rear-context-string . "nclude \"ara/log/")
+ (position . 877))
+)

@@ -1,0 +1,128 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("iostream" include (:system-flag t) nil [751 770])
+            ("utility" include (:system-flag t) nil [771 789])
+            ("common/config/dm_config.h" include nil nil [790 826])
+            ("ara/log/logging.h" include nil nil [827 855])
+            ("uds/session_type.h" include nil nil [856 885])
+            ("uds/uds_error_code.h" include nil nil [886 917])
+            ("dcm/conversation/conversation.h" include nil nil [918 960])
+            ("uds_transport/uds_message_ext.h" include nil nil [961 1003])
+            ("common/service_processor_with_sid.h" include nil nil [1004 1050])
+            ("dcm/diagnostic_communication_manager.h" include nil nil [1051 1100])
+            ("common/multi_byte_type.h" include nil nil [1101 1136])
+            ("ara::diag::dcm::conversation::Conversation" using (:type ("ara::diag::dcm::conversation::Conversation" type
+                 (:prototype t
+                  :type "class")
+                  nil nil)) nil [1138 1187])
+            ("ara::diag::uds::UdsNegativeResponseCode" using (:type ("ara::diag::uds::UdsNegativeResponseCode" type
+                 (:prototype t
+                  :type "class")
+                  nil nil)) nil [1188 1234])
+            ("ara::diag::uds::sessiontype::SessionType" using (:type ("ara::diag::uds::sessiontype::SessionType" type
+                 (:prototype t
+                  :type "class")
+                  nil nil)) nil [1235 1282])
+            ("ara::diag::uds_transport::UdsMessageExt" using (:type ("ara::diag::uds_transport::UdsMessageExt" type
+                 (:prototype t
+                  :type "class")
+                  nil nil)) nil [1283 1329])
+            ("ara::log" using (:type ("ara::log" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [1330 1355])
+            ("unnamed" type
+               (:members 
+                  ( ("invalidValue" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type ("0xFFU" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1404 1410]))                          
+                        :type ("std::uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [1378 1411])
+                    ("valueOne" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type ("1U" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1444 1447]))                          
+                        :type ("std::uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [1422 1448])
+                    ("valueTwo" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type ("2U" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1481 1484]))                          
+                        :type ("std::uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [1459 1485]))                  
+                :type "namespace")
+                nil [1356 1487])
+            ("ara" type
+               (:members 
+                  ( ("diag" type
+                       (:members 
+                          ( ("CheckAndHandleMessage" function
+                               (:parent "ServiceProcessorWithSid"
+                                :arguments 
+                                  ( ("message" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("UdsMessageExt" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1706 1735])
+                                    ("conversation" variable
+                                       (:reference 1
+                                        :type ("Conversation" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1736 1763]))                                  
+                                :type ("ServiceProcessor::Response" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [1627 2926])
+                            ("AccessValidation" function
+                               (:parent "ServiceProcessorWithSid"
+                                :arguments 
+                                  ( ("accessPermissionId" variable
+                                       (:constant-flag t
+                                        :type ("uint32_t" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2975 3009])
+                                    ("conversation" variable
+                                       (:reference 1
+                                        :type ("Conversation" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3010 3037]))                                  
+                                :type "bool")
+                                (reparse-symbol namespacesubparts) [2928 3767])
+                            ("SecurityAccessValidation" function
+                               (:parent "ServiceProcessorWithSid"
+                                :arguments 
+                                  ( ("SecurityAccessRefVal" variable
+                                       (:constant-flag t
+                                        :type ("uint32_t" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3829 3865])
+                                    ("conversation" variable
+                                       (:reference 1
+                                        :type ("Conversation" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3866 3893]))                                  
+                                :type "bool")
+                                (reparse-symbol namespacesubparts) [3769 5330])
+                            ("IsServiceSupportedInActiveSession" function
+                               (:methodconst-flag t
+                                :parent "ServiceProcessorWithSid"
+                                :arguments 
+                                  ( ("session" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("SessionType" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [5396 5423]))                                  
+                                :type "bool")
+                                (reparse-symbol namespacesubparts) [5332 5508]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [1610 5511]))                  
+                :type "namespace")
+                nil [1555 5531]))          
+      :file "service_processor_with_sid.cpp"
+      :pointmax 5549
+      :fsize 5693
+      :lastmodtime '(24251 50669 382144 637000)
+      :unmatched-syntax '((symbol 1449 . 1458) (symbol 1412 . 1421) (symbol 1368 . 1377))))
+  :file "!home!hyukmyeong!work!ICAS_Apps!Apps!source!autosar!avin!avin-ap!dm!source!src!common!dcm!service!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

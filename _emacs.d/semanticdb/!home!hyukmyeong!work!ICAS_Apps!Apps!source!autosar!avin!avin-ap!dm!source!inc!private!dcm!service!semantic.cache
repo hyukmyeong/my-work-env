@@ -1,0 +1,96 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("SOURCE_DCM_SERVICE_SERVICE_DISPATCH_TABLE_H_" variable (:constant-flag t) nil [808 852])
+            ("ara/core/map.h" include nil nil [854 879])
+            ("uds/uds_services.h" include nil nil [880 909])
+            ("common/service_processor.h" include nil nil [910 947])
+            ("ara/core/vector.h" include nil nil [948 976])
+            ("ara/log/logging.h" include nil nil [977 1005])
+            ("ara" type
+               (:members 
+                  ( ("diag" type
+                       (:members 
+                          ( ("dcm" type
+                               (:members 
+                                  ( ("service" type
+                                       (:members 
+                                          ( ("ServiceDispatchTable" type
+                                               (:members 
+                                                  ( ("public" label nil (reparse-symbol classsubparts) [1148 1155])
+                                                    ("Entry" type
+                                                       (:typedef ("" type
+                                                             (:members 
+                                                                ( ("serviceProcessor" variable (:type ("ara::diag::ServiceProcessor::ServiceProcessorSharedPtr" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1243 1379]))                                                                
+                                                              :type "struct")
+                                                              nil nil)
+                                                        :type "typedef")
+                                                        (reparse-symbol classsubparts) [1220 1390])
+                                                    ("ServiceMap" type
+                                                       (:typedef ("ara::core::Map" type
+                                                             (:template-specifier 
+                                                                ( ("std::uint8_t" type nil nil nil)
+                                                                  ("Entry" type nil nil nil))                                                                
+                                                              :type "class")
+                                                              nil nil)
+                                                        :type "typedef")
+                                                        (reparse-symbol classsubparts) [1433 1488])
+                                                    ("ServiceDispatchTable" function
+                                                       (:prototype-flag t
+                                                        :constructor-flag t
+                                                        :type ("ServiceDispatchTable" type (:type "class") nil nil))
+                                                        (reparse-symbol classsubparts) [1492 1515])
+                                                    ("AddServiceProcessor" function
+                                                       (:prototype-flag t
+                                                        :typemodifiers ("virtual")
+                                                        :arguments 
+                                                          ( ("sid" variable
+                                                               (:constant-flag t
+                                                                :type ("ara::diag::uds::UdsServices" type (:type "class") nil nil))
+                                                                (reparse-symbol arg-sub-list) [1735 1773])
+                                                            ("serviceProcessor" variable (:type ("ara::diag::ServiceProcessor::ServiceProcessorSharedPtr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1780 1852]))                                                          
+                                                        :type "void")
+                                                        (reparse-symbol classsubparts) [1702 1853])
+                                                    ("GetServiceProcessor" function
+                                                       (:prototype-flag t
+                                                        :methodconst-flag t
+                                                        :typemodifiers ("virtual")
+                                                        :arguments 
+                                                          ( ("sid" variable
+                                                               (:constant-flag t
+                                                                :type ("ara::diag::uds::UdsServices" type (:type "class") nil nil))
+                                                                (reparse-symbol arg-sub-list) [2188 2226]))                                                          
+                                                        :type ("ara::diag::ServiceProcessor::ServiceProcessorSharedPtr" type (:type "class") nil nil))
+                                                        (reparse-symbol classsubparts) [2098 2233])
+                                                    ("protected" label nil (reparse-symbol classsubparts) [2236 2246])
+                                                    ("service_map_" variable (:type ("ServiceMap" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2288 2312])
+                                                    ("service_not_supported_processor_" variable (:type ("ara::diag::ServiceProcessor::ServiceProcessorSharedPtr" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2402 2490])
+                                                    ("private" label nil (reparse-symbol classsubparts) [2493 2501])
+                                                    ("aralog_" variable (:type ("ara::log::Logger" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2504 2530]))                                                  
+                                                :type "class")
+                                                (reparse-symbol namespacesubparts) [1118 2533]))                                          
+                                        :type "namespace")
+                                        (reparse-symbol namespacesubparts) [1056 2536]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [1040 2559]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [1023 2578]))                  
+                :type "namespace")
+                nil [1007 2598]))          
+      :file "service_dispatch_table.h"
+      :pointmax 2672
+      :fsize 2747
+      :lastmodtime '(24251 50669 374144 515000)
+      :unmatched-syntax '((punctuation 1559 . 1560) (DEFAULT 1552 . 1559) (punctuation 1550 . 1551) (semantic-list 1547 . 1549) (symbol 1527 . 1547) (punctuation 1526 . 1527) (VIRTUAL 1518 . 1525))
+      :lexical-table 
+        '(("SOURCE_DCM_SERVICE_SERVICE_DISPATCH_TABLE_H_")
+          )
+))
+  :file "!home!hyukmyeong!work!ICAS_Apps!Apps!source!autosar!avin!avin-ap!dm!source!inc!private!dcm!service!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

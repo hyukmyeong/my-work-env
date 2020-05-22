@@ -1,0 +1,461 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("ARA_DIAG_COMMON_SERVICE_PROCESSOR_H_" variable (:constant-flag t) nil [789 825])
+            ("memory" include (:system-flag t) nil [827 844])
+            ("ara/core/string.h" include nil nil [846 874])
+            ("dcm/runtime_context/dcm_runtime_context.h" include nil nil [875 927])
+            ("uds_transport/uds_message_ext.h" include nil nil [928 970])
+            ("dcm/conversation/conversation.h" include nil nil [971 1013])
+            ("ara" type
+               (:members 
+                  ( ("diag" type
+                       (:members 
+                          ( ("kDownloadRequested" variable
+                               (:default-value "0U"
+                                :type ("std::uint8_t" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [1058 1095])
+                            ("kDataTransferInProcess" variable
+                               (:default-value "1U"
+                                :type ("std::uint8_t" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [1106 1147])
+                            ("kDataTransferComplete" variable
+                               (:default-value "2U"
+                                :type ("std::uint8_t" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [1158 1198])
+                            ("kDownloadCompleted" variable
+                               (:default-value "3U"
+                                :type ("std::uint8_t" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [1209 1246])
+                            ("kDownloadSequenceNotActive" variable
+                               (:default-value "0xFFU"
+                                :type ("std::uint8_t" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [1257 1305])
+                            ("kClearAll" variable
+                               (:default-value "0U"
+                                :type ("std::uint8_t" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [1316 1344])
+                            ("kClearBlockCounter" variable
+                               (:default-value "1U"
+                                :type ("std::uint8_t" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [1355 1392])
+                            ("ServiceProcessor" type
+                               (:members 
+                                  ( ("public" label nil (reparse-symbol classsubparts) [1466 1473])
+                                    ("ServiceProcessorSharedPtr" type
+                                       (:typedef ("std::shared_ptr" type
+                                             (:template-specifier 
+                                                ( ("ServiceProcessor" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [1536 1604])
+                                    ("Response" type
+                                       (:typedef ("" type
+                                             (:members 
+                                                ( ("send_response" variable (:type "bool") (reparse-symbol classsubparts) [1807 1826])
+                                                  ("response_message" variable (:type ("ara::diag::uds_transport::UdsMessageExt" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1873 1930]))                                                
+                                              :type "struct")
+                                              nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [1732 1944])
+                                    ("downloadStatus" variable
+                                       (:typemodifiers ("static")
+                                        :type ("std::uint8_t" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [1994 2029])
+                                    ("blockSequenceCounter" variable
+                                       (:typemodifiers ("static")
+                                        :type ("std::uint8_t" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [2086 2127])
+                                    ("maxNumberOfBlockLength" variable
+                                       (:typemodifiers ("static")
+                                        :type ("std::uint32_t" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [2180 2224])
+                                    ("requestedDataSize" variable
+                                       (:typemodifiers ("static")
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [2261 2300])
+                                    ("receivedDataSize" variable
+                                       (:typemodifiers ("static")
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [2336 2374])
+                                    ("ServiceProcessor" function
+                                       (:prototype-flag t
+                                        :constructor-flag t
+                                        :arguments 
+                                          ( ("service_proccessor_name" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("ara::core::String" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [2502 2551])
+                                            ("is_response_pending_handling_active" variable (:type "bool") (reparse-symbol arg-sub-list) [2552 2593]))                                          
+                                        :type ("ServiceProcessor" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [2478 2594])
+                                    ("CheckAndHandleMessage" function
+                                       (:pure-virtual-flag t
+                                        :prototype-flag t
+                                        :typemodifiers ("virtual")
+                                        :arguments 
+                                          ( ("message" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("ara::diag::uds_transport::UdsMessageExt" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [3135 3190])
+                                            ("conversation" variable
+                                               (:reference 1
+                                                :type ("ara::diag::dcm::conversation::Conversation" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [3197 3254]))                                          
+                                        :type ("Response" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [3096 3265])
+                                    ("GetName" function
+                                       (:methodconst-flag t
+                                        :type ("ara::core::String" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [3337 3398])
+                                    ("IsResponsePendingActive" function
+                                       (:typemodifiers ("inline")
+                                        :type "bool")
+                                        (reparse-symbol classsubparts) [3460 3556])
+                                    ("private" label nil (reparse-symbol classsubparts) [3559 3567])
+                                    ("name_" variable (:type ("ara::core::String" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3613 3637])
+                                    ("is_response_pending_handling_active_" variable (:type "bool") (reparse-symbol classsubparts) [3779 3821]))                                  
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [1440 3824]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [1031 3827]))                  
+                :type "namespace")
+                nil [1015 3847]))          
+      :file "service_processor.h"
+      :pointmax 3913
+      :fsize 4023
+      :lastmodtime '(24261 60261 421101 547000)
+      :unmatched-syntax '((punctuation 2635 . 2636) (DEFAULT 2628 . 2635) (punctuation 2626 . 2627) (semantic-list 2623 . 2625) (symbol 2607 . 2623) (punctuation 2606 . 2607) (VIRTUAL 2598 . 2605) (symbol 1345 . 1354) (symbol 1306 . 1315) (symbol 1247 . 1256) (symbol 1199 . 1208) (symbol 1148 . 1157) (symbol 1096 . 1105) (symbol 1048 . 1057))
+      :lexical-table 
+        '(("ARA_DIAG_COMMON_SERVICE_PROCESSOR_H_")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("SERVICE_PROCESSOR_WITH_SID_H_" variable (:constant-flag t) nil [801 830])
+            ("memory" include (:system-flag t) nil [832 849])
+            ("set" include (:system-flag t) nil [850 864])
+            ("ara/core/string.h" include nil nil [866 894])
+            ("service_processor.h" include nil nil [895 925])
+            ("service_processor_session_support.h" include nil nil [926 972])
+            ("ara/log/logging.h" include nil nil [973 1001])
+            ("uds_transport/uds_message_ext.h" include nil nil [1002 1044])
+            ("uds/session_type.h" include nil nil [1045 1074])
+            ("uds/uds_services.h" include nil nil [1075 1104])
+            ("dcm/conversation/conversation.h" include nil nil [1105 1147])
+            ("dcm/diagnostic_communication_manager.h" include nil nil [1149 1198])
+            ("ara" type
+               (:members 
+                  ( ("diag" type
+                       (:members 
+                          ( ("kResetToZero" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("" variable (:type ("0U" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1368 1371]))                                  
+                                :type ("std::uint8_t" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [1342 1372])
+                            ("kFirstBytePosition" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("" variable (:type ("0U" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1422 1425]))                                  
+                                :type ("std::uint8_t" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [1390 1426])
+                            ("kSecondBytePosition" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("" variable (:type ("1U" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1477 1480]))                                  
+                                :type ("std::uint8_t" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [1444 1481])
+                            ("kApplicationTimeout" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("" variable (:type ("2U" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1532 1535]))                                  
+                                :type ("std::uint8_t" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [1499 1536])
+                            ("kRequestFirstByte" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("" variable (:type ("0U" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1585 1588]))                                  
+                                :type ("std::uint8_t" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [1554 1589])
+                            ("kRequestSecondByte" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("" variable (:type ("1U" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1639 1642]))                                  
+                                :type ("std::uint8_t" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [1607 1643])
+                            ("kRequestThirdByte" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("" variable (:type ("2U" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1692 1695]))                                  
+                                :type ("std::uint8_t" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [1661 1696])
+                            ("kRequestFourthByte" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("" variable (:type ("3U" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1746 1749]))                                  
+                                :type ("std::uint8_t" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [1714 1750])
+                            ("kRequestFifthByte" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("" variable (:type ("4U" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1799 1802]))                                  
+                                :type ("std::uint8_t" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [1768 1803])
+                            ("kFillZeroValue" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("" variable (:type ("0U" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1849 1852]))                                  
+                                :type ("std::uint8_t" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [1821 1853])
+                            ("kSubFunctionOffset" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("" variable (:type ("0U" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1903 1906]))                                  
+                                :type ("std::uint8_t" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [1871 1907])
+                            ("kInvalidServiceInstanceId" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("" variable (:type ("65535U" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1965 1972]))                                  
+                                :type ("std::uint16_t" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [1925 1973])
+                            ("ServiceProcessorWithSid" type
+                               (:superclasses 
+                                  ( ("ara::diag::ServiceProcessor" type
+                                       (:protection "public"
+                                        :type "class")
+                                        nil nil))                                  
+                                :members 
+                                  ( ("public" label nil (reparse-symbol classsubparts) [2104 2111])
+                                    ("Ptr" type
+                                       (:typedef ("std::shared_ptr" type
+                                             (:template-specifier 
+                                                ( ("ServiceProcessorWithSid" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [2181 2234])
+                                    ("ServiceProcessorWithSid" function
+                                       (:constructor-flag t
+                                        :arguments 
+                                          ( ("serviceProcessorName" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("ara::core::String" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [2844 2890])
+                                            ("supportedSid" variable
+                                               (:constant-flag t
+                                                :type ("ara::diag::uds::UdsServices" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [2897 2944])
+                                            ("isResponsePendingHandlingActive" variable
+                                               (:constant-flag t
+                                                :type "bool")
+                                                (reparse-symbol arg-sub-list) [2945 2988]))                                          
+                                        :type ("ServiceProcessorWithSid" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [2820 3208])
+                                    ("CheckSid" function
+                                       (:methodconst-flag t
+                                        :typemodifiers ("inline")
+                                        :arguments 
+                                          ( ("message" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("ara::diag::uds_transport::UdsMessageExt" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [3429 3484]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [3408 3637])
+                                    ("override" variable (:type "int") (reparse-symbol classsubparts) [4052 4061])
+                                    ("AccessValidation" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("accessValMap" variable
+                                               (:constant-flag t
+                                                :type ("std::uint32_t" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [4169 4202])
+                                            ("conversation" variable
+                                               (:reference 1
+                                                :type ("ara::diag::dcm::conversation::Conversation" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [4203 4260]))                                          
+                                        :type "bool")
+                                        (reparse-symbol classsubparts) [4140 4261])
+                                    ("SecurityAccessValidation" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("SecurityAccessRefVal" variable
+                                               (:constant-flag t
+                                                :type ("uint32_t" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [4302 4338])
+                                            ("conversation" variable
+                                               (:reference 1
+                                                :type ("ara::diag::dcm::conversation::Conversation" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [4339 4396]))                                          
+                                        :type "bool")
+                                        (reparse-symbol classsubparts) [4265 4397])
+                                    ("IsServiceSupportedInActiveSession" function
+                                       (:prototype-flag t
+                                        :methodconst-flag t
+                                        :typemodifiers ("virtual")
+                                        :arguments 
+                                          ( ("session" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("ara::diag::uds::sessiontype::SessionType" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [4586 4642]))                                          
+                                        :type "bool")
+                                        (reparse-symbol classsubparts) [4532 4649])
+                                    ("GetSid" function
+                                       (:methodconst-flag t
+                                        :typemodifiers ("inline")
+                                        :type ("ara::diag::uds::UdsServices" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [4751 4834])
+                                    ("HasSubFunctions" function
+                                       (:methodconst-flag t
+                                        :typemodifiers ("virtual" "inline")
+                                        :type "bool")
+                                        (reparse-symbol classsubparts) [4897 4966])
+                                    ("kServiceIdentifierLength" variable
+                                       (:constant-flag t
+                                        :default-value "1"
+                                        :type ("std::uint8_t" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [5020 5068])
+                                    ("kSubfunctionIdentifierLength" variable
+                                       (:constant-flag t
+                                        :default-value "1"
+                                        :type ("std::uint8_t" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [5126 5178])
+                                    ("protected" label nil (reparse-symbol classsubparts) [5181 5191])
+                                    ("HandleMessage" function
+                                       (:pure-virtual-flag t
+                                        :prototype-flag t
+                                        :typemodifiers ("virtual")
+                                        :arguments 
+                                          ( ("message" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("ara::diag::uds_transport::UdsMessageExt" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [5430 5485])
+                                            ("conversation" variable
+                                               (:reference 1
+                                                :type ("ara::diag::dcm::conversation::Conversation" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [5492 5549]))                                          
+                                        :type ("Response" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [5399 5560])
+                                    ("supportedSid_" variable
+                                       (:constant-flag t
+                                        :type ("ara::diag::uds::UdsServices" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [5627 5675])
+                                    ("private" label nil (reparse-symbol classsubparts) [5678 5686])
+                                    ("aralog_" variable (:type ("ara::log::Logger" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5727 5753]))                                  
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [2034 5756]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [1308 5759]))                  
+                :type "namespace")
+                nil [1253 5779]))          
+      :file "service_processor_with_sid.h"
+      :pointmax 5838
+      :fsize 5973
+      :lastmodtime '(24251 50669 370144 454000)
+      :unmatched-syntax '((semantic-list 3931 . 4051) (symbol 3910 . 3931) (symbol 3901 . 3909) (punctuation 3256 . 3257) (DEFAULT 3249 . 3256) (punctuation 3247 . 3248) (semantic-list 3244 . 3246) (symbol 3221 . 3244) (punctuation 3220 . 3221) (VIRTUAL 3212 . 3219) (symbol 1915 . 1924) (STATIC 1908 . 1914) (symbol 1861 . 1870) (STATIC 1854 . 1860) (symbol 1811 . 1820) (STATIC 1804 . 1810) (symbol 1758 . 1767) (STATIC 1751 . 1757) (symbol 1704 . 1713) (STATIC 1697 . 1703) (symbol 1651 . 1660) (STATIC 1644 . 1650) (symbol 1597 . 1606) (STATIC 1590 . 1596) (symbol 1544 . 1553) (STATIC 1537 . 1543) (symbol 1489 . 1498) (STATIC 1482 . 1488) (symbol 1434 . 1443) (STATIC 1427 . 1433) (symbol 1380 . 1389) (STATIC 1373 . 1379) (symbol 1332 . 1341) (STATIC 1325 . 1331))
+      :lexical-table 
+        '(("SERVICE_PROCESSOR_WITH_SID_H_")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :file "service_processor_session_support.h"
+      :fsize 2465
+      :lastmodtime '(24251 50669 370144 454000))
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("SOURCE_COMMON_DIAGNOSTIC_MANAGER_H_" variable (:constant-flag t) nil [791 826])
+            ("atomic" include (:system-flag t) nil [828 845])
+            ("condition_variable" include (:system-flag t) nil [846 875])
+            ("mutex" include (:system-flag t) nil [876 892])
+            ("ara/log/logging.h" include nil nil [894 922])
+            ("ara" type
+               (:members 
+                  ( ("diag" type
+                       (:members 
+                          ( ("common" type
+                               (:members 
+                                  ( ("ConditionVariable" type
+                                       (:members 
+                                          ( ("m" variable (:type ("std::mutex" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1005 1018])
+                                            ("cv" variable (:type ("std::condition_variable" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1021 1048]))                                          
+                                        :type "struct")
+                                        (reparse-symbol namespacesubparts) [976 1051])
+                                    ("DiagnosticManager" type
+                                       (:members 
+                                          ( ("public" label nil (reparse-symbol classsubparts) [1166 1173])
+                                            ("DiagnosticManager" function
+                                               (:prototype-flag t
+                                                :constructor-flag t
+                                                :arguments 
+                                                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [1245 1250]))                                                  
+                                                :type ("DiagnosticManager" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [1227 1251])
+                                            ("Main" function
+                                               (:prototype-flag t
+                                                :typemodifiers ("virtual")
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [1614 1634])
+                                            ("SignalShutdown" function
+                                               (:prototype-flag t
+                                                :typemodifiers ("virtual")
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [1774 1804])
+                                            ("Initialize" function
+                                               (:pure-virtual-flag t
+                                                :prototype-flag t
+                                                :typemodifiers ("virtual")
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [1870 1900])
+                                            ("Run" function
+                                               (:pure-virtual-flag t
+                                                :prototype-flag t
+                                                :typemodifiers ("virtual")
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [1964 1987])
+                                            ("Shutdown" function
+                                               (:pure-virtual-flag t
+                                                :prototype-flag t
+                                                :typemodifiers ("virtual")
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [2109 2137])
+                                            ("protected" label nil (reparse-symbol classsubparts) [2140 2150])
+                                            ("exit_requested_" variable (:type ("std::atomic_bool" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2227 2260])
+                                            ("aralog_" variable (:type ("ara::log::Logger" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2302 2328])
+                                            ("shutdownMutex_" variable (:type ("std::mutex" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2378 2404])
+                                            ("shutdownCondvar_" variable (:type ("std::condition_variable" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2503 2544])
+                                            ("shutdownCondvarsync_" variable (:type ("ConditionVariable" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2548 2587]))                                          
+                                        :type "class")
+                                        (reparse-symbol namespacesubparts) [1139 2590]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [957 2593]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [940 2615]))                  
+                :type "namespace")
+                nil [924 2635]))          
+      :file "diagnostic_manager.h"
+      :pointmax 2700
+      :fsize 2782
+      :lastmodtime '(24251 50669 370144 454000)
+      :unmatched-syntax '((punctuation 1343 . 1344) (DEFAULT 1336 . 1343) (punctuation 1334 . 1335) (semantic-list 1331 . 1333) (symbol 1314 . 1331) (punctuation 1313 . 1314) (VIRTUAL 1305 . 1312))
+      :lexical-table 
+        '(("SOURCE_COMMON_DIAGNOSTIC_MANAGER_H_")
+          )
+))
+  :file "!home!hyukmyeong!work!ICAS_Apps!Apps!source!autosar!avin!avin-ap!dm!source!inc!private!common!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

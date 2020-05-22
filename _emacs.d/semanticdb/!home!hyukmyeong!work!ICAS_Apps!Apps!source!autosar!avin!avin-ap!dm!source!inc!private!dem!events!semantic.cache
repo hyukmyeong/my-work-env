@@ -1,0 +1,86 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("SOURCE_DEM_EVENTS_DIAGNOSTIC_MONITOR_MANAGER_H_" variable (:constant-flag t) nil [818 865])
+            ("memory" include (:system-flag t) nil [867 884])
+            ("ara/core/map.h" include nil nil [886 911])
+            ("dem/events/diagnostic_monitor.h" include nil nil [913 955])
+            ("dem/types/impl_type_initmonitorreasontype.h" include nil nil [956 1010])
+            ("ara" type
+               (:members 
+                  ( ("diag" type
+                       (:members 
+                          ( ("dem" type
+                               (:members 
+                                  ( ("event" type
+                                       (:members 
+                                          ( ("kInvalidInstanceId" variable
+                                               (:default-value "65535U"
+                                                :type ("uint32_t" type (:type "class") nil nil))
+                                                (reparse-symbol namespacesubparts) [1243 1280])
+                                            ("DiagnosticMonitorManager" type
+                                               (:template 
+                                                  ( ("T" type (:type "class") nil nil))                                                  
+                                                :type "class"
+                                                :members 
+                                                  ( ("public" label nil (reparse-symbol classsubparts) [1334 1341])
+                                                    ("logger" function
+                                                       (:typemodifiers ("static" "inline")
+                                                        :type ("ara::log::Logger" type (:type "class") nil nil))
+                                                        (reparse-symbol classsubparts) [1344 1556])
+                                                    ("std::shared_ptr" variable (:type "int") (reparse-symbol classsubparts) [1572 1614])
+                                                    ("Init" function
+                                                       (:arguments 
+                                                          ( ("monitorId" variable (:type ("std::uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1785 1809])
+                                                            ("araComDiagMonitorEventSvcInstId" variable (:type ("std::uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1810 1856]))                                                          
+                                                        :type "void")
+                                                        (reparse-symbol classsubparts) [1775 2185])
+                                                    ("StartFindProxies" function (:type "void") (reparse-symbol classsubparts) [2255 2458])
+                                                    ("StopFindService" function (:type "void") (reparse-symbol classsubparts) [2462 2581])
+                                                    ("CallInitMonitors" function
+                                                       (:arguments 
+                                                          ( ("reasonType" variable (:type ("ara::diag::InitMonitorReasonType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2773 2817]))                                                          
+                                                        :type "void")
+                                                        (reparse-symbol classsubparts) [2751 2978])
+                                                    ("GetDiagnosticMonitor" function
+                                                       (:arguments 
+                                                          ( ("id" variable (:type ("std::uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3224 3241]))                                                          
+                                                        :type ("DiagnosticMonitor::Ptr" type (:type "class") nil nil))
+                                                        (reparse-symbol classsubparts) [3180 3415])
+                                                    ("private" label nil (reparse-symbol classsubparts) [3418 3426])
+                                                    ("monitorMap_" variable (:type ("ara::core::Map" type
+                                                         (:template-specifier 
+                                                            ( ("std::uint32_t" type nil nil nil)
+                                                              ("DiagnosticMonitor::Ptr" type nil nil nil))                                                            
+                                                          :type "class")
+                                                          nil nil)) (reparse-symbol classsubparts) [3511 3577]))                                                  )
+                                                (reparse-symbol namespacesubparts) [1281 3580]))                                          
+                                        :type "namespace")
+                                        (reparse-symbol namespacesubparts) [1061 3583]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [1045 3604]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [1028 3623]))                  
+                :type "namespace")
+                nil [1012 3643]))          
+      :file "diagnostic_monitor_manager.h"
+      :pointmax 3720
+      :fsize 3832
+      :lastmodtime '(24262 6343 140634 156000)
+      :unmatched-syntax '((punctuation 1570 . 1571) (symbol 1566 . 1569) (USING 1560 . 1565) (symbol 1233 . 1242))
+      :lexical-table 
+        '(("SOURCE_DEM_EVENTS_DIAGNOSTIC_MONITOR_MANAGER_H_")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :file "diagnostic_monitor.h"
+      :fsize 3764
+      :lastmodtime '(24251 50669 378144 576000)))
+  :file "!home!hyukmyeong!work!ICAS_Apps!Apps!source!autosar!avin!avin-ap!dm!source!inc!private!dem!events!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

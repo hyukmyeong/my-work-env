@@ -1,0 +1,158 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("netinet/in.h" include (:system-flag t) nil [730 753])
+            ("algorithm" include (:system-flag t) nil [754 774])
+            ("cstring" include (:system-flag t) nil [775 793])
+            ("iostream" include (:system-flag t) nil [794 813])
+            ("memory" include (:system-flag t) nil [814 831])
+            ("utility" include (:system-flag t) nil [832 850])
+            ("common/config/dm_config.h" include nil nil [851 887])
+            ("dcm/service/processors/0x22_read_did.h" include nil nil [888 937])
+            ("common/exception/lookup_table_entry_not_found_exception.h" include nil nil [938 1006])
+            ("common/exception/nrc_exception.h" include nil nil [1007 1050])
+            ("common/service_processor.h" include nil nil [1051 1088])
+            ("common/service_processor_with_sid.h" include nil nil [1089 1135])
+            ("common/multi_byte_type.h" include nil nil [1136 1171])
+            ("uds/uds_error_code.h" include nil nil [1172 1203])
+            ("uds/uds_services.h" include nil nil [1204 1233])
+            ("dcm/conversation/conversation.h" include nil nil [1234 1276])
+            ("ara/diag/uds_transport/protocol_types.h" include nil nil [1277 1327])
+            ("uds_transport/uds_message_ext.h" include nil nil [1328 1370])
+            ("dcm/service/processors/did_handler.h" include nil nil [1371 1418])
+            ("dcm/diagnostic_communication_manager.h" include nil nil [1419 1468])
+            ("dcm/types/dcm_type_interfacetype.h" include nil nil [1469 1514])
+            ("dcm/types/impl_type_udsresponsecodetype.h" include nil nil [1515 1567])
+            ("ara::diag::ServiceProcessor" using (:type ("ara::diag::ServiceProcessor" type
+                 (:prototype t
+                  :type "class")
+                  nil nil)) nil [1569 1603])
+            ("ara::diag::ServiceProcessorWithSid" using (:type ("ara::diag::ServiceProcessorWithSid" type
+                 (:prototype t
+                  :type "class")
+                  nil nil)) nil [1604 1645])
+            ("ara::diag::dcm::conversation::Conversation" using (:type ("ara::diag::dcm::conversation::Conversation" type
+                 (:prototype t
+                  :type "class")
+                  nil nil)) nil [1646 1695])
+            ("ara::diag::uds::UdsNegativeResponseCode" using (:type ("ara::diag::uds::UdsNegativeResponseCode" type
+                 (:prototype t
+                  :type "class")
+                  nil nil)) nil [1696 1742])
+            ("ara::diag::uds::UdsServices" using (:type ("ara::diag::uds::UdsServices" type
+                 (:prototype t
+                  :type "class")
+                  nil nil)) nil [1743 1777])
+            ("ara::diag::uds_transport::ByteVector" using (:type ("ara::diag::uds_transport::ByteVector" type
+                 (:prototype t
+                  :type "class")
+                  nil nil)) nil [1778 1821])
+            ("ara::diag::uds_transport::UdsMessageExt" using (:type ("ara::diag::uds_transport::UdsMessageExt" type
+                 (:prototype t
+                  :type "class")
+                  nil nil)) nil [1822 1868])
+            ("unnamed" type
+               (:members 
+                  ( ("kSessionDIDValue" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type ("0xF186U" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1929 1937]))                          
+                        :type ("std::uint16_t" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [1898 1938])
+                    ("kShiftByEightBits" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type ("8U" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1987 1990]))                          
+                        :type ("std::uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [1956 1991])
+                    ("kOneByteMax" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type ("0xFFU" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2034 2040]))                          
+                        :type ("std::uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [2009 2041])
+                    ("kMaxDIDEqualToOne" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type ("1U" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2090 2093]))                          
+                        :type ("std::uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [2059 2094])
+                    ("kReadAccess" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type ("1U" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2137 2140]))                          
+                        :type ("std::uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [2112 2141]))                  
+                :type "namespace")
+                nil [1869 2144])
+            ("ara" type
+               (:members 
+                  ( ("diag" type
+                       (:members 
+                          ( ("dcm" type
+                               (:members 
+                                  ( ("service" type
+                                       (:members 
+                                          ( ("ara::log" using (:type ("ara::log" type
+                                                 (:prototype t
+                                                  :type "namespace")
+                                                  nil nil)) (reparse-symbol namespacesubparts) [2414 2439])
+                                            ("ReadDid" function
+                                               (:constructor-flag t
+                                                :parent "ReadDid"
+                                                :arguments 
+                                                  ( ("DcmRuntimeContext" variable (:type ("std::shared_ptr" type
+                                                         (:template-specifier 
+                                                            ( ("runtime::DcmRuntimeContext" type nil nil nil))                                                            
+                                                          :type "class")
+                                                          nil nil)) (reparse-symbol arg-sub-list) [2458 2520]))                                                  
+                                                :type ("ReadDid" type (:type "class") nil nil))
+                                                (reparse-symbol namespacesubparts) [2441 2733])
+                                            ("HandleMessage" function
+                                               (:parent "ReadDid"
+                                                :arguments 
+                                                  ( ("message" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("UdsMessageExt" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [2889 2918])
+                                                    ("conversation" variable
+                                                       (:reference 1
+                                                        :type ("Conversation" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [2919 2946]))                                                  
+                                                :type ("ServiceProcessor::Response" type (:type "class") nil nil))
+                                                (reparse-symbol namespacesubparts) [2839 16023])
+                                            ("ReadDIDValue" function
+                                               (:parent "ReadDid"
+                                                :arguments 
+                                                  ( ("dataId" variable
+                                                       (:constant-flag t
+                                                        :type ("std::uint16_t" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [16135 16162])
+                                                    ("dataRec" variable
+                                                       (:reference 1
+                                                        :type ("ByteVector" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [16163 16183]))                                                  
+                                                :type "bool")
+                                                (reparse-symbol namespacesubparts) [16108 21189]))                                          
+                                        :type "namespace")
+                                        (reparse-symbol namespacesubparts) [2394 21192]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [2335 21215]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [2266 21234]))                  
+                :type "namespace")
+                nil [2211 21254]))          
+      :file "0x22_read_did.cpp"
+      :pointmax 21272
+      :fsize 21271
+      :lastmodtime '(24251 50669 386144 698000)
+      :unmatched-syntax '((symbol 2102 . 2111) (STATIC 2095 . 2101) (symbol 2049 . 2058) (STATIC 2042 . 2048) (symbol 1999 . 2008) (STATIC 1992 . 1998) (symbol 1946 . 1955) (STATIC 1939 . 1945) (symbol 1888 . 1897) (STATIC 1881 . 1887))))
+  :file "!home!hyukmyeong!work!ICAS_Apps!Apps!source!autosar!avin!avin-ap!dm!source!src!libdcm!service!processors!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

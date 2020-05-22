@@ -1,0 +1,112 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("unistd.h" include (:system-flag t) nil [731 750])
+            ("csignal" include (:system-flag t) nil [751 769])
+            ("exception" include (:system-flag t) nil [770 790])
+            ("iostream" include (:system-flag t) nil [791 810])
+            ("memory" include (:system-flag t) nil [811 828])
+            ("thread" include (:system-flag t) nil [829 846])
+            ("common/runtime.h" include nil nil [848 875])
+            ("ara/log/logging.h" include nil nil [876 904])
+            ("common/exception/errno_exception.h" include nil nil [905 950])
+            ("ara" type
+               (:members 
+                  ( ("diag" type
+                       (:members 
+                          ( ("ara::log" using (:type ("ara::log" type
+                                 (:prototype t
+                                  :type "namespace")
+                                  nil nil)) (reparse-symbol namespacesubparts) [985 1010])
+                            ("Runtime::instanceMutex_" variable (:type ("std::mutex" type (:type "class") nil nil)) (reparse-symbol namespacesubparts) [1012 1047])
+                            ("Runtime::instance_" variable (:type ("std::unique_ptr" type
+                                 (:template-specifier 
+                                    ( ("Runtime" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol namespacesubparts) [1048 1101])
+                            ("Runtime" function
+                               (:constructor-flag t
+                                :parent "Runtime"
+                                :type ("Runtime" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [1103 1173])
+                            ("Runtime" function
+                               (:destructor-flag t
+                                :parent "Runtime"
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [1175 1197])
+                            ("HandleSignal" function
+                               (:parent "Runtime"
+                                :arguments 
+                                  ( ("signum" variable (:type ("std::int32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1226 1246]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [1199 1425])
+                            ("SignalHandler" function
+                               (:parent "Runtime"
+                                :arguments 
+                                  ( ("signum" variable (:type ("std::int32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1455 1475]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [1427 1526])
+                            ("WaitUntilTermination" function
+                               (:parent "Runtime"
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [1528 1711])
+                            ("GetInstance" function
+                               (:parent "Runtime"
+                                :type ("Runtime" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [1713 1777]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [968 1780]))                  
+                :type "namespace")
+                nil [952 1800]))          
+      :file "runtime.cpp"
+      :pointmax 1818
+      :fsize 1882
+      :lastmodtime '(24251 50669 382144 637000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("csignal" include (:system-flag t) nil [743 761])
+            ("common/diagnostic_manager.h" include nil nil [763 801])
+            ("ara" type
+               (:members 
+                  ( ("diag" type
+                       (:members 
+                          ( ("common" type
+                               (:members 
+                                  ( ("ara::log" using (:type ("ara::log" type
+                                         (:prototype t
+                                          :type "namespace")
+                                          nil nil)) (reparse-symbol namespacesubparts) [855 880])
+                                    ("DiagnosticManager" function
+                                       (:constructor-flag t
+                                        :parent "DiagnosticManager"
+                                        :type ("DiagnosticManager" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [882 1010])
+                                    ("Main" function
+                                       (:parent "DiagnosticManager"
+                                        :type "void")
+                                        (reparse-symbol namespacesubparts) [1012 1674])
+                                    ("SignalShutdown" function
+                                       (:parent "DiagnosticManager"
+                                        :type "void")
+                                        (reparse-symbol namespacesubparts) [1676 1932]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [836 1935]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [819 1957]))                  
+                :type "namespace")
+                nil [803 1977]))          
+      :file "diagnostic_manager.cpp"
+      :pointmax 1995
+      :fsize 2064
+      :lastmodtime '(24251 50669 382144 637000)
+      :unmatched-syntax nil))
+  :file "!home!hyukmyeong!work!Apps!source!autosar!avin!avin-ap!dm!source!src!diagnostic-manager!common!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,113 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("chrono" include (:system-flag t) nil [746 763])
+            ("cstdint" include (:system-flag t) nil [764 782])
+            ("cstdio" include (:system-flag t) nil [783 800])
+            ("ara/com/e2exf/status_handler.h" include (:system-flag t) nil [802 843])
+            ("ara/exec/execution_client.h" include (:system-flag t) nil [844 882])
+            ("ara/log/logging.h" include (:system-flag t) nil [883 911])
+            ("ara/log/logmanager.h" include (:system-flag t) nil [912 943])
+            ("thread" include (:system-flag t) nil [944 961])
+            ("state_manager.h" include nil nil [963 989])
+            ("state_manager_interface.h" include nil nil [990 1026])
+            ("ara::log" using (:type ("ara::log" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [1057 1082])
+            ("ara" type
+               (:members 
+                  ( ("sm" type
+                       (:members 
+                          ( ("kTime" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("" variable (:type ("200U" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1139 1144]))                                  
+                                :type ("uint16_t" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [1124 1145])
+                            ("ThreadAct1" function (:type "void") (reparse-symbol namespacesubparts) [1146 1469]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [1099 1471]))                  
+                :type "namespace")
+                nil [1083 1489])
+            ("ara::sm" using (:type ("ara::sm" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [1558 1582])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [1592 1601])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1602 1615]))                  
+                :type "int")
+                nil [1583 2523]))          
+      :file "main.cpp"
+      :pointmax 2524
+      :fsize 2523
+      :lastmodtime '(24251 50669 418145 186000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("conversation.h" include nil nil [732 757])
+            ("stdint.h" include (:system-flag t) nil [759 778])
+            ("iomanip" include (:system-flag t) nil [780 798])
+            ("cstdlib" include (:system-flag t) nil [799 817])
+            ("exception" include (:system-flag t) nil [818 838])
+            ("cassert" include (:system-flag t) nil [839 857])
+            ("iostream" include (:system-flag t) nil [858 877])
+            ("ara/diag/service_interfaces/diagnostic_conversation_service/diagnostic_conversation_proxy.h" include nil nil [909 1011])
+            ("ara/com/e2exf/types.h" include nil nil [1013 1045])
+            ("ara/com/e2e_helper.h" include nil nil [1046 1077])
+            ("ara/log/logging.h" include nil nil [1079 1107])
+            ("ara::log" using (:type ("ara::log" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [1141 1166])
+            ("statemanager" type
+               (:members 
+                  ( ("ConversationActivity" function
+                       (:constructor-flag t
+                        :parent "ConversationActivity"
+                        :arguments 
+                          ( ("stateMap" variable (:type ("std::shared_ptr" type
+                                 (:template-specifier 
+                                    ( ("RequestedState" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol arg-sub-list) [1239 1280]))                          
+                        :type ("ConversationActivity" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [1196 1553])
+                    ("init" function
+                       (:parent "ConversationActivity"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [1555 2030])
+                    ("asyncMethodCall" function
+                       (:parent "ConversationActivity"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [2032 2080])
+                    ("curentActiveProtocolSubscription" function
+                       (:parent "ConversationActivity"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [2082 3007])
+                    ("act" function
+                       (:parent "ConversationActivity"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [3010 3131]))                  
+                :type "namespace")
+                nil [1171 3133]))          
+      :file "conversation.cpp"
+      :pointmax 3161
+      :fsize 3160
+      :lastmodtime '(24251 50669 418145 186000)
+      :unmatched-syntax nil))
+  :file "!home!hyukmyeong!work!ICAS_Apps!Apps!source!autosar!avin!avin-ap!sm!source!src!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

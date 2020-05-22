@@ -1,0 +1,89 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("limits" include (:system-flag t) nil [745 762])
+            ("common/config/dm_config.h" include nil nil [763 799])
+            ("dem/uds_processors/0x14_clear_dtc_information.h" include nil nil [800 858])
+            ("ara/diag/uds_transport/protocol_types.h" include nil nil [859 909])
+            ("common/service_processor.h" include nil nil [910 947])
+            ("common/service_processor_with_sid.h" include nil nil [948 994])
+            ("uds/uds_error_code.h" include nil nil [995 1026])
+            ("uds/uds_services.h" include nil nil [1027 1056])
+            ("dcm/conversation/conversation.h" include nil nil [1057 1099])
+            ("dem/types/dtc_status.h" include nil nil [1100 1133])
+            ("dem/events/dem_dtc.h" include nil nil [1134 1165])
+            ("ara/log/logging.h" include nil nil [1166 1194])
+            ("dcm/diagnostic_communication_manager.h" include nil nil [1195 1244])
+            ("unnamed" type
+               (:members 
+                  ( ("valueOne" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type ("1U" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1290 1293]))                          
+                        :type ("std::uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [1268 1294])
+                    ("valueEight" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type ("8U" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1329 1332]))                          
+                        :type ("std::uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [1305 1333]))                  
+                :type "namespace")
+                nil [1246 1335])
+            ("ara::diag::config::DMConfig" using (:type ("ara::diag::config::DMConfig" type
+                 (:prototype t
+                  :type "class")
+                  nil nil)) nil [1350 1384])
+            ("ara" type
+               (:members 
+                  ( ("diag" type
+                       (:members 
+                          ( ("dem" type
+                               (:members 
+                                  ( ("service" type
+                                       (:members 
+                                          ( ("ClearDiagnosticInformation" function
+                                               (:constructor-flag t
+                                                :parent "ClearDiagnosticInformation"
+                                                :arguments 
+                                                  ( ("Dem" variable
+                                                       (:reference 1
+                                                        :type ("dem::DEMInterface" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [1572 1595]))                                                  
+                                                :type ("ClearDiagnosticInformation" type (:type "class") nil nil))
+                                                (reparse-symbol namespacesubparts) [1517 1888])
+                                            ("HandleMessage" function
+                                               (:parent "ClearDiagnosticInformation"
+                                                :arguments 
+                                                  ( ("message" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("ara::diag::uds_transport::UdsMessageExt" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [2184 2239])
+                                                    ("conversation" variable
+                                                       (:reference 1
+                                                        :type ("ara::diag::dcm::conversation::Conversation" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [2244 2301]))                                                  
+                                                :type ("ServiceProcessor::Response" type (:type "class") nil nil))
+                                                (reparse-symbol namespacesubparts) [2110 4029]))                                          
+                                        :type "namespace")
+                                        (reparse-symbol namespacesubparts) [1435 5407]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [1419 5430]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [1402 5449]))                  
+                :type "namespace")
+                nil [1386 5469]))          
+      :file "0x14_clear_dtc_information.cpp"
+      :pointmax 5487
+      :fsize 5624
+      :lastmodtime '(24251 50669 390144 759000)
+      :unmatched-syntax '((semantic-list 4354 . 5404) (symbol 4345 . 4353) (CONST 4339 . 4344) (semantic-list 4308 . 4338) (symbol 4293 . 4308) (punctuation 4292 . 4293) (punctuation 4291 . 4292) (symbol 4265 . 4291) (symbol 4241 . 4264) (punctuation 4240 . 4241) (punctuation 4239 . 4240) (symbol 4236 . 4239) (punctuation 4235 . 4236) (punctuation 4234 . 4235) (symbol 4230 . 4234) (punctuation 4229 . 4230) (punctuation 4228 . 4229) (symbol 4225 . 4228) (symbol 1295 . 1304) (symbol 1258 . 1267))))
+  :file "!home!hyukmyeong!work!ICAS_Apps!Apps!source!autosar!avin!avin-ap!dm!source!src!libdem!uds_processors!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

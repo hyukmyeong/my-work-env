@@ -1,0 +1,97 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("SOURCE_DCM_CONNECTION_DO_IP_PROXYMANAGER_H_" variable (:constant-flag t) nil [815 858])
+            ("memory" include (:system-flag t) nil [860 877])
+            ("ara/com/types.h" include (:system-flag t) nil [878 904])
+            ("ara/log/logging.h" include nil nil [905 933])
+            ("ara/core/map.h" include nil nil [934 959])
+            ("unordered_map" include (:system-flag t) nil [960 984])
+            ("atomic" include (:system-flag t) nil [985 1002])
+            ("exception" include (:system-flag t) nil [1003 1023])
+            ("utility" include (:system-flag t) nil [1024 1042])
+            ("common/config/do_ip_config.h" include nil nil [1043 1082])
+            ("dcm/service/service_proxy/doipgroupidentification_proxy.h" include nil nil [1083 1151])
+            ("dcm/service/service_proxy/doippowermode_proxy.h" include nil nil [1152 1210])
+            ("dcm/connection/do_ip_proxyactivity.h" include nil nil [1211 1258])
+            ("ara::diag::config::DoIpConfig" using (:type ("ara::diag::config::DoIpConfig" type
+                 (:prototype t
+                  :type "class")
+                  nil nil)) nil [1260 1296])
+            ("DoIPProxyManager" type
+               (:members 
+                  ( ("ara::diag::service_interfaces::doip_power_mode::proxy::DoIPPowerModeProxy" variable (:type "int") (reparse-symbol classsubparts) [1352 1426])
+                    ("ara::diag::service_interfaces::doip_group_identification::proxy::DoIPGroupIdentificationProxy" variable (:type "int") (reparse-symbol classsubparts) [1472 1566])
+                    ("public" label nil (reparse-symbol classsubparts) [1569 1576])
+                    ("DoIPProxyManager" function
+                       (:constructor-flag t
+                        :type ("DoIPProxyManager" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1588 1707])
+                    ("DoIPProxyManager" function
+                       (:destructor-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [1711 1735])
+                    ("InitProxies" function
+                       (:arguments 
+                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [1756 1761]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1739 3507])
+                    ("getDoIPPowerModeProxyHandle" function
+                       (:arguments 
+                          ( ("instanceId" variable (:type ("std::uint16_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3575 3600]))                          
+                        :type ("std::shared_ptr" type
+                             (:template-specifier 
+                                ( ("DoIPPowerModeProxy" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [3511 4156])
+                    ("getDoIPGroupIdentificationProxyHandle" function
+                       (:arguments 
+                          ( ("instanceId" variable (:type ("std::uint16_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4251 4276]))                          
+                        :type ("std::shared_ptr" type
+                             (:template-specifier 
+                                ( ("DoIPGroupIdentificationProxy" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [4160 4924])
+                    ("private" label nil (reparse-symbol classsubparts) [4927 4935])
+                    ("aralog_" variable (:type ("ara::log::Logger" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4938 4964])
+                    ("doipRuntimeContextPowerModeProxyMap_" variable (:type ("std::unordered_map" type
+                         (:template-specifier 
+                            ( ("std::uint16_t" type nil nil nil)
+                              ("std::shared_ptr" type (:template-specifier 
+                                ( ("ara::diag::dcm::connection::DoIPProxyActivity" type (:template-specifier 
+                                    ( ("DoIPPowerModeProxy" type nil nil nil))                                    ) nil nil))                                ) nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [5050 5217])
+                    ("doipRuntimeContextGroupIdentificationProxyMap_" variable (:type ("std::unordered_map" type
+                         (:template-specifier 
+                            ( ("std::uint16_t" type nil nil nil)
+                              ("std::shared_ptr" type (:template-specifier 
+                                ( ("ara::diag::dcm::connection::DoIPProxyActivity" type (:template-specifier 
+                                    ( ("DoIPGroupIdentificationProxy" type nil nil nil))                                    ) nil nil))                                ) nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [5314 5501]))                  
+                :type "class")
+                nil [1298 5504]))          
+      :file "do_ip_proxymanager.h"
+      :pointmax 5560
+      :fsize 5678
+      :lastmodtime '(24251 50669 374144 515000)
+      :unmatched-syntax '((EXPLICIT 1579 . 1587) (punctuation 1470 . 1471) (symbol 1435 . 1463) (USING 1429 . 1434) (punctuation 1350 . 1351) (symbol 1331 . 1349) (USING 1325 . 1330))
+      :lexical-table 
+        '(("SOURCE_DCM_CONNECTION_DO_IP_PROXYMANAGER_H_")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :file "do_ip_proxyactivity.h"
+      :fsize 2640
+      :lastmodtime '(24251 50669 374144 515000)))
+  :file "!home!hyukmyeong!work!Apps!source!autosar!avin!avin-ap!dm!source!inc!private!dcm!connection!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

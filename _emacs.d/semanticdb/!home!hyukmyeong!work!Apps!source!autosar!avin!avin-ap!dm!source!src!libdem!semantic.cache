@@ -1,0 +1,341 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("iostream" include (:system-flag t) nil [750 769])
+            ("memory" include (:system-flag t) nil [770 787])
+            ("dem/diagnostic_event_manager.h" include nil nil [789 830])
+            ("dcm/diagnostic_communication_manager.h" include nil nil [831 880])
+            ("dem/service/service_skeleton/clear_dtc_impl.h" include nil nil [881 937])
+            ("ara::log" using (:type ("ara::log" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [939 964])
+            ("ara" type
+               (:members 
+                  ( ("diag" type
+                       (:members 
+                          ( ("dem" type
+                               (:members 
+                                  ( ("DEM" function
+                                       (:constructor-flag t
+                                        :parent "DEM"
+                                        :type ("DEM" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [1015 1195])
+                                    ("Initialize" function
+                                       (:parent "DEM"
+                                        :type "void")
+                                        (reparse-symbol namespacesubparts) [1197 1497])
+                                    ("Run" function
+                                       (:parent "DEM"
+                                        :type ("wvoid" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [1499 1556])
+                                    ("Shutdown" function
+                                       (:parent "DEM"
+                                        :type "void")
+                                        (reparse-symbol namespacesubparts) [1558 1760])
+                                    ("ClearDTC" function
+                                       (:parent "DEM"
+                                        :arguments 
+                                          ( ("groupOfDtc" variable (:type ("std::uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1794 1819]))                                          
+                                        :type ("ClearDtcErrorCode" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [1762 1871])
+                                    ("GetDTCsFilteredBy" function
+                                       (:parent "DEM"
+                                        :arguments 
+                                          ( ("dtcStatusMask" variable (:type ("std::uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1951 1978])
+                                            ("dtcStatusAvailabilityMask" variable (:type ("std::uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1979 2018]))                                          
+                                        :type ("ara::core::Vector" type
+                                             (:template-specifier 
+                                                ( ("std::shared_ptr" type (:template-specifier 
+                                                    ( ("event::DemDtc" type nil nil nil))                                                    ) nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol namespacesubparts) [1873 2108])
+                                    ("GetDTCBy" function
+                                       (:parent "DEM"
+                                        :constant-flag t
+                                        :arguments 
+                                          ( ("dtcValue" variable (:type ("std::uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2181 2204]))                                          
+                                        :type ("ara::core::Optional" type
+                                             (:template-specifier 
+                                                ( ("std::shared_ptr" type (:template-specifier 
+                                                    ( ("event::DemDtc" type nil nil nil))                                                    ) nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol namespacesubparts) [2109 2253])
+                                    ("EnableDTCSetting" function
+                                       (:parent "DEM"
+                                        :type "void")
+                                        (reparse-symbol namespacesubparts) [2255 2341])
+                                    ("DisableDTCSetting" function
+                                       (:parent "DEM"
+                                        :type "void")
+                                        (reparse-symbol namespacesubparts) [2343 2431])
+                                    ("GetDTCFDC" function
+                                       (:parent "DEM"
+                                        :constant-flag t
+                                        :arguments 
+                                          ( ("SubfunctionId" variable
+                                               (:constant-flag t
+                                                :type ("std::uint8_t" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [2517 2550]))                                          
+                                        :type ("ara::core::Vector" type
+                                             (:template-specifier 
+                                                ( ("std::pair" type (:template-specifier 
+                                                    ( ("std::uint32_t" type nil nil nil)
+                                                      ("std::uint8_t" type nil nil nil))                                                    ) nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol namespacesubparts) [2433 2610])
+                                    ("GetDtcs" function
+                                       (:parent "DEM"
+                                        :type ("ara::core::Vector" type
+                                             (:template-specifier 
+                                                ( ("std::shared_ptr" type (:template-specifier 
+                                                    ( ("event::DemDtc" type nil nil nil))                                                    ) nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol namespacesubparts) [2612 2721]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [999 2724]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [982 2743]))                  
+                :type "namespace")
+                nil [966 2763]))          
+      :file "diagnostic_event_manager.cpp"
+      :pointmax 2781
+      :fsize 2874
+      :lastmodtime '(24251 50669 390144 759000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("fstream" include (:system-flag t) nil [744 762])
+            ("iostream" include (:system-flag t) nil [763 782])
+            ("string" include (:system-flag t) nil [783 800])
+            ("ara/core/error_code.h" include nil nil [802 834])
+            ("ara/core/vector.h" include nil nil [835 863])
+            ("ara/log/logging.h" include nil nil [864 892])
+            ("dem/condition/enable_condition_group.h" include nil nil [893 942])
+            ("dem/dem_runtime_context.h" include nil nil [943 979])
+            ("dem/events/dem_dtc.h" include nil nil [980 1011])
+            ("dem/events/dem_dtc_group.h" include nil nil [1012 1049])
+            ("dem/events/dem_event.h" include nil nil [1050 1083])
+            ("dem/events/event_related_data/diagnostic_freeze_frame.h" include nil nil [1084 1150])
+            ("dem/events/diagnostic_monitor_manager.h" include nil nil [1151 1201])
+            ("dem/opcycle/operation_cycle.h" include nil nil [1202 1242])
+            ("dem/service/service_skeleton/clear_dtc_impl.h" include nil nil [1243 1299])
+            ("dem/service/service_skeleton/dtc_information_impl.h" include nil nil [1300 1362])
+            ("common/config/dm_config.h" include nil nil [1363 1399])
+            ("ara" type
+               (:members 
+                  ( ("diag" type
+                       (:members 
+                          ( ("dem" type
+                               (:members 
+                                  ( ("runtime" type
+                                       (:members 
+                                          ( ("event::DiagnosticMonitorManager" using (:type ("event::DiagnosticMonitorManager" type
+                                                 (:prototype t
+                                                  :type "class")
+                                                  nil nil)) (reparse-symbol namespacesubparts) [1469 1507])
+                                            ("DemRuntimeContext" function
+                                               (:constructor-flag t
+                                                :parent "DemRuntimeContext"
+                                                :type ("DemRuntimeContext" type (:type "class") nil nil))
+                                                (reparse-symbol namespacesubparts) [1602 1826])
+                                            ("GetClearDtcInterface" function
+                                               (:parent "DemRuntimeContext"
+                                                :type ("ara::diag::dem::service::ClearDtcImpl" type (:type "class") nil nil))
+                                                (reparse-symbol namespacesubparts) [1828 1933])
+                                            ("GetEvent" function
+                                               (:methodconst-flag t
+                                                :parent "DemRuntimeContext"
+                                                :arguments 
+                                                  ( ("id" variable (:type ("std::uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1996 2013]))                                                  
+                                                :type ("std::shared_ptr" type
+                                                     (:template-specifier 
+                                                        ( ("event::DemEvent" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil))
+                                                (reparse-symbol namespacesubparts) [1935 2164])
+                                            ("GetOperationCycle" function
+                                               (:methodconst-flag t
+                                                :parent "DemRuntimeContext"
+                                                :arguments 
+                                                  ( ("id" variable (:type ("std::uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2244 2261]))                                                  
+                                                :type ("std::shared_ptr" type
+                                                     (:template-specifier 
+                                                        ( ("opcycle::OperationCycle" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil))
+                                                (reparse-symbol namespacesubparts) [2166 2546])
+                                            ("GetEnableCondition" function
+                                               (:methodconst-flag t
+                                                :parent "DemRuntimeContext"
+                                                :arguments 
+                                                  ( ("id" variable (:type ("std::uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2630 2646]))                                                  
+                                                :type ("std::shared_ptr" type
+                                                     (:template-specifier 
+                                                        ( ("condition::EnableCondition" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil))
+                                                (reparse-symbol namespacesubparts) [2548 2960])
+                                            ("GetDtc" function
+                                               (:methodconst-flag t
+                                                :parent "DemRuntimeContext"
+                                                :arguments 
+                                                  ( ("id" variable (:type ("std::uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3019 3036]))                                                  
+                                                :type ("std::shared_ptr" type
+                                                     (:template-specifier 
+                                                        ( ("event::DemDtc" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil))
+                                                (reparse-symbol namespacesubparts) [2962 3346])
+                                            ("GetDtcs" function
+                                               (:methodconst-flag t
+                                                :parent "DemRuntimeContext"
+                                                :type ("ara::core::Vector" type
+                                                     (:template-specifier 
+                                                        ( ("std::shared_ptr" type (:template-specifier 
+                                                            ( ("event::DemDtc" type nil nil nil))                                                            ) nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil))
+                                                (reparse-symbol namespacesubparts) [3348 3787])
+                                            ("GetEvents" function
+                                               (:parent "DemRuntimeContext"
+                                                :arguments 
+                                                  ( ("SubfunctionId" variable
+                                                       (:constant-flag t
+                                                        :type ("std::uint8_t" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [3881 3914]))                                                  
+                                                :type ("ara::core::Vector" type
+                                                     (:template-specifier 
+                                                        ( ("std::pair" type (:template-specifier 
+                                                            ( ("std::uint32_t" type nil nil nil)
+                                                              ("std::uint8_t" type nil nil nil))                                                            ) nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil))
+                                                (reparse-symbol namespacesubparts) [3789 4757])
+                                            ("GetDidById" function
+                                               (:parent "DemRuntimeContext"
+                                                :arguments 
+                                                  ( ("didId" variable (:type ("std::uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4822 4842]))                                                  
+                                                :type ("eventdata::DidConfiguration::Ptr" type (:type "class") nil nil))
+                                                (reparse-symbol namespacesubparts) [4759 5124])
+                                            ("GetDtcForUdsId" function
+                                               (:methodconst-flag t
+                                                :parent "DemRuntimeContext"
+                                                :arguments 
+                                                  ( ("udsDtcValue" variable (:type ("std::uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5191 5217]))                                                  
+                                                :type ("std::shared_ptr" type
+                                                     (:template-specifier 
+                                                        ( ("event::DemDtc" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil))
+                                                (reparse-symbol namespacesubparts) [5126 5567])
+                                            ("GetDtcGroup" function
+                                               (:methodconst-flag t
+                                                :parent "DemRuntimeContext"
+                                                :arguments 
+                                                  ( ("groupNumber" variable (:type ("std::uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5624 5650]))                                                  
+                                                :type ("event::DemDtcGroup::Ptr" type (:type "class") nil nil))
+                                                (reparse-symbol namespacesubparts) [5569 5927])
+                                            ("GetCommonProps" function
+                                               (:methodconst-flag t
+                                                :parent "DemRuntimeContext"
+                                                :type ("event::DemDiagnosticCommonProps::Ptr" type (:type "class") nil nil))
+                                                (reparse-symbol namespacesubparts) [5929 6064])
+                                            ("InitProxies" function
+                                               (:parent "DemRuntimeContext"
+                                                :type "void")
+                                                (reparse-symbol namespacesubparts) [6066 6145])
+                                            ("OfferServices" function
+                                               (:parent "DemRuntimeContext"
+                                                :type "void")
+                                                (reparse-symbol namespacesubparts) [6147 8094])
+                                            ("StopOfferServices" function
+                                               (:parent "DemRuntimeContext"
+                                                :type "void")
+                                                (reparse-symbol namespacesubparts) [8096 8922])
+                                            ("StopFindService" function
+                                               (:parent "DemRuntimeContext"
+                                                :type "void")
+                                                (reparse-symbol namespacesubparts) [8924 9006])
+                                            ("UpdateConfiguration" function
+                                               (:parent "DemRuntimeContext"
+                                                :type "void")
+                                                (reparse-symbol namespacesubparts) [9008 9695])
+                                            ("ReadDTCProperties" function
+                                               (:parent "DemRuntimeContext"
+                                                :type "void")
+                                                (reparse-symbol namespacesubparts) [9697 9855])
+                                            ("CreateConfiguredDids" function
+                                               (:parent "DemRuntimeContext"
+                                                :type "void")
+                                                (reparse-symbol namespacesubparts) [9857 10720])
+                                            ("MapDIDsToFFs" function
+                                               (:parent "DemRuntimeContext"
+                                                :type "void")
+                                                (reparse-symbol namespacesubparts) [10722 11474])
+                                            ("MapDIDsToFFsCal" function
+                                               (:parent "DemRuntimeContext"
+                                                :type "void")
+                                                (reparse-symbol namespacesubparts) [11476 13252])
+                                            ("CreateExtendedDataRecords" function
+                                               (:parent "DemRuntimeContext"
+                                                :type "void")
+                                                (reparse-symbol namespacesubparts) [13254 14047])
+                                            ("CreateDTCGroups" function
+                                               (:parent "DemRuntimeContext"
+                                                :type "void")
+                                                (reparse-symbol namespacesubparts) [14049 18225])
+                                            ("CreateAndStoreDTCDataToFile" function
+                                               (:parent "DemRuntimeContext"
+                                                :type "void")
+                                                (reparse-symbol namespacesubparts) [18227 21526])
+                                            ("CreateInitialDTCFiles" function
+                                               (:parent "DemRuntimeContext"
+                                                :type "void")
+                                                (reparse-symbol namespacesubparts) [21528 22477])
+                                            ("CreateOperationCycles" function
+                                               (:parent "DemRuntimeContext"
+                                                :type "void")
+                                                (reparse-symbol namespacesubparts) [22479 23114])
+                                            ("CreateEnableConditionGroups" function
+                                               (:parent "DemRuntimeContext"
+                                                :type "void")
+                                                (reparse-symbol namespacesubparts) [23116 24201])
+                                            ("CreateAndMapEvents" function
+                                               (:parent "DemRuntimeContext"
+                                                :type "void")
+                                                (reparse-symbol namespacesubparts) [24203 27148])
+                                            ("CheckEventForEnableDTCSetting" function
+                                               (:parent "DemRuntimeContext"
+                                                :type "void")
+                                                (reparse-symbol namespacesubparts) [27150 27274])
+                                            ("CheckEventForDisableDTCSetting" function
+                                               (:parent "DemRuntimeContext"
+                                                :type "void")
+                                                (reparse-symbol namespacesubparts) [27276 27402]))                                          
+                                        :type "namespace")
+                                        (reparse-symbol namespacesubparts) [1449 27405]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [1433 27428]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [1416 27447]))                  
+                :type "namespace")
+                nil [1400 27467]))          
+      :file "dem_runtime_context.cpp"
+      :pointmax 27485
+      :fsize 28276
+      :lastmodtime '(24254 11331 822455 558000)
+      :unmatched-syntax nil))
+  :file "!home!hyukmyeong!work!Apps!source!autosar!avin!avin-ap!dm!source!src!libdem!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

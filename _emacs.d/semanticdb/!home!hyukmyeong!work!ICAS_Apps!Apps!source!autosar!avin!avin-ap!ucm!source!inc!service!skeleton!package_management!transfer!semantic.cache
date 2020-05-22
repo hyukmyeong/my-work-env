@@ -1,0 +1,182 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("ARA_UCM_PKGMGR_PACKAGE_VALIDATION_H_" variable (:constant-flag t) nil [827 863])
+            ("boost/lexical_cast.hpp" include (:system-flag t) nil [865 898])
+            ("boost/uuid/uuid.hpp" include (:system-flag t) nil [899 929])
+            ("boost/uuid/uuid_generators.hpp" include (:system-flag t) nil [930 971])
+            ("boost/uuid/uuid_io.hpp" include (:system-flag t) nil [972 1005])
+            ("fstream" include (:system-flag t) nil [1006 1024])
+            ("iomanip" include (:system-flag t) nil [1025 1043])
+            ("string" include (:system-flag t) nil [1044 1061])
+            ("vector" include (:system-flag t) nil [1062 1079])
+            ("ara/core/string.h" include nil nil [1081 1109])
+            ("ara/core/vector.h" include nil nil [1110 1138])
+            ("ara/crypto/common/provider_info.h" include nil nil [1139 1183])
+            ("ara/crypto/cryp/buffered_digest.h" include nil nil [1184 1228])
+            ("ara/crypto/cryp/crypto_object.h" include nil nil [1229 1271])
+            ("ara/crypto/cryp/crypto_provider.h" include nil nil [1272 1316])
+            ("ara/crypto/cryp/entry_point.h" include nil nil [1317 1357])
+            ("ara/crypto/cryp/stream_starter.h" include nil nil [1358 1401])
+            ("ara/crypto/keys/entry_point.h" include nil nil [1402 1442])
+            ("ara/exec/execution_client.h" include nil nil [1443 1481])
+            ("ara/log/logging.h" include nil nil [1482 1510])
+            ("ara/log/logmanager.h" include nil nil [1511 1542])
+            ("FIRSTBLOCK" variable (:constant-flag t) nil [1552 1562])
+            ("ADDRESSBLOCKS" variable (:constant-flag t) nil [1596 1609])
+            ("SHA256" variable (:constant-flag t) nil [1643 1649])
+            ("SHA128" variable (:constant-flag t) nil [1685 1691])
+            ("AUTHALG" variable (:constant-flag t) nil [1727 1734])
+            ("INTEGRITYALG" variable (:constant-flag t) nil [1863 1875])
+            ("BLKSIZE" variable (:constant-flag t) nil [1895 1902])
+            ("ara" type
+               (:members 
+                  ( ("ucm" type
+                       (:members 
+                          ( ("pkgmgr" type
+                               (:members 
+                                  ( ("PackageValidationErrors" type
+                                       (:superclasses 
+                                          ( ("std::uint8_t" type
+                                               (:protection "unspecified"
+                                                :type "class")
+                                                nil nil))                                          
+                                        :type "class")
+                                        (reparse-symbol namespacesubparts) [1965 2090])
+                                    ("PackageValidation" type
+                                       (:members 
+                                          ( ("private" label nil (reparse-symbol classsubparts) [2231 2239])
+                                            ("integrityCtx_" variable (:type ("ara::crypto::cryp::HashFunctionCtx::Uptr" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2242 2297])
+                                            ("verificationCtx_" variable (:type ("ara::crypto::cryp::HashFunctionCtx::Uptr" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2300 2358])
+                                            ("verifyPubliCtx_" variable (:type ("ara::crypto::cryp::VerifierPublicCtx::Uptr" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2361 2420])
+                                            ("publicKeyObj_" variable (:type ("ara::crypto::cryp::PublicKey::Uptrc" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2423 2473])
+                                            ("verificationAlg_" variable (:type ("ara::core::String" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2476 2511])
+                                            ("hashingAlg_" variable (:type ("ara::core::String" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2514 2544])
+                                            ("slotUuid_" variable (:type ("ara::core::String" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2547 2575])
+                                            ("araCP_" variable (:type ("ara::crypto::cryp::CryptoProvider::Sptr" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2578 2625])
+                                            ("UuidStrToAraUuid" function
+                                               (:prototype-flag t
+                                                :arguments 
+                                                  ( ("uuid" variable (:type ("ara::core::String" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2651 2674])
+                                                    ("targetUid" variable
+                                                       (:reference 1
+                                                        :type ("ara::crypto::Uuid" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [2675 2704]))                                                  
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [2629 2705])
+                                            ("DigestToString" function
+                                               (:prototype-flag t
+                                                :arguments 
+                                                  ( ("digest" variable
+                                                       (:reference 1
+                                                        :type ("ara::crypto::WritableMemRegion" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [2735 2774]))                                                  
+                                                :type ("std::string" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [2708 2775])
+                                            ("CreateIntegrityContext" function
+                                               (:prototype-flag t
+                                                :type ("PackageValidationErrors" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [2778 2827])
+                                            ("CreateVerifyContext" function
+                                               (:prototype-flag t
+                                                :type ("PackageValidationErrors" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [2830 2876])
+                                            ("log_" variable (:type ("ara::log::Logger" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2879 2958])
+                                            ("public" label nil (reparse-symbol classsubparts) [2961 2968])
+                                            ("PackageValidation" function
+                                               (:prototype-flag t
+                                                :constructor-flag t
+                                                :arguments 
+                                                  ( ("veryAlg" variable (:type ("ara::core::String" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3433 3459])
+                                                    ("hashAlg" variable (:type ("ara::core::String" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3460 3486])
+                                                    ("uuid" variable (:type ("ara::core::String" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3487 3510]))                                                  
+                                                :type ("PackageValidation" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [3415 3511])
+                                            ("PackageValidation" function
+                                               (:prototype-flag t
+                                                :constructor-flag t
+                                                :arguments 
+                                                  ( ("hashAlg" variable (:type ("ara::core::String" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3533 3559]))                                                  
+                                                :type ("PackageValidation" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [3515 3560])
+                                            ("Initialize" function
+                                               (:prototype-flag t
+                                                :type ("PackageValidationErrors" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [3620 3657])
+                                            ("PerformAuthenticationCheck" function
+                                               (:prototype-flag t
+                                                :arguments 
+                                                  ( ("manifestData" variable
+                                                       (:reference 1
+                                                        :type ("ara::core::Vector" type
+                                                             (:template-specifier 
+                                                                ( ("uint8_t" type nil nil nil))                                                                
+                                                              :type "class")
+                                                              nil nil))
+                                                        (reparse-symbol arg-sub-list) [3980 4021])
+                                                    ("digestData" variable
+                                                       (:reference 1
+                                                        :type ("ara::core::Vector" type
+                                                             (:template-specifier 
+                                                                ( ("uint8_t" type nil nil nil))                                                                
+                                                              :type "class")
+                                                              nil nil))
+                                                        (reparse-symbol arg-sub-list) [4022 4061]))                                                  
+                                                :type ("PackageValidationErrors" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [3922 4062])
+                                            ("IntegrityDataUpload" function
+                                               (:prototype-flag t
+                                                :arguments 
+                                                  ( ("input_data" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("ara::core::Vector" type
+                                                             (:template-specifier 
+                                                                ( ("uint8_t" type nil nil nil))                                                                
+                                                              :type "class")
+                                                              nil nil))
+                                                        (reparse-symbol arg-sub-list) [4239 4284]))                                                  
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [4214 4285])
+                                            ("PerformIntegrityCheck" function
+                                               (:prototype-flag t
+                                                :arguments 
+                                                  ( ("signature" variable (:type ("ara::core::String" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4492 4520]))                                                  
+                                                :type ("PackageValidationErrors" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [4446 4521]))                                          
+                                        :type "class")
+                                        (reparse-symbol namespacesubparts) [2204 4524]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [1941 4527]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [1925 4548]))                  
+                :type "namespace")
+                nil [1909 4567]))          
+      :file "package_validation.h"
+      :pointmax 4632
+      :fsize 4631
+      :lastmodtime '(24251 50669 466145 917000)
+      :unmatched-syntax '((punctuation 2086 . 2087) (symbol 2074 . 2086) (punctuation 2070 . 2071) (symbol 2055 . 2070) (punctuation 2051 . 2052) (symbol 2038 . 2051) (punctuation 2034 . 2035) (symbol 2026 . 2034) (punctuation 2022 . 2023) (symbol 2014 . 2022) (ENUM 1960 . 1964) (punctuation 2086 . 2087) (symbol 2074 . 2086) (punctuation 2070 . 2071) (symbol 2055 . 2070) (punctuation 2051 . 2052) (symbol 2038 . 2051) (punctuation 2034 . 2035) (symbol 2026 . 2034) (punctuation 2022 . 2023) (symbol 2014 . 2022) (ENUM 1960 . 1964) (semantic-list 1584 . 1587) (punctuation 1583 . 1584) (symbol 1575 . 1583) (punctuation 1574 . 1575) (symbol 1563 . 1574) (number 1585 . 1586) (punctuation 2086 . 2087) (symbol 2074 . 2086) (punctuation 2070 . 2071) (symbol 2055 . 2070) (punctuation 2051 . 2052) (symbol 2038 . 2051) (punctuation 2034 . 2035) (symbol 2026 . 2034) (punctuation 2022 . 2023) (symbol 2014 . 2022) (ENUM 1960 . 1964) (semantic-list 1584 . 1587) (punctuation 1583 . 1584) (symbol 1575 . 1583) (punctuation 1574 . 1575) (symbol 1563 . 1574) (number 1585 . 1586) (punctuation 2086 . 2087) (symbol 2074 . 2086) (punctuation 2070 . 2071) (symbol 2055 . 2070) (punctuation 2051 . 2052) (symbol 2038 . 2051) (punctuation 2034 . 2035) (symbol 2026 . 2034) (punctuation 2022 . 2023) (symbol 2014 . 2022) (ENUM 1960 . 1964))
+      :lexical-table 
+        '(("BLKSIZE" . ((number "65536" 1903 . 1908)))
+          ("SHA256" . 
+              ((symbol "static_cast" 1650 . 1661) (punctuation "<" 1661 . 1662) (symbol "uint32_t" 1662 . 1670) (punctuation ">" 1670 . 1671) (semantic-list "(256)" 1671 . 1676)))
+          ("INTEGRITYALG" . ((string "\"SHA2-256\"" 1876 . 1886)))
+          ("FIRSTBLOCK" . 
+              ((symbol "static_cast" 1563 . 1574) (punctuation "<" 1574 . 1575) (symbol "uint32_t" 1575 . 1583) (punctuation ">" 1583 . 1584) (semantic-list "(1)" 1584 . 1587)))
+          ("ARA_UCM_PKGMGR_PACKAGE_VALIDATION_H_")
+          ("ADDRESSBLOCKS" . 
+              ((symbol "static_cast" 1610 . 1621) (punctuation "<" 1621 . 1622) (symbol "uint32_t" 1622 . 1630) (punctuation ">" 1630 . 1631) (semantic-list "(3)" 1631 . 1634)))
+          ("AUTHALG" . ((string "\"VER/RSA,SHA2-256/PKCS1.v1_5\"" 1739 . 1768)))
+          ("SHA128" . 
+              ((symbol "static_cast" 1692 . 1703) (punctuation "<" 1703 . 1704) (symbol "uint32_t" 1704 . 1712) (punctuation ">" 1712 . 1713) (semantic-list "(128)" 1713 . 1718)))
+          )
+))
+  :file "!home!hyukmyeong!work!ICAS_Apps!Apps!source!autosar!avin!avin-ap!ucm!source!inc!service!skeleton!package_management!transfer!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

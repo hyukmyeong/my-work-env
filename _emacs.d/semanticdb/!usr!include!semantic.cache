@@ -12259,6 +12259,481 @@
           ("M_LN2l" . ((number "0." 26301 . 26303) (number "693147180559945309417232121458176568L" 26303 . 26340)))
           ("FP_NORMAL" . ((number "4" 18710 . 18711)))
           )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("_SIGNAL_H" variable (:constant-flag t) nil [877 886])
+            ("features.h" include (:system-flag t) nil [888 909])
+            ("SIGRTMAX" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [12159 12167])
+            ("SIGRTMIN" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [12106 12114])
+            ("bits/sigthread.h" include
+               (:typemodifiers ("extern" "\"C\"")
+                :system-flag t)
+                (reparse-symbol extern-c-contents) [11678 11706])
+            ("bits/pthreadtypes.h" include
+               (:typemodifiers ("extern" "\"C\"")
+                :system-flag t)
+                (reparse-symbol extern-c-contents) [11646 11677])
+            ("bits/types/struct_sigstack.h" include
+               (:typemodifiers ("extern" "\"C\"")
+                :system-flag t)
+                (reparse-symbol extern-c-contents) [10550 10590])
+            ("sigaltstack" function
+               (:type "int"
+                :arguments 
+                  ( ("__ss" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("stack_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10337 10368])
+                    ("__oss" variable
+                       (:pointer 1
+                        :type ("stack_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10372 10398]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [10313 10407])
+            ("bits/ss_flags.h" include
+               (:typemodifiers ("extern" "\"C\"")
+                :system-flag t)
+                (reparse-symbol extern-c-contents) [10173 10200])
+            ("bits/sigstack.h" include
+               (:typemodifiers ("extern" "\"C\"")
+                :system-flag t)
+                (reparse-symbol extern-c-contents) [10145 10172])
+            ("siginterrupt" function
+               (:type "int"
+                :arguments 
+                  ( ("__sig" variable (:type "int") (reparse-symbol arg-sub-list) [10107 10117])
+                    ("__interrupt" variable (:type "int") (reparse-symbol arg-sub-list) [10118 10134]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [10082 10143])
+            ("sys/ucontext.h" include
+               (:typemodifiers ("extern" "\"C\"")
+                :system-flag t)
+                (reparse-symbol extern-c-contents) [9760 9787])
+            ("bits/types/stack_t.h" include
+               (:typemodifiers ("extern" "\"C\"")
+                :system-flag t)
+                (reparse-symbol extern-c-contents) [9621 9653])
+            ("stddef.h" include
+               (:typemodifiers ("extern" "\"C\"")
+                :system-flag t)
+                (reparse-symbol extern-c-contents) [9599 9619])
+            ("__need_size_t" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [9585 9598])
+            ("sigreturn" function
+               (:type "int"
+                :arguments 
+                  ( ("__scp" variable
+                       (:pointer 1
+                        :type ("sigcontext" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [9455 9480]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [9433 9489])
+            ("bits/sigcontext.h" include
+               (:typemodifiers ("extern" "\"C\"")
+                :system-flag t)
+                (reparse-symbol extern-c-contents) [9363 9392])
+            ("sys_siglist" variable
+               (:type "char"
+                :constant-flag t
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :dereference 1
+                :pointer 1)
+                (reparse-symbol extern-c-contents) [9246 9290])
+            ("_sys_siglist" variable
+               (:type "char"
+                :constant-flag t
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :dereference 1
+                :pointer 1)
+                (reparse-symbol extern-c-contents) [9200 9245])
+            ("sigpending" function
+               (:type "int"
+                :arguments 
+                  ( ("__set" variable
+                       (:pointer 1
+                        :type ("sigset_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7782 7798]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [7759 7823])
+            ("sigaction" function
+               (:type "int"
+                :arguments 
+                  ( ("__sig" variable (:type "int") (reparse-symbol arg-sub-list) [7575 7585])
+                    ("__act" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("sigaction" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [7586 7627])
+                    ("__oact" variable
+                       (:pointer 1
+                        :type ("sigaction" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [7636 7672]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [7553 7681])
+            ("sigsuspend" function
+               (:type "int"
+                :arguments 
+                  ( ("__set" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("sigset_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7463 7485]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [7440 7502])
+            ("sigprocmask" function
+               (:type "int"
+                :arguments 
+                  ( ("__how" variable (:type "int") (reparse-symbol arg-sub-list) [7148 7158])
+                    ("__set" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("sigset_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7159 7192])
+                    ("__oset" variable
+                       (:pointer 1
+                        :type ("sigset_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7196 7224]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [7124 7233])
+            ("bits/sigaction.h" include
+               (:typemodifiers ("extern" "\"C\"")
+                :system-flag t)
+                (reparse-symbol extern-c-contents) [7041 7069])
+            ("sigorset" function
+               (:type "int"
+                :arguments 
+                  ( ("__set" variable
+                       (:pointer 1
+                        :type ("sigset_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6811 6827])
+                    ("__left" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("sigset_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6828 6851])
+                    ("__right" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("sigset_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6859 6883]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [6790 6914])
+            ("sigandset" function
+               (:type "int"
+                :arguments 
+                  ( ("__set" variable
+                       (:pointer 1
+                        :type ("sigset_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6606 6622])
+                    ("__left" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("sigset_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6623 6646])
+                    ("__right" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("sigset_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6655 6679]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [6584 6710])
+            ("sigisemptyset" function
+               (:type "int"
+                :arguments 
+                  ( ("__set" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("sigset_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6456 6478]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [6430 6503])
+            ("sigismember" function
+               (:type "int"
+                :arguments 
+                  ( ("__set" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("sigset_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6294 6316])
+                    ("__signo" variable (:type "int") (reparse-symbol arg-sub-list) [6317 6329]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [6270 6359])
+            ("sigdelset" function
+               (:type "int"
+                :arguments 
+                  ( ("__set" variable
+                       (:pointer 1
+                        :type ("sigset_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6168 6184])
+                    ("__signo" variable (:type "int") (reparse-symbol arg-sub-list) [6185 6197]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [6146 6222])
+            ("sigaddset" function
+               (:type "int"
+                :arguments 
+                  ( ("__set" variable
+                       (:pointer 1
+                        :type ("sigset_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6060 6076])
+                    ("__signo" variable (:type "int") (reparse-symbol arg-sub-list) [6077 6089]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [6038 6114])
+            ("sigfillset" function
+               (:type "int"
+                :arguments 
+                  ( ("__set" variable
+                       (:pointer 1
+                        :type ("sigset_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5970 5986]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [5947 6011])
+            ("sigemptyset" function
+               (:type "int"
+                :arguments 
+                  ( ("__set" variable
+                       (:pointer 1
+                        :type ("sigset_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5873 5889]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [5849 5914])
+            ("sig_t" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :typedef ("__sighandler_t" type (:type "class") nil nil))
+                (reparse-symbol extern-c-contents) [5756 5785])
+            ("sighandler_t" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :typedef ("__sighandler_t" type (:type "class") nil nil))
+                (reparse-symbol extern-c-contents) [5646 5682])
+            ("NSIG" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [5610 5614])
+            ("siggetmask" function
+               (:type "int"
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [5517 5522]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [5494 5556])
+            ("sigsetmask" function
+               (:type "int"
+                :arguments 
+                  ( ("__mask" variable (:type "int") (reparse-symbol arg-sub-list) [5401 5412]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [5378 5446])
+            ("sigblock" function
+               (:type "int"
+                :arguments 
+                  ( ("__mask" variable (:type "int") (reparse-symbol arg-sub-list) [5259 5270]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [5238 5304])
+            ("sigmask" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [5143 5150])
+            ("__asm__" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [4562 4589])
+            ("psiginfo" function
+               (:type "void"
+                :arguments 
+                  ( ("__pinfo" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("siginfo_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4126 4151])
+                    ("__s" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [4152 4168]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [4104 4169])
+            ("psignal" function
+               (:type "void"
+                :arguments 
+                  ( ("__sig" variable (:type "int") (reparse-symbol arg-sub-list) [3995 4005])
+                    ("__s" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [4006 4022]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [3974 4023])
+            ("gsignal" function
+               (:type "int"
+                :arguments 
+                  ( ("__sig" variable (:type "int") (reparse-symbol arg-sub-list) [3833 3843]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [3813 3852])
+            ("ssignal" function
+               (:type ("__sighandler_t" type (:type "class") nil nil)
+                :arguments 
+                  ( ("__sig" variable (:type "int") (reparse-symbol arg-sub-list) [3762 3772])
+                    ("__handler" variable (:type ("__sighandler_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3773 3798]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [3731 3812])
+            ("raise" function
+               (:type "int"
+                :arguments 
+                  ( ("__sig" variable (:type "int") (reparse-symbol arg-sub-list) [3653 3663]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [3635 3672])
+            ("killpg" function
+               (:type "int"
+                :arguments 
+                  ( ("__pgrp" variable (:type ("__pid_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3506 3521])
+                    ("__sig" variable (:type "int") (reparse-symbol arg-sub-list) [3522 3532]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [3487 3541])
+            ("kill" function
+               (:type "int"
+                :arguments 
+                  ( ("__pid" variable (:type ("__pid_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3226 3240])
+                    ("__sig" variable (:type "int") (reparse-symbol arg-sub-list) [3241 3251]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [3209 3260])
+            ("signal" function
+               (:type ("__sighandler_t" type (:type "class") nil nil)
+                :arguments 
+                  ( ("__sig" variable (:type "int") (reparse-symbol arg-sub-list) [2388 2398])
+                    ("__handler" variable (:type ("__sighandler_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2399 2424]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [2358 2438])
+            ("sysv_signal" function
+               (:type ("__sighandler_t" type (:type "class") nil nil)
+                :arguments 
+                  ( ("__sig" variable (:type "int") (reparse-symbol arg-sub-list) [2131 2141])
+                    ("__handler" variable (:type ("__sighandler_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2142 2167]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [2096 2181])
+            ("__sysv_signal" function
+               (:type ("__sighandler_t" type (:type "class") nil nil)
+                :arguments 
+                  ( ("__sig" variable (:type "int") (reparse-symbol arg-sub-list) [2028 2038])
+                    ("__handler" variable (:type ("__sighandler_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2039 2064]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [1991 2078])
+            ("__sighandler_t" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("" variable (:type "int") (reparse-symbol arg-sub-list) [1825 1829]))                  
+                :function-pointer t
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [1801 1830])
+            ("bits/types/sigval_t.h" include
+               (:typemodifiers ("extern" "\"C\"")
+                :system-flag t)
+                (reparse-symbol extern-c-contents) [1613 1646])
+            ("bits/siginfo-consts.h" include
+               (:typemodifiers ("extern" "\"C\"")
+                :system-flag t)
+                (reparse-symbol extern-c-contents) [1553 1586])
+            ("bits/types/siginfo_t.h" include
+               (:typemodifiers ("extern" "\"C\"")
+                :system-flag t)
+                (reparse-symbol extern-c-contents) [1518 1552])
+            ("__uid_t_defined" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [1294 1309])
+            ("uid_t" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :typedef ("__uid_t" type (:type "class") nil nil))
+                (reparse-symbol extern-c-contents) [1261 1283])
+            ("__pid_t_defined" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [1186 1201])
+            ("pid_t" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :typedef ("__pid_t" type (:type "class") nil nil))
+                (reparse-symbol extern-c-contents) [1153 1175])
+            ("bits/types/sigset_t.h" include
+               (:typemodifiers ("extern" "\"C\"")
+                :system-flag t)
+                (reparse-symbol extern-c-contents) [1038 1070])
+            ("bits/types/sig_atomic_t.h" include
+               (:typemodifiers ("extern" "\"C\"")
+                :system-flag t)
+                (reparse-symbol extern-c-contents) [976 1012])
+            ("bits/signum.h" include
+               (:typemodifiers ("extern" "\"C\"")
+                :system-flag t)
+                (reparse-symbol extern-c-contents) [950 974])
+            ("bits/types.h" include
+               (:typemodifiers ("extern" "\"C\"")
+                :system-flag t)
+                (reparse-symbol extern-c-contents) [926 949]))          
+      :file "signal.h"
+      :pointmax 12244
+      :fsize 12243
+      :lastmodtime '(23253 1052 0 0)
+      :unmatched-syntax '((punctuation 12095 . 12096) (VOID 12082 . 12086) (symbol 12057 . 12080) (INT 12053 . 12056) (EXTERN 12046 . 12052) (punctuation 11971 . 11972) (VOID 11958 . 11962) (symbol 11933 . 11956) (INT 11929 . 11932) (EXTERN 11922 . 11928) (punctuation 11486 . 11487) (symbol 11471 . 11477) (symbol 11456 . 11470) (punctuation 11454 . 11455) (symbol 11449 . 11454) (INT 11445 . 11448) (symbol 11437 . 11443) (symbol 11422 . 11436) (EXTERN 11415 . 11421) (punctuation 11377 . 11378) (symbol 11363 . 11368) (INT 11359 . 11362) (symbol 11348 . 11357) (INT 11344 . 11347) (EXTERN 11337 . 11343) (punctuation 11288 . 11289) (symbol 11274 . 11279) (INT 11270 . 11273) (symbol 11260 . 11268) (INT 11256 . 11259) (EXTERN 11249 . 11255) (punctuation 11189 . 11190) (symbol 11175 . 11180) (INT 11171 . 11174) (symbol 11162 . 11169) (INT 11158 . 11161) (EXTERN 11151 . 11157) (punctuation 11009 . 11010) (symbol 10965 . 10970) (punctuation 10964 . 10965) (symbol 10955 . 10963) (STRUCT 10948 . 10954) (punctuation 10946 . 10947) (symbol 10942 . 10946) (punctuation 10941 . 10942) (symbol 10932 . 10940) (STRUCT 10925 . 10931) (symbol 10915 . 10923) (INT 10911 . 10914) (EXTERN 10904 . 10910) (number "1" 10679 . 10689) (symbol 10671 . 10678) (punctuation 10669 . 10670) (punctuation 10668 . 10669) (number "1" 10538 . 10548) (symbol 10530 . 10537) (punctuation 10528 . 10529) (punctuation 10527 . 10528) (string 4571 . 4587) (semantic-list 4550 . 4561) (symbol 4541 . 4549) (INT 4537 . 4540) (EXTERN 4530 . 4536) (TYPEDEF 1793 . 1800))
+      :lexical-table 
+        '(("__pid_t_defined")
+          ("__uid_t_defined")
+          ("SIGRTMAX" . ((semantic-list "(__libc_current_sigrtmax ())" 12175 . 12203)))
+          ("SIGRTMIN" . ((semantic-list "(__libc_current_sigrtmin ())" 12122 . 12150)))
+          ("__need_size_t")
+          ("sigmask" (spp-arg-list ("sig") 5150 . 5155) . ((semantic-list "((int)(1u << ((sig) - 1)))" 5156 . 5182)))
+          ("_SIGNAL_H")
+          ("NSIG" . ((symbol "_NSIG" 5615 . 5620)))
+          )
 ))
   :file "!usr!include!semantic.cache"
   :semantic-tag-version "2.0"

@@ -2,6 +2,10 @@
 (add-to-list 'package-archives
          '("melpa" . "http://melpa.org/packages/") t)
 
+;(require 'package)
+;(add-to-list 'package-archives
+;             '("melpa" . "http://melpa.milkbox.net/packages/") t)
+
 (package-initialize)
 
 (when (not package-archive-contents)
@@ -36,10 +40,10 @@
 (require 'helm-gtags)
 ;; Enable helm-gtags-mode
 (add-hook 'dired-mode-hook 'helm-gtags-mode)
-(add-hook 'eshell-mode-hook 'helm-gtags-mode)
-(add-hook 'c-mode-hook 'helm-gtags-mode)
-(add-hook 'c++-mode-hook 'helm-gtags-mode)
-(add-hook 'asm-mode-hook 'helm-gtags-mode)
+;;(add-hook 'eshell-mode-hook 'helm-gtags-mode)
+;;(add-hook 'c-mode-hook 'helm-gtags-mode)
+;;(add-hook 'c++-mode-hook 'helm-gtags-mode)
+;;(add-hook 'asm-mode-hook 'helm-gtags-mode)
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; mikki start				              ;;
@@ -69,9 +73,9 @@
 ; helm-projectile-find-file은 어디에서 실행했든 .git을 인식하고
 ; projectile-find-file은 실행한 폴더에서만 파일을 찾아줌
 (global-set-key (kbd "M-p p") 'projectile-dired)
-(global-set-key (kbd "M-p f") 'projectile-find-file)
-(global-set-key (kbd "M-p d") 'projectile-switch-project)
-(global-set-key (kbd "M-p s") 'sr-speedbar-toggle)
+(global-set-key (kbd "M-p f") 'project-find-file)
+(global-set-key (kbd "M-p s") 'projectile-switch-project)
+(global-set-key (kbd "M-p b") 'sr-speedbar-toggle)
 
 ;(require 'sr-speedbar)
 (setq speedbar-show-unknown-files t)
@@ -113,13 +117,14 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; 2. helm cscope            ;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;; cscope를 파일이 있는 폴더에 직접 만들어버리기 때문에 전역적인 것을 사용하지 못 함
 ;; ~/.emacs.d/helm-cscope.el 파일 하단에 (add-to-list 'load-path ".") 를 추가해야 함
 (require 'xcscope)
 (require 'helm-cscope)
+
 ;; Enable helm-cscope-mode
 (add-hook 'c-mode-hook 'helm-cscope-mode)
 (add-hook 'c++-mode-hook 'helm-cscope-mode)
+
 ;; Set key bindings
 (eval-after-load "helm-cscope"
   '(progn
@@ -132,26 +137,26 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; 2. evil 	             ;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;(add-to-list 'load-path "~/.emacs.d/evil")
-;(require 'evil)
-;(evil-mode 1)
+(add-to-list 'load-path "~/.emacs.d/evil")
+(require 'evil)
+(evil-mode 1)
 
-;(defun evil-keyboard-quit ()
-;  "Keyboard quit and force normal state."
-;  (interactive)
-;  (and evil-mode (evil-force-normal-state))
-;  (keyboard-quit))
+(defun evil-keyboard-quit ()
+  "Keyboard quit and force normal state."
+  (interactive)
+  (and evil-mode (evil-force-normal-state))
+  (keyboard-quit))
 
-;(define-key evil-normal-state-map   (kbd "C-g") #'evil-keyboard-quit)
-;(define-key evil-motion-state-map   (kbd "C-g") #'evil-keyboard-quit)
-;(define-key evil-insert-state-map   (kbd "C-g") #'evil-keyboard-quit)
-;(define-key evil-window-map         (kbd "C-g") #'evil-keyboard-quit)
-;(define-key evil-operator-state-map (kbd "C-g") #'evil-keyboard-quit)
+(define-key evil-normal-state-map   (kbd "C-g") #'evil-keyboard-quit)
+(define-key evil-motion-state-map   (kbd "C-g") #'evil-keyboard-quit)
+(define-key evil-insert-state-map   (kbd "C-g") #'evil-keyboard-quit)
+(define-key evil-window-map         (kbd "C-g") #'evil-keyboard-quit)
+(define-key evil-operator-state-map (kbd "C-g") #'evil-keyboard-quit)
 
 ;; evil을 사용하면 helm의 M-. 가 동작하지 않기 때문에 아래 내용을 주석처리함
 ;; 위치 : ~/.emacs.d/evil/evil-maps.el
-;;(define-key evil-normal-state-map (kbd "C-.") 'evil-repeat-pop)
-;;(define-key evil-normal-state-map (kbd "M-.") 'evil-repeat-pop-next)
+;(define-key evil-normal-state-map (kbd "C-.") 'evil-repeat-pop)
+;(define-key evil-normal-state-map (kbd "M-.") 'evil-repeat-pop-next)
 
 ; 윈도우 이동 : shift + arrow
 ;(windmove-default-keybindings)
@@ -169,6 +174,14 @@ scroll-down-aggressively 0.01)
 ;; 테마 뭘로?
 ;doom-nord-light
 ;(setq doom-theme 'doom-nord-light)
+;(setq default-frame-alist '((font . "Source Code Pro-10")))
+;(setq default-frame-alist '((font . "Droid Sans Mono-10")))
+;(add-to-list 'default-frame-alist '(font . "DejaVu Sans Mono-10"))
+;(set-frame-font "Consolas-14" t t))
+;(add-to-list 'default-frame-alist '(font . "DejaVu Sans Mono-10"))
+;(text-scale-decrease 2)  ; 2 steps smaller
+(set-face-attribute 'default nil :height 96)
+(set-frame-font "DejaVu Sans Mono" t t))
 
 ;; block and indent
 (global-set-key (kbd "C->") 'indent-rigidly-right-to-tab-stop)
@@ -189,9 +202,15 @@ scroll-down-aggressively 0.01)
 ;  (setq indent-tabs-mode nil) ;; no tab
 ;))
 
+(global-set-key (kbd "<S-up>") 'shrink-window)
+(global-set-key (kbd "<S-down>") 'enlarge-window)
+(global-set-key (kbd "<S-left>") 'shrink-window-horizontally)
+(global-set-key (kbd "<S-right>") 'enlarge-window-horizontally)
 
-;; other options
-(show-paren-mode 1)
+; always show line numbers
+(when (version<= "26.0.50" emacs-version )
+ (global-display-line-numbers-mode))
+;(global-linum-mode 1)
 
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
@@ -229,12 +248,7 @@ scroll-down-aggressively 0.01)
 ;(load-file (concat user-emacs-directory "/cedet/cedet-devel-load.el"))
 ;(load-file (concat user-emacs-directory "cedet/contrib/cedet-contrib-load.el"))
 
-(require 'package)
-(add-to-list 'package-archives
-             '("melpa" . "http://melpa.milkbox.net/packages/") t)
-(package-initialize)
-
-(setq
+(set
  ;; use gdb-many-windows by default
  gdb-many-windows t
 
