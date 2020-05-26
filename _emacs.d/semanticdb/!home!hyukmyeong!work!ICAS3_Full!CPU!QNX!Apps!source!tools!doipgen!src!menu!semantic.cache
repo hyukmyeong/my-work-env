@@ -1,0 +1,176 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("_POPUPMENU_H_" variable (:constant-flag t) nil [31 44])
+            ("vector" include (:system-flag t) nil [46 63])
+            ("menu/BaseMenu.h" include nil nil [64 90])
+            ("std::shared_ptr" variable (:type "int") nil [112 138])
+            ("PopupMenu" type
+               (:superclasses 
+                  ( ("BaseMenu" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [176 183])
+                    ("PopupMenu" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("s" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [198 212]))                          
+                        :type ("PopupMenu" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [188 228])
+                    ("PopupMenu" function
+                       (:destructor-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [233 255])
+                    ("addMenu" function
+                       (:arguments 
+                          ( ("p" variable (:type ("BaseMenuPtr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [274 288]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [261 310])
+                    ("command" function (:type "void") (reparse-symbol classsubparts) [315 992])
+                    ("getSubMenu" function
+                       (:arguments 
+                          ( ("idx" variable (:type "int") (reparse-symbol arg-sub-list) [1020 1028]))                          
+                        :type ("BaseMenuPtr" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [997 1063])
+                    ("private" label nil (reparse-symbol classsubparts) [1064 1072])
+                    ("menus" variable (:type ("std::vector" type
+                         (:template-specifier 
+                            ( ("BaseMenuPtr" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [1077 1108]))                  
+                :type "class")
+                nil [140 1111]))          
+      :file "PopupMenu.h"
+      :pointmax 1120
+      :fsize 1155
+      :lastmodtime '(24260 49053 565265 463000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("_POPUPMENU_H_")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("__MENUITEM_H_" variable (:constant-flag t) nil [31 44])
+            ("iostream" include (:system-flag t) nil [46 65])
+            ("string" include (:system-flag t) nil [66 83])
+            ("functional" include (:system-flag t) nil [84 105])
+            ("menu/BaseMenu.h" include nil nil [106 132])
+            ("MenuItem" type
+               (:superclasses 
+                  ( ("BaseMenu" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("id" variable (:type "int") (reparse-symbol classsubparts) [173 180])
+                    ("public" label nil (reparse-symbol classsubparts) [181 188])
+                    ("MenuItem" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("s" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [202 216])
+                            ("n" variable (:type "int") (reparse-symbol arg-sub-list) [217 223]))                          
+                        :type ("MenuItem" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [193 247])
+                    ("MenuItem" function
+                       (:destructor-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [252 273])
+                    ("command" function (:type "void") (reparse-symbol classsubparts) [279 417])
+                    ("setFunction" function
+                       (:arguments 
+                          ( ("" variable (:type ("std::function" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [439 453])
+                            ("" variable (:type "void") (reparse-symbol arg-sub-list) [453 459])
+                            ("" variable (:type ("f_" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [461 464]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [422 476])
+                    ("private" label nil (reparse-symbol classsubparts) [478 486])
+                    ("f" variable (:type "int") (reparse-symbol classsubparts) [513 515]))                  
+                :type "class")
+                nil [134 518]))          
+      :file "MenuItem.h"
+      :pointmax 527
+      :fsize 526
+      :lastmodtime '(24260 49053 565265 463000)
+      :unmatched-syntax '((punctuation 511 . 512) (semantic-list 509 . 511) (VOID 505 . 509) (punctuation 504 . 505) (symbol 496 . 504) (punctuation 495 . 496) (punctuation 494 . 495) (symbol 491 . 494) (punctuation 459 . 460) (semantic-list 457 . 459) (punctuation 452 . 453) (punctuation 273 . 274))
+      :lexical-table 
+        '(("__MENUITEM_H_")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("__BASEMENU_H_" variable (:constant-flag t) nil [31 44])
+            ("string" include (:system-flag t) nil [46 63])
+            ("memory" include (:system-flag t) nil [64 81])
+            ("iostream" include (:system-flag t) nil [82 101])
+            ("BaseMenu" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [120 127])
+                    ("BaseMenu" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("s" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [141 155]))                          
+                        :type ("BaseMenu" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [132 169])
+                    ("BaseMenu" function
+                       (:destructor-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [174 195])
+                    ("getTitle" function
+                       (:methodconst-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [200 244])
+                    ("getSubMenu" function
+                       (:typemodifiers ("virtual")
+                        :arguments 
+                          ( ("idx" variable (:type "int") (reparse-symbol arg-sub-list) [294 302]))                          
+                        :type ("std::shared_ptr" type
+                             (:template-specifier 
+                                ( ("BaseMenu" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [249 321])
+                    ("addMenu" function
+                       (:typemodifiers ("virtual")
+                        :arguments 
+                          ( ("p" variable (:type ("std::shared_ptr" type
+                                 (:template-specifier 
+                                    ( ("BaseMenu" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol arg-sub-list) [347 375]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [326 426])
+                    ("command" function
+                       (:pure-virtual-flag t
+                        :prototype-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [431 458])
+                    ("protected" label nil (reparse-symbol classsubparts) [459 469])
+                    ("title" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [474 492]))                  
+                :type "class")
+                nil [103 495]))          
+      :file "BaseMenu.h"
+      :pointmax 505
+      :fsize 504
+      :lastmodtime '(24260 49053 565265 463000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("__BASEMENU_H_")
+          )
+))
+  :file "!home!hyukmyeong!work!ICAS3_Full!CPU!QNX!Apps!source!tools!doipgen!src!menu!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

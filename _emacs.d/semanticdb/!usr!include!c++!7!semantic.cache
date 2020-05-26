@@ -16269,7 +16269,152 @@
     (semanticdb-table "semanticdb-table"
       :file "unordered_map"
       :fsize 1857
-      :lastmodtime '(24039 49637 0 0)))
+      :lastmodtime '(24039 49637 0 0))
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("bits/c++config.h" include (:system-flag t) nil [1562 1589])
+            ("string.h" include (:system-flag t) nil [1590 1609])
+            ("_GLIBCXX_CSTRING" variable (:constant-flag t) nil [1644 1660])
+            ("std" type
+               (:members 
+                  ( ("memchr" variable (:type "int") (reparse-symbol namespacesubparts) [2149 2156])
+                    ("memcmp" variable (:type "int") (reparse-symbol namespacesubparts) [2167 2174])
+                    ("memcpy" variable (:type "int") (reparse-symbol namespacesubparts) [2185 2192])
+                    ("memmove" variable (:type "int") (reparse-symbol namespacesubparts) [2203 2211])
+                    ("memset" variable (:type "int") (reparse-symbol namespacesubparts) [2222 2229])
+                    ("strcat" variable (:type "int") (reparse-symbol namespacesubparts) [2240 2247])
+                    ("strcmp" variable (:type "int") (reparse-symbol namespacesubparts) [2258 2265])
+                    ("strcoll" variable (:type "int") (reparse-symbol namespacesubparts) [2276 2284])
+                    ("strcpy" variable (:type "int") (reparse-symbol namespacesubparts) [2295 2302])
+                    ("strcspn" variable (:type "int") (reparse-symbol namespacesubparts) [2313 2321])
+                    ("strerror" variable (:type "int") (reparse-symbol namespacesubparts) [2332 2341])
+                    ("strlen" variable (:type "int") (reparse-symbol namespacesubparts) [2352 2359])
+                    ("strncat" variable (:type "int") (reparse-symbol namespacesubparts) [2370 2378])
+                    ("strncmp" variable (:type "int") (reparse-symbol namespacesubparts) [2389 2397])
+                    ("strncpy" variable (:type "int") (reparse-symbol namespacesubparts) [2408 2416])
+                    ("strspn" variable (:type "int") (reparse-symbol namespacesubparts) [2427 2434])
+                    ("strtok" variable (:type "int") (reparse-symbol namespacesubparts) [2445 2452])
+                    ("strxfrm" variable (:type "int") (reparse-symbol namespacesubparts) [2463 2471])
+                    ("strchr" variable (:type "int") (reparse-symbol namespacesubparts) [2482 2489])
+                    ("strpbrk" variable (:type "int") (reparse-symbol namespacesubparts) [2500 2508])
+                    ("strrchr" variable (:type "int") (reparse-symbol namespacesubparts) [2519 2527])
+                    ("strstr" variable (:type "int") (reparse-symbol namespacesubparts) [2538 2545])
+                    ("memchr" function
+                       (:pointer 1
+                        :typemodifiers ("inline")
+                        :arguments 
+                          ( ("__s" variable
+                               (:pointer 1
+                                :type "void")
+                                (reparse-symbol arg-sub-list) [2612 2622])
+                            ("__c" variable (:type "int") (reparse-symbol arg-sub-list) [2623 2631])
+                            ("__n" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2632 2643]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [2590 2689])
+                    ("strchr" function
+                       (:pointer 1
+                        :typemodifiers ("inline")
+                        :arguments 
+                          ( ("__s" variable
+                               (:pointer 1
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [2715 2725])
+                            ("__n" variable (:type "int") (reparse-symbol arg-sub-list) [2726 2734]))                          
+                        :type "char")
+                        (reparse-symbol namespacesubparts) [2693 2775])
+                    ("strpbrk" function
+                       (:pointer 1
+                        :typemodifiers ("inline")
+                        :arguments 
+                          ( ("__s1" variable
+                               (:pointer 1
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [2802 2813])
+                            ("__s2" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [2814 2831]))                          
+                        :type "char")
+                        (reparse-symbol namespacesubparts) [2779 2875])
+                    ("strrchr" function
+                       (:pointer 1
+                        :typemodifiers ("inline")
+                        :arguments 
+                          ( ("__s" variable
+                               (:pointer 1
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [2902 2912])
+                            ("__n" variable (:type "int") (reparse-symbol arg-sub-list) [2913 2921]))                          
+                        :type "char")
+                        (reparse-symbol namespacesubparts) [2879 2963])
+                    ("strstr" function
+                       (:pointer 1
+                        :typemodifiers ("inline")
+                        :arguments 
+                          ( ("__s1" variable
+                               (:pointer 1
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [2989 3000])
+                            ("__s2" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [3001 3018]))                          
+                        :type "char")
+                        (reparse-symbol namespacesubparts) [2967 3061]))                  
+                :type "namespace")
+                nil [2060 3102]))          
+      :file "cstring"
+      :pointmax 3124
+      :fsize 3123
+      :lastmodtime '(24039 49637 0 0)
+      :unmatched-syntax '((symbol 3092 . 3100) (punctuation 2537 . 2538) (punctuation 2536 . 2537) (USING 2530 . 2535) (punctuation 2518 . 2519) (punctuation 2517 . 2518) (USING 2511 . 2516) (punctuation 2499 . 2500) (punctuation 2498 . 2499) (USING 2492 . 2497) (punctuation 2481 . 2482) (punctuation 2480 . 2481) (USING 2474 . 2479) (punctuation 2462 . 2463) (punctuation 2461 . 2462) (USING 2455 . 2460) (punctuation 2444 . 2445) (punctuation 2443 . 2444) (USING 2437 . 2442) (punctuation 2426 . 2427) (punctuation 2425 . 2426) (USING 2419 . 2424) (punctuation 2407 . 2408) (punctuation 2406 . 2407) (USING 2400 . 2405) (punctuation 2388 . 2389) (punctuation 2387 . 2388) (USING 2381 . 2386) (punctuation 2369 . 2370) (punctuation 2368 . 2369) (USING 2362 . 2367) (punctuation 2351 . 2352) (punctuation 2350 . 2351) (USING 2344 . 2349) (punctuation 2331 . 2332) (punctuation 2330 . 2331) (USING 2324 . 2329) (punctuation 2312 . 2313) (punctuation 2311 . 2312) (USING 2305 . 2310) (punctuation 2294 . 2295) (punctuation 2293 . 2294) (USING 2287 . 2292) (punctuation 2275 . 2276) (punctuation 2274 . 2275) (USING 2268 . 2273) (punctuation 2257 . 2258) (punctuation 2256 . 2257) (USING 2250 . 2255) (punctuation 2239 . 2240) (punctuation 2238 . 2239) (USING 2232 . 2237) (punctuation 2221 . 2222) (punctuation 2220 . 2221) (USING 2214 . 2219) (punctuation 2202 . 2203) (punctuation 2201 . 2202) (USING 2195 . 2200) (punctuation 2184 . 2185) (punctuation 2183 . 2184) (USING 2177 . 2182) (punctuation 2166 . 2167) (punctuation 2165 . 2166) (USING 2159 . 2164) (punctuation 2148 . 2149) (punctuation 2147 . 2148) (USING 2141 . 2146) (symbol 1547 . 1560) (symbol 1543 . 1546) (symbol 1536 . 1542) (punctuation 1535 . 1536))
+      :lexical-table 
+        '(("_GLIBCXX_CSTRING" . ((number "1" 1661 . 1662)))
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :file "cmath"
+      :fsize 48484
+      :lastmodtime '(24039 49637 0 0))
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("_GLIBCXX_LOCALE" variable (:constant-flag t) nil [1216 1231])
+            ("bits/localefwd.h" include (:system-flag t) nil [1262 1289])
+            ("bits/locale_classes.h" include (:system-flag t) nil [1290 1322])
+            ("bits/locale_facets.h" include (:system-flag t) nil [1323 1354])
+            ("bits/locale_facets_nonio.h" include (:system-flag t) nil [1355 1392]))          
+      :file "locale"
+      :pointmax 1489
+      :fsize 1488
+      :lastmodtime '(24039 49637 0 0)
+      :unmatched-syntax '((symbol 1247 . 1260) (symbol 1243 . 1246) (symbol 1236 . 1242) (punctuation 1235 . 1236))
+      :lexical-table 
+        '(("_GLIBCXX_LOCALE" . ((number "1" 1232 . 1233)))
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :file "iterator"
+      :fsize 2644
+      :lastmodtime '(24039 49637 0 0))
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("_GLIBCXX_FUNCTIONAL" variable (:constant-flag t) nil [1740 1759])
+            ("bits/c++config.h" include (:system-flag t) nil [1790 1817])
+            ("bits/stl_function.h" include (:system-flag t) nil [1818 1848]))          
+      :file "functional"
+      :pointmax 39571
+      :fsize 39570
+      :lastmodtime '(24039 49637 0 0)
+      :unmatched-syntax '((symbol 1775 . 1788) (symbol 1771 . 1774) (symbol 1764 . 1770) (punctuation 1763 . 1764))
+      :lexical-table 
+        '(("_GLIBCXX_FUNCTIONAL" . ((number "1" 1760 . 1761)))
+          )
+))
   :file "!usr!include!c++!7!semantic.cache"
   :semantic-tag-version "2.0"
   :semanticdb-version "2.2")

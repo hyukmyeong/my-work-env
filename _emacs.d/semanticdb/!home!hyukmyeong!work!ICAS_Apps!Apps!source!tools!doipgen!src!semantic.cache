@@ -1,0 +1,130 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("DoipSimulator.h" include nil nil [91 117])
+            ("DoipSimulator" function
+               (:constructor-flag t
+                :parent "DoipSimulator"
+                :arguments 
+                  ( ("s" variable
+                       (:default-value "\"../etc/config.json\""
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [148 184]))                  
+                :type ("DoipSimulator" type (:type "class") nil nil))
+                nil [119 349])
+            ("DoipSimulator" function
+               (:destructor-flag t
+                :parent "DoipSimulator"
+                :type "void")
+                nil [351 387])
+            ("Initialize" function
+               (:parent "DoipSimulator"
+                :type "void")
+                nil [389 1679])
+            ("Run" function
+               (:parent "DoipSimulator"
+                :type "void")
+                nil [1681 1806])
+            ("Shutdown" function
+               (:parent "DoipSimulator"
+                :type "void")
+                nil [1808 1919]))          
+      :file "DoipSimulator.cpp"
+      :pointmax 1921
+      :fsize 1984
+      :lastmodtime '(24251 50646 369789 407000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("SRC_DOIPSIMULATOR_H_" variable (:constant-flag t) nil [126 146])
+            ("vector" include (:system-flag t) nil [148 165])
+            ("memory" include (:system-flag t) nil [166 183])
+            ("string" include (:system-flag t) nil [184 201])
+            ("transport/ConnectionManager.h" include nil nil [202 242])
+            ("parser/PresetParser.h" include nil nil [243 275])
+            ("menu/PopupMenu.h" include nil nil [276 303])
+            ("menu/MenuItem.h" include nil nil [304 330])
+            ("std::shared_ptr" variable (:type "int") nil [352 378])
+            ("std::shared_ptr" variable (:type "int") nil [400 427])
+            ("std::shared_ptr" variable (:type "int") nil [448 474])
+            ("DoipSimulator" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [498 505])
+                    ("DoipSimulator" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("s" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [524 538]))                          
+                        :type ("DoipSimulator" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [510 539])
+                    ("DoipSimulator" function
+                       (:prototype-flag t
+                        :destructor-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [544 569])
+                    ("Initialize" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [574 592])
+                    ("Run" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [597 608])
+                    ("Shutdown" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [613 629])
+                    ("private" label nil (reparse-symbol classsubparts) [630 638])
+                    ("connection_manager_" variable (:type ("std::shared_ptr" type
+                         (:template-specifier 
+                            ( ("transport::ConnectionManager" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [643 709])
+                    ("preset_parser_" variable (:type ("std::unique_ptr" type
+                         (:template-specifier 
+                            ( ("parser::PresetParser" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [714 767])
+                    ("base_" variable (:type ("std::shared_ptr" type
+                         (:template-specifier 
+                            ( ("BaseMenu" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [772 804]))                  
+                :type "class")
+                nil [476 807]))          
+      :file "DoipSimulator.h"
+      :pointmax 843
+      :fsize 878
+      :lastmodtime '(24251 50646 369789 407000)
+      :unmatched-syntax '((USING 428 . 433) (USING 379 . 384) (USING 332 . 337))
+      :lexical-table 
+        '(("SRC_DOIPSIMULATOR_H_")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("iostream" include (:system-flag t) nil [78 97])
+            ("memory" include (:system-flag t) nil [98 115])
+            ("string" include (:system-flag t) nil [116 133])
+            ("DoipSimulator.h" include nil nil [134 160])
+            ("path" variable
+               (:default-value "\"../etc/config.json\""
+                :type ("std::string" type (:type "class") nil nil))
+                nil [162 202])
+            ("main" function (:type "int") nil [204 384]))          
+      :file "main.cpp"
+      :pointmax 385
+      :fsize 405
+      :lastmodtime '(24267 20345 763035 331000)
+      :unmatched-syntax nil))
+  :file "!home!hyukmyeong!work!ICAS_Apps!Apps!source!tools!doipgen!src!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

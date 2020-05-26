@@ -77,10 +77,12 @@
               scroll-down-aggressively 0.01)
 
 ;; window size
-(global-set-key (kbd "<S-up>") 'shrink-window)
-(global-set-key (kbd "<S-down>") 'enlarge-window)
-(global-set-key (kbd "<S-left>") 'shrink-window-horizontally)
-(global-set-key (kbd "<S-right>") 'enlarge-window-horizontally)
+;(global-set-key (kbd "C-w +") 'enlarge-window)
+;(global-set-key (kbd "C-w -") 'shrink-window)
+;(global-set-key (kbd "C-w >") 'enlarge-window-horizontally)
+;(global-set-key (kbd "C-w <") 'shrink-window-horizontally)
+
+;(define-key helm-gtags-mode-map (kbd "M-g >") 'helm-gtags-next-history)
 
 ;; always show line numbers
 (when (version<= "26.0.50" emacs-version )
@@ -176,6 +178,8 @@
 (define-key helm-gtags-mode-map (kbd "M-g ,") 'helm-gtags-pop-stack)
 (define-key helm-gtags-mode-map (kbd "M-g <") 'helm-gtags-previous-history)
 (define-key helm-gtags-mode-map (kbd "M-g >") 'helm-gtags-next-history)
+(define-key helm-gtags-mode-map (kbd "M-g >") 'helm-gtags-next-history)
+
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; mikki finish (키보드)

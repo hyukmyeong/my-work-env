@@ -2036,6 +2036,418 @@
           ("REG_RBP" . ((symbol "REG_RBP" 1792 . 1799)))
           ("REG_CR2" . ((symbol "REG_CR2" 2296 . 2303)))
           )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("_SYS_SOCKET_H" variable (:constant-flag t) nil [879 892])
+            ("features.h" include (:system-flag t) nil [896 917])
+            ("isfdtype" function
+               (:type "int"
+                :arguments 
+                  ( ("__fd" variable (:type "int") (reparse-symbol arg-sub-list) [9969 9978])
+                    ("__fdtype" variable (:type "int") (reparse-symbol arg-sub-list) [9979 9992]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [9948 10001])
+            ("sockatmark" function
+               (:type "int"
+                :arguments 
+                  ( ("__fd" variable (:type "int") (reparse-symbol arg-sub-list) [9718 9727]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [9695 9736])
+            ("shutdown" function
+               (:type "int"
+                :arguments 
+                  ( ("__fd" variable (:type "int") (reparse-symbol arg-sub-list) [9585 9594])
+                    ("__how" variable (:type "int") (reparse-symbol arg-sub-list) [9595 9605]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [9564 9614])
+            ("accept4" function
+               (:type "int"
+                :arguments 
+                  ( ("__fd" variable (:type "int") (reparse-symbol arg-sub-list) [9195 9204])
+                    ("__addr" variable
+                       (:pointer 1
+                        :type ("sockaddr" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [9205 9227])
+                    ("__addr_len" variable
+                       (:pointer 1
+                        :type ("socklen_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9234 9267])
+                    ("__flags" variable (:type "int") (reparse-symbol arg-sub-list) [9268 9280]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [9175 9281])
+            ("accept" function
+               (:type "int"
+                :arguments 
+                  ( ("__fd" variable (:type "int") (reparse-symbol arg-sub-list) [8921 8930])
+                    ("__addr" variable
+                       (:pointer 1
+                        :type ("sockaddr" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [8931 8953])
+                    ("__addr_len" variable
+                       (:pointer 1
+                        :type ("socklen_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8959 8992]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [8902 8993])
+            ("listen" function
+               (:type "int"
+                :arguments 
+                  ( ("__fd" variable (:type "int") (reparse-symbol arg-sub-list) [8484 8493])
+                    ("__n" variable (:type "int") (reparse-symbol arg-sub-list) [8494 8502]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [8465 8511])
+            ("setsockopt" function
+               (:type "int"
+                :arguments 
+                  ( ("__fd" variable (:type "int") (reparse-symbol arg-sub-list) [8197 8206])
+                    ("__level" variable (:type "int") (reparse-symbol arg-sub-list) [8207 8219])
+                    ("__optname" variable (:type "int") (reparse-symbol arg-sub-list) [8220 8234])
+                    ("__optval" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [8244 8265])
+                    ("__optlen" variable (:type ("socklen_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8266 8285]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [8174 8294])
+            ("getsockopt" function
+               (:type "int"
+                :arguments 
+                  ( ("__fd" variable (:type "int") (reparse-symbol arg-sub-list) [7903 7912])
+                    ("__level" variable (:type "int") (reparse-symbol arg-sub-list) [7913 7925])
+                    ("__optname" variable (:type "int") (reparse-symbol arg-sub-list) [7926 7940])
+                    ("__optval" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [7950 7976])
+                    ("__optlen" variable
+                       (:pointer 1
+                        :type ("socklen_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7986 8017]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [7880 8026])
+            ("recvmmsg" function
+               (:type "int"
+                :arguments 
+                  ( ("__fd" variable (:type "int") (reparse-symbol arg-sub-list) [7542 7551])
+                    ("__vmessages" variable
+                       (:pointer 1
+                        :type ("mmsghdr" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [7552 7580])
+                    ("__vlen" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [7588 7608])
+                    ("__flags" variable (:type "int") (reparse-symbol arg-sub-list) [7609 7621])
+                    ("__tmo" variable
+                       (:pointer 1
+                        :type ("timespec" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [7629 7652]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [7521 7653])
+            ("recvmsg" function
+               (:type ("ssize_t" type (:type "class") nil nil)
+                :arguments 
+                  ( ("__fd" variable (:type "int") (reparse-symbol arg-sub-list) [7231 7240])
+                    ("__message" variable
+                       (:pointer 1
+                        :type ("msghdr" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [7241 7266])
+                    ("__flags" variable (:type "int") (reparse-symbol arg-sub-list) [7267 7279]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [7207 7280])
+            ("sendmmsg" function
+               (:type "int"
+                :arguments 
+                  ( ("__fd" variable (:type "int") (reparse-symbol arg-sub-list) [6915 6924])
+                    ("__vmessages" variable
+                       (:pointer 1
+                        :type ("mmsghdr" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [6925 6953])
+                    ("__vlen" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [6961 6981])
+                    ("__flags" variable (:type "int") (reparse-symbol arg-sub-list) [6982 6994]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [6894 6995])
+            ("sendmsg" function
+               (:type ("ssize_t" type (:type "class") nil nil)
+                :arguments 
+                  ( ("__fd" variable (:type "int") (reparse-symbol arg-sub-list) [6591 6600])
+                    ("__message" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("msghdr" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [6601 6632])
+                    ("__flags" variable (:type "int") (reparse-symbol arg-sub-list) [6636 6648]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [6567 6649])
+            ("recvfrom" function
+               (:type ("ssize_t" type (:type "class") nil nil)
+                :arguments 
+                  ( ("__fd" variable (:type "int") (reparse-symbol arg-sub-list) [6247 6256])
+                    ("__buf" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [6257 6280])
+                    ("__n" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6281 6292])
+                    ("__flags" variable (:type "int") (reparse-symbol arg-sub-list) [6297 6309])
+                    ("__addr" variable
+                       (:pointer 1
+                        :type ("sockaddr" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [6310 6332])
+                    ("__addr_len" variable
+                       (:pointer 1
+                        :type ("socklen_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6337 6370]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [6222 6371])
+            ("sendto" function
+               (:type ("ssize_t" type (:type "class") nil nil)
+                :arguments 
+                  ( ("__fd" variable (:type "int") (reparse-symbol arg-sub-list) [5767 5776])
+                    ("__buf" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [5777 5795])
+                    ("__n" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5796 5807])
+                    ("__flags" variable (:type "int") (reparse-symbol arg-sub-list) [5817 5829])
+                    ("__addr" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("sockaddr" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [5830 5858])
+                    ("__addr_len" variable (:type ("socklen_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5868 5889]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [5744 5890])
+            ("recv" function
+               (:type ("ssize_t" type (:type "class") nil nil)
+                :arguments 
+                  ( ("__fd" variable (:type "int") (reparse-symbol arg-sub-list) [5467 5476])
+                    ("__buf" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [5477 5489])
+                    ("__n" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5490 5501])
+                    ("__flags" variable (:type "int") (reparse-symbol arg-sub-list) [5502 5514]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [5446 5515])
+            ("send" function
+               (:type ("ssize_t" type (:type "class") nil nil)
+                :arguments 
+                  ( ("__fd" variable (:type "int") (reparse-symbol arg-sub-list) [5216 5225])
+                    ("__buf" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [5226 5244])
+                    ("__n" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5245 5256])
+                    ("__flags" variable (:type "int") (reparse-symbol arg-sub-list) [5257 5269]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [5195 5270])
+            ("getpeername" function
+               (:type "int"
+                :arguments 
+                  ( ("__fd" variable (:type "int") (reparse-symbol arg-sub-list) [4962 4971])
+                    ("__addr" variable
+                       (:pointer 1
+                        :type ("sockaddr" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [4972 4994])
+                    ("__len" variable
+                       (:pointer 1
+                        :type ("socklen_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4998 5026]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [4938 5035])
+            ("connect" function
+               (:type "int"
+                :arguments 
+                  ( ("__fd" variable (:type "int") (reparse-symbol arg-sub-list) [4747 4756])
+                    ("__addr" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("sockaddr" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [4757 4785])
+                    ("__len" variable (:type ("socklen_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4786 4802]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [4727 4803])
+            ("getsockname" function
+               (:type "int"
+                :arguments 
+                  ( ("__fd" variable (:type "int") (reparse-symbol arg-sub-list) [4315 4324])
+                    ("__addr" variable
+                       (:pointer 1
+                        :type ("sockaddr" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [4325 4347])
+                    ("__len" variable
+                       (:pointer 1
+                        :type ("socklen_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4351 4379]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [4291 4388])
+            ("bind" function
+               (:type "int"
+                :arguments 
+                  ( ("__fd" variable (:type "int") (reparse-symbol arg-sub-list) [4150 4159])
+                    ("__addr" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("sockaddr" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [4160 4188])
+                    ("__len" variable (:type ("socklen_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4189 4205]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [4133 4219])
+            ("socketpair" function
+               (:type "int"
+                :arguments 
+                  ( ("__domain" variable (:type "int") (reparse-symbol arg-sub-list) [3982 3995])
+                    ("__type" variable (:type "int") (reparse-symbol arg-sub-list) [3996 4007])
+                    ("__protocol" variable (:type "int") (reparse-symbol arg-sub-list) [4008 4023])
+                    ("__fds" variable
+                       (:dereference 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [4033 4046]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [3959 4055])
+            ("socket" function
+               (:type "int"
+                :arguments 
+                  ( ("__domain" variable (:type "int") (reparse-symbol arg-sub-list) [3623 3636])
+                    ("__type" variable (:type "int") (reparse-symbol arg-sub-list) [3637 3648])
+                    ("__protocol" variable (:type "int") (reparse-symbol arg-sub-list) [3649 3664]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [3604 3673])
+            ("mmsghdr" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "struct"
+                :members 
+                  ( ("msg_hdr" variable (:type ("msghdr" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [3245 3267])
+                    ("msg_len" variable (:type "unsigned int") (reparse-symbol classsubparts) [3302 3323]))                  )
+                (reparse-symbol extern-c-contents) [3222 3390])
+            ("__CONST_SOCKADDR_ARG" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [2061 2081])
+            ("__SOCKADDR_ARG" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [2008 2022])
+            ("" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "enum"
+                :members 
+                  ( ("SHUT_RD" variable
+                       (:constant-flag t
+                        :default-value (1409 1410)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1399 1410])
+                    ("SHUT_WR" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1467 1475])
+                    ("SHUT_RDWR" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1534 1606]))                  )
+                (reparse-symbol extern-c-contents) [1390 1619])
+            ("bits/types/struct_osockaddr.h" include
+               (:typemodifiers ("extern" "\"C\"")
+                :system-flag t)
+                (reparse-symbol extern-c-contents) [1251 1292])
+            ("bits/socket.h" include
+               (:typemodifiers ("extern" "\"C\"")
+                :system-flag t)
+                (reparse-symbol extern-c-contents) [1207 1231])
+            ("stddef.h" include
+               (:typemodifiers ("extern" "\"C\"")
+                :system-flag t)
+                (reparse-symbol extern-c-contents) [993 1012])
+            ("__need_size_t" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [979 992])
+            ("bits/types/struct_iovec.h" include
+               (:typemodifiers ("extern" "\"C\"")
+                :system-flag t)
+                (reparse-symbol extern-c-contents) [934 970]))          
+      :file "socket.h"
+      :pointmax 10204
+      :fsize 10203
+      :lastmodtime '(23253 1052 0 0)
+      :unmatched-syntax '((spp-macro-def 1597 . 1606) (spp-macro-def 1515 . 1522) (spp-macro-def 1448 . 1455))
+      :lexical-table 
+        '(("SHUT_RD" . ((symbol "SHUT_RD" 1457 . 1464)))
+          ("_SYS_SOCKET_H" . ((number "1" 893 . 894)))
+          ("SHUT_WR" . ((symbol "SHUT_WR" 1524 . 1531)))
+          ("SHUT_RDWR" . ((symbol "SHUT_RDWR" 1607 . 1616)))
+          ("__need_size_t")
+          ("__CONST_SOCKADDR_ARG" . 
+              ((CONST "const" 2082 . 2087) (STRUCT "struct" 2088 . 2094) (symbol "sockaddr" 2095 . 2103) (punctuation "*" 2104 . 2105)))
+          ("__SOCKADDR_ARG" . 
+              ((STRUCT "struct" 2024 . 2030) (symbol "sockaddr" 2031 . 2039) (punctuation "*" 2040 . 2041) (symbol "__restrict" 2041 . 2051)))
+          )
 ))
   :file "!usr!include!x86_64-linux-gnu!sys!semantic.cache"
   :semantic-tag-version "2.0"

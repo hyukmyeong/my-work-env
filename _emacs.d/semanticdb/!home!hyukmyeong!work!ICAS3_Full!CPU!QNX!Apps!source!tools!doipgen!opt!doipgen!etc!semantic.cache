@@ -1,0 +1,16 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode js-mode
+      :tags nil
+      :file "config.json"
+      :pointmax 107
+      :fsize 106
+      :lastmodtime '(24267 25207 563267 160000)
+      :unmatched-syntax nil))
+  :file "!home!hyukmyeong!work!ICAS3_Full!CPU!QNX!Apps!source!tools!doipgen!opt!doipgen!etc!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

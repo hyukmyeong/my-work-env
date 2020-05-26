@@ -1,0 +1,171 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("SRC_TRANSPORT_CONNECTIONMANAGER_H_" variable (:constant-flag t) nil [144 178])
+            ("memory" include (:system-flag t) nil [180 197])
+            ("string" include (:system-flag t) nil [198 215])
+            ("parser/ConfigParser.h" include nil nil [216 248])
+            ("parser/Config.h" include nil nil [249 275])
+            ("transport/Connection.h" include nil nil [276 309])
+            ("report/Reporter.h" include nil nil [310 338])
+            ("report/TestResult.h" include nil nil [339 369])
+            ("transport" type
+               (:members 
+                  ( ("ConnectionManager" type
+                       (:members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [420 427])
+                            ("ConnectionManager" function
+                               (:prototype-flag t
+                                :constructor-flag t
+                                :arguments 
+                                  ( ("s" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [450 464]))                                  
+                                :type ("ConnectionManager" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [432 465])
+                            ("ConnectionManager" function
+                               (:prototype-flag t
+                                :destructor-flag t
+                                :typemodifiers ("virtual")
+                                :type "void")
+                                (reparse-symbol classsubparts) [470 499])
+                            ("Initialize" function
+                               (:prototype-flag t
+                                :type "void")
+                                (reparse-symbol classsubparts) [505 523])
+                            ("Run" function
+                               (:prototype-flag t
+                                :type "void")
+                                (reparse-symbol classsubparts) [528 539])
+                            ("Shutdown" function
+                               (:prototype-flag t
+                                :type "void")
+                                (reparse-symbol classsubparts) [544 560])
+                            ("SendMessageStream" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [588 600])
+                                    ("" variable (:type ("std::vector" type
+                                         (:template-specifier 
+                                            ( ("std::pair" type (:template-specifier 
+                                                ( ("std::string" type nil nil nil)
+                                                  ("std::string" type nil nil nil))                                                ) nil nil))                                            
+                                          :type "class")
+                                          nil nil)) (reparse-symbol arg-sub-list) [601 650]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [565 651])
+                            ("private" label nil (reparse-symbol classsubparts) [652 660])
+                            ("connection_" variable (:type ("std::unique_ptr" type
+                                 (:template-specifier 
+                                    ( ("Connection" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [665 705])
+                            ("config_parser_" variable (:type ("std::unique_ptr" type
+                                 (:template-specifier 
+                                    ( ("parser::ConfigParser" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [710 763])
+                            ("reporter_" variable (:type ("std::unique_ptr" type
+                                 (:template-specifier 
+                                    ( ("report::Reporter" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [768 812])
+                            ("address_" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [817 838])
+                            ("port_" variable (:type "int") (reparse-symbol classsubparts) [843 853]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [394 856]))                  
+                :type "namespace")
+                nil [371 859]))          
+      :file "ConnectionManager.h"
+      :pointmax 935
+      :fsize 974
+      :lastmodtime '(24251 50646 369789 407000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("SRC_TRANSPORT_CONNECTIONMANAGER_H_")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :file "Connection.h"
+      :fsize 2040
+      :lastmodtime '(24251 50646 369789 407000))
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("Connection.h" include nil nil [87 110])
+            ("linux/in6.h" include nil nil [111 133])
+            ("transport" type
+               (:members 
+                  ( ("Connection" function
+                       (:constructor-flag t
+                        :parent "Connection"
+                        :arguments 
+                          ( ("cfg" variable (:type ("Config" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [181 192]))                          
+                        :type ("Connection" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [158 917])
+                    ("Connection" function
+                       (:destructor-flag t
+                        :parent "Connection"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [919 967])
+                    ("Run" function
+                       (:parent "Connection"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [969 1392])
+                    ("Initialize" function
+                       (:parent "Connection"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [1394 2253])
+                    ("SendRouteActivate" function
+                       (:parent "Connection"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [2255 2658])
+                    ("SendUDSMessage" function
+                       (:parent "Connection"
+                        :type "int")
+                        (reparse-symbol namespacesubparts) [2660 3388])
+                    ("SendMessageStream" function
+                       (:parent "Connection"
+                        :arguments 
+                          ( ("msg_stream" variable (:type ("std::vector" type
+                                 (:template-specifier 
+                                    ( ("std::pair" type (:template-specifier 
+                                        ( ("std::string" type nil nil nil)
+                                          ("std::string" type nil nil nil))                                        ) nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol arg-sub-list) [3438 3498]))                          
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("bool" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol namespacesubparts) [3390 4380])
+                    ("RecvMessage" function
+                       (:parent "Connection"
+                        :arguments 
+                          ( ("testcase" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4410 4431]))                          
+                        :type "int")
+                        (reparse-symbol namespacesubparts) [4382 5681])
+                    ("RecvMessage" function
+                       (:parent "Connection"
+                        :type "int")
+                        (reparse-symbol namespacesubparts) [5682 6426])
+                    ("ShowError" function
+                       (:parent "Connection"
+                        :arguments 
+                          ( ("msg" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6455 6471]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [6428 6513]))                  
+                :type "namespace")
+                nil [135 6516]))          
+      :file "Connection.cpp"
+      :pointmax 6543
+      :fsize 6750
+      :lastmodtime '(24251 50646 369789 407000)
+      :unmatched-syntax nil))
+  :file "!home!hyukmyeong!work!ICAS_Apps!Apps!source!tools!doipgen!src!transport!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

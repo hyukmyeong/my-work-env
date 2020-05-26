@@ -13,11 +13,11 @@
                  (:prototype t
                   :type "namespace")
                   nil nil)) nil [913 938])
-            ("main" function (:type "int") nil [1084 1670]))          
+            ("main" function (:type "int") nil [1083 1669]))          
       :file "main.cpp"
-      :pointmax 1671
-      :fsize 1710
-      :lastmodtime '(24254 25711 751743 518000)
+      :pointmax 1670
+      :fsize 1708
+      :lastmodtime '(24267 10029 454543 411000)
       :unmatched-syntax nil)
     (semanticdb-table "semanticdb-table"
       :major-mode c++-mode
