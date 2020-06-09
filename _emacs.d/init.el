@@ -36,6 +36,8 @@
 ;; mikki start (테마, 윈도우)
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
+(add-to-list 'custom-theme-load-path (expand-file-name "~/.emacs.d/themes/"))
+
                                         ;doom-nord-light
                                         ;(setq doom-theme 'doom-city-lights)
                                         ;(load-theme 'doom-city-lights t)
