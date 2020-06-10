@@ -143,10 +143,11 @@
 ;; Set key bindings
 (eval-after-load "helm-cscope"
 		 '(progn
-		    (define-key helm-cscope-mode-map (kbd "C-\\ s") 'helm-cscope-find-this-symbol)
-		    (define-key helm-cscope-mode-map (kbd "C-\\ g") 'helm-cscope-find-global-definition)
-		    (define-key helm-cscope-mode-map (kbd "C-\\ e") 'helm-cscope-find-called-function)
-		    (define-key helm-cscope-mode-map (kbd "C-\\ c") 'helm-cscope-find-calling-this-function)
+;;		    (define-key helm-cscope-mode-map (kbd "C-\\ s") 'helm-cscope-find-this-symbol)
+		    (define-key helm-cscope-mode-map (kbd "C-[ s") 'helm-cscope-find-this-symbol)			  
+		    (define-key helm-cscope-mode-map (kbd "C-[ g") 'helm-cscope-find-global-definition)
+		    (define-key helm-cscope-mode-map (kbd "C-[ e") 'helm-cscope-find-called-function)
+		    (define-key helm-cscope-mode-map (kbd "C-[ c") 'helm-cscope-find-calling-this-function)
 		    (define-key helm-cscope-mode-map (kbd "C-t") 'helm-cscope-pop-mark)))
 
 (global-set-key (kbd "M-s") 'helm-swoop)
