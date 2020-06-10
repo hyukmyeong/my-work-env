@@ -41,7 +41,7 @@
 ;(load-theme 'greymatters t)
 ;doom-nord-light
 ;(setq doom-theme 'doom-city-lights)
-(load-theme 'doom-nova t)
+(load-theme 'doom-dracula t)
 ;(use-package doom-themes
 ;     :config
 
