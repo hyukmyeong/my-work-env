@@ -1,0 +1,72 @@
+;; Object semanticdb-project-database-file-2e53800
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-2e53800"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-2e5381c"
+      :major-mode c++-mode
+      :tags 
+        '( ("ARA_EXEC_EXECUTION_MANAGER_H_" variable (:constant-flag t) nil [2085 2114])
+            ("functional" include (:system-flag t) nil [2116 2137])
+            ("map" include (:system-flag t) nil [2138 2152])
+            ("memory" include (:system-flag t) nil [2153 2170])
+            ("set" include (:system-flag t) nil [2171 2185])
+            ("string" include (:system-flag t) nil [2186 2203])
+            ("vector" include (:system-flag t) nil [2204 2221])
+            ("ara/core/string.h" include nil nil [2223 2251])
+            ("ara/exec/state_client.h" include nil nil [2252 2286])
+            ("ara/log/logger.h" include nil nil [2287 2314])
+            ("ara/exec/machine_state_server.h" include nil nil [2315 2357])
+            ("ara/exec/execution_state_server.h" include nil nil [2358 2402])
+            ("ara/exec/phm_state_server.h" include nil nil [2403 2441])
+            ("ara/exec/config/execution_manifest.h" include nil nil [2442 2489])
+            ("ara/exec/config/machine_manifest.h" include nil nil [2490 2535])
+            ("function_group.h" include nil nil [2536 2563])
+            ("ara" type
+               (:members 
+                  ( ("exec" type
+                       (:members 
+                          ( ("internal" type
+                               (:members 
+                                  ( ("final" variable (:type ("ExecutionManager" type
+                                         (:prototype t
+                                          :type "class")
+                                          nil nil)) (reparse-symbol namespacesubparts) [2683 11703]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [2598 11706]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [2581 11733]))                  
+                :type "namespace")
+                nil [2565 11756]))          
+      :file "execution_manager.h"
+      :pointmax 11821
+      :fsize 11820
+      :lastmodtime '(24248 38547 549518 893000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("ARA_EXEC_EXECUTION_MANAGER_H_")
+          )
+)
+    (semanticdb-table "semanticdb-table-9889bc"
+      :file "logger.h"
+      :fsize 2744
+      :lastmodtime '(24248 38547 549518 893000))
+    (semanticdb-table "semanticdb-table-9e14c8"
+      :file "machine_state_server.h"
+      :fsize 3924
+      :lastmodtime '(24248 38547 549518 893000))
+    (semanticdb-table "semanticdb-table-9e44d0"
+      :file "execution_state_server.h"
+      :fsize 3409
+      :lastmodtime '(24248 38547 549518 893000))
+    (semanticdb-table "semanticdb-table-b293d0"
+      :file "phm_state_server.h"
+      :fsize 4769
+      :lastmodtime '(24248 38547 549518 893000))
+    (semanticdb-table "semanticdb-table-b64850"
+      :file "function_group.h"
+      :fsize 3808
+      :lastmodtime '(24248 38547 549518 893000)))
+  :file "!home!hyuk.myeong!work!ICAS!Apps!source!autosar!avin!autosar-ap!exec!src!execution-manager!include!ara!exec!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

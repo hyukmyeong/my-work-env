@@ -1,0 +1,87 @@
+;; Object semanticdb-project-database-file-155512c
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-155512c"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-1555138"
+      :major-mode c++-mode
+      :tags 
+        '( ("DIAGNOSTIC_PROXYACTIVITY_H" variable (:constant-flag t) nil [805 831])
+            ("memory" include (:system-flag t) nil [833 850])
+            ("ara/com/types.h" include (:system-flag t) nil [851 877])
+            ("ara/log/logging.h" include nil nil [878 906])
+            ("utility" include (:system-flag t) nil [907 925])
+            ("ara" type
+               (:members 
+                  ( ("diag" type
+                       (:members 
+                          ( ("dcm" type
+                               (:members 
+                                  ( ("DcmProxyActivity" type
+                                       (:template 
+                                          ( ("DcmProxyType" type (:type "class") nil nil))                                          
+                                        :type "class"
+                                        :members 
+                                          ( ("public" label nil (reparse-symbol classsubparts) [1035 1042])
+                                            ("DcmProxyActivity" function
+                                               (:constructor-flag t
+                                                :type ("DcmProxyActivity" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [1045 1149])
+                                            ("DcmProxyActivity" function
+                                               (:destructor-flag t
+                                                :typemodifiers ("virtual")
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [1154 1186])
+                                            ("StartFindService" function
+                                               (:arguments 
+                                                  ( ("instanceid" variable (:type ("std::uint16_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1212 1237]))                                                  
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [1190 1548])
+                                            ("StopFindService" function (:type "void") (reparse-symbol classsubparts) [1552 1637])
+                                            ("HandleStartFindServiceCallback" function
+                                               (:arguments 
+                                                  ( ("" variable (:type ("ara::com::ServiceHandleContainer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1684 1717])
+                                                    ("" variable
+                                                       (:typemodifiers ("typename")
+                                                        :type ("DcmProxyType::HandleType" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [1717 1751])
+                                                    ("" variable (:type ("handles" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1752 1760])
+                                                    ("handler" variable (:type ("ara::com::FindServiceHandle" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1767 1803]))                                                  
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [1641 2103])
+                                            ("GetProxyHandler" function
+                                               (:arguments 
+                                                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2153 2158]))                                                  
+                                                :type ("std::shared_ptr" type
+                                                     (:template-specifier 
+                                                        ( ("DcmProxyType" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil))
+                                                (reparse-symbol classsubparts) [2107 2187])
+                                            ("private" label nil (reparse-symbol classsubparts) [2190 2198])
+                                            ("aralog_" variable (:type ("ara::log::Logger" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2201 2227])
+                                            ("proxy_" variable (:type ("std::shared_ptr" type
+                                                 (:template-specifier 
+                                                    ( ("DcmProxyType" type nil nil nil))                                                    
+                                                  :type "class")
+                                                  nil nil)) (reparse-symbol classsubparts) [2230 2267])
+                                            ("findServiceHandle_" variable (:type ("ara::com::FindServiceHandle" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2270 2317]))                                          )
+                                        (reparse-symbol namespacesubparts) [976 2320]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [960 2323]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [943 2342]))                  
+                :type "namespace")
+                nil [927 2362]))          
+      :file "diagnostic_proxyactivity.h"
+      :pointmax 2416
+      :fsize 2494
+      :lastmodtime '(24287 13657 435126 266000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("DIAGNOSTIC_PROXYACTIVITY_H")
+          )
+))
+  :file "!home!hyuk.myeong!work!G550!Apps!source!autosar!avin!avin-ap!dm!source!inc!private!dcm!service!service_proxy!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,424 @@
+;; Object semanticdb-project-database-file-18d8860
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-18d8860"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-18d8840"
+      :major-mode c++-mode
+      :tags 
+        '( ("ara/exec/execution_manager.h" include nil nil [2021 2060])
+            ("set" include (:system-flag t) nil [2062 2076])
+            ("list" include (:system-flag t) nil [2077 2092])
+            ("sstream" include (:system-flag t) nil [2093 2111])
+            ("algorithm" include (:system-flag t) nil [2112 2132])
+            ("thread" include (:system-flag t) nil [2133 2150])
+            ("chrono" include (:system-flag t) nil [2151 2168])
+            ("exception" include (:system-flag t) nil [2169 2189])
+            ("libcgroup.h" include (:system-flag t) nil [2504 2526])
+            ("sys/reboot.h" include (:system-flag t) nil [2527 2550])
+            ("sys/mount.h" include (:system-flag t) nil [2558 2580])
+            ("sys/stat.h" include (:system-flag t) nil [2581 2602])
+            ("ara/exec/serialization.h" include nil nil [2604 2639])
+            ("ara/exec/execution_ordering.h" include nil nil [2640 2680])
+            ("ara/exec/execution_client.h" include nil nil [2681 2719])
+            ("ara/exec/state_client.h" include nil nil [2720 2754])
+            ("ara/exec/phm_client.h" include nil nil [2755 2787])
+            ("ara/exec/exception/em_exception.h" include nil nil [2788 2832])
+            ("ara/exec/utility.h" include nil nil [2833 2862])
+            ("ara/exec/filesystem.h" include nil nil [2863 2895])
+            ("ara/per/key_value_storage.h" include nil nil [2896 2934])
+            ("ara/exec/logger.h" include nil nil [2935 2963])
+            ("ara" type
+               (:members 
+                  ( ("exec" type
+                       (:members 
+                          ( ("internal" type
+                               (:members 
+                                  ( ("unnamed" type
+                                       (:members 
+                                          ( ("SortByDependency" function
+                                               (:prototype-flag t
+                                                :arguments 
+                                                  ( ("applications" variable
+                                                       (:reference 1
+                                                        :type ("std::vector" type
+                                                             (:template-specifier 
+                                                                ( ("StartupConfiguration" type (:pointer 1) nil nil))                                                                
+                                                              :type "class")
+                                                              nil nil))
+                                                        (reparse-symbol arg-sub-list) [3150 3199]))                                                  
+                                                :type "void")
+                                                (reparse-symbol namespacesubparts) [3128 3200]))                                          
+                                        :type "namespace")
+                                        (reparse-symbol namespacesubparts) [3020 3202])
+                                    ("ara::exec::StateOperation" using (:type ("ara::exec::StateOperation" type
+                                         (:prototype t
+                                          :type "class")
+                                          nil nil)) (reparse-symbol namespacesubparts) [3204 3236])
+                                    ("ara::exec::ExecutionState" using (:type ("ara::exec::ExecutionState" type
+                                         (:prototype t
+                                          :type "class")
+                                          nil nil)) (reparse-symbol namespacesubparts) [3237 3269])
+                                    ("services::machinestate::MachineStateServer" using (:type ("services::machinestate::MachineStateServer" type
+                                         (:prototype t
+                                          :type "class")
+                                          nil nil)) (reparse-symbol namespacesubparts) [3270 3319])
+                                    ("kMachineManifestPath" variable
+                                       (:dereference 1
+                                        :constant-flag t
+                                        :default-value "\"/etc/system/machine_manifest.json\""
+                                        :type "char")
+                                        (reparse-symbol namespacesubparts) [3321 3393])
+                                    ("ExecutionManager::kNamePipeRoot_" variable
+                                       (:constant-flag t
+                                        :default-value "std::string(NAMED_PIPE_ROOT)"
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [3394 3476])
+                                    ("ExecutionManager::kNamedPipes" variable
+                                       (:dereference 1
+                                        :constant-flag t
+                                        :default-value "{\"phmstate-server-fifo\", \"phmstatereport-server-fifo\", \"sysstate-server-fifo\", \"execstate-server-fifo\"}"
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [3477 3634])
+                                    ("ExecutionManager" function
+                                       (:constructor-flag t
+                                        :parent "ExecutionManager"
+                                        :arguments 
+                                          ( ("rootPath" variable
+                                               (:pointer 1
+                                                :constant-flag t
+                                                :type "char")
+                                                (reparse-symbol arg-sub-list) [3671 3692]))                                          
+                                        :type ("ExecutionManager" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [3636 3896])
+                                    ("ExecutionManager" function
+                                       (:destructor-flag t
+                                        :parent "ExecutionManager"
+                                        :type "void")
+                                        (reparse-symbol namespacesubparts) [3898 5462])
+                                    ("Run" function
+                                       (:parent "ExecutionManager"
+                                        :type "void")
+                                        (reparse-symbol namespacesubparts) [6043 7518])
+                                    ("SetState" function
+                                       (:parent "ExecutionManager"
+                                        :arguments 
+                                          ( ("functionGroupStates" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("std::vector" type
+                                                     (:template-specifier 
+                                                        ( ("StateClient::StateChange" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil))
+                                                (reparse-symbol arg-sub-list) [7582 7647]))                                          
+                                        :type ("StateClient::SetStateResponse" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [7520 12130])
+                                    ("Execute" function
+                                       (:parent "ExecutionManager"
+                                        :arguments 
+                                          ( ("startupConfigurations" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("std::vector" type
+                                                     (:template-specifier 
+                                                        ( ("StartupConfiguration" type (:pointer 1) nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil))
+                                                (reparse-symbol arg-sub-list) [12163 12227]))                                          
+                                        :type "void")
+                                        (reparse-symbol namespacesubparts) [12132 18794])
+                                    ("Terminate" function
+                                       (:parent "ExecutionManager"
+                                        :arguments 
+                                          ( ("startupConfigurations" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("std::vector" type
+                                                     (:template-specifier 
+                                                        ( ("StartupConfiguration" type (:pointer 1) nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil))
+                                                (reparse-symbol arg-sub-list) [18829 18893]))                                          
+                                        :type "void")
+                                        (reparse-symbol namespacesubparts) [18796 20341])
+                                    ("CalculateTransition" function
+                                       (:parent "ExecutionManager"
+                                        :arguments 
+                                          ( ("changeList" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("std::vector" type
+                                                     (:template-specifier 
+                                                        ( ("std::pair" type (:template-specifier 
+                                                            ( ("FunctionGroup" type (:pointer 1) nil nil)
+                                                              ("ara::core::String" type
+                                                                 (:pointer 1
+                                                                  :constant-flag t)
+                                                                  nil nil))                                                            ) nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil))
+                                                (reparse-symbol arg-sub-list) [20422 20505]))                                          
+                                        :type ("ExecutionManager::TransitionChanges" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [20343 22695])
+                                    ("FindStartupConfiguration" function
+                                       (:methodconst-flag t
+                                        :pointer 1
+                                        :parent "ExecutionManager"
+                                        :arguments 
+                                          ( ("pid" variable (:type ("pid_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [22762 22772]))                                          
+                                        :type ("StartupConfiguration" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [22697 23183])
+                                    ("FindStartupConfiguration" function
+                                       (:methodconst-flag t
+                                        :pointer 1
+                                        :parent "ExecutionManager"
+                                        :arguments 
+                                          ( ("prefix" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("std::string" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [23250 23276])
+                                            ("processName" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("std::string" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [23277 23308]))                                          
+                                        :type ("StartupConfiguration" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [23185 23810])
+                                    ("FindStartupConfiguration" function
+                                       (:methodconst-flag t
+                                        :pointer 1
+                                        :parent "ExecutionManager"
+                                        :arguments 
+                                          ( ("processName" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("std::string" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [23877 23908]))                                          
+                                        :type ("StartupConfiguration" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [23812 24338])
+                                    ("FindExecutableStartupConfiguration" function
+                                       (:methodconst-flag t
+                                        :pointer 1
+                                        :parent "ExecutionManager"
+                                        :arguments 
+                                          ( ("prefix" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("std::string" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [24415 24441])
+                                            ("processName" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("std::string" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [24442 24473]))                                          
+                                        :type ("StartupConfiguration" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [24340 25057])
+                                    ("FindExecutableStartupConfiguration" function
+                                       (:methodconst-flag t
+                                        :pointer 1
+                                        :parent "ExecutionManager"
+                                        :arguments 
+                                          ( ("processName" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("std::string" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [25134 25165]))                                          
+                                        :type ("StartupConfiguration" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [25059 25678])
+                                    ("Initialize" function
+                                       (:parent "ExecutionManager"
+                                        :type "void")
+                                        (reparse-symbol namespacesubparts) [25680 25943])
+                                    ("ProcessStateClientRequests" function
+                                       (:parent "ExecutionManager"
+                                        :type "void")
+                                        (reparse-symbol namespacesubparts) [25945 31882])
+                                    ("ProcessExecutionStateReports" function
+                                       (:parent "ExecutionManager"
+                                        :type "void")
+                                        (reparse-symbol namespacesubparts) [31884 33175])
+                                    ("ProcessPHMClientRequests" function
+                                       (:parent "ExecutionManager"
+                                        :type "void")
+                                        (reparse-symbol namespacesubparts) [33177 42751])
+                                    ("ConvertProcessStateToString" function
+                                       (:parent "ExecutionManager"
+                                        :arguments 
+                                          ( ("processState" variable
+                                               (:constant-flag t
+                                                :type ("ara::exec::phminterface::ProcessState" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [42811 42868]))                                          
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [42753 43568])
+                                    ("ReportProcessChangedToPHMClient" function
+                                       (:parent "ExecutionManager"
+                                        :arguments 
+                                          ( ("id" variable
+                                               (:constant-flag t
+                                                :type ("pid_t" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [43625 43640])
+                                            ("name" variable
+                                               (:constant-flag t
+                                                :type ("std::string" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [43641 43664])
+                                            ("prefix" variable
+                                               (:constant-flag t
+                                                :type ("std::string" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [43665 43690])
+                                            ("preState" variable
+                                               (:constant-flag t
+                                                :type ("ara::exec::internal::ProcessState" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [43691 43740])
+                                            ("currentState" variable
+                                               (:constant-flag t
+                                                :type ("ara::exec::internal::ProcessState" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [43744 43797]))                                          
+                                        :type "void")
+                                        (reparse-symbol namespacesubparts) [43570 44776])
+                                    ("ConvertExecutionStateToPHMProcessState" function
+                                       (:parent "ExecutionManager"
+                                        :arguments 
+                                          ( ("state" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("ExecutionState" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [44873 44901]))                                          
+                                        :type ("ara::exec::phminterface::ProcessState" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [44778 45311])
+                                    ("ConvertStateToPHMProcessState" function
+                                       (:parent "ExecutionManager"
+                                        :arguments 
+                                          ( ("state" variable (:type ("ara::exec::internal::ProcessState" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [45401 45441]))                                          
+                                        :type ("ara::exec::phminterface::ProcessState" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [45313 46206])
+                                    ("ConvertProcessStateToString" function
+                                       (:parent "ExecutionManager"
+                                        :arguments 
+                                          ( ("processState" variable
+                                               (:constant-flag t
+                                                :type ("ara::exec::internal::ProcessState" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [46267 46320]))                                          
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [46209 47000])
+                                    ("CheckProcesses" function
+                                       (:parent "ExecutionManager"
+                                        :type "void")
+                                        (reparse-symbol namespacesubparts) [47001 48223])
+                                    ("RemoveTerminatedProcesses" function
+                                       (:parent "ExecutionManager"
+                                        :type "void")
+                                        (reparse-symbol namespacesubparts) [48225 48795])
+                                    ("LoadMachineConfiguration" function
+                                       (:parent "ExecutionManager"
+                                        :type "void")
+                                        (reparse-symbol namespacesubparts) [48797 49987])
+                                    ("LoadExecutablesConfiguration" function
+                                       (:parent "ExecutionManager"
+                                        :type "void")
+                                        (reparse-symbol namespacesubparts) [49989 54295])
+                                    ("InitializeCgroups" function
+                                       (:parent "ExecutionManager"
+                                        :type "void")
+                                        (reparse-symbol namespacesubparts) [54315 59120])
+                                    ("PrepareFileSystem" function
+                                       (:parent "ExecutionManager"
+                                        :type "bool")
+                                        (reparse-symbol namespacesubparts) [59122 60973])
+                                    ("unnamed" type
+                                       (:members 
+                                          ( ("DependencyInfo" type
+                                               (:members 
+                                                  ( ("length" variable
+                                                       (:default-value "0"
+                                                        :type ("uint32_t" type (:type "class") nil nil))
+                                                        (reparse-symbol classsubparts) [61022 61042])
+                                                    ("isCalculationFinished" variable
+                                                       (:default-value "false"
+                                                        :type "bool")
+                                                        (reparse-symbol classsubparts) [61047 61082])
+                                                    ("dependencies" variable
+                                                       (:constant-flag t
+                                                        :type ("StartupConfiguration::DependencyCollectionType" type (:type "class") nil nil))
+                                                        (reparse-symbol classsubparts) [61087 61154]))                                                  
+                                                :type "struct")
+                                                (reparse-symbol namespacesubparts) [60994 61157])
+                                            ("DependencySummary" type
+                                               (:typedef ("std::map" type
+                                                     (:template-specifier 
+                                                        ( ("std::string" type nil nil nil)
+                                                          ("DependencyInfo" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil)
+                                                :type "typedef")
+                                                (reparse-symbol namespacesubparts) [61159 61223])
+                                            ("CalcDependencyLength" function
+                                               (:arguments 
+                                                  ( ("dependencySummary" variable
+                                                       (:reference 1
+                                                        :type ("DependencySummary" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [61255 61292])
+                                                    ("processName" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("std::string" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [61293 61324]))                                                  
+                                                :type ("uint32_t" type (:type "class") nil nil))
+                                                (reparse-symbol namespacesubparts) [61225 62014])
+                                            ("SortByDependency" function
+                                               (:arguments 
+                                                  ( ("applications" variable
+                                                       (:reference 1
+                                                        :type ("std::vector" type
+                                                             (:template-specifier 
+                                                                ( ("StartupConfiguration" type (:pointer 1) nil nil))                                                                
+                                                              :type "class")
+                                                              nil nil))
+                                                        (reparse-symbol arg-sub-list) [62038 62087]))                                                  
+                                                :type "void")
+                                                (reparse-symbol namespacesubparts) [62016 62904]))                                          
+                                        :type "namespace")
+                                        (reparse-symbol namespacesubparts) [60981 62907]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [2998 62910]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [2981 62935]))                  
+                :type "namespace")
+                nil [2965 62956]))          
+      :file "execution_manager.cpp"
+      :pointmax 62975
+      :fsize 62974
+      :lastmodtime '(24248 38547 553516 893000)
+      :unmatched-syntax '((semantic-list 5521 . 6041) (symbol 5512 . 5520) (semantic-list 5489 . 5511) (symbol 5486 . 5489) (punctuation 5485 . 5486) (punctuation 5484 . 5485) (symbol 5468 . 5484) (INT 5464 . 5467)))
+    (semanticdb-table "semanticdb-table-18d8880"
+      :major-mode c++-mode
+      :tags 
+        '( ("ara/exec/utility.h" include nil nil [2202 2231])
+            ("ara/exec/execution_manager.h" include nil nil [2232 2271])
+            ("ara/exec/redirect_process_output.h" include nil nil [2272 2317])
+            ("cstring" include (:system-flag t) nil [2318 2336])
+            ("string" include (:system-flag t) nil [2337 2354])
+            ("sys/stat.h" include (:system-flag t) nil [2355 2376])
+            ("unistd.h" include (:system-flag t) nil [2377 2396])
+            ("ara::exec::internal::utility::RedirectProcessOutput" using (:type ("ara::exec::internal::utility::RedirectProcessOutput" type
+                 (:prototype t
+                  :type "class")
+                  nil nil)) nil [2398 2456])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [2988 2997])
+                    ("argv" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2998 3010]))                  
+                :type "int")
+                nil [2979 4460]))          
+      :file "main.cpp"
+      :pointmax 4461
+      :fsize 4460
+      :lastmodtime '(24248 38547 553516 893000)
+      :unmatched-syntax nil))
+  :file "!home!hyuk.myeong!work!ICAS!Apps!source!autosar!avin!autosar-ap!exec!src!execution-manager!src!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

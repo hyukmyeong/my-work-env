@@ -1,0 +1,524 @@
+;; Object semanticdb-project-database-file-1766f78
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-1766f78"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-1766f18"
+      :major-mode c++-mode
+      :tags 
+        '( ("SOURCE_COMMON_RUNTIME_H_" variable (:constant-flag t) nil [758 782])
+            ("atomic" include (:system-flag t) nil [784 801])
+            ("memory" include (:system-flag t) nil [802 819])
+            ("mutex" include (:system-flag t) nil [820 836])
+            ("thread" include (:system-flag t) nil [837 854])
+            ("ara/core/vector.h" include nil nil [856 884])
+            ("ara/log/logging.h" include nil nil [885 913])
+            ("atomic" include (:system-flag t) nil [914 931])
+            ("condition_variable" include (:system-flag t) nil [932 961])
+            ("mutex" include (:system-flag t) nil [962 978])
+            ("ara" type
+               (:members 
+                  ( ("diag" type
+                       (:members 
+                          ( ("ConditionVariable" type
+                               (:members 
+                                  ( ("m" variable (:type ("std::mutex" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1333 1346])
+                                    ("cv" variable (:type ("std::condition_variable" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1349 1376]))                                  
+                                :type "struct")
+                                (reparse-symbol namespacesubparts) [1304 1379])
+                            ("Runtime" type
+                               (:members 
+                                  ( ("public" label nil (reparse-symbol classsubparts) [1397 1404])
+                                    ("Runtime" function
+                                       (:prototype-flag t
+                                        :constructor-flag t
+                                        :type ("Runtime" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [1407 1417])
+                                    ("Runtime" function
+                                       (:prototype-flag t
+                                        :destructor-flag t
+                                        :typemodifiers ("virtual")
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [1420 1439])
+                                    ("Initialize" function
+                                       (:pure-virtual-flag t
+                                        :prototype-flag t
+                                        :typemodifiers ("virtual")
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [1500 1530])
+                                    ("Run" function
+                                       (:pure-virtual-flag t
+                                        :prototype-flag t
+                                        :typemodifiers ("virtual")
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [1656 1679])
+                                    ("Shutdown" function
+                                       (:pure-virtual-flag t
+                                        :prototype-flag t
+                                        :typemodifiers ("virtual")
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [1832 1860])
+                                    ("GetInstance" function
+                                       (:prototype-flag t
+                                        :typemodifiers ("static")
+                                        :type ("Runtime" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [1906 1936])
+                                    ("IsInitialized" function
+                                       (:methodconst-flag t
+                                        :type "bool")
+                                        (reparse-symbol classsubparts) [1991 2052])
+                                    ("WaitUntilTermination" function
+                                       (:prototype-flag t
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [2301 2329])
+                                    ("shutdownCondvarsync_" variable (:type ("ConditionVariable" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2333 2372])
+                                    ("protected" label nil (reparse-symbol classsubparts) [2375 2385])
+                                    ("SignalHandler" function
+                                       (:prototype-flag t
+                                        :typemodifiers ("static")
+                                        :arguments 
+                                          ( ("signum" variable (:type ("std::int32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2530 2550]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [2504 2551])
+                                    ("instance_" variable
+                                       (:typemodifiers ("static")
+                                        :type ("std::unique_ptr" type
+                                             (:template-specifier 
+                                                ( ("Runtime" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol classsubparts) [2828 2870])
+                                    ("instanceMutex_" variable
+                                       (:typemodifiers ("static")
+                                        :type ("std::mutex" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [3180 3213])
+                                    ("HandleSignal" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("signum" variable (:type ("std::int32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3485 3505]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [3467 3506])
+                                    ("initialized_" variable (:type "bool") (reparse-symbol classsubparts) [3590 3615])
+                                    ("exit_requested_" variable (:type ("std::atomic_bool" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3703 3743])
+                                    ("threads_" variable (:type ("ara::core::Vector" type
+                                         (:template-specifier 
+                                            ( ("std::thread" type nil nil nil))                                            
+                                          :type "class")
+                                          nil nil)) (reparse-symbol classsubparts) [3814 3856])
+                                    ("selfpipe_" variable
+                                       (:dereference 1
+                                        :type ("std::int32_t" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [3959 3987])
+                                    ("private" label nil (reparse-symbol classsubparts) [3990 3998])
+                                    ("aralog_" variable (:type ("ara::log::Logger" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4286 4312]))                                  
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [1380 4315]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [996 4318]))                  
+                :type "namespace")
+                nil [980 4338]))          
+      :file "runtime.h"
+      :pointmax 4392
+      :fsize 4515
+      :lastmodtime '(24248 38548 77254 911000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("SOURCE_COMMON_RUNTIME_H_")
+          )
+)
+    (semanticdb-table "semanticdb-table-1766f38"
+      :major-mode c++-mode
+      :tags 
+        '( ("SOURCE_COMMON_DIAGNOSTIC_MANAGER_H_" variable (:constant-flag t) nil [791 826])
+            ("atomic" include (:system-flag t) nil [828 845])
+            ("condition_variable" include (:system-flag t) nil [846 875])
+            ("mutex" include (:system-flag t) nil [876 892])
+            ("ara/log/logging.h" include nil nil [894 922])
+            ("ara" type
+               (:members 
+                  ( ("diag" type
+                       (:members 
+                          ( ("common" type
+                               (:members 
+                                  ( ("ConditionVariable" type
+                                       (:members 
+                                          ( ("m" variable (:type ("std::mutex" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1005 1018])
+                                            ("cv" variable (:type ("std::condition_variable" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1021 1048]))                                          
+                                        :type "struct")
+                                        (reparse-symbol namespacesubparts) [976 1051])
+                                    ("DiagnosticManager" type
+                                       (:members 
+                                          ( ("public" label nil (reparse-symbol classsubparts) [1166 1173])
+                                            ("DiagnosticManager" function
+                                               (:prototype-flag t
+                                                :constructor-flag t
+                                                :arguments 
+                                                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [1245 1250]))                                                  
+                                                :type ("DiagnosticManager" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [1227 1251])
+                                            ("Main" function
+                                               (:prototype-flag t
+                                                :typemodifiers ("virtual")
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [1614 1634])
+                                            ("SignalShutdown" function
+                                               (:prototype-flag t
+                                                :typemodifiers ("virtual")
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [1774 1804])
+                                            ("Initialize" function
+                                               (:pure-virtual-flag t
+                                                :prototype-flag t
+                                                :typemodifiers ("virtual")
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [1870 1900])
+                                            ("Run" function
+                                               (:pure-virtual-flag t
+                                                :prototype-flag t
+                                                :typemodifiers ("virtual")
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [1964 1987])
+                                            ("Shutdown" function
+                                               (:pure-virtual-flag t
+                                                :prototype-flag t
+                                                :typemodifiers ("virtual")
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [2109 2137])
+                                            ("protected" label nil (reparse-symbol classsubparts) [2140 2150])
+                                            ("exit_requested_" variable (:type ("std::atomic_bool" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2227 2260])
+                                            ("aralog_" variable (:type ("ara::log::Logger" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2302 2328])
+                                            ("shutdownMutex_" variable (:type ("std::mutex" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2378 2404])
+                                            ("shutdownCondvar_" variable (:type ("std::condition_variable" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2503 2544])
+                                            ("shutdownCondvarsync_" variable (:type ("ConditionVariable" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2548 2587]))                                          
+                                        :type "class")
+                                        (reparse-symbol namespacesubparts) [1139 2590]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [957 2593]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [940 2615]))                  
+                :type "namespace")
+                nil [924 2635]))          
+      :file "diagnostic_manager.h"
+      :pointmax 2700
+      :fsize 2782
+      :lastmodtime '(24248 38548 77254 911000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("SOURCE_COMMON_DIAGNOSTIC_MANAGER_H_")
+          )
+)
+    (semanticdb-table "semanticdb-table-1766f58"
+      :file "doip_cfg.h"
+      :fsize 1106
+      :lastmodtime '(24248 38548 77254 911000))
+    (semanticdb-table "semanticdb-table-a47824"
+      :major-mode c++-mode
+      :tags 
+        '( ("SOURCE_COMMON_TIMER_H_" variable (:constant-flag t) nil [752 774])
+            ("atomic" include (:system-flag t) nil [776 793])
+            ("chrono" include (:system-flag t) nil [794 811])
+            ("condition_variable" include (:system-flag t) nil [812 841])
+            ("functional" include (:system-flag t) nil [842 863])
+            ("mutex" include (:system-flag t) nil [864 880])
+            ("thread" include (:system-flag t) nil [881 898])
+            ("boost/any.hpp" include nil nil [900 924])
+            ("ara" type
+               (:members 
+                  ( ("diag" type
+                       (:members 
+                          ( ("common" type
+                               (:members 
+                                  ( ("Timer" type
+                                       (:members 
+                                          ( ("public" label nil (reparse-symbol classsubparts) [1319 1326])
+                                            ("Clock" type
+                                               (:typedef ("std::chrono::steady_clock" type (:type "class") nil nil)
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [1391 1431])
+                                            ("Timer" function
+                                               (:prototype-flag t
+                                                :constructor-flag t
+                                                :arguments 
+                                                  ( ("timer_handler" variable (:type ("TimerHandler" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1726 1753]))                                                  
+                                                :type ("Timer" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [1720 1754])
+                                            ("Timer" function
+                                               (:prototype-flag t
+                                                :destructor-flag t
+                                                :typemodifiers ("virtual")
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [1850 1867])
+                                            ("StartOnce" function
+                                               (:prototype-flag t
+                                                :arguments 
+                                                  ( ("timeout" variable (:type ("Clock::duration" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1972 1996])
+                                                    ("userdata" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :default-value "boost::any()"
+                                                        :type ("boost::any" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [1997 2038]))                                                  
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [1957 2040])
+                                            ("StartPeriodicImmediate" function
+                                               (:prototype-flag t
+                                                :arguments 
+                                                  ( ("period" variable (:type ("Clock::duration" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2132 2155])
+                                                    ("userdata" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :default-value "boost::any()"
+                                                        :type ("boost::any" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [2156 2197]))                                                  
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [2104 2199])
+                                            ("StartPeriodicDelayed" function
+                                               (:prototype-flag t
+                                                :arguments 
+                                                  ( ("period" variable (:type ("Clock::duration" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2311 2334])
+                                                    ("userdata" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :default-value "boost::any()"
+                                                        :type ("boost::any" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [2335 2376]))                                                  
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [2285 2378])
+                                            ("IsRunning" function
+                                               (:methodconst-flag t
+                                                :typemodifiers ("inline")
+                                                :type "bool")
+                                                (reparse-symbol classsubparts) [2490 2596])
+                                            ("IsPeriodic" function
+                                               (:methodconst-flag t
+                                                :typemodifiers ("inline")
+                                                :type "bool")
+                                                (reparse-symbol classsubparts) [2713 2830])
+                                            ("Stop" function
+                                               (:typemodifiers ("inline")
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [2863 2957])
+                                            ("GetNextExpiryPoint" function
+                                               (:methodconst-flag t
+                                                :typemodifiers ("inline")
+                                                :type ("Clock::time_point" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [3088 3226])
+                                            ("GetTimeRemaining" function
+                                               (:methodconst-flag t
+                                                :typemodifiers ("inline")
+                                                :type ("Clock::duration" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [3374 3523])
+                                            ("protected" label nil (reparse-symbol classsubparts) [3526 3536])
+                                            ("Run" function
+                                               (:prototype-flag t
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [3619 3630])
+                                            ("Mode" type
+                                               (:members 
+                                                  ( ("kOneshot" variable
+                                                       (:constant-flag t
+                                                        :type "int")
+                                                        (reparse-symbol enumsubparts) [3705 3714])
+                                                    ("kPeriodic" variable
+                                                       (:constant-flag t
+                                                        :type "int")
+                                                        (reparse-symbol enumsubparts) [3719 3729]))                                                  
+                                                :type "enum")
+                                                (reparse-symbol classsubparts) [3687 3734])
+                                            ("timer_handler_" variable (:type ("TimerHandler" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3796 3824])
+                                            ("mode_" variable (:type ("Mode" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3863 3874])
+                                            ("exit_requested_" variable (:type ("std::atomic_bool" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3948 3981])
+                                            ("running_" variable (:type "bool") (reparse-symbol classsubparts) [4054 4068])
+                                            ("period_" variable (:type ("Clock::duration" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4164 4188])
+                                            ("next_expiry_point_" variable (:type ("Clock::time_point" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4302 4339])
+                                            ("user_data_" variable (:type ("boost::any" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4427 4449])
+                                            ("mutex_" variable
+                                               (:typemodifiers ("mutable")
+                                                :type ("std::mutex" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [4564 4590])
+                                            ("condition_variable_" variable (:type ("std::condition_variable" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4654 4698])
+                                            ("thread_" variable (:type ("std::thread" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4759 4779]))                                          
+                                        :type "class")
+                                        (reparse-symbol namespacesubparts) [1304 4782]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [959 4785]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [942 4807]))                  
+                :type "namespace")
+                nil [926 4827]))          
+      :file "timer.h"
+      :pointmax 4879
+      :fsize 5021
+      :lastmodtime '(24248 38548 77254 911000)
+      :unmatched-syntax '((EXPLICIT 1711 . 1719) (punctuation 1561 . 1562) (punctuation 1560 . 1561) (semantic-list 1541 . 1560) (VOID 1537 . 1541) (punctuation 1536 . 1537) (symbol 1528 . 1536) (punctuation 1527 . 1528) (punctuation 1526 . 1527) (symbol 1523 . 1526) (punctuation 1521 . 1522) (symbol 1508 . 1520) (USING 1502 . 1507))
+      :lexical-table 
+        '(("SOURCE_COMMON_TIMER_H_")
+          )
+)
+    (semanticdb-table "semanticdb-table-a4b098"
+      :major-mode c++-mode
+      :tags 
+        '( ("SOURCE_COMMON_WORK_UNIT_H_" variable (:constant-flag t) nil [764 790])
+            ("memory" include (:system-flag t) nil [792 809])
+            ("ostream" include (:system-flag t) nil [810 828])
+            ("ara/log/logging.h" include nil nil [830 858])
+            ("ara" type
+               (:members 
+                  ( ("diag" type
+                       (:members 
+                          ( ("common" type
+                               (:members 
+                                  ( ("WorkUnit" type
+                                       (:members 
+                                          ( ("public" label nil (reparse-symbol classsubparts) [1019 1026])
+                                            ("Ptr" type
+                                               (:typedef ("std::shared_ptr" type
+                                                     (:template-specifier 
+                                                        ( ("WorkUnit" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil)
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [1080 1118])
+                                            ("Run" function
+                                               (:pure-virtual-flag t
+                                                :prototype-flag t
+                                                :typemodifiers ("virtual")
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [1234 1257])
+                                            ("PrintToStream" function
+                                               (:pure-virtual-flag t
+                                                :prototype-flag t
+                                                :methodconst-flag t
+                                                :typemodifiers ("virtual")
+                                                :arguments 
+                                                  ( ("stream" variable
+                                                       (:reference 1
+                                                        :type ("ara::log::LogStream" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [1429 1457]))                                                  
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [1402 1468]))                                          
+                                        :type "class")
+                                        (reparse-symbol namespacesubparts) [1001 1471])
+                                    ("<<" function
+                                       (:operator-flag t
+                                        :typemodifiers ("inline")
+                                        :arguments 
+                                          ( ("stream" variable
+                                               (:reference 1
+                                                :type ("ara::log::LogStream" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [1512 1540])
+                                            ("work_unit" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("WorkUnit" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [1541 1567]))                                          
+                                        :type ("ara::log::LogStream" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [1473 1625]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [893 1628]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [876 1650]))                  
+                :type "namespace")
+                nil [860 1670]))          
+      :file "work_unit.h"
+      :pointmax 1726
+      :fsize 1778
+      :lastmodtime '(24248 38548 77254 911000)
+      :unmatched-syntax '((punctuation 1175 . 1176) (DEFAULT 1168 . 1175) (punctuation 1166 . 1167) (semantic-list 1163 . 1165) (symbol 1155 . 1163) (punctuation 1154 . 1155) (VIRTUAL 1146 . 1153) (punctuation 1142 . 1143) (DEFAULT 1135 . 1142) (punctuation 1133 . 1134) (semantic-list 1130 . 1132) (symbol 1122 . 1130))
+      :lexical-table 
+        '(("SOURCE_COMMON_WORK_UNIT_H_")
+          )
+)
+    (semanticdb-table "semanticdb-table-a25f40"
+      :major-mode c++-mode
+      :tags 
+        '( ("SOURCE_COMMON_THREAD_POOL_H_" variable (:constant-flag t) nil [770 798])
+            ("atomic" include (:system-flag t) nil [800 817])
+            ("condition_variable" include (:system-flag t) nil [818 847])
+            ("deque" include (:system-flag t) nil [848 864])
+            ("mutex" include (:system-flag t) nil [865 881])
+            ("thread" include (:system-flag t) nil [882 899])
+            ("ara/core/vector.h" include nil nil [901 929])
+            ("ara/log/logging.h" include nil nil [930 958])
+            ("common/work_unit.h" include nil nil [959 988])
+            ("ara" type
+               (:members 
+                  ( ("diag" type
+                       (:members 
+                          ( ("common" type
+                               (:members 
+                                  ( ("ThreadPool" type
+                                       (:members 
+                                          ( ("public" label nil (reparse-symbol classsubparts) [1122 1129])
+                                            ("ThreadPool" function
+                                               (:prototype-flag t
+                                                :constructor-flag t
+                                                :arguments 
+                                                  ( ("capacity" variable
+                                                       (:constant-flag t
+                                                        :type "unsigned int")
+                                                        (reparse-symbol arg-sub-list) [1283 1307]))                                                  
+                                                :type ("ThreadPool" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [1272 1308])
+                                            ("ThreadPool" function
+                                               (:prototype-flag t
+                                                :destructor-flag t
+                                                :typemodifiers ("virtual")
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [1312 1334])
+                                            ("SubmitWork" function
+                                               (:prototype-flag t
+                                                :typemodifiers ("virtual")
+                                                :arguments 
+                                                  ( ("work_unit" variable (:type ("WorkUnit::Ptr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1413 1437]))                                                  
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [1389 1438])
+                                            ("Stop" function (:type "void") (reparse-symbol classsubparts) [1566 1703])
+                                            ("IsEmpty" function
+                                               (:methodconst-flag t
+                                                :type "bool")
+                                                (reparse-symbol classsubparts) [1707 1769])
+                                            ("protected" label nil (reparse-symbol classsubparts) [1772 1782])
+                                            ("Worker" function
+                                               (:prototype-flag t
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [1885 1899])
+                                            ("WorkOne" function
+                                               (:prototype-flag t
+                                                :typemodifiers ("virtual")
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [2142 2165])
+                                            ("threads_" variable (:type ("ara::core::Vector" type
+                                                 (:template-specifier 
+                                                    ( ("std::thread" type nil nil nil))                                                    
+                                                  :type "class")
+                                                  nil nil)) (reparse-symbol classsubparts) [2202 2242])
+                                            ("work_queue_mutex_" variable (:type ("std::mutex" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2313 2342])
+                                            ("work_queue_condvar_" variable (:type ("std::condition_variable" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2426 2470])
+                                            ("work_queue_" variable (:type ("std::deque" type
+                                                 (:template-specifier 
+                                                    ( ("WorkUnit::Ptr" type nil nil nil))                                                    
+                                                  :type "class")
+                                                  nil nil)) (reparse-symbol classsubparts) [2503 2541])
+                                            ("running_" variable (:type ("std::atomic_bool" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2612 2644])
+                                            ("aralog_" variable (:type ("ara::log::Logger" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2686 2712]))                                          
+                                        :type "class")
+                                        (reparse-symbol namespacesubparts) [1102 2715]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [1023 2718]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [1006 2740]))                  
+                :type "namespace")
+                nil [990 2760]))          
+      :file "thread_pool.h"
+      :pointmax 2818
+      :fsize 2913
+      :lastmodtime '(24248 38548 77254 911000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("SOURCE_COMMON_THREAD_POOL_H_")
+          )
+))
+  :file "!home!hyuk.myeong!work!ICAS!Apps!source!autosar!avin!avin-ap!dm!source!inc!private!common!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,280 @@
+;; Object semanticdb-project-database-file-75a97c
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-75a97c"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-949258"
+      :major-mode c++-mode
+      :tags 
+        '( ("SRC_APPLICATION_DIAGNOSTIC_SERVICE_APPLICATION_H_" variable (:constant-flag t) nil [1201 1250])
+            ("signal.h" include (:system-flag t) nil [1505 1524])
+            ("unistd.h" include (:system-flag t) nil [1525 1544])
+            ("atomic" include (:system-flag t) nil [1546 1563])
+            ("chrono" include (:system-flag t) nil [1564 1581])
+            ("csignal" include (:system-flag t) nil [1582 1600])
+            ("iostream" include (:system-flag t) nil [1601 1620])
+            ("map" include (:system-flag t) nil [1621 1635])
+            ("memory" include (:system-flag t) nil [1636 1653])
+            ("string" include (:system-flag t) nil [1654 1671])
+            ("thread" include (:system-flag t) nil [1672 1689])
+            ("vector" include (:system-flag t) nil [1690 1707])
+            ("diagnostic_data/diagnostic_service_data.h" include nil nil [1709 1761])
+            ("service_interfaces/diagnostic_data_distribution_server.h" include nil nil [1762 1829])
+            ("service_interfaces/generic_uds_service.h" include nil nil [1830 1881])
+            ("service_interfaces/kd_bit_status_service.h" include nil nil [1882 1935])
+            ("sfd/sfd_proxy/sfd_proxy.h" include nil nil [1936 1972])
+            ("sfd/sfd_proxy/unlock_data_definitions.h" include nil nil [1973 2023])
+            ("ucm/ucm_proxy.h" include nil nil [2024 2050])
+            ("dsa_cmnbase.h" include nil nil [2051 2075])
+            ("vector" type
+               (:members 
+                  ( ("diagnostic_service" type
+                       (:members 
+                          ( ("application" type
+                               (:members 
+                                  ( ("ddds" type
+                                       (:kind alias
+                                        :members 
+                                          ( ("vag::diagnostic_data_distribution_service" type (:type "namespace") nil nil))                                          
+                                        :type "namespace")
+                                        (reparse-symbol namespacesubparts) [2179 2238])
+                                    ("vac::container::const_array_view" variable (:type "int") (reparse-symbol namespacesubparts) [2303 2356])
+                                    ("DiagnosticServiceApplication" type
+                                       (:members 
+                                          ( ("public" label nil (reparse-symbol classsubparts) [2473 2480])
+                                            ("kNumOfThreads" variable
+                                               (:default-value "1"
+                                                :type ("uint_least8_t" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [2661 2693])
+                                            ("DiagnosticServiceApplication" function
+                                               (:prototype-flag t
+                                                :constructor-flag t
+                                                :type ("DiagnosticServiceApplication" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [2776 2807])
+                                            ("Initialize" function
+                                               (:prototype-flag t
+                                                :arguments 
+                                                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [3135 3144])
+                                                    ("argv" variable
+                                                       (:pointer 1
+                                                        :dereference 1
+                                                        :type "char")
+                                                        (reparse-symbol arg-sub-list) [3145 3158]))                                                  
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [3119 3159])
+                                            ("Run" function
+                                               (:prototype-flag t
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [3273 3284])
+                                            ("Shutdown" function
+                                               (:prototype-flag t
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [3344 3360])
+                                            ("private" label nil (reparse-symbol classsubparts) [3363 3371])
+                                            ("final" variable (:type ("CommandLineArguments" type
+                                                 (:prototype t
+                                                  :type "struct")
+                                                  nil nil)) (reparse-symbol classsubparts) [3374 4141])
+                                            ("exit_requested_" variable (:type ("std::atomic_bool" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4267 4300])
+                                            ("threads_" variable (:type ("std::vector" type
+                                                 (:template-specifier 
+                                                    ( ("std::thread" type nil nil nil))                                                    
+                                                  :type "class")
+                                                  nil nil)) (reparse-symbol classsubparts) [4385 4419])
+                                            ("args_" variable (:type ("CommandLineArguments" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4480 4507])
+                                            ("SignalHandlerThread" function
+                                               (:prototype-flag t
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [4606 4633])
+                                            ("kd_bit_status_server_" variable
+                                               (:default-value "nullptr"
+                                                :type ("std::unique_ptr" type
+                                                     (:template-specifier 
+                                                        ( ("service_interfaces::KdBitStatusService" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil))
+                                                (reparse-symbol classsubparts) [4689 4777])
+                                            ("generic_uds_service_" variable
+                                               (:default-value "nullptr"
+                                                :type ("std::unique_ptr" type
+                                                     (:template-specifier 
+                                                        ( ("service_interfaces::GenericUDSService" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil))
+                                                (reparse-symbol classsubparts) [4846 4932])
+                                            ("diagnostic_service_data_" variable
+                                               (:default-value "nullptr"
+                                                :type ("std::unique_ptr" type
+                                                     (:template-specifier 
+                                                        ( ("diagnostic_data::DiagnosticServiceData" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil))
+                                                (reparse-symbol classsubparts) [5019 5110])
+                                            ("sfd_proxy_" variable
+                                               (:pointer 1
+                                                :default-value "nullptr"
+                                                :type ("sfd::SFDProxy" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [5213 5249])
+                                            ("ucm_proxy_" variable
+                                               (:default-value "nullptr"
+                                                :type ("std::unique_ptr" type
+                                                     (:template-specifier 
+                                                        ( ("ucm::UCMProxy" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil))
+                                                (reparse-symbol classsubparts) [5351 5403])
+                                            ("runnables_" variable (:type ("std::vector" type
+                                                 (:template-specifier 
+                                                    ( ("IRunnable" type (:pointer 1) nil nil))                                                    
+                                                  :type "class")
+                                                  nil nil)) (reparse-symbol classsubparts) [5617 5652])
+                                            ("dsa_cmnbase_thread_" variable (:type ("std::unique_ptr" type
+                                                 (:template-specifier 
+                                                    ( ("DsaThread" type nil nil nil))                                                    
+                                                  :type "class")
+                                                  nil nil)) (reparse-symbol classsubparts) [5656 5703])
+                                            ("Usage" function
+                                               (:prototype-flag t
+                                                :arguments 
+                                                  ( ("argc" variable
+                                                       (:constant-flag t
+                                                        :type "int")
+                                                        (reparse-symbol arg-sub-list) [5880 5895])
+                                                    ("argv" variable
+                                                       (:pointer 1
+                                                        :dereference 1
+                                                        :type "char")
+                                                        (reparse-symbol arg-sub-list) [5896 5909]))                                                  
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [5869 5910])
+                                            ("ParseArguments" function
+                                               (:prototype-flag t
+                                                :arguments 
+                                                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [6110 6119])
+                                                    ("argv" variable
+                                                       (:pointer 1
+                                                        :dereference 1
+                                                        :type "char")
+                                                        (reparse-symbol arg-sub-list) [6120 6133]))                                                  
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [6090 6134])
+                                            ("Cdd_DiagnosticServiceApplicationTestFixture" friend nil (reparse-symbol classsubparts) [6191 6247]))                                          
+                                        :type "class")
+                                        (reparse-symbol namespacesubparts) [2435 6251]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [2154 6254]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [2123 6282]))                  
+                :type "namespace")
+                nil [2104 6317]))          
+      :file "diagnostic_service_application.h"
+      :pointmax 6401
+      :fsize 6400
+      :lastmodtime '(24287 13634 354717 131000)
+      :unmatched-syntax '((punctuation 6247 . 6248) (punctuation 2937 . 2938) (DEFAULT 2930 . 2937) (punctuation 2928 . 2929) (semantic-list 2925 . 2927) (symbol 2897 . 2925) (punctuation 2896 . 2897) (VIRTUAL 2888 . 2895) (symbol 2651 . 2660) (STATIC 2644 . 2650) (punctuation 2301 . 2302) (symbol 2290 . 2300) (USING 2284 . 2289))
+      :lexical-table 
+        '(("SRC_APPLICATION_DIAGNOSTIC_SERVICE_APPLICATION_H_")
+          )
+)
+    (semanticdb-table "semanticdb-table-980a60"
+      :major-mode c++-mode
+      :tags 
+        '( ("diagnostic_service_application.h" include nil nil [1385 1428])
+            ("diagnostic_service_constants.h" include nil nil [1429 1470])
+            ("unistd.h" include (:system-flag t) nil [1472 1491])
+            ("atomic" include (:system-flag t) nil [1493 1510])
+            ("chrono" include (:system-flag t) nil [1511 1528])
+            ("cmath" include (:system-flag t) nil [1529 1545])
+            ("csignal" include (:system-flag t) nil [1546 1564])
+            ("fstream" include (:system-flag t) nil [1565 1583])
+            ("iostream" include (:system-flag t) nil [1584 1603])
+            ("map" include (:system-flag t) nil [1604 1618])
+            ("string" include (:system-flag t) nil [1619 1636])
+            ("thread" include (:system-flag t) nil [1637 1654])
+            ("utility" include (:system-flag t) nil [1655 1673])
+            ("vector" include (:system-flag t) nil [1674 1691])
+            ("ara/crc/crc.h" include nil nil [1693 1717])
+            ("ara/log/config/appl_manifest_logging_config.h" include nil nil [1796 1852])
+            ("ara/log/logging.h" include nil nil [1860 1888])
+            ("configuration/application_configuration_parser.h" include nil nil [1889 1948])
+            ("configuration/application_settings_keys.h" include nil nil [1949 2001])
+            ("oem_timer_dsa.h" include nil nil [2002 2028])
+            ("osabstraction/commandlineparser/command_line_parser.h" include nil nil [2029 2093])
+            ("util/dsa_ara_logger.h" include nil nil [2094 2126])
+            ("util/string_helper.h" include nil nil [2127 2158])
+            ("vac/language/cpp14_backport.h" include nil nil [2159 2199])
+            ("vac/language/result.h" include nil nil [2200 2232])
+            ("vector" type
+               (:members 
+                  ( ("diagnostic_service" type
+                       (:members 
+                          ( ("application" type
+                               (:members 
+                                  ( ("_sv" variable (:type "int") (reparse-symbol namespacesubparts) [2425 2429])
+                                    ("DiagnosticServiceApplication" function
+                                       (:constructor-flag t
+                                        :parent "DiagnosticServiceApplication"
+                                        :type ("DiagnosticServiceApplication" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [2431 2540])
+                                    ("SignalHandlerThread" function
+                                       (:parent "DiagnosticServiceApplication"
+                                        :type "void")
+                                        (reparse-symbol namespacesubparts) [2778 4577])
+                                    ("Usage" function
+                                       (:parent "DiagnosticServiceApplication"
+                                        :arguments 
+                                          ( ("argc" variable
+                                               (:constant-flag t
+                                                :type "int")
+                                                (reparse-symbol arg-sub-list) [4620 4635])
+                                            ("argv" variable
+                                               (:pointer 1
+                                                :dereference 1
+                                                :type "char")
+                                                (reparse-symbol arg-sub-list) [4636 4649]))                                          
+                                        :type "void")
+                                        (reparse-symbol namespacesubparts) [4579 5375])
+                                    ("ParseArguments" function
+                                       (:parent "DiagnosticServiceApplication"
+                                        :arguments 
+                                          ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [5427 5436])
+                                            ("argv" variable
+                                               (:pointer 1
+                                                :dereference 1
+                                                :type "char")
+                                                (reparse-symbol arg-sub-list) [5437 5450]))                                          
+                                        :type "void")
+                                        (reparse-symbol namespacesubparts) [5377 8427])
+                                    ("Initialize" function
+                                       (:parent "DiagnosticServiceApplication"
+                                        :arguments 
+                                          ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [8475 8484])
+                                            ("argv" variable
+                                               (:pointer 1
+                                                :dereference 1
+                                                :type "char")
+                                                (reparse-symbol arg-sub-list) [8485 8498]))                                          
+                                        :type "void")
+                                        (reparse-symbol namespacesubparts) [8429 14218])
+                                    ("Run" function
+                                       (:parent "DiagnosticServiceApplication"
+                                        :type "void")
+                                        (reparse-symbol namespacesubparts) [14220 14427])
+                                    ("Shutdown" function
+                                       (:parent "DiagnosticServiceApplication"
+                                        :type "void")
+                                        (reparse-symbol namespacesubparts) [14429 15932]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [2358 15935]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [2327 15963]))                  
+                :type "namespace")
+                nil [2308 15998]))          
+      :file "diagnostic_service_application.cpp"
+      :pointmax 16020
+      :fsize 16019
+      :lastmodtime '(24287 13634 354717 131000)
+      :unmatched-syntax nil))
+  :file "!home!hyuk.myeong!work!G550!Apps!source!autosar!third_party!vector!amsr-vag-app-dsa!src!application!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

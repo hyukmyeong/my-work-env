@@ -1,0 +1,200 @@
+;; Object semanticdb-project-database-file-29a0184
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-29a0184"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-1932810"
+      :major-mode c++-mode
+      :tags 
+        '( ("SOURCE_DCM_DIAGNOSTIC_COMMUNICATION_MANAGER_H_" variable (:constant-flag t) nil [800 846])
+            ("memory" include (:system-flag t) nil [848 865])
+            ("common/service_processor.h" include nil nil [867 904])
+            ("ara/core/vector.h" include nil nil [905 933])
+            ("ara/log/logging.h" include nil nil [934 962])
+            ("dcm/runtime_context/dcm_runtime_context.h" include nil nil [963 1015])
+            ("common/diagnostic_manager.h" include nil nil [1016 1054])
+            ("ara/diag/uds_transport/protocol_handler.h" include nil nil [1056 1108])
+            ("dcm/conversation/conversation_manager.h" include nil nil [1109 1159])
+            ("dcm/diagnostic_communication_manager_interface.h" include nil nil [1160 1219])
+            ("dcm/service/processors/did_handler.h" include nil nil [1220 1267])
+            ("common/data_element.h" include nil nil [1268 1300])
+            ("ara::diag" using (:type ("ara::diag" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [1302 1328])
+            ("ara::diag::uds_transport::ByteVector" using (:type ("ara::diag::uds_transport::ByteVector" type
+                 (:prototype t
+                  :type "class")
+                  nil nil)) nil [1329 1372])
+            ("ara" type
+               (:members 
+                  ( ("diag" type
+                       (:members 
+                          ( ("dcm" type
+                               (:members 
+                                  ( ("std::uint8_t" variable (:type "int") (reparse-symbol namespacesubparts) [1443 1868])
+                                    ("DCM" type
+                                       (:superclasses 
+                                          ( ("common::DiagnosticManager" type
+                                               (:protection "public"
+                                                :type "class")
+                                                nil nil)
+                                            ("DCMInterface" type
+                                               (:protection "public"
+                                                :type "class")
+                                                nil nil))                                          
+                                        :members 
+                                          ( ("protected" label nil (reparse-symbol classsubparts) [2306 2316])
+                                            ("ara::diag::uds_transport::UdsTransportProtocolHandler" variable (:type "int") (reparse-symbol classsubparts) [2439 2493])
+                                            ("uds_transport_protocol_handlers_" variable (:type ("std::unique_ptr" type
+                                                 (:template-specifier 
+                                                    ( ("UdsTransportProtocolHandler" type nil nil nil))                                                    
+                                                  :type "class")
+                                                  nil nil)) (reparse-symbol classsubparts) [2496 2574])
+                                            ("conversation_manager_" variable (:type ("std::shared_ptr" type
+                                                 (:template-specifier 
+                                                    ( ("conversation::ConversationManager" type nil nil nil))                                                    
+                                                  :type "class")
+                                                  nil nil)) (reparse-symbol classsubparts) [2632 2705])
+                                            ("StartHandlers" function
+                                               (:prototype-flag t
+                                                :typemodifiers ("virtual")
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [2762 2791])
+                                            ("StopHandlers" function
+                                               (:prototype-flag t
+                                                :typemodifiers ("virtual")
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [2848 2876])
+                                            ("private" label nil (reparse-symbol classsubparts) [2879 2887])
+                                            ("dcm_runtime_context_" variable (:type ("std::shared_ptr" type
+                                                 (:template-specifier 
+                                                    ( ("runtime::DcmRuntimeContext" type nil nil nil))                                                    
+                                                  :type "class")
+                                                  nil nil)) (reparse-symbol classsubparts) [2942 3007])
+                                            ("aralog_" variable (:type ("ara::log::Logger" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3049 3075])
+                                            ("dataElement_" variable (:type ("std::unique_ptr" type
+                                                 (:template-specifier 
+                                                    ( ("ara::diag::dcm::DataElement" type nil nil nil))                                                    
+                                                  :type "class")
+                                                  nil nil)) (reparse-symbol classsubparts) [3125 3183])
+                                            ("public" label nil (reparse-symbol classsubparts) [3186 3193])
+                                            ("DCM" function
+                                               (:prototype-flag t
+                                                :constructor-flag t
+                                                :type ("DCM" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [3268 3274])
+                                            ("override" variable (:type "int") (reparse-symbol classsubparts) [3395 3404])
+                                            ("override" variable (:type "int") (reparse-symbol classsubparts) [3496 3505])
+                                            ("override" variable (:type "int") (reparse-symbol classsubparts) [3696 3705])
+                                            ("override" variable (:type "int") (reparse-symbol classsubparts) [4008 4017])
+                                            ("override" variable (:type "int") (reparse-symbol classsubparts) [4328 4337])
+                                            ("OfferServices" function
+                                               (:prototype-flag t
+                                                :typemodifiers ("virtual")
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [4396 4425])
+                                            ("StopOfferServices" function
+                                               (:prototype-flag t
+                                                :typemodifiers ("virtual")
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [4492 4525])
+                                            ("CreateServiceProcessor" function
+                                               (:prototype-flag t
+                                                :arguments 
+                                                  ( ("untyped_sid" variable
+                                                       (:constant-flag t
+                                                        :type ("std::uint8_t" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [4614 4645]))                                                  
+                                                :type ("ara::diag::ServiceProcessor::ServiceProcessorSharedPtr" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [4529 4646]))                                          
+                                        :type "class")
+                                        (reparse-symbol namespacesubparts) [2228 4649]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [1406 4652]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [1389 4671]))                  
+                :type "namespace")
+                nil [1373 4691]))          
+      :file "diagnostic_communication_manager.h"
+      :pointmax 4767
+      :fsize 4899
+      :lastmodtime '(24248 38548 81252 911000)
+      :unmatched-syntax '((semantic-list 4211 . 4327) (symbol 4191 . 4211) (BOOL 4186 . 4190) (semantic-list 3964 . 4007) (symbol 3952 . 3964) (BOOL 3947 . 3951) (semantic-list 3693 . 3695) (symbol 3685 . 3693) (VOID 3680 . 3684) (semantic-list 3493 . 3495) (symbol 3490 . 3493) (VOID 3485 . 3489) (semantic-list 3392 . 3394) (symbol 3382 . 3392) (VOID 3377 . 3381) (punctuation 3301 . 3302) (DEFAULT 3294 . 3301) (punctuation 3292 . 3293) (semantic-list 3289 . 3291) (symbol 3286 . 3289) (punctuation 3285 . 3286) (VIRTUAL 3277 . 3284) (punctuation 2437 . 2438) (symbol 2409 . 2436) (USING 2403 . 2408) (punctuation 1441 . 1442) (symbol 1427 . 1440) (ENUM 1422 . 1426))
+      :lexical-table 
+        '(("SOURCE_DCM_DIAGNOSTIC_COMMUNICATION_MANAGER_H_")
+          )
+)
+    (semanticdb-table "semanticdb-table-29a0164"
+      :major-mode c++-mode
+      :tags 
+        '( ("SOURCE_DCM_DIAGNOSTIC_COMMUNICATION_MANAGER_INTERFACE_H_" variable (:constant-flag t) nil [829 885])
+            ("vector" include (:system-flag t) nil [887 904])
+            ("ara/core/vector.h" include nil nil [906 934])
+            ("ara/diag/uds_transport/uds_message.h" include nil nil [935 982])
+            ("ara::core::Vector" variable (:type "int") nil [1003 1035])
+            ("ara" type
+               (:members 
+                  ( ("diag" type
+                       (:members 
+                          ( ("dcm" type
+                               (:members 
+                                  ( ("service" type
+                                       (:members 
+                                          ( ("DidHandler" type
+                                               (:prototype t
+                                                :type "class")
+                                                (reparse-symbol namespacesubparts) [1106 1123]))                                          
+                                        :type "namespace")
+                                        (reparse-symbol namespacesubparts) [1086 1125])
+                                    ("DCMInterface" type
+                                       (:members 
+                                          ( ("public" label nil (reparse-symbol classsubparts) [1247 1254])
+                                            ("ReadDIDValue" function
+                                               (:pure-virtual-flag t
+                                                :prototype-flag t
+                                                :typemodifiers ("virtual")
+                                                :arguments 
+                                                  ( ("dataId" variable (:type ("std::uint16_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1587 1608])
+                                                    ("dataRec" variable
+                                                       (:reference 1
+                                                        :type ("ByteVector" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [1609 1629]))                                                  
+                                                :type "bool")
+                                                (reparse-symbol classsubparts) [1561 1634])
+                                            ("ReadDataElementValue" function
+                                               (:pure-virtual-flag t
+                                                :prototype-flag t
+                                                :typemodifiers ("virtual")
+                                                :arguments 
+                                                  ( ("elementId" variable (:type ("std::uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1837 1861])
+                                                    ("metaInfo" variable
+                                                       (:constant-flag t
+                                                        :type ("uds_transport::UdsMessage::MetaInfoMap" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [1868 1922])
+                                                    ("dataElementValue" variable
+                                                       (:reference 1
+                                                        :type ("ByteVector" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [1923 1952]))                                                  
+                                                :type "bool")
+                                                (reparse-symbol classsubparts) [1803 1963]))                                          
+                                        :type "class")
+                                        (reparse-symbol namespacesubparts) [1225 1966]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [1070 1969]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [1053 1988]))                  
+                :type "namespace")
+                nil [1037 2008]))          
+      :file "diagnostic_communication_manager_interface.h"
+      :pointmax 2094
+      :fsize 2150
+      :lastmodtime '(24248 38548 81252 911000)
+      :unmatched-syntax '((punctuation 1318 . 1319) (DEFAULT 1311 . 1318) (punctuation 1309 . 1310) (semantic-list 1306 . 1308) (symbol 1294 . 1306) (punctuation 1293 . 1294) (VIRTUAL 1285 . 1292) (punctuation 1281 . 1282) (DEFAULT 1274 . 1281) (punctuation 1272 . 1273) (semantic-list 1269 . 1271) (symbol 1257 . 1269) (USING 984 . 989))
+      :lexical-table 
+        '(("SOURCE_DCM_DIAGNOSTIC_COMMUNICATION_MANAGER_INTERFACE_H_")
+          )
+))
+  :file "!home!hyuk.myeong!work!ICAS!Apps!source!autosar!avin!avin-ap!dm!source!inc!private!dcm!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

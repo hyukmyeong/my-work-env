@@ -1,1 +1,1 @@
-("~/.emacs.d/evil/" "~/work/ICAS3_Full/CPU/QNX/Apps/source/autosar/ara-api/" "~/work/ICAS3_Full/CPU/QNX/Apps/source/autosar/avin/" "~/work/test/" "~/work/ICAS3_Full/CPU/QNX/Apps/source/tools/doipgen/")
+("~/work/G550/Apps/source/autosar/avin/avin-ap/dm/" "~/work/G550/Apps/source/autosar/third_party/vector/amsr-vag-app-dsa/" "~/work/G550/Apps/" "~/work/ICAS/Apps/source/autosar/avin/" "~/local/emacs/" "~/.emacs.d/")

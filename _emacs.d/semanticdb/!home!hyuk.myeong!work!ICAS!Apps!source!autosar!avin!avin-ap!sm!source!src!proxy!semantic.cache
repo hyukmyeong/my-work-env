@@ -1,0 +1,39 @@
+;; Object semanticdb-project-database-file-1d6a758
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-1d6a758"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-1d6a774"
+      :major-mode c++-mode
+      :tags 
+        '( ("ARA_COM_MAIN" variable (:constant-flag t) nil [1064 1076])
+            ("ara/com/internal/ara_com_main.h" include nil nil [1101 1143])
+            ("ara" type
+               (:members 
+                  ( ("com" type
+                       (:members 
+                          ( ("internal" type
+                               (:members 
+                                  ( ("runtime" type
+                                       (:members 
+                                          ( ("Initialize" function (:type "void") (reparse-symbol namespacesubparts) [1679 2218]))                                          
+                                        :type "namespace")
+                                        (reparse-symbol namespacesubparts) [1659 2221]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [1638 2244]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [1622 2268]))                  
+                :type "namespace")
+                nil [1606 2287]))          
+      :file "ara_com_main-State_Manager_swc.cpp"
+      :pointmax 2351
+      :fsize 2350
+      :lastmodtime '(24248 38548 121232 912000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("ARA_COM_MAIN" . ((punctuation "-" 1077 . 1078) (symbol "STATE_MANAGER_SWC_CPP" 1078 . 1099)))
+          )
+))
+  :file "!home!hyuk.myeong!work!ICAS!Apps!source!autosar!avin!avin-ap!sm!source!src!proxy!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

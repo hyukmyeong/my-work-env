@@ -1,3 +1,23 @@
+..
+ls
+cd CppCoreGuidelines/
+ls
+git branch
+git log .
+ls
+cat ../README.md 
+mkdir build && cd build && cmake .. && make && cd ../../  
+rm -rf build && mkdir build && cd build && cmake .. && make && cd ../
+rm -rf build && mkdir build && cd build && cmake .. && make && cd ../
+rm -rf build && mkdir build && cd build && cmake .. && make && cd ..
+ls
+mkdir build
+ls
+rm -rf build
+rm -rf build && mkdir build && cd build && cmake ..
+ls
+rm -rf build && mkdir build && cd build
+ls
 mkdir build
 ls
 cd build
@@ -75,54 +95,34 @@ ls
 t status
 git status
 ls
-ssh -l hyuk.myeong 10.178.97.152
-ls
-ssh
-ls
-ls
-sls
-ls
+git diff
 ...
+...
+cd ../..
+cd ..
 ls
-..
-ls
-..
-ls
-c.
-ll
-..
-ls
-..
-ls
-..
-ls
-cd .
-ls
-..
-h
-history
-ls
-cd build/
-ls
-./RUN_clean_all.sh
-ls
-./RUN_build_all.sh
-ls
-source RUN_clean_all.sh 
+cd ..
 s
+cd -
+cd source/src/diagnostic-manager/
 ls
-source RUN_build_all.sh
-ssh -l hyuk.myeong  10.178.97.152
-ll
-ssh -l hyuk.myeong  10.178.97.152ssh -l hyuk.myeong  10.178.97.152ssh -l hyuk.myeong  10.178.97.152ssh -l hyuk.myeong  10.178.97.152
-ssh -l hyuk.myeong  10.178.97.152
+clear
 ls
 ls
-ssh -l hyuk.myeong  10.178.97.152
-source RUN_	ls
+cd ..
+..
+..
+..
 ls
-source RUN_clean_all.sh
+..
 ls
-. RUN_build_all.sh 
 ls
-ssh -l hyuk.myeong  10.178.97.152
+llls
+lsls
+ls
+cd
+ls
+cd .emacs.d/
+ls
+myFind speedbar
+cat elpa/sr-speedbar-20161025.831/sr-speedbar.el
