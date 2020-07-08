@@ -231,9 +231,9 @@ scroll-down-aggressively 0.01)
 ;; mikki start (evil)
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
-;(add-to-list 'load-path "~/.emacs.d/evil")
-;(require 'evil)
-;(evil-mode 1)
+(add-to-list 'load-path "~/.emacs.d/evil")
+(require 'evil)
+(evil-mode 1)
 
 ;(defun evil-keyboard-quit ()
 ;  "Keyboard quit and force normal state."
