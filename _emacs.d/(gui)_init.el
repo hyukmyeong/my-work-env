@@ -76,12 +76,6 @@ scroll-conservatively 0
 scroll-up-aggressively 0.01
 scroll-down-aggressively 0.01)
 
-;; window size
-(global-set-key (kbd "<S-up>") 'shrink-window)
-(global-set-key (kbd "<S-down>") 'enlarge-window)
-(global-set-key (kbd "<S-left>") 'shrink-window-horizontally)
-(global-set-key (kbd "<S-right>") 'enlarge-window-horizontally)
-
 ;; always show line numbers
 (when (version<= "26.0.50" emacs-version )
  (global-display-line-numbers-mode))
@@ -259,9 +253,16 @@ scroll-down-aggressively 0.01)
 ;(define-key evil-normal-state-map (kbd "M-.") 'evil-repeat-pop-next)
 
 ; 윈도우 이동 : shift + arrow
-(windmove-default-keybindings)
+;(windmove-default-keybindings)
 ;(windmove-default-keybindings 'meta)
-;(windmove-default-keybindings 'control)
+(windmove-default-keybindings 'control)
+
+;; window size
+(global-set-key (kbd "<S-up>") 'shrink-window)
+(global-set-key (kbd "<S-down>") 'enlarge-window)
+(global-set-key (kbd "<S-left>") 'shrink-window-horizontally)
+(global-set-key (kbd "<S-right>") 'enlarge-window-horizontally)
+
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; mikki finish (evil)
