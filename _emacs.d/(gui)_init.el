@@ -121,24 +121,25 @@ scroll-down-aggressively 0.01)
 
 ;; ~/.emacs.d/helm-cscope.el 파일 하단에 (add-to-list 'load-path ".") 를 추가해야 함
 (require 'xcscope)
-(require 'helm-cscope)
+;(require 'helm-cscope)
 
 ;; Enable helm-cscope-mode
-(add-hook 'c-mode-hook 'helm-cscope-mode)
-(add-hook 'c++-mode-hook 'helm-cscope-mode)
+;(add-hook 'c-mode-hook 'helm-cscope-mode)
+;(add-hook 'c++-mode-hook 'helm-cscope-mode)
 
 ;; Set key bindings
-(eval-after-load "helm-cscope"
-  '(progn
-     (define-key helm-cscope-mode-map (kbd "C-\\ s") 'helm-cscope-find-this-symbol)
-     (define-key helm-cscope-mode-map (kbd "C-\\ g") 'helm-cscope-find-global-definition)
-     (define-key helm-cscope-mode-map (kbd "C-\\ e") 'helm-cscope-find-called-function)
-     (define-key helm-cscope-mode-map (kbd "C-\\ c") 'helm-cscope-find-calling-this-function)
-     (define-key helm-cscope-mode-map (kbd "C-t") 'helm-cscope-pop-mark)))
+;(eval-after-load "helm-cscope"
+;  '(progn
+;     (define-key helm-cscope-mode-map (kbd "C-\\ s") 'cscope-find-this-symbol)
+;     (define-key helm-cscope-mode-map (kbd "C-\\ g") 'cscope-find-global-definition)
+;     (define-key helm-cscope-mode-map (kbd "C-\\ e") 'cscope-find-called-function)
+;     (define-key helm-cscope-mode-map (kbd "C-\\ c") 'cscope-find-calling-this-function)
+;     (define-key helm-cscope-mode-map (kbd "C-t") 'cscope-pop-mark)))
 
-(global-set-key (kbd "M-s") 'helm-swoop)
-;(global-set-key (kbd "M-,") 'helm-for-files)
-;(global-set-key (kbd "M-.") 'helm-projectile-find-file)
+(global-set-key (kbd "M-s") 'cscope-find-this-symbol)
+(global-set-key (kbd "M-t") 'cscope-pop-mark)
+(global-set-key (kbd "C-s") 'helm-swoop)
+
 ; helm-projectile-find-file은 어디에서 실행했든 .git을 인식하고
 ; projectile-find-file은 실행한 폴더에서만 파일을 찾아줌
 (global-set-key (kbd "M-p p") 'projectile-dired)
@@ -231,9 +232,9 @@ scroll-down-aggressively 0.01)
 ;; mikki start (evil)
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
-(add-to-list 'load-path "~/.emacs.d/evil")
-(require 'evil)
-(evil-mode 1)
+;(add-to-list 'load-path "~/.emacs.d/evil")
+;(require 'evil)
+;(evil-mode 1)
 
 ;(defun evil-keyboard-quit ()
 ;  "Keyboard quit and force normal state."
