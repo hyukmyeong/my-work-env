@@ -102,18 +102,18 @@ scroll-down-aggressively 0.01)
 (require 'setup-cedet)
 (require 'setup-editing)
 
-(setq
- helm-gtags-ignore-case t
- helm-gtags-auto-update t
- helm-gtags-use-input-at-cursor t
- helm-gtags-pulse-at-cursor t
- helm-gtags-prefix-key "\C-cg"
- helm-gtags-suggested-key-mapping t
- )
+;(setq
+; helm-gtags-ignore-case t
+; helm-gtags-auto-update t
+; helm-gtags-use-input-at-cursor t
+; helm-gtags-pulse-at-cursor t
+; helm-gtags-prefix-key "\C-cg"
+; helm-gtags-suggested-key-mapping t
+; )
 
-(require 'helm-gtags)
+;(require 'helm-gtags)
 ;; Enable helm-gtags-mode
-(add-hook 'dired-mode-hook 'helm-gtags-mode)
+;(add-hook 'dired-mode-hook 'helm-gtags-mode)
 ;;(add-hook 'eshell-mode-hook 'helm-gtags-mode)
 ;;(add-hook 'c-mode-hook 'helm-gtags-mode)
 ;;(add-hook 'c++-mode-hook 'helm-gtags-mode)
@@ -136,9 +136,9 @@ scroll-down-aggressively 0.01)
 ;     (define-key helm-cscope-mode-map (kbd "C-\\ c") 'cscope-find-calling-this-function)
 ;     (define-key helm-cscope-mode-map (kbd "C-t") 'cscope-pop-mark)))
 
-(global-set-key (kbd "M-s") 'cscope-find-this-symbol)
-(global-set-key (kbd "M-t") 'cscope-pop-mark)
-(global-set-key (kbd "C-s") 'helm-swoop)
+;(global-set-key (kbd "M-s") 'helm-swoop)
+(global-set-key (kbd "C-[ s") 'cscope-find-this-symbol)
+(global-set-key (kbd "C-[ t") 'cscope-pop-mark)
 
 ; helm-projectile-find-file은 어디에서 실행했든 .git을 인식하고
 ; projectile-find-file은 실행한 폴더에서만 파일을 찾아줌
