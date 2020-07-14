@@ -13,7 +13,8 @@ rm -rf GPATH GTAGS GRTAGS
 if [ -z "$check_kernel" ]
 then
     echo "it is not kernel dir"
-    find ${PWD} -name '*.[chS]' -o -name '*.mk' -o -name '*.cc' -o -name '*.hpp' -o -name '*.cpp*' -o -name 'Makefile' >cscope.files
+    #find . \! -type l -a
+    find . \! -type l -a -name '*.[chS]' -o -name '*.mk' -o -name '*.cc' -o -name '*.hpp' -o -name '*.cpp*' -o -name 'Makefile' >cscope.files
     #cscope -bqkv -i cscope.files
     #cscope -b -k
     cscope -b -q -k -R -v -i cscope.files
