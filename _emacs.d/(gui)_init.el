@@ -121,7 +121,7 @@ scroll-down-aggressively 0.01)
 
 ;; ~/.emacs.d/helm-cscope.el 파일 하단에 (add-to-list 'load-path ".") 를 추가해야 함
 (require 'xcscope)
-;(require 'helm-cscope)
+(require 'helm-cscope)
 
 ;; Enable helm-cscope-mode
 ;(add-hook 'c-mode-hook 'helm-cscope-mode)
