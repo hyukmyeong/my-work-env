@@ -6,6 +6,7 @@ set smartcase
 set ruler                   "ru : inform cursor position in right below side
 set nowrapscan
 "set background=dark
+set shiftwidth=4
 set ignorecase              "dont distinguish capital and little during searching
 set hlsearch                "highlight to searched string"
 set showmatch               "show coupled pharenthisis
