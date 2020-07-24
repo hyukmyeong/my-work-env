@@ -4,7 +4,7 @@
 
 (require 'package)
 (add-to-list 'package-archives
-         '("melpa" . "http://melpa.org/packages/") t)
+	     '("melpa" . "http://melpa.org/packages/") t)
 
 ;(require 'package)
 ;(add-to-list 'package-archives
@@ -14,7 +14,7 @@
 ;(setq-default package-check-signature nil)
 
 (when (not package-archive-contents)
-    (package-refresh-contents))
+  (package-refresh-contents))
 
 (unless (package-installed-p 'use-package)
   (package-install 'use-package))
@@ -40,23 +40,23 @@
 ;(setq doom-theme 'doom-city-lights)
 ;(load-theme 'doom-city-lights t)
 (use-package doom-themes
-  :config
-  ;; Global settings (defaults)
-  (setq doom-themes-enable-bold t    ; if nil, bold is universally disabled
-        doom-themes-enable-italic t) ; if nil, italics is universally disabled
-  (load-theme 'doom-city-lights t)
+	     :config
+	     ;; Global settings (defaults)
+	     (setq doom-themes-enable-bold t    ; if nil, bold is universally disabled
+		   doom-themes-enable-italic t) ; if nil, italics is universally disabled
+	     (load-theme 'doom-city-lights t)
 
-  ;; Enable flashing mode-line on errors
-  (doom-themes-visual-bell-config)
+	     ;; Enable flashing mode-line on errors
+	     (doom-themes-visual-bell-config)
 
-  ;; Enable custom neotree theme (all-the-icons must be installed!)
-  (doom-themes-neotree-config)
-  ;; or for treemacs users
-  (setq doom-themes-treemacs-theme "doom-colors") ; use the colorful treemacs theme
-  (doom-themes-treemacs-config)
+	     ;; Enable custom neotree theme (all-the-icons must be installed!)
+	     (doom-themes-neotree-config)
+	     ;; or for treemacs users
+	     (setq doom-themes-treemacs-theme "doom-colors") ; use the colorful treemacs theme
+	     (doom-themes-treemacs-config)
 
-  ;; Corrects (and improves) org-mode's native fontification.
-  (doom-themes-org-config))
+	     ;; Corrects (and improves) org-mode's native fontification.
+	     (doom-themes-org-config))
 
 ;(setq doom-theme 'doom-nord-light-theme)
 ;(setq default-frame-alist '((font . "Source Code Pro-10")))
@@ -72,13 +72,13 @@
 ;; for smooth scrolling and disabling the automatical recentering of emacs when moving the cursor
 ;; (setq scroll-conservatively 0
 (setq-default scroll-margin 1
-scroll-conservatively 0
-scroll-up-aggressively 0.01
-scroll-down-aggressively 0.01)
+	      scroll-conservatively 0
+	      scroll-up-aggressively 0.01
+	      scroll-down-aggressively 0.01)
 
 ;; always show line numbers
 (when (version<= "26.0.50" emacs-version )
- (global-display-line-numbers-mode))
+  (global-display-line-numbers-mode))
 ;; (global-linum-mode 1)
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
@@ -95,7 +95,7 @@ scroll-down-aggressively 0.01)
 
 (require 'setup-general)
 (if (version< emacs-version "24.4")
-    (require 'setup-ivy-counsel)
+  (require 'setup-ivy-counsel)
   (require 'setup-helm)
   (require 'setup-helm-gtags))
 ;; (require 'setup-ggtags)
@@ -214,7 +214,7 @@ scroll-down-aggressively 0.01)
 ;  (setq speedbar-use-images t)
 ;  (setq speedbar-initial-expansion-list-name "quick buffers")
 ;  (define-key speedbar-mode-map "\M-p" nil)
-  ;(sr-speedbar-open)
+;(sr-speedbar-open)
 ;  :config
 ;  (with-current-buffer sr-speedbar-buffer-name
 ;    (setq window-size-fixed 'width)
@@ -302,19 +302,19 @@ scroll-down-aggressively 0.01)
 ;; (define-key c-mode-map  [(tab)] 'company-complete)
 ;; (define-key c++-mode-map  [(tab)] 'company-complete)
 (custom-set-variables
- ;; custom-set-variables was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- '(package-selected-packages
-   (quote
-    (company-c-headers sr-speedbar zygospore helm-gtags helm yasnippet ws-butler volatile-highlights use-package undo-tree iedit dtrt-indent counsel-projectile company clean-aindent-mode anzu))))
+  ;; custom-set-variables was added by Custom.
+  ;; If you edit it by hand, you could mess it up, so be careful.
+  ;; Your init file should contain only one such instance.
+  ;; If there is more than one, they won't work right.
+  '(package-selected-packages
+     (quote
+       (company-c-headers sr-speedbar zygospore helm-gtags helm yasnippet ws-butler volatile-highlights use-package undo-tree iedit dtrt-indent counsel-projectile company clean-aindent-mode anzu))))
 (custom-set-faces
- ;; custom-set-faces was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- )
+  ;; custom-set-faces was added by Custom.
+  ;; If you edit it by hand, you could mess it up, so be careful.
+  ;; Your init file should contain only one such instance.
+  ;; If there is more than one, they won't work right.
+  )
 
 ;; Available C style:
 ;; “gnu”, “k&r”, “bsd”, “whitesmith”, “stroustrup”, “ellemtel”, “linux”, “python”, “java”, “user”
@@ -354,21 +354,21 @@ scroll-down-aggressively 0.01)
 ;(load-file (concat user-emacs-directory "cedet/contrib/cedet-contrib-load.el"))
 
 (set
- ;; use gdb-many-windows by default
- gdb-many-windows t
+  ;; use gdb-many-windows by default
+  gdb-many-windows t
 
- ;; Non-nil means display source file containing the main routine at startup
- gdb-show-main t
- )
+  ;; Non-nil means display source file containing the main routine at startup
+  gdb-show-main t
+  )
 
 
 (setq
- ;; use gdb-many-windows by default
- gdb-many-windows t
+  ;; use gdb-many-windows by default
+  gdb-many-windows t
 
- ;; Non-nil means display source file containing the main routine at startup
- gdb-show-main t
- )
+  ;; Non-nil means display source file containing the main routine at startup
+  gdb-show-main t
+  )
 
 (put 'erase-buffer 'disabled nil)
 
