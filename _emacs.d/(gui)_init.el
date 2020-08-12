@@ -145,6 +145,7 @@
 (global-set-key (kbd "M-p p") 'projectile-dired)
 (global-set-key (kbd "M-p f") 'project-find-file)
 (global-set-key (kbd "M-p s") 'projectile-switch-project)
+(global-set-key (kbd "M-p h") 'ff-find-other-file)
 (global-set-key (kbd "M-p b") 'sr-speedbar-toggle)
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
