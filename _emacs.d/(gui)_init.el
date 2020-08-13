@@ -343,6 +343,10 @@
 ;; mikki start (etc)
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
+(defun connect-otto ()
+  (interactive)
+  (dired "/ssh:hyuk.myeong@10.178.97.152:/home/hyuk.myeong/work"))
+
 ; (M-x load-file RET init.el)
 (setq company-backends (delete 'company-semantic company-backends))
 (define-key c-mode-map  [(tab)] 'company-complete)
