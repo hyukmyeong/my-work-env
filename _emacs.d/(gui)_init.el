@@ -192,8 +192,13 @@
 (setq sr-speedbar-right-side nil) ; put on left side
 (setq sr-speedbar-width 35)
 (setq sr-speedbar-max-width 35)
+
 ;(with-current-buffer sr-speedbar-buffer-name
 ;  (setq window-size-fixed 'width))
+
+(custom-set-variables
+ '(speedbar-show-unknown-files t)
+)
 
 ;(use-package dashboard
 ;  :ensure t
