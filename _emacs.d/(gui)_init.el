@@ -289,6 +289,7 @@
 
 ;; use space to indent by default
 (setq-default indent-tabs-mode nil)
+(setq tab-width 2)
 
 ;; Package: clean-aindent-mode
 (require 'clean-aindent-mode)
@@ -297,7 +298,6 @@
 ;(add-hook 'c-mode-hook '
 ;  (lambda ()
 ;  (c-set-style "bsd")
-;  (setq tab-width 2)
 ;  (setq c-basic-offset 2) ;; indent use only 2 blank
 ;  (setq indent-tabs-mode nil) ;; no tab
 ;))
