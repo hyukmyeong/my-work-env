@@ -292,6 +292,7 @@
 ;; use space to indent by default
 (setq-default indent-tabs-mode nil)
 (setq tab-width 2)
+(setq cmake-tab-width 4)
 
 ;; Package: clean-aindent-mode
 (require 'clean-aindent-mode)
