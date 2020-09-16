@@ -141,9 +141,10 @@
 (global-set-key (kbd "C-[ t") 'cscope-pop-mark)
 
 ; helm-projectile-find-file은 어디에서 실행했든 .git을 인식하고
-; projectile-find-file은 실행한 폴더에서만 파일을 찾아줌
+; projectile-find-file은 실행한 폴더에서만 파일을 찾아줌 (동작이 이상할때가 있음)
 (global-set-key (kbd "M-p p") 'projectile-dired)
-(global-set-key (kbd "M-p f") 'project-find-file)
+;(global-set-key (kbd "M-p f") 'project-find-file)
+(global-set-key (kbd "M-p f") 'projectile-find-file)
 (global-set-key (kbd "M-p s") 'projectile-switch-project)
 (global-set-key (kbd "M-p g") 'projectile-grep)
 (global-set-key (kbd "M-p n") 'find-file)
