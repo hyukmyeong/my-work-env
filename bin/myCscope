@@ -28,8 +28,8 @@ if [ "$input" -eq 1 ]; then
     gtags
 
     if [ ! -e .git ]; then
-        git init .
-        #touch .projectile
+        #git init .
+        touch .projectile
     fi  
 
 elif [ "$input" -eq 2 ]; then
@@ -38,9 +38,9 @@ elif [ "$input" -eq 2 ]; then
     rm -rf *tags*
     rm -rf GPATH GRTAGS GSYMS GTAGS
 
-    if git log 2>&1 | grep fatal; then
-        rm -rf .git
-    fi  
+    #if git log 2>&1 | grep fatal; then
+    #    rm -rf .git
+    #fi  
 
     if [ -e .projectile ]; then
         rm .projectile
