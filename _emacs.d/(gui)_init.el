@@ -4,7 +4,7 @@
 
 (require 'package)
 (add-to-list 'package-archives
-	     '("melpa" . "http://melpa.org/packages/") t)
+             '("melpa" . "http://melpa.org/packages/") t)
 
 ;(require 'package)
 ;(add-to-list 'package-archives
@@ -22,12 +22,16 @@
 (require 'use-package)
 (setq use-package-always-ensure t)
 
+(require 'package)
+(add-to-list 'package-archives
+  '("melpa" . "http://melpa.org/packages/") t)
+
+
 (add-to-list 'load-path "~/.emacs.d/custom")
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; mikki finish (초기화)
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-
 
 
 
@@ -40,23 +44,23 @@
 ;(setq doom-theme 'doom-city-lights)
 ;(load-theme 'doom-city-lights t)
 (use-package doom-themes
-	     :config
-	     ;; Global settings (defaults)
-	     (setq doom-themes-enable-bold t    ; if nil, bold is universally disabled
-		   doom-themes-enable-italic t) ; if nil, italics is universally disabled
-	     (load-theme 'doom-city-lights t)
+             :config
+             ;; Global settings (defaults)
+             (setq doom-themes-enable-bold t    ; if nil, bold is universally disabled
+                   doom-themes-enable-italic t) ; if nil, italics is universally disabled
+             (load-theme 'doom-city-lights t)
 
-	     ;; Enable flashing mode-line on errors
-	     (doom-themes-visual-bell-config)
+             ;; Enable flashing mode-line on errors
+             (doom-themes-visual-bell-config)
 
-	     ;; Enable custom neotree theme (all-the-icons must be installed!)
-	     (doom-themes-neotree-config)
-	     ;; or for treemacs users
-	     (setq doom-themes-treemacs-theme "doom-colors") ; use the colorful treemacs theme
-	     (doom-themes-treemacs-config)
+             ;; Enable custom neotree theme (all-the-icons must be installed!)
+             (doom-themes-neotree-config)
+             ;; or for treemacs users
+             (setq doom-themes-treemacs-theme "doom-colors") ; use the colorful treemacs theme
+             (doom-themes-treemacs-config)
 
-	     ;; Corrects (and improves) org-mode's native fontification.
-	     (doom-themes-org-config))
+             ;; Corrects (and improves) org-mode's native fontification.
+             (doom-themes-org-config))
 
 ;(setq doom-theme 'doom-nord-light-theme)
 ;(setq default-frame-alist '((font . "Source Code Pro-10")))
@@ -72,9 +76,9 @@
 ;; for smooth scrolling and disabling the automatical recentering of emacs when moving the cursor
 ;; (setq scroll-conservatively 0
 (setq-default scroll-margin 1
-	      scroll-conservatively 0
-	      scroll-up-aggressively 0.01
-	      scroll-down-aggressively 0.01)
+              scroll-conservatively 0
+              scroll-up-aggressively 0.01
+              scroll-down-aggressively 0.01)
 
 ;; always show line numbers
 (when (version<= "26.0.50" emacs-version )
@@ -136,12 +140,12 @@
 ;     (define-key helm-cscope-mode-map (kbd "C-\\ c") 'cscope-find-calling-this-function)
 ;     (define-key helm-cscope-mode-map (kbd "C-t") 'cscope-pop-mark)))
 
-;(global-set-key (kbd "M-s") 'helm-swoop)
+(global-set-key (kbd "M-s") 'helm-swoop)
 (global-set-key (kbd "C-[ s") 'cscope-find-this-symbol)
 (global-set-key (kbd "C-[ t") 'cscope-pop-mark)
 
 ; helm-projectile-find-file은 어디에서 실행했든 .git을 인식하고
-; projectile-find-file은 실행한 폴더에서만 파일을 찾아줌 (동작이 이상할때가 있음)
+; projectile-find-file은 실행한 폴더에서만 파일을 찾아줌
 (global-set-key (kbd "M-p p") 'projectile-dired)
 ;(global-set-key (kbd "M-p f") 'project-find-file)
 (global-set-key (kbd "M-p f") 'projectile-find-file)
@@ -149,7 +153,6 @@
 (global-set-key (kbd "M-p g") 'projectile-grep)
 (global-set-key (kbd "M-p n") 'find-file)
 (global-set-key (kbd "M-p b") 'sr-speedbar-toggle)
-
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; mikki finish (helm)
@@ -195,13 +198,12 @@
 (setq sr-speedbar-right-side nil) ; put on left side
 (setq sr-speedbar-width 35)
 (setq sr-speedbar-max-width 35)
-
 ;(with-current-buffer sr-speedbar-buffer-name
 ;  (setq window-size-fixed 'width))
 
 (custom-set-variables
  '(speedbar-show-unknown-files t)
-)
+ )
 
 ;(use-package dashboard
 ;  :ensure t
@@ -302,6 +304,7 @@
 ;(add-hook 'c-mode-hook '
 ;  (lambda ()
 ;  (c-set-style "bsd")
+;  (setq tab-width 2)
 ;  (setq c-basic-offset 2) ;; indent use only 2 blank
 ;  (setq indent-tabs-mode nil) ;; no tab
 ;))
@@ -352,6 +355,11 @@
 ;; mikki start (etc)
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
+(defun my-shell-hook ()
+  (local-set-key "C-c l" 'comint-clear-buffer))
+
+(add-hook 'shell-mode-hook 'my-shell-hook)
+
 (defun connect-otto ()
   (interactive)
   (dired "/ssh:hyuk.myeong@10.178.97.152:/home/hyuk.myeong/work"))
@@ -386,6 +394,8 @@
 
 (put 'erase-buffer 'disabled nil)
 
+
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; mikki finish (etc)
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
