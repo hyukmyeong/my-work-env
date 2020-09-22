@@ -1,0 +1,59 @@
+;; Object semanticdb-project-database-file-15cdd54
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-15cdd54"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-15cdd60"
+      :major-mode c++-mode
+      :tags 
+        '( ("LIB_LIBDMCOMMON_INCLUDE_COMMON_MULTI_BYTE_TYPE_H_" variable (:constant-flag t) nil [810 859])
+            ("stdexcept" include (:system-flag t) nil [861 881])
+            ("type_traits" include (:system-flag t) nil [882 904])
+            ("ara" type
+               (:members 
+                  ( ("diag" type
+                       (:members 
+                          ( ("GetByte" function
+                               (:template 
+                                  ( ("T" type (:type "class") nil nil))                                  
+                                :type ("uint8_t" type (:type "class") nil nil)
+                                :arguments 
+                                  ( ("value" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("T" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1190 1205])
+                                    ("byte_offset" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1206 1225]))                                  )
+                                (reparse-symbol namespacesubparts) [1152 1384])
+                            ("SetByte" function
+                               (:arguments 
+                                  ( ("value" variable
+                                       (:reference 1
+                                        :type ("T" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1736 1745])
+                                    ("byte_value" variable
+                                       (:constant-flag t
+                                        :type ("uint8_t" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1746 1771])
+                                    ("byte_offset" variable
+                                       (:constant-flag t
+                                        :type ("size_t" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1772 1797]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [1723 2087]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [922 2090]))                  
+                :type "namespace")
+                nil [906 2110]))          
+      :file "multi_byte_type.h"
+      :pointmax 2189
+      :fsize 2246
+      :lastmodtime '(24287 13657 431126 888000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("LIB_LIBDMCOMMON_INCLUDE_COMMON_MULTI_BYTE_TYPE_H_")
+          )
+))
+  :file "!home!hyuk.myeong!work!G550!Apps!source!autosar!avin!avin-ap!dm!source!inc!private!common!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,80 @@
+;; Object semanticdb-project-database-file-225a194
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-225a194"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-2032e60"
+      :major-mode c++-mode
+      :tags 
+        '( ("_ARA_DIAG_DIAGNOSTIC_MANAGER_DIAGNOSTICEVENTNOTIFICATION_SKELETON_H_" variable (:constant-flag t) nil [869 937])
+            ("ara/com/internal/skeleton/ara_skeleton_base.h" include nil nil [939 995])
+            ("ara/com/illegal_state_exception.h" include nil nil [997 1041])
+            ("diagnosticeventnotification_common.h" include nil nil [1042 1089])
+            ("ara" type
+               (:members 
+                  ( ("diag" type
+                       (:members 
+                          ( ("diagnostic_manager" type
+                               (:members 
+                                  ( ("skeleton" type
+                                       (:members 
+                                          ( ("fields" type (:type "namespace") (reparse-symbol namespacesubparts) [1176 1332])
+                                            ("events" type (:type "namespace") (reparse-symbol namespacesubparts) [1354 1624])
+                                            ("DiagnosticEventNotificationSkeleton" type
+                                               (:superclasses 
+                                                  ( ("ara::diag::diagnostic_manager::DiagnosticEventNotification" type
+                                                       (:protection "public"
+                                                        :type "class")
+                                                        nil nil)
+                                                    ("ara::com::internal::skeleton::TypedServiceImplBase" type
+                                                       (:protection "public"
+                                                        :type "class")
+                                                        nil nil))                                                  
+                                                :members 
+                                                  ( ("public" label nil (reparse-symbol classsubparts) [1891 1898])
+                                                    ("DiagnosticEventNotificationSkeleton" function
+                                                       (:constructor-flag t
+                                                        :arguments 
+                                                          ( ("instance_id" variable (:type ("ara::com::InstanceIdentifier" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1966 2007])
+                                                            ("mode" variable
+                                                               (:default-value "ara"
+                                                                :type ("ara::com::MethodCallProcessingMode" type (:type "class") nil nil))
+                                                                (reparse-symbol arg-sub-list) [2014 2059])
+                                                            ("" variable (:type ("com::MethodCallProcessingMode::kEvent" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2061 2099]))                                                          
+                                                        :type ("DiagnosticEventNotificationSkeleton" type (:type "class") nil nil))
+                                                        (reparse-symbol classsubparts) [1930 2230])
+                                                    ("DiagnosticEventNotificationSkeleton" function
+                                                       (:destructor-flag t
+                                                        :typemodifiers ("virtual")
+                                                        :type "void")
+                                                        (reparse-symbol classsubparts) [2233 2311])
+                                                    ("OfferService" function (:type "void") (reparse-symbol classsubparts) [3041 3436])
+                                                    ("CurrentEventStatus" variable (:type ("fields::CurrentEventStatus" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3440 3486])
+                                                    ("EventStatusChanged" variable (:type ("events::EventStatusChanged" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3489 3535])
+                                                    ("InitMonitor" variable (:type ("events::InitMonitor" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3538 3570]))                                                  
+                                                :type "class")
+                                                (reparse-symbol namespacesubparts) [1673 3573]))                                          
+                                        :type "namespace")
+                                        (reparse-symbol namespacesubparts) [1155 3576]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [1124 3600]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [1107 3634]))                  
+                :type "namespace")
+                nil [1091 3654]))          
+      :file "diagnosticeventnotification_skeleton.h"
+      :pointmax 3752
+      :fsize 3751
+      :lastmodtime '(24420 22489 988060 527000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("_ARA_DIAG_DIAGNOSTIC_MANAGER_DIAGNOSTICEVENTNOTIFICATION_SKELETON_H_")
+          )
+)
+    (semanticdb-table "semanticdb-table-1e397c8"
+      :file "diagnosticeventnotification_common.h"
+      :fsize 1652
+      :lastmodtime '(24420 22489 988060 527000)))
+  :file "!home!hyuk.myeong!work!LARA!avin!avin-ap!dm!source!inc!private!dem!service!service_skeleton!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

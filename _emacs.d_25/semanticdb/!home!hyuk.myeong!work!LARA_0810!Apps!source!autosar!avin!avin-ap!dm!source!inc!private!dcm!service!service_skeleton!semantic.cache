@@ -1,0 +1,154 @@
+;; Object semanticdb-project-database-file-293c0fc
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-293c0fc"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-293c108"
+      :major-mode c++-mode
+      :tags 
+        '( ("SOURCE_DCM_SERVICE_SKELETON_DIAGNOSTIC_STATUS_IMPL_H_" variable (:constant-flag t) nil [815 868])
+            ("dcm/service/service_skeleton/diagnostic_conversation_skeleton.h" include nil nil [870 944])
+            ("dcm/service/service_skeleton/diagnosticstatus_skeleton.h" include nil nil [945 1012])
+            ("dcm/types/impl_type_protocolstatustypearray.h" include nil nil [1013 1069])
+            ("dcm/service/registry/session_registry.h" include nil nil [1070 1120])
+            ("dcm/service/registry/security_registry.h" include nil nil [1121 1172])
+            ("ara/log/logging.h" include nil nil [1173 1201])
+            ("ara" type
+               (:members 
+                  ( ("diag" type
+                       (:members 
+                          ( ("dcm" type
+                               (:members 
+                                  ( ("conversation" type
+                                       (:members 
+                                          ( ("ConversationManager" type
+                                               (:prototype t
+                                                :type "class")
+                                                (reparse-symbol namespacesubparts) [1300 1326]))                                          
+                                        :type "namespace")
+                                        (reparse-symbol namespacesubparts) [1252 1328])
+                                    ("service" type
+                                       (:members 
+                                          ( ("DiagnosticStatusImpl" type
+                                               (:superclasses 
+                                                  ( ("ara::diag::service_interfaces::diagnostic_conversation_service::skeleton::diagnostic_conversationSkeleton" type
+                                                       (:protection "public"
+                                                        :type "class")
+                                                        nil nil))                                                  
+                                                :members 
+                                                  ( ("ara::diag::service_interfaces::diagnostic_conversation_service::skeleton::diagnostic_conversationSkeleton" variable (:type "int") (reparse-symbol classsubparts) [1613 1726])
+                                                    ("public" label nil (reparse-symbol classsubparts) [1729 1736])
+                                                    ("DiagnosticStatusImpl" function
+                                                       (:prototype-flag t
+                                                        :constructor-flag t
+                                                        :arguments 
+                                                          ( ("instance_id" variable
+                                                               (:reference 1
+                                                                :constant-flag t
+                                                                :type ("ara::com::InstanceIdentifier" type (:type "class") nil nil))
+                                                                (reparse-symbol arg-sub-list) [1862 1910])
+                                                            ("conversationManager" variable
+                                                               (:pointer 1
+                                                                :type ("ara::diag::dcm::conversation::ConversationManager" type (:type "class") nil nil))
+                                                                (reparse-symbol arg-sub-list) [1917 1988]))                                                          
+                                                        :type ("DiagnosticStatusImpl" type (:type "class") nil nil))
+                                                        (reparse-symbol classsubparts) [1841 1989])
+                                                    ("DiagnosticStatusImpl" function
+                                                       (:prototype-flag t
+                                                        :destructor-flag t
+                                                        :typemodifiers ("virtual")
+                                                        :type "void")
+                                                        (reparse-symbol classsubparts) [1992 2024])
+                                                    ("override" variable (:type "int") (reparse-symbol classsubparts) [2177 2186])
+                                                    ("Notify" function
+                                                       (:prototype-flag t
+                                                        :type "void")
+                                                        (reparse-symbol classsubparts) [2276 2290])
+                                                    ("NotifyIndentifier" function
+                                                       (:prototype-flag t
+                                                        :type "void")
+                                                        (reparse-symbol classsubparts) [2293 2318])
+                                                    ("InitializeFields" function
+                                                       (:prototype-flag t
+                                                        :type "void")
+                                                        (reparse-symbol classsubparts) [2321 2345])
+                                                    ("private" label nil (reparse-symbol classsubparts) [2348 2356])
+                                                    ("GetActiveProtocols" function
+                                                       (:prototype-flag t
+                                                        :methodconst-flag t
+                                                        :type ("DiagnosticConversationStatusType" type (:type "class") nil nil))
+                                                        (reparse-symbol classsubparts) [2359 2419])
+                                                    ("GetActiveIdentifier" function
+                                                       (:prototype-flag t
+                                                        :methodconst-flag t
+                                                        :type ("DiagnosticConversationIdentifierType" type (:type "class") nil nil))
+                                                        (reparse-symbol classsubparts) [2422 2487])
+                                                    ("ConvertSession" function
+                                                       (:prototype-flag t
+                                                        :methodconst-flag t
+                                                        :arguments 
+                                                          ( ("session" variable
+                                                               (:constant-flag t
+                                                                :type ("ara::diag::uds::sessiontype::SessionType" type (:type "class") nil nil))
+                                                                (reparse-symbol arg-sub-list) [2527 2582]))                                                          
+                                                        :type ("DiagnosticSessionType" type (:type "class") nil nil))
+                                                        (reparse-symbol classsubparts) [2490 2589])
+                                                    ("ConvertSecurityLevel" function
+                                                       (:prototype-flag t
+                                                        :methodconst-flag t
+                                                        :arguments 
+                                                          ( ("securityLevel" variable
+                                                               (:constant-flag t
+                                                                :type ("ara::core::Optional" type
+                                                                     (:template-specifier 
+                                                                        ( ("ara::diag::dcm::service::SecurityRegistry::SecurityLevelType" type nil nil nil))                                                                        
+                                                                      :type "class")
+                                                                      nil nil))
+                                                                (reparse-symbol arg-sub-list) [2648 2750]))                                                          
+                                                        :type ("DiagnosticSecurityLevelType" type (:type "class") nil nil))
+                                                        (reparse-symbol classsubparts) [2592 2763])
+                                                    ("conversationManager_" variable
+                                                       (:pointer 1
+                                                        :type ("ara::diag::dcm::conversation::ConversationManager" type (:type "class") nil nil))
+                                                        (reparse-symbol classsubparts) [2766 2838])
+                                                    ("m_sessionSubscriberId" variable (:type ("ara::core::Optional" type
+                                                         (:template-specifier 
+                                                            ( ("service::SessionRegistry::SubscriberId" type nil nil nil))                                                            
+                                                          :type "class")
+                                                          nil nil)) (reparse-symbol classsubparts) [2841 2923])
+                                                    ("m_securitySubscriberId" variable (:type ("ara::core::Optional" type
+                                                         (:template-specifier 
+                                                            ( ("service::SecurityRegistry::SubscriberId" type nil nil nil))                                                            
+                                                          :type "class")
+                                                          nil nil)) (reparse-symbol classsubparts) [2926 3010])
+                                                    ("aralog_" variable (:type ("ara::log::Logger" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3052 3078]))                                                  
+                                                :type "class")
+                                                (reparse-symbol namespacesubparts) [1435 3081]))                                          
+                                        :type "namespace")
+                                        (reparse-symbol namespacesubparts) [1356 3084]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [1236 3107]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [1219 3126]))                  
+                :type "namespace")
+                nil [1203 3146]))          
+      :file "diagnostic_status_impl.h"
+      :pointmax 3229
+      :fsize 3309
+      :lastmodtime '(24368 43728 553419 484000)
+      :unmatched-syntax '((semantic-list 2146 . 2176) (symbol 2138 . 2146) (semantic-list 2163 . 2175) (punctuation 2136 . 2137) (punctuation 2135 . 2136) (semantic-list 2109 . 2134) (symbol 2103 . 2109) (symbol 2098 . 2102) (punctuation 1611 . 1612) (symbol 1602 . 1610) (USING 1596 . 1601))
+      :lexical-table 
+        '(("SOURCE_DCM_SERVICE_SKELETON_DIAGNOSTIC_STATUS_IMPL_H_")
+          )
+)
+    (semanticdb-table "semanticdb-table-20aa500"
+      :file "diagnostic_conversation_skeleton.h"
+      :fsize 3717
+      :lastmodtime '(24368 43728 553419 484000))
+    (semanticdb-table "semanticdb-table-20aa534"
+      :file "diagnosticstatus_skeleton.h"
+      :fsize 3192
+      :lastmodtime '(24368 43728 553419 484000)))
+  :file "!home!hyuk.myeong!work!LARA_0810!Apps!source!autosar!avin!avin-ap!dm!source!inc!private!dcm!service!service_skeleton!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

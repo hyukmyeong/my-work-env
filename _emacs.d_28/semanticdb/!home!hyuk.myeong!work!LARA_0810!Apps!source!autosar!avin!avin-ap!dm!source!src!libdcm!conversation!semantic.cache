@@ -1,0 +1,334 @@
+;; Object semanticdb-project-database-file-252a64c
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-252a64c"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-252a658"
+      :major-mode c++-mode
+      :tags 
+        '( ("chrono" include (:system-flag t) nil [741 758])
+            ("iomanip" include (:system-flag t) nil [759 777])
+            ("iostream" include (:system-flag t) nil [778 797])
+            ("memory" include (:system-flag t) nil [798 815])
+            ("stdexcept" include (:system-flag t) nil [816 836])
+            ("utility" include (:system-flag t) nil [837 855])
+            ("common/config/dm_config.h" include nil nil [857 893])
+            ("dcm/conversation/conversation.h" include nil nil [894 936])
+            ("common/work_unit.h" include nil nil [937 966])
+            ("dcm/connection/connection.h" include nil nil [967 1005])
+            ("uds/session_type.h" include nil nil [1006 1035])
+            ("uds/uds_error_code.h" include nil nil [1036 1067])
+            ("uds/uds_services.h" include nil nil [1068 1097])
+            ("uds_transport/uds_message_ext.h" include nil nil [1098 1140])
+            ("dcm/conversation/conversation_manager.h" include nil nil [1141 1191])
+            ("dcm/service/i_service_validation.h" include nil nil [1192 1237])
+            ("dcm/service/service_dispatch_table.h" include nil nil [1238 1285])
+            ("dcm/service/work_unit_service.h" include nil nil [1286 1328])
+            ("dcm/service/registry/registry_collection.h" include nil nil [1329 1382])
+            ("dcm/conversation/conversation_manager.h" include nil nil [1383 1433])
+            ("dcm/service/registry/session_registry.h" include nil nil [1434 1484])
+            ("ara/per/key_value_storage.h" include nil nil [1485 1523])
+            ("ara::diag::dcm::service::Registry" using (:type ("ara::diag::dcm::service::Registry" type
+                 (:prototype t
+                  :type "class")
+                  nil nil)) nil [1525 1565])
+            ("ara::diag::dcm::service::SessionRegistry" using (:type ("ara::diag::dcm::service::SessionRegistry" type
+                 (:prototype t
+                  :type "class")
+                  nil nil)) nil [1566 1613])
+            ("ara::diag::uds::UdsNegativeResponseCode" using (:type ("ara::diag::uds::UdsNegativeResponseCode" type
+                 (:prototype t
+                  :type "class")
+                  nil nil)) nil [1614 1660])
+            ("ara::diag::uds::UdsServices" using (:type ("ara::diag::uds::UdsServices" type
+                 (:prototype t
+                  :type "class")
+                  nil nil)) nil [1661 1695])
+            ("ara::diag::uds::securitytype::SecurityLevelType" using (:type ("ara::diag::uds::securitytype::SecurityLevelType" type
+                 (:prototype t
+                  :type "class")
+                  nil nil)) nil [1696 1750])
+            ("ara::diag::uds::sessiontype::SessionType" using (:type ("ara::diag::uds::sessiontype::SessionType" type
+                 (:prototype t
+                  :type "class")
+                  nil nil)) nil [1751 1798])
+            ("ara::diag::uds_transport::ByteVector" using (:type ("ara::diag::uds_transport::ByteVector" type
+                 (:prototype t
+                  :type "class")
+                  nil nil)) nil [1799 1842])
+            ("ara::diag::uds_transport::ChannelID" using (:type ("ara::diag::uds_transport::ChannelID" type
+                 (:prototype t
+                  :type "class")
+                  nil nil)) nil [1843 1885])
+            ("ara::diag::uds_transport::UdsMessageExt" using (:type ("ara::diag::uds_transport::UdsMessageExt" type
+                 (:prototype t
+                  :type "class")
+                  nil nil)) nil [1886 1932])
+            ("ara::diag::uds_transport::UdsTransportProtocolHandlerID" using (:type ("ara::diag::uds_transport::UdsTransportProtocolHandlerID" type
+                 (:prototype t
+                  :type "class")
+                  nil nil)) nil [1933 1995])
+            ("ara::log" using (:type ("ara::log" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [1997 2022])
+            ("ara::diag::timer::TimerThread" using (:type ("ara::diag::timer::TimerThread" type
+                 (:prototype t
+                  :type "class")
+                  nil nil)) nil [2023 2059])
+            ("unnamed" type
+               (:members 
+                  ( ("kMaxPendingResponse" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type ("255U" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2123 2128]))                          
+                        :type ("std::uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [2090 2129])
+                    ("kZero" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type ("0U" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2166 2169]))                          
+                        :type ("std::uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [2147 2170])
+                    ("kInitialTimerValue" function
+                       (:prototype-flag t
+                        :type ("ara::diag::timer::timer_id" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [2188 2237])
+                    ("kDefaultSessionTimeout" function
+                       (:prototype-flag t
+                        :type ("ara::diag::timer::millisec" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [2255 2311]))                  
+                :type "namespace")
+                nil [2061 2313])
+            ("ara" type
+               (:members 
+                  ( ("diag" type
+                       (:members 
+                          ( ("dcm" type
+                               (:members 
+                                  ( ("conversation" type
+                                       (:members 
+                                          ( ("LoggerStaticInstance" function (:type ("ara::log::Logger" type (:type "class") nil nil)) (reparse-symbol namespacesubparts) [2402 2595])
+                                            ("Conversation::kS3Server_" variable
+                                               (:constant-flag t
+                                                :type ("common::Timer::Clock::duration" type (:type "class") nil nil))
+                                                (reparse-symbol namespacesubparts) [2597 2684])
+                                            ("Conversation" function
+                                               (:constructor-flag t
+                                                :parent "Conversation"
+                                                :arguments 
+                                                  ( ("conversationManager" variable
+                                                       (:constant-flag t
+                                                        :type ("std::shared_ptr" type
+                                                             (:template-specifier 
+                                                                ( ("ConversationManager" type nil nil nil))                                                                
+                                                              :type "class")
+                                                              nil nil))
+                                                        (reparse-symbol arg-sub-list) [2713 2776])
+                                                    ("globalChannelId" variable (:type ("ara::diag::uds_transport::GlobalChannelIdentifier" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2781 2847])
+                                                    ("udsSa" variable
+                                                       (:constant-flag t
+                                                        :type ("uint16_t" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [2848 2869])
+                                                    ("udsTa" variable
+                                                       (:constant-flag t
+                                                        :type ("uint16_t" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [2874 2895])
+                                                    ("conversationId" variable
+                                                       (:constant-flag t
+                                                        :type ("ConversationId" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [2896 2932]))                                                  
+                                                :type ("Conversation" type (:type "class") nil nil))
+                                                (reparse-symbol namespacesubparts) [2686 3932])
+                                            ("Conversation" function
+                                               (:destructor-flag t
+                                                :parent "Conversation"
+                                                :type "void")
+                                                (reparse-symbol namespacesubparts) [3934 4113])
+                                            ("IndicateMessage" function
+                                               (:parent "Conversation"
+                                                :arguments 
+                                                  ( ("sourceAddr" variable (:type ("ara::diag::uds_transport::UdsMessage::Address" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4273 4330])
+                                                    ("targetAddr" variable (:type ("ara::diag::uds_transport::UdsMessage::Address" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4339 4396])
+                                                    ("type" variable (:type ("ara::diag::uds_transport::UdsMessage::TargetAddressType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4405 4466])
+                                                    ("globalChannelId" variable (:type ("uds_transport::GlobalChannelIdentifier" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4475 4530])
+                                                    ("size" variable (:type ("std::size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4531 4548])
+                                                    ("priority" variable (:type ("uds_transport::Priority" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4557 4590])
+                                                    ("protocolKind" variable (:type ("uds_transport::ProtocolKind" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4591 4632]))                                                  
+                                                :type ("std::pair" type
+                                                     (:template-specifier 
+                                                        ( ("ara::diag::uds_transport::UdsTransportProtocolMgr::IndicationResult" type nil nil nil)
+                                                          ("ara::diag::uds_transport::UdsMessagePtr" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil))
+                                                (reparse-symbol namespacesubparts) [4115 6018])
+                                            ("HandleMessage" function
+                                               (:parent "Conversation"
+                                                :arguments 
+                                                  ( ("message" variable (:type ("ara::diag::uds_transport::UdsMessagePtr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6053 6101]))                                                  
+                                                :type "void")
+                                                (reparse-symbol namespacesubparts) [6020 7591])
+                                            ("Transmit" function
+                                               (:parent "Conversation"
+                                                :arguments 
+                                                  ( ("sendMessage" variable
+                                                       (:constant-flag t
+                                                        :type "bool")
+                                                        (reparse-symbol arg-sub-list) [7621 7644])
+                                                    ("message" variable (:type ("ara::diag::uds_transport::UdsMessageExt::UdsMessageExtConstPtr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7649 7720])
+                                                    ("requestHandle" variable
+                                                       (:constant-flag t
+                                                        :type ("uint16_t" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [7721 7750]))                                                  
+                                                :type "void")
+                                                (reparse-symbol namespacesubparts) [7593 9035])
+                                            ("TransmitConfirmation" function
+                                               (:parent "Conversation"
+                                                :arguments 
+                                                  ( ("message" variable (:type ("ara::diag::uds_transport::UdsMessageConstPtr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9077 9130])
+                                                    ("result" variable (:type ("ara::diag::uds_transport::UdsTransportProtocolMgr::TransmissionResult" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9135 9212]))                                                  
+                                                :type "void")
+                                                (reparse-symbol namespacesubparts) [9037 10422])
+                                            ("HandleP2Timer" function
+                                               (:parent "Conversation"
+                                                :type "void")
+                                                (reparse-symbol namespacesubparts) [10424 12363])
+                                            ("GetTotalApplTimeout" function
+                                               (:parent "Conversation"
+                                                :type ("std::uint32_t" type (:type "class") nil nil))
+                                                (reparse-symbol namespacesubparts) [12365 12719])
+                                            ("GetP2TimingForSession" function
+                                               (:methodconst-flag t
+                                                :parent "Conversation"
+                                                :constant-flag t
+                                                :type ("Conversation::P2Timings" type (:type "class") nil nil))
+                                                (reparse-symbol namespacesubparts) [12721 13090])
+                                            ("ProcessingDone" function
+                                               (:parent "Conversation"
+                                                :type "void")
+                                                (reparse-symbol namespacesubparts) [13092 13294])
+                                            ("GetCurrentWorkUnit" function
+                                               (:methodconst-flag t
+                                                :parent "Conversation"
+                                                :type ("service::WorkUnitService::Ptr" type (:type "class") nil nil))
+                                                (reparse-symbol namespacesubparts) [13296 13406])
+                                            ("IsActive" function
+                                               (:methodconst-flag t
+                                                :parent "Conversation"
+                                                :type "bool")
+                                                (reparse-symbol namespacesubparts) [13408 13663])
+                                            ("IsBusy" function
+                                               (:methodconst-flag t
+                                                :parent "Conversation"
+                                                :type "bool")
+                                                (reparse-symbol namespacesubparts) [13665 13820])
+                                            ("ChangeToDefaultSession" function
+                                               (:parent "Conversation"
+                                                :type "void")
+                                                (reparse-symbol namespacesubparts) [13822 14342])
+                                            ("ChangeSession" function
+                                               (:parent "Conversation"
+                                                :arguments 
+                                                  ( ("newSession" variable
+                                                       (:constant-flag t
+                                                        :type ("SessionType" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [14377 14406]))                                                  
+                                                :type "bool")
+                                                (reparse-symbol namespacesubparts) [14344 15612])
+                                            ("ChangeSecurityLevel" function
+                                               (:parent "Conversation"
+                                                :arguments 
+                                                  ( ("NewSecurityLevel" variable
+                                                       (:constant-flag t
+                                                        :type ("SecurityLevelType" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [15653 15694]))                                                  
+                                                :type "void")
+                                                (reparse-symbol namespacesubparts) [15614 15890])
+                                            ("OtherElevatedSessionPresent" function
+                                               (:methodconst-flag t
+                                                :parent "Conversation"
+                                                :type "bool")
+                                                (reparse-symbol namespacesubparts) [15892 16353])
+                                            ("IsSessionSupported" function
+                                               (:parent "Conversation"
+                                                :arguments 
+                                                  ( ("session" variable
+                                                       (:constant-flag t
+                                                        :type ("SessionType" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [16465 16491]))                                                  
+                                                :type "bool")
+                                                (reparse-symbol namespacesubparts) [16427 16630])
+                                            ("ResetS3Timer" function
+                                               (:parent "Conversation"
+                                                :type "void")
+                                                (reparse-symbol namespacesubparts) [16632 17099])
+                                            ("Cancel" function
+                                               (:parent "Conversation"
+                                                :type "void")
+                                                (reparse-symbol namespacesubparts) [17101 17330])
+                                            ("<<" function
+                                               (:operator-flag t
+                                                :arguments 
+                                                  ( ("stream" variable
+                                                       (:reference 1
+                                                        :type ("std::ostream" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [17357 17378])
+                                                    ("conversation" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("Conversation" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [17379 17412]))                                                  
+                                                :type ("std::ostream" type (:type "class") nil nil))
+                                                (reparse-symbol namespacesubparts) [17332 17797])
+                                            ("<<" function
+                                               (:operator-flag t
+                                                :arguments 
+                                                  ( ("stream" variable
+                                                       (:reference 1
+                                                        :type ("LogStream" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [17821 17839])
+                                                    ("conversation" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("Conversation" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [17840 17873]))                                                  
+                                                :type ("LogStream" type (:type "class") nil nil))
+                                                (reparse-symbol namespacesubparts) [17799 18080])
+                                            ("ResetResponseHandler" function
+                                               (:parent "Conversation"
+                                                :arguments 
+                                                  ( ("message" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("ara::diag::uds_transport::UdsMessageExt" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [18127 18182])
+                                                    ("resetType" variable (:type ("std::uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [18183 18206]))                                                  
+                                                :type "bool")
+                                                (reparse-symbol namespacesubparts) [18082 18558])
+                                            ("StoreResetData" function
+                                               (:parent "Conversation"
+                                                :arguments 
+                                                  ( ("message" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("ara::diag::uds_transport::UdsMessageExt" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [18599 18654])
+                                                    ("resetType" variable (:type ("std::uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [18655 18678]))                                                  
+                                                :type "bool")
+                                                (reparse-symbol namespacesubparts) [18560 20288]))                                          
+                                        :type "namespace")
+                                        (reparse-symbol namespacesubparts) [2377 20291]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [2361 20319]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [2344 20338]))                  
+                :type "namespace")
+                nil [2328 20358]))          
+      :file "conversation.cpp"
+      :pointmax 20376
+      :fsize 20900
+      :lastmodtime '(24368 43728 565420 953000)
+      :unmatched-syntax '((number 2305 . 2309) (symbol 2245 . 2254) (STATIC 2238 . 2244) (number 2234 . 2235) (symbol 2178 . 2187) (STATIC 2171 . 2177) (symbol 2137 . 2146) (STATIC 2130 . 2136) (symbol 2080 . 2089) (STATIC 2073 . 2079))))
+  :file "!home!hyuk.myeong!work!LARA_0810!Apps!source!autosar!avin!avin-ap!dm!source!src!libdcm!conversation!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

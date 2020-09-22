@@ -1,0 +1,147 @@
+;; Object semanticdb-project-database-file-179f66c
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-179f66c"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-16e4740"
+      :major-mode c++-mode
+      :tags 
+        '( ("package_management_application.h" include nil nil [1180 1223])
+            ("ara/core/string.h" include nil nil [1225 1253])
+            ("package_manager/package_manager.h" include nil nil [1254 1298])
+            ("package_manager_impl/package_manager_impl_factory.h" include nil nil [1299 1361])
+            ("package_manager_state/package_manager_ready_state.h" include nil nil [1362 1424])
+            ("boost/property_tree/json_parser.hpp" include nil nil [1426 1472])
+            ("boost/property_tree/ptree.hpp" include nil nil [1473 1513])
+            ("ara" type
+               (:members 
+                  ( ("ucm" type
+                       (:members 
+                          ( ("pkgmgr" type
+                               (:members 
+                                  ( ("kInstallDirectory" variable
+                                       (:constant-flag t
+                                        :type ("core::String" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [1614 1671])
+                                    ("PackageManagementApplication" function
+                                       (:constructor-flag t
+                                        :parent "PackageManagementApplication"
+                                        :type ("PackageManagementApplication" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [1673 1832])
+                                    ("OnInitialize" function
+                                       (:parent "PackageManagementApplication"
+                                        :type "bool")
+                                        (reparse-symbol namespacesubparts) [1833 2728])
+                                    ("Run" function
+                                       (:parent "PackageManagementApplication"
+                                        :type "void")
+                                        (reparse-symbol namespacesubparts) [2730 3079])
+                                    ("OnTerminate" function
+                                       (:parent "PackageManagementApplication"
+                                        :type "void")
+                                        (reparse-symbol namespacesubparts) [3081 3221])
+                                    ("GetServiceInstanceId" function
+                                       (:parent "PackageManagementApplication"
+                                        :arguments 
+                                          ( ("ManifestPath" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("ara::core::String" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [3283 3321]))                                          
+                                        :type ("uint16_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [3223 4333]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [1547 4336]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [1531 4358]))                  
+                :type "namespace")
+                nil [1515 4377]))          
+      :file "package_management_application.cpp"
+      :pointmax 4395
+      :fsize 4394
+      :lastmodtime '(24248 38548 157214 914000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-13d27b8"
+      :major-mode c++-mode
+      :tags 
+        '( ("csignal" include (:system-flag t) nil [1144 1162])
+            ("cstdint" include (:system-flag t) nil [1163 1181])
+            ("unistd.h" include (:system-flag t) nil [1183 1202])
+            ("atomic" include (:system-flag t) nil [1203 1220])
+            ("adaptive_application.h" include nil nil [1222 1255])
+            ("ara/exec/execution_client.h" include nil nil [1256 1294])
+            ("ara/log/logging.h" include nil nil [1295 1323])
+            ("ara" type
+               (:members 
+                  ( ("ucm" type
+                       (:members 
+                          ( ("pkgmgr" type
+                               (:members 
+                                  ( ("AdaptiveApplication::selfpipe_" variable
+                                       (:dereference 1
+                                        :default-value "{0, 0}"
+                                        :type ("int32_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [1410 1461])
+                                    ("exit_requested_" function
+                                       (:prototype-flag t
+                                        :parent "AdaptiveApplication"
+                                        :arguments 
+                                          ( ("" variable (:type ("false" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1581 1587]))                                          
+                                        :type ("std::atomic_bool" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [1527 1588])
+                                    ("SigTermHandler" function
+                                       (:parent "AdaptiveApplication"
+                                        :arguments 
+                                          ( ("sig" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1631 1643]))                                          
+                                        :type "void")
+                                        (reparse-symbol namespacesubparts) [1590 1805])
+                                    ("OnInitialize" function
+                                       (:parent "AdaptiveApplication"
+                                        :type "bool")
+                                        (reparse-symbol namespacesubparts) [1807 1866])
+                                    ("OnTerminate" function
+                                       (:parent "AdaptiveApplication"
+                                        :type "void")
+                                        (reparse-symbol namespacesubparts) [1868 1910])
+                                    ("WaitUntilTermination" function
+                                       (:parent "AdaptiveApplication"
+                                        :type "void")
+                                        (reparse-symbol namespacesubparts) [1912 2130])
+                                    ("ReportRunningState" function
+                                       (:parent "AdaptiveApplication"
+                                        :type "void")
+                                        (reparse-symbol namespacesubparts) [2132 2297])
+                                    ("Execute" function
+                                       (:parent "AdaptiveApplication"
+                                        :type ("int32_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [2299 2443])
+                                    ("Initialize" function
+                                       (:parent "AdaptiveApplication"
+                                        :type "bool")
+                                        (reparse-symbol namespacesubparts) [2445 3144])
+                                    ("ReportTerminatingState" function
+                                       (:parent "AdaptiveApplication"
+                                        :type "void")
+                                        (reparse-symbol namespacesubparts) [3146 3319])
+                                    ("Terminate" function
+                                       (:parent "AdaptiveApplication"
+                                        :type "void")
+                                        (reparse-symbol namespacesubparts) [3321 3426])
+                                    ("CloseSelfPipe" function
+                                       (:parent "AdaptiveApplication"
+                                        :type "void")
+                                        (reparse-symbol namespacesubparts) [3428 3547]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [1357 3550]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [1341 3572]))                  
+                :type "namespace")
+                nil [1325 3591]))          
+      :file "adaptive_application.cpp"
+      :pointmax 4233
+      :fsize 4232
+      :lastmodtime '(24248 38548 157214 914000)
+      :unmatched-syntax nil))
+  :file "!home!hyuk.myeong!work!ICAS!Apps!source!autosar!avin!avin-ap!ucm!source!src!service!skeleton!package_management!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

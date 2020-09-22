@@ -1,0 +1,65 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode makefile-automake-mode
+      :tags 
+        '( ("$(top_srcdir)/fragment.am" include nil nil [962 996])
+            ("ACLOCAL_AMFLAGS" variable (:default-value ("-I" "." "-I" ".." "-I" "../config")) nil [1217 1259])
+            ("check-%" function nil nil [1298 1335])
+            ("doc-%" function nil nil [1372 1401])
+            ("STAMP_XML" variable (:default-value ("doc-xml")) nil [1456 1476])
+            ("STAMP_INSTALL_XML" variable (:default-value ("doc-install-xml")) nil [1476 1512])
+            ("STAMP_XML" variable nil nil [1517 1529])
+            ("STAMP_INSTALL_XML" variable nil nil [1529 1549])
+            ("STAMP_HTML" variable (:default-value ("doc-html")) nil [1570 1592])
+            ("STAMP_INSTALL_HTML" variable (:default-value ("doc-install-html")) nil [1592 1630])
+            ("STAMP_HTML" variable nil nil [1635 1648])
+            ("STAMP_INSTALL_HTML" variable nil nil [1648 1669])
+            ("STAMP_MAN" variable (:default-value ("doc-man")) nil [1689 1709])
+            ("STAMP_INSTALL_MAN" variable (:default-value ("doc-install-man")) nil [1709 1745])
+            ("STAMP_MAN" variable nil nil [1750 1762])
+            ("STAMP_INSTALL_MAN" variable nil nil [1762 1782])
+            ("STAMP_PDF" variable (:default-value ("doc-pdf")) nil [1802 1822])
+            ("STAMP_INSTALL_PDF" variable (:default-value ("doc-install-pdf")) nil [1822 1858])
+            ("STAMP_PDF" variable nil nil [1863 1875])
+            ("STAMP_INSTALL_PDF" variable nil nil [1875 1895])
+            ("STAMP_EPUB" variable (:default-value ("doc-epub")) nil [1916 1938])
+            ("STAMP_INSTALL_EPUB" variable (:default-value ("doc-install-epub")) nil [1938 1976])
+            ("STAMP_EPUB" variable (:default-value ("doc-epub")) nil [1981 2003])
+            ("STAMP_INSTALL_EPUB" variable (:default-value ("doc-install-epub")) nil [2003 2041])
+            ("xml" function (:arguments ("$(STAMP_XML)")) nil [2262 2280])
+            ("install-xml" function (:arguments ("$(STAMP_INSTALL_XML)")) nil [2280 2314])
+            ("html" function (:arguments ("$(STAMP_HTML)")) nil [2315 2335])
+            ("install-html" function (:arguments ("$(STAMP_INSTALL_HTML)")) nil [2335 2371])
+            ("man" function (:arguments ("$(STAMP_MAN)")) nil [2372 2390])
+            ("install-man" function (:arguments ("$(STAMP_INSTALL_MAN)")) nil [2390 2424])
+            ("pdf" function (:arguments ("$(STAMP_PDF)")) nil [2425 2443])
+            ("install-pdf" function (:arguments ("$(STAMP_INSTALL_PDF)")) nil [2443 2477])
+            ("epub" function (:arguments ("$(STAMP_EPUB)")) nil [2478 2498])
+            ("install-epub" function (:arguments ("$(STAMP_INSTALL_EPUB)")) nil [2498 2534])
+            ("info" function nil nil [2535 2541])
+            ("install-info" function nil nil [2541 2555])
+            ("ps" function nil nil [2556 2560])
+            ("install-ps" function nil nil [2560 2572])
+            ("dvi" function nil nil [2573 2578])
+            ("install-dvi" function nil nil [2578 2591])
+            ("MAKEOVERRIDES" variable nil nil [2612 2627])
+            ("TAGS" function (:arguments ("tags-recursive" "$(LISP)")) nil [2748 2777])
+            ("AM_MAKEFLAGS" variable (:default-value ("\"AR_FLAGS=$(AR_FLAGS)\"" "\"CC_FOR_BUILD=$(CC_FOR_BUILD)\"" "\"CC_FOR_TARGET=$(CC_FOR_TARGET)\"" "\"CFLAGS=$(CFLAGS)\"" "\"CXXFLAGS=$(CXXFLAGS)\"" "\"CFLAGS_FOR_BUILD=$(CFLAGS_FOR_BUILD)\"" "\"CFLAGS_FOR_TARGET=$(CFLAGS_FOR_TARGET)\"" "\"INSTALL=$(INSTALL)\"" "\"INSTALL_DATA=$(INSTALL_DATA)\"" "\"INSTALL_PROGRAM=$(INSTALL_PROGRAM)\"" "\"INSTALL_SCRIPT=$(INSTALL_SCRIPT)\"" "\"LDFLAGS=$(LDFLAGS)\"" "\"LIBCFLAGS=$(LIBCFLAGS)\"" "\"LIBCFLAGS_FOR_TARGET=$(LIBCFLAGS_FOR_TARGET)\"" "\"MAKE=$(MAKE)\"" "\"MAKEINFO=$(MAKEINFO) $(MAKEINFOFLAGS)\"" "\"SHELL=$(SHELL)\"" "\"RUNTESTFLAGS=$(RUNTESTFLAGS)\"" "\"exec_prefix=$(exec_prefix)\"" "\"infodir=$(infodir)\"" "\"libdir=$(libdir)\"" "\"includedir=$(includedir)\"" "\"prefix=$(prefix)\"" "\"tooldir=$(tooldir)\"" "\"gxx_include_dir=$(gxx_include_dir)\"" "\"AR=$(AR)\"" "\"AS=$(AS)\"" "\"LD=$(LD)\"" "\"RANLIB=$(RANLIB)\"" "\"NM=$(NM)\"" "\"NM_FOR_BUILD=$(NM_FOR_BUILD)\"" "\"NM_FOR_TARGET=$(NM_FOR_TARGET)\"" "\"DESTDIR=$(DESTDIR)\"" "\"WERROR=$(WERROR)\"")) nil [2974 3960])
+            ("FLAGS_TO_PASS" variable (:default-value ("$(AM_MAKEFLAGS)")) nil [4001 4033])
+            ("$(top_srcdir)/../multilib.am" include nil nil [4034 4071]))          
+      :file "Makefile.am"
+      :pointmax 4071
+      :fsize 4070
+      :lastmodtime '(23951 21817 962365 295000)
+      :unmatched-syntax '((semantic-list 1200 . 1215) (punctuation 1199 . 1200) (punctuation 1197 . 1198) (punctuation 1196 . 1197) (symbol 1189 . 1196) (INCLUDE 1181 . 1188) (punctuation 1179 . 1180) (symbol 1171 . 1178) (bol 1171 . 1171) (symbol 1095 . 1101) (symbol 1085 . 1094) (symbol 1082 . 1084) (symbol 1078 . 1081) (symbol 1074 . 1077) (punctuation 1072 . 1073) (symbol 1058 . 1071) (bol 1056 . 1056)))
+    (semanticdb-table "semanticdb-table"
+      :file "fragment.am"
+      :fsize 945
+      :lastmodtime '(23951 21818 74364 441000)))
+  :file "!home!mk!work!gcc!libstdc++-v3!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,30 @@
+;; Object semanticdb-project-database-file-1b153cc
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-1b153cc"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-1b153d8"
+      :major-mode c++-mode
+      :tags 
+        '( ("UPDATE_ADAPTER_INCLUDES_BASE_TYPE_STD_UINT64_T_H_" variable (:constant-flag t) nil [1071 1120])
+            ("cstdint" include (:system-flag t) nil [1122 1140])
+            ("string" include (:system-flag t) nil [1141 1158])
+            ("vector" include (:system-flag t) nil [1159 1176])
+            ("array" include (:system-flag t) nil [1177 1193])
+            ("map" include (:system-flag t) nil [1194 1208])
+            ("std_uint64_t" type
+               (:typedef ("std::uint64_t" type (:type "class") nil nil)
+                :type "typedef")
+                nil [1210 1245]))          
+      :file "base_type_std_uint64_t.h"
+      :pointmax 1309
+      :fsize 1308
+      :lastmodtime '(24287 13647 716638 274000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("UPDATE_ADAPTER_INCLUDES_BASE_TYPE_STD_UINT64_T_H_")
+          )
+))
+  :file "!home!hyuk.myeong!work!G550!Apps!source!model!avin-gen!amsr_vag_app_dsa!includes!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

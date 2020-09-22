@@ -1,0 +1,99 @@
+;; Object semanticdb-project-database-file-2bbe6dc
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-2bbe6dc"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-2bbe67c"
+      :major-mode c++-mode
+      :tags 
+        '( ("common/application_scaffold.h" include nil nil [1233 1273])
+            ("DiagHandlerApp.h" include nil nil [1275 1302])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [1359 1368])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1369 1382]))                  
+                :type "int")
+                nil [1350 1464]))          
+      :file "main.cpp"
+      :pointmax 1465
+      :fsize 1464
+      :lastmodtime '(24415 860 640785 140000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-2bbe69c"
+      :file "DiagHandlerApp.h"
+      :fsize 1419
+      :lastmodtime '(24415 860 632785 334000))
+    (semanticdb-table "semanticdb-table-2bbe6bc"
+      :major-mode c++-mode
+      :tags 
+        '( ("chrono" include (:system-flag t) nil [1 18])
+            ("diag/IRuntime.h" include nil nil [20 46])
+            ("DiagHandlerApp.h" include nil nil [47 74])
+            ("diag_handler" type
+               (:members 
+                  ( ("DiagHandlerApp::Name" variable
+                       (:dereference 1
+                        :type "char")
+                        (reparse-symbol namespacesubparts) [112 140])
+                    ("DiagHandlerApp::Description" variable
+                       (:dereference 1
+                        :type "char")
+                        (reparse-symbol namespacesubparts) [151 186])
+                    ("DiagHandlerApp::seconds_from_reset_" variable
+                       (:default-value "0"
+                        :type ("std::uint16_t" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [188 242])
+                    ("DiagHandlerApp::reset_requested_" variable
+                       (:default-value "ATOMIC_VAR_INIT( false )"
+                        :type ("std::atomic_bool" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [243 320])
+                    ("DiagHandlerApp" function
+                       (:constructor-flag t
+                        :parent "DiagHandlerApp"
+                        :type ("DiagHandlerApp" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [322 944])
+                    ("DiagHandlerApp" function
+                       (:destructor-flag t
+                        :parent "DiagHandlerApp"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [946 1031])
+                    ("Initialize" function
+                       (:parent "DiagHandlerApp"
+                        :arguments 
+                          ( ("args" variable (:type ("CommandLineArguments" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1065 1091]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [1033 1188])
+                    ("Run" function
+                       (:parent "DiagHandlerApp"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [1190 1980])
+                    ("RequestShutdown" function
+                       (:parent "DiagHandlerApp"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [1982 2084])
+                    ("Shutdown" function
+                       (:parent "DiagHandlerApp"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [2086 2240])
+                    ("NotifyReset" function
+                       (:parent "DiagHandlerApp"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [2242 2307])
+                    ("GetRunningTime" function
+                       (:parent "DiagHandlerApp"
+                        :type ("std::uint16_t" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [2309 2389]))                  
+                :type "namespace")
+                nil [76 2392]))          
+      :file "DiagHandlerApp.cpp"
+      :pointmax 2413
+      :fsize 2412
+      :lastmodtime '(24415 860 632785 334000)
+      :unmatched-syntax nil))
+  :file "!home!hyuk.myeong!work!LARA!sample-applications!lge!diag-handler!src!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,165 @@
+;; Object semanticdb-project-database-file-2fc7d04
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-2fc7d04"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-2fc7d10"
+      :major-mode c++-mode
+      :tags 
+        '( ("fstream" include (:system-flag t) nil [747 765])
+            ("dcm/service/processors/0x22_read_did.h" include nil nil [767 816])
+            ("dem/events/event_related_data/diagnostic_freeze_frame.h" include nil nil [817 883])
+            ("common/diagnostic_server.h" include nil nil [884 921])
+            ("dcm/service/processors/did_handler.h" include nil nil [922 969])
+            ("unnamed" type
+               (:members 
+                  ( ("addTwo" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type ("2U" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1012 1015]))                          
+                        :type ("std::uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [992 1016])
+                    ("rightshiftEight" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type ("8U" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1056 1059]))                          
+                        :type ("std::uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [1027 1060]))                  
+                :type "namespace")
+                nil [970 1062])
+            ("ara" type
+               (:members 
+                  ( ("diag" type
+                       (:members 
+                          ( ("dem" type
+                               (:members 
+                                  ( ("eventdata" type
+                                       (:members 
+                                          ( ("DiagnosticFreezeFrame" function
+                                               (:constructor-flag t
+                                                :parent "DiagnosticFreezeFrame"
+                                                :arguments 
+                                                  ( ("recNo" variable
+                                                       (:constant-flag t
+                                                        :type ("std::uint8_t" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [1197 1222])
+                                                    ("trigger" variable
+                                                       (:constant-flag t
+                                                        :type ("ara::core::String" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [1223 1255])
+                                                    ("update" variable
+                                                       (:constant-flag t
+                                                        :type "bool")
+                                                        (reparse-symbol arg-sub-list) [1256 1274]))                                                  
+                                                :type ("DiagnosticFreezeFrame" type (:type "class") nil nil))
+                                                (reparse-symbol namespacesubparts) [1147 1441])
+                                            ("DiagnosticFreezeFrame" function
+                                               (:constructor-flag t
+                                                :parent "DiagnosticFreezeFrame"
+                                                :arguments 
+                                                  ( ("recNo" variable
+                                                       (:constant-flag t
+                                                        :type ("std::uint8_t" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [1493 1518])
+                                                    ("MaxNumberOfRecords" variable
+                                                       (:constant-flag t
+                                                        :type ("std::uint32_t" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [1519 1558]))                                                  
+                                                :type ("DiagnosticFreezeFrame" type (:type "class") nil nil))
+                                                (reparse-symbol namespacesubparts) [1443 1802])
+                                            ("GetSize" function
+                                               (:parent "DiagnosticFreezeFrame"
+                                                :type ("std::uint32_t" type (:type "class") nil nil))
+                                                (reparse-symbol namespacesubparts) [1804 1980])
+                                            ("GetDidCount" function
+                                               (:methodconst-flag t
+                                                :parent "DiagnosticFreezeFrame"
+                                                :type ("std::uint32_t" type (:type "class") nil nil))
+                                                (reparse-symbol namespacesubparts) [1982 2073])
+                                            ("GetTriggerConfig" function
+                                               (:parent "DiagnosticFreezeFrame"
+                                                :type ("RecordTriggerEnum" type (:type "class") nil nil))
+                                                (reparse-symbol namespacesubparts) [2075 2676])
+                                            ("AddDidRef" function
+                                               (:parent "DiagnosticFreezeFrame"
+                                                :arguments 
+                                                  ( ("did" variable (:type ("DidConfiguration::Ptr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2716 2742]))                                                  
+                                                :type "void")
+                                                (reparse-symbol namespacesubparts) [2678 2850])
+                                            ("ClearUpdateflag" function
+                                               (:parent "DiagnosticFreezeFrame"
+                                                :type "void")
+                                                (reparse-symbol namespacesubparts) [2852 2926])
+                                            ("StoreFreezeFrame" function
+                                               (:parent "DiagnosticFreezeFrame"
+                                                :arguments 
+                                                  ( ("snapshotData" variable
+                                                       (:reference 1
+                                                        :type ("ara::diag::SnapshotDataRecordType" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [2973 3021]))                                                  
+                                                :type "bool")
+                                                (reparse-symbol namespacesubparts) [2928 5939])
+                                            ("ClearSnapshotData" function
+                                               (:parent "DiagnosticFreezeFrame"
+                                                :type "void")
+                                                (reparse-symbol namespacesubparts) [5941 6053])
+                                            ("GetSnapshotData" function
+                                               (:parent "DiagnosticFreezeFrame"
+                                                :constant-flag t
+                                                :type ("ara::core::Vector" type
+                                                     (:template-specifier 
+                                                        ( ("std::uint8_t" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil))
+                                                (reparse-symbol namespacesubparts) [6055 6216])
+                                            ("GetSnapshotDataMap" function
+                                               (:parent "DiagnosticFreezeFrame"
+                                                :constant-flag t
+                                                :type ("ara::core::Map" type
+                                                     (:template-specifier 
+                                                        ( ("std::uint32_t" type nil nil nil)
+                                                          ("ara::core::Vector" type (:template-specifier 
+                                                            ( ("std::uint8_t" type nil nil nil))                                                            ) nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil))
+                                                (reparse-symbol namespacesubparts) [6218 6405])
+                                            ("GatherDidInfo" function
+                                               (:parent "DiagnosticFreezeFrame"
+                                                :arguments 
+                                                  ( ("dataId" variable (:type ("std::uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6449 6470])
+                                                    ("dataRec" variable
+                                                       (:reference 1
+                                                        :type ("ara::core::Vector" type
+                                                             (:template-specifier 
+                                                                ( ("std::uint8_t" type nil nil nil))                                                                
+                                                              :type "class")
+                                                              nil nil))
+                                                        (reparse-symbol arg-sub-list) [6471 6512]))                                                  
+                                                :type "bool")
+                                                (reparse-symbol namespacesubparts) [6407 6970])
+                                            ("StoreFileSnapshotDataToMap" function
+                                               (:parent "DiagnosticFreezeFrame"
+                                                :arguments 
+                                                  ( ("dataFromFile" variable (:type ("ara::core::Vector" type
+                                                         (:template-specifier 
+                                                            ( ("std::uint8_t" type nil nil nil))                                                            
+                                                          :type "class")
+                                                          nil nil)) (reparse-symbol arg-sub-list) [7091 7136]))                                                  
+                                                :type "void")
+                                                (reparse-symbol namespacesubparts) [7036 7202]))                                          
+                                        :type "namespace")
+                                        (reparse-symbol namespacesubparts) [1125 7205]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [1109 7230]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [1092 7249]))                  
+                :type "namespace")
+                nil [1076 7269]))          
+      :file "diagnostic_freeze_frame.cpp"
+      :pointmax 7287
+      :fsize 7532
+      :lastmodtime '(24420 22490 4057 28000)
+      :unmatched-syntax '((symbol 1017 . 1026) (symbol 982 . 991))))
+  :file "!home!hyuk.myeong!work!LARA!avin!avin-ap!dm!source!src!libdem!events!event_related_data!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

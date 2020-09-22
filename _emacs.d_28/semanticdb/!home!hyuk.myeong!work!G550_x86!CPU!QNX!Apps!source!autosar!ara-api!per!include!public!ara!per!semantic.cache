@@ -1,0 +1,104 @@
+;; Object semanticdb-project-database-file-277ff40
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-277ff40"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-277ff5c"
+      :major-mode c++-mode
+      :tags 
+        '( ("ARA_PER_FILE_STORAGE_H_" variable (:constant-flag t) nil [2061 2084])
+            ("ara/core/result.h" include nil nil [2086 2114])
+            ("ara/core/string_view.h" include nil nil [2115 2148])
+            ("ara/core/string.h" include nil nil [2149 2177])
+            ("ara/per/basic_operations.h" include nil nil [2179 2216])
+            ("ara/per/per_error_domain.h" include nil nil [2217 2254])
+            ("ara/per/read_write_accessor.h" include nil nil [2255 2295])
+            ("ara/per/shared_handle.h" include nil nil [2296 2330])
+            ("ara/per/unique_handle.h" include nil nil [2331 2365])
+            ("ara" type
+               (:members 
+                  ( ("per" type
+                       (:members 
+                          ( ("FileStorage" type
+                               (:members 
+                                  ( ("public" label nil (reparse-symbol classsubparts) [2597 2604])
+                                    ("noexcept" variable
+                                       (:constant-flag t
+                                        :default-value "0"
+                                        :type "int")
+                                        (reparse-symbol classsubparts) [4113 4140])
+                                    ("noexcept" variable
+                                       (:default-value "0"
+                                        :type "int")
+                                        (reparse-symbol classsubparts) [4427 4448])
+                                    ("noexcept" variable
+                                       (:constant-flag t
+                                        :default-value "0"
+                                        :type "int")
+                                        (reparse-symbol classsubparts) [4867 4894])
+                                    ("noexcept" variable
+                                       (:default-value "0"
+                                        :type "int")
+                                        (reparse-symbol classsubparts) [5582 5603])
+                                    ("noexcept" variable
+                                       (:default-value "0"
+                                        :type "int")
+                                        (reparse-symbol classsubparts) [6236 6257])
+                                    ("noexcept" variable
+                                       (:default-value "0"
+                                        :type "int")
+                                        (reparse-symbol classsubparts) [6748 6769])
+                                    ("noexcept" variable
+                                       (:default-value "0"
+                                        :type "int")
+                                        (reparse-symbol classsubparts) [7363 7384])
+                                    ("noexcept" variable
+                                       (:default-value "0"
+                                        :type "int")
+                                        (reparse-symbol classsubparts) [8534 8555])
+                                    ("noexcept" variable
+                                       (:default-value "0"
+                                        :type "int")
+                                        (reparse-symbol classsubparts) [9693 9714]))                                  
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [2577 10279])
+                            ("noexcept" variable (:type "int") (reparse-symbol namespacesubparts) [10619 10628])
+                            ("noexcept" variable (:type "int") (reparse-symbol namespacesubparts) [11343 11352])
+                            ("noexcept" variable (:type "int") (reparse-symbol namespacesubparts) [12004 12013])
+                            ("noexcept" variable (:type "int") (reparse-symbol namespacesubparts) [12449 12458]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [2383 12461]))                  
+                :type "namespace")
+                nil [2367 12481]))          
+      :file "file_storage.h"
+      :pointmax 12536
+      :fsize 12535
+      :lastmodtime '(24310 62485 479205 423000)
+      :unmatched-syntax '((semantic-list 12422 . 12448) (symbol 12396 . 12421) (punctuation 12394 . 12395) (symbol 12386 . 12394) (punctuation 12385 . 12386) (symbol 12379 . 12385) (punctuation 12378 . 12379) (punctuation 12377 . 12378) (symbol 12373 . 12377) (punctuation 12372 . 12373) (punctuation 12371 . 12372) (symbol 12368 . 12371) (semantic-list 11977 . 12003) (symbol 11964 . 11977) (punctuation 11962 . 11963) (VOID 11958 . 11962) (punctuation 11957 . 11958) (symbol 11951 . 11957) (punctuation 11950 . 11951) (punctuation 11949 . 11950) (symbol 11945 . 11949) (punctuation 11944 . 11945) (punctuation 11943 . 11944) (symbol 11940 . 11943) (semantic-list 11316 . 11342) (symbol 11301 . 11316) (punctuation 11299 . 11300) (VOID 11295 . 11299) (punctuation 11294 . 11295) (symbol 11288 . 11294) (punctuation 11287 . 11288) (punctuation 11286 . 11287) (symbol 11282 . 11286) (punctuation 11281 . 11282) (punctuation 11280 . 11281) (symbol 11277 . 11280) (semantic-list 10592 . 10618) (symbol 10577 . 10592) (punctuation 10575 . 10576) (punctuation 10574 . 10575) (symbol 10563 . 10574) (punctuation 10562 . 10563) (symbol 10550 . 10562) (punctuation 10549 . 10550) (symbol 10543 . 10549) (punctuation 10542 . 10543) (punctuation 10541 . 10542) (symbol 10537 . 10541) (punctuation 10536 . 10537) (punctuation 10535 . 10536) (symbol 10532 . 10535) (semantic-list 10195 . 10276) (symbol 10182 . 10190) (semantic-list 10149 . 10181) (symbol 10132 . 10149) (punctuation 10130 . 10131) (punctuation 10129 . 10130) (symbol 10112 . 10129) (punctuation 10111 . 10112) (symbol 10099 . 10111) (punctuation 10098 . 10099) (symbol 10092 . 10098) (punctuation 10091 . 10092) (punctuation 10090 . 10091) (symbol 10086 . 10090) (punctuation 10085 . 10086) (punctuation 10084 . 10085) (symbol 10081 . 10084) (semantic-list 9620 . 9692) (symbol 9603 . 9620) (punctuation 9601 . 9602) (punctuation 9600 . 9601) (symbol 9583 . 9600) (punctuation 9582 . 9583) (symbol 9570 . 9582) (punctuation 9569 . 9570) (symbol 9563 . 9569) (punctuation 9562 . 9563) (punctuation 9561 . 9562) (symbol 9557 . 9561) (punctuation 9556 . 9557) (punctuation 9555 . 9556) (symbol 9552 . 9555) (VIRTUAL 9544 . 9551) (semantic-list 9030 . 9110) (symbol 9017 . 9025) (semantic-list 8984 . 9016) (symbol 8968 . 8984) (punctuation 8966 . 8967) (punctuation 8965 . 8966) (symbol 8953 . 8965) (punctuation 8952 . 8953) (symbol 8940 . 8952) (punctuation 8939 . 8940) (symbol 8933 . 8939) (punctuation 8932 . 8933) (punctuation 8931 . 8932) (symbol 8927 . 8931) (punctuation 8926 . 8927) (punctuation 8925 . 8926) (symbol 8922 . 8925) (semantic-list 8461 . 8533) (symbol 8445 . 8461) (punctuation 8443 . 8444) (punctuation 8442 . 8443) (symbol 8430 . 8442) (punctuation 8429 . 8430) (symbol 8417 . 8429) (punctuation 8416 . 8417) (symbol 8410 . 8416) (punctuation 8409 . 8410) (punctuation 8408 . 8409) (symbol 8404 . 8408) (punctuation 8403 . 8404) (punctuation 8402 . 8403) (symbol 8399 . 8402) (VIRTUAL 8391 . 8398) (semantic-list 7877 . 7958) (symbol 7864 . 7872) (semantic-list 7831 . 7863) (symbol 7814 . 7831) (punctuation 7812 . 7813) (punctuation 7811 . 7812) (symbol 7794 . 7811) (punctuation 7793 . 7794) (symbol 7781 . 7793) (punctuation 7780 . 7781) (symbol 7774 . 7780) (punctuation 7773 . 7774) (punctuation 7772 . 7773) (symbol 7768 . 7772) (punctuation 7767 . 7768) (punctuation 7766 . 7767) (symbol 7763 . 7766) (semantic-list 7290 . 7362) (symbol 7273 . 7290) (punctuation 7271 . 7272) (punctuation 7270 . 7271) (symbol 7253 . 7270) (punctuation 7252 . 7253) (symbol 7240 . 7252) (punctuation 7239 . 7240) (symbol 7233 . 7239) (punctuation 7232 . 7233) (punctuation 7231 . 7232) (symbol 7227 . 7231) (punctuation 7226 . 7227) (punctuation 7225 . 7226) (symbol 7222 . 7225) (VIRTUAL 7214 . 7221) (semantic-list 6715 . 6747) (symbol 6696 . 6714) (punctuation 6694 . 6695) (symbol 6686 . 6694) (punctuation 6685 . 6686) (symbol 6679 . 6685) (punctuation 6678 . 6679) (punctuation 6677 . 6678) (symbol 6673 . 6677) (punctuation 6672 . 6673) (punctuation 6671 . 6672) (symbol 6668 . 6671) (VIRTUAL 6660 . 6667) (semantic-list 6203 . 6235) (symbol 6194 . 6203) (punctuation 6192 . 6193) (VOID 6188 . 6192) (punctuation 6187 . 6188) (symbol 6181 . 6187) (punctuation 6180 . 6181) (punctuation 6179 . 6180) (symbol 6175 . 6179) (punctuation 6174 . 6175) (punctuation 6173 . 6174) (symbol 6170 . 6173) (VIRTUAL 6162 . 6169) (semantic-list 5549 . 5581) (symbol 5538 . 5549) (punctuation 5536 . 5537) (VOID 5532 . 5536) (punctuation 5531 . 5532) (symbol 5525 . 5531) (punctuation 5524 . 5525) (punctuation 5523 . 5524) (symbol 5519 . 5523) (punctuation 5518 . 5519) (punctuation 5517 . 5518) (symbol 5514 . 5517) (VIRTUAL 5506 . 5513) (semantic-list 4838 . 4866) (symbol 4828 . 4838) (punctuation 4826 . 4827) (BOOL 4822 . 4826) (punctuation 4821 . 4822) (symbol 4815 . 4821) (punctuation 4814 . 4815) (punctuation 4813 . 4814) (symbol 4809 . 4813) (punctuation 4808 . 4809) (punctuation 4807 . 4808) (symbol 4804 . 4807) (VIRTUAL 4796 . 4803) (semantic-list 4399 . 4426) (symbol 4389 . 4399) (punctuation 4387 . 4388) (VOID 4383 . 4387) (punctuation 4382 . 4383) (symbol 4376 . 4382) (punctuation 4375 . 4376) (punctuation 4374 . 4375) (symbol 4370 . 4374) (punctuation 4369 . 4370) (punctuation 4368 . 4369) (symbol 4365 . 4368) (VIRTUAL 4357 . 4364) (semantic-list 4110 . 4112) (symbol 4095 . 4110) (punctuation 4093 . 4094) (punctuation 4092 . 4093) (symbol 4086 . 4092) (punctuation 4085 . 4086) (punctuation 4084 . 4085) (symbol 4080 . 4084) (punctuation 4079 . 4080) (punctuation 4078 . 4079) (symbol 4075 . 4078) (punctuation 4074 . 4075) (symbol 4068 . 4074) (punctuation 4067 . 4068) (punctuation 4066 . 4067) (symbol 4062 . 4066) (punctuation 4061 . 4062) (punctuation 4060 . 4061) (symbol 4057 . 4060) (punctuation 4056 . 4057) (symbol 4050 . 4056) (punctuation 4049 . 4050) (punctuation 4048 . 4049) (symbol 4044 . 4048) (punctuation 4043 . 4044) (punctuation 4042 . 4043) (symbol 4039 . 4042) (VIRTUAL 4031 . 4038) (punctuation 3744 . 3745) (DEFAULT 3737 . 3744) (punctuation 3735 . 3736) (symbol 3726 . 3734) (semantic-list 3723 . 3725) (symbol 3712 . 3723) (punctuation 3711 . 3712) (VIRTUAL 3703 . 3710) (punctuation 3587 . 3588) (DELETE 3581 . 3587) (punctuation 3579 . 3580) (semantic-list 3558 . 3578) (punctuation 3557 . 3558) (OPERATOR 3549 . 3557) (punctuation 3547 . 3548) (symbol 3536 . 3547) (punctuation 3384 . 3385) (DELETE 3378 . 3384) (punctuation 3376 . 3377) (semantic-list 3355 . 3375) (symbol 3344 . 3355) (punctuation 3200 . 3201) (DEFAULT 3193 . 3200) (punctuation 3191 . 3192) (symbol 3182 . 3190) (punctuation 3180 . 3181) (semantic-list 3161 . 3179) (punctuation 3160 . 3161) (OPERATOR 3152 . 3160) (punctuation 3174 . 3175) (punctuation 3150 . 3151) (symbol 3139 . 3150) (punctuation 3174 . 3175) (punctuation 2904 . 2905) (DEFAULT 2897 . 2904) (punctuation 2895 . 2896) (symbol 2886 . 2894) (semantic-list 2867 . 2885) (symbol 2856 . 2867) (punctuation 2880 . 2881) (punctuation 2676 . 2677) (DEFAULT 2669 . 2676) (punctuation 2667 . 2668) (semantic-list 2664 . 2666) (symbol 2653 . 2664))
+      :lexical-table 
+        '(("ARA_PER_FILE_STORAGE_H_")
+          )
+)
+    (semanticdb-table "semanticdb-table-2e40e24"
+      :file "basic_operations.h"
+      :fsize 8468
+      :lastmodtime '(24310 62485 479205 423000))
+    (semanticdb-table "semanticdb-table-2e40e68"
+      :file "per_error_domain.h"
+      :fsize 8717
+      :lastmodtime '(24310 62485 479205 423000))
+    (semanticdb-table "semanticdb-table-2e40ebc"
+      :file "read_write_accessor.h"
+      :fsize 4995
+      :lastmodtime '(24310 62485 479205 423000))
+    (semanticdb-table "semanticdb-table-2e40f00"
+      :file "shared_handle.h"
+      :fsize 5518
+      :lastmodtime '(24310 62485 479205 423000))
+    (semanticdb-table "semanticdb-table-2e40f54"
+      :file "unique_handle.h"
+      :fsize 5295
+      :lastmodtime '(24310 62485 479205 423000)))
+  :file "!home!hyuk.myeong!work!G550_x86!CPU!QNX!Apps!source!autosar!ara-api!per!include!public!ara!per!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,115 @@
+;; Object semanticdb-project-database-file-10aca98
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-10aca98"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-12e89a0"
+      :major-mode c++-mode
+      :tags 
+        '( ("dcm/service/processors/0x36_transfer_data.h" include nil nil [736 790])
+            ("cstring" include (:system-flag t) nil [792 810])
+            ("algorithm" include (:system-flag t) nil [812 832])
+            ("iostream" include (:system-flag t) nil [833 852])
+            ("memory" include (:system-flag t) nil [853 870])
+            ("netinet/in.h" include (:system-flag t) nil [871 894])
+            ("utility" include (:system-flag t) nil [895 913])
+            ("common/config/dm_config.h" include nil nil [915 951])
+            ("ara/diag/uds_transport/protocol_types.h" include nil nil [952 1002])
+            ("common/exception/lookup_table_entry_not_found_exception.h" include nil nil [1003 1071])
+            ("common/exception/nrc_exception.h" include nil nil [1072 1115])
+            ("common/multi_byte_type.h" include nil nil [1116 1151])
+            ("common/service_processor.h" include nil nil [1152 1189])
+            ("common/service_processor_with_sid.h" include nil nil [1190 1236])
+            ("dcm/conversation/conversation.h" include nil nil [1237 1279])
+            ("dcm/diagnostic_communication_manager.h" include nil nil [1280 1329])
+            ("dcm/service/processors/did_handler.h" include nil nil [1330 1377])
+            ("uds/uds_error_code.h" include nil nil [1378 1409])
+            ("uds/uds_services.h" include nil nil [1410 1439])
+            ("uds_transport/uds_message_ext.h" include nil nil [1440 1482])
+            ("dcm/types/dcm_type_interfacetype.h" include nil nil [1483 1528])
+            ("dcm/types/impl_type_udsresponsecodetype.h" include nil nil [1529 1581])
+            ("ara::diag::ServiceProcessor" using (:type ("ara::diag::ServiceProcessor" type
+                 (:prototype t
+                  :type "class")
+                  nil nil)) nil [1583 1617])
+            ("ara::diag::ServiceProcessorWithSid" using (:type ("ara::diag::ServiceProcessorWithSid" type
+                 (:prototype t
+                  :type "class")
+                  nil nil)) nil [1618 1659])
+            ("ara::diag::config::DMConfig" using (:type ("ara::diag::config::DMConfig" type
+                 (:prototype t
+                  :type "class")
+                  nil nil)) nil [1660 1694])
+            ("ara::diag::dcm::conversation::Conversation" using (:type ("ara::diag::dcm::conversation::Conversation" type
+                 (:prototype t
+                  :type "class")
+                  nil nil)) nil [1695 1744])
+            ("ara::diag::uds::UdsNegativeResponseCode" using (:type ("ara::diag::uds::UdsNegativeResponseCode" type
+                 (:prototype t
+                  :type "class")
+                  nil nil)) nil [1745 1791])
+            ("ara::diag::uds::UdsServices" using (:type ("ara::diag::uds::UdsServices" type
+                 (:prototype t
+                  :type "class")
+                  nil nil)) nil [1792 1826])
+            ("ara::diag::uds_transport::ByteVector" using (:type ("ara::diag::uds_transport::ByteVector" type
+                 (:prototype t
+                  :type "class")
+                  nil nil)) nil [1827 1870])
+            ("ara::diag::uds_transport::UdsMessageExt" using (:type ("ara::diag::uds_transport::UdsMessageExt" type
+                 (:prototype t
+                  :type "class")
+                  nil nil)) nil [1871 1917])
+            ("ara" type
+               (:members 
+                  ( ("diag" type
+                       (:members 
+                          ( ("dcm" type
+                               (:members 
+                                  ( ("service" type
+                                       (:members 
+                                          ( ("ara::log" using (:type ("ara::log" type
+                                                 (:prototype t
+                                                  :type "namespace")
+                                                  nil nil)) (reparse-symbol namespacesubparts) [2175 2200])
+                                            ("TransferData" function
+                                               (:constructor-flag t
+                                                :parent "TransferData"
+                                                :arguments 
+                                                  ( ("DcmRuntimeContext" variable (:type ("std::shared_ptr" type
+                                                         (:template-specifier 
+                                                            ( ("runtime::DcmRuntimeContext" type nil nil nil))                                                            
+                                                          :type "class")
+                                                          nil nil)) (reparse-symbol arg-sub-list) [2229 2291]))                                                  
+                                                :type ("TransferData" type (:type "class") nil nil))
+                                                (reparse-symbol namespacesubparts) [2202 2489])
+                                            ("HandleMessage" function
+                                               (:parent "TransferData"
+                                                :arguments 
+                                                  ( ("message" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("UdsMessageExt" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [2678 2707])
+                                                    ("conversation" variable
+                                                       (:reference 1
+                                                        :type ("Conversation" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [2708 2735]))                                                  
+                                                :type ("ServiceProcessor::Response" type (:type "class") nil nil))
+                                                (reparse-symbol namespacesubparts) [2618 9715]))                                          
+                                        :type "namespace")
+                                        (reparse-symbol namespacesubparts) [2155 9718]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [2096 9741]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [2027 9760]))                  
+                :type "namespace")
+                nil [1972 9780]))          
+      :file "0x36_transfer_data.cpp"
+      :pointmax 9798
+      :fsize 9797
+      :lastmodtime '(24287 13657 447124 399000)
+      :unmatched-syntax nil))
+  :file "!home!hyuk.myeong!work!G550!Apps!source!autosar!avin!avin-ap!dm!source!src!libdcm!service!processors!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

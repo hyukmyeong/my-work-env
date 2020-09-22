@@ -1,0 +1,90 @@
+;; Object semanticdb-project-database-file-17bc970
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-17bc970"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-17bc98c"
+      :major-mode c++-mode
+      :tags 
+        '( ("fstream" include (:system-flag t) nil [377 395])
+            ("iostream" include (:system-flag t) nil [396 415])
+            ("main" variable (:constant-flag t) nil [425 429])
+            ("channel.cpp" include nil nil [436 458])
+            ("main" variable (:constant-flag t) nil [480 484])
+            ("value_core" variable (:constant-flag t) nil [499 509])
+            ("reference_core" variable (:constant-flag t) nil [535 549])
+            ("pixel.cpp" include nil nil [571 591])
+            ("main" variable (:constant-flag t) nil [654 658])
+            ("pixel_iterator.cpp" include nil nil [665 694])
+            ("main" variable (:constant-flag t) nil [716 720])
+            ("image.cpp" include nil nil [727 747])
+            ("main" variable (:constant-flag t) nil [769 773])
+            ("image_io.cpp" include nil nil [780 803])
+            ("test_channel" function
+               (:prototype-flag t
+                :type "void")
+                nil [818 838])
+            ("test_pixel" function
+               (:prototype-flag t
+                :type "void")
+                nil [839 857])
+            ("test_pixel_iterator" function
+               (:prototype-flag t
+                :type "void")
+                nil [858 885])
+            ("test_image" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [902 914]))                  
+                :type "void")
+                nil [886 915])
+            ("test_image_io" function
+               (:prototype-flag t
+                :type "void")
+                nil [916 937])
+            ("test_gimage" function
+               (:prototype-flag t
+                :type "void")
+                nil [938 957])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [968 977])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [978 991]))                  
+                :type "int")
+                nil [959 1615]))          
+      :file "main.cpp"
+      :pointmax 1616
+      :fsize 1614
+      :lastmodtime '(24308 13327 177499 440000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-166fcbc"
+      :file "channel.cpp"
+      :fsize 13963
+      :lastmodtime '(24308 13327 177499 440000))
+    (semanticdb-table "semanticdb-table-166fcdc"
+      :file "pixel.cpp"
+      :fsize 12853
+      :lastmodtime '(24308 13327 181497 903000))
+    (semanticdb-table "semanticdb-table-172bcec"
+      :file "pixel_iterator.cpp"
+      :fsize 11096
+      :lastmodtime '(24308 13327 181497 903000))
+    (semanticdb-table "semanticdb-table-172bd0c"
+      :file "image.cpp"
+      :fsize 20961
+      :lastmodtime '(24308 13327 177499 440000))
+    (semanticdb-table "semanticdb-table-173e618"
+      :file "image_io.cpp"
+      :fsize 6629
+      :lastmodtime '(24308 13327 177499 440000)))
+  :file "!home!hyuk.myeong!work!G550_0625!Apps!source!autosar!third_party!boost!libs!gil!test!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

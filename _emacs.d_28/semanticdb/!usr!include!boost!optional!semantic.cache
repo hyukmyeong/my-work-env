@@ -1,0 +1,60 @@
+;; Object semanticdb-project-database-file-1b54c00
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-1b54c00"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-1b54c1c"
+      :major-mode c++-mode
+      :tags 
+        '( ("BOOST_OPTIONAL_OPTIONAL_FWD_FLC_19NOV2002_HPP" variable (:constant-flag t) nil [551 596])
+            ("boost" type
+               (:members 
+                  ( ("optional" type
+                       (:template 
+                          ( ("T" type (:type "class") nil nil))                          
+                        :type "class"
+                        :prototype t)
+                        (reparse-symbol namespacesubparts) [618 652])
+                    ("swap" function
+                       (:template 
+                          ( ("T" type (:type "class") nil nil))                          
+                        :type "void"
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :type ("optional" type
+                                     (:template-specifier 
+                                        ( ("T" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [684 698])
+                            ("" variable
+                               (:reference 1
+                                :type ("optional" type
+                                     (:template-specifier 
+                                        ( ("T" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [699 713]))                          
+                        :prototype-flag t)
+                        (reparse-symbol namespacesubparts) [654 714])
+                    ("optional_swap_should_use_default_constructor" type
+                       (:template 
+                          ( ("T" type (:type "class") nil nil))                          
+                        :type "struct"
+                        :prototype t)
+                        (reparse-symbol namespacesubparts) [716 787]))                  
+                :type "namespace")
+                nil [599 790]))          
+      :file "optional_fwd.hpp"
+      :pointmax 819
+      :fsize 818
+      :lastmodtime '(22367 50470 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("BOOST_OPTIONAL_OPTIONAL_FWD_FLC_19NOV2002_HPP")
+          )
+))
+  :file "!usr!include!boost!optional!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

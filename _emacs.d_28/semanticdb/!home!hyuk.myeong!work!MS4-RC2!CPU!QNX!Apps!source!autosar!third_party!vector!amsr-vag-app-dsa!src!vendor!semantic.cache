@@ -1,0 +1,50 @@
+;; Object semanticdb-project-database-file-1982264
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-1982264"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-1982270"
+      :major-mode c++-mode
+      :tags 
+        '( ("SRC_VENDOR_I_OEM_PROGRAMMING_PRECONDITIONS_INTERFACE_H_" variable (:constant-flag t) nil [1264 1319])
+            ("cinttypes" include (:system-flag t) nil [1574 1594])
+            ("vector" include (:system-flag t) nil [1595 1612])
+            ("vector" type
+               (:members 
+                  ( ("diagnostic_service" type
+                       (:members 
+                          ( ("vendor" type
+                               (:members 
+                                  ( ("IOEMProgrammingPreconditionsInterface" type
+                                       (:members 
+                                          ( ("public" label nil (reparse-symbol classsubparts) [1856 1863])
+                                            ("CheckProgrammingPreconditions" function
+                                               (:pure-virtual-flag t
+                                                :prototype-flag t
+                                                :typemodifiers ("virtual")
+                                                :type ("std::vector" type
+                                                     (:template-specifier 
+                                                        ( ("std::uint8_t" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil))
+                                                (reparse-symbol classsubparts) [2070 2140]))                                          
+                                        :type "class")
+                                        (reparse-symbol namespacesubparts) [1809 2143]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [1664 2146]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [1633 2169]))                  
+                :type "namespace")
+                nil [1614 2204]))          
+      :file "i_oem_programming_preconditions_interface.h"
+      :pointmax 2294
+      :fsize 2293
+      :lastmodtime '(24334 50479 406044 98000)
+      :unmatched-syntax '((punctuation 1924 . 1925) (DEFAULT 1917 . 1924) (punctuation 1915 . 1916) (semantic-list 1912 . 1914) (symbol 1875 . 1912) (punctuation 1874 . 1875) (VIRTUAL 1866 . 1873))
+      :lexical-table 
+        '(("SRC_VENDOR_I_OEM_PROGRAMMING_PRECONDITIONS_INTERFACE_H_")
+          )
+))
+  :file "!home!hyuk.myeong!work!MS4-RC2!CPU!QNX!Apps!source!autosar!third_party!vector!amsr-vag-app-dsa!src!vendor!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

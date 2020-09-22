@@ -1,0 +1,54 @@
+;; Object semanticdb-project-database-file-1d57d24
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-1d57d24"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-1d57d30"
+      :major-mode c++-mode
+      :tags 
+        '( ("DIAGHANDLER_VSOMEIP_ARA_DIAG_SERVICE_INTERFACES_COMMUNICATION_CTRL_ADAPTER_COMMUNICATIONCONTROL_H_" variable (:constant-flag t) nil [1132 1230])
+            ("ara/com/internal/vsomeip/skeleton/vsomeip_skeleton_base.h" include nil nil [1232 1300])
+            ("service_desc_communicationcontrol.h" include nil nil [1301 1347])
+            ("ara/diag/service_interfaces/communication_ctrl/communicationcontrol_skeleton.h" include nil nil [1349 1438])
+            ("ara" type
+               (:members 
+                  ( ("diag" type
+                       (:members 
+                          ( ("service_interfaces" type
+                               (:members 
+                                  ( ("communication_ctrl" type
+                                       (:members 
+                                          ( ("communicationcontrol_binding" type
+                                               (:members 
+                                                  ( ("vsomeip" type
+                                                       (:members 
+                                                          ( ("public" label nil (reparse-symbol namespacesubparts) [1640 1650])
+                                                            ("ara::com::internal::vsomeip::skeleton::ServiceImplBase" variable (:type "int") (reparse-symbol namespacesubparts) [1651 3122]))                                                          
+                                                        :type "namespace")
+                                                        (reparse-symbol namespacesubparts) [1576 3125]))                                                  
+                                                :type "namespace")
+                                                (reparse-symbol namespacesubparts) [1535 3148]))                                          
+                                        :type "namespace")
+                                        (reparse-symbol namespacesubparts) [1504 3192]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [1473 3226]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [1456 3260]))                  
+                :type "namespace")
+                nil [1440 3280]))          
+      :file "adapter_communicationcontrol.h"
+      :pointmax 3410
+      :fsize 3409
+      :lastmodtime '(24415 860 628785 431000)
+      :unmatched-syntax '((punctuation 1650 . 1651) (punctuation 1638 . 1639) (symbol 1603 . 1637) (CLASS 1597 . 1602))
+      :lexical-table 
+        '(("DIAGHANDLER_VSOMEIP_ARA_DIAG_SERVICE_INTERFACES_COMMUNICATION_CTRL_ADAPTER_COMMUNICATIONCONTROL_H_")
+          )
+)
+    (semanticdb-table "semanticdb-table-1aa00f0"
+      :file "service_desc_communicationcontrol.h"
+      :fsize 2423
+      :lastmodtime '(24415 860 628785 431000)))
+  :file "!home!hyuk.myeong!work!LARA!sample-applications!lge!diag-handler!src-gen!DiagHandler!vsomeip!ara!diag!service_interfaces!communication_ctrl!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

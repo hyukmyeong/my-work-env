@@ -1,0 +1,96 @@
+;; Object semanticdb-project-database-file-197e7a4
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-197e7a4"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-197e7b0"
+      :major-mode c++-mode
+      :tags 
+        '( ("lsar/crypto/cryp/secretSeedImpl.h" include nil nil [566 610])
+            ("lsar/crypto/common/baseIdTypesImpl.h" include nil nil [611 658])
+            ("lsar/crypto/common/cryptoUtil.h" include nil nil [659 701])
+            ("lsar" type
+               (:members 
+                  ( ("crypto" type
+                       (:members 
+                          ( ("cryp" type
+                               (:members 
+                                  ( ("SecretSeed" function
+                                       (:constructor-flag t
+                                        :parent "SecretSeed"
+                                        :arguments 
+                                          ( ("algId" variable (:type ("ara::crypto::cryp::CryptoPrimitiveId::AlgId" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [842 892])
+                                            ("keySlotPrototypeProps" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("ara::crypto::keys::KeySlotPrototypeProps" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [901 971])
+                                            ("keySlotContentProps" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("ara::crypto::keys::KeySlotContentProps" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [980 1046])
+                                            ("isSession" variable (:type "bool") (reparse-symbol arg-sub-list) [1055 1070]))                                          
+                                        :type ("SecretSeed" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [810 1278])
+                                    ("SecretSeed" function
+                                       (:destructor-flag t
+                                        :parent "SecretSeed"
+                                        :type "void")
+                                        (reparse-symbol namespacesubparts) [1280 1309])
+                                    ("CreateConst" function
+                                       (:parent "SecretSeed"
+                                        :arguments 
+                                          ( ("algId" variable (:type ("ara::crypto::cryp::CryptoPrimitiveId::AlgId" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1400 1450])
+                                            ("keySlotPrototypeProps" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("ara::crypto::keys::KeySlotPrototypeProps" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [1459 1529])
+                                            ("keySlotContentProps" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("ara::crypto::keys::KeySlotContentProps" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [1538 1604])
+                                            ("isSession" variable (:type "bool") (reparse-symbol arg-sub-list) [1613 1628]))                                          
+                                        :type ("ara::core::Result" type
+                                             (:template-specifier 
+                                                ( ("ara::crypto::cryp::SecretSeed::Uptrc" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol namespacesubparts) [1311 1841])
+                                    ("Create" function
+                                       (:parent "SecretSeed"
+                                        :arguments 
+                                          ( ("algId" variable (:type ("ara::crypto::cryp::CryptoPrimitiveId::AlgId" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1926 1976])
+                                            ("keySlotPrototypeProps" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("ara::crypto::keys::KeySlotPrototypeProps" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [1985 2055])
+                                            ("keySlotContentProps" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("ara::crypto::keys::KeySlotContentProps" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [2064 2130])
+                                            ("isSession" variable (:type "bool") (reparse-symbol arg-sub-list) [2139 2154]))                                          
+                                        :type ("ara::core::Result" type
+                                             (:template-specifier 
+                                                ( ("ara::crypto::cryp::SecretSeed::Uptr" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol namespacesubparts) [1843 2366]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [792 7247]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [773 7249]))                  
+                :type "namespace")
+                nil [756 7251]))          
+      :file "secretSeedImpl.cpp"
+      :pointmax 7252
+      :fsize 7251
+      :lastmodtime '(24310 62485 339259 219000)
+      :unmatched-syntax '((semantic-list 7078 . 7244) (symbol 7069 . 7077) (CONST 7063 . 7068) (semantic-list 7020 . 7062) (symbol 7005 . 7020) (punctuation 7004 . 7005) (punctuation 7003 . 7004) (symbol 6993 . 7003) (VOID 6988 . 6992) (semantic-list 6963 . 6986) (symbol 6954 . 6962) (semantic-list 6914 . 6953) (punctuation 6913 . 6914) (punctuation 6912 . 6913) (OPERATOR 6903 . 6911) (punctuation 6902 . 6903) (punctuation 6901 . 6902) (symbol 6891 . 6901) (punctuation 6889 . 6890) (symbol 6879 . 6889) (punctuation 6878 . 6879) (punctuation 6877 . 6878) (symbol 6873 . 6877) (punctuation 6872 . 6873) (punctuation 6871 . 6872) (symbol 6865 . 6871) (punctuation 6864 . 6865) (punctuation 6863 . 6864) (symbol 6860 . 6863) (semantic-list 6835 . 6858) (symbol 6826 . 6834) (semantic-list 6780 . 6825) (punctuation 6779 . 6780) (punctuation 6778 . 6779) (OPERATOR 6769 . 6777) (punctuation 6768 . 6769) (punctuation 6767 . 6768) (symbol 6757 . 6767) (punctuation 6755 . 6756) (symbol 6745 . 6755) (punctuation 6744 . 6745) (punctuation 6743 . 6744) (symbol 6739 . 6743) (punctuation 6738 . 6739) (punctuation 6737 . 6738) (symbol 6731 . 6737) (punctuation 6730 . 6731) (punctuation 6729 . 6730) (symbol 6726 . 6729) (semantic-list 6619 . 6724) (symbol 6610 . 6618) (semantic-list 6589 . 6609) (symbol 6585 . 6589) (punctuation 6584 . 6585) (punctuation 6583 . 6584) (symbol 6573 . 6583) (punctuation 6571 . 6572) (symbol 6561 . 6571) (punctuation 6560 . 6561) (punctuation 6559 . 6560) (symbol 6555 . 6559) (punctuation 6554 . 6555) (punctuation 6553 . 6554) (symbol 6547 . 6553) (punctuation 6546 . 6547) (punctuation 6545 . 6546) (symbol 6542 . 6545) (semantic-list 6435 . 6540) (symbol 6426 . 6434) (semantic-list 6423 . 6425) (symbol 6419 . 6423) (punctuation 6418 . 6419) (punctuation 6417 . 6418) (symbol 6407 . 6417) (punctuation 6405 . 6406) (symbol 6395 . 6405) (punctuation 6394 . 6395) (punctuation 6393 . 6394) (symbol 6389 . 6393) (punctuation 6388 . 6389) (punctuation 6387 . 6388) (symbol 6381 . 6387) (punctuation 6380 . 6381) (punctuation 6379 . 6380) (symbol 6376 . 6379) (semantic-list 6240 . 6374) (symbol 6231 . 6239) (semantic-list 6153 . 6230) (symbol 6145 . 6153) (punctuation 6144 . 6145) (punctuation 6143 . 6144) (symbol 6133 . 6143) (punctuation 6131 . 6132) (VOID 6127 . 6131) (punctuation 6126 . 6127) (symbol 6120 . 6126) (punctuation 6119 . 6120) (punctuation 6118 . 6119) (symbol 6114 . 6118) (punctuation 6113 . 6114) (punctuation 6112 . 6113) (symbol 6109 . 6112) (semantic-list 5938 . 6107) (symbol 5929 . 5937) (CONST 5923 . 5928) (semantic-list 5818 . 5922) (symbol 5813 . 5818) (punctuation 5812 . 5813) (punctuation 5811 . 5812) (symbol 5801 . 5811) (punctuation 5799 . 5800) (symbol 5795 . 5799) (punctuation 5794 . 5795) (punctuation 5793 . 5794) (symbol 5783 . 5793) (punctuation 5782 . 5783) (punctuation 5781 . 5782) (symbol 5777 . 5781) (punctuation 5776 . 5777) (punctuation 5775 . 5776) (symbol 5769 . 5775) (punctuation 5768 . 5769) (punctuation 5767 . 5768) (symbol 5764 . 5767) (punctuation 5763 . 5764) (symbol 5757 . 5763) (punctuation 5756 . 5757) (punctuation 5755 . 5756) (symbol 5751 . 5755) (punctuation 5750 . 5751) (punctuation 5749 . 5750) (symbol 5746 . 5749) (semantic-list 5611 . 5744) (symbol 5602 . 5610) (CONST 5596 . 5601) (semantic-list 5576 . 5595) (symbol 5561 . 5576) (punctuation 5560 . 5561) (punctuation 5559 . 5560) (symbol 5549 . 5559) (symbol 5543 . 5548) (punctuation 5542 . 5543) (punctuation 5541 . 5542) (symbol 5522 . 5541) (punctuation 5521 . 5522) (punctuation 5520 . 5521) (symbol 5516 . 5520) (punctuation 5515 . 5516) (punctuation 5514 . 5515) (symbol 5508 . 5514) (punctuation 5507 . 5508) (punctuation 5506 . 5507) (symbol 5503 . 5506) (semantic-list 5335 . 5466) (symbol 5326 . 5334) (CONST 5320 . 5325) (semantic-list 5317 . 5319) (symbol 5296 . 5317) (punctuation 5295 . 5296) (punctuation 5294 . 5295) (symbol 5284 . 5294) (symbol 5277 . 5283) (punctuation 5276 . 5277) (punctuation 5275 . 5276) (symbol 5272 . 5275) (semantic-list 5128 . 5270) (symbol 5119 . 5127) (CONST 5113 . 5118) (semantic-list 5000 . 5112) (symbol 4996 . 5000) (punctuation 4995 . 4996) (punctuation 4994 . 4995) (symbol 4984 . 4994) (punctuation 4982 . 4983) (VOID 4978 . 4982) (punctuation 4977 . 4978) (symbol 4971 . 4977) (punctuation 4970 . 4971) (punctuation 4969 . 4970) (symbol 4965 . 4969) (punctuation 4964 . 4965) (punctuation 4963 . 4964) (symbol 4960 . 4963) (semantic-list 4823 . 4958) (symbol 4814 . 4822) (CONST 4808 . 4813) (semantic-list 4805 . 4807) (symbol 4794 . 4805) (punctuation 4793 . 4794) (punctuation 4792 . 4793) (symbol 4782 . 4792) (symbol 4775 . 4781) (punctuation 4774 . 4775) (punctuation 4773 . 4774) (symbol 4770 . 4773) (semantic-list 4608 . 4768) (symbol 4599 . 4607) (CONST 4593 . 4598) (semantic-list 4543 . 4592) (symbol 4530 . 4543) (punctuation 4529 . 4530) (punctuation 4528 . 4529) (symbol 4518 . 4528) (symbol 4513 . 4517) (punctuation 4512 . 4513) (punctuation 4511 . 4512) (symbol 4499 . 4511) (punctuation 4498 . 4499) (punctuation 4497 . 4498) (symbol 4493 . 4497) (punctuation 4492 . 4493) (punctuation 4491 . 4492) (symbol 4485 . 4491) (punctuation 4484 . 4485) (punctuation 4483 . 4484) (symbol 4480 . 4483) (semantic-list 4124 . 4478) (symbol 4115 . 4123) (CONST 4109 . 4114) (semantic-list 4068 . 4108) (symbol 4057 . 4068) (punctuation 4056 . 4057) (punctuation 4055 . 4056) (symbol 4045 . 4055) (BOOL 4040 . 4044) (semantic-list 3904 . 4038) (symbol 3895 . 3903) (CONST 3889 . 3894) (semantic-list 3886 . 3888) (symbol 3874 . 3886) (punctuation 3873 . 3874) (punctuation 3872 . 3873) (symbol 3862 . 3872) (BOOL 3857 . 3861) (semantic-list 3744 . 3855) (symbol 3735 . 3743) (CONST 3729 . 3734) (semantic-list 3726 . 3728) (symbol 3717 . 3726) (punctuation 3716 . 3717) (punctuation 3715 . 3716) (symbol 3705 . 3715) (BOOL 3700 . 3704) (semantic-list 3567 . 3698) (symbol 3558 . 3566) (CONST 3552 . 3557) (semantic-list 3549 . 3551) (symbol 3536 . 3549) (punctuation 3535 . 3536) (punctuation 3534 . 3535) (symbol 3524 . 3534) (symbol 3519 . 3523) (punctuation 3518 . 3519) (punctuation 3517 . 3518) (symbol 3505 . 3517) (punctuation 3504 . 3505) (punctuation 3503 . 3504) (symbol 3499 . 3503) (punctuation 3498 . 3499) (punctuation 3497 . 3498) (symbol 3491 . 3497) (punctuation 3490 . 3491) (punctuation 3489 . 3490) (symbol 3486 . 3489) (semantic-list 3382 . 3484) (symbol 3373 . 3381) (CONST 3367 . 3372) (semantic-list 3364 . 3366) (symbol 3357 . 3364) (punctuation 3356 . 3357) (punctuation 3355 . 3356) (symbol 3345 . 3355) (VOID 3340 . 3344) (semantic-list 3135 . 3306) (symbol 3126 . 3134) (CONST 3120 . 3125) (semantic-list 3117 . 3119) (symbol 3107 . 3117) (punctuation 3106 . 3107) (punctuation 3105 . 3106) (symbol 3095 . 3105) (punctuation 3093 . 3094) (symbol 3079 . 3093) (punctuation 3078 . 3079) (punctuation 3077 . 3078) (symbol 3073 . 3077) (punctuation 3072 . 3073) (punctuation 3071 . 3072) (symbol 3065 . 3071) (punctuation 3064 . 3065) (punctuation 3063 . 3064) (symbol 3060 . 3063) (semantic-list 2904 . 3058) (symbol 2895 . 2903) (CONST 2889 . 2894) (semantic-list 2886 . 2888) (symbol 2875 . 2886) (punctuation 2874 . 2875) (punctuation 2873 . 2874) (symbol 2863 . 2873) (symbol 2854 . 2862) (punctuation 2853 . 2854) (punctuation 2852 . 2853) (symbol 2835 . 2852) (punctuation 2834 . 2835) (punctuation 2833 . 2834) (symbol 2829 . 2833) (punctuation 2828 . 2829) (punctuation 2827 . 2828) (symbol 2821 . 2827) (punctuation 2820 . 2821) (punctuation 2819 . 2820) (symbol 2816 . 2819) (semantic-list 2688 . 2814) (symbol 2679 . 2687) (CONST 2673 . 2678) (semantic-list 2670 . 2672) (symbol 2656 . 2670) (punctuation 2655 . 2656) (punctuation 2654 . 2655) (symbol 2644 . 2654) (symbol 2638 . 2643) (punctuation 2637 . 2638) (punctuation 2636 . 2637) (symbol 2619 . 2636) (punctuation 2618 . 2619) (punctuation 2617 . 2618) (symbol 2613 . 2617) (punctuation 2612 . 2613) (punctuation 2611 . 2612) (symbol 2605 . 2611) (punctuation 2604 . 2605) (punctuation 2603 . 2604) (symbol 2600 . 2603) (semantic-list 2442 . 2598) (symbol 2433 . 2441) (CONST 2427 . 2432) (semantic-list 2424 . 2426) (symbol 2408 . 2424) (punctuation 2407 . 2408) (punctuation 2406 . 2407) (symbol 2396 . 2406) (symbol 2385 . 2395) (punctuation 2384 . 2385) (punctuation 2383 . 2384) (symbol 2379 . 2383) (punctuation 2378 . 2379) (punctuation 2377 . 2378) (symbol 2374 . 2377) (CONST 2368 . 2373))))
+  :file "!home!hyuk.myeong!work!G550_x86!CPU!QNX!Apps!source!autosar!ara-api!crypto!crypto-lib!src!lsar!crypto!cryp!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

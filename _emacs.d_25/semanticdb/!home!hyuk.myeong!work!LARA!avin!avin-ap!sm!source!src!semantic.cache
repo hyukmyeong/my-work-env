@@ -1,0 +1,62 @@
+;; Object semanticdb-project-database-file-26e2b44
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-26e2b44"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-26e2b50"
+      :major-mode c++-mode
+      :tags 
+        '( ("chrono" include (:system-flag t) nil [746 763])
+            ("cstdint" include (:system-flag t) nil [764 782])
+            ("cstdio" include (:system-flag t) nil [783 800])
+            ("ara/com/e2exf/status_handler.h" include (:system-flag t) nil [802 843])
+            ("ara/exec/execution_client.h" include (:system-flag t) nil [844 882])
+            ("ara/log/logging.h" include (:system-flag t) nil [883 911])
+            ("ara/log/logmanager.h" include (:system-flag t) nil [912 943])
+            ("thread" include (:system-flag t) nil [944 961])
+            ("state_manager.h" include nil nil [963 989])
+            ("state_manager_interface.h" include nil nil [990 1026])
+            ("ara/phmlib/supervised_entity.h" include nil nil [1027 1068])
+            ("ara/core/instance_specifier.h" include nil nil [1069 1109])
+            ("ara/phm/supervised_entities/phmsupervisedentityinterface1.h" include nil nil [1110 1180])
+            ("ara::log" using (:type ("ara::log" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [1211 1236])
+            ("ara" type
+               (:members 
+                  ( ("sm" type
+                       (:members 
+                          ( ("kTime" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("" variable (:type ("500U" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1298 1303]))                                  
+                                :type ("std::uint16_t" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [1278 1304])
+                            ("ThreadAct1" function (:type "void") (reparse-symbol namespacesubparts) [1419 2074]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [1253 2076]))                  
+                :type "namespace")
+                nil [1237 2094])
+            ("ara::sm" using (:type ("ara::sm" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [2163 2187])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [2197 2206])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2207 2220]))                  
+                :type "int")
+                nil [2188 3054]))          
+      :file "main.cpp"
+      :pointmax 3055
+      :fsize 3054
+      :lastmodtime '(24416 4495 855643 888000)
+      :unmatched-syntax nil))
+  :file "!home!hyuk.myeong!work!LARA!avin!avin-ap!sm!source!src!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

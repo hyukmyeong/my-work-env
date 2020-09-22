@@ -1,0 +1,54 @@
+;; Object semanticdb-project-database-file-1cd9e04
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-1cd9e04"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-1cd9e10"
+      :major-mode c++-mode
+      :tags 
+        '( ("DIAGHANDLER_VSOMEIP_ARA_DIAG_SERVICE_INTERFACES_GENERIC_UDS_SERVICE_ADAPTER_GENERICUDSSERVICE_H_" variable (:constant-flag t) nil [1124 1220])
+            ("ara/com/internal/vsomeip/skeleton/vsomeip_skeleton_base.h" include nil nil [1222 1290])
+            ("service_desc_genericudsservice.h" include nil nil [1291 1334])
+            ("ara/diag/service_interfaces/generic_uds_service/genericudsservice_skeleton.h" include nil nil [1336 1423])
+            ("ara" type
+               (:members 
+                  ( ("diag" type
+                       (:members 
+                          ( ("service_interfaces" type
+                               (:members 
+                                  ( ("generic_uds_service" type
+                                       (:members 
+                                          ( ("genericudsservice_binding" type
+                                               (:members 
+                                                  ( ("vsomeip" type
+                                                       (:members 
+                                                          ( ("public" label nil (reparse-symbol namespacesubparts) [1620 1630])
+                                                            ("ara::com::internal::vsomeip::skeleton::ServiceImplBase" variable (:type "int") (reparse-symbol namespacesubparts) [1631 3200]))                                                          
+                                                        :type "namespace")
+                                                        (reparse-symbol namespacesubparts) [1559 3203]))                                                  
+                                                :type "namespace")
+                                                (reparse-symbol namespacesubparts) [1521 3226]))                                          
+                                        :type "namespace")
+                                        (reparse-symbol namespacesubparts) [1489 3267]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [1458 3302]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [1441 3336]))                  
+                :type "namespace")
+                nil [1425 3356]))          
+      :file "adapter_genericudsservice.h"
+      :pointmax 3484
+      :fsize 3483
+      :lastmodtime '(24415 860 632785 334000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("DIAGHANDLER_VSOMEIP_ARA_DIAG_SERVICE_INTERFACES_GENERIC_UDS_SERVICE_ADAPTER_GENERICUDSSERVICE_H_")
+          )
+)
+    (semanticdb-table "semanticdb-table-9c5670"
+      :file "service_desc_genericudsservice.h"
+      :fsize 2578
+      :lastmodtime '(24415 860 632785 334000)))
+  :file "!home!hyuk.myeong!work!LARA!sample-applications!lge!diag-handler!src-gen!DiagHandler!vsomeip!ara!diag!service_interfaces!generic_uds_service!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,380 @@
+;; Object semanticdb-project-database-file-1dfac68
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-1dfac68"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-1df65ec"
+      :major-mode c++-mode
+      :tags 
+        '( ("algorithm" include (:system-flag t) nil [1177 1197])
+            ("limits" include (:system-flag t) nil [1198 1215])
+            ("RoutineStatusReport.h" include nil nil [1217 1249])
+            ("ucm_message_processor.h" include nil nil [1250 1284])
+            ("util/bytes_helper.h" include nil nil [1285 1315])
+            ("util/dsa_ara_logger.h" include nil nil [1316 1348])
+            ("vector" type
+               (:members 
+                  ( ("diagnostic_service" type
+                       (:members 
+                          ( ("processors" type
+                               (:members 
+                                  ( ("diagnostic_service::diagnostic_data::datatypes::ServiceIds" variable (:type "int") (reparse-symbol namespacesubparts) [1483 1542])
+                                    ("ara::diag::service_interfaces::generic_uds_service::skeleton::application_errors::UDSServiceFailed" variable (:type "int") (reparse-symbol namespacesubparts) [1646 1745])
+                                    ("diagnostic_data::datatypes::ServiceIds" variable (:type "int") (reparse-symbol namespacesubparts) [1801 1840])
+                                    ("UcmMessageProcessor" function
+                                       (:constructor-flag t
+                                        :parent "UcmMessageProcessor"
+                                        :arguments 
+                                          ( ("ucm_proxy_if" variable
+                                               (:reference 1
+                                                :type ("ucm::IUCMProxy" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [1883 1912]))                                          
+                                        :type ("UcmMessageProcessor" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [1842 1945])
+                                    ("HandleMessage" function
+                                       (:parent "UcmMessageProcessor"
+                                        :arguments 
+                                          ( ("service_id" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("diagnostic_data::datatypes::uint8" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [1987 2039])
+                                            ("request_data" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("guds::ByteVectorType" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [2080 2121])
+                                            ("promise" variable
+                                               (:reference 1
+                                                :type ("ara::com::Promise" type
+                                                     (:template-specifier 
+                                                        ( ("guds::skeleton::methods::HandleMessage::Output" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil))
+                                                (reparse-symbol arg-sub-list) [2162 2237]))                                          
+                                        :type "void")
+                                        (reparse-symbol namespacesubparts) [1947 3152])
+                                    ("HandleMsgRequestRoutineControl" function
+                                       (:parent "UcmMessageProcessor"
+                                        :arguments 
+                                          ( ("request_data" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("guds::ByteVectorType" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [3216 3257])
+                                            ("promise" variable
+                                               (:reference 1
+                                                :type ("ara::com::Promise" type
+                                                     (:template-specifier 
+                                                        ( ("guds::skeleton::methods::HandleMessage::Output" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil))
+                                                (reparse-symbol arg-sub-list) [3262 3337]))                                          
+                                        :type "void")
+                                        (reparse-symbol namespacesubparts) [3154 6836])
+                                    ("HandleMsgRequestDownload" function
+                                       (:parent "UcmMessageProcessor"
+                                        :arguments 
+                                          ( ("request_data" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("guds::ByteVectorType" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [6894 6935])
+                                            ("promise" variable
+                                               (:reference 1
+                                                :type ("ara::com::Promise" type
+                                                     (:template-specifier 
+                                                        ( ("guds::skeleton::methods::HandleMessage::Output" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil))
+                                                (reparse-symbol arg-sub-list) [6940 7015]))                                          
+                                        :type "void")
+                                        (reparse-symbol namespacesubparts) [6838 10139])
+                                    ("HandleMsgTransferData" function
+                                       (:parent "UcmMessageProcessor"
+                                        :arguments 
+                                          ( ("request_data" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("guds::ByteVectorType" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [10194 10235])
+                                            ("promise" variable
+                                               (:reference 1
+                                                :type ("ara::com::Promise" type
+                                                     (:template-specifier 
+                                                        ( ("guds::skeleton::methods::HandleMessage::Output" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil))
+                                                (reparse-symbol arg-sub-list) [10240 10315]))                                          
+                                        :type "void")
+                                        (reparse-symbol namespacesubparts) [10141 14060])
+                                    ("HandleMsgRequestTransferExit" function
+                                       (:parent "UcmMessageProcessor"
+                                        :arguments 
+                                          ( ("request_data" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("guds::ByteVectorType" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [14122 14163])
+                                            ("promise" variable
+                                               (:reference 1
+                                                :type ("ara::com::Promise" type
+                                                     (:template-specifier 
+                                                        ( ("guds::skeleton::methods::HandleMessage::Output" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil))
+                                                (reparse-symbol arg-sub-list) [14168 14243]))                                          
+                                        :type "void")
+                                        (reparse-symbol namespacesubparts) [14062 16428])
+                                    ("HandleRoutineCheckMemory" function
+                                       (:parent "UcmMessageProcessor"
+                                        :arguments 
+                                          ( ("request_data" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("guds::ByteVectorType" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [16486 16527])
+                                            ("promise" variable
+                                               (:reference 1
+                                                :type ("ara::com::Promise" type
+                                                     (:template-specifier 
+                                                        ( ("guds::skeleton::methods::HandleMessage::Output" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil))
+                                                (reparse-symbol arg-sub-list) [16532 16607]))                                          
+                                        :type "void")
+                                        (reparse-symbol namespacesubparts) [16430 17976])
+                                    ("HandleRoutineStartUpdate" function
+                                       (:parent "UcmMessageProcessor"
+                                        :arguments 
+                                          ( ("request_data" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("guds::ByteVectorType" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [18034 18075])
+                                            ("promise" variable
+                                               (:reference 1
+                                                :type ("ara::com::Promise" type
+                                                     (:template-specifier 
+                                                        ( ("guds::skeleton::methods::HandleMessage::Output" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil))
+                                                (reparse-symbol arg-sub-list) [18080 18155]))                                          
+                                        :type "void")
+                                        (reparse-symbol namespacesubparts) [17978 19717])
+                                    ("HandleRoutineStartUpdateReqResult" function
+                                       (:parent "UcmMessageProcessor"
+                                        :arguments 
+                                          ( ("request_data" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("guds::ByteVectorType" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [19784 19825])
+                                            ("promise" variable
+                                               (:reference 1
+                                                :type ("ara::com::Promise" type
+                                                     (:template-specifier 
+                                                        ( ("guds::skeleton::methods::HandleMessage::Output" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil))
+                                                (reparse-symbol arg-sub-list) [19830 19905]))                                          
+                                        :type "void")
+                                        (reparse-symbol namespacesubparts) [19719 21701])
+                                    ("HandleRoutineCheckProgDependencies" function
+                                       (:parent "UcmMessageProcessor"
+                                        :arguments 
+                                          ( ("request_data" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("guds::ByteVectorType" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [21769 21810])
+                                            ("promise" variable
+                                               (:reference 1
+                                                :type ("ara::com::Promise" type
+                                                     (:template-specifier 
+                                                        ( ("guds::skeleton::methods::HandleMessage::Output" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil))
+                                                (reparse-symbol arg-sub-list) [21815 21890]))                                          
+                                        :type "void")
+                                        (reparse-symbol namespacesubparts) [21703 22616])
+                                    ("HandleRoutineCheckProgrammingPreconditions" function
+                                       (:parent "UcmMessageProcessor"
+                                        :arguments 
+                                          ( ("request_data" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("guds::ByteVectorType" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [22692 22733])
+                                            ("promise" variable
+                                               (:reference 1
+                                                :type ("ara::com::Promise" type
+                                                     (:template-specifier 
+                                                        ( ("guds::skeleton::methods::HandleMessage::Output" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil))
+                                                (reparse-symbol arg-sub-list) [22738 22813]))                                          
+                                        :type "void")
+                                        (reparse-symbol namespacesubparts) [22618 24391])
+                                    ("HandleRoutineCheckUpdate" function
+                                       (:parent "UcmMessageProcessor"
+                                        :arguments 
+                                          ( ("request_data" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("guds::ByteVectorType" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [24449 24490])
+                                            ("promise" variable
+                                               (:reference 1
+                                                :type ("ara::com::Promise" type
+                                                     (:template-specifier 
+                                                        ( ("guds::skeleton::methods::HandleMessage::Output" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil))
+                                                (reparse-symbol arg-sub-list) [24495 24570]))                                          
+                                        :type "void")
+                                        (reparse-symbol namespacesubparts) [24393 26014])
+                                    ("HandleRoutineCheckUpdateReqResult" function
+                                       (:parent "UcmMessageProcessor"
+                                        :arguments 
+                                          ( ("request_data" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("guds::ByteVectorType" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [26081 26122])
+                                            ("promise" variable
+                                               (:reference 1
+                                                :type ("ara::com::Promise" type
+                                                     (:template-specifier 
+                                                        ( ("guds::skeleton::methods::HandleMessage::Output" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil))
+                                                (reparse-symbol arg-sub-list) [26127 26202]))                                          
+                                        :type "void")
+                                        (reparse-symbol namespacesubparts) [26016 27161])
+                                    ("ParseRcCheckUpdate" function
+                                       (:parent "UcmMessageProcessor"
+                                        :arguments 
+                                          ( ("request_data" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("guds::ByteVectorType" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [27232 27273])
+                                            ("args" variable
+                                               (:reference 1
+                                                :type ("ucm::RcCheckUpdateArgs" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [27274 27303])
+                                            ("resp_code" variable
+                                               (:reference 1
+                                                :type ("UDSResponseCodeType" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [27349 27380]))                                          
+                                        :type "bool")
+                                        (reparse-symbol namespacesubparts) [27187 27634])
+                                    ("ParseRcCheckMemory" function
+                                       (:parent "UcmMessageProcessor"
+                                        :arguments 
+                                          ( ("request_data" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("guds::ByteVectorType" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [27681 27722])
+                                            ("args" variable
+                                               (:reference 1
+                                                :type ("ucm::RcCheckMemoryArgs" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [27723 27752])
+                                            ("resp_code" variable
+                                               (:reference 1
+                                                :type ("UDSResponseCodeType" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [27826 27857]))                                          
+                                        :type "void")
+                                        (reparse-symbol namespacesubparts) [27636 28074])
+                                    ("ParseRcStartUpdate" function
+                                       (:parent "UcmMessageProcessor"
+                                        :arguments 
+                                          ( ("request_data" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("guds::ByteVectorType" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [28121 28162])
+                                            ("args" variable
+                                               (:reference 1
+                                                :type ("ucm::RcStartUpdateArgs" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [28163 28192])
+                                            ("resp_code" variable
+                                               (:reference 1
+                                                :type ("UDSResponseCodeType" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [28238 28269]))                                          
+                                        :type "bool")
+                                        (reparse-symbol namespacesubparts) [28076 29598])
+                                    ("ParseTransferData" function
+                                       (:parent "UcmMessageProcessor"
+                                        :arguments 
+                                          ( ("request_data" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("guds::ByteVectorType" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [29644 29685])
+                                            ("args" variable
+                                               (:reference 1
+                                                :type ("ucm::TransferDataArgs" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [29686 29714])
+                                            ("resp_code" variable
+                                               (:reference 1
+                                                :type ("UDSResponseCodeType" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [29759 29790]))                                          
+                                        :type "bool")
+                                        (reparse-symbol namespacesubparts) [29600 30507])
+                                    ("ParseRequestDownload" function
+                                       (:parent "UcmMessageProcessor"
+                                        :arguments 
+                                          ( ("request_data" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("guds::ByteVectorType" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [30556 30597])
+                                            ("args" variable
+                                               (:reference 1
+                                                :type ("ucm::RequestDownloadArgs" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [30598 30629])
+                                            ("resp_code" variable
+                                               (:reference 1
+                                                :type ("UDSResponseCodeType" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [30677 30708]))                                          
+                                        :type "bool")
+                                        (reparse-symbol namespacesubparts) [30509 33021])
+                                    ("HandleRoutineEraseMemory" function
+                                       (:parent "UcmMessageProcessor"
+                                        :arguments 
+                                          ( ("" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("guds::ByteVectorType" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [33079 33107])
+                                            ("promise" variable
+                                               (:reference 1
+                                                :type ("ara::com::Promise" type
+                                                     (:template-specifier 
+                                                        ( ("guds::skeleton::methods::HandleMessage::Output" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil))
+                                                (reparse-symbol arg-sub-list) [33108 33183]))                                          
+                                        :type "void")
+                                        (reparse-symbol namespacesubparts) [33023 33631]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [1400 33634]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [1369 33661]))                  
+                :type "namespace")
+                nil [1350 33696]))          
+      :file "ucm_message_processor.cpp"
+      :pointmax 33718
+      :fsize 33717
+      :lastmodtime '(24334 50479 398046 994000)
+      :unmatched-syntax '((punctuation 1799 . 1800) (symbol 1795 . 1798) (USING 1789 . 1794) (punctuation 1640 . 1641) (symbol 1623 . 1639) (USING 1617 . 1622) (punctuation 1481 . 1482) (symbol 1477 . 1480) (USING 1471 . 1476)))
+    (semanticdb-table "semanticdb-table-1916b44"
+      :file "ucm_message_processor.h"
+      :fsize 18608
+      :lastmodtime '(24334 50479 398046 994000)))
+  :file "!home!hyuk.myeong!work!MS4-RC2!CPU!QNX!Apps!source!autosar!third_party!vector!amsr-vag-app-dsa!src!processors!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

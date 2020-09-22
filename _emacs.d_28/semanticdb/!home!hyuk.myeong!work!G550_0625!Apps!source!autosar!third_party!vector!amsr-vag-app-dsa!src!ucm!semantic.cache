@@ -1,0 +1,16 @@
+;; Object semanticdb-project-database-file-1a87f64
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-1a87f64"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-1a87f44"
+      :major-mode c++-mode
+      :tags nil
+      :file "ucm_proxy.cpp"
+      :pointmax 70725
+      :fsize 70724
+      :lastmodtime '(24308 26542 681417 284000)
+      :unmatched-syntax nil))
+  :file "!home!hyuk.myeong!work!G550_0625!Apps!source!autosar!third_party!vector!amsr-vag-app-dsa!src!ucm!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

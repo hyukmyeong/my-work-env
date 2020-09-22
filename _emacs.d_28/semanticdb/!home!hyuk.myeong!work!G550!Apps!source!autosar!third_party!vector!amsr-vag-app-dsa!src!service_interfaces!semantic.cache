@@ -1,0 +1,401 @@
+;; Object semanticdb-project-database-file-230af60
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-230af60"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-230aee0"
+      :major-mode c++-mode
+      :tags 
+        '( ("SRC_SERVICE_INTERFACES_DIAGNOSTIC_DATA_DISTRIBUTION_SERVER_H_" variable (:constant-flag t) nil [1255 1316])
+            ("diagnostic_data/diagnostic_service_datatypes.h" include nil nil [1571 1628])
+            ("utility" include (:system-flag t) nil [1630 1648])
+            ("vag/diagnostic_data_distribution_service/DDDSinterface.h" include nil nil [1906 1973])
+            ("vag/diagnostic_data_distribution_service/dddsinterface_skeleton.h" include nil nil [1974 2050])
+            ("vag/diagnostic_data_distribution_service/impl_type_ids.h" include nil nil [2051 2118])
+            ("vag/diagnostic_data_distribution_service/impl_type_uint32.h" include nil nil [2119 2189])
+            ("diagnostic_data/i_diagnostic_data_access.h" include nil nil [2198 2251])
+            ("vector" type
+               (:members 
+                  ( ("diagnostic_service" type
+                       (:members 
+                          ( ("service_interfaces" type
+                               (:members 
+                                  ( ("ddds" type
+                                       (:kind alias
+                                        :members 
+                                          ( ("vag::diagnostic_data_distribution_service" type (:type "namespace") nil nil))                                          
+                                        :type "namespace")
+                                        (reparse-symbol namespacesubparts) [2335 2394])
+                                    ("ddds::uint32" variable (:type "int") (reparse-symbol namespacesubparts) [2411 2424])
+                                    ("ddds::ids" variable (:type "int") (reparse-symbol namespacesubparts) [2497 2507])
+                                    ("DiagnosticDataDistributionServer" type
+                                       (:superclasses 
+                                          ( ("ddds::skeleton::DDDSinterfaceSkeleton" type
+                                               (:protection "public"
+                                                :type "class")
+                                                nil nil))                                          
+                                        :members 
+                                          ( ("public" label nil (reparse-symbol classsubparts) [2818 2825])
+                                            ("DiagnosticDataDistributionServer" function
+                                               (:prototype-flag t
+                                                :constructor-flag t
+                                                :arguments 
+                                                  ( ("instance_id" variable (:type ("ara::com::InstanceIdentifier" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3290 3331])
+                                                    ("diag_data_access_if" variable
+                                                       (:reference 1
+                                                        :type ("diagnostic_data::IDiagnosticDataAccess" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [3332 3392])
+                                                    ("mode" variable
+                                                       (:default-value "ara"
+                                                        :type ("ara::com::MethodCallProcessingMode" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [3399 3444])
+                                                    ("" variable (:type ("com::MethodCallProcessingMode::kEvent" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3446 3484]))                                                  
+                                                :type ("DiagnosticDataDistributionServer" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [3250 3485])
+                                            ("DiagnosticDataDistributionServer" function
+                                               (:destructor-flag t
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [3488 3526])
+                                            ("SendDataValuesChanged" function
+                                               (:prototype-flag t
+                                                :arguments 
+                                                  ( ("values" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("ddds::HashValues" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [3929 3960]))                                                  
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [3902 3961])
+                                            ("private" label nil (reparse-symbol classsubparts) [3964 3972])
+                                            ("diag_data_access_if_" variable (:type ("diagnostic_data::IDiagnosticDataAccess" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4031 4092])
+                                            ("logger_ctx_" variable (:type ("ara::log::Logger" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4162 4192])
+                                            ("override" variable (:type "int") (reparse-symbol classsubparts) [4878 4887])
+                                            ("override" variable (:type "int") (reparse-symbol classsubparts) [5516 5525]))                                          
+                                        :type "class")
+                                        (reparse-symbol namespacesubparts) [2729 5528]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [2303 5531]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [2272 5566]))                  
+                :type "namespace")
+                nil [2253 5601]))          
+      :file "diagnostic_data_distribution_server.h"
+      :pointmax 5697
+      :fsize 5696
+      :lastmodtime '(24287 13634 362715 886000)
+      :unmatched-syntax '((semantic-list 5438 . 5515) (symbol 5415 . 5438) (punctuation 5413 . 5414) (symbol 5407 . 5413) (punctuation 5406 . 5407) (punctuation 5405 . 5406) (symbol 5382 . 5405) (punctuation 5381 . 5382) (punctuation 5380 . 5381) (symbol 5373 . 5380) (punctuation 5372 . 5373) (punctuation 5371 . 5372) (symbol 5363 . 5371) (punctuation 5362 . 5363) (punctuation 5361 . 5362) (symbol 5357 . 5361) (punctuation 5356 . 5357) (symbol 5350 . 5356) (punctuation 5349 . 5350) (punctuation 5348 . 5349) (symbol 5345 . 5348) (punctuation 5344 . 5345) (punctuation 5343 . 5344) (symbol 5340 . 5343) (semantic-list 4758 . 4877) (symbol 4741 . 4758) (punctuation 4739 . 4740) (symbol 4733 . 4739) (punctuation 4732 . 4733) (punctuation 4731 . 4732) (symbol 4714 . 4731) (punctuation 4713 . 4714) (punctuation 4712 . 4713) (symbol 4705 . 4712) (punctuation 4704 . 4705) (punctuation 4703 . 4704) (symbol 4695 . 4703) (punctuation 4694 . 4695) (punctuation 4693 . 4694) (symbol 4689 . 4693) (punctuation 4688 . 4689) (symbol 4682 . 4688) (punctuation 4681 . 4682) (punctuation 4680 . 4681) (symbol 4677 . 4680) (punctuation 4676 . 4677) (punctuation 4675 . 4676) (symbol 4672 . 4675) (punctuation 3445 . 3446) (punctuation 3444 . 3445) (EXPLICIT 3241 . 3249) (punctuation 2495 . 2496) (symbol 2491 . 2494) (USING 2485 . 2490) (punctuation 2409 . 2410) (symbol 2402 . 2408) (USING 2396 . 2401))
+      :lexical-table 
+        '(("SRC_SERVICE_INTERFACES_DIAGNOSTIC_DATA_DISTRIBUTION_SERVER_H_")
+          )
+)
+    (semanticdb-table "semanticdb-table-230af00"
+      :major-mode c++-mode
+      :tags 
+        '( ("SRC_SERVICE_INTERFACES_GENERIC_UDS_SERVICE_H_" variable (:constant-flag t) nil [1198 1243])
+            ("atomic" include (:system-flag t) nil [1498 1515])
+            ("memory" include (:system-flag t) nil [1516 1533])
+            ("ara/diag/service_interfaces/generic_uds_service/genericudsservice_skeleton.h" include nil nil [1535 1622])
+            ("diagnostic_data/i_diagnostic_data_access.h" include nil nil [1624 1677])
+            ("i_runnable.h" include nil nil [1678 1701])
+            ("processors/diagnostic_data_message_processor.h" include nil nil [1702 1759])
+            ("processors/sfd_message_processor.h" include nil nil [1760 1805])
+            ("processors/ucm_message_processor.h" include nil nil [1806 1851])
+            ("sfd/i_sfd_access.h" include nil nil [1852 1881])
+            ("ucm/i_ucm_proxy.h" include nil nil [1882 1910])
+            ("vector" type
+               (:members 
+                  ( ("diagnostic_service" type
+                       (:members 
+                          ( ("service_interfaces" type
+                               (:members 
+                                  ( ("guds" type
+                                       (:kind alias
+                                        :members 
+                                          ( ("ara::diag::service_interfaces::generic_uds_service" type (:type "namespace") nil nil))                                          
+                                        :type "namespace")
+                                        (reparse-symbol namespacesubparts) [2064 2132])
+                                    ("GenericUDSService" type
+                                       (:superclasses 
+                                          ( ("guds::skeleton::GenericUDSServiceSkeleton" type
+                                               (:protection "public"
+                                                :type "class")
+                                                nil nil)
+                                            ("IRunnable" type
+                                               (:protection "public"
+                                                :type "class")
+                                                nil nil))                                          
+                                        :members 
+                                          ( ("public" label nil (reparse-symbol classsubparts) [2546 2553])
+                                            ("GenericUDSService" function
+                                               (:prototype-flag t
+                                                :constructor-flag t
+                                                :arguments 
+                                                  ( ("instance_id" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("ara::com::InstanceIdentifier" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [2920 2968])
+                                                    ("diag_data_if" variable
+                                                       (:reference 1
+                                                        :type ("diagnostic_data::IDiagnosticDataAccess" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [2998 3051])
+                                                    ("sfd_access_if" variable
+                                                       (:reference 1
+                                                        :type ("sfd::ISFDAccess" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [3052 3083])
+                                                    ("ucm_proxy_if" variable
+                                                       (:reference 1
+                                                        :type ("ucm::IUCMProxy" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [3113 3142]))                                                  
+                                                :type ("GenericUDSService" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [2902 3143])
+                                            ("override" variable (:type ("noexcept" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3168 3186])
+                                            ("override" variable (:type "int") (reparse-symbol classsubparts) [3424 3433])
+                                            ("override" variable (:type "int") (reparse-symbol classsubparts) [3522 3531])
+                                            ("override" variable (:type "int") (reparse-symbol classsubparts) [3645 3654])
+                                            ("override" variable (:type "int") (reparse-symbol classsubparts) [4156 4165])
+                                            ("override" variable (:type "int") (reparse-symbol classsubparts) [4486 4495])
+                                            ("Cdd_GenericUDSService" friend nil (reparse-symbol classsubparts) [4547 4581])
+                                            ("private" label nil (reparse-symbol classsubparts) [4585 4593])
+                                            ("diag_data_msg_proc_" variable (:type ("std::unique_ptr" type
+                                                 (:template-specifier 
+                                                    ( ("processors::DiagnosticDataMessageProcessor" type nil nil nil))                                                    
+                                                  :type "class")
+                                                  nil nil)) (reparse-symbol classsubparts) [4669 4749])
+                                            ("sfd_msg_proc_" variable (:type ("std::unique_ptr" type
+                                                 (:template-specifier 
+                                                    ( ("processors::SFDMessageProcessor" type nil nil nil))                                                    
+                                                  :type "class")
+                                                  nil nil)) (reparse-symbol classsubparts) [4813 4876])
+                                            ("ucm_msg_proc_" variable (:type ("std::unique_ptr" type
+                                                 (:template-specifier 
+                                                    ( ("processors::UcmMessageProcessor" type nil nil nil))                                                    
+                                                  :type "class")
+                                                  nil nil)) (reparse-symbol classsubparts) [4953 5016])
+                                            ("shutdown_allowed_" variable (:type ("std::atomic" type
+                                                 (:template-specifier 
+                                                    ( ("bool" type nil nil nil))                                                    
+                                                  :type "class")
+                                                  nil nil)) (reparse-symbol classsubparts) [5105 5148]))                                          
+                                        :type "class")
+                                        (reparse-symbol namespacesubparts) [2450 5151]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [1962 5154]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [1931 5189]))                  
+                :type "namespace")
+                nil [1912 5224]))          
+      :file "generic_uds_service.h"
+      :pointmax 5304
+      :fsize 5303
+      :lastmodtime '(24287 13634 362715 886000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("SRC_SERVICE_INTERFACES_GENERIC_UDS_SERVICE_H_")
+          )
+)
+    (semanticdb-table "semanticdb-table-230af20"
+      :major-mode c++-mode
+      :tags 
+        '( ("SRC_SERVICE_INTERFACES_KD_BIT_STATUS_SERVICE_H_" variable (:constant-flag t) nil [1214 1261])
+            ("atomic" include (:system-flag t) nil [1516 1533])
+            ("memory" include (:system-flag t) nil [1534 1551])
+            ("ara/diag/service_interfaces/diagnostic_event_memory/diagnosticeventmemory_proxy.h" include nil nil [1553 1645])
+            ("i_runnable.h" include nil nil [1646 1669])
+            ("vag/kd_bit_status_service/KdBitStatus.h" include nil nil [1791 1841])
+            ("vag/kd_bit_status_service/kdbitstatus_skeleton.h" include nil nil [1849 1908])
+            ("vector" type
+               (:members 
+                  ( ("diagnostic_service" type
+                       (:members 
+                          ( ("service_interfaces" type
+                               (:members 
+                                  ( ("ara::diag::service_interfaces::diagnostic_event_memory::proxy::DiagnosticEventMemoryProxy" using (:type ("ara::diag::service_interfaces::diagnostic_event_memory::proxy::DiagnosticEventMemoryProxy" type
+                                         (:prototype t
+                                          :type "class")
+                                          nil nil)) (reparse-symbol namespacesubparts) [1992 2088])
+                                    ("KdBitStatusService" type
+                                       (:superclasses 
+                                          ( ("vag::kd_bit_status_service::skeleton::KdBitStatusSkeleton" type
+                                               (:protection "public"
+                                                :type "class")
+                                                nil nil)
+                                            ("IRunnable" type
+                                               (:protection "public"
+                                                :type "class")
+                                                nil nil))                                          
+                                        :members 
+                                          ( ("public" label nil (reparse-symbol classsubparts) [2302 2309])
+                                            ("Cdd_KdBitStatusService" friend nil (reparse-symbol classsubparts) [2360 2395])
+                                            ("KdBitStatusService" function
+                                               (:prototype-flag t
+                                                :constructor-flag t
+                                                :arguments 
+                                                  ( ("instance_id" variable (:type ("ara::com::InstanceIdentifier" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2641 2682]))                                                  
+                                                :type ("KdBitStatusService" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [2622 2683])
+                                            ("override" variable (:type ("noexcept" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2709 2727])
+                                            ("override" variable (:type "int") (reparse-symbol classsubparts) [2815 2824])
+                                            ("override" variable (:type "int") (reparse-symbol classsubparts) [2928 2937])
+                                            ("override" variable (:type "int") (reparse-symbol classsubparts) [3031 3040])
+                                            ("GetNumberOfStoredEventEntriesCacheSize" function
+                                               (:prototype-flag t
+                                                :methodconst-flag t
+                                                :type ("std::uint32_t" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [3197 3258])
+                                            ("private" label nil (reparse-symbol classsubparts) [3261 3269])
+                                            ("DiagnosticEventMemoryCallback" function
+                                               (:prototype-flag t
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [3400 3437])
+                                            ("ConnectToDem" function
+                                               (:prototype-flag t
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [3480 3500])
+                                            ("dem_proxy_" variable
+                                               (:default-value "nullptr"
+                                                :type ("std::unique_ptr" type
+                                                     (:template-specifier 
+                                                        ( ("DiagnosticEventMemoryProxy" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil))
+                                                (reparse-symbol classsubparts) [3530 3595])
+                                            ("logger_ctx" variable
+                                               (:default-value "ara::log::CreateLogger(\"KDSRV\", \"Context for KD-BitServer implementation\")"
+                                                :type ("ara::log::Logger" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [3639 3745])
+                                            ("kd_bit_value_" variable
+                                               (:default-value "false"
+                                                :type ("vag::kd_bit_status_service::skeleton::fields::KDBitValue::Output" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [3778 3865])
+                                            ("find_service_handle_" variable (:type ("ara::com::FindServiceHandle" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3907 3956])
+                                            ("shutdown_allowed_" variable (:type ("std::atomic" type
+                                                 (:template-specifier 
+                                                    ( ("bool" type nil nil nil))                                                    
+                                                  :type "class")
+                                                  nil nil)) (reparse-symbol classsubparts) [4046 4089])
+                                            ("global_mutex_" variable
+                                               (:typemodifiers ("mutable")
+                                                :type ("std::mutex" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [4156 4191])
+                                            ("kNumberOfStoredEventEntriesCacheSize_" variable (:type ("std::uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4316 4371]))                                          
+                                        :type "class")
+                                        (reparse-symbol namespacesubparts) [2189 4374]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [1960 4377]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [1929 4414]))                  
+                :type "namespace")
+                nil [1910 4451]))          
+      :file "kd_bit_status_service.h"
+      :pointmax 4535
+      :fsize 4534
+      :lastmodtime '(24287 13634 362715 886000)
+      :unmatched-syntax '((symbol 4306 . 4315) (STATIC 4299 . 4305) (semantic-list 3028 . 3030) (symbol 3020 . 3028) (VOID 3015 . 3019) (semantic-list 2925 . 2927) (symbol 2922 . 2925) (VOID 2917 . 2921) (semantic-list 2812 . 2814) (symbol 2802 . 2812) (VOID 2797 . 2801) (semantic-list 2706 . 2708) (symbol 2688 . 2706) (punctuation 2687 . 2688) (EXPLICIT 2613 . 2621) (punctuation 2395 . 2396))
+      :lexical-table 
+        '(("SRC_SERVICE_INTERFACES_KD_BIT_STATUS_SERVICE_H_")
+          )
+)
+    (semanticdb-table "semanticdb-table-230af40"
+      :major-mode c++-mode
+      :tags 
+        '( ("string" include (:system-flag t) nil [1391 1408])
+            ("generic_uds_service.h" include nil nil [1410 1442])
+            ("ara/com/promise.h" include nil nil [1444 1472])
+            ("ara/log/logging.h" include nil nil [1473 1501])
+            ("util/bytes_helper.h" include nil nil [1503 1533])
+            ("util/dsa_ara_logger.h" include nil nil [1534 1566])
+            ("util/string_helper.h" include nil nil [1567 1598])
+            ("vector" type
+               (:members 
+                  ( ("diagnostic_service" type
+                       (:members 
+                          ( ("service_interfaces" type
+                               (:members 
+                                  ( ("GenericUDSService" function
+                                       (:constructor-flag t
+                                        :parent "GenericUDSService"
+                                        :arguments 
+                                          ( ("instance_id" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("ara::com::InstanceIdentifier" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [1792 1840])
+                                            ("diag_data_if" variable
+                                               (:reference 1
+                                                :type ("diagnostic_data::IDiagnosticDataAccess" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [1878 1931])
+                                            ("sfd_access_if" variable
+                                               (:reference 1
+                                                :type ("sfd::ISFDAccess" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [1969 2000])
+                                            ("ucm_proxy_if" variable
+                                               (:reference 1
+                                                :type ("ucm::IUCMProxy" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [2001 2030]))                                          
+                                        :type ("GenericUDSService" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [1755 2410])
+                                    ("Initialize" function
+                                       (:parent "GenericUDSService"
+                                        :type "void")
+                                        (reparse-symbol namespacesubparts) [2642 2728])
+                                    ("Run" function
+                                       (:parent "GenericUDSService"
+                                        :type "void")
+                                        (reparse-symbol namespacesubparts) [2730 2762])
+                                    ("Shutdown" function
+                                       (:parent "GenericUDSService"
+                                        :type "void")
+                                        (reparse-symbol namespacesubparts) [2764 2888])
+                                    ("HandleMessage" function
+                                       (:parent "GenericUDSService"
+                                        :arguments 
+                                          ( ("service_id" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("guds::uint8" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [2993 3023])
+                                            ("request_data" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("guds::ByteVectorType" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [3024 3065])
+                                            ("" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("guds::MetaInfoType" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [3066 3107]))                                          
+                                        :type ("ara::com::Future" type
+                                             (:template-specifier 
+                                                ( ("guds::skeleton::methods::HandleMessage::Output" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol namespacesubparts) [2890 6196])
+                                    ("Cancel" function
+                                       (:parent "GenericUDSService"
+                                        :arguments 
+                                          ( ("metaInfo" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("guds::MetaInfoType" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [6287 6322]))                                          
+                                        :type ("ara::com::Future" type
+                                             (:template-specifier 
+                                                ( ("guds::skeleton::methods::Cancel::Output" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol namespacesubparts) [6198 6642]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [1723 6645]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [1692 6680]))                  
+                :type "namespace")
+                nil [1673 6715]))          
+      :file "generic_uds_service.cpp"
+      :pointmax 6737
+      :fsize 6736
+      :lastmodtime '(24287 13634 362715 886000)
+      :unmatched-syntax '((semantic-list 2461 . 2640) (symbol 2452 . 2460) (semantic-list 2449 . 2451) (symbol 2432 . 2449) (punctuation 2431 . 2432) (punctuation 2430 . 2431) (punctuation 2429 . 2430) (symbol 2412 . 2429))))
+  :file "!home!hyuk.myeong!work!G550!Apps!source!autosar!third_party!vector!amsr-vag-app-dsa!src!service_interfaces!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

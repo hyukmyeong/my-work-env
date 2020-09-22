@@ -1,0 +1,258 @@
+;; Object semanticdb-project-database-file-1973e60
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-1973e60"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-1973e7c"
+      :major-mode c++-mode
+      :tags 
+        '( ("UpdateAdapterManager.h" include (:system-flag t) nil [1060 1093])
+            ("ara/log/config/appl_manifest_logging_config.h" include nil nil [1094 1150])
+            ("fcntl.h" include (:system-flag t) nil [1151 1169])
+            ("unistd.h" include (:system-flag t) nil [1170 1189])
+            ("iostream" include (:system-flag t) nil [1190 1209])
+            ("kLoggingConfigFile" variable
+               (:dereference 1
+                :constant-flag t
+                :default-value "\"/opt/update_adapter/etc/application_config_logging.json\""
+                :type "char")
+                nil [1228 1320])
+            ("copyFile" function
+               (:arguments 
+                  ( ("source_file" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1335 1359])
+                    ("dest_file" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1360 1382]))                  
+                :type "void")
+                nil [1321 1980])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [1990 1999])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2000 2013]))                  
+                :type "int")
+                nil [1981 3598]))          
+      :file "main.cc"
+      :pointmax 3600
+      :fsize 3599
+      :lastmodtime '(24359 48963 508777 493000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-4609a4"
+      :major-mode c++-mode
+      :tags 
+        '( ("ADAPTIVEAPPLICATION_UPDATEADAPTER_MANAGER_H_" variable (:constant-flag t) nil [1122 1166])
+            ("PackageManagementActivityExtension.h" include (:system-flag t) nil [1168 1215])
+            ("CmnbaseReceiver.h" include (:system-flag t) nil [1216 1244])
+            ("exception" include (:system-flag t) nil [1246 1266])
+            ("iostream" include (:system-flag t) nil [1267 1286])
+            ("memory" include (:system-flag t) nil [1287 1304])
+            ("mutex" include (:system-flag t) nil [1305 1321])
+            ("string" include (:system-flag t) nil [1322 1339])
+            ("utility" include (:system-flag t) nil [1340 1358])
+            ("queue" include (:system-flag t) nil [1359 1375])
+            ("Cmn/Thread.h" include nil nil [1377 1400])
+            ("Cmn/CReceiver.h" include nil nil [1401 1427])
+            ("Cmn/Utils/CSharedMemory.h" include nil nil [1428 1464])
+            ("Cmn/GlobalHeader.h" include nil nil [1465 1494])
+            ("Cmn/core/CGlobalData.h" include nil nil [1495 1528])
+            ("message/message.h" include nil nil [1530 1558])
+            ("config/ConfigurationParser.h" include nil nil [1559 1598])
+            ("ara/log/logging.hpp" include nil nil [1599 1629])
+            ("service/genericUDS/generic_uds_service.h" include nil nil [1631 1682])
+            ("service/DAL/DALInterface.h" include nil nil [1683 1720])
+            ("service/package_management/PackageManagementActivity.h" include nil nil [1721 1786])
+            ("base" using (:type ("base" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [1788 1809])
+            ("CommandLineArguments" type
+               (:members 
+                  ( ("cfg_path_" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1845 1867])
+                    ("verbose_" variable (:type ("std::size_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1872 1893]))                  
+                :type "struct")
+                nil [1811 1896])
+            ("UpdateAdapterManager" type
+               (:superclasses 
+                  ( ("base::Thread" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [1951 1958])
+                    ("UpdateAdapterManager" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [1984 1993])
+                            ("argv" variable
+                               (:pointer 1
+                                :dereference 1
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [1994 2007]))                          
+                        :type ("UpdateAdapterManager" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1963 2255])
+                    ("UpdateAdapterManager" function
+                       (:destructor-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [2260 2293])
+                    ("Init" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [2299 2311])
+                    ("Start" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [2316 2329])
+                    ("Stop" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [2334 2346])
+                    ("Run" function
+                       (:prototype-flag t
+                        :type ("int32_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2351 2365])
+                    ("private" label nil (reparse-symbol classsubparts) [2380 2388])
+                    ("Usage" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("progname" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [2404 2425]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2393 2426])
+                    ("HandleCmnMessage" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [2431 2455])
+                    ("ParseArguments" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [2496 2505])
+                            ("argv" variable
+                               (:pointer 1
+                                :dereference 1
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [2506 2519]))                          
+                        :type ("CommandLineArguments" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2460 2520])
+                    ("private" label nil (reparse-symbol classsubparts) [2524 2532])
+                    ("configuration_parser_" variable (:type ("std::unique_ptr" type
+                         (:template-specifier 
+                            ( ("ConfigurationParser" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [2537 2596])
+                    ("update_adapter_" variable (:type ("std::unique_ptr" type
+                         (:template-specifier 
+                            ( ("PackageManagementActivityExtension" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [2601 2669])
+                    ("package_management_service_" variable (:type ("std::shared_ptr" type
+                         (:template-specifier 
+                            ( ("update_adapter::packagemanagement::PackageManagementActivity" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [2674 2780])
+                    ("cmnbase_receiver_" variable (:type ("std::unique_ptr" type
+                         (:template-specifier 
+                            ( ("CmnbaseReceiver" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [2785 2836])
+                    ("logger" variable (:type ("ara::log::Logger" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2841 2866])
+                    ("cv" variable (:type ("ConditionVariable" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2871 2892])
+                    ("SwClusterinfo_cv" variable (:type ("ConditionVariable" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2897 2932])
+                    ("mq" variable (:type ("std::queue" type
+                         (:template-specifier 
+                            ( ("CmnMessage" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [2938 2964])
+                    ("configuration_" variable (:type ("std::vector" type
+                         (:template-specifier 
+                            ( ("std::string" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [2969 3009])
+                    ("generic_uds_service_" variable (:type ("std::unique_ptr" type
+                         (:template-specifier 
+                            ( ("update_adapter::genericUDS::GenericUDSService" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [3014 3098])
+                    ("dal_interface_" variable (:type ("std::unique_ptr" type
+                         (:template-specifier 
+                            ( ("update_adapter::dal::DALInterface" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [3103 3169]))                  
+                :type "class")
+                nil [1898 3173]))          
+      :file "UpdateAdapterManager.h"
+      :pointmax 3227
+      :fsize 3226
+      :lastmodtime '(24379 13067 115944 149000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("ADAPTIVEAPPLICATION_UPDATEADAPTER_MANAGER_H_")
+          )
+)
+    (semanticdb-table "semanticdb-table-1cce5a4"
+      :major-mode c++-mode
+      :tags 
+        '( ("ara/com/runtime.h" include (:system-flag t) nil [1153 1181])
+            ("ara/log/config/ara_com_logging.h" include (:system-flag t) nil [1182 1225])
+            ("string" include (:system-flag t) nil [1226 1243])
+            ("ara/per/internal/exception/configuration_exceptions.h" include (:system-flag t) nil [1245 1309])
+            ("ara/per/internal/json_writer.h" include (:system-flag t) nil [1310 1351])
+            ("ara/per/internal/json_parser.h" include (:system-flag t) nil [1352 1393])
+            ("UpdateAdapterManager.h" include (:system-flag t) nil [1395 1428])
+            ("ara::per::internal" using (:type ("ara::per::internal" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [1430 1465])
+            ("Init" function
+               (:parent "UpdateAdapterManager"
+                :type "void")
+                nil [1468 4138])
+            ("Start" function
+               (:parent "UpdateAdapterManager"
+                :type "void")
+                nil [4140 4684])
+            ("Run" function
+               (:parent "UpdateAdapterManager"
+                :type ("int32_t" type (:type "class") nil nil))
+                nil [4686 5036])
+            ("Stop" function
+               (:parent "UpdateAdapterManager"
+                :type "void")
+                nil [5038 5511])
+            ("HandleCmnMessage" function
+               (:parent "UpdateAdapterManager"
+                :type "void")
+                nil [5669 8595])
+            ("Usage" function
+               (:parent "UpdateAdapterManager"
+                :arguments 
+                  ( ("progname" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [8630 8651]))                  
+                :type "void")
+                nil [8597 9506])
+            ("ParseArguments" function
+               (:parent "UpdateAdapterManager"
+                :arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [9748 9757])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [9758 9771]))                  
+                :type ("CommandLineArguments" type (:type "class") nil nil))
+                nil [9690 11035]))          
+      :file "UpdateAdapterManager.cc"
+      :pointmax 11037
+      :fsize 11036
+      :lastmodtime '(24379 13067 115944 149000)
+      :unmatched-syntax nil))
+  :file "!home!hyuk.myeong!work!LARA!Apps!source!services!update_adapter!src!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

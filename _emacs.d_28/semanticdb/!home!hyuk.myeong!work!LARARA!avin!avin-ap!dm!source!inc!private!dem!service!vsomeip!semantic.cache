@@ -1,0 +1,1071 @@
+;; Object semanticdb-project-database-file-3a2f90c
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-3a2f90c"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-3a2f918"
+      :major-mode c-mode
+      :tags 
+        '( ("_ERRORS_DTCINFORMATION_H_" variable (:constant-flag t) nil [800 825])
+            ("ara/com/internal/vsomeip/vsomeip_error.h" include (:system-flag t) nil [827 878])
+            ("dem/service/service_skeleton/dtcinformation_common.h" include nil nil [880 943])
+            ("ara" type
+               (:members 
+                  ( ("diag" type
+                       (:members 
+                          ( ("diagnostic_manager" type
+                               (:members 
+                                  ( ("dtcinformation_binding" type
+                                       (:members 
+                                          ( ("vsomeip" type
+                                               (:members 
+                                                  ( ("registerErrors" function (:type "void") (reparse-symbol namespacesubparts) [1064 1088]))                                                  
+                                                :type "namespace")
+                                                (reparse-symbol namespacesubparts) [1044 1091]))                                          
+                                        :type "namespace")
+                                        (reparse-symbol namespacesubparts) [1009 1114]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [978 1152]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [961 1186]))                  
+                :type "namespace")
+                nil [945 1206]))          
+      :file "errors_dtcinformation.h"
+      :pointmax 1261
+      :fsize 1260
+      :lastmodtime '(24419 4975 13205 152000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("_ERRORS_DTCINFORMATION_H_")
+          )
+)
+    (semanticdb-table "semanticdb-table-20ec660"
+      :major-mode c++-mode
+      :tags 
+        '( ("_SERVICE_DESC_DIAGNOSTICEVENT_H_" variable (:constant-flag t) nil [804 836])
+            ("dem/service/service_skeleton/diagnosticevent_common.h" include nil nil [838 902])
+            ("ara/com/internal/vsomeip/vsomeip_types.h" include nil nil [904 955])
+            ("ara" type
+               (:members 
+                  ( ("diag" type
+                       (:members 
+                          ( ("diagnostic_manager" type
+                               (:members 
+                                  ( ("diagnosticevent_binding" type
+                                       (:members 
+                                          ( ("vsomeip" type
+                                               (:members 
+                                                  ( ("descriptors" type
+                                                       (:members 
+                                                          ( ("internal" type
+                                                               (:members 
+                                                                  ( ("Service" type
+                                                                       (:members 
+                                                                          ( ("service_id" variable
+                                                                               (:default-value "0x84a"
+                                                                                :type ("ara::com::internal::vsomeip::types::ServiceId" type (:type "class") nil nil))
+                                                                                (reparse-symbol classsubparts) [1158 1223])
+                                                                            ("service_version" variable
+                                                                               (:default-value "0x1"
+                                                                                :type ("ara::com::internal::vsomeip::types::ServiceVersionMajor" type (:type "class") nil nil))
+                                                                                (reparse-symbol classsubparts) [1243 1321])
+                                                                            ("minor_service_version" variable
+                                                                               (:default-value "0x0"
+                                                                                :type ("ara::com::internal::vsomeip::types::ServiceVersionMinor" type (:type "class") nil nil))
+                                                                                (reparse-symbol classsubparts) [1341 1425]))                                                                          
+                                                                        :type "struct")
+                                                                        (reparse-symbol namespacesubparts) [1122 1428]))                                                                  
+                                                                :type "namespace")
+                                                                (reparse-symbol namespacesubparts) [1101 1430])
+                                                            ("GetFaultDetectionCounter" type
+                                                               (:superclasses 
+                                                                  ( ("internal::Service" type
+                                                                       (:protection "public"
+                                                                        :type "class")
+                                                                        nil nil))                                                                  
+                                                                :members 
+                                                                  ( ("method_id" variable
+                                                                       (:default-value "0x84"
+                                                                        :type ("ara::com::internal::vsomeip::types::MethodId" type (:type "class") nil nil))
+                                                                        (reparse-symbol classsubparts) [1534 1596])
+                                                                    ("is_reliable" variable
+                                                                       (:default-value "true"
+                                                                        :type "bool")
+                                                                        (reparse-symbol classsubparts) [1617 1641]))                                                                  
+                                                                :type "struct")
+                                                                (reparse-symbol namespacesubparts) [1454 1644])
+                                                            ("GetDTCNumber" type
+                                                               (:superclasses 
+                                                                  ( ("internal::Service" type
+                                                                       (:protection "public"
+                                                                        :type "class")
+                                                                        nil nil))                                                                  
+                                                                :members 
+                                                                  ( ("method_id" variable
+                                                                       (:default-value "0x86"
+                                                                        :type ("ara::com::internal::vsomeip::types::MethodId" type (:type "class") nil nil))
+                                                                        (reparse-symbol classsubparts) [1714 1776])
+                                                                    ("is_reliable" variable
+                                                                       (:default-value "true"
+                                                                        :type "bool")
+                                                                        (reparse-symbol classsubparts) [1797 1821]))                                                                  
+                                                                :type "struct")
+                                                                (reparse-symbol namespacesubparts) [1646 1824])
+                                                            ("GetDebouncingStatus" type
+                                                               (:superclasses 
+                                                                  ( ("internal::Service" type
+                                                                       (:protection "public"
+                                                                        :type "class")
+                                                                        nil nil))                                                                  
+                                                                :members 
+                                                                  ( ("method_id" variable
+                                                                       (:default-value "0x85"
+                                                                        :type ("ara::com::internal::vsomeip::types::MethodId" type (:type "class") nil nil))
+                                                                        (reparse-symbol classsubparts) [1901 1963])
+                                                                    ("is_reliable" variable
+                                                                       (:default-value "true"
+                                                                        :type "bool")
+                                                                        (reparse-symbol classsubparts) [1984 2008]))                                                                  
+                                                                :type "struct")
+                                                                (reparse-symbol namespacesubparts) [1826 2011])
+                                                            ("EventStatus" type
+                                                               (:superclasses 
+                                                                  ( ("internal::Service" type
+                                                                       (:protection "public"
+                                                                        :type "class")
+                                                                        nil nil))                                                                  
+                                                                :members 
+                                                                  ( ("event_id" variable
+                                                                       (:default-value "0x10e1"
+                                                                        :type ("ara::com::internal::vsomeip::types::EventId" type (:type "class") nil nil))
+                                                                        (reparse-symbol classsubparts) [2080 2142])
+                                                                    ("get_method_id" variable
+                                                                       (:default-value "0x83"
+                                                                        :type ("ara::com::internal::vsomeip::types::MethodId" type (:type "class") nil nil))
+                                                                        (reparse-symbol classsubparts) [2162 2228])
+                                                                    ("is_getter_reliable" variable
+                                                                       (:default-value "true"
+                                                                        :type "bool")
+                                                                        (reparse-symbol classsubparts) [2248 2279])
+                                                                    ("event_groups" variable
+                                                                       (:dereference 1
+                                                                        :type ("ara::com::internal::vsomeip::types::EventGroupId" type (:type "class") nil nil))
+                                                                        (reparse-symbol classsubparts) [2299 2371]))                                                                  
+                                                                :type "struct")
+                                                                (reparse-symbol namespacesubparts) [2013 2374]))                                                          
+                                                        :type "namespace")
+                                                        (reparse-symbol namespacesubparts) [1077 2376]))                                                  
+                                                :type "namespace")
+                                                (reparse-symbol namespacesubparts) [1057 2403]))                                          
+                                        :type "namespace")
+                                        (reparse-symbol namespacesubparts) [1021 2426]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [990 2465]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [973 2499]))                  
+                :type "namespace")
+                nil [957 2519]))          
+      :file "service_desc_diagnosticevent.h"
+      :pointmax 2581
+      :fsize 2580
+      :lastmodtime '(24419 4975 13205 152000)
+      :unmatched-syntax '((symbol 2289 . 2298) (STATIC 2282 . 2288) (symbol 2238 . 2247) (STATIC 2231 . 2237) (symbol 2152 . 2161) (STATIC 2145 . 2151) (symbol 2070 . 2079) (STATIC 2063 . 2069) (symbol 1974 . 1983) (STATIC 1967 . 1973) (symbol 1891 . 1900) (STATIC 1884 . 1890) (symbol 1787 . 1796) (STATIC 1780 . 1786) (symbol 1704 . 1713) (STATIC 1697 . 1703) (symbol 1607 . 1616) (STATIC 1600 . 1606) (symbol 1524 . 1533) (STATIC 1517 . 1523) (symbol 1331 . 1340) (STATIC 1324 . 1330) (symbol 1233 . 1242) (STATIC 1226 . 1232) (symbol 1148 . 1157) (STATIC 1141 . 1147))
+      :lexical-table 
+        '(("_SERVICE_DESC_DIAGNOSTICEVENT_H_")
+          )
+)
+    (semanticdb-table "semanticdb-table-400da7c"
+      :major-mode c++-mode
+      :tags 
+        '( ("_ADAPTER_DIAGNOSTICEVENTMEMORY_H_" variable (:constant-flag t) nil [807 840])
+            ("ara/com/internal/vsomeip/skeleton/vsomeip_skeleton_base.h" include nil nil [842 910])
+            ("dem/service/vsomeip/service_desc_diagnosticeventmemory.h" include nil nil [911 978])
+            ("dem/service/service_skeleton/diagnosticeventmemory_skeleton.h" include nil nil [979 1051])
+            ("ara" type
+               (:members 
+                  ( ("diag" type
+                       (:members 
+                          ( ("diagnostic_manager" type
+                               (:members 
+                                  ( ("diagnosticeventmemory_binding" type
+                                       (:members 
+                                          ( ("vsomeip" type
+                                               (:members 
+                                                  ( ("public" label nil (reparse-symbol namespacesubparts) [1223 1231])
+                                                    ("ara::com::internal::vsomeip::skeleton::ServiceImplBase" variable (:type "int") (reparse-symbol namespacesubparts) [1232 3386]))                                                  
+                                                :type "namespace")
+                                                (reparse-symbol namespacesubparts) [1159 3389]))                                          
+                                        :type "namespace")
+                                        (reparse-symbol namespacesubparts) [1117 3412]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [1086 3457]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [1069 3491]))                  
+                :type "namespace")
+                nil [1053 3511]))          
+      :file "adapter_diagnosticeventmemory.h"
+      :pointmax 3574
+      :fsize 3573
+      :lastmodtime '(24419 4975 13205 152000)
+      :unmatched-syntax '((punctuation 1231 . 1232) (punctuation 1221 . 1222) (symbol 1185 . 1220) (CLASS 1179 . 1184))
+      :lexical-table 
+        '(("_ADAPTER_DIAGNOSTICEVENTMEMORY_H_")
+          )
+)
+    (semanticdb-table "semanticdb-table-26a22d0"
+      :major-mode c-mode
+      :tags 
+        '( ("_ERRORS_DIAGNOSTICMONITOR_H_" variable (:constant-flag t) nil [798 826])
+            ("ara/com/internal/vsomeip/vsomeip_error.h" include (:system-flag t) nil [828 879])
+            ("dem/service/service_proxy/diagnosticmonitor_common.h" include nil nil [881 944])
+            ("ara" type
+               (:members 
+                  ( ("diag" type
+                       (:members 
+                          ( ("diagnostic_manager" type
+                               (:members 
+                                  ( ("diagnosticmonitor_binding" type
+                                       (:members 
+                                          ( ("vsomeip" type
+                                               (:members 
+                                                  ( ("registerErrors" function (:type "void") (reparse-symbol namespacesubparts) [1067 1091]))                                                  
+                                                :type "namespace")
+                                                (reparse-symbol namespacesubparts) [1047 1094]))                                          
+                                        :type "namespace")
+                                        (reparse-symbol namespacesubparts) [1009 1117]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [978 1158]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [961 1192]))                  
+                :type "namespace")
+                nil [945 1212]))          
+      :file "errors_diagnosticmonitor.h"
+      :pointmax 1270
+      :fsize 1269
+      :lastmodtime '(24419 4975 13205 152000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("_ERRORS_DIAGNOSTICMONITOR_H_")
+          )
+)
+    (semanticdb-table "semanticdb-table-265dd48"
+      :major-mode c++-mode
+      :tags 
+        '( ("_SERVICE_DESC_DIAGNOSTICEVENTMEMORY_H_" variable (:constant-flag t) nil [817 855])
+            ("dem/service/service_skeleton/diagnosticeventmemory_common.h" include nil nil [857 927])
+            ("ara/com/internal/vsomeip/vsomeip_types.h" include nil nil [928 979])
+            ("ara" type
+               (:members 
+                  ( ("diag" type
+                       (:members 
+                          ( ("diagnostic_manager" type
+                               (:members 
+                                  ( ("diagnosticeventmemory_binding" type
+                                       (:members 
+                                          ( ("vsomeip" type
+                                               (:members 
+                                                  ( ("descriptors" type
+                                                       (:members 
+                                                          ( ("internal" type
+                                                               (:members 
+                                                                  ( ("Service" type
+                                                                       (:members 
+                                                                          ( ("service_id" variable
+                                                                               (:default-value "0x84e"
+                                                                                :type ("ara::com::internal::vsomeip::types::ServiceId" type (:type "class") nil nil))
+                                                                                (reparse-symbol classsubparts) [1188 1253])
+                                                                            ("service_version" variable
+                                                                               (:default-value "0x1"
+                                                                                :type ("ara::com::internal::vsomeip::types::ServiceVersionMajor" type (:type "class") nil nil))
+                                                                                (reparse-symbol classsubparts) [1273 1351])
+                                                                            ("minor_service_version" variable
+                                                                               (:default-value "0x0"
+                                                                                :type ("ara::com::internal::vsomeip::types::ServiceVersionMinor" type (:type "class") nil nil))
+                                                                                (reparse-symbol classsubparts) [1371 1455]))                                                                          
+                                                                        :type "struct")
+                                                                        (reparse-symbol namespacesubparts) [1152 1458]))                                                                  
+                                                                :type "namespace")
+                                                                (reparse-symbol namespacesubparts) [1131 1460])
+                                                            ("Clear" type
+                                                               (:superclasses 
+                                                                  ( ("internal::Service" type
+                                                                       (:protection "public"
+                                                                        :type "class")
+                                                                        nil nil))                                                                  
+                                                                :members 
+                                                                  ( ("method_id" variable
+                                                                       (:default-value "0x8d"
+                                                                        :type ("ara::com::internal::vsomeip::types::MethodId" type (:type "class") nil nil))
+                                                                        (reparse-symbol classsubparts) [1545 1607])
+                                                                    ("is_reliable" variable
+                                                                       (:default-value "true"
+                                                                        :type "bool")
+                                                                        (reparse-symbol classsubparts) [1627 1651]))                                                                  
+                                                                :type "struct")
+                                                                (reparse-symbol namespacesubparts) [1484 1654])
+                                                            ("NumberOfStoredEventEntries" type
+                                                               (:superclasses 
+                                                                  ( ("internal::Service" type
+                                                                       (:protection "public"
+                                                                        :type "class")
+                                                                        nil nil))                                                                  
+                                                                :members 
+                                                                  ( ("event_id" variable
+                                                                       (:default-value "0x10eb"
+                                                                        :type ("ara::com::internal::vsomeip::types::EventId" type (:type "class") nil nil))
+                                                                        (reparse-symbol classsubparts) [1738 1800])
+                                                                    ("get_method_id" variable
+                                                                       (:default-value "0x8e"
+                                                                        :type ("ara::com::internal::vsomeip::types::MethodId" type (:type "class") nil nil))
+                                                                        (reparse-symbol classsubparts) [1820 1886])
+                                                                    ("is_getter_reliable" variable
+                                                                       (:default-value "false"
+                                                                        :type "bool")
+                                                                        (reparse-symbol classsubparts) [1906 1938])
+                                                                    ("event_groups" variable
+                                                                       (:dereference 1
+                                                                        :type ("ara::com::internal::vsomeip::types::EventGroupId" type (:type "class") nil nil))
+                                                                        (reparse-symbol classsubparts) [1958 2030]))                                                                  
+                                                                :type "struct")
+                                                                (reparse-symbol namespacesubparts) [1656 2033]))                                                          
+                                                        :type "namespace")
+                                                        (reparse-symbol namespacesubparts) [1107 2035]))                                                  
+                                                :type "namespace")
+                                                (reparse-symbol namespacesubparts) [1087 2062]))                                          
+                                        :type "namespace")
+                                        (reparse-symbol namespacesubparts) [1045 2085]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [1014 2130]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [997 2164]))                  
+                :type "namespace")
+                nil [981 2184]))          
+      :file "service_desc_diagnosticeventmemory.h"
+      :pointmax 2252
+      :fsize 2251
+      :lastmodtime '(24419 4975 13205 152000)
+      :unmatched-syntax '((symbol 1948 . 1957) (STATIC 1941 . 1947) (symbol 1896 . 1905) (STATIC 1889 . 1895) (symbol 1810 . 1819) (STATIC 1803 . 1809) (symbol 1728 . 1737) (STATIC 1721 . 1727) (symbol 1617 . 1626) (STATIC 1610 . 1616) (symbol 1535 . 1544) (STATIC 1528 . 1534) (symbol 1361 . 1370) (STATIC 1354 . 1360) (symbol 1263 . 1272) (STATIC 1256 . 1262) (symbol 1178 . 1187) (STATIC 1171 . 1177))
+      :lexical-table 
+        '(("_SERVICE_DESC_DIAGNOSTICEVENTMEMORY_H_")
+          )
+)
+    (semanticdb-table "semanticdb-table-3546754"
+      :major-mode c++-mode
+      :tags 
+        '( ("_ADAPTER_DIAGNOSTICEVENT_H_" variable (:constant-flag t) nil [794 821])
+            ("ara/com/internal/vsomeip/skeleton/vsomeip_skeleton_base.h" include nil nil [823 891])
+            ("dem/service/vsomeip/service_desc_diagnosticevent.h" include nil nil [892 953])
+            ("dem/service/service_skeleton/diagnosticevent_skeleton.h" include nil nil [954 1020])
+            ("ara" type
+               (:members 
+                  ( ("diag" type
+                       (:members 
+                          ( ("diagnostic_manager" type
+                               (:members 
+                                  ( ("diagnosticevent_binding" type
+                                       (:members 
+                                          ( ("vsomeip" type
+                                               (:members 
+                                                  ( ("public" label nil (reparse-symbol namespacesubparts) [1180 1188])
+                                                    ("ara::com::internal::vsomeip::skeleton::ServiceImplBase" variable (:type "int") (reparse-symbol namespacesubparts) [1189 3464]))                                                  
+                                                :type "namespace")
+                                                (reparse-symbol namespacesubparts) [1122 3467]))                                          
+                                        :type "namespace")
+                                        (reparse-symbol namespacesubparts) [1086 3490]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [1055 3529]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [1038 3563]))                  
+                :type "namespace")
+                nil [1022 3583]))          
+      :file "adapter_diagnosticevent.h"
+      :pointmax 3640
+      :fsize 3639
+      :lastmodtime '(24419 4975 13205 152000)
+      :unmatched-syntax '((punctuation 1188 . 1189) (punctuation 1178 . 1179) (symbol 1148 . 1177) (CLASS 1142 . 1147))
+      :lexical-table 
+        '(("_ADAPTER_DIAGNOSTICEVENT_H_")
+          )
+)
+    (semanticdb-table "semanticdb-table-338e0ec"
+      :major-mode c++-mode
+      :tags 
+        '( ("_ADAPTER_DTCINFORMATION_H_" variable (:constant-flag t) nil [802 828])
+            ("ara/com/internal/vsomeip/skeleton/vsomeip_skeleton_base.h" include nil nil [830 898])
+            ("dem/service/vsomeip/service_desc_dtcinformation.h" include nil nil [899 959])
+            ("dem/service/service_skeleton/dtcinformation_skeleton.h" include nil nil [960 1025])
+            ("ara" type
+               (:members 
+                  ( ("diag" type
+                       (:members 
+                          ( ("diagnostic_manager" type
+                               (:members 
+                                  ( ("dtcinformation_binding" type
+                                       (:members 
+                                          ( ("vsomeip" type
+                                               (:members 
+                                                  ( ("public" label nil (reparse-symbol namespacesubparts) [1183 1191])
+                                                    ("ara::com::internal::vsomeip::skeleton::ServiceImplBase" variable (:type "int") (reparse-symbol namespacesubparts) [1192 3910]))                                                  
+                                                :type "namespace")
+                                                (reparse-symbol namespacesubparts) [1126 3913]))                                          
+                                        :type "namespace")
+                                        (reparse-symbol namespacesubparts) [1091 3936]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [1060 3974]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [1043 4008]))                  
+                :type "namespace")
+                nil [1027 4028]))          
+      :file "adapter_dtcinformation.h"
+      :pointmax 4084
+      :fsize 4083
+      :lastmodtime '(24419 4975 13205 152000)
+      :unmatched-syntax '((punctuation 1191 . 1192) (punctuation 1181 . 1182) (symbol 1152 . 1180) (CLASS 1146 . 1151))
+      :lexical-table 
+        '(("_ADAPTER_DTCINFORMATION_H_")
+          )
+)
+    (semanticdb-table "semanticdb-table-333d750"
+      :major-mode c-mode
+      :tags 
+        '( ("_ERRORS_DIAGNOSTICCONDITION_H_" variable (:constant-flag t) nil [804 834])
+            ("ara/com/internal/vsomeip/vsomeip_error.h" include (:system-flag t) nil [836 887])
+            ("dem/service/service_skeleton/diagnosticcondition_common.h" include nil nil [889 957])
+            ("ara" type
+               (:members 
+                  ( ("diag" type
+                       (:members 
+                          ( ("diagnostic_manager" type
+                               (:members 
+                                  ( ("diagnosticcondition_binding" type
+                                       (:members 
+                                          ( ("vsomeip" type
+                                               (:members 
+                                                  ( ("registerErrors" function (:type "void") (reparse-symbol namespacesubparts) [1082 1106]))                                                  
+                                                :type "namespace")
+                                                (reparse-symbol namespacesubparts) [1062 1109]))                                          
+                                        :type "namespace")
+                                        (reparse-symbol namespacesubparts) [1022 1132]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [991 1175]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [974 1209]))                  
+                :type "namespace")
+                nil [958 1229]))          
+      :file "errors_diagnosticcondition.h"
+      :pointmax 1289
+      :fsize 1288
+      :lastmodtime '(24419 4975 13205 152000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("_ERRORS_DIAGNOSTICCONDITION_H_")
+          )
+)
+    (semanticdb-table "semanticdb-table-30d426c"
+      :major-mode c++-mode
+      :tags 
+        '( ("_ADAPTER_DIAGNOSTICCONDITION_H_" variable (:constant-flag t) nil [806 837])
+            ("ara/com/internal/vsomeip/skeleton/vsomeip_skeleton_base.h" include nil nil [839 907])
+            ("dem/service/vsomeip/service_desc_diagnosticcondition.h" include nil nil [908 973])
+            ("dem/service/service_skeleton/diagnosticcondition_skeleton.h" include nil nil [974 1044])
+            ("ara" type
+               (:members 
+                  ( ("diag" type
+                       (:members 
+                          ( ("diagnostic_manager" type
+                               (:members 
+                                  ( ("diagnosticcondition_binding" type
+                                       (:members 
+                                          ( ("vsomeip" type
+                                               (:members 
+                                                  ( ("public" label nil (reparse-symbol namespacesubparts) [1212 1220])
+                                                    ("ara::com::internal::vsomeip::skeleton::ServiceImplBase" variable (:type "int") (reparse-symbol namespacesubparts) [1221 2648]))                                                  
+                                                :type "namespace")
+                                                (reparse-symbol namespacesubparts) [1150 2651]))                                          
+                                        :type "namespace")
+                                        (reparse-symbol namespacesubparts) [1110 2674]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [1079 2717]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [1062 2751]))                  
+                :type "namespace")
+                nil [1046 2771]))          
+      :file "adapter_diagnosticcondition.h"
+      :pointmax 2832
+      :fsize 2831
+      :lastmodtime '(24419 4975 13205 152000)
+      :unmatched-syntax '((punctuation 1220 . 1221) (punctuation 1210 . 1211) (symbol 1176 . 1209) (CLASS 1170 . 1175))
+      :lexical-table 
+        '(("_ADAPTER_DIAGNOSTICCONDITION_H_")
+          )
+)
+    (semanticdb-table "semanticdb-table-23d3d94"
+      :major-mode c++-mode
+      :tags 
+        '( ("_ADAPTER_OPERATIONCYCLE_H_" variable (:constant-flag t) nil [802 828])
+            ("ara/com/internal/vsomeip/skeleton/vsomeip_skeleton_base.h" include nil nil [830 898])
+            ("dem/service/vsomeip/service_desc_operationcycle.h" include nil nil [899 959])
+            ("dem/service/service_skeleton/operationcycle_skeleton.h" include nil nil [960 1025])
+            ("ara" type
+               (:members 
+                  ( ("diag" type
+                       (:members 
+                          ( ("diagnostic_manager" type
+                               (:members 
+                                  ( ("operationcycle_binding" type
+                                       (:members 
+                                          ( ("vsomeip" type
+                                               (:members 
+                                                  ( ("public" label nil (reparse-symbol namespacesubparts) [1183 1191])
+                                                    ("ara::com::internal::vsomeip::skeleton::ServiceImplBase" variable (:type "int") (reparse-symbol namespacesubparts) [1192 2576]))                                                  
+                                                :type "namespace")
+                                                (reparse-symbol namespacesubparts) [1126 2579]))                                          
+                                        :type "namespace")
+                                        (reparse-symbol namespacesubparts) [1091 2602]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [1060 2640]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [1043 2674]))                  
+                :type "namespace")
+                nil [1027 2694]))          
+      :file "adapter_operationcycle.h"
+      :pointmax 2750
+      :fsize 2749
+      :lastmodtime '(24419 4975 13205 152000)
+      :unmatched-syntax '((punctuation 1191 . 1192) (punctuation 1181 . 1182) (symbol 1152 . 1180) (CLASS 1146 . 1151))
+      :lexical-table 
+        '(("_ADAPTER_OPERATIONCYCLE_H_")
+          )
+)
+    (semanticdb-table "semanticdb-table-20b8114"
+      :major-mode c-mode
+      :tags 
+        '( ("_ERRORS_OPERATIONCYCLE_H_" variable (:constant-flag t) nil [800 825])
+            ("ara/com/internal/vsomeip/vsomeip_error.h" include (:system-flag t) nil [827 878])
+            ("dem/service/service_skeleton/operationcycle_common.h" include nil nil [880 943])
+            ("ara" type
+               (:members 
+                  ( ("diag" type
+                       (:members 
+                          ( ("diagnostic_manager" type
+                               (:members 
+                                  ( ("operationcycle_binding" type
+                                       (:members 
+                                          ( ("vsomeip" type
+                                               (:members 
+                                                  ( ("registerErrors" function (:type "void") (reparse-symbol namespacesubparts) [1064 1088]))                                                  
+                                                :type "namespace")
+                                                (reparse-symbol namespacesubparts) [1044 1091]))                                          
+                                        :type "namespace")
+                                        (reparse-symbol namespacesubparts) [1009 1114]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [978 1152]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [961 1186]))                  
+                :type "namespace")
+                nil [945 1206]))          
+      :file "errors_operationcycle.h"
+      :pointmax 1261
+      :fsize 1260
+      :lastmodtime '(24419 4975 13205 152000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("_ERRORS_OPERATIONCYCLE_H_")
+          )
+)
+    (semanticdb-table "semanticdb-table-32aac70"
+      :major-mode c++-mode
+      :tags 
+        '( ("_SERVICE_DESC_DIAGNOSTICMONITOR_H_" variable (:constant-flag t) nil [810 844])
+            ("dem/service/service_proxy/diagnosticmonitor_common.h" include nil nil [846 909])
+            ("ara/com/internal/vsomeip/vsomeip_types.h" include nil nil [911 962])
+            ("ara" type
+               (:members 
+                  ( ("diag" type
+                       (:members 
+                          ( ("diagnostic_manager" type
+                               (:members 
+                                  ( ("diagnosticmonitor_binding" type
+                                       (:members 
+                                          ( ("vsomeip" type
+                                               (:members 
+                                                  ( ("descriptors" type
+                                                       (:members 
+                                                          ( ("internal" type
+                                                               (:members 
+                                                                  ( ("Service" type
+                                                                       (:members 
+                                                                          ( ("service_id" variable
+                                                                               (:default-value "0x849"
+                                                                                :type ("ara::com::internal::vsomeip::types::ServiceId" type (:type "class") nil nil))
+                                                                                (reparse-symbol classsubparts) [1167 1232])
+                                                                            ("service_version" variable
+                                                                               (:default-value "0x1"
+                                                                                :type ("ara::com::internal::vsomeip::types::ServiceVersionMajor" type (:type "class") nil nil))
+                                                                                (reparse-symbol classsubparts) [1252 1330])
+                                                                            ("minor_service_version" variable
+                                                                               (:default-value "0x0"
+                                                                                :type ("ara::com::internal::vsomeip::types::ServiceVersionMinor" type (:type "class") nil nil))
+                                                                                (reparse-symbol classsubparts) [1350 1434]))                                                                          
+                                                                        :type "struct")
+                                                                        (reparse-symbol namespacesubparts) [1131 1437]))                                                                  
+                                                                :type "namespace")
+                                                                (reparse-symbol namespacesubparts) [1110 1439])
+                                                            ("InitMonitor" type
+                                                               (:superclasses 
+                                                                  ( ("internal::Service" type
+                                                                       (:protection "public"
+                                                                        :type "class")
+                                                                        nil nil))                                                                  
+                                                                :members 
+                                                                  ( ("method_id" variable
+                                                                       (:default-value "0x82"
+                                                                        :type ("ara::com::internal::vsomeip::types::MethodId" type (:type "class") nil nil))
+                                                                        (reparse-symbol classsubparts) [1530 1592])
+                                                                    ("is_reliable" variable
+                                                                       (:default-value "false"
+                                                                        :type "bool")
+                                                                        (reparse-symbol classsubparts) [1612 1637]))                                                                  
+                                                                :type "struct")
+                                                                (reparse-symbol namespacesubparts) [1463 1640])
+                                                            ("MonitorAction" type
+                                                               (:superclasses 
+                                                                  ( ("internal::Service" type
+                                                                       (:protection "public"
+                                                                        :type "class")
+                                                                        nil nil))                                                                  
+                                                                :members 
+                                                                  ( ("event_id" variable
+                                                                       (:default-value "0x4d2"
+                                                                        :type ("ara::com::internal::vsomeip::types::EventId" type (:type "class") nil nil))
+                                                                        (reparse-symbol classsubparts) [1711 1772])
+                                                                    ("event_groups" variable
+                                                                       (:dereference 1
+                                                                        :type ("ara::com::internal::vsomeip::types::EventGroupId" type (:type "class") nil nil))
+                                                                        (reparse-symbol classsubparts) [1792 1863]))                                                                  
+                                                                :type "struct")
+                                                                (reparse-symbol namespacesubparts) [1642 1866]))                                                          
+                                                        :type "namespace")
+                                                        (reparse-symbol namespacesubparts) [1086 1869]))                                                  
+                                                :type "namespace")
+                                                (reparse-symbol namespacesubparts) [1066 1896]))                                          
+                                        :type "namespace")
+                                        (reparse-symbol namespacesubparts) [1028 1919]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [997 1960]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [980 1994]))                  
+                :type "namespace")
+                nil [964 2014]))          
+      :file "service_desc_diagnosticmonitor.h"
+      :pointmax 2078
+      :fsize 2077
+      :lastmodtime '(24419 4975 13205 152000)
+      :unmatched-syntax '((symbol 1782 . 1791) (STATIC 1775 . 1781) (symbol 1701 . 1710) (STATIC 1694 . 1700) (symbol 1602 . 1611) (STATIC 1595 . 1601) (symbol 1520 . 1529) (STATIC 1513 . 1519) (symbol 1340 . 1349) (STATIC 1333 . 1339) (symbol 1242 . 1251) (STATIC 1235 . 1241) (symbol 1157 . 1166) (STATIC 1150 . 1156))
+      :lexical-table 
+        '(("_SERVICE_DESC_DIAGNOSTICMONITOR_H_")
+          )
+)
+    (semanticdb-table "semanticdb-table-2bea740"
+      :major-mode c++-mode
+      :tags 
+        '( ("_PROXY_VSOMEIP_DIAGNOSTICMONITOR_H_" variable (:constant-flag t) nil [812 847])
+            ("dem/service/vsomeip/service_desc_diagnosticmonitor.h" include nil nil [849 912])
+            ("dem/service/service_proxy/diagnosticmonitor_proxy.h" include nil nil [913 975])
+            ("ara" type
+               (:members 
+                  ( ("diag" type
+                       (:members 
+                          ( ("diagnostic_manager" type
+                               (:members 
+                                  ( ("diagnosticmonitor_binding" type
+                                       (:members 
+                                          ( ("vsomeip" type
+                                               (:members 
+                                                  ( ("public" label nil (reparse-symbol namespacesubparts) [1180 1188])
+                                                    ("ara::com::internal::vsomeip::proxy::ProxyImplBase" variable (:type "int") (reparse-symbol namespacesubparts) [1189 2238]))                                                  
+                                                :type "namespace")
+                                                (reparse-symbol namespacesubparts) [1079 2241]))                                          
+                                        :type "namespace")
+                                        (reparse-symbol namespacesubparts) [1041 2264]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [1010 2305]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [993 2339]))                  
+                :type "namespace")
+                nil [977 2359]))          
+      :file "proxy_vsomeip_diagnosticmonitor.h"
+      :pointmax 2424
+      :fsize 2423
+      :lastmodtime '(24419 4975 13205 152000)
+      :unmatched-syntax '((punctuation 1188 . 1189) (punctuation 1178 . 1179) (symbol 1147 . 1173) (punctuation 1146 . 1147) (punctuation 1145 . 1146) (symbol 1140 . 1145) (PUBLIC 1133 . 1139) (punctuation 1131 . 1132) (symbol 1105 . 1126) (CLASS 1099 . 1104))
+      :lexical-table 
+        '(("_PROXY_VSOMEIP_DIAGNOSTICMONITOR_H_")
+          )
+)
+    (semanticdb-table "semanticdb-table-2b6e788"
+      :major-mode c++-mode
+      :tags 
+        '( ("_SERVICE_DESC_OPERATIONCYC_H_" variable (:constant-flag t) nil [810 839])
+            ("dem/service/service_skeleton/operationcycle_common.h" include nil nil [841 904])
+            ("ara/com/internal/vsomeip/vsomeip_types.h" include nil nil [905 956])
+            ("ara" type
+               (:members 
+                  ( ("diag" type
+                       (:members 
+                          ( ("diagnostic_manager" type
+                               (:members 
+                                  ( ("operationcycle_binding" type
+                                       (:members 
+                                          ( ("vsomeip" type
+                                               (:members 
+                                                  ( ("descriptors" type
+                                                       (:members 
+                                                          ( ("internal" type
+                                                               (:members 
+                                                                  ( ("Service" type
+                                                                       (:members 
+                                                                          ( ("service_id" variable
+                                                                               (:default-value "0x848"
+                                                                                :type ("ara::com::internal::vsomeip::types::ServiceId" type (:type "class") nil nil))
+                                                                                (reparse-symbol classsubparts) [1158 1223])
+                                                                            ("service_version" variable
+                                                                               (:default-value "0x1"
+                                                                                :type ("ara::com::internal::vsomeip::types::ServiceVersionMajor" type (:type "class") nil nil))
+                                                                                (reparse-symbol classsubparts) [1243 1321])
+                                                                            ("minor_service_version" variable
+                                                                               (:default-value "0x0"
+                                                                                :type ("ara::com::internal::vsomeip::types::ServiceVersionMinor" type (:type "class") nil nil))
+                                                                                (reparse-symbol classsubparts) [1341 1425]))                                                                          
+                                                                        :type "struct")
+                                                                        (reparse-symbol namespacesubparts) [1122 1428]))                                                                  
+                                                                :type "namespace")
+                                                                (reparse-symbol namespacesubparts) [1101 1430])
+                                                            ("State" type
+                                                               (:superclasses 
+                                                                  ( ("internal::Service" type
+                                                                       (:protection "public"
+                                                                        :type "class")
+                                                                        nil nil))                                                                  
+                                                                :members 
+                                                                  ( ("event_id" variable
+                                                                       (:default-value "0xcee"
+                                                                        :type ("ara::com::internal::vsomeip::types::EventId" type (:type "class") nil nil))
+                                                                        (reparse-symbol classsubparts) [1515 1576])
+                                                                    ("get_method_id" variable
+                                                                       (:default-value "0x7a"
+                                                                        :type ("ara::com::internal::vsomeip::types::MethodId" type (:type "class") nil nil))
+                                                                        (reparse-symbol classsubparts) [1596 1662])
+                                                                    ("is_getter_reliable" variable
+                                                                       (:default-value "true"
+                                                                        :type "bool")
+                                                                        (reparse-symbol classsubparts) [1682 1713])
+                                                                    ("event_groups" variable
+                                                                       (:dereference 1
+                                                                        :type ("ara::com::internal::vsomeip::types::EventGroupId" type (:type "class") nil nil))
+                                                                        (reparse-symbol classsubparts) [1733 1804])
+                                                                    ("set_method_id" variable
+                                                                       (:default-value "0x7b"
+                                                                        :type ("ara::com::internal::vsomeip::types::MethodId" type (:type "class") nil nil))
+                                                                        (reparse-symbol classsubparts) [1824 1890])
+                                                                    ("is_setter_reliable" variable
+                                                                       (:default-value "true"
+                                                                        :type "bool")
+                                                                        (reparse-symbol classsubparts) [1910 1941]))                                                                  
+                                                                :type "struct")
+                                                                (reparse-symbol namespacesubparts) [1454 1944]))                                                          
+                                                        :type "namespace")
+                                                        (reparse-symbol namespacesubparts) [1077 1946]))                                                  
+                                                :type "namespace")
+                                                (reparse-symbol namespacesubparts) [1057 1973]))                                          
+                                        :type "namespace")
+                                        (reparse-symbol namespacesubparts) [1022 1996]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [991 2034]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [974 2068]))                  
+                :type "namespace")
+                nil [958 2088]))          
+      :file "service_desc_operationcycle.h"
+      :pointmax 2147
+      :fsize 2146
+      :lastmodtime '(24419 4975 13205 152000)
+      :unmatched-syntax '((symbol 1900 . 1909) (STATIC 1893 . 1899) (symbol 1814 . 1823) (STATIC 1807 . 1813) (symbol 1723 . 1732) (STATIC 1716 . 1722) (symbol 1672 . 1681) (STATIC 1665 . 1671) (symbol 1586 . 1595) (STATIC 1579 . 1585) (symbol 1505 . 1514) (STATIC 1498 . 1504) (symbol 1331 . 1340) (STATIC 1324 . 1330) (symbol 1233 . 1242) (STATIC 1226 . 1232) (symbol 1148 . 1157) (STATIC 1141 . 1147))
+      :lexical-table 
+        '(("_SERVICE_DESC_OPERATIONCYC_H_")
+          )
+)
+    (semanticdb-table "semanticdb-table-34f4504"
+      :major-mode c-mode
+      :tags 
+        '( ("_ERRORS_DIAGNOSTICEVENTS_H_" variable (:constant-flag t) nil [793 820])
+            ("ara/com/internal/vsomeip/vsomeip_error.h" include (:system-flag t) nil [822 873])
+            ("dem/service/service_skeleton/diagnosticevent_common.h" include nil nil [875 939])
+            ("ara" type
+               (:members 
+                  ( ("diag" type
+                       (:members 
+                          ( ("diagnostic_manager" type
+                               (:members 
+                                  ( ("diagnosticevent_binding" type
+                                       (:members 
+                                          ( ("vsomeip" type
+                                               (:members 
+                                                  ( ("registerErrors" function (:type "void") (reparse-symbol namespacesubparts) [1060 1084]))                                                  
+                                                :type "namespace")
+                                                (reparse-symbol namespacesubparts) [1040 1087]))                                          
+                                        :type "namespace")
+                                        (reparse-symbol namespacesubparts) [1004 1110]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [973 1149]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [956 1183]))                  
+                :type "namespace")
+                nil [940 1203]))          
+      :file "errors_diagnosticevent.h"
+      :pointmax 1260
+      :fsize 1259
+      :lastmodtime '(24419 4975 13205 152000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("_ERRORS_DIAGNOSTICEVENTS_H_")
+          )
+)
+    (semanticdb-table "semanticdb-table-2d87bf8"
+      :major-mode c++-mode
+      :tags 
+        '( ("_SERVICE_DESC_DIAGNOSTICCONDITION_H_" variable (:constant-flag t) nil [816 852])
+            ("dem/service/service_skeleton/diagnosticcondition_common.h" include nil nil [854 922])
+            ("ara/com/internal/vsomeip/vsomeip_types.h" include nil nil [924 975])
+            ("ara" type
+               (:members 
+                  ( ("diag" type
+                       (:members 
+                          ( ("diagnostic_manager" type
+                               (:members 
+                                  ( ("diagnosticcondition_binding" type
+                                       (:members 
+                                          ( ("vsomeip" type
+                                               (:members 
+                                                  ( ("descriptors" type
+                                                       (:members 
+                                                          ( ("internal" type
+                                                               (:members 
+                                                                  ( ("Service" type
+                                                                       (:members 
+                                                                          ( ("service_id" variable
+                                                                               (:default-value "0x205a"
+                                                                                :type ("ara::com::internal::vsomeip::types::ServiceId" type (:type "class") nil nil))
+                                                                                (reparse-symbol classsubparts) [1182 1248])
+                                                                            ("service_version" variable
+                                                                               (:default-value "0x1"
+                                                                                :type ("ara::com::internal::vsomeip::types::ServiceVersionMajor" type (:type "class") nil nil))
+                                                                                (reparse-symbol classsubparts) [1268 1346])
+                                                                            ("minor_service_version" variable
+                                                                               (:default-value "0x0"
+                                                                                :type ("ara::com::internal::vsomeip::types::ServiceVersionMinor" type (:type "class") nil nil))
+                                                                                (reparse-symbol classsubparts) [1366 1450]))                                                                          
+                                                                        :type "struct")
+                                                                        (reparse-symbol namespacesubparts) [1146 1453]))                                                                  
+                                                                :type "namespace")
+                                                                (reparse-symbol namespacesubparts) [1125 1455])
+                                                            ("Condition" type
+                                                               (:superclasses 
+                                                                  ( ("internal::Service" type
+                                                                       (:protection "public"
+                                                                        :type "class")
+                                                                        nil nil))                                                                  
+                                                                :members 
+                                                                  ( ("ara::com::internal::vsomeip::types::UndefinedEventId" variable (:type "int") (reparse-symbol classsubparts) [1605 1658])
+                                                                    ("get_method_id" variable
+                                                                       (:default-value "0x7e"
+                                                                        :type ("ara::com::internal::vsomeip::types::MethodId" type (:type "class") nil nil))
+                                                                        (reparse-symbol classsubparts) [1678 1744])
+                                                                    ("is_getter_reliable" variable
+                                                                       (:default-value "true"
+                                                                        :type "bool")
+                                                                        (reparse-symbol classsubparts) [1764 1795])
+                                                                    ("event_groups" variable
+                                                                       (:dereference 1
+                                                                        :type ("ara::com::internal::vsomeip::types::EventGroupId" type (:type "class") nil nil))
+                                                                        (reparse-symbol classsubparts) [1815 1884])
+                                                                    ("set_method_id" variable
+                                                                       (:default-value "0x7f"
+                                                                        :type ("ara::com::internal::vsomeip::types::MethodId" type (:type "class") nil nil))
+                                                                        (reparse-symbol classsubparts) [1904 1970])
+                                                                    ("is_setter_reliable" variable
+                                                                       (:default-value "true"
+                                                                        :type "bool")
+                                                                        (reparse-symbol classsubparts) [1990 2021]))                                                                  
+                                                                :type "struct")
+                                                                (reparse-symbol namespacesubparts) [1479 2024]))                                                          
+                                                        :type "namespace")
+                                                        (reparse-symbol namespacesubparts) [1101 2026]))                                                  
+                                                :type "namespace")
+                                                (reparse-symbol namespacesubparts) [1081 2053]))                                          
+                                        :type "namespace")
+                                        (reparse-symbol namespacesubparts) [1041 2076]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [1010 2119]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [993 2153]))                  
+                :type "namespace")
+                nil [977 2173]))          
+      :file "service_desc_diagnosticcondition.h"
+      :pointmax 2239
+      :fsize 2238
+      :lastmodtime '(24419 4975 13205 152000)
+      :unmatched-syntax '((symbol 1980 . 1989) (STATIC 1973 . 1979) (symbol 1894 . 1903) (STATIC 1887 . 1893) (symbol 1805 . 1814) (STATIC 1798 . 1804) (symbol 1754 . 1763) (STATIC 1747 . 1753) (symbol 1668 . 1677) (STATIC 1661 . 1667) (punctuation 1603 . 1604) (symbol 1588 . 1596) (symbol 1580 . 1587) (punctuation 1579 . 1580) (punctuation 1578 . 1579) (symbol 1573 . 1578) (punctuation 1572 . 1573) (punctuation 1571 . 1572) (symbol 1564 . 1571) (punctuation 1563 . 1564) (punctuation 1562 . 1563) (symbol 1554 . 1562) (punctuation 1553 . 1554) (punctuation 1552 . 1553) (symbol 1549 . 1552) (punctuation 1548 . 1549) (punctuation 1547 . 1548) (symbol 1544 . 1547) (symbol 1534 . 1543) (STATIC 1527 . 1533) (symbol 1356 . 1365) (STATIC 1349 . 1355) (symbol 1258 . 1267) (STATIC 1251 . 1257) (symbol 1172 . 1181) (STATIC 1165 . 1171))
+      :lexical-table 
+        '(("_SERVICE_DESC_DIAGNOSTICCONDITION_H_")
+          )
+)
+    (semanticdb-table "semanticdb-table-2e10070"
+      :major-mode c-mode
+      :tags 
+        '( ("_ERRORS_DIAGNOSTICEVENTMEMORY_H_" variable (:constant-flag t) nil [805 837])
+            ("ara/com/internal/vsomeip/vsomeip_error.h" include (:system-flag t) nil [839 890])
+            ("dem/service/service_skeleton/diagnosticeventmemory_common.h" include nil nil [892 962])
+            ("ara" type
+               (:members 
+                  ( ("diag" type
+                       (:members 
+                          ( ("diagnostic_manager" type
+                               (:members 
+                                  ( ("diagnosticeventmemory_binding" type
+                                       (:members 
+                                          ( ("vsomeip" type
+                                               (:members 
+                                                  ( ("registerErrors" function (:type "void") (reparse-symbol namespacesubparts) [1089 1113]))                                                  
+                                                :type "namespace")
+                                                (reparse-symbol namespacesubparts) [1069 1116]))                                          
+                                        :type "namespace")
+                                        (reparse-symbol namespacesubparts) [1027 1139]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [996 1184]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [979 1218]))                  
+                :type "namespace")
+                nil [963 1238]))          
+      :file "errors_diagnosticeventmemory.h"
+      :pointmax 1300
+      :fsize 1299
+      :lastmodtime '(24419 4975 13205 152000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("_ERRORS_DIAGNOSTICEVENTMEMORY_H_")
+          )
+)
+    (semanticdb-table "semanticdb-table-3ff624c"
+      :major-mode c++-mode
+      :tags 
+        '( ("_SERVICE_DESC_DTCINFO_H_" variable (:constant-flag t) nil [805 829])
+            ("dem/service/service_skeleton/dtcinformation_common.h" include nil nil [831 894])
+            ("ara/com/internal/vsomeip/vsomeip_types.h" include nil nil [895 946])
+            ("ara" type
+               (:members 
+                  ( ("diag" type
+                       (:members 
+                          ( ("diagnostic_manager" type
+                               (:members 
+                                  ( ("dtcinformation_binding" type
+                                       (:members 
+                                          ( ("vsomeip" type
+                                               (:members 
+                                                  ( ("descriptors" type
+                                                       (:members 
+                                                          ( ("internal" type
+                                                               (:members 
+                                                                  ( ("Service" type
+                                                                       (:members 
+                                                                          ( ("service_id" variable
+                                                                               (:default-value "0x84d"
+                                                                                :type ("ara::com::internal::vsomeip::types::ServiceId" type (:type "class") nil nil))
+                                                                                (reparse-symbol classsubparts) [1148 1213])
+                                                                            ("service_version" variable
+                                                                               (:default-value "0x1"
+                                                                                :type ("ara::com::internal::vsomeip::types::ServiceVersionMajor" type (:type "class") nil nil))
+                                                                                (reparse-symbol classsubparts) [1233 1311])
+                                                                            ("minor_service_version" variable
+                                                                               (:default-value "0x0"
+                                                                                :type ("ara::com::internal::vsomeip::types::ServiceVersionMinor" type (:type "class") nil nil))
+                                                                                (reparse-symbol classsubparts) [1331 1415]))                                                                          
+                                                                        :type "struct")
+                                                                        (reparse-symbol namespacesubparts) [1112 1418]))                                                                  
+                                                                :type "namespace")
+                                                                (reparse-symbol namespacesubparts) [1091 1420])
+                                                            ("GetCurrentStatus" type
+                                                               (:superclasses 
+                                                                  ( ("internal::Service" type
+                                                                       (:protection "public"
+                                                                        :type "class")
+                                                                        nil nil))                                                                  
+                                                                :members 
+                                                                  ( ("method_id" variable
+                                                                       (:default-value "0x8c"
+                                                                        :type ("ara::com::internal::vsomeip::types::MethodId" type (:type "class") nil nil))
+                                                                        (reparse-symbol classsubparts) [1516 1578])
+                                                                    ("is_reliable" variable
+                                                                       (:default-value "true"
+                                                                        :type "bool")
+                                                                        (reparse-symbol classsubparts) [1598 1622]))                                                                  
+                                                                :type "struct")
+                                                                (reparse-symbol namespacesubparts) [1444 1625])
+                                                            ("DTCStatusChanged" type
+                                                               (:superclasses 
+                                                                  ( ("internal::Service" type
+                                                                       (:protection "public"
+                                                                        :type "class")
+                                                                        nil nil))                                                                  
+                                                                :members 
+                                                                  ( ("event_id" variable
+                                                                       (:default-value "0x4d8"
+                                                                        :type ("ara::com::internal::vsomeip::types::EventId" type (:type "class") nil nil))
+                                                                        (reparse-symbol classsubparts) [1699 1760])
+                                                                    ("event_groups" variable
+                                                                       (:dereference 1
+                                                                        :type ("ara::com::internal::vsomeip::types::EventGroupId" type (:type "class") nil nil))
+                                                                        (reparse-symbol classsubparts) [1780 1851]))                                                                  
+                                                                :type "struct")
+                                                                (reparse-symbol namespacesubparts) [1627 1854])
+                                                            ("SnapshotRecordChanged" type
+                                                               (:superclasses 
+                                                                  ( ("internal::Service" type
+                                                                       (:protection "public"
+                                                                        :type "class")
+                                                                        nil nil))                                                                  
+                                                                :members 
+                                                                  ( ("event_id" variable
+                                                                       (:default-value "0x4d9"
+                                                                        :type ("ara::com::internal::vsomeip::types::EventId" type (:type "class") nil nil))
+                                                                        (reparse-symbol classsubparts) [1933 1994])
+                                                                    ("event_groups" variable
+                                                                       (:dereference 1
+                                                                        :type ("ara::com::internal::vsomeip::types::EventGroupId" type (:type "class") nil nil))
+                                                                        (reparse-symbol classsubparts) [2014 2085]))                                                                  
+                                                                :type "struct")
+                                                                (reparse-symbol namespacesubparts) [1856 2088]))                                                          
+                                                        :type "namespace")
+                                                        (reparse-symbol namespacesubparts) [1067 2091]))                                                  
+                                                :type "namespace")
+                                                (reparse-symbol namespacesubparts) [1047 2118]))                                          
+                                        :type "namespace")
+                                        (reparse-symbol namespacesubparts) [1012 2141]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [981 2179]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [964 2213]))                  
+                :type "namespace")
+                nil [948 2233]))          
+      :file "service_desc_dtcinformation.h"
+      :pointmax 2287
+      :fsize 2286
+      :lastmodtime '(24419 4975 13205 152000)
+      :unmatched-syntax '((symbol 2004 . 2013) (STATIC 1997 . 2003) (symbol 1923 . 1932) (STATIC 1916 . 1922) (symbol 1770 . 1779) (STATIC 1763 . 1769) (symbol 1689 . 1698) (STATIC 1682 . 1688) (symbol 1588 . 1597) (STATIC 1581 . 1587) (symbol 1506 . 1515) (STATIC 1499 . 1505) (symbol 1321 . 1330) (STATIC 1314 . 1320) (symbol 1223 . 1232) (STATIC 1216 . 1222) (symbol 1138 . 1147) (STATIC 1131 . 1137))
+      :lexical-table 
+        '(("_SERVICE_DESC_DTCINFO_H_")
+          )
+))
+  :file "!home!hyuk.myeong!work!LARARA!avin!avin-ap!dm!source!inc!private!dem!service!vsomeip!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

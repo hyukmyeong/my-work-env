@@ -1,0 +1,16 @@
+;; Object semanticdb-project-database-file-e3685c
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-e3685c"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-aefbd0"
+      :major-mode js-mode
+      :tags nil
+      :file "doip_config.json"
+      :pointmax 1330
+      :fsize 1329
+      :lastmodtime '(24419 4974 997208 652000)
+      :unmatched-syntax nil))
+  :file "!home!hyuk.myeong!work!LARARA!avin!avin-ap!dm!source!etc!ipv6!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

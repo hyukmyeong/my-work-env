@@ -1,0 +1,205 @@
+;; Object semanticdb-project-database-file-1c9928c
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-1c9928c"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-1c2d2f8"
+      :major-mode c++-mode
+      :tags 
+        '( ("DIAGHANDLER_VSOMEIP_VSOMEIP_SERVICE_MAPPING_DIAGHANDLERAPPSWC_CPP_" variable (:constant-flag t) nil [1130 1196])
+            ("ara/com/internal/vsomeip/vsomeip_service_mapping.h" include nil nil [1198 1259])
+            ("ara/com/internal/vsomeip/vsomeip_service_mapping_impl.h" include nil nil [1260 1326])
+            ("ara/diag/service_interfaces/generic_routine/adapter_genericroutine.h" include nil nil [1328 1407])
+            ("ara/diag/service_interfaces/diagnostic_condition/proxy_vsomeip_diagnosticcondition.h" include nil nil [1408 1503])
+            ("ara/diag/service_interfaces/communication_ctrl/adapter_communicationcontrol.h" include nil nil [1504 1592])
+            ("vag/kd_bit_status_service/proxy_vsomeip_kdbitstatus.h" include nil nil [1593 1657])
+            ("ara/diag/service_interfaces/operation_cycle/proxy_vsomeip_operationcycle.h" include nil nil [1658 1743])
+            ("ara/diag/service_interfaces/generic_uds_service/adapter_genericudsservice.h" include nil nil [1744 1830])
+            ("ara/diag/service_interfaces/service_validation/adapter_servicevalidation.h" include nil nil [1831 1916])
+            ("ara/diag/service_interfaces/doip_power_mode/adapter_doippowermode.h" include nil nil [1917 1995])
+            ("ara/diag/service_interfaces/requestrestart/adapter_requestrestart.h" include nil nil [1996 2074])
+            ("ara/diag/service_interfaces/data_element_uint8/adapter_dataelement_uint8.h" include nil nil [2075 2160])
+            ("ara/diag/service_interfaces/diagnostic_conversation/proxy_vsomeip_diagnosticconversation.h" include nil nil [2161 2262])
+            ("ara/diag/service_interfaces/diagnostic_monitor/adapter_diagnosticmonitor.h" include nil nil [2263 2348])
+            ("vag/diagnostic_data_distribution_service/proxy_vsomeip_dddsinterface.h" include nil nil [2349 2430])
+            ("ara/diag/service_interfaces/doip_group_identification/adapter_doipgroupidentification.h" include nil nil [2431 2529])
+            ("ara/diag/service_interfaces/data_element_vector/adapter_dataelement_vector.h" include nil nil [2530 2617])
+            ("ara/diag/service_interfaces/security_access/adapter_securityaccess.h" include nil nil [2618 2697])
+            ("ara" type
+               (:members 
+                  ( ("com" type
+                       (:members 
+                          ( ("internal" type
+                               (:members 
+                                  ( ("vsomeip" type
+                                       (:members 
+                                          ( ("runtime" type
+                                               (:members 
+                                                  ( ("unnamed" type
+                                                       (:members 
+                                                          ( ("ara__diag__service_interfaces__generic_routine__genericroutine__mapping" variable (:type ("ServiceMappingImpl" type
+                                                                 (:template-specifier 
+                                                                    ( ("ara::diag::service_interfaces::generic_routine::GenericRoutine::service_id" type nil nil nil)
+                                                                      ("ara::diag::service_interfaces::generic_routine::genericroutine_binding::vsomeip::descriptors::internal::Service::service_id" type nil nil nil)
+                                                                      ("NoProxy" type nil nil nil)
+                                                                      ("ara::diag::service_interfaces::generic_routine::genericroutine_binding::vsomeip::GenericRoutineServiceAdapter" type nil nil nil))                                                                    
+                                                                  :type "class")
+                                                                  nil nil)) (reparse-symbol namespacesubparts) [2807 3229])
+                                                            ("ara__diag__service_interfaces__diagnostic_condition__diagnosticcondition__mapping" variable (:type ("ServiceMappingImpl" type
+                                                                 (:template-specifier 
+                                                                    ( ("ara::diag::service_interfaces::diagnostic_condition::DiagnosticCondition::service_id" type nil nil nil)
+                                                                      ("ara::diag::service_interfaces::diagnostic_condition::diagnosticcondition_binding::vsomeip::descriptors::internal::Service::service_id" type nil nil nil)
+                                                                      ("ara::diag::service_interfaces::diagnostic_condition::diagnosticcondition_binding::vsomeip::DiagnosticConditionImpl" type nil nil nil)
+                                                                      ("NoAdapter" type nil nil nil))                                                                    
+                                                                  :type "class")
+                                                                  nil nil)) (reparse-symbol namespacesubparts) [3232 3691])
+                                                            ("ara__diag__service_interfaces__communication_ctrl__communicationcontrol__mapping" variable (:type ("ServiceMappingImpl" type
+                                                                 (:template-specifier 
+                                                                    ( ("ara::diag::service_interfaces::communication_ctrl::CommunicationControl::service_id" type nil nil nil)
+                                                                      ("ara::diag::service_interfaces::communication_ctrl::communicationcontrol_binding::vsomeip::descriptors::internal::Service::service_id" type nil nil nil)
+                                                                      ("NoProxy" type nil nil nil)
+                                                                      ("ara::diag::service_interfaces::communication_ctrl::communicationcontrol_binding::vsomeip::CommunicationControlServiceAdapter" type nil nil nil))                                                                    
+                                                                  :type "class")
+                                                                  nil nil)) (reparse-symbol namespacesubparts) [3694 4158])
+                                                            ("vag__kd_bit_status_service__kdbitstatus__mapping" variable (:type ("ServiceMappingImpl" type
+                                                                 (:template-specifier 
+                                                                    ( ("vag::kd_bit_status_service::KdBitStatus::service_id" type nil nil nil)
+                                                                      ("vag::kd_bit_status_service::kdbitstatus_binding::vsomeip::descriptors::internal::Service::service_id" type nil nil nil)
+                                                                      ("vag::kd_bit_status_service::kdbitstatus_binding::vsomeip::KdBitStatusImpl" type nil nil nil)
+                                                                      ("NoAdapter" type nil nil nil))                                                                    
+                                                                  :type "class")
+                                                                  nil nil)) (reparse-symbol namespacesubparts) [4161 4480])
+                                                            ("ara__diag__service_interfaces__operation_cycle__operationcycle__mapping" variable (:type ("ServiceMappingImpl" type
+                                                                 (:template-specifier 
+                                                                    ( ("ara::diag::service_interfaces::operation_cycle::OperationCycle::service_id" type nil nil nil)
+                                                                      ("ara::diag::service_interfaces::operation_cycle::operationcycle_binding::vsomeip::descriptors::internal::Service::service_id" type nil nil nil)
+                                                                      ("ara::diag::service_interfaces::operation_cycle::operationcycle_binding::vsomeip::OperationCycleImpl" type nil nil nil)
+                                                                      ("NoAdapter" type nil nil nil))                                                                    
+                                                                  :type "class")
+                                                                  nil nil)) (reparse-symbol namespacesubparts) [4483 4897])
+                                                            ("ara__diag__service_interfaces__generic_uds_service__genericudsservice__mapping" variable (:type ("ServiceMappingImpl" type
+                                                                 (:template-specifier 
+                                                                    ( ("ara::diag::service_interfaces::generic_uds_service::GenericUDSService::service_id" type nil nil nil)
+                                                                      ("ara::diag::service_interfaces::generic_uds_service::genericudsservice_binding::vsomeip::descriptors::internal::Service::service_id" type nil nil nil)
+                                                                      ("NoProxy" type nil nil nil)
+                                                                      ("ara::diag::service_interfaces::generic_uds_service::genericudsservice_binding::vsomeip::GenericUDSServiceServiceAdapter" type nil nil nil))                                                                    
+                                                                  :type "class")
+                                                                  nil nil)) (reparse-symbol namespacesubparts) [4900 5353])
+                                                            ("ara__diag__service_interfaces__service_validation__servicevalidation__mapping" variable (:type ("ServiceMappingImpl" type
+                                                                 (:template-specifier 
+                                                                    ( ("ara::diag::service_interfaces::service_validation::ServiceValidation::service_id" type nil nil nil)
+                                                                      ("ara::diag::service_interfaces::service_validation::servicevalidation_binding::vsomeip::descriptors::internal::Service::service_id" type nil nil nil)
+                                                                      ("NoProxy" type nil nil nil)
+                                                                      ("ara::diag::service_interfaces::service_validation::servicevalidation_binding::vsomeip::ServiceValidationServiceAdapter" type nil nil nil))                                                                    
+                                                                  :type "class")
+                                                                  nil nil)) (reparse-symbol namespacesubparts) [5356 5805])
+                                                            ("ara__diag__service_interfaces__doip_power_mode__doippowermode__mapping" variable (:type ("ServiceMappingImpl" type
+                                                                 (:template-specifier 
+                                                                    ( ("ara::diag::service_interfaces::doip_power_mode::DoIPPowerMode::service_id" type nil nil nil)
+                                                                      ("ara::diag::service_interfaces::doip_power_mode::doippowermode_binding::vsomeip::descriptors::internal::Service::service_id" type nil nil nil)
+                                                                      ("NoProxy" type nil nil nil)
+                                                                      ("ara::diag::service_interfaces::doip_power_mode::doippowermode_binding::vsomeip::DoIPPowerModeServiceAdapter" type nil nil nil))                                                                    
+                                                                  :type "class")
+                                                                  nil nil)) (reparse-symbol namespacesubparts) [5808 6225])
+                                                            ("ara__diag__service_interfaces__requestrestart__requestrestart__mapping" variable (:type ("ServiceMappingImpl" type
+                                                                 (:template-specifier 
+                                                                    ( ("ara::diag::service_interfaces::requestrestart::RequestRestart::service_id" type nil nil nil)
+                                                                      ("ara::diag::service_interfaces::requestrestart::requestrestart_binding::vsomeip::descriptors::internal::Service::service_id" type nil nil nil)
+                                                                      ("NoProxy" type nil nil nil)
+                                                                      ("ara::diag::service_interfaces::requestrestart::requestrestart_binding::vsomeip::RequestRestartServiceAdapter" type nil nil nil))                                                                    
+                                                                  :type "class")
+                                                                  nil nil)) (reparse-symbol namespacesubparts) [6228 6646])
+                                                            ("ara__diag__service_interfaces__data_element_uint8__dataelement_uint8__mapping" variable (:type ("ServiceMappingImpl" type
+                                                                 (:template-specifier 
+                                                                    ( ("ara::diag::service_interfaces::data_element_uint8::DataElement_uint8::service_id" type nil nil nil)
+                                                                      ("ara::diag::service_interfaces::data_element_uint8::dataelement_uint8_binding::vsomeip::descriptors::internal::Service::service_id" type nil nil nil)
+                                                                      ("NoProxy" type nil nil nil)
+                                                                      ("ara::diag::service_interfaces::data_element_uint8::dataelement_uint8_binding::vsomeip::DataElement_uint8ServiceAdapter" type nil nil nil))                                                                    
+                                                                  :type "class")
+                                                                  nil nil)) (reparse-symbol namespacesubparts) [6649 7098])
+                                                            ("ara__diag__service_interfaces__diagnostic_conversation__diagnosticconversation__mapping" variable (:type ("ServiceMappingImpl" type
+                                                                 (:template-specifier 
+                                                                    ( ("ara::diag::service_interfaces::diagnostic_conversation::DiagnosticConversation::service_id" type nil nil nil)
+                                                                      ("ara::diag::service_interfaces::diagnostic_conversation::diagnosticconversation_binding::vsomeip::descriptors::internal::Service::service_id" type nil nil nil)
+                                                                      ("ara::diag::service_interfaces::diagnostic_conversation::diagnosticconversation_binding::vsomeip::DiagnosticConversationImpl" type nil nil nil)
+                                                                      ("NoAdapter" type nil nil nil))                                                                    
+                                                                  :type "class")
+                                                                  nil nil)) (reparse-symbol namespacesubparts) [7101 7587])
+                                                            ("ara__diag__service_interfaces__diagnostic_monitor__diagnosticmonitor__mapping" variable (:type ("ServiceMappingImpl" type
+                                                                 (:template-specifier 
+                                                                    ( ("ara::diag::service_interfaces::diagnostic_monitor::DiagnosticMonitor::service_id" type nil nil nil)
+                                                                      ("ara::diag::service_interfaces::diagnostic_monitor::diagnosticmonitor_binding::vsomeip::descriptors::internal::Service::service_id" type nil nil nil)
+                                                                      ("NoProxy" type nil nil nil)
+                                                                      ("ara::diag::service_interfaces::diagnostic_monitor::diagnosticmonitor_binding::vsomeip::DiagnosticMonitorServiceAdapter" type nil nil nil))                                                                    
+                                                                  :type "class")
+                                                                  nil nil)) (reparse-symbol namespacesubparts) [7590 8039])
+                                                            ("vag__diagnostic_data_distribution_service__dddsinterface__mapping" variable (:type ("ServiceMappingImpl" type
+                                                                 (:template-specifier 
+                                                                    ( ("vag::diagnostic_data_distribution_service::DDDSinterface::service_id" type nil nil nil)
+                                                                      ("vag::diagnostic_data_distribution_service::dddsinterface_binding::vsomeip::descriptors::internal::Service::service_id" type nil nil nil)
+                                                                      ("vag::diagnostic_data_distribution_service::dddsinterface_binding::vsomeip::DDDSinterfaceImpl" type nil nil nil)
+                                                                      ("NoAdapter" type nil nil nil))                                                                    
+                                                                  :type "class")
+                                                                  nil nil)) (reparse-symbol namespacesubparts) [8042 8431])
+                                                            ("ara__diag__service_interfaces__doip_group_identification__doipgroupidentification__mapping" variable (:type ("ServiceMappingImpl" type
+                                                                 (:template-specifier 
+                                                                    ( ("ara::diag::service_interfaces::doip_group_identification::DoIPGroupIdentification::service_id" type nil nil nil)
+                                                                      ("ara::diag::service_interfaces::doip_group_identification::doipgroupidentification_binding::vsomeip::descriptors::internal::Service::service_id" type nil nil nil)
+                                                                      ("NoProxy" type nil nil nil)
+                                                                      ("ara::diag::service_interfaces::doip_group_identification::doipgroupidentification_binding::vsomeip::DoIPGroupIdentificationServiceAdapter" type nil nil nil))                                                                    
+                                                                  :type "class")
+                                                                  nil nil)) (reparse-symbol namespacesubparts) [8434 8941])
+                                                            ("ara__diag__service_interfaces__data_element_vector__dataelement_vector__mapping" variable (:type ("ServiceMappingImpl" type
+                                                                 (:template-specifier 
+                                                                    ( ("ara::diag::service_interfaces::data_element_vector::DataElement_vector::service_id" type nil nil nil)
+                                                                      ("ara::diag::service_interfaces::data_element_vector::dataelement_vector_binding::vsomeip::descriptors::internal::Service::service_id" type nil nil nil)
+                                                                      ("NoProxy" type nil nil nil)
+                                                                      ("ara::diag::service_interfaces::data_element_vector::dataelement_vector_binding::vsomeip::DataElement_vectorServiceAdapter" type nil nil nil))                                                                    
+                                                                  :type "class")
+                                                                  nil nil)) (reparse-symbol namespacesubparts) [8944 9402])
+                                                            ("ara__diag__service_interfaces__security_access__securityaccess__mapping" variable (:type ("ServiceMappingImpl" type
+                                                                 (:template-specifier 
+                                                                    ( ("ara::diag::service_interfaces::security_access::SecurityAccess::service_id" type nil nil nil)
+                                                                      ("ara::diag::service_interfaces::security_access::securityaccess_binding::vsomeip::descriptors::internal::Service::service_id" type nil nil nil)
+                                                                      ("NoProxy" type nil nil nil)
+                                                                      ("ara::diag::service_interfaces::security_access::securityaccess_binding::vsomeip::SecurityAccessServiceAdapter" type nil nil nil))                                                                    
+                                                                  :type "class")
+                                                                  nil nil)) (reparse-symbol namespacesubparts) [9405 9827]))                                                          
+                                                        :type "namespace")
+                                                        (reparse-symbol namespacesubparts) [2793 9829])
+                                                    ("GetMappingForServiceId" function
+                                                       (:pointer 1
+                                                        :parent "VSomeIPServiceMapping"
+                                                        :constant-flag t
+                                                        :arguments 
+                                                          ( ("service_id" variable (:type ("ServiceId" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9915 9936]))                                                          
+                                                        :type ("VSomeIPServiceMapping::Mapping" type (:type "class") nil nil))
+                                                        (reparse-symbol namespacesubparts) [9831 12867])
+                                                    ("GetMappingForVSomeIPServiceId" function
+                                                       (:parent "VSomeIPServiceMapping"
+                                                        :arguments 
+                                                          ( ("service_id" variable (:type ("vsomeip::service_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12960 12990]))                                                          
+                                                        :type ("VSomeIPServiceMapping::MultiMapping" type (:type "class") nil nil))
+                                                        (reparse-symbol namespacesubparts) [12869 17003]))                                                  
+                                                :type "namespace")
+                                                (reparse-symbol namespacesubparts) [2772 17006]))                                          
+                                        :type "namespace")
+                                        (reparse-symbol namespacesubparts) [2752 17029]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [2731 17052]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [2715 17076]))                  
+                :type "namespace")
+                nil [2699 17095]))          
+      :file "vsomeip_service_mapping-DiagHandlerAppSwc.cpp"
+      :pointmax 17193
+      :fsize 17192
+      :lastmodtime '(24415 860 632785 334000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("DIAGHANDLER_VSOMEIP_VSOMEIP_SERVICE_MAPPING_DIAGHANDLERAPPSWC_CPP_")
+          )
+))
+  :file "!home!hyuk.myeong!work!LARA!sample-applications!lge!diag-handler!src-gen!DiagHandler!vsomeip!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

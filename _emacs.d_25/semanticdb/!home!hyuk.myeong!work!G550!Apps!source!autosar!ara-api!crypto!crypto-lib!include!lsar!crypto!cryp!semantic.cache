@@ -1,0 +1,157 @@
+;; Object semanticdb-project-database-file-1c0af1c
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-1c0af1c"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-1c0aefc"
+      :major-mode c++-mode
+      :tags 
+        '( ("LSAR_CRYPTO_CRYP_HASH_FUNCTION_CTX_IMPL_H_" variable (:constant-flag t) nil [625 667])
+            ("ara/crypto/cryp/hash_function_ctx.h" include nil nil [669 715])
+            ("lsar/crypto/common/hal/hal_hashFunctionCtx.h" include nil nil [716 771])
+            ("lsar/crypto/common/cryptoLog.h" include nil nil [772 813])
+            ("lsar/crypto/common/cryptoUtil.h" include nil nil [814 856])
+            ("lsar" type
+               (:members 
+                  ( ("crypto" type
+                       (:members 
+                          ( ("cryp" type
+                               (:members 
+                                  ( ("HashFunctionCtx" type
+                                       (:superclasses 
+                                          ( ("ara::crypto::cryp::HashFunctionCtx" type
+                                               (:protection "public"
+                                                :type "class")
+                                                nil nil))                                          
+                                        :members 
+                                          ( ("public" label nil (reparse-symbol classsubparts) [980 987])
+                                            ("S_ARA_LOGGER" variable
+                                               (:typemodifiers ("static")
+                                                :type ("ara::log::Logger" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [992 1030])
+                                            ("HashFunctionCtx" function
+                                               (:prototype-flag t
+                                                :constructor-flag t
+                                                :arguments 
+                                                  ( ("provider" variable
+                                                       (:reference 1
+                                                        :type ("ara::crypto::cryp::CryptoProvider" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [1051 1095])
+                                                    ("algId" variable (:type ("ara::crypto::cryp::CryptoPrimitiveId::AlgId" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1108 1158]))                                                  
+                                                :type ("HashFunctionCtx" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [1035 1159])
+                                            ("override" variable
+                                               (:constant-flag t
+                                                :type ("noexcept" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [1192 1216])
+                                            ("override" variable (:type ("noexcept" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1306 1324])
+                                            ("override" variable (:type ("noexcept" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1395 1413])
+                                            ("override" variable (:type ("noexcept" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1471 1489])
+                                            ("override" variable (:type ("noexcept" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1721 1739])
+                                            ("override" variable
+                                               (:constant-flag t
+                                                :type ("noexcept" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [1874 1898])
+                                            ("override" variable
+                                               (:constant-flag t
+                                                :type ("noexcept" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [2025 2049])
+                                            ("noexcept" variable
+                                               (:constant-flag t
+                                                :type "int")
+                                                (reparse-symbol classsubparts) [2142 2157])
+                                            ("override" variable
+                                               (:constant-flag t
+                                                :type ("noexcept" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [2187 2211])
+                                            ("override" variable
+                                               (:constant-flag t
+                                                :type ("noexcept" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [2243 2267])
+                                            ("override" variable
+                                               (:constant-flag t
+                                                :type ("noexcept" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [2311 2335])
+                                            ("override" variable (:type ("noexcept" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2434 2452])
+                                            ("override" variable (:type ("noexcept" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2509 2527])
+                                            ("noexcept" variable
+                                               (:constant-flag t
+                                                :type "int")
+                                                (reparse-symbol classsubparts) [2625 2640])
+                                            ("override" variable
+                                               (:constant-flag t
+                                                :type ("noexcept" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [2660 2700])
+                                            ("override" variable
+                                               (:constant-flag t
+                                                :type ("noexcept" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [2753 2777])
+                                            ("override" variable
+                                               (:constant-flag t
+                                                :type ("noexcept" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [2843 2867])
+                                            ("override" variable
+                                               (:constant-flag t
+                                                :type ("noexcept" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [2920 2944])
+                                            ("override" variable
+                                               (:constant-flag t
+                                                :type ("noexcept" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [3010 3034])
+                                            ("override" variable
+                                               (:constant-flag t
+                                                :type ("noexcept" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [3062 3086])
+                                            ("override" variable
+                                               (:constant-flag t
+                                                :type ("noexcept" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [3112 3136])
+                                            ("override" variable
+                                               (:constant-flag t
+                                                :type ("noexcept" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [3230 3254])
+                                            ("override" variable (:type ("noexcept" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3376 3394])
+                                            ("Create" function
+                                               (:prototype-flag t
+                                                :typemodifiers ("static")
+                                                :arguments 
+                                                  ( ("provider" variable
+                                                       (:reference 1
+                                                        :type ("ara::crypto::cryp::CryptoProvider" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [3487 3531])
+                                                    ("algId" variable (:type ("ara::crypto::cryp::CryptoPrimitiveId::AlgId" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3544 3594]))                                                  
+                                                :type ("ara::core::Result" type
+                                                     (:template-specifier 
+                                                        ( ("ara::crypto::cryp::HashFunctionCtx::Uptr" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil))
+                                                (reparse-symbol classsubparts) [3400 3595])
+                                            ("private" label nil (reparse-symbol classsubparts) [3597 3605])
+                                            ("m_myProvider" variable (:type ("ara::crypto::cryp::CryptoProvider" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3610 3658])
+                                            ("m_algId" variable (:type ("ara::crypto::cryp::CryptoPrimitiveId::AlgId" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3663 3715])
+                                            ("m_primitiveName" variable (:type ("ara::core::String" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3720 3756])
+                                            ("m_hal_HashFunctionCtx" variable
+                                               (:pointer 1
+                                                :type ("hal_HashFunctionCtx" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [3762 3805])
+                                            ("protected" label nil (reparse-symbol classsubparts) [3807 3817]))                                          
+                                        :type "class")
+                                        (reparse-symbol namespacesubparts) [912 3820]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [894 3823]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [875 3825]))                  
+                :type "namespace")
+                nil [858 3827]))          
+      :file "hashFunctionCtxImpl.h"
+      :pointmax 3835
+      :fsize 3834
+      :lastmodtime '(24287 13656 155325 378000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("LSAR_CRYPTO_CRYP_HASH_FUNCTION_CTX_IMPL_H_")
+          )
+))
+  :file "!home!hyuk.myeong!work!G550!Apps!source!autosar!ara-api!crypto!crypto-lib!include!lsar!crypto!cryp!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

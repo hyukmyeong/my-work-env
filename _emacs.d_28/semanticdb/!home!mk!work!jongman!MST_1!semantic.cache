@@ -1,0 +1,165 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("iostream" include (:system-flag t) nil [1 20])
+            ("vector" include (:system-flag t) nil [22 39])
+            ("algorithm" include (:system-flag t) nil [40 60])
+            ("disjointset.h" include nil nil [62 86])
+            ("MAX_V" variable
+               (:constant-flag t
+                :default-value "100"
+                :type "int")
+                nil [88 110])
+            ("V" variable (:type "int") nil [111 117])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [119 139])
+            ("adj" variable
+               (:dereference 1
+                :type ("vector" type
+                     (:template-specifier 
+                        ( ("pair" type (:template-specifier 
+                            ( ("int" type nil nil nil)
+                              ("int" type nil nil nil))                            ) nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [141 174])
+            ("make_graph" function (:type "void") nil [176 1279])
+            ("kruskal" function
+               (:arguments 
+                  ( ("selected" variable
+                       (:reference 1
+                        :type ("vector" type
+                             (:template-specifier 
+                                ( ("pair" type (:template-specifier 
+                                    ( ("int" type nil nil nil)
+                                      ("int" type nil nil nil))                                    ) nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [1293 1325]))                  
+                :type "int")
+                nil [1281 1985])
+            ("main" function (:type "int") nil [1987 2337]))          
+      :file "main.cpp"
+      :pointmax 2338
+      :fsize 2337
+      :lastmodtime '(24242 52692 371964 49000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode makefile-gmake-mode
+      :tags 
+        '( ("CXX" variable (:default-value ("g++")) nil [1 9])
+            ("CXXFLAGS" variable (:default-value ("-g" "-Wall")) nil [9 27])
+            ("OBJS" variable (:default-value ("main.o")) nil [27 39])
+            ("TARGET" variable (:default-value ("a.out")) nil [39 52])
+            ("$(TARGET)" function (:arguments ("$(OBJS)")) nil [53 101])
+            ("$(OBJS)" function (:arguments ("disjointset.h" "main.cpp")) nil [102 160]))          
+      :file "Makefile"
+      :pointmax 160
+      :fsize 159
+      :lastmodtime '(24241 14273 777571 543000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("iostream" include (:system-flag t) nil [1 20])
+            ("vector" include (:system-flag t) nil [21 38])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [40 60])
+            ("OptimizedDisjointSet" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [91 98])
+                    ("OptimizedDisjointSet" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("n" variable (:type "int") (reparse-symbol arg-sub-list) [122 128]))                          
+                        :type ("OptimizedDisjointSet" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [101 203])
+                    ("find" function
+                       (:arguments 
+                          ( ("u" variable (:type "int") (reparse-symbol arg-sub-list) [216 222]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [207 308])
+                    ("merge" function
+                       (:arguments 
+                          ( ("u" variable (:type "int") (reparse-symbol arg-sub-list) [323 329])
+                            ("v" variable (:type "int") (reparse-symbol arg-sub-list) [330 336]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [312 514])
+                    ("private" label nil (reparse-symbol classsubparts) [515 523])
+                    ("parent" variable (:type ("vector" type
+                         (:template-specifier 
+                            ( ("int" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [526 551])
+                    ("rank" variable (:type ("vector" type
+                         (:template-specifier 
+                            ( ("int" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [526 551]))                  
+                :type "class")
+                nil [62 554]))          
+      :file "disjointset.h"
+      :pointmax 555
+      :fsize 554
+      :lastmodtime '(24242 28097 715514 137000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("iostream" include (:system-flag t) nil [1 20])
+            ("vector" include (:system-flag t) nil [21 38])
+            ("algorithm" include (:system-flag t) nil [39 59])
+            ("disjointset.h" include nil nil [61 85])
+            ("MAX_V" variable
+               (:constant-flag t
+                :default-value "100"
+                :type "int")
+                nil [87 109])
+            ("V" variable (:type "int") nil [110 116])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [118 138])
+            ("adj" variable
+               (:dereference 1
+                :type ("vector" type
+                     (:template-specifier 
+                        ( ("pair" type (:template-specifier 
+                            ( ("int" type nil nil nil)
+                              ("int" type nil nil nil))                            ) nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [140 173])
+            ("make_graph" function (:type "void") nil [175 1282])
+            ("kruskal" function
+               (:arguments 
+                  ( ("selected" variable
+                       (:reference 1
+                        :type ("vector" type
+                             (:template-specifier 
+                                ( ("pair" type (:template-specifier 
+                                    ( ("int" type nil nil nil)
+                                      ("int" type nil nil nil))                                    ) nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [1296 1328]))                  
+                :type "int")
+                nil [1284 1988])
+            ("main" function (:type "int") nil [1990 2128]))          
+      :file "main.cpp~"
+      :pointmax 2129
+      :fsize 2337
+      :lastmodtime '(24242 29623 643249 730000)
+      :unmatched-syntax nil))
+  :file "!home!mk!work!jongman!MST_1!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

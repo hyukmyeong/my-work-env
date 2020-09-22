@@ -1,0 +1,46 @@
+;; Object semanticdb-project-database-file-1eb2c14
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-1eb2c14"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-1eb2c20"
+      :major-mode c++-mode
+      :tags 
+        '( ("_ARA_DIAG_IMPL_TYPE_UDSDTCSTATUSBYTECHANGEDTYPE_H_" variable (:constant-flag t) nil [841 891])
+            ("cstdint" include (:system-flag t) nil [893 911])
+            ("ara" type
+               (:members 
+                  ( ("diag" type
+                       (:members 
+                          ( ("UdsDTCStatusByteChangedType" type
+                               (:members 
+                                  ( ("uds_dtc_status_old" variable (:type ("std::uint8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [985 1017])
+                                    ("uds_dtc_status_new" variable (:type ("std::uint8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1020 1052])
+                                    ("enumerate" function
+                                       (:template 
+                                          ( ("F" type (:type "class") nil nil))                                          
+                                        :type "void"
+                                        :arguments 
+                                          ( ("fun" variable
+                                               (:reference 1
+                                                :type ("F" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [1127 1134]))                                          )
+                                        (reparse-symbol classsubparts) [1088 1212]))                                  
+                                :type "struct")
+                                (reparse-symbol namespacesubparts) [946 1215]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [929 1217]))                  
+                :type "namespace")
+                nil [913 1237]))          
+      :file "impl_type_udsdtcstatusbytechangedtype.h"
+      :pointmax 1317
+      :fsize 1316
+      :lastmodtime '(24420 22489 992059 653000)
+      :unmatched-syntax '((punctuation 1084 . 1085) (VOID 1080 . 1084) (punctuation 1078 . 1079) (symbol 1062 . 1077) (USING 1056 . 1061))
+      :lexical-table 
+        '(("_ARA_DIAG_IMPL_TYPE_UDSDTCSTATUSBYTECHANGEDTYPE_H_")
+          )
+))
+  :file "!home!hyuk.myeong!work!LARA!avin!avin-ap!dm!source!inc!private!dem!types!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

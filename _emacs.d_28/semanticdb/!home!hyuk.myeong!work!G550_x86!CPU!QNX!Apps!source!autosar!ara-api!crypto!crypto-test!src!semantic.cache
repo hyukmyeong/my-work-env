@@ -1,0 +1,179 @@
+;; Object semanticdb-project-database-file-1ee4da0
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-1ee4da0"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-1ee4dbc"
+      :major-mode c++-mode
+      :tags 
+        '( ("iostream" include (:system-flag t) nil [566 585])
+            ("iomanip" include (:system-flag t) nil [586 604])
+            ("sstream" include (:system-flag t) nil [605 623])
+            ("string" include (:system-flag t) nil [624 641])
+            ("string.h" include (:system-flag t) nil [642 661])
+            ("unistd.h" include (:system-flag t) nil [662 681])
+            ("stdio.h" include (:system-flag t) nil [682 700])
+            ("stdlib.h" include (:system-flag t) nil [701 720])
+            ("ara/crypto/cryp/entry_point.h" include nil nil [722 762])
+            ("lsar/crypto/cryp/publicKeyImpl.h" include nil nil [763 806])
+            ("lsar/crypto/cryp/signatureImpl.h" include nil nil [807 850])
+            ("lsar/crypto/common/cryptoUtil.h" include nil nil [851 893])
+            ("ara/crypto/common/base_id_types.h" include nil nil [894 938])
+            ("gtest/gtest.h" include nil nil [939 963])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [965 985])
+            ("openssl/sha.h" include nil nil [987 1011])
+            ("openssl/evp.h" include nil nil [1012 1036])
+            ("openssl/rsa.h" include nil nil [1037 1061])
+            ("openssl/bio.h" include nil nil [1062 1086])
+            ("openssl/x509.h" include nil nil [1087 1112])
+            ("lsar/crypto/common/testClass.h" include nil nil [1114 1155])
+            ("keyStorageTest.h" include nil nil [1183 1210])
+            ("cryptoObjectTest.h" include nil nil [1211 1240])
+            ("RandomGeneratorTest.h" include nil nil [1241 1273])
+            ("macTest.h" include nil nil [1274 1294])
+            ("streamCipherTest.h" include nil nil [1295 1324])
+            ("utilTest.h" include nil nil [1325 1346])
+            ("KDFTest.h" include nil nil [1347 1367])
+            ("hashingTest.h" include nil nil [1368 1392])
+            ("ara/log/logging.h" include nil nil [1462 1490])
+            ("ara::log" using (:type ("ara::log" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [1492 1517])
+            ("writeResultToFile" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("alg" variable (:type ("string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1542 1553])
+                    ("remoteFlag" variable (:type "int") (reparse-symbol arg-sub-list) [1554 1569])
+                    ("result" variable (:type ("string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1570 1584])
+                    ("processingTime" variable (:type ("timeval" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol arg-sub-list) [1585 1615]))                  
+                :type "bool")
+                nil [1519 1616])
+            ("generate_ec_key_data" function
+               (:arguments 
+                  ( ("signature" variable
+                       (:pointer 2
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [1643 1669])
+                    ("signLen" variable
+                       (:pointer 1
+                        :type ("size_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1670 1686])
+                    ("pkey" variable
+                       (:pointer 2
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [1707 1728])
+                    ("keyLen" variable
+                       (:pointer 1
+                        :type ("size_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1729 1744])
+                    ("hash" variable
+                       (:pointer 1
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [1745 1765])
+                    ("hashLen" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1766 1781]))                  
+                :type "int")
+                nil [1618 3810])
+            ("generate_rsa_key_data" function
+               (:arguments 
+                  ( ("signature" variable
+                       (:pointer 2
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [3838 3864])
+                    ("signLen" variable
+                       (:pointer 1
+                        :type ("size_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3865 3881])
+                    ("pkey" variable
+                       (:pointer 2
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [3902 3923])
+                    ("keyLen" variable
+                       (:pointer 1
+                        :type ("size_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3924 3939])
+                    ("hash" variable
+                       (:pointer 1
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [3940 3960])
+                    ("hashLen" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3961 3976]))                  
+                :type "int")
+                nil [3812 5561])
+            ("Verify" function
+               (:arguments 
+                  ( ("crypto_type" variable
+                       (:constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5575 5600])
+                    ("signature" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [5601 5632])
+                    ("sigLen" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5633 5647])
+                    ("plainText" variable
+                       (:constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5656 5679])
+                    ("slotUuid" variable
+                       (:constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5680 5702])
+                    ("remoteFlag" variable (:type "int") (reparse-symbol arg-sub-list) [5703 5718])
+                    ("processingTime" variable
+                       (:reference 1
+                        :type ("timeval" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [5719 5750]))                  
+                :type "bool")
+                nil [5563 8842])
+            ("verify" function
+               (:arguments 
+                  ( ("crypto_type" variable
+                       (:constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8856 8881])
+                    ("str" variable
+                       (:constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8882 8899]))                  
+                :type "bool")
+                nil [8844 13005])
+            ("printUsage" function (:type "void") nil [13007 15447])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [15458 15467])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [15468 15481]))                  
+                :type "int")
+                nil [15449 25033])
+            ("writeResultToFile" function
+               (:arguments 
+                  ( ("alg" variable (:type ("string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [25058 25069])
+                    ("remoteFlag" variable (:type "int") (reparse-symbol arg-sub-list) [25070 25085])
+                    ("result" variable (:type ("string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [25086 25100])
+                    ("processingTime" variable (:type ("timeval" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol arg-sub-list) [25101 25131]))                  
+                :type "bool")
+                nil [25035 25767]))          
+      :file "test_main.cpp"
+      :pointmax 25768
+      :fsize 25767
+      :lastmodtime '(24310 62485 343257 682000)
+      :unmatched-syntax nil))
+  :file "!home!hyuk.myeong!work!G550_x86!CPU!QNX!Apps!source!autosar!ara-api!crypto!crypto-test!src!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

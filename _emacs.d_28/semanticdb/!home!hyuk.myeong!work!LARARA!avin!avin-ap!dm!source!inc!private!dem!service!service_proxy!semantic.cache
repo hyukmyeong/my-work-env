@@ -1,0 +1,139 @@
+;; Object semanticdb-project-database-file-23bd494
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-23bd494"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-23bd4a0"
+      :major-mode c++-mode
+      :tags 
+        '( ("ARA_DIAG_DIAGNOSTIC_MANAGER_DIAGNOSTICMONITOR_PROXY_H_" variable (:constant-flag t) nil [823 877])
+            ("ara/com/internal/proxy/ara_proxy_base.h" include nil nil [879 929])
+            ("dem/service/service_proxy/diagnosticmonitor_common.h" include nil nil [930 993])
+            ("ara" type
+               (:members 
+                  ( ("diag" type
+                       (:members 
+                          ( ("diagnostic_manager" type
+                               (:members 
+                                  ( ("proxy" type
+                                       (:members 
+                                          ( ("methods" type (:type "namespace") (reparse-symbol namespacesubparts) [1077 1229])
+                                            ("events" type (:type "namespace") (reparse-symbol namespacesubparts) [1252 1387])
+                                            ("DiagnosticMonitorProxyBase" type
+                                               (:superclasses 
+                                                  ( ("ara::com::internal::proxy::ProxyBindingBase" type
+                                                       (:protection "public"
+                                                        :type "class")
+                                                        nil nil)
+                                                    ("ara::diag::diagnostic_manager::DiagnosticMonitor" type
+                                                       (:protection "public"
+                                                        :type "class")
+                                                        nil nil))                                                  
+                                                :members 
+                                                  ( ("public" label nil (reparse-symbol classsubparts) [1564 1571])
+                                                    ("GetInitMonitor" function
+                                                       (:pure-virtual-flag t
+                                                        :prototype-flag t
+                                                        :typemodifiers ("virtual")
+                                                        :type ("methods::InitMonitor" type (:type "class") nil nil))
+                                                        (reparse-symbol classsubparts) [1574 1625])
+                                                    ("GetMonitorAction" function
+                                                       (:pure-virtual-flag t
+                                                        :prototype-flag t
+                                                        :typemodifiers ("virtual")
+                                                        :type ("events::MonitorAction" type (:type "class") nil nil))
+                                                        (reparse-symbol classsubparts) [1628 1682]))                                                  
+                                                :type "class")
+                                                (reparse-symbol namespacesubparts) [1409 1685])
+                                            ("DiagnosticMonitorProxy" type
+                                               (:superclasses 
+                                                  ( ("ara::com::internal::proxy::ProxyBase" type
+                                                       (:protection "public"
+                                                        :type "class")
+                                                        nil nil)
+                                                    ("ara::diag::diagnostic_manager::DiagnosticMonitor" type
+                                                       (:protection "public"
+                                                        :type "class")
+                                                        nil nil))                                                  
+                                                :members 
+                                                  ( ("private" label nil (reparse-symbol classsubparts) [1886 1894])
+                                                    ("public" label nil (reparse-symbol classsubparts) [1896 1903])
+                                                    ("DiagnosticMonitorProxy" function
+                                                       (:constructor-flag t
+                                                        :arguments 
+                                                          ( ("proxy_base_factory" variable
+                                                               (:reference 1
+                                                                :constant-flag t
+                                                                :type ("HandleType" type (:type "class") nil nil))
+                                                                (reparse-symbol arg-sub-list) [1999 2036]))                                                          
+                                                        :type ("DiagnosticMonitorProxy" type (:type "class") nil nil))
+                                                        (reparse-symbol classsubparts) [1976 2232])
+                                                    ("InitMonitor" variable (:type ("methods::InitMonitor" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2875 2909])
+                                                    ("MonitorAction" variable (:type ("events::MonitorAction" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2912 2949]))                                                  
+                                                :type "class")
+                                                (reparse-symbol namespacesubparts) [1714 2952]))                                          
+                                        :type "namespace")
+                                        (reparse-symbol namespacesubparts) [1059 2955]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [1028 2976]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [1011 3010]))                  
+                :type "namespace")
+                nil [995 3030]))          
+      :file "diagnosticmonitor_proxy.h"
+      :pointmax 3114
+      :fsize 3113
+      :lastmodtime '(24419 4975 13205 152000)
+      :unmatched-syntax '((punctuation 2841 . 2842) (DELETE 2835 . 2841) (punctuation 2833 . 2834) (semantic-list 2801 . 2832) (punctuation 2800 . 2801) (OPERATOR 2792 . 2800) (punctuation 2790 . 2791) (symbol 2768 . 2790) (punctuation 2685 . 2686) (DELETE 2679 . 2685) (punctuation 2677 . 2678) (semantic-list 2645 . 2676) (symbol 2623 . 2645) (EXPLICIT 2614 . 2622) (punctuation 2528 . 2529) (DEFAULT 2521 . 2528) (punctuation 2519 . 2520) (semantic-list 2492 . 2518) (punctuation 2491 . 2492) (OPERATOR 2483 . 2491) (punctuation 2516 . 2517) (punctuation 2481 . 2482) (symbol 2459 . 2481) (punctuation 2516 . 2517) (punctuation 2380 . 2381) (DEFAULT 2373 . 2380) (punctuation 2371 . 2372) (semantic-list 2344 . 2370) (symbol 2322 . 2344) (punctuation 2368 . 2369) (EXPLICIT 2313 . 2321) (EXPLICIT 1967 . 1975) (punctuation 1384 . 1385) (punctuation 1383 . 1384) (symbol 1366 . 1383) (punctuation 1365 . 1366) (punctuation 1364 . 1365) (symbol 1360 . 1364) (punctuation 1359 . 1360) (punctuation 1358 . 1359) (symbol 1355 . 1358) (punctuation 1354 . 1355) (punctuation 1353 . 1354) (punctuation 1352 . 1353) (symbol 1347 . 1352) (punctuation 1346 . 1347) (punctuation 1345 . 1346) (symbol 1340 . 1345) (punctuation 1339 . 1340) (punctuation 1338 . 1339) (symbol 1330 . 1338) (punctuation 1329 . 1330) (punctuation 1328 . 1329) (symbol 1325 . 1328) (punctuation 1324 . 1325) (punctuation 1323 . 1324) (symbol 1320 . 1323) (punctuation 1318 . 1319) (symbol 1304 . 1317) (USING 1298 . 1303) (punctuation 1226 . 1227) (punctuation 1225 . 1226) (semantic-list 1182 . 1225) (VOID 1178 . 1182) (punctuation 1177 . 1178) (symbol 1171 . 1177) (punctuation 1170 . 1171) (punctuation 1169 . 1170) (symbol 1164 . 1169) (punctuation 1163 . 1164) (punctuation 1162 . 1163) (symbol 1154 . 1162) (punctuation 1153 . 1154) (punctuation 1152 . 1153) (symbol 1149 . 1152) (punctuation 1148 . 1149) (punctuation 1147 . 1148) (symbol 1144 . 1147) (punctuation 1142 . 1143) (symbol 1130 . 1141) (USING 1124 . 1129))
+      :lexical-table 
+        '(("ARA_DIAG_DIAGNOSTIC_MANAGER_DIAGNOSTICMONITOR_PROXY_H_")
+          )
+)
+    (semanticdb-table "semanticdb-table-2f0c330"
+      :major-mode c++-mode
+      :tags 
+        '( ("ARA_DIAG_DIAGNOSTIC_MANAGER_DIAGNOSTICMONITOR_COMMON_H_" variable (:constant-flag t) nil [825 880])
+            ("string.h" include (:system-flag t) nil [882 901])
+            ("ara/core/array.h" include nil nil [902 929])
+            ("ara/com/types.h" include nil nil [931 957])
+            ("ara/com/exception.h" include nil nil [959 989])
+            ("ara/core/error_code.h" include nil nil [990 1022])
+            ("dem/types/impl_type_initmonitorreasontype.h" include nil nil [1023 1077])
+            ("dem/types/impl_type_monitoractiontype.h" include nil nil [1078 1128])
+            ("ara" type
+               (:members 
+                  ( ("diag" type
+                       (:members 
+                          ( ("diagnostic_manager" type
+                               (:members 
+                                  ( ("DiagnosticMonitor" type
+                                       (:members 
+                                          ( ("public" label nil (reparse-symbol classsubparts) [1220 1227])
+                                            ("service_id" variable
+                                               (:default-value "0x1763"
+                                                :type ("ara::com::internal::ServiceId" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [1247 1297])
+                                            ("service_version" variable
+                                               (:default-value "0x01000000"
+                                                :type ("ara::com::internal::ServiceVersion" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [1317 1381]))                                          
+                                        :type "class")
+                                        (reparse-symbol namespacesubparts) [1193 1384]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [1162 1387]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [1145 1421]))                  
+                :type "namespace")
+                nil [1129 1441]))          
+      :file "diagnosticmonitor_common.h"
+      :pointmax 1526
+      :fsize 1525
+      :lastmodtime '(24419 4975 13205 152000)
+      :unmatched-syntax '((symbol 1307 . 1316) (STATIC 1300 . 1306) (symbol 1237 . 1246) (STATIC 1230 . 1236))
+      :lexical-table 
+        '(("ARA_DIAG_DIAGNOSTIC_MANAGER_DIAGNOSTICMONITOR_COMMON_H_")
+          )
+))
+  :file "!home!hyuk.myeong!work!LARARA!avin!avin-ap!dm!source!inc!private!dem!service!service_proxy!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

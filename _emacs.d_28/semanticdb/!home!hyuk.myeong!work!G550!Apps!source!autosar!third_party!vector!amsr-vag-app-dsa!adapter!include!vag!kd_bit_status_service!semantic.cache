@@ -1,0 +1,44 @@
+;; Object semanticdb-project-database-file-29d3160
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-29d3160"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-29d317c"
+      :major-mode c++-mode
+      :tags 
+        '( ("DSA_ADAPTER_VAG_KD_BIT_STATUS_SERVICE_KD_BIT_STATUS_SERVICE_H__" variable (:constant-flag t) nil [81 144])
+            ("vag/kd_bit_status_service/kdbitstatus_skeleton.h" include nil nil [146 205])
+            ("vag" type
+               (:members 
+                  ( ("kd_bit_status_service" type
+                       (:members 
+                          ( ("skeleton" type
+                               (:members 
+                                  ( ("fields" type
+                                       (:members 
+                                          ( ("KDBitValue" type
+                                               (:members 
+                                                  ( ("public" label nil (reparse-symbol classsubparts) [318 325])
+                                                    ("autosar_platform::implementationdatatypes::boolean" variable (:type "int") (reparse-symbol classsubparts) [345 396]))                                                  
+                                                :type "class")
+                                                (reparse-symbol namespacesubparts) [298 399]))                                          
+                                        :type "namespace")
+                                        (reparse-symbol namespacesubparts) [278 402]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [257 424]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [223 448]))                  
+                :type "namespace")
+                nil [207 485]))          
+      :file "kd_bit_status_service.h"
+      :pointmax 578
+      :fsize 125
+      :lastmodtime '(24288 34302 28129 716000)
+      :unmatched-syntax '((punctuation 344 . 345) (punctuation 343 . 344) (punctuation 341 . 342) (symbol 334 . 340) (USING 328 . 333))
+      :lexical-table 
+        '(("DSA_ADAPTER_VAG_KD_BIT_STATUS_SERVICE_KD_BIT_STATUS_SERVICE_H__")
+          )
+))
+  :file "!home!hyuk.myeong!work!G550!Apps!source!autosar!third_party!vector!amsr-vag-app-dsa!adapter!include!vag!kd_bit_status_service!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

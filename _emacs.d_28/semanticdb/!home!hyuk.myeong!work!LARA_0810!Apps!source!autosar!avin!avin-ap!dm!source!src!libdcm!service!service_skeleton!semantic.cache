@@ -1,0 +1,141 @@
+;; Object semanticdb-project-database-file-2a73b78
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-2a73b78"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-2a73b94"
+      :major-mode c++-mode
+      :tags 
+        '( ("exception" include (:system-flag t) nil [740 760])
+            ("memory" include (:system-flag t) nil [761 778])
+            ("common/config/dm_config.h" include nil nil [780 816])
+            ("dcm/service/service_skeleton/diagnostic_status_impl.h" include nil nil [817 881])
+            ("ara/core/string.h" include nil nil [882 910])
+            ("ara/com/exception.h" include nil nil [911 941])
+            ("dcm/conversation/conversation.h" include nil nil [942 984])
+            ("dcm/conversation/conversation_manager.h" include nil nil [985 1035])
+            ("uds/session_type.h" include nil nil [1036 1065])
+            ("ara/diag/uds_transport/protocol_types.h" include nil nil [1066 1116])
+            ("uds_transport/protocol_types_priv.h" include nil nil [1117 1163])
+            ("dcm/service/registry/registry_collection.h" include nil nil [1164 1217])
+            ("ara/log/logging.h" include nil nil [1218 1246])
+            ("ara::diag::dcm::service::Registry" using (:type ("ara::diag::dcm::service::Registry" type
+                 (:prototype t
+                  :type "class")
+                  nil nil)) nil [1248 1288])
+            ("ara::diag::uds::sessiontype::SessionType" using (:type ("ara::diag::uds::sessiontype::SessionType" type
+                 (:prototype t
+                  :type "class")
+                  nil nil)) nil [1289 1336])
+            ("ara::diag::uds_transport::UdsTransportProtocol" using (:type ("ara::diag::uds_transport::UdsTransportProtocol" type
+                 (:prototype t
+                  :type "class")
+                  nil nil)) nil [1337 1390])
+            ("ara::diag::uds_transport::UdsTransportProtocolHandlerID" using (:type ("ara::diag::uds_transport::UdsTransportProtocolHandlerID" type
+                 (:prototype t
+                  :type "class")
+                  nil nil)) nil [1391 1453])
+            ("ara::diag::dcm::service::SecurityRegistry::SecurityLevelType" variable (:type "int") nil [1480 1541])
+            ("ara" type
+               (:members 
+                  ( ("diag" type
+                       (:members 
+                          ( ("dcm" type
+                               (:members 
+                                  ( ("service" type
+                                       (:members 
+                                          ( ("DiagnosticStatusImpl" function
+                                               (:constructor-flag t
+                                                :parent "DiagnosticStatusImpl"
+                                                :arguments 
+                                                  ( ("instance_id" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("ara::com::InstanceIdentifier" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [1655 1703])
+                                                    ("conversationManager" variable
+                                                       (:pointer 1
+                                                        :type ("ara::diag::dcm::conversation::ConversationManager" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [1708 1779]))                                                  
+                                                :type ("DiagnosticStatusImpl" type (:type "class") nil nil))
+                                                (reparse-symbol namespacesubparts) [1612 2779])
+                                            ("DiagnosticStatusImpl" function
+                                               (:destructor-flag t
+                                                :parent "DiagnosticStatusImpl"
+                                                :type "void")
+                                                (reparse-symbol namespacesubparts) [2781 3050])
+                                            ("ConvertSession" function
+                                               (:methodconst-flag t
+                                                :parent "DiagnosticStatusImpl"
+                                                :arguments 
+                                                  ( ("session" variable
+                                                       (:constant-flag t
+                                                        :type ("ara::diag::uds::sessiontype::SessionType" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [3116 3171]))                                                  
+                                                :type ("DiagnosticSessionType" type (:type "class") nil nil))
+                                                (reparse-symbol namespacesubparts) [3052 3263])
+                                            ("ConvertSecurityLevel" function
+                                               (:methodconst-flag t
+                                                :parent "DiagnosticStatusImpl"
+                                                :arguments 
+                                                  ( ("securityLevel" variable
+                                                       (:constant-flag t
+                                                        :type ("ara::core::Optional" type
+                                                             (:template-specifier 
+                                                                ( ("SecurityLevelType" type nil nil nil))                                                                
+                                                              :type "class")
+                                                              nil nil))
+                                                        (reparse-symbol arg-sub-list) [3341 3400]))                                                  
+                                                :type ("DiagnosticSecurityLevelType" type (:type "class") nil nil))
+                                                (reparse-symbol namespacesubparts) [3265 3515])
+                                            ("Convert" function
+                                               (:arguments 
+                                                  ( ("protocol_id" variable
+                                                       (:constant-flag t
+                                                        :type ("UdsTransportProtocolHandlerID" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [3552 3600]))                                                  
+                                                :type ("DiagnosticProtocolKindType" type (:type "class") nil nil))
+                                                (reparse-symbol namespacesubparts) [3517 3951])
+                                            ("GetActiveProtocols" function
+                                               (:methodconst-flag t
+                                                :parent "DiagnosticStatusImpl"
+                                                :type ("DiagnosticConversationStatusType" type (:type "class") nil nil))
+                                                (reparse-symbol namespacesubparts) [3953 4915])
+                                            ("GetActiveIdentifier" function
+                                               (:methodconst-flag t
+                                                :parent "DiagnosticStatusImpl"
+                                                :type ("DiagnosticConversationIdentifierType" type (:type "class") nil nil))
+                                                (reparse-symbol namespacesubparts) [4917 6151])
+                                            ("Notify" function
+                                               (:parent "DiagnosticStatusImpl"
+                                                :type "void")
+                                                (reparse-symbol namespacesubparts) [6153 6332])
+                                            ("NotifyIndentifier" function
+                                               (:parent "DiagnosticStatusImpl"
+                                                :type "void")
+                                                (reparse-symbol namespacesubparts) [6334 6439])
+                                            ("decltype" function
+                                               (:arguments 
+                                                  ( ("" variable (:type ("Skeleton::Cancel" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6512 6540]))                                                  
+                                                :type "int")
+                                                (reparse-symbol namespacesubparts) [6503 6891])
+                                            ("InitializeFields" function
+                                               (:parent "DiagnosticStatusImpl"
+                                                :type "void")
+                                                (reparse-symbol namespacesubparts) [6893 7236]))                                          
+                                        :type "namespace")
+                                        (reparse-symbol namespacesubparts) [1592 7239]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [1576 7262]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [1559 7281]))                  
+                :type "namespace")
+                nil [1543 7301]))          
+      :file "diagnostic_status_impl.cpp"
+      :pointmax 7319
+      :fsize 7505
+      :lastmodtime '(24382 10644 475207 484000)
+      :unmatched-syntax nil))
+  :file "!home!hyuk.myeong!work!LARA_0810!Apps!source!autosar!avin!avin-ap!dm!source!src!libdcm!service!service_skeleton!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

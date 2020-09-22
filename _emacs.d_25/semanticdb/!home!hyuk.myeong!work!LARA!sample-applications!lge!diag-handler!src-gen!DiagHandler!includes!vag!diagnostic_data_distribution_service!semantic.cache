@@ -1,0 +1,170 @@
+;; Object semanticdb-project-database-file-25490b8
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-25490b8"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-25490d4"
+      :major-mode c++-mode
+      :tags 
+        '( ("DIAGHANDLER_INCLUDES_VAG_DIAGNOSTIC_DATA_DISTRIBUTION_SERVICE_DDDSINTERFACE_PROXY_H_" variable (:constant-flag t) nil [1100 1184])
+            ("ara/com/internal/proxy/ara_proxy_base.h" include nil nil [1186 1236])
+            ("dddsinterface_common.h" include nil nil [1237 1270])
+            ("vag" type
+               (:members 
+                  ( ("diagnostic_data_distribution_service" type
+                       (:members 
+                          ( ("proxy" type
+                               (:members 
+                                  ( ("methods" type (:type "namespace") (reparse-symbol namespacesubparts) [1355 1889])
+                                    ("events" type (:type "namespace") (reparse-symbol namespacesubparts) [1913 2019])
+                                    ("DDDSinterfaceProxyBase" type
+                                       (:superclasses 
+                                          ( ("ara::com::internal::proxy::ProxyBindingBase" type
+                                               (:protection "public"
+                                                :type "class")
+                                                nil nil)
+                                            ("vag::diagnostic_data_distribution_service::DDDSinterface" type
+                                               (:protection "public"
+                                                :type "class")
+                                                nil nil))                                          
+                                        :members 
+                                          ( ("public" label nil (reparse-symbol classsubparts) [2191 2198])
+                                            ("GetGetDiagnosticDataValues" function
+                                               (:pure-virtual-flag t
+                                                :prototype-flag t
+                                                :typemodifiers ("virtual")
+                                                :type ("methods::GetDiagnosticDataValues" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [2201 2276])
+                                            ("GetgetDiagnosticData" function
+                                               (:pure-virtual-flag t
+                                                :prototype-flag t
+                                                :typemodifiers ("virtual")
+                                                :type ("methods::getDiagnosticData" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [2279 2342])
+                                            ("GetdataValuesHash" function
+                                               (:pure-virtual-flag t
+                                                :prototype-flag t
+                                                :typemodifiers ("virtual")
+                                                :type ("events::dataValuesHash" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [2345 2401]))                                          
+                                        :type "class")
+                                        (reparse-symbol namespacesubparts) [2041 2404])
+                                    ("DDDSinterfaceProxy" type
+                                       (:superclasses 
+                                          ( ("ara::com::internal::proxy::ProxyBase" type
+                                               (:protection "public"
+                                                :type "class")
+                                                nil nil)
+                                            ("vag::diagnostic_data_distribution_service::DDDSinterface" type
+                                               (:protection "public"
+                                                :type "class")
+                                                nil nil))                                          
+                                        :members 
+                                          ( ("private" label nil (reparse-symbol classsubparts) [2569 2577])
+                                            ("public" label nil (reparse-symbol classsubparts) [2579 2586])
+                                            ("DDDSinterfaceProxy" function
+                                               (:constructor-flag t
+                                                :arguments 
+                                                  ( ("proxy_base_factory" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("HandleType" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [2617 2654]))                                                  
+                                                :type ("DDDSinterfaceProxy" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [2598 2933])
+                                            ("GetDiagnosticDataValues" variable (:type ("methods::GetDiagnosticDataValues" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3399 3457])
+                                            ("getDiagnosticData" variable (:type ("methods::getDiagnosticData" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3460 3506])
+                                            ("dataValuesHash" variable (:type ("events::dataValuesHash" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3509 3548]))                                          
+                                        :type "class")
+                                        (reparse-symbol namespacesubparts) [2406 3551]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [1336 3553]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [1287 3575]))                  
+                :type "namespace")
+                nil [1271 3627]))          
+      :file "dddsinterface_proxy.h"
+      :pointmax 3742
+      :fsize 3741
+      :lastmodtime '(24415 860 628785 431000)
+      :unmatched-syntax '((punctuation 3394 . 3395) (DELETE 3388 . 3394) (punctuation 3386 . 3387) (semantic-list 3358 . 3385) (punctuation 3357 . 3358) (OPERATOR 3349 . 3357) (punctuation 3347 . 3348) (symbol 3329 . 3347) (punctuation 3275 . 3276) (DELETE 3269 . 3275) (punctuation 3267 . 3268) (semantic-list 3239 . 3266) (symbol 3221 . 3239) (EXPLICIT 3212 . 3220) (punctuation 3155 . 3156) (DEFAULT 3148 . 3155) (punctuation 3146 . 3147) (semantic-list 3123 . 3145) (punctuation 3122 . 3123) (OPERATOR 3114 . 3122) (punctuation 3143 . 3144) (punctuation 3112 . 3113) (symbol 3094 . 3112) (punctuation 3143 . 3144) (punctuation 3044 . 3045) (DEFAULT 3037 . 3044) (punctuation 3035 . 3036) (semantic-list 3012 . 3034) (symbol 2994 . 3012) (punctuation 3032 . 3033) (EXPLICIT 2985 . 2993) (EXPLICIT 2589 . 2597) (punctuation 2016 . 2017) (punctuation 2015 . 2016) (symbol 2005 . 2015) (punctuation 2004 . 2005) (punctuation 2003 . 2004) (symbol 2000 . 2003) (punctuation 1999 . 2000) (punctuation 1998 . 1999) (symbol 1992 . 1998) (punctuation 1991 . 1992) (punctuation 1990 . 1991) (punctuation 1989 . 1990) (symbol 1984 . 1989) (punctuation 1983 . 1984) (punctuation 1982 . 1983) (symbol 1977 . 1982) (punctuation 1976 . 1977) (punctuation 1975 . 1976) (symbol 1967 . 1975) (punctuation 1966 . 1967) (punctuation 1965 . 1966) (symbol 1962 . 1965) (punctuation 1961 . 1962) (punctuation 1960 . 1961) (symbol 1957 . 1960) (punctuation 1955 . 1956) (symbol 1940 . 1954) (USING 1934 . 1939) (punctuation 1886 . 1887) (punctuation 1885 . 1886) (semantic-list 1764 . 1885) (symbol 1741 . 1764) (punctuation 1832 . 1833) (punctuation 1831 . 1832) (CONST 1825 . 1830) (punctuation 1772 . 1773) (punctuation 1771 . 1772) (CONST 1765 . 1770) (punctuation 1740 . 1741) (punctuation 1739 . 1740) (symbol 1726 . 1739) (punctuation 1832 . 1833) (punctuation 1831 . 1832) (CONST 1825 . 1830) (punctuation 1772 . 1773) (punctuation 1771 . 1772) (CONST 1765 . 1770) (punctuation 1725 . 1726) (punctuation 1724 . 1725) (symbol 1688 . 1724) (punctuation 1832 . 1833) (punctuation 1831 . 1832) (CONST 1825 . 1830) (punctuation 1772 . 1773) (punctuation 1771 . 1772) (CONST 1765 . 1770) (punctuation 1687 . 1688) (punctuation 1686 . 1687) (symbol 1683 . 1686) (punctuation 1832 . 1833) (punctuation 1831 . 1832) (CONST 1825 . 1830) (punctuation 1772 . 1773) (punctuation 1771 . 1772) (CONST 1765 . 1770) (punctuation 1682 . 1683) (symbol 1676 . 1682) (punctuation 1675 . 1676) (punctuation 1674 . 1675) (symbol 1669 . 1674) (punctuation 1668 . 1669) (punctuation 1667 . 1668) (symbol 1659 . 1667) (punctuation 1658 . 1659) (punctuation 1657 . 1658) (symbol 1654 . 1657) (punctuation 1653 . 1654) (punctuation 1652 . 1653) (symbol 1649 . 1652) (punctuation 1647 . 1648) (symbol 1629 . 1646) (USING 1623 . 1628) (punctuation 1619 . 1620) (punctuation 1618 . 1619) (semantic-list 1530 . 1618) (symbol 1501 . 1530) (punctuation 1598 . 1599) (punctuation 1597 . 1598) (CONST 1591 . 1596) (punctuation 1538 . 1539) (punctuation 1537 . 1538) (CONST 1531 . 1536) (punctuation 1500 . 1501) (punctuation 1499 . 1500) (symbol 1486 . 1499) (punctuation 1598 . 1599) (punctuation 1597 . 1598) (CONST 1591 . 1596) (punctuation 1538 . 1539) (punctuation 1537 . 1538) (CONST 1531 . 1536) (punctuation 1485 . 1486) (punctuation 1484 . 1485) (symbol 1448 . 1484) (punctuation 1598 . 1599) (punctuation 1597 . 1598) (CONST 1591 . 1596) (punctuation 1538 . 1539) (punctuation 1537 . 1538) (CONST 1531 . 1536) (punctuation 1447 . 1448) (punctuation 1446 . 1447) (symbol 1443 . 1446) (punctuation 1598 . 1599) (punctuation 1597 . 1598) (CONST 1591 . 1596) (punctuation 1538 . 1539) (punctuation 1537 . 1538) (CONST 1531 . 1536) (punctuation 1442 . 1443) (symbol 1436 . 1442) (punctuation 1435 . 1436) (punctuation 1434 . 1435) (symbol 1429 . 1434) (punctuation 1428 . 1429) (punctuation 1427 . 1428) (symbol 1419 . 1427) (punctuation 1418 . 1419) (punctuation 1417 . 1418) (symbol 1414 . 1417) (punctuation 1413 . 1414) (punctuation 1412 . 1413) (symbol 1409 . 1412) (punctuation 1407 . 1408) (symbol 1383 . 1406) (USING 1377 . 1382))
+      :lexical-table 
+        '(("DIAGHANDLER_INCLUDES_VAG_DIAGNOSTIC_DATA_DISTRIBUTION_SERVICE_DDDSINTERFACE_PROXY_H_")
+          )
+)
+    (semanticdb-table "semanticdb-table-1c59060"
+      :major-mode c++-mode
+      :tags 
+        '( ("DIAGHANDLER_INCLUDES_VAG_DIAGNOSTIC_DATA_DISTRIBUTION_SERVICE_DDDSINTERFACE_COMMON_H_" variable (:constant-flag t) nil [1103 1188])
+            ("string.h" include (:system-flag t) nil [1190 1209])
+            ("ara/core/array.h" include nil nil [1210 1237])
+            ("ara/com/types.h" include nil nil [1239 1265])
+            ("ara/com/exception.h" include nil nil [1267 1297])
+            ("ara/core/error_code.h" include nil nil [1298 1330])
+            ("vector/dsa/impl_type_diagnosticvaluesresulttype.h" include nil nil [1332 1392])
+            ("autosar_platform/implementationdatatypes/impl_type_uint32.h" include nil nil [1393 1463])
+            ("vector/dsa/impl_type_ids.h" include nil nil [1464 1501])
+            ("vector/dsa/impl_type_hashvalues.h" include nil nil [1502 1546])
+            ("vag" type
+               (:members 
+                  ( ("diagnostic_data_distribution_service" type
+                       (:members 
+                          ( ("DDDSinterface" type
+                               (:members 
+                                  ( ("public" label nil (reparse-symbol classsubparts) [1638 1645])
+                                    ("service_id" variable
+                                       (:default-value "0xdb00"
+                                        :type ("ara::com::internal::ServiceId" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [1665 1715])
+                                    ("service_version" variable
+                                       (:default-value "0x01000000"
+                                        :type ("ara::com::internal::ServiceVersion" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [1735 1799])
+                                    ("GetDiagnosticDataValuesOutput" type
+                                       (:members 
+                                          ( ("dataValuesResult" variable (:type ("vector::dsa::DiagnosticValuesResultType" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1852 1909])
+                                            ("enumerate" function
+                                               (:template 
+                                                  ( ("F" type (:type "class") nil nil))                                                  
+                                                :type "void"
+                                                :arguments 
+                                                  ( ("fun" variable
+                                                       (:reference 1
+                                                        :type ("F" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [1991 1998]))                                                  )
+                                                (reparse-symbol classsubparts) [1951 2035]))                                          
+                                        :type "struct")
+                                        (reparse-symbol classsubparts) [1805 2040])
+                                    ("getDiagnosticDataOutput" type
+                                       (:members 
+                                          ( ("dataValuesResult" variable (:type ("vector::dsa::DiagnosticValuesResultType" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2087 2144])
+                                            ("enumerate" function
+                                               (:template 
+                                                  ( ("F" type (:type "class") nil nil))                                                  
+                                                :type "void"
+                                                :arguments 
+                                                  ( ("fun" variable
+                                                       (:reference 1
+                                                        :type ("F" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [2226 2233]))                                                  )
+                                                (reparse-symbol classsubparts) [2186 2270]))                                          
+                                        :type "struct")
+                                        (reparse-symbol classsubparts) [2046 2275]))                                  
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [1614 2278]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [1564 2281]))                  
+                :type "namespace")
+                nil [1548 2333]))          
+      :file "dddsinterface_common.h"
+      :pointmax 2449
+      :fsize 2448
+      :lastmodtime '(24415 860 628785 431000)
+      :unmatched-syntax '((punctuation 2180 . 2181) (VOID 2176 . 2180) (punctuation 2174 . 2175) (symbol 2158 . 2173) (USING 2152 . 2157) (punctuation 2086 . 2087) (punctuation 2085 . 2086) (punctuation 2180 . 2181) (VOID 2176 . 2180) (punctuation 2174 . 2175) (symbol 2158 . 2173) (USING 2152 . 2157) (punctuation 2086 . 2087) (punctuation 2085 . 2086) (punctuation 1945 . 1946) (VOID 1941 . 1945) (punctuation 1939 . 1940) (symbol 1923 . 1938) (USING 1917 . 1922) (punctuation 1851 . 1852) (punctuation 1850 . 1851) (punctuation 1945 . 1946) (VOID 1941 . 1945) (punctuation 1939 . 1940) (symbol 1923 . 1938) (USING 1917 . 1922) (punctuation 1851 . 1852) (punctuation 1850 . 1851) (symbol 1725 . 1734) (STATIC 1718 . 1724) (symbol 1655 . 1664) (STATIC 1648 . 1654))
+      :lexical-table 
+        '(("DIAGHANDLER_INCLUDES_VAG_DIAGNOSTIC_DATA_DISTRIBUTION_SERVICE_DDDSINTERFACE_COMMON_H_")
+          )
+))
+  :file "!home!hyuk.myeong!work!LARA!sample-applications!lge!diag-handler!src-gen!DiagHandler!includes!vag!diagnostic_data_distribution_service!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

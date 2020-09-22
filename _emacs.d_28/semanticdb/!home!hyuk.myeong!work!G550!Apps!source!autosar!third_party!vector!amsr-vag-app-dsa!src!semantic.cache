@@ -1,0 +1,355 @@
+;; Object semanticdb-project-database-file-ed0658
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-ed0658"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-ed0598"
+      :major-mode c++-mode
+      :tags 
+        '( ("atomic" include (:system-flag t) nil [1354 1371])
+            ("csignal" include (:system-flag t) nil [1372 1390])
+            ("iostream" include (:system-flag t) nil [1391 1410])
+            ("application/diagnostic_service_application.h" include nil nil [1412 1467])
+            ("ara/exec/application_client.hpp" include nil nil [1468 1510])
+            ("ara/log/logging.h" include nil nil [1511 1539])
+            ("vac/memory/three_phase_allocator.h" include nil nil [1566 1611])
+            ("vac::memory::AllocationPhaseManager" variable (:type "int") nil [1730 1766])
+            ("ara::exec::ApplicationClient" variable (:type "int") nil [1800 1829])
+            ("ara::exec::ApplicationState" variable (:type "int") nil [1892 1920])
+            ("TerminateDsa" function (:type "void") nil [2071 2172])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [3376 3385])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [3386 3399]))                  
+                :type "int")
+                nil [3367 5282]))          
+      :file "main.cpp"
+      :pointmax 5283
+      :fsize 5282
+      :lastmodtime '(24287 16923 686960 691000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-ed05b8"
+      :major-mode c++-mode
+      :tags 
+        '( ("SRC_DIAGNOSTIC_SERVICE_CONSTANTS_H_" variable (:constant-flag t) nil [1217 1252])
+            ("diagnostic_data/diagnostic_service_datatypes.h" include nil nil [1508 1565])
+            ("string" include (:system-flag t) nil [1567 1584])
+            ("vac/container/c_string_view.h" include nil nil [1586 1626])
+            ("vector" type
+               (:members 
+                  ( ("diagnostic_service" type
+                       (:members 
+                          ( ("_sv" variable (:type "int") (reparse-symbol namespacesubparts) [1796 1800])
+                            ("kUcmMethodCallTimoutSec" variable
+                               (:default-value "1000"
+                                :type ("std::uint32_t" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [1879 1924])
+                            ("kCheckMemorySignatureLastIdx" variable
+                               (:default-value "383"
+                                :type ("std::uint32_t" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [2001 2050])
+                            ("kCheckMemoryChecksumFirstIdx" variable
+                               (:default-value "384"
+                                :type ("std::uint32_t" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [2127 2176])
+                            ("kCryptoWriteableBytesCount" variable
+                               (:default-value "32"
+                                :type ("std::uint32_t" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [2291 2337])
+                            ("kDataBasePath" variable
+                               (:typemodifiers ("static")
+                                :default-value "std::string(PERSISTENCY_DIDS_DIR)"
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [2437 2506])
+                            ("kFingerPrintIdentifier" variable
+                               (:default-value "0xF15A0001"
+                                :type ("std::uint32_t" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [2577 2627])
+                            ("_sv" variable (:type "int") (reparse-symbol namespacesubparts) [2788 2792])
+                            ("DiagErr" type
+                               (:superclasses 
+                                  ( ("std::uint32_t" type
+                                       (:protection "unspecified"
+                                        :type "class")
+                                        nil nil))                                  
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [2838 3045])
+                            ("kDatasetStatusValid" variable
+                               (:default-value "0x1"
+                                :type ("constexpr" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [3169 3205])
+                            ("kDatasetStatusPlausible" variable
+                               (:default-value "0x2"
+                                :type ("constexpr" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [3333 3373])
+                            ("kDatasetStatusPrescribed" variable
+                               (:default-value "0x4"
+                                :type ("constexpr" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [3510 3551])
+                            ("kDataSetNameLength" variable
+                               (:default-value "12"
+                                :type ("std::uint64_t" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [3688 3726]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [1722 3729]))                  
+                :type "namespace")
+                nil [1703 3764]))          
+      :file "diagnostic_service_constants.h"
+      :pointmax 3834
+      :fsize 3833
+      :lastmodtime '(24287 13634 354717 131000)
+      :unmatched-syntax '((symbol 3678 . 3687) (STATIC 3671 . 3677) (symbol 3502 . 3509) (punctuation 3501 . 3502) (punctuation 3500 . 3501) (symbol 3497 . 3500) (STATIC 3490 . 3496) (symbol 3325 . 3332) (punctuation 3324 . 3325) (punctuation 3323 . 3324) (symbol 3320 . 3323) (STATIC 3313 . 3319) (symbol 3161 . 3168) (punctuation 3160 . 3161) (punctuation 3159 . 3160) (symbol 3156 . 3159) (STATIC 3149 . 3155) (punctuation 3002 . 3003) (symbol 2975 . 3002) (punctuation 2936 . 2937) (symbol 2923 . 2936) (punctuation 2875 . 2876) (symbol 2872 . 2875) (ENUM 2833 . 2837) (string 2749 . 2788) (punctuation 2747 . 2748) (symbol 2728 . 2746) (symbol 2716 . 2727) (punctuation 2715 . 2716) (punctuation 2714 . 2715) (symbol 2705 . 2714) (punctuation 2704 . 2705) (punctuation 2703 . 2704) (symbol 2700 . 2703) (symbol 2690 . 2699) (STATIC 2683 . 2689) (symbol 2567 . 2576) (STATIC 2560 . 2566) (symbol 2281 . 2290) (STATIC 2274 . 2280) (symbol 2117 . 2126) (STATIC 2110 . 2116) (symbol 1991 . 2000) (STATIC 1984 . 1990) (symbol 1869 . 1878) (STATIC 1862 . 1868) (string 1794 . 1796) (OPERATOR 1786 . 1794) (punctuation 1785 . 1786) (punctuation 1784 . 1785) (symbol 1776 . 1784) (punctuation 1775 . 1776) (punctuation 1774 . 1775) (symbol 1765 . 1774) (punctuation 1764 . 1765) (punctuation 1763 . 1764) (symbol 1760 . 1763) (USING 1754 . 1759))
+      :lexical-table 
+        '(("SRC_DIAGNOSTIC_SERVICE_CONSTANTS_H_")
+          )
+)
+    (semanticdb-table "semanticdb-table-ed05d8"
+      :major-mode c++-mode
+      :tags 
+        '( ("atomic" include (:system-flag t) nil [1 18])
+            ("Cmn/Thread.h" include nil nil [20 43])
+            ("Cmn/CReceiver.h" include nil nil [44 70])
+            ("Cmn/Utils/CSharedMemory.h" include nil nil [71 107])
+            ("Cmn/GlobalHeader.h" include nil nil [108 137])
+            ("Cmn/core/CGlobalData.h" include nil nil [138 171])
+            ("ara/log/logging.hpp" include nil nil [173 203])
+            ("vac/language/cpp14_backport.h" include nil nil [205 245])
+            ("../../middleware/Src/Inc/CmnCmd.h" include nil nil [247 291])
+            ("../../middleware/Src/Inc/MgrVCICmd.h" include nil nil [292 339])
+            ("base" using (:type ("base" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [341 362])
+            ("DsaReceiver" type
+               (:superclasses 
+                  ( ("CReceiver" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [412 419])
+                    ("DsaReceiver" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("bMqEnable" variable
+                               (:constant-flag t
+                                :type "bool")
+                                (reparse-symbol arg-sub-list) [440 461]))                          
+                        :type ("DsaReceiver" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [428 462])
+                    ("DsaReceiver" function
+                       (:prototype-flag t
+                        :destructor-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [471 494])
+                    ("DoProcess" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [504 521])
+                    ("DispatchMessage" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("code" variable
+                               (:constant-flag t
+                                :type ("ProcId" type (:type "enum") nil nil))
+                                (reparse-symbol arg-sub-list) [551 574])
+                            ("cmd" variable
+                               (:constant-flag t
+                                :type ("int16_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [575 593])
+                            ("value" variable
+                               (:constant-flag t
+                                :default-value "0"
+                                :type ("int16_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [594 617])
+                            ("bIsMessageQueue" variable
+                               (:constant-flag t
+                                :default-value "false"
+                                :type "bool")
+                                (reparse-symbol arg-sub-list) [627 661])
+                            ("size" variable
+                               (:constant-flag t
+                                :default-value "0"
+                                :type ("size_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [663 684]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [530 686])
+                    ("protected" label nil (reparse-symbol classsubparts) [691 701]))                  
+                :type "class")
+                nil [364 705])
+            ("DsaThread" type
+               (:superclasses 
+                  ( ("Thread" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [750 757])
+                    ("DsaThread" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :type ("DsaThread" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [766 778])
+                    ("DsaThread" function
+                       (:prototype-flag t
+                        :destructor-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [787 808])
+                    ("Run" function
+                       (:prototype-flag t
+                        :type ("int32_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [818 832])
+                    ("dsa_receiver_" variable (:type ("std::unique_ptr" type
+                         (:template-specifier 
+                            ( ("DsaReceiver" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [853 896])
+                    ("protected" label nil (reparse-symbol classsubparts) [902 912])
+                    ("private" label nil (reparse-symbol classsubparts) [918 926])
+                    ("exit_requested_" variable (:type ("std::atomic_bool" type (:type "class") nil nil)) (reparse-symbol classsubparts) [935 968]))                  
+                :type "class")
+                nil [707 971]))          
+      :file "dsa_cmnbase.h"
+      :pointmax 974
+      :fsize 1024
+      :lastmodtime '(24287 13634 354717 131000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-ed05f8"
+      :major-mode c++-mode
+      :tags 
+        '( ("RoutineStatusReport.h" include nil nil [1401 1433])
+            ("ara/log/logging.h" include nil nil [1434 1462])
+            ("Cmn/CReceiver.h" include nil nil [1499 1525])
+            ("Cmn/Utils/CSender.h" include nil nil [1526 1556])
+            ("Cmn/Utils/CSharedMemory.h" include nil nil [1557 1593])
+            ("Cmn/GlobalHeader.h" include nil nil [1594 1623])
+            ("Cmn/core/CGlobalData.h" include nil nil [1645 1678])
+            ("DSA_ROUTINE_SID" variable (:constant-flag t) nil [1688 1703])
+            ("DSA_LGRELAY_HEADER_LENGTH" variable (:constant-flag t) nil [1751 1776])
+            ("DSA_LENGTH_RID_FLAG" variable (:constant-flag t) nil [1817 1836])
+            ("ReportRoutineStatus" function
+               (:arguments 
+                  ( ("rid" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1903 1916])
+                    ("bRunning" variable (:type "bool") (reparse-symbol arg-sub-list) [1917 1931]))                  
+                :type "void")
+                nil [1878 2534]))          
+      :file "RoutineStatusReport.cpp"
+      :pointmax 2535
+      :fsize 2534
+      :lastmodtime '(24287 13634 354717 131000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("DSA_LENGTH_RID_FLAG" . ((semantic-list "(0x05)" 1837 . 1843)))
+          ("DSA_ROUTINE_SID" . ((semantic-list "(0xDD)" 1708 . 1714)))
+          ("DSA_LGRELAY_HEADER_LENGTH" . ((semantic-list "(0x03)" 1777 . 1783)))
+          )
+)
+    (semanticdb-table "semanticdb-table-ed0618"
+      :major-mode c++-mode
+      :tags 
+        '( ("SRC_ROUTINESTATUSREPORT_H_" variable (:constant-flag t) nil [1328 1354])
+            ("cstdint" include (:system-flag t) nil [1356 1374])
+            ("Cmn/CReceiver.h" include nil nil [1411 1437])
+            ("Cmn/Utils/CSharedMemory.h" include nil nil [1438 1474])
+            ("Cmn/GlobalHeader.h" include nil nil [1475 1504])
+            ("Cmn/core/CGlobalData.h" include nil nil [1526 1559])
+            ("base" using (:type ("base" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [1561 1582])
+            ("ReportRoutineStatus" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("rid" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1939 1952])
+                    ("bRunning" variable (:type "bool") (reparse-symbol arg-sub-list) [1953 1967]))                  
+                :type "void")
+                nil [1907 1968]))          
+      :file "RoutineStatusReport.h"
+      :pointmax 2010
+      :fsize 2009
+      :lastmodtime '(24287 13634 354717 131000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("SRC_ROUTINESTATUSREPORT_H_")
+          )
+)
+    (semanticdb-table "semanticdb-table-ed0638"
+      :major-mode c++-mode
+      :tags 
+        '( ("dsa_cmnbase.h" include nil nil [1 25])
+            ("DsaReceiver" function
+               (:constructor-flag t
+                :parent "DsaReceiver"
+                :arguments 
+                  ( ("bMqEnable" variable
+                       (:constant-flag t
+                        :type "bool")
+                        (reparse-symbol arg-sub-list) [122 143]))                  
+                :type ("DsaReceiver" type (:type "class") nil nil))
+                nil [97 231])
+            ("DsaReceiver" function
+               (:destructor-flag t
+                :parent "DsaReceiver"
+                :type "void")
+                nil [233 320])
+            ("DoProcess" function
+               (:parent "DsaReceiver"
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [350 355]))                  
+                :type "void")
+                nil [322 659])
+            ("DispatchMessage" function
+               (:parent "DsaReceiver"
+                :arguments 
+                  ( ("eProcId" variable
+                       (:constant-flag t
+                        :type ("ProcId" type (:type "enum") nil nil))
+                        (reparse-symbol arg-sub-list) [695 721])
+                    ("cmd" variable
+                       (:constant-flag t
+                        :type ("int16_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [722 740])
+                    ("value" variable
+                       (:constant-flag t
+                        :type ("int16_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [749 769])
+                    ("bIsMessageQueue" variable
+                       (:constant-flag t
+                        :type "bool")
+                        (reparse-symbol arg-sub-list) [770 797])
+                    ("size" variable
+                       (:constant-flag t
+                        :type ("size_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [798 816]))                  
+                :type "void")
+                nil [661 2320])
+            ("DsaThread" function
+               (:constructor-flag t
+                :parent "DsaThread"
+                :type ("DsaThread" type (:type "class") nil nil))
+                nil [2340 2580])
+            ("DsaThread" function
+               (:destructor-flag t
+                :parent "DsaThread"
+                :type "void")
+                nil [2582 2679])
+            ("Run" function
+               (:parent "DsaThread"
+                :type ("int32_t" type (:type "class") nil nil))
+                nil [2681 2915]))          
+      :file "dsa_cmnbase.cpp"
+      :pointmax 2917
+      :fsize 3042
+      :lastmodtime '(24287 13634 354717 131000)
+      :unmatched-syntax nil))
+  :file "!home!hyuk.myeong!work!G550!Apps!source!autosar!third_party!vector!amsr-vag-app-dsa!src!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,109 @@
+;; Object semanticdb-project-database-file-2208674
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-2208674"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-21ecc48"
+      :major-mode c++-mode
+      :tags 
+        '( ("AMSR_VAG_APP_DSA_INCLUDES_VAG_KD_BIT_STATUS_SERVICE_KDBITSTATUS_COMMON_H_" variable (:constant-flag t) nil [1084 1157])
+            ("string.h" include (:system-flag t) nil [1159 1178])
+            ("ara/core/array.h" include nil nil [1179 1206])
+            ("ara/com/types.h" include nil nil [1208 1234])
+            ("ara/com/exception.h" include nil nil [1236 1266])
+            ("ara/core/error_code.h" include nil nil [1267 1299])
+            ("autosar_platform/implementationdatatypes/impl_type_boolean.h" include nil nil [1301 1372])
+            ("vag" type
+               (:members 
+                  ( ("kd_bit_status_service" type
+                       (:members 
+                          ( ("KdBitStatus" type
+                               (:members 
+                                  ( ("public" label nil (reparse-symbol classsubparts) [1447 1454])
+                                    ("service_id" variable
+                                       (:default-value "0xfe46"
+                                        :type ("ara::com::internal::ServiceId" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [1474 1524])
+                                    ("service_version" variable
+                                       (:default-value "0x01000000"
+                                        :type ("ara::com::internal::ServiceVersion" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [1544 1608]))                                  
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [1425 1611]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [1390 1614]))                  
+                :type "namespace")
+                nil [1374 1651]))          
+      :file "kdbitstatus_common.h"
+      :pointmax 1755
+      :fsize 1799
+      :lastmodtime '(24359 48962 176672 83000)
+      :unmatched-syntax '((symbol 1534 . 1543) (STATIC 1527 . 1533) (symbol 1464 . 1473) (STATIC 1457 . 1463))
+      :lexical-table 
+        '(("AMSR_VAG_APP_DSA_INCLUDES_VAG_KD_BIT_STATUS_SERVICE_KDBITSTATUS_COMMON_H_")
+          )
+)
+    (semanticdb-table "semanticdb-table-1a66ca0"
+      :major-mode c++-mode
+      :tags 
+        '( ("AMSR_VAG_APP_DSA_INCLUDES_VAG_KD_BIT_STATUS_SERVICE_KDBITSTATUS_SKELETON_H_" variable (:constant-flag t) nil [1090 1165])
+            ("ara/com/internal/skeleton/ara_skeleton_base.h" include nil nil [1167 1223])
+            ("ara/com/illegal_state_exception.h" include nil nil [1224 1268])
+            ("kdbitstatus_common.h" include nil nil [1269 1300])
+            ("vag" type
+               (:members 
+                  ( ("kd_bit_status_service" type
+                       (:members 
+                          ( ("skeleton" type
+                               (:members 
+                                  ( ("fields" type (:type "namespace") (reparse-symbol namespacesubparts) [1374 1516])
+                                    ("KdBitStatusSkeleton" type
+                                       (:superclasses 
+                                          ( ("vag::kd_bit_status_service::KdBitStatus" type
+                                               (:protection "public"
+                                                :type "class")
+                                                nil nil)
+                                            ("ara::com::internal::skeleton::TypedServiceImplBase" type
+                                               (:protection "public"
+                                                :type "class")
+                                                nil nil))                                          
+                                        :members 
+                                          ( ("public" label nil (reparse-symbol classsubparts) [1697 1704])
+                                            ("KdBitStatusSkeleton" function
+                                               (:constructor-flag t
+                                                :arguments 
+                                                  ( ("instance_id" variable (:type ("ara::com::InstanceIdentifier" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1756 1797])
+                                                    ("mode" variable
+                                                       (:default-value "ara"
+                                                        :type ("ara::com::MethodCallProcessingMode" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [1798 1843])
+                                                    ("" variable (:type ("com::MethodCallProcessingMode::kEvent" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1845 1883]))                                                  
+                                                :type ("KdBitStatusSkeleton" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [1736 1979])
+                                            ("KdBitStatusSkeleton" function
+                                               (:destructor-flag t
+                                                :typemodifiers ("virtual")
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [1982 2042])
+                                            ("OfferService" function (:type "void") (reparse-symbol classsubparts) [2528 2835])
+                                            ("kDBitValue" variable (:type ("fields::kDBitValue" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2839 2869]))                                          
+                                        :type "class")
+                                        (reparse-symbol namespacesubparts) [1539 2872]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [1352 2874]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [1318 2899]))                  
+                :type "namespace")
+                nil [1302 2936]))          
+      :file "kdbitstatus_skeleton.h"
+      :pointmax 3042
+      :fsize 3113
+      :lastmodtime '(24359 48962 176672 83000)
+      :unmatched-syntax '((punctuation 2523 . 2524) (DELETE 2517 . 2523) (punctuation 2515 . 2516) (semantic-list 2486 . 2514) (punctuation 2485 . 2486) (OPERATOR 2477 . 2485) (punctuation 2475 . 2476) (symbol 2456 . 2475) (punctuation 2399 . 2400) (DELETE 2393 . 2399) (punctuation 2391 . 2392) (semantic-list 2362 . 2390) (symbol 2343 . 2362) (EXPLICIT 2334 . 2342) (punctuation 2274 . 2275) (DEFAULT 2267 . 2274) (punctuation 2265 . 2266) (semantic-list 2241 . 2264) (punctuation 2240 . 2241) (OPERATOR 2232 . 2240) (punctuation 2262 . 2263) (punctuation 2230 . 2231) (symbol 2211 . 2230) (punctuation 2262 . 2263) (punctuation 2158 . 2159) (DEFAULT 2151 . 2158) (punctuation 2149 . 2150) (semantic-list 2125 . 2148) (symbol 2106 . 2125) (punctuation 2146 . 2147) (EXPLICIT 2097 . 2105) (punctuation 1844 . 1845) (punctuation 1843 . 1844) (punctuation 1513 . 1514) (punctuation 1512 . 1513) (symbol 1505 . 1512) (punctuation 1504 . 1505) (punctuation 1503 . 1504) (symbol 1480 . 1503) (punctuation 1479 . 1480) (punctuation 1478 . 1479) (symbol 1462 . 1478) (punctuation 1461 . 1462) (punctuation 1460 . 1461) (punctuation 1459 . 1460) (symbol 1444 . 1459) (punctuation 1443 . 1444) (punctuation 1442 . 1443) (symbol 1434 . 1442) (punctuation 1433 . 1434) (punctuation 1432 . 1433) (symbol 1424 . 1432) (punctuation 1423 . 1424) (punctuation 1422 . 1423) (symbol 1419 . 1422) (punctuation 1418 . 1419) (punctuation 1417 . 1418) (symbol 1414 . 1417) (punctuation 1412 . 1413) (symbol 1401 . 1411) (USING 1395 . 1400))
+      :lexical-table 
+        '(("AMSR_VAG_APP_DSA_INCLUDES_VAG_KD_BIT_STATUS_SERVICE_KDBITSTATUS_SKELETON_H_")
+          )
+))
+  :file "!home!hyuk.myeong!work!LARA!Apps!source!model!avin-gen!amsr_vag_app_dsa!includes!vag!kd_bit_status_service!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

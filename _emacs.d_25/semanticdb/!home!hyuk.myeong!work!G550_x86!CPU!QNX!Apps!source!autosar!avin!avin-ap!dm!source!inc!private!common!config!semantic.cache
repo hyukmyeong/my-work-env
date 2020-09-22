@@ -1,0 +1,1898 @@
+;; Object semanticdb-project-database-file-1f9df2c
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-1f9df2c"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-1f9df38"
+      :major-mode c++-mode
+      :tags 
+        '( ("ARA_DIAG_CONFIG_DM_CONFIG_H_" variable (:constant-flag t) nil [779 807])
+            ("cstdint" include (:system-flag t) nil [809 827])
+            ("sstream" include (:system-flag t) nil [844 862])
+            ("ara/core/string.h" include (:system-flag t) nil [875 903])
+            ("ara/core/vector.h" include (:system-flag t) nil [904 932])
+            ("fstream" include (:system-flag t) nil [933 951])
+            ("unordered_map" include (:system-flag t) nil [952 976])
+            ("unordered_set" include (:system-flag t) nil [977 1001])
+            ("uds/session_type.h" include nil nil [1002 1031])
+            ("ara/log/logging.h" include nil nil [1032 1060])
+            ("common/config/access_permission_group.h" include nil nil [1061 1111])
+            ("common/config/counter_based_event_debounce_info_table.h" include nil nil [1112 1178])
+            ("common/config/data_identifier_info_table.h" include nil nil [1179 1232])
+            ("common/config/diag_conversations_table.h" include nil nil [1233 1284])
+            ("common/config/dtc_info_table.h" include nil nil [1285 1326])
+            ("common/config/dtc_props_info_table.h" include nil nil [1327 1374])
+            ("common/config/dtc_group_info_table.h" include nil nil [1375 1422])
+            ("common/config/event_memory_info_table.h" include nil nil [1423 1473])
+            ("common/config/freeze_frame_did_info_table.h" include nil nil [1474 1528])
+            ("common/config/freeze_frame_records_info.h" include nil nil [1529 1581])
+            ("common/config/operation_cycle_info.h" include nil nil [1582 1629])
+            ("common/config/routine_control_info_table.h" include nil nil [1630 1683])
+            ("common/config/service_processors_table.h" include nil nil [1684 1735])
+            ("common/config/supported_subfunctions.h" include nil nil [1736 1785])
+            ("common/config/sec_access_level_info_table.h" include nil nil [1786 1840])
+            ("common/config/time_based_event_debounce_info_table.h" include nil nil [1841 1904])
+            ("common/config/enable_condition.h" include nil nil [1905 1948])
+            ("common/config/enable_condition_group_config.h" include nil nil [1949 2005])
+            ("common/config/data_element_info_table.h" include nil nil [2006 2056])
+            ("common/config/extended_data_records_info_table.h" include nil nil [2057 2116])
+            ("common/config/did_set_info_table.h" include nil nil [2117 2162])
+            ("rapidjson/document.h" include nil nil [2163 2194])
+            ("rapidjson/filereadstream.h" include nil nil [2195 2232])
+            ("rapidjson/stringbuffer.h" include nil nil [2233 2268])
+            ("common/data_element_types.h" include nil nil [2269 2307])
+            ("dcm/types/dcm_type_interfacetype.h" include nil nil [2308 2353])
+            ("uds/uds_error_code.h" include nil nil [2354 2385])
+            ("ara" type
+               (:members 
+                  ( ("diag" type
+                       (:members 
+                          ( ("config" type
+                               (:members 
+                                  ( ("unnamed" type
+                                       (:members 
+                                          ( ("ara::diag::uds::sessiontype::SessionType" using (:type ("ara::diag::uds::sessiontype::SessionType" type
+                                                 (:prototype t
+                                                  :type "class")
+                                                  nil nil)) (reparse-symbol namespacesubparts) [2451 2498])
+                                            ("kExternalElementStartId" function
+                                               (:prototype-flag t
+                                                :type ("std::uint32_t" type (:type "class") nil nil))
+                                                (reparse-symbol namespacesubparts) [2516 2559])
+                                            ("kInvalidRefFourByte" function
+                                               (:prototype-flag t
+                                                :arguments 
+                                                  ( ("" variable (:type ("0xFFFFFFFFU" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2611 2623]))                                                  
+                                                :type ("std::uint32_t" type (:type "class") nil nil))
+                                                (reparse-symbol namespacesubparts) [2577 2624])
+                                            ("kInvalidRefTwoByte" function
+                                               (:prototype-flag t
+                                                :arguments 
+                                                  ( ("" variable (:type ("0xFFFFU" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2675 2683]))                                                  
+                                                :type ("std::uint16_t" type (:type "class") nil nil))
+                                                (reparse-symbol namespacesubparts) [2642 2684])
+                                            ("kInvalidRefOneByte" function
+                                               (:prototype-flag t
+                                                :arguments 
+                                                  ( ("" variable (:type ("0xFFU" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2734 2740]))                                                  
+                                                :type ("std::uint8_t" type (:type "class") nil nil))
+                                                (reparse-symbol namespacesubparts) [2702 2741])
+                                            ("kNotConfigured" function
+                                               (:prototype-flag t
+                                                :arguments 
+                                                  ( ("" variable (:type ("0U" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2787 2790]))                                                  
+                                                :type ("std::uint8_t" type (:type "class") nil nil))
+                                                (reparse-symbol namespacesubparts) [2759 2791])
+                                            ("kReadDtcInfo" function
+                                               (:prototype-flag t
+                                                :arguments 
+                                                  ( ("" variable (:type ("25U" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2835 2839]))                                                  
+                                                :type ("std::uint8_t" type (:type "class") nil nil))
+                                                (reparse-symbol namespacesubparts) [2809 2840])
+                                            ("kSecurityAccess" function
+                                               (:prototype-flag t
+                                                :arguments 
+                                                  ( ("" variable (:type ("39U" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2887 2891]))                                                  
+                                                :type ("std::uint8_t" type (:type "class") nil nil))
+                                                (reparse-symbol namespacesubparts) [2858 2892])
+                                            ("kMaximumNumberId" function
+                                               (:prototype-flag t
+                                                :arguments 
+                                                  ( ("" variable (:type ("255U" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2940 2945]))                                                  
+                                                :type ("std::uint8_t" type (:type "class") nil nil))
+                                                (reparse-symbol namespacesubparts) [2910 2946])
+                                            ("kWriteDid" function
+                                               (:prototype-flag t
+                                                :arguments 
+                                                  ( ("" variable (:type ("2U" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2987 2990]))                                                  
+                                                :type ("std::uint8_t" type (:type "class") nil nil))
+                                                (reparse-symbol namespacesubparts) [2964 2991])
+                                            ("kCommunicationControl" function
+                                               (:prototype-flag t
+                                                :arguments 
+                                                  ( ("" variable (:type ("40U" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3044 3048]))                                                  
+                                                :type ("std::uint8_t" type (:type "class") nil nil))
+                                                (reparse-symbol namespacesubparts) [3009 3049])
+                                            ("kControlDtc" function
+                                               (:prototype-flag t
+                                                :arguments 
+                                                  ( ("" variable (:type ("133U" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3092 3097]))                                                  
+                                                :type ("std::uint8_t" type (:type "class") nil nil))
+                                                (reparse-symbol namespacesubparts) [3067 3098])
+                                            ("kEcuResetService" function
+                                               (:prototype-flag t
+                                                :arguments 
+                                                  ( ("" variable (:type ("17U" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3146 3150]))                                                  
+                                                :type ("std::uint8_t" type (:type "class") nil nil))
+                                                (reparse-symbol namespacesubparts) [3116 3151])
+                                            ("kValueOne" function
+                                               (:prototype-flag t
+                                                :arguments 
+                                                  ( ("" variable (:type ("1U" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3192 3195]))                                                  
+                                                :type ("std::uint8_t" type (:type "class") nil nil))
+                                                (reparse-symbol namespacesubparts) [3169 3196]))                                          
+                                        :type "namespace")
+                                        (reparse-symbol namespacesubparts) [2439 3198])
+                                    ("DMConfig" type
+                                       (:members 
+                                          ( ("private" label nil (reparse-symbol classsubparts) [3231 3239])
+                                            ("dmconfiginstance_" variable
+                                               (:typemodifiers ("static")
+                                                :type ("std::shared_ptr" type
+                                                     (:template-specifier 
+                                                        ( ("DMConfig" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil))
+                                                (reparse-symbol classsubparts) [3242 3293])
+                                            ("public" label nil (reparse-symbol classsubparts) [3296 3303])
+                                            ("DMConfig" function
+                                               (:constructor-flag t
+                                                :type ("DMConfig" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [3358 3442])
+                                            ("getInstance" function
+                                               (:typemodifiers ("static")
+                                                :type ("std::shared_ptr" type
+                                                     (:template-specifier 
+                                                        ( ("DMConfig" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil))
+                                                (reparse-symbol classsubparts) [3502 3786])
+                                            ("LoadConfig" function
+                                               (:prototype-flag t
+                                                :arguments 
+                                                  ( ("file_name" variable
+                                                       (:pointer 1
+                                                        :constant-flag t
+                                                        :type "char")
+                                                        (reparse-symbol arg-sub-list) [3928 3950]))                                                  
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [3912 3951])
+                                            ("LoadAccessPermissionGroup" function
+                                               (:prototype-flag t
+                                                :arguments 
+                                                  ( ("ConfigData" variable
+                                                       (:reference 1
+                                                        :type ("rapidjson::Document" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [4217 4249]))                                                  
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [4186 4250])
+                                            ("LoadDIDInfoTable" function
+                                               (:prototype-flag t
+                                                :arguments 
+                                                  ( ("ConfigData" variable
+                                                       (:reference 1
+                                                        :type ("rapidjson::Document" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [4516 4548]))                                                  
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [4494 4549])
+                                            ("LoadServiceProcessorsInfo" function
+                                               (:prototype-flag t
+                                                :arguments 
+                                                  ( ("ConfigData" variable
+                                                       (:reference 1
+                                                        :type ("rapidjson::Document" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [4822 4854]))                                                  
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [4791 4855])
+                                            ("LoadSupportedServicesSubFunctions" function
+                                               (:prototype-flag t
+                                                :arguments 
+                                                  ( ("data" variable
+                                                       (:reference 1
+                                                        :type ("rapidjson::Value" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [5294 5317])
+                                                    ("serviceprocessorsdatainstance" variable (:type ("std::shared_ptr" type
+                                                         (:template-specifier 
+                                                            ( ("ara::diag::cfg::ServiceProcessorsTable" type nil nil nil))                                                            
+                                                          :type "class")
+                                                          nil nil)) (reparse-symbol arg-sub-list) [5324 5410]))                                                  
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [5255 5411])
+                                            ("LoadSupportedDIDSubFunctions" function
+                                               (:prototype-flag t
+                                                :arguments 
+                                                  ( ("data" variable
+                                                       (:reference 1
+                                                        :type ("rapidjson::Value" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [5829 5852])
+                                                    ("dataIdentifierInstance" variable (:type ("std::shared_ptr" type
+                                                         (:template-specifier 
+                                                            ( ("ara::diag::cfg::DataIdentifierInfoTable" type nil nil nil))                                                            
+                                                          :type "class")
+                                                          nil nil)) (reparse-symbol arg-sub-list) [5859 5939]))                                                  
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [5795 5940])
+                                            ("LoadMaxDIDToRead" function
+                                               (:prototype-flag t
+                                                :arguments 
+                                                  ( ("ConfigData" variable
+                                                       (:reference 1
+                                                        :type ("rapidjson::Document" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [6172 6204]))                                                  
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [6150 6205])
+                                            ("LoadResponseToEcuReset" function
+                                               (:prototype-flag t
+                                                :arguments 
+                                                  ( ("ConfigData" variable
+                                                       (:reference 1
+                                                        :type ("rapidjson::Document" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [6452 6484]))                                                  
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [6424 6485])
+                                            ("LoadMaxCorrectlyReceivedResponsePending" function
+                                               (:prototype-flag t
+                                                :arguments 
+                                                  ( ("ConfigData" variable
+                                                       (:reference 1
+                                                        :type ("rapidjson::Document" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [6746 6778]))                                                  
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [6701 6779])
+                                            ("LoadRoutineControlInfo" function
+                                               (:prototype-flag t
+                                                :arguments 
+                                                  ( ("ConfigData" variable
+                                                       (:reference 1
+                                                        :type ("rapidjson::Document" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [6994 7026]))                                                  
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [6966 7027])
+                                            ("LoadSupportedRoutineServicesSubFunctions" function
+                                               (:prototype-flag t
+                                                :arguments 
+                                                  ( ("data" variable
+                                                       (:reference 1
+                                                        :type ("rapidjson::Value" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [7460 7483])
+                                                    ("routineIdentifierInstance" variable (:type ("std::shared_ptr" type
+                                                         (:template-specifier 
+                                                            ( ("ara::diag::cfg::RoutineControlInfoTable" type nil nil nil))                                                            
+                                                          :type "class")
+                                                          nil nil)) (reparse-symbol arg-sub-list) [7490 7573]))                                                  
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [7414 7574])
+                                            ("LoadDiagConversations" function
+                                               (:prototype-flag t
+                                                :arguments 
+                                                  ( ("ConfigData" variable
+                                                       (:reference 1
+                                                        :type ("rapidjson::Document" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [7803 7835]))                                                  
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [7776 7836])
+                                            ("LoadGenericUDSServiceInstanceMapping" function
+                                               (:prototype-flag t
+                                                :arguments 
+                                                  ( ("ConfigData" variable
+                                                       (:reference 1
+                                                        :type ("rapidjson::Document" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [8071 8103]))                                                  
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [8029 8104])
+                                            ("LoadGenericRoutineServiceInstanceMapping" function
+                                               (:prototype-flag t
+                                                :arguments 
+                                                  ( ("ConfigData" variable
+                                                       (:reference 1
+                                                        :type ("rapidjson::Document" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [8347 8379]))                                                  
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [8301 8380])
+                                            ("LoadSecurityAccessSrvcIntfcAraComMapping" function
+                                               (:prototype-flag t
+                                                :arguments 
+                                                  ( ("ConfigData" variable
+                                                       (:reference 1
+                                                        :type ("rapidjson::Document" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [8623 8655]))                                                  
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [8577 8656])
+                                            ("LoadCommCtrltSrvcIntfcAraComMapping" function
+                                               (:prototype-flag t
+                                                :arguments 
+                                                  ( ("ConfigData" variable
+                                                       (:reference 1
+                                                        :type ("rapidjson::Document" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [8900 8932]))                                                  
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [8859 8933])
+                                            ("LoadRequestRestartSrvcIntfcAraComMapping" function
+                                               (:prototype-flag t
+                                                :arguments 
+                                                  ( ("ConfigData" variable
+                                                       (:reference 1
+                                                        :type ("rapidjson::Document" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [9170 9202]))                                                  
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [9124 9203])
+                                            ("LoadGenericDataIdentifierServiceInstanceMapping" function
+                                               (:prototype-flag t
+                                                :arguments 
+                                                  ( ("ConfigData" variable
+                                                       (:reference 1
+                                                        :type ("rapidjson::Document" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [9461 9493]))                                                  
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [9408 9494])
+                                            ("LoadDataElementUint8ServiceInstanceMapping" function
+                                               (:prototype-flag t
+                                                :arguments 
+                                                  ( ("configData" variable
+                                                       (:reference 1
+                                                        :type ("rapidjson::Document" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [9749 9781]))                                                  
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [9701 9782])
+                                            ("LoadDataElementVectorServiceInstanceMapping" function
+                                               (:prototype-flag t
+                                                :arguments 
+                                                  ( ("configData" variable
+                                                       (:reference 1
+                                                        :type ("rapidjson::Document" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [10039 10071]))                                                  
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [9990 10072])
+                                            ("LoadNumberOfConversations" function
+                                               (:prototype-flag t
+                                                :arguments 
+                                                  ( ("ConfigData" variable
+                                                       (:reference 1
+                                                        :type ("rapidjson::Document" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [10310 10342]))                                                  
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [10279 10343])
+                                            ("LoadUDSMessageLength" function
+                                               (:prototype-flag t
+                                                :arguments 
+                                                  ( ("ConfigData" variable
+                                                       (:reference 1
+                                                        :type ("rapidjson::Document" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [10570 10602]))                                                  
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [10544 10603])
+                                            ("LoadDiagConversationServiceInstanceMapping" function
+                                               (:prototype-flag t
+                                                :arguments 
+                                                  ( ("ConfigData" variable
+                                                       (:reference 1
+                                                        :type ("rapidjson::Document" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [10924 10956]))                                                  
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [10876 10957])
+                                            ("LoadEventMemoryInfoTableData" function
+                                               (:prototype-flag t
+                                                :arguments 
+                                                  ( ("ConfigData" variable
+                                                       (:reference 1
+                                                        :type ("rapidjson::Document" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [11234 11266]))                                                  
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [11200 11267])
+                                            ("LoadSecAccessLevelInfoTableData" function
+                                               (:prototype-flag t
+                                                :arguments 
+                                                  ( ("ConfigData" variable
+                                                       (:reference 1
+                                                        :type ("rapidjson::Document" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [11547 11579]))                                                  
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [11510 11580])
+                                            ("LoadEventInfoTable" function
+                                               (:prototype-flag t
+                                                :arguments 
+                                                  ( ("data" variable
+                                                       (:reference 1
+                                                        :type ("rapidjson::Value" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [11954 11977])
+                                                    ("eventmemoryinfodatainstance" variable (:type ("std::shared_ptr" type
+                                                         (:template-specifier 
+                                                            ( ("ara::diag::cfg::EventMemoryInfoTable" type nil nil nil))                                                            
+                                                          :type "class")
+                                                          nil nil)) (reparse-symbol arg-sub-list) [11984 12066]))                                                  
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [11930 12067])
+                                            ("LoadNumberofEventMemoryInfoTables" function
+                                               (:prototype-flag t
+                                                :arguments 
+                                                  ( ("ConfigData" variable
+                                                       (:reference 1
+                                                        :type ("rapidjson::Document" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [12348 12380]))                                                  
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [12309 12381])
+                                            ("LoadCounterBasedEventDebounceInfoTableData" function
+                                               (:prototype-flag t
+                                                :arguments 
+                                                  ( ("ConfigData" variable
+                                                       (:reference 1
+                                                        :type ("rapidjson::Document" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [12664 12696]))                                                  
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [12616 12697])
+                                            ("LoadTimeBasedEventDebounceInfoTableData" function
+                                               (:prototype-flag t
+                                                :arguments 
+                                                  ( ("ConfigData" variable
+                                                       (:reference 1
+                                                        :type ("rapidjson::Document" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [12974 13006]))                                                  
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [12929 13007])
+                                            ("LoadOperationCyclesData" function
+                                               (:prototype-flag t
+                                                :arguments 
+                                                  ( ("ConfigData" variable
+                                                       (:reference 1
+                                                        :type ("rapidjson::Document" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [13252 13284]))                                                  
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [13223 13285])
+                                            ("LoadNumberofOperationCycles" function
+                                               (:prototype-flag t
+                                                :arguments 
+                                                  ( ("ConfigData" variable
+                                                       (:reference 1
+                                                        :type ("rapidjson::Document" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [13518 13550]))                                                  
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [13485 13551])
+                                            ("LoadDtcInfoTableData" function
+                                               (:prototype-flag t
+                                                :arguments 
+                                                  ( ("ConfigData" variable
+                                                       (:reference 1
+                                                        :type ("rapidjson::Document" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [13781 13813]))                                                  
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [13755 13814])
+                                            ("LoadNumberofDtcInfoTables" function
+                                               (:prototype-flag t
+                                                :arguments 
+                                                  ( ("ConfigData" variable
+                                                       (:reference 1
+                                                        :type ("rapidjson::Document" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [14033 14065]))                                                  
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [14002 14066])
+                                            ("LoadDTCGroupsInfoTable" function
+                                               (:prototype-flag t
+                                                :arguments 
+                                                  ( ("ConfigData" variable
+                                                       (:reference 1
+                                                        :type ("rapidjson::Document" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [14262 14294]))                                                  
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [14234 14295])
+                                            ("LoadFreezeFrameDIDInfoTableData" function
+                                               (:prototype-flag t
+                                                :arguments 
+                                                  ( ("ConfigData" variable
+                                                       (:reference 1
+                                                        :type ("rapidjson::Document" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [14549 14581]))                                                  
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [14512 14582])
+                                            ("LoadFFRecordsData" function
+                                               (:prototype-flag t
+                                                :arguments 
+                                                  ( ("ConfigData" variable
+                                                       (:reference 1
+                                                        :type ("rapidjson::Document" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [14815 14847]))                                                  
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [14792 14848])
+                                            ("LoadNumberofFFRecords" function
+                                               (:prototype-flag t
+                                                :arguments 
+                                                  ( ("ConfigData" variable
+                                                       (:reference 1
+                                                        :type ("rapidjson::Document" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [15069 15101]))                                                  
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [15042 15102])
+                                            ("LoadDTCPropsInfoTableData" function
+                                               (:prototype-flag t
+                                                :arguments 
+                                                  ( ("ConfigData" variable
+                                                       (:reference 1
+                                                        :type ("rapidjson::Document" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [15348 15380]))                                                  
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [15317 15381])
+                                            ("LoadNumberofDTCPropsInfoTables" function
+                                               (:prototype-flag t
+                                                :arguments 
+                                                  ( ("ConfigData" variable
+                                                       (:reference 1
+                                                        :type ("rapidjson::Document" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [15616 15648]))                                                  
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [15580 15649])
+                                            ("LoadFFDIDSetInfoTableData" function
+                                               (:prototype-flag t
+                                                :arguments 
+                                                  ( ("ConfigData" variable
+                                                       (:reference 1
+                                                        :type ("rapidjson::Document" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [15895 15927]))                                                  
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [15864 15928])
+                                            ("LoadNumberofDidSetInfoTables" function
+                                               (:prototype-flag t
+                                                :arguments 
+                                                  ( ("ConfigData" variable
+                                                       (:reference 1
+                                                        :type ("rapidjson::Document" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [16153 16185]))                                                  
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [16119 16186])
+                                            ("LoadEnableConditionGroupsData" function
+                                               (:prototype-flag t
+                                                :arguments 
+                                                  ( ("ConfigData" variable
+                                                       (:reference 1
+                                                        :type ("rapidjson::Document" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [16443 16475]))                                                  
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [16408 16476])
+                                            ("LoadEnableConditionsData" function
+                                               (:prototype-flag t
+                                                :arguments 
+                                                  ( ("ConfigData" variable
+                                                       (:reference 1
+                                                        :type ("rapidjson::Document" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [16723 16755]))                                                  
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [16693 16756])
+                                            ("LoadNumberofEnableConditionGroups" function
+                                               (:prototype-flag t
+                                                :arguments 
+                                                  ( ("ConfigData" variable
+                                                       (:reference 1
+                                                        :type ("rapidjson::Document" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [17001 17033]))                                                  
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [16962 17034])
+                                            ("LoadNumberofEnableConditions" function
+                                               (:prototype-flag t
+                                                :arguments 
+                                                  ( ("ConfigData" variable
+                                                       (:reference 1
+                                                        :type ("rapidjson::Document" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [17269 17301]))                                                  
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [17235 17302])
+                                            ("LoadNumberofFreezeFrameDIDInfos" function
+                                               (:prototype-flag t
+                                                :arguments 
+                                                  ( ("ConfigData" variable
+                                                       (:reference 1
+                                                        :type ("rapidjson::Document" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [17540 17572]))                                                  
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [17503 17573])
+                                            ("LoadDataElementInfoTable" function
+                                               (:prototype-flag t
+                                                :arguments 
+                                                  ( ("configData" variable
+                                                       (:reference 1
+                                                        :type ("rapidjson::Document" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [17728 17760]))                                                  
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [17698 17761])
+                                            ("LoadExtendedDataRecordInfoTable" function
+                                               (:prototype-flag t
+                                                :arguments 
+                                                  ( ("configData" variable
+                                                       (:reference 1
+                                                        :type ("rapidjson::Document" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [17925 17957]))                                                  
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [17888 17958])
+                                            ("IsSessionExist" function
+                                               (:prototype-flag t
+                                                :arguments 
+                                                  ( ("sessionId" variable
+                                                       (:constant-flag t
+                                                        :type ("SessionType" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [18032 18060]))                                                  
+                                                :type "bool")
+                                                (reparse-symbol classsubparts) [18012 18061])
+                                            ("IsDIDExists" function
+                                               (:prototype-flag t
+                                                :arguments 
+                                                  ( ("dataId" variable (:type ("std::uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [18140 18161]))                                                  
+                                                :type "bool")
+                                                (reparse-symbol classsubparts) [18123 18162])
+                                            ("IsDcmSubFunctionSupported" function
+                                               (:prototype-flag t
+                                                :arguments 
+                                                  ( ("id" variable (:type ("std::uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [18255 18272]))                                                  
+                                                :type "bool")
+                                                (reparse-symbol classsubparts) [18224 18273])
+                                            ("IsDIDWriteOperationSupported" function
+                                               (:prototype-flag t
+                                                :arguments 
+                                                  ( ("dataId" variable (:type ("std::uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [18369 18390]))                                                  
+                                                :type "bool")
+                                                (reparse-symbol classsubparts) [18335 18391])
+                                            ("IsRIDExists" function
+                                               (:prototype-flag t
+                                                :arguments 
+                                                  ( ("Rid" variable (:type ("std::uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [18470 18488]))                                                  
+                                                :type "bool")
+                                                (reparse-symbol classsubparts) [18453 18489])
+                                            ("IsSecurityAccessLevelExists" function
+                                               (:prototype-flag t
+                                                :arguments 
+                                                  ( ("subFunctionId" variable (:type ("std::uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [18584 18611]))                                                  
+                                                :type "bool")
+                                                (reparse-symbol classsubparts) [18551 18612])
+                                            ("IsReadDTCSubfunctionSupported" function
+                                               (:prototype-flag t
+                                                :arguments 
+                                                  ( ("SubfunctionId" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [18709 18731]))                                                  
+                                                :type "bool")
+                                                (reparse-symbol classsubparts) [18674 18732])
+                                            ("IsControlDTCSubfunctionSupported" function
+                                               (:prototype-flag t
+                                                :arguments 
+                                                  ( ("SubfunctionId" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [18832 18854]))                                                  
+                                                :type "bool")
+                                                (reparse-symbol classsubparts) [18794 18855])
+                                            ("IsCommCtrlSubfunctionSupported" function
+                                               (:prototype-flag t
+                                                :arguments 
+                                                  ( ("SubfunctionId" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [18953 18975]))                                                  
+                                                :type "bool")
+                                                (reparse-symbol classsubparts) [18917 18976])
+                                            ("LoadIsSharedTimer" function
+                                               (:prototype-flag t
+                                                :arguments 
+                                                  ( ("ConfigData" variable
+                                                       (:reference 1
+                                                        :type ("rapidjson::Document" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [19061 19093]))                                                  
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [19038 19094])
+                                            ("IsEcuResetSubfunctionSupported" function
+                                               (:prototype-flag t
+                                                :arguments 
+                                                  ( ("SubfunctionId" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [19192 19214]))                                                  
+                                                :type "bool")
+                                                (reparse-symbol classsubparts) [19156 19215])
+                                            ("GetNumberOfConversations" function
+                                               (:prototype-flag t
+                                                :arguments 
+                                                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [19336 19341]))                                                  
+                                                :type ("std::uint32_t" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [19297 19342])
+                                            ("GetUDSMessageLength" function
+                                               (:prototype-flag t
+                                                :arguments 
+                                                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [19446 19451]))                                                  
+                                                :type ("std::uint32_t" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [19412 19452])
+                                            ("GetListOfServiceProcessor" function
+                                               (:prototype-flag t
+                                                :arguments 
+                                                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [19589 19594]))                                                  
+                                                :type ("std::vector" type
+                                                     (:template-specifier 
+                                                        ( ("std::uint8_t" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil))
+                                                (reparse-symbol classsubparts) [19537 19595])
+                                            ("GetServiceProcAccPermGroupId" function
+                                               (:prototype-flag t
+                                                :arguments 
+                                                  ( ("Sid" variable (:type ("std::uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [19745 19763]))                                                  
+                                                :type ("std::uint32_t" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [19702 19764])
+                                            ("GetSessionName" function
+                                               (:prototype-flag t
+                                                :arguments 
+                                                  ( ("sessionId" variable
+                                                       (:constant-flag t
+                                                        :type ("SessionType" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [19860 19888]))                                                  
+                                                :type ("DiagnosticSessionType" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [19823 19889])
+                                            ("GetCommCtrlSubFuncAccPermGroupId" function
+                                               (:prototype-flag t
+                                                :arguments 
+                                                  ( ("subFunctionId" variable (:type ("std::uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [20047 20075]))                                                  
+                                                :type ("std::uint32_t" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [20000 20076])
+                                            ("GetEcuResetSubFuncAccPermGroupId" function
+                                               (:prototype-flag t
+                                                :arguments 
+                                                  ( ("subFunctionId" variable (:type ("std::uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [20234 20262]))                                                  
+                                                :type ("std::uint32_t" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [20187 20263])
+                                            ("GetServiceProcessorCategory" function
+                                               (:prototype-flag t
+                                                :arguments 
+                                                  ( ("ServiceDataId" variable (:type ("std::uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [20414 20441]))                                                  
+                                                :type ("std::uint8_t" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [20373 20442])
+                                            ("GetServiceProcessorServiceInstance" function
+                                               (:prototype-flag t
+                                                :arguments 
+                                                  ( ("ServiceDataId" variable (:type ("std::uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [20600 20627]))                                                  
+                                                :type ("std::uint32_t" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [20551 20628])
+                                            ("GetMaxDIDToRead" function
+                                               (:prototype-flag t
+                                                :arguments 
+                                                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [20723 20728]))                                                  
+                                                :type ("std::uint32_t" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [20693 20729])
+                                            ("GetResponseToEcuReset" function
+                                               (:prototype-flag t
+                                                :arguments 
+                                                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [20841 20846]))                                                  
+                                                :type ("std::uint32_t" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [20805 20847])
+                                            ("GetMaximumPendingResponse" function
+                                               (:prototype-flag t
+                                                :arguments 
+                                                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [20969 20974]))                                                  
+                                                :type ("std::uint8_t" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [20930 20975])
+                                            ("GetRIDServiceInterface" function
+                                               (:prototype-flag t
+                                                :arguments 
+                                                  ( ("routineId" variable (:type ("std::uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [21060 21084]))                                                  
+                                                :type ("std::uint32_t" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [21023 21085])
+                                            ("GetRIDServiceInstance" function
+                                               (:prototype-flag t
+                                                :arguments 
+                                                  ( ("routineId" variable (:type ("std::uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [21168 21192]))                                                  
+                                                :type ("std::uint32_t" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [21132 21193])
+                                            ("GetDIDServiceInterface" function
+                                               (:prototype-flag t
+                                                :arguments 
+                                                  ( ("dataId" variable (:type ("std::uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [21285 21306]))                                                  
+                                                :type ("ServiceInterfaceType" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [21241 21307])
+                                            ("GetDIDServiceInstance" function
+                                               (:prototype-flag t
+                                                :arguments 
+                                                  ( ("dataId" variable (:type ("std::uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [21390 21411]))                                                  
+                                                :type ("std::uint32_t" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [21354 21412])
+                                            ("GetDidDataSize" function
+                                               (:prototype-flag t
+                                                :arguments 
+                                                  ( ("dataId" variable (:type ("std::uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [21475 21496]))                                                  
+                                                :type ("std::uint32_t" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [21446 21497])
+                                            ("GetDidSizeFixed" function
+                                               (:prototype-flag t
+                                                :arguments 
+                                                  ( ("dataId" variable (:type ("std::uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [21562 21583]))                                                  
+                                                :type "bool")
+                                                (reparse-symbol classsubparts) [21541 21584])
+                                            ("GetDIDAccessPermissionGroup" function
+                                               (:prototype-flag t
+                                                :arguments 
+                                                  ( ("dataId" variable (:type ("std::uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [21859 21880])
+                                                    ("subFunctionId" variable (:type ("std::uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [21881 21908]))                                                  
+                                                :type ("std::uint32_t" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [21817 21909])
+                                            ("GetRIDAccessPermissionGroup" function
+                                               (:prototype-flag t
+                                                :arguments 
+                                                  ( ("routineId" variable (:type ("std::uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [22180 22204])
+                                                    ("subFunctionId" variable (:type ("std::uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [22205 22232]))                                                  
+                                                :type ("std::uint32_t" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [22138 22233])
+                                            ("GetRIDAccessPermissionGroup" function
+                                               (:prototype-flag t
+                                                :arguments 
+                                                  ( ("routineId" variable (:type ("std::uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [22492 22516]))                                                  
+                                                :type ("std::uint32_t" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [22450 22517])
+                                            ("GetRoutineIdRequestMaxLength" function
+                                               (:prototype-flag t
+                                                :arguments 
+                                                  ( ("routineId" variable (:type ("std::uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [22781 22805])
+                                                    ("subFunctionId" variable (:type ("std::uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [22806 22833]))                                                  
+                                                :type ("std::uint32_t" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [22738 22834])
+                                            ("GetRoutineIdRequestMinLength" function
+                                               (:prototype-flag t
+                                                :arguments 
+                                                  ( ("routineId" variable (:type ("std::uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [23098 23122])
+                                                    ("subFunctionId" variable (:type ("std::uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [23123 23150]))                                                  
+                                                :type ("std::uint32_t" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [23055 23151])
+                                            ("IsRIDOperationSupported" function
+                                               (:prototype-flag t
+                                                :arguments 
+                                                  ( ("routineId" variable (:type ("std::uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [23415 23439])
+                                                    ("subFunctionId" variable (:type ("std::uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [23440 23467]))                                                  
+                                                :type "bool")
+                                                (reparse-symbol classsubparts) [23386 23468])
+                                            ("GetAccPermSessionMask" function
+                                               (:prototype-flag t
+                                                :arguments 
+                                                  ( ("AccessPermissionId" variable (:type ("std::uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [23684 23717]))                                                  
+                                                :type ("std::uint32_t" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [23648 23718])
+                                            ("GetSecurityAccessMapping" function
+                                               (:prototype-flag t
+                                                :arguments 
+                                                  ( ("AccessPermissionId" variable (:type ("std::uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [23951 23984]))                                                  
+                                                :type ("std::uint32_t" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [23912 23985])
+                                            ("GetSecurityAccessDataRecordSize" function
+                                               (:prototype-flag t
+                                                :arguments 
+                                                  ( ("securityAccessLevel" variable (:type ("std::uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [24229 24263]))                                                  
+                                                :type ("std::uint32_t" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [24183 24264])
+                                            ("GetSecurityAccessLevelSeedSize" function
+                                               (:prototype-flag t
+                                                :arguments 
+                                                  ( ("securityAccessLevel" variable (:type ("std::uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [24479 24513]))                                                  
+                                                :type ("std::uint32_t" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [24434 24514])
+                                            ("GetSecurityLevelInstanceID" function
+                                               (:prototype-flag t
+                                                :arguments 
+                                                  ( ("securityAccessLevel" variable (:type ("std::uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [24755 24789]))                                                  
+                                                :type ("std::uint32_t" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [24714 24790])
+                                            ("GetNumberOfFailedSecurityAccess" function
+                                               (:prototype-flag t
+                                                :arguments 
+                                                  ( ("securityAccessLevel" variable (:type ("std::uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [25040 25074]))                                                  
+                                                :type ("std::uint32_t" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [24994 25075])
+                                            ("GetKeySize" function
+                                               (:prototype-flag t
+                                                :arguments 
+                                                  ( ("securityAccessLevel" variable (:type ("std::uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [25268 25302]))                                                  
+                                                :type ("std::uint32_t" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [25243 25303])
+                                            ("GetSecurityMaskedId" function
+                                               (:prototype-flag t
+                                                :arguments 
+                                                  ( ("securityAccessLevel" variable (:type ("std::uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [25519 25553]))                                                  
+                                                :type ("std::uint32_t" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [25485 25554])
+                                            ("GetDiagConvSessionMask" function
+                                               (:prototype-flag t
+                                                :arguments 
+                                                  ( ("sessionId" variable (:type ("std::uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [25765 25789]))                                                  
+                                                :type ("std::uint32_t" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [25728 25790])
+                                            ("GetGenericDataIdentifierServiceInstanceMapping" function
+                                               (:prototype-flag t
+                                                :type ("std::unordered_set" type
+                                                     (:template-specifier 
+                                                        ( ("std::uint16_t" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil))
+                                                (reparse-symbol classsubparts) [25927 26010])
+                                            ("GetGenericRoutineServiceInstanceMapping" function
+                                               (:prototype-flag t
+                                                :type ("std::unordered_set" type
+                                                     (:template-specifier 
+                                                        ( ("std::uint16_t" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil))
+                                                (reparse-symbol classsubparts) [26139 26215])
+                                            ("GetSecurityAccessServiceInstanceMapping" function
+                                               (:prototype-flag t
+                                                :type ("std::unordered_set" type
+                                                     (:template-specifier 
+                                                        ( ("std::uint16_t" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil))
+                                                (reparse-symbol classsubparts) [26336 26412])
+                                            ("GetCommunicationControlServiceInstanceMapping" function
+                                               (:prototype-flag t
+                                                :type ("std::unordered_set" type
+                                                     (:template-specifier 
+                                                        ( ("std::uint16_t" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil))
+                                                (reparse-symbol classsubparts) [26547 26629])
+                                            ("GetRequestRestartServiceInstanceMapping" function
+                                               (:prototype-flag t
+                                                :type ("std::unordered_set" type
+                                                     (:template-specifier 
+                                                        ( ("std::uint16_t" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil))
+                                                (reparse-symbol classsubparts) [26752 26828])
+                                            ("GetGenericUDSServiceInstanceMapping" function
+                                               (:prototype-flag t
+                                                :type ("std::unordered_set" type
+                                                     (:template-specifier 
+                                                        ( ("std::uint16_t" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil))
+                                                (reparse-symbol classsubparts) [26962 27034])
+                                            ("GetDiagConversationServiceInstanceMapping" function
+                                               (:prototype-flag t
+                                                :type ("std::int32_t" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [27181 27238])
+                                            ("GetDataElementUint8ServiceInstanceMapping" function
+                                               (:prototype-flag t
+                                                :type ("std::unordered_set" type
+                                                     (:template-specifier 
+                                                        ( ("std::uint16_t" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil))
+                                                (reparse-symbol classsubparts) [27389 27467])
+                                            ("GetDataElementVectorServiceInstanceMapping" function
+                                               (:prototype-flag t
+                                                :type ("std::unordered_set" type
+                                                     (:template-specifier 
+                                                        ( ("std::uint16_t" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil))
+                                                (reparse-symbol classsubparts) [27619 27698])
+                                            ("GetDiagConvP2Time" function
+                                               (:prototype-flag t
+                                                :arguments 
+                                                  ( ("sessionId" variable (:type ("std::uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [27894 27918]))                                                  
+                                                :type ("std::uint32_t" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [27862 27919])
+                                            ("GetDiagConvP2StarTime" function
+                                               (:prototype-flag t
+                                                :arguments 
+                                                  ( ("sessionId" variable (:type ("std::uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [28129 28153]))                                                  
+                                                :type ("std::uint32_t" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [28093 28154])
+                                            ("GetAraComEventMemoryServiceInstanceId" function
+                                               (:prototype-flag t
+                                                :arguments 
+                                                  ( ("EventMemoryInfoTableId" variable (:type ("std::uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [28422 28459]))                                                  
+                                                :type ("std::uint32_t" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [28370 28460])
+                                            ("GetDtcStatusAvailabilityMask" function
+                                               (:prototype-flag t
+                                                :arguments 
+                                                  ( ("EventMemoryInfoTableId" variable (:type ("std::uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [28701 28738]))                                                  
+                                                :type ("std::uint32_t" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [28658 28739])
+                                            ("GetSnapShotRecordType" function
+                                               (:prototype-flag t
+                                                :arguments 
+                                                  ( ("EventMemoryInfoTableId" variable (:type ("std::uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [28959 28996]))                                                  
+                                                :type ("std::uint32_t" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [28923 28997])
+                                            ("GetEventMemoryKind" function
+                                               (:prototype-flag t
+                                                :arguments 
+                                                  ( ("EventMemoryInfoTableId" variable (:type ("std::uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [29202 29239]))                                                  
+                                                :type ("ara::core::String" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [29165 29240])
+                                            ("GetAraComDiagMonitorEventServiceInstanceId" function
+                                               (:prototype-flag t
+                                                :arguments 
+                                                  ( ("EventMemoryInfoTableId" variable (:type ("std::uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [29583 29620])
+                                                    ("EventId" variable (:type ("std::uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [29621 29642]))                                                  
+                                                :type ("std::uint32_t" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [29519 29643])
+                                            ("GetAraComDiagEventServiceInstanceId" function
+                                               (:prototype-flag t
+                                                :arguments 
+                                                  ( ("EventMemoryInfoTableId" variable (:type ("std::uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [29965 30002])
+                                                    ("EventId" variable (:type ("std::uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [30003 30024]))                                                  
+                                                :type ("std::uint32_t" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [29908 30025])
+                                            ("IsEventRecoverableInSameOperationCycle" function
+                                               (:prototype-flag t
+                                                :arguments 
+                                                  ( ("EventMemoryInfoTableId" variable (:type ("std::uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [30346 30383])
+                                                    ("EventId" variable (:type ("std::uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [30384 30405]))                                                  
+                                                :type "bool")
+                                                (reparse-symbol classsubparts) [30302 30406])
+                                            ("GetOperationCycleMask" function
+                                               (:prototype-flag t
+                                                :arguments 
+                                                  ( ("EventMemoryInfoTableId" variable (:type ("std::uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [30689 30726])
+                                                    ("EventId" variable (:type ("std::uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [30727 30748]))                                                  
+                                                :type ("std::uint32_t" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [30653 30749])
+                                            ("GetCounterBasedEventDebounceInfoTableId" function
+                                               (:prototype-flag t
+                                                :arguments 
+                                                  ( ("EventMemoryInfoTableId" variable (:type ("std::uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [31085 31122])
+                                                    ("EventId" variable (:type ("std::uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [31123 31144]))                                                  
+                                                :type ("std::uint32_t" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [31024 31145])
+                                            ("GetTimeBasedEventDebounceInfoTableId" function
+                                               (:prototype-flag t
+                                                :arguments 
+                                                  ( ("EventMemoryInfoTableId" variable (:type ("std::uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [31472 31509])
+                                                    ("EventId" variable (:type ("std::uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [31510 31531]))                                                  
+                                                :type ("std::uint32_t" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [31414 31532])
+                                            ("GetEventDtcInfoTableId" function
+                                               (:prototype-flag t
+                                                :arguments 
+                                                  ( ("EventMemoryInfoTableId" variable (:type ("std::uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [31800 31837])
+                                                    ("EventId" variable (:type ("std::uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [31838 31859]))                                                  
+                                                :type ("std::uint32_t" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [31763 31860])
+                                            ("GetEnableConditionGroupId" function
+                                               (:prototype-flag t
+                                                :arguments 
+                                                  ( ("EventMemoryInfoTableId" variable (:type ("std::uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [32131 32168])
+                                                    ("EventId" variable (:type ("std::uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [32169 32190]))                                                  
+                                                :type ("std::uint32_t" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [32091 32191])
+                                            ("GetNumberofEventMemoryInfoTables" function
+                                               (:prototype-flag t
+                                                :type ("std::uint32_t" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [32337 32386])
+                                            ("GetNumberofEvents" function
+                                               (:prototype-flag t
+                                                :arguments 
+                                                  ( ("EventMemoryInfoTableId" variable (:type ("std::uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [32594 32631]))                                                  
+                                                :type ("std::uint32_t" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [32562 32632])
+                                            ("GetMaxNumberOfFreezeFrames" function
+                                               (:prototype-flag t
+                                                :arguments 
+                                                  ( ("dtcpropsinfotableid" variable (:type ("std::uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [32860 32894]))                                                  
+                                                :type ("std::uint8_t" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [32820 32895])
+                                            ("GetDIDSetRef" function
+                                               (:prototype-flag t
+                                                :arguments 
+                                                  ( ("dtcpropsinfotableid" variable (:type ("std::uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [33081 33115]))                                                  
+                                                :type ("std::uint8_t" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [33055 33116])
+                                            ("GetNumberofDidSetInfoTables" function
+                                               (:prototype-flag t
+                                                :arguments 
+                                                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [33284 33289]))                                                  
+                                                :type ("std::uint8_t" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [33243 33290])
+                                            ("GetNumberofDTCProps" function
+                                               (:prototype-flag t
+                                                :arguments 
+                                                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [33437 33442]))                                                  
+                                                :type ("std::uint32_t" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [33403 33443])
+                                            ("GetCounterDecrementStepSize" function
+                                               (:prototype-flag t
+                                                :arguments 
+                                                  ( ("counterBasedEventDebounceInfoTableId" variable (:type ("std::uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [33707 33758]))                                                  
+                                                :type ("std::uint32_t" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [33665 33759])
+                                            ("GetCounterFailedThreshold" function
+                                               (:prototype-flag t
+                                                :arguments 
+                                                  ( ("counterBasedEventDebounceInfoTableId" variable (:type ("std::uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [34017 34068]))                                                  
+                                                :type ("std::uint32_t" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [33977 34069])
+                                            ("GetCounterPassedThreshold" function
+                                               (:prototype-flag t
+                                                :arguments 
+                                                  ( ("counterBasedEventDebounceInfoTableId" variable (:type ("std::uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [34327 34378]))                                                  
+                                                :type ("std::uint32_t" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [34287 34379])
+                                            ("GetCounterIncrementStepSize" function
+                                               (:prototype-flag t
+                                                :arguments 
+                                                  ( ("counterBasedEventDebounceInfoTableId" variable (:type ("std::uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [34643 34694]))                                                  
+                                                :type ("std::uint32_t" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [34601 34695])
+                                            ("GetCounterJumpDownValue" function
+                                               (:prototype-flag t
+                                                :arguments 
+                                                  ( ("counterBasedEventDebounceInfoTableId" variable (:type ("std::uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [34947 34998]))                                                  
+                                                :type ("std::uint32_t" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [34909 34999])
+                                            ("GetCounterJumpUpValue" function
+                                               (:prototype-flag t
+                                                :arguments 
+                                                  ( ("counterBasedEventDebounceInfoTableId" variable (:type ("std::uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [35245 35296]))                                                  
+                                                :type ("std::uint32_t" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [35209 35297])
+                                            ("GetDebounceCounterStorage" function
+                                               (:prototype-flag t
+                                                :arguments 
+                                                  ( ("counterBasedEventDebounceInfoTableId" variable (:type ("std::uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [35546 35597]))                                                  
+                                                :type "bool")
+                                                (reparse-symbol classsubparts) [35515 35598])
+                                            ("GetCounterJumpDown" function
+                                               (:prototype-flag t
+                                                :arguments 
+                                                  ( ("counterBasedEventDebounceInfoTableId" variable (:type ("std::uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [35826 35877]))                                                  
+                                                :type "bool")
+                                                (reparse-symbol classsubparts) [35802 35878])
+                                            ("GetCounterJumpUp" function
+                                               (:prototype-flag t
+                                                :arguments 
+                                                  ( ("counterBasedEventDebounceInfoTableId" variable (:type ("std::uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [36100 36151]))                                                  
+                                                :type "bool")
+                                                (reparse-symbol classsubparts) [36078 36152])
+                                            ("GetCounterDebounceBehavior" function
+                                               (:prototype-flag t
+                                                :arguments 
+                                                  ( ("counterBasedEventDebounceInfoTableId" variable (:type ("std::uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [36413 36464]))                                                  
+                                                :type ("std::uint32_t" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [36372 36465])
+                                            ("GetNumberofOperationCycles" function
+                                               (:prototype-flag t
+                                                :type ("std::uint32_t" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [36588 36631])
+                                            ("GetAraComOperationcycleSvcInstanceId" function
+                                               (:prototype-flag t
+                                                :arguments 
+                                                  ( ("OperationCycleId" variable (:type ("std::uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [36892 36923]))                                                  
+                                                :type ("std::uint32_t" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [36841 36924])
+                                            ("GetOperationcycleType" function
+                                               (:prototype-flag t
+                                                :arguments 
+                                                  ( ("OperationCycleId" variable (:type ("std::uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [37108 37139]))                                                  
+                                                :type ("ara::core::String" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [37068 37140])
+                                            ("GetOperationcycleAutostart" function
+                                               (:prototype-flag t
+                                                :arguments 
+                                                  ( ("OperationCycleId" variable (:type ("std::uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [37326 37357]))                                                  
+                                                :type "bool")
+                                                (reparse-symbol classsubparts) [37294 37358])
+                                            ("GetOperationcycleEnd" function
+                                               (:prototype-flag t
+                                                :arguments 
+                                                  ( ("OperationCycleId" variable (:type ("std::uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [37554 37585]))                                                  
+                                                :type "bool")
+                                                (reparse-symbol classsubparts) [37528 37586])
+                                            ("GetNumberofDtcInfoTables" function
+                                               (:prototype-flag t
+                                                :arguments 
+                                                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [37741 37746]))                                                  
+                                                :type ("std::uint32_t" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [37702 37747])
+                                            ("GetAraComDtcInfoSvcInstanceId" function
+                                               (:prototype-flag t
+                                                :arguments 
+                                                  ( ("DtcId" variable (:type ("std::uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [37973 37993]))                                                  
+                                                :type ("std::uint32_t" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [37929 37994])
+                                            ("GetDtcDataFilePath" function
+                                               (:prototype-flag t
+                                                :arguments 
+                                                  ( ("DtcId" variable (:type ("std::uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [38209 38229]))                                                  
+                                                :type ("ara::core::String" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [38172 38230])
+                                            ("GetDtcValue" function
+                                               (:prototype-flag t
+                                                :arguments 
+                                                  ( ("DtcId" variable (:type ("std::uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [38402 38422]))                                                  
+                                                :type ("std::uint32_t" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [38376 38423])
+                                            ("GetDtcPropsInfoTableId" function
+                                               (:prototype-flag t
+                                                :arguments 
+                                                  ( ("DtcId" variable (:type ("std::uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [38628 38648]))                                                  
+                                                :type ("std::uint32_t" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [38591 38649])
+                                            ("GetDtcGroupId" function
+                                               (:prototype-flag t
+                                                :arguments 
+                                                  ( ("DtcId" variable (:type ("std::uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [38826 38846]))                                                  
+                                                :type ("std::uint32_t" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [38798 38847])
+                                            ("GetAgingThreshold" function
+                                               (:prototype-flag t
+                                                :arguments 
+                                                  ( ("dtcpropsinfotableid" variable (:type ("std::uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [39048 39082]))                                                  
+                                                :type ("std::uint32_t" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [39016 39083])
+                                            ("GetAgingAllowed" function
+                                               (:prototype-flag t
+                                                :arguments 
+                                                  ( ("dtcpropsinfotableid" variable (:type ("std::uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [39264 39298]))                                                  
+                                                :type "bool")
+                                                (reparse-symbol classsubparts) [39243 39299])
+                                            ("GetHandlingTestFailedSinceLastClear" function
+                                               (:prototype-flag t
+                                                :arguments 
+                                                  ( ("EventMemoryInfoTableId" variable (:type ("std::uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [39567 39604]))                                                  
+                                                :type ("std::uint8_t" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [39518 39605])
+                                            ("GetAgingRequiresTestedCycles" function
+                                               (:prototype-flag t
+                                                :arguments 
+                                                  ( ("EventMemoryInfoTableId" variable (:type ("std::uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [39831 39868]))                                                  
+                                                :type "bool")
+                                                (reparse-symbol classsubparts) [39797 39869])
+                                            ("GetNumberofFFRecords" function
+                                               (:prototype-flag t
+                                                :type ("std::uint32_t" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [39992 40029])
+                                            ("GetDIDRefs" function
+                                               (:prototype-flag t
+                                                :arguments 
+                                                  ( ("didsetId" variable (:type ("std::uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [40220 40242]))                                                  
+                                                :type ("ara::core::Vector" type
+                                                     (:template-specifier 
+                                                        ( ("std::uint16_t" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil))
+                                                (reparse-symbol classsubparts) [40176 40243])
+                                            ("GetRecordNumber" function
+                                               (:prototype-flag t
+                                                :arguments 
+                                                  ( ("recordindex" variable (:type ("std::uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [40451 40477]))                                                  
+                                                :type ("std::uint32_t" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [40421 40478])
+                                            ("GetRecordUpdate" function
+                                               (:prototype-flag t
+                                                :arguments 
+                                                  ( ("recordindex" variable (:type ("std::uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [40677 40703]))                                                  
+                                                :type "bool")
+                                                (reparse-symbol classsubparts) [40656 40704])
+                                            ("GetRecordTrigger" function
+                                               (:prototype-flag t
+                                                :arguments 
+                                                  ( ("recordindex" variable (:type ("std::uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [40919 40945]))                                                  
+                                                :type ("ara::core::String" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [40884 40946])
+                                            ("GetRecordDidRef" function
+                                               (:prototype-flag t
+                                                :arguments 
+                                                  ( ("dtcpropsinfotableid" variable (:type ("std::uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [41159 41193]))                                                  
+                                                :type ("ara::core::Vector" type
+                                                     (:template-specifier 
+                                                        ( ("std::uint32_t" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil))
+                                                (reparse-symbol classsubparts) [41110 41194])
+                                            ("GetPriority" function
+                                               (:prototype-flag t
+                                                :arguments 
+                                                  ( ("dtcpropsinfotableid" variable (:type ("std::uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [41388 41422]))                                                  
+                                                :type ("std::uint32_t" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [41362 41423])
+                                            ("GetDtcAgingInfoTableId" function
+                                               (:prototype-flag t
+                                                :arguments 
+                                                  ( ("dtcpropsinfotableid" variable (:type ("std::uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [41638 41672]))                                                  
+                                                :type ("std::uint32_t" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [41601 41673])
+                                            ("GetFreezeFrameInfoTableRef" function
+                                               (:prototype-flag t
+                                                :arguments 
+                                                  ( ("dtcpropsinfotableid" variable (:type ("std::uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [41919 41953]))                                                  
+                                                :type ("ara::core::Vector" type
+                                                     (:template-specifier 
+                                                        ( ("std::uint32_t" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil))
+                                                (reparse-symbol classsubparts) [41859 41954])
+                                            ("GetExtendedDataRecordsRef" function
+                                               (:prototype-flag t
+                                                :arguments 
+                                                  ( ("dtcpropsinfotableid" variable (:type ("std::uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [42206 42240]))                                                  
+                                                :type ("ara::core::Vector" type
+                                                     (:template-specifier 
+                                                        ( ("std::uint32_t" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil))
+                                                (reparse-symbol classsubparts) [42147 42241])
+                                            ("GetFreezeFrameRef" function
+                                               (:prototype-flag t
+                                                :arguments 
+                                                  ( ("dtcpropsinfotableid" variable (:type ("std::uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [42460 42494]))                                                  
+                                                :type ("ara::core::Vector" type
+                                                     (:template-specifier 
+                                                        ( ("std::uint32_t" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil))
+                                                (reparse-symbol classsubparts) [42409 42495])
+                                            ("GetDidNumber" function
+                                               (:prototype-flag t
+                                                :arguments 
+                                                  ( ("freezeframedidinfoid" variable (:type ("std::uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [42694 42729]))                                                  
+                                                :type ("std::uint32_t" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [42667 42730])
+                                            ("GetDidSize" function
+                                               (:prototype-flag t
+                                                :arguments 
+                                                  ( ("freezeframedidinfoid" variable (:type ("std::uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [42924 42959]))                                                  
+                                                :type ("std::uint32_t" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [42899 42960])
+                                            ("GetNumberofFreezeFrameDIDInfos" function
+                                               (:prototype-flag t
+                                                :type ("std::uint32_t" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [43168 43215])
+                                            ("GetIsSharedTimer" function
+                                               (:prototype-flag t
+                                                :arguments 
+                                                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [43364 43369]))                                                  
+                                                :type "bool")
+                                                (reparse-symbol classsubparts) [43342 43370])
+                                            ("GetSecurityDelayTime" function
+                                               (:prototype-flag t
+                                                :arguments 
+                                                  ( ("securityLevel" variable (:type ("std::uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [43592 43620]))                                                  
+                                                :type ("std::uint32_t" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [43557 43621])
+                                            ("GetSupportedSubFuncAccPermissionGoupId" function
+                                               (:prototype-flag t
+                                                :arguments 
+                                                  ( ("serviceId" variable (:type ("std::uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [43861 43885])
+                                                    ("securityLevel" variable (:type ("std::uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [43886 43914]))                                                  
+                                                :type ("std::uint32_t" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [43808 43915])
+                                            ("GetTimeBasedFailedThreshold" function
+                                               (:prototype-flag t
+                                                :arguments 
+                                                  ( ("timeBasedEventDebounceInfoTableId" variable (:type ("std::uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [44174 44222]))                                                  
+                                                :type ("std::uint32_t" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [44132 44223])
+                                            ("GetTimeBasedPassedThreshold" function
+                                               (:prototype-flag t
+                                                :arguments 
+                                                  ( ("timeBasedEventDebounceInfoTableId" variable (:type ("std::uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [44482 44530]))                                                  
+                                                :type ("std::uint32_t" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [44440 44531])
+                                            ("GetTimeBasedFdcThresholdValue" function
+                                               (:prototype-flag t
+                                                :arguments 
+                                                  ( ("timeBasedEventDebounceInfoTableId" variable (:type ("std::uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [44796 44844]))                                                  
+                                                :type ("std::uint32_t" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [44752 44845])
+                                            ("GetTimeBasedDebounceBehavior" function
+                                               (:prototype-flag t
+                                                :arguments 
+                                                  ( ("timeBasedEventDebounceInfoTableId" variable (:type ("std::uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [45107 45155]))                                                  
+                                                :type ("std::uint32_t" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [45064 45156])
+                                            ("GetNumberofEnableConditionGroups" function
+                                               (:prototype-flag t
+                                                :arguments 
+                                                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [45347 45352]))                                                  
+                                                :type ("std::uint32_t" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [45300 45353])
+                                            ("GetNumberofEnableConditions" function
+                                               (:prototype-flag t
+                                                :arguments 
+                                                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [45523 45528]))                                                  
+                                                :type ("std::uint32_t" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [45481 45529])
+                                            ("GetEventEntryStorageTrigger" function
+                                               (:prototype-flag t
+                                                :arguments 
+                                                  ( ("EventMemoryInfoTableId" variable (:type ("std::uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [45701 45738]))                                                  
+                                                :type ("std::uint32_t" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [45659 45739])
+                                            ("GetFailureCycleCounterThreshold" function
+                                               (:prototype-flag t
+                                                :arguments 
+                                                  ( ("EventMemoryInfoTableId" variable (:type ("std::uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [45921 45958])
+                                                    ("EventId" variable (:type ("std::uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [45959 45980]))                                                  
+                                                :type ("std::uint8_t" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [45876 45981])
+                                            ("GetProcessOccurrenceCounter" function
+                                               (:prototype-flag t
+                                                :arguments 
+                                                  ( ("EventMemoryInfoTableId" variable (:type ("std::uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [46155 46192]))                                                  
+                                                :type ("std::uint32_t" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [46113 46193])
+                                            ("GetAraComEnableConditionRefs" function
+                                               (:prototype-flag t
+                                                :arguments 
+                                                  ( ("enableConditionGroupId" variable (:type ("std::uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [46458 46495]))                                                  
+                                                :type ("ara::core::Vector" type
+                                                     (:template-specifier 
+                                                        ( ("std::uint8_t" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil))
+                                                (reparse-symbol classsubparts) [46397 46496])
+                                            ("GetAraComEnableConditionServiceInsanceId" function
+                                               (:prototype-flag t
+                                                :arguments 
+                                                  ( ("enableConditionId" variable (:type ("std::uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [46765 46797]))                                                  
+                                                :type ("std::uint32_t" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [46710 46798])
+                                            ("GetEnableConditionInitValue" function
+                                               (:prototype-flag t
+                                                :arguments 
+                                                  ( ("enableConditionId" variable (:type ("std::uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [47019 47051]))                                                  
+                                                :type "bool")
+                                                (reparse-symbol classsubparts) [46986 47052])
+                                            ("GetListOfRequestSeeds" function
+                                               (:prototype-flag t
+                                                :arguments 
+                                                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [47177 47182]))                                                  
+                                                :type ("std::vector" type
+                                                     (:template-specifier 
+                                                        ( ("std::uint8_t" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil))
+                                                (reparse-symbol classsubparts) [47129 47183])
+                                            ("GetDataElementMinLength" function
+                                               (:prototype-flag t
+                                                :arguments 
+                                                  ( ("id" variable (:type ("std::uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [47389 47406]))                                                  
+                                                :type ("std::uint32_t" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [47351 47407])
+                                            ("GetDataElementMaxLength" function
+                                               (:prototype-flag t
+                                                :arguments 
+                                                  ( ("id" variable (:type ("std::uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [47613 47630]))                                                  
+                                                :type ("std::uint32_t" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [47575 47631])
+                                            ("GetDataElementInstanceId" function
+                                               (:prototype-flag t
+                                                :arguments 
+                                                  ( ("id" variable (:type ("std::uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [47832 47849]))                                                  
+                                                :type ("std::uint32_t" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [47793 47850])
+                                            ("IsDataElementValid" function
+                                               (:prototype-flag t
+                                                :arguments 
+                                                  ( ("id" variable (:type ("std::uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [48020 48037]))                                                  
+                                                :type "bool")
+                                                (reparse-symbol classsubparts) [47996 48038])
+                                            ("GetDataElementDataType" function
+                                               (:prototype-flag t
+                                                :arguments 
+                                                  ( ("id" variable (:type ("std::uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [48255 48272]))                                                  
+                                                :type ("ara::diag::dcm::DataElementDataType" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [48196 48273])
+                                            ("GetDataElementCategory" function
+                                               (:prototype-flag t
+                                                :arguments 
+                                                  ( ("id" variable (:type ("std::uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [48473 48490]))                                                  
+                                                :type ("ServiceInterfaceType" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [48429 48491])
+                                            ("GetDataElementEndianness" function
+                                               (:prototype-flag t
+                                                :arguments 
+                                                  ( ("id" variable (:type ("std::uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [48689 48706]))                                                  
+                                                :type ("std::uint8_t" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [48651 48707])
+                                            ("IsDataElementInternal" function
+                                               (:prototype-flag t
+                                                :arguments 
+                                                  ( ("id" variable (:type ("std::uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [48910 48927]))                                                  
+                                                :type "bool")
+                                                (reparse-symbol classsubparts) [48883 48928])
+                                            ("GetDataElementRefDataIdentifier" function
+                                               (:prototype-flag t
+                                                :arguments 
+                                                  ( ("dataElementId" variable (:type ("std::uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [49182 49210]))                                                  
+                                                :type ("std::uint32_t" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [49136 49211])
+                                            ("GetEnvironmentConditionRefDataElement" function
+                                               (:prototype-flag t
+                                                :arguments 
+                                                  ( ("envCondInfoId" variable (:type ("std::uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [49524 49552])
+                                                    ("expressionId" variable (:type ("std::uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [49553 49580]))                                                  
+                                                :type ("std::uint32_t" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [49465 49581])
+                                            ("GetExtendedDataElementsRef" function
+                                               (:prototype-flag t
+                                                :arguments 
+                                                  ( ("id" variable (:type ("std::uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [49745 49762]))                                                  
+                                                :type ("ara::core::Vector" type
+                                                     (:template-specifier 
+                                                        ( ("std::uint32_t" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil))
+                                                (reparse-symbol classsubparts) [49685 49763])
+                                            ("GetNumberOfExtendedDataRecords" function
+                                               (:prototype-flag t
+                                                :type ("std::uint32_t" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [49824 49871])
+                                            ("GetExtendedDataRecordNumber" function
+                                               (:prototype-flag t
+                                                :arguments 
+                                                  ( ("id" variable (:type ("std::uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [50009 50026]))                                                  
+                                                :type ("std::uint32_t" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [49967 50027])
+                                            ("GetExtendedDataTrigger" function
+                                               (:prototype-flag t
+                                                :arguments 
+                                                  ( ("id" variable (:type ("std::uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [50158 50175]))                                                  
+                                                :type ("std::uint32_t" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [50121 50176])
+                                            ("GetExtendedDataUpdate" function
+                                               (:prototype-flag t
+                                                :arguments 
+                                                  ( ("id" variable (:type ("std::uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [50296 50313]))                                                  
+                                                :type "bool")
+                                                (reparse-symbol classsubparts) [50269 50314])
+                                            ("GetSizeOfExtendedData" function
+                                               (:prototype-flag t
+                                                :type ("std::uint32_t" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [50379 50417])
+                                            ("GetFreezeFrameSize" function
+                                               (:prototype-flag t
+                                                :arguments 
+                                                  ( ("dtcId" variable (:type ("std::uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [50534 50554]))                                                  
+                                                :type ("std::uint32_t" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [50501 50555])
+                                            ("GetDtcGroups" function
+                                               (:prototype-flag t
+                                                :type ("std::shared_ptr" type
+                                                     (:template-specifier 
+                                                        ( ("ara::diag::cfg::DtcGroupInfoTable" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil))
+                                                (reparse-symbol classsubparts) [50652 50718])
+                                            ("private" label nil (reparse-symbol classsubparts) [50721 50729])
+                                            ("IsDataElementInterfaceToBeUsed" function
+                                               (:prototype-flag t
+                                                :arguments 
+                                                  ( ("envCondInfoId" variable (:type ("std::uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [51048 51076])
+                                                    ("expressionId" variable (:type ("std::uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [51077 51104]))                                                  
+                                                :type "bool")
+                                                (reparse-symbol classsubparts) [51012 51105])
+                                            ("dataIdentifierMap_" variable (:type ("std::unordered_map" type
+                                                 (:template-specifier 
+                                                    ( ("std::uint32_t" type nil nil nil)
+                                                      ("std::shared_ptr" type (:template-specifier 
+                                                        ( ("ara::diag::cfg::DataIdentifierInfoTable" type nil nil nil))                                                        ) nil nil))                                                    
+                                                  :type "class")
+                                                  nil nil)) (reparse-symbol classsubparts) [51239 51356])
+                                            ("extendedDataRecordsMap_" variable (:type ("std::unordered_map" type
+                                                 (:template-specifier 
+                                                    ( ("std::uint32_t" type nil nil nil)
+                                                      ("std::shared_ptr" type (:template-specifier 
+                                                        ( ("ara::diag::cfg::ExtendedDataRecords" type nil nil nil))                                                        ) nil nil))                                                    
+                                                  :type "class")
+                                                  nil nil)) (reparse-symbol classsubparts) [51486 51604])
+                                            ("accessPermissionGroupMap_" variable (:type ("std::unordered_map" type
+                                                 (:template-specifier 
+                                                    ( ("std::uint32_t" type nil nil nil)
+                                                      ("std::shared_ptr" type (:template-specifier 
+                                                        ( ("ara::diag::cfg::AccessPermissionGroup" type nil nil nil))                                                        ) nil nil))                                                    
+                                                  :type "class")
+                                                  nil nil)) (reparse-symbol classsubparts) [51743 51865])
+                                            ("securityAccessLevelMap_" variable (:type ("std::unordered_map" type
+                                                 (:template-specifier 
+                                                    ( ("std::uint32_t" type nil nil nil)
+                                                      ("std::shared_ptr" type (:template-specifier 
+                                                        ( ("ara::diag::cfg::SecAccessLevelInfoTable" type nil nil nil))                                                        ) nil nil))                                                    
+                                                  :type "class")
+                                                  nil nil)) (reparse-symbol classsubparts) [52004 52126])
+                                            ("serviceProcessorsdataMap_" variable (:type ("std::unordered_map" type
+                                                 (:template-specifier 
+                                                    ( ("std::uint8_t" type nil nil nil)
+                                                      ("std::shared_ptr" type (:template-specifier 
+                                                        ( ("ara::diag::cfg::ServiceProcessorsTable" type nil nil nil))                                                        ) nil nil))                                                    
+                                                  :type "class")
+                                                  nil nil)) (reparse-symbol classsubparts) [52266 52388])
+                                            ("routineIdentifierMap_" variable (:type ("std::unordered_map" type
+                                                 (:template-specifier 
+                                                    ( ("std::uint32_t" type nil nil nil)
+                                                      ("std::shared_ptr" type (:template-specifier 
+                                                        ( ("ara::diag::cfg::RoutineControlInfoTable" type nil nil nil))                                                        ) nil nil))                                                    
+                                                  :type "class")
+                                                  nil nil)) (reparse-symbol classsubparts) [52525 52645])
+                                            ("diagconversationmap_" variable (:type ("std::unordered_map" type
+                                                 (:template-specifier 
+                                                    ( ("std::uint32_t" type nil nil nil)
+                                                      ("std::shared_ptr" type (:template-specifier 
+                                                        ( ("ara::diag::cfg::DiagConversationsTable" type nil nil nil))                                                        ) nil nil))                                                    
+                                                  :type "class")
+                                                  nil nil)) (reparse-symbol classsubparts) [52780 52898])
+                                            ("dataElementInfoMap_" variable (:type ("std::unordered_map" type
+                                                 (:template-specifier 
+                                                    ( ("std::uint32_t" type nil nil nil)
+                                                      ("std::shared_ptr" type (:template-specifier 
+                                                        ( ("ara::diag::cfg::DataElementInfoTable" type nil nil nil))                                                        ) nil nil))                                                    
+                                                  :type "class")
+                                                  nil nil)) (reparse-symbol classsubparts) [53039 53154])
+                                            ("eventmemoryinfomap_" variable (:type ("std::unordered_map" type
+                                                 (:template-specifier 
+                                                    ( ("std::uint32_t" type nil nil nil)
+                                                      ("std::shared_ptr" type (:template-specifier 
+                                                        ( ("ara::diag::cfg::EventMemoryInfoTable" type nil nil nil))                                                        ) nil nil))                                                    
+                                                  :type "class")
+                                                  nil nil)) (reparse-symbol classsubparts) [53286 53401])
+                                            ("counterbasedeventdebounceinfomap_" variable (:type ("std::unordered_map" type
+                                                 (:template-specifier 
+                                                    ( ("std::uint32_t" type nil nil nil)
+                                                      ("std::shared_ptr" type (:template-specifier 
+                                                        ( ("ara::diag::cfg::CounterBasedEventDebounceInfoTable" type nil nil nil))                                                        ) nil nil))                                                    
+                                                  :type "class")
+                                                  nil nil)) (reparse-symbol classsubparts) [53561 53704])
+                                            ("timebasedeventdebounceinfomap_" variable (:type ("std::unordered_map" type
+                                                 (:template-specifier 
+                                                    ( ("std::uint32_t" type nil nil nil)
+                                                      ("std::shared_ptr" type (:template-specifier 
+                                                        ( ("ara::diag::cfg::TimeBasedEventDebounceInfoTable" type nil nil nil))                                                        ) nil nil))                                                    
+                                                  :type "class")
+                                                  nil nil)) (reparse-symbol classsubparts) [53858 53995])
+                                            ("operationcycleinfoinfomap_" variable (:type ("std::unordered_map" type
+                                                 (:template-specifier 
+                                                    ( ("std::uint32_t" type nil nil nil)
+                                                      ("std::shared_ptr" type (:template-specifier 
+                                                        ( ("ara::diag::cfg::OperationCycles" type nil nil nil))                                                        ) nil nil))                                                    
+                                                  :type "class")
+                                                  nil nil)) (reparse-symbol classsubparts) [54129 54246])
+                                            ("freezeframedidinfomap_" variable (:type ("std::unordered_map" type
+                                                 (:template-specifier 
+                                                    ( ("std::uint32_t" type nil nil nil)
+                                                      ("std::shared_ptr" type (:template-specifier 
+                                                        ( ("ara::diag::cfg::FreezeFrameDidInfoTable" type nil nil nil))                                                        ) nil nil))                                                    
+                                                  :type "class")
+                                                  nil nil)) (reparse-symbol classsubparts) [54384 54505])
+                                            ("dtcinfomap_" variable (:type ("std::unordered_map" type
+                                                 (:template-specifier 
+                                                    ( ("std::uint32_t" type nil nil nil)
+                                                      ("std::shared_ptr" type (:template-specifier 
+                                                        ( ("ara::diag::cfg::DtcInfoTable" type nil nil nil))                                                        ) nil nil))                                                    
+                                                  :type "class")
+                                                  nil nil)) (reparse-symbol classsubparts) [54621 54714])
+                                            ("dtcGroupPtr_" variable (:type ("std::shared_ptr" type
+                                                 (:template-specifier 
+                                                    ( ("ara::diag::cfg::DtcGroupInfoTable" type nil nil nil))                                                    
+                                                  :type "class")
+                                                  nil nil)) (reparse-symbol classsubparts) [54788 54852])
+                                            ("freezeframerecordsinfomap_" variable (:type ("std::unordered_map" type
+                                                 (:template-specifier 
+                                                    ( ("std::uint32_t" type nil nil nil)
+                                                      ("std::shared_ptr" type (:template-specifier 
+                                                        ( ("ara::diag::cfg::FfRecords" type nil nil nil))                                                        ) nil nil))                                                    
+                                                  :type "class")
+                                                  nil nil)) (reparse-symbol classsubparts) [54980 55085])
+                                            ("dtcpropsinfomap_" variable (:type ("std::unordered_map" type
+                                                 (:template-specifier 
+                                                    ( ("std::uint32_t" type nil nil nil)
+                                                      ("std::shared_ptr" type (:template-specifier 
+                                                        ( ("ara::diag::cfg::DtcPropsInfoTable" type nil nil nil))                                                        ) nil nil))                                                    
+                                                  :type "class")
+                                                  nil nil)) (reparse-symbol classsubparts) [55211 55314])
+                                            ("enableConditionGroupsInfomap_" variable (:type ("std::unordered_map" type
+                                                 (:template-specifier 
+                                                    ( ("std::uint32_t" type nil nil nil)
+                                                      ("std::shared_ptr" type (:template-specifier 
+                                                        ( ("ara::diag::cfg::EnableConditionGroups" type nil nil nil))                                                        ) nil nil))                                                    
+                                                  :type "class")
+                                                  nil nil)) (reparse-symbol classsubparts) [55457 55583])
+                                            ("enableConditionsInfomap_" variable (:type ("std::unordered_map" type
+                                                 (:template-specifier 
+                                                    ( ("std::uint32_t" type nil nil nil)
+                                                      ("std::shared_ptr" type (:template-specifier 
+                                                        ( ("ara::diag::cfg::EnableConditions" type nil nil nil))                                                        ) nil nil))                                                    
+                                                  :type "class")
+                                                  nil nil)) (reparse-symbol classsubparts) [55716 55832])
+                                            ("araComGenericUDSServiceInstanceSet_" variable (:type ("std::unordered_set" type
+                                                 (:template-specifier 
+                                                    ( ("std::uint16_t" type nil nil nil))                                                    
+                                                  :type "class")
+                                                  nil nil)) (reparse-symbol classsubparts) [55937 56007])
+                                            ("araComGenericRoutineServiceInstanceSet_" variable (:type ("std::unordered_set" type
+                                                 (:template-specifier 
+                                                    ( ("std::uint16_t" type nil nil nil))                                                    
+                                                  :type "class")
+                                                  nil nil)) (reparse-symbol classsubparts) [56116 56190])
+                                            ("araComGenericDataIdentifierServiceInstanceSet_" variable (:type ("std::unordered_set" type
+                                                 (:template-specifier 
+                                                    ( ("std::uint16_t" type nil nil nil))                                                    
+                                                  :type "class")
+                                                  nil nil)) (reparse-symbol classsubparts) [56306 56387])
+                                            ("araComDiagConversationServiceInstanceSet_" variable (:type ("std::unordered_set" type
+                                                 (:template-specifier 
+                                                    ( ("std::uint16_t" type nil nil nil))                                                    
+                                                  :type "class")
+                                                  nil nil)) (reparse-symbol classsubparts) [56498 56574])
+                                            ("araComDiagSecurityAccessServiceInstanceSet_" variable (:type ("std::unordered_set" type
+                                                 (:template-specifier 
+                                                    ( ("std::uint16_t" type nil nil nil))                                                    
+                                                  :type "class")
+                                                  nil nil)) (reparse-symbol classsubparts) [56687 56765])
+                                            ("araComDataElementUint8ServiceInstanceSet_" variable (:type ("std::unordered_set" type
+                                                 (:template-specifier 
+                                                    ( ("std::uint16_t" type nil nil nil))                                                    
+                                                  :type "class")
+                                                  nil nil)) (reparse-symbol classsubparts) [56879 56955])
+                                            ("araComDataElementVectorServiceInstanceSet_" variable (:type ("std::unordered_set" type
+                                                 (:template-specifier 
+                                                    ( ("std::uint16_t" type nil nil nil))                                                    
+                                                  :type "class")
+                                                  nil nil)) (reparse-symbol classsubparts) [57070 57147])
+                                            ("araComDiagCommunicationControlServiceInstanceSet_" variable (:type ("std::unordered_set" type
+                                                 (:template-specifier 
+                                                    ( ("std::uint16_t" type nil nil nil))                                                    
+                                                  :type "class")
+                                                  nil nil)) (reparse-symbol classsubparts) [57266 57350])
+                                            ("araComDiagRequestRestartServiceInstanceSet_" variable (:type ("std::unordered_set" type
+                                                 (:template-specifier 
+                                                    ( ("std::uint16_t" type nil nil nil))                                                    
+                                                  :type "class")
+                                                  nil nil)) (reparse-symbol classsubparts) [57463 57541])
+                                            ("didSetInfomap_" variable (:type ("std::unordered_map" type
+                                                 (:template-specifier 
+                                                    ( ("std::uint32_t" type nil nil nil)
+                                                      ("std::shared_ptr" type (:template-specifier 
+                                                        ( ("ara::diag::cfg::DIDSetInfo" type nil nil nil))                                                        ) nil nil))                                                    
+                                                  :type "class")
+                                                  nil nil)) (reparse-symbol classsubparts) [57625 57719])
+                                            ("aralog_" variable (:type ("ara::log::Logger" type (:type "class") nil nil)) (reparse-symbol classsubparts) [57750 57776])
+                                            ("maxDIDToRead_" variable (:type ("std::uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [57837 57865])
+                                            ("responseToEcuReset_" variable (:type ("std::uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [57945 57979])
+                                            ("maxPendingResponse_" variable (:type ("std::uint8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [58041 58074])
+                                            ("numberOfConversations_" variable (:type ("std::uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [58146 58183])
+                                            ("udsMessageLength_" variable (:type ("std::uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [58243 58275])
+                                            ("numberofEventMemoryInfoTables_" variable (:type ("std::uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [58367 58412])
+                                            ("numberofOperationCycles_" variable (:type ("std::uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [58490 58529])
+                                            ("numberofDtcInfoTables_" variable (:type ("std::uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [58604 58641])
+                                            ("numberofFFRecords_" variable (:type ("std::uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [58707 58740])
+                                            ("numberofFreezeFrameDIDInfos_" variable (:type ("std::uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [58828 58871])
+                                            ("numberofEnableConditions_" variable (:type ("std::uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [58956 58996])
+                                            ("numberofEnableConditionGroups_" variable (:type ("std::uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [59087 59132])
+                                            ("numberofDidSetInfoTables_" variable (:type ("std::uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [59207 59247])
+                                            ("numberofDTCProps_" variable (:type ("std::uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [59316 59348])
+                                            ("isSharedTimer" variable (:type "bool") (reparse-symbol classsubparts) [59402 59421]))                                          
+                                        :type "class")
+                                        (reparse-symbol namespacesubparts) [3213 59424]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [2420 59427]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [2403 59449]))                  
+                :type "namespace")
+                nil [2387 59469]))          
+      :file "dm_config.h"
+      :pointmax 59526
+      :fsize 60731
+      :lastmodtime '(24313 16732 377857 260000)
+      :unmatched-syntax '((symbol 3159 . 3168) (STATIC 3152 . 3158) (symbol 3106 . 3115) (STATIC 3099 . 3105) (symbol 3057 . 3066) (STATIC 3050 . 3056) (symbol 2999 . 3008) (STATIC 2992 . 2998) (symbol 2954 . 2963) (STATIC 2947 . 2953) (symbol 2900 . 2909) (STATIC 2893 . 2899) (symbol 2848 . 2857) (STATIC 2841 . 2847) (symbol 2799 . 2808) (STATIC 2792 . 2798) (symbol 2749 . 2758) (STATIC 2742 . 2748) (symbol 2692 . 2701) (STATIC 2685 . 2691) (symbol 2632 . 2641) (STATIC 2625 . 2631) (symbol 2567 . 2576) (STATIC 2560 . 2566) (number 2554 . 2557) (symbol 2506 . 2515) (STATIC 2499 . 2505))
+      :lexical-table 
+        '(("ARA_DIAG_CONFIG_DM_CONFIG_H_")
+          )
+)
+    (semanticdb-table "semanticdb-table-1b380e0"
+      :file "access_permission_group.h"
+      :fsize 1522
+      :lastmodtime '(24313 16732 377857 260000))
+    (semanticdb-table "semanticdb-table-1b38134"
+      :file "counter_based_event_debounce_info_table.h"
+      :fsize 2805
+      :lastmodtime '(24313 16732 377857 260000))
+    (semanticdb-table "semanticdb-table-1b38178"
+      :file "data_identifier_info_table.h"
+      :fsize 2017
+      :lastmodtime '(24313 16732 377857 260000))
+    (semanticdb-table "semanticdb-table-1b381cc"
+      :file "diag_conversations_table.h"
+      :fsize 1650
+      :lastmodtime '(24313 16732 377857 260000))
+    (semanticdb-table "semanticdb-table-1b38210"
+      :major-mode c++-mode
+      :tags 
+        '( ("ARA_DIAG_CFG_DTC_INFO_TABLE_H_" variable (:constant-flag t) nil [786 816])
+            ("ara/core/string.h" include (:system-flag t) nil [818 846])
+            ("iostream" include (:system-flag t) nil [847 866])
+            ("memory" include (:system-flag t) nil [867 884])
+            ("unordered_map" include (:system-flag t) nil [885 909])
+            ("ara" type
+               (:members 
+                  ( ("diag" type
+                       (:members 
+                          ( ("cfg" type
+                               (:members 
+                                  ( ("DtcInfoTable" type
+                                       (:members 
+                                          ( ("araComDtcInfoServiceInstanceId" variable (:type ("std::uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1150 1195])
+                                            ("dtcValue" variable (:type ("std::uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1271 1294])
+                                            ("dtcPropsInfoTableId" variable (:type ("std::uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1382 1416])
+                                            ("dtcGroupId" variable (:type ("std::uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1462 1487])
+                                            ("dtcDataPath" variable (:type ("ara::core::String" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1548 1578]))                                          
+                                        :type "struct")
+                                        (reparse-symbol namespacesubparts) [1040 1581]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [944 1584]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [927 1603]))                  
+                :type "namespace")
+                nil [911 1623]))          
+      :file "dtc_info_table.h"
+      :pointmax 1681
+      :fsize 1726
+      :lastmodtime '(24313 16732 377857 260000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("ARA_DIAG_CFG_DTC_INFO_TABLE_H_")
+          )
+)
+    (semanticdb-table "semanticdb-table-26de534"
+      :file "dtc_props_info_table.h"
+      :fsize 2530
+      :lastmodtime '(24313 16732 377857 260000))
+    (semanticdb-table "semanticdb-table-26de560"
+      :file "dtc_group_info_table.h"
+      :fsize 1226
+      :lastmodtime '(24313 16732 377857 260000))
+    (semanticdb-table "semanticdb-table-26de5b4"
+      :file "event_memory_info_table.h"
+      :fsize 2494
+      :lastmodtime '(24313 16732 377857 260000))
+    (semanticdb-table "semanticdb-table-26de5f8"
+      :file "freeze_frame_did_info_table.h"
+      :fsize 1496
+      :lastmodtime '(24313 16732 377857 260000))
+    (semanticdb-table "semanticdb-table-26de64c"
+      :file "freeze_frame_records_info.h"
+      :fsize 1661
+      :lastmodtime '(24313 16732 377857 260000))
+    (semanticdb-table "semanticdb-table-26de690"
+      :file "operation_cycle_info.h"
+      :fsize 1819
+      :lastmodtime '(24313 16732 377857 260000))
+    (semanticdb-table "semanticdb-table-26de6e4"
+      :file "routine_control_info_table.h"
+      :fsize 2005
+      :lastmodtime '(24313 16732 377857 260000))
+    (semanticdb-table "semanticdb-table-26de728"
+      :file "service_processors_table.h"
+      :fsize 2045
+      :lastmodtime '(24313 16732 377857 260000))
+    (semanticdb-table "semanticdb-table-26de77c"
+      :file "supported_subfunctions.h"
+      :fsize 1550
+      :lastmodtime '(24313 16732 377857 260000))
+    (semanticdb-table "semanticdb-table-26de7c0"
+      :file "sec_access_level_info_table.h"
+      :fsize 2212
+      :lastmodtime '(24313 16732 377857 260000))
+    (semanticdb-table "semanticdb-table-26de814"
+      :file "time_based_event_debounce_info_table.h"
+      :fsize 1855
+      :lastmodtime '(24313 16732 377857 260000))
+    (semanticdb-table "semanticdb-table-26de858"
+      :file "enable_condition.h"
+      :fsize 1533
+      :lastmodtime '(24313 16732 377857 260000))
+    (semanticdb-table "semanticdb-table-26de8ac"
+      :file "enable_condition_group_config.h"
+      :fsize 1446
+      :lastmodtime '(24313 16732 377857 260000))
+    (semanticdb-table "semanticdb-table-26de8f0"
+      :file "data_element_info_table.h"
+      :fsize 1587
+      :lastmodtime '(24313 16732 377857 260000))
+    (semanticdb-table "semanticdb-table-2b47874"
+      :file "extended_data_records_info_table.h"
+      :fsize 1457
+      :lastmodtime '(24313 16732 377857 260000))
+    (semanticdb-table "semanticdb-table-2b478b8"
+      :file "did_set_info_table.h"
+      :fsize 1351
+      :lastmodtime '(24313 16732 377857 260000)))
+  :file "!home!hyuk.myeong!work!G550_x86!CPU!QNX!Apps!source!autosar!avin!avin-ap!dm!source!inc!private!common!config!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

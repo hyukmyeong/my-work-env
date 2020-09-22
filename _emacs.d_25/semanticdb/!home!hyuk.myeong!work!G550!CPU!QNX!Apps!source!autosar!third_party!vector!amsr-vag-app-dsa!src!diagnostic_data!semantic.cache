@@ -1,0 +1,71 @@
+;; Object semanticdb-project-database-file-2f11764
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-2f11764"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-2f12bec"
+      :major-mode c++-mode
+      :tags 
+        '( ("SRC_DIAGNOSTIC_DATA_DIAGNOSTIC_SERVICE_DATA_H_" variable (:constant-flag t) nil [1211 1257])
+            ("atomic" include (:system-flag t) nil [1513 1530])
+            ("memory" include (:system-flag t) nil [1531 1548])
+            ("mutex" include (:system-flag t) nil [1549 1565])
+            ("vector" include (:system-flag t) nil [1566 1583])
+            ("ara/crypto/direct/crypt/EntryPoint.h" include nil nil [1585 1632])
+            ("ara/diag/service_interfaces/dtc_information/dtcinformation_proxy.h" include nil nil [1633 1710])
+            ("vac/container/basic_string.h" include nil nil [1711 1750])
+            ("configuration/application_settings.h" include nil nil [1752 1799])
+            ("configuration/data_identifier_configuration_parser.h" include nil nil [1800 1863])
+            ("diagnostic_service_constants.h" include nil nil [1864 1905])
+            ("diagnostic_service_datatypes.h" include nil nil [1906 1947])
+            ("i_diagnostic_data_access.h" include nil nil [1948 1985])
+            ("i_runnable.h" include nil nil [1986 2009])
+            ("service_interfaces/diagnostic_data_distribution_server.h" include nil nil [2010 2077])
+            ("service_interfaces/diagnostic_monitor_service.h" include nil nil [2078 2136])
+            ("sfd/i_sfd_access.h" include nil nil [2137 2166])
+            ("util/dsa_ara_logger.h" include nil nil [2167 2199])
+            ("util/persistency_wrapper.h" include nil nil [2200 2237])
+            ("vendor/i_oem_runtime_fetched_dids.h" include nil nil [2238 2284])
+            ("vector::diagnostic_service::vendor::IOEMRuntimeFetchedDidsInterface" variable (:type "int") nil [2411 2479])
+            ("vector" type
+               (:members 
+                  ( ("diagnostic_service" type
+                       (:members 
+                          ( ("diagnostic_data" type
+                               (:members 
+                                  ( ("ddds" type
+                                       (:kind alias
+                                        :members 
+                                          ( ("vag::diagnostic_data_distribution_service" type (:type "namespace") nil nil))                                          
+                                        :type "namespace")
+                                        (reparse-symbol namespacesubparts) [2560 2619])
+                                    ("IDiagnosticDataAccess" variable
+                                       (:dereference 1
+                                        :type "int")
+                                        (reparse-symbol namespacesubparts) [2917 15458]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [2531 15461]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [2500 15493]))                  
+                :type "namespace")
+                nil [2481 15528]))          
+      :file "diagnostic_service_data.h"
+      :pointmax 15609
+      :fsize 15608
+      :lastmodtime '(24310 58939 290371 801000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("SRC_DIAGNOSTIC_DATA_DIAGNOSTIC_SERVICE_DATA_H_")
+          )
+)
+    (semanticdb-table "semanticdb-table-2427354"
+      :file "diagnostic_service_datatypes.h"
+      :fsize 3905
+      :lastmodtime '(24310 58939 294370 264000))
+    (semanticdb-table "semanticdb-table-2427374"
+      :file "i_diagnostic_data_access.h"
+      :fsize 3756
+      :lastmodtime '(24310 58939 294370 264000)))
+  :file "!home!hyuk.myeong!work!G550!CPU!QNX!Apps!source!autosar!third_party!vector!amsr-vag-app-dsa!src!diagnostic_data!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

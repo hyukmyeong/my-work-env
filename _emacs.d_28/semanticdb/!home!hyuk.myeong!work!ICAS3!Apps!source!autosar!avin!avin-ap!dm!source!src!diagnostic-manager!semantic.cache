@@ -1,0 +1,24 @@
+;; Object semanticdb-project-database-file-277ec10
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-277ec10"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-277ec2c"
+      :major-mode c++-mode
+      :tags 
+        '( ("iostream" include (:system-flag t) nil [838 857])
+            ("ara/log/logging.h" include nil nil [859 887])
+            ("runtime_dm.h" include nil nil [888 911])
+            ("ara::log" using (:type ("ara::log" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [913 938])
+            ("main" function (:type "int") nil [1084 1861]))          
+      :file "main.cpp"
+      :pointmax 1862
+      :fsize 1906
+      :lastmodtime '(24400 37862 401806 175000)
+      :unmatched-syntax nil))
+  :file "!home!hyuk.myeong!work!ICAS3!Apps!source!autosar!avin!avin-ap!dm!source!src!diagnostic-manager!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

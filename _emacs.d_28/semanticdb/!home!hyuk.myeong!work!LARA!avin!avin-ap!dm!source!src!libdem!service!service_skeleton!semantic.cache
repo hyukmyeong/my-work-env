@@ -1,0 +1,133 @@
+;; Object semanticdb-project-database-file-1f8bf64
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-1f8bf64"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-1f8bf70"
+      :major-mode c++-mode
+      :tags 
+        '( ("functional" include (:system-flag t) nil [779 800])
+            ("dem/service/service_skeleton/diagnostic_event_notification_impl.h" include nil nil [802 878])
+            ("dem/events/dem_event.h" include nil nil [879 912])
+            ("dem/types/impl_type_udsdtcstatusbytechangedtype.h" include nil nil [913 973])
+            ("dem/types/impl_type_udsdtcstatusbytetype.h" include nil nil [974 1027])
+            ("ara" type
+               (:members 
+                  ( ("diag" type
+                       (:members 
+                          ( ("dem" type
+                               (:members 
+                                  ( ("service" type
+                                       (:members 
+                                          ( ("DiagnosticEventNotificationImpl" function
+                                               (:constructor-flag t
+                                                :parent "DiagnosticEventNotificationImpl"
+                                                :arguments 
+                                                  ( ("instanceId" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("ara::com::InstanceIdentifier" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [1168 1215]))                                                  
+                                                :type ("DiagnosticEventNotificationImpl" type (:type "class") nil nil))
+                                                (reparse-symbol namespacesubparts) [1098 1344])
+                                            ("Notify" function
+                                               (:parent "DiagnosticEventNotificationImpl"
+                                                :arguments 
+                                                  ( ("statusByte" variable (:type ("ara::diag::dem::types::DTCStatus" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1391 1435]))                                                  
+                                                :type "void")
+                                                (reparse-symbol namespacesubparts) [1346 1981]))                                          
+                                        :type "namespace")
+                                        (reparse-symbol namespacesubparts) [1078 1984]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [1062 2007]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [1045 2026]))                  
+                :type "namespace")
+                nil [1029 2046]))          
+      :file "diagnostic_event_notification_impl.cpp"
+      :pointmax 2064
+      :fsize 2122
+      :lastmodtime '(24420 22490 4057 28000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1a7e338"
+      :major-mode c++-mode
+      :tags 
+        '( ("exception" include (:system-flag t) nil [761 781])
+            ("dem/service/service_skeleton/diagnostic_event_impl.h" include nil nil [783 846])
+            ("dem/types/impl_type_eventstatusbytetype.h" include nil nil [847 899])
+            ("dem/types/impl_type_debouncingstatetype.h" include nil nil [900 952])
+            ("dem/types/impl_type_faultdetectioncountertype.h" include nil nil [953 1011])
+            ("dem/types/impl_type_dtcformattype.h" include nil nil [1012 1058])
+            ("dem/events/dem_dtc.h" include nil nil [1059 1090])
+            ("dem/events/dem_event.h" include nil nil [1091 1124])
+            ("ara" type
+               (:members 
+                  ( ("diag" type
+                       (:members 
+                          ( ("dem" type
+                               (:members 
+                                  ( ("service" type
+                                       (:members 
+                                          ( ("DiagnosticEventImpl" function
+                                               (:constructor-flag t
+                                                :parent "DiagnosticEventImpl"
+                                                :arguments 
+                                                  ( ("instanceId" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("ara::com::InstanceIdentifier" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [1241 1288])
+                                                    ("demEvent" variable
+                                                       (:pointer 1
+                                                        :type ("dem::event::DemEvent" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [1289 1320]))                                                  
+                                                :type ("DiagnosticEventImpl" type (:type "class") nil nil))
+                                                (reparse-symbol namespacesubparts) [1195 1607])
+                                            ("decltype" function
+                                               (:arguments 
+                                                  ( ("" variable (:type ("Skeleton::GetFaultDetectionCounter" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1674 1710]))                                                  
+                                                :type "int")
+                                                (reparse-symbol namespacesubparts) [1665 2148])
+                                            ("decltype" function
+                                               (:arguments 
+                                                  ( ("" variable (:type ("Skeleton::GetDebouncingStatus" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2210 2241]))                                                  
+                                                :type "int")
+                                                (reparse-symbol namespacesubparts) [2201 2657])
+                                            ("decltype" function
+                                               (:arguments 
+                                                  ( ("" variable (:type ("Skeleton::GetDTCNumber" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2757 2790]))                                                  
+                                                :type "int")
+                                                (reparse-symbol namespacesubparts) [2748 3458])
+                                            ("Notify" function
+                                               (:parent "DiagnosticEventImpl"
+                                                :arguments 
+                                                  ( ("newEventStatus" variable
+                                                       (:constant-flag t
+                                                        :type ("ara::diag::dem::types::EventStatus" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [3493 3549]))                                                  
+                                                :type "void")
+                                                (reparse-symbol namespacesubparts) [3460 3755])
+                                            ("HandleEventStatusGet" function
+                                               (:parent "DiagnosticEventImpl"
+                                                :type ("ara::core::Future" type
+                                                     (:template-specifier 
+                                                        ( ("ara::diag::diagnostic_manager::skeleton::fields::EventStatus::value_type" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil))
+                                                (reparse-symbol namespacesubparts) [3757 4289]))                                          
+                                        :type "namespace")
+                                        (reparse-symbol namespacesubparts) [1175 4292]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [1159 4315]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [1142 4334]))                  
+                :type "namespace")
+                nil [1126 4354]))          
+      :file "diagnostic_event_impl.cpp"
+      :pointmax 4372
+      :fsize 4502
+      :lastmodtime '(24420 22490 4057 28000)
+      :unmatched-syntax '((semantic-list 2779 . 2790) (punctuation 2746 . 2747) (punctuation 2745 . 2746) (semantic-list 2697 . 2740) (symbol 2685 . 2697) (punctuation 2684 . 2685) (punctuation 2683 . 2684) (symbol 2664 . 2683) (symbol 2659 . 2663) (semantic-list 2239 . 2241) (punctuation 2199 . 2200) (punctuation 2198 . 2199) (semantic-list 2195 . 2197) (symbol 2176 . 2195) (punctuation 2175 . 2176) (punctuation 2174 . 2175) (symbol 2155 . 2174) (symbol 2150 . 2154) (semantic-list 1708 . 1710) (punctuation 1663 . 1664) (punctuation 1662 . 1663) (semantic-list 1659 . 1661) (symbol 1635 . 1659) (punctuation 1634 . 1635) (punctuation 1633 . 1634) (symbol 1614 . 1633) (symbol 1609 . 1613))))
+  :file "!home!hyuk.myeong!work!LARA!avin!avin-ap!dm!source!src!libdem!service!service_skeleton!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,24 @@
+;; Object semanticdb-project-database-file-3cfcff8
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-3cfcff8"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-3cfd014"
+      :major-mode js-mode
+      :tags nil
+      :file "lara_em_conf.json"
+      :pointmax 174
+      :fsize 173
+      :lastmodtime '(24359 48970 193306 444000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-a9c404"
+      :major-mode js-mode
+      :tags nil
+      :file "machine_manifest.json"
+      :pointmax 19769
+      :fsize 19768
+      :lastmodtime '(24359 48970 193306 444000)
+      :unmatched-syntax '((BRACK_BLOCK 1 . 19768))))
+  :file "!home!hyuk.myeong!work!LARA!Apps!source!autosar!ara-api!exec!files!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

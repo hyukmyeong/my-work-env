@@ -1,0 +1,173 @@
+;; Object semanticdb-project-database-file-b85e08
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-b85e08"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-e550e4"
+      :major-mode python-mode
+      :tags 
+        '( ("\"\"\"
+requests.auth
+~~~~~~~~~~~~~
+
+This module contains the authentication handlers for Requests.
+\"\"\"" code nil nil [26 125])
+            ("os" include nil nil [127 136])
+            ("re" include nil nil [137 146])
+            ("time" include nil nil [147 158])
+            ("hashlib" include nil nil [159 173])
+            ("threading" include nil nil [174 190])
+            ("warnings" include nil nil [191 206])
+            ("base64" include nil nil [208 236])
+            ("basestring" include nil nil [251 283])
+            ("str" include nil nil [251 283])
+            ("urlparse" include nil nil [251 283])
+            ("extract_cookies_to_jar" include nil nil [298 327])
+            ("to_native_string" include nil nil [350 373])
+            ("parse_dict_header" include nil nil [386 410])
+            ("CONTENT_TYPE_FORM_URLENCODED" variable nil nil [412 478])
+            ("CONTENT_TYPE_MULTI_PART" variable nil nil [479 526])
+            ("_basic_auth_str" function
+               (:documentation "Returns a Basic Auth string."
+                :arguments 
+                  ( ("username" variable nil (reparse-symbol function_parameters) [549 557])
+                    ("password" variable nil (reparse-symbol function_parameters) [559 567]))                  )
+                nil [529 2064])
+            ("AuthBase" type
+               (:documentation "Base class that all auth implementations derive from"
+                :superclasses ("object")
+                :members 
+                  ( ("__call__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2171 2175])
+                            ("r" variable nil (reparse-symbol function_parameters) [2177 2178]))                          )
+                        (reparse-symbol indented_block_body) [2158 2247]))                  
+                :type "class")
+                nil [2066 2247])
+            ("HTTPBasicAuth" type
+               (:documentation "Attaches HTTP Basic Authentication to the given Request object."
+                :superclasses ("AuthBase")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [2407 2431])
+                            ("self" variable nil (reparse-symbol indented_block_body) [2440 2464]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2372 2376])
+                            ("username" variable nil (reparse-symbol function_parameters) [2378 2386])
+                            ("password" variable nil (reparse-symbol function_parameters) [2388 2396]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [2359 2465])
+                    ("__eq__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2481 2485])
+                            ("other" variable nil (reparse-symbol function_parameters) [2487 2492]))                          )
+                        (reparse-symbol indented_block_body) [2470 2652])
+                    ("__ne__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2668 2672])
+                            ("other" variable nil (reparse-symbol function_parameters) [2674 2679]))                          )
+                        (reparse-symbol indented_block_body) [2657 2715])
+                    ("__call__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2733 2737])
+                            ("r" variable nil (reparse-symbol function_parameters) [2739 2740]))                          )
+                        (reparse-symbol indented_block_body) [2720 2843]))                  
+                :type "class")
+                nil [2249 2843])
+            ("HTTPProxyAuth" type
+               (:documentation "Attaches HTTP Proxy Authentication to a given Request object."
+                :superclasses ("HTTPBasicAuth")
+                :members 
+                  ( ("__call__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2971 2975])
+                            ("r" variable nil (reparse-symbol function_parameters) [2977 2978]))                          )
+                        (reparse-symbol indented_block_body) [2958 3087]))                  
+                :type "class")
+                nil [2845 3087])
+            ("HTTPDigestAuth" type
+               (:documentation "Attaches HTTP Digest Authentication to the given Request object."
+                :superclasses ("AuthBase")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [3249 3273])
+                            ("self" variable nil (reparse-symbol indented_block_body) [3282 3306])
+                            ("self" variable nil (reparse-symbol indented_block_body) [3364 3402]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3214 3218])
+                            ("username" variable nil (reparse-symbol function_parameters) [3220 3228])
+                            ("password" variable nil (reparse-symbol function_parameters) [3230 3238]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [3201 3403])
+                    ("init_per_thread_state" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3434 3438]))                          )
+                        (reparse-symbol indented_block_body) [3408 3824])
+                    ("build_digest_header" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3853 3857])
+                            ("method" variable nil (reparse-symbol function_parameters) [3859 3865])
+                            ("url" variable nil (reparse-symbol function_parameters) [3867 3870]))                          
+                        :documentation "
+        :rtype: str
+        ")
+                        (reparse-symbol indented_block_body) [3829 7372])
+                    ("handle_redirect" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [7397 7401])
+                            ("r" variable nil (reparse-symbol function_parameters) [7403 7404])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [7406 7414]))                          
+                        :documentation "Reset num_401_calls counter on redirects.")
+                        (reparse-symbol indented_block_body) [7377 7548])
+                    ("handle_401" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [7568 7572])
+                            ("r" variable nil (reparse-symbol function_parameters) [7574 7575])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [7577 7585]))                          
+                        :documentation "
+        Takes the given response and tries digest-auth, if needed.
+
+        :rtype: requests.Response
+        ")
+                        (reparse-symbol indented_block_body) [7553 9125])
+                    ("__call__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [9143 9147])
+                            ("r" variable nil (reparse-symbol function_parameters) [9149 9150]))                          )
+                        (reparse-symbol indented_block_body) [9130 9957])
+                    ("__eq__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [9973 9977])
+                            ("other" variable nil (reparse-symbol function_parameters) [9979 9984]))                          )
+                        (reparse-symbol indented_block_body) [9962 10144])
+                    ("__ne__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [10160 10164])
+                            ("other" variable nil (reparse-symbol function_parameters) [10166 10171]))                          )
+                        (reparse-symbol indented_block_body) [10149 10207]))                  
+                :type "class")
+                nil [3089 10207]))          
+      :file "auth.py"
+      :pointmax 10207
+      :fsize 10206
+      :lastmodtime '(23507 53182 38409 0)
+      :unmatched-syntax '((FROM 374 . 378) (PERIOD 379 . 380) (FROM 328 . 332) (PERIOD 333 . 334) (FROM 284 . 288) (PERIOD 289 . 290) (FROM 238 . 242) (PERIOD 243 . 244))))
+  :file "!usr!local!lib!python2.7!dist-packages!requests!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,205 @@
+;; Object semanticdb-project-database-file-1e60e78
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-1e60e78"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-1e60df8"
+      :major-mode c++-mode
+      :tags 
+        '( ("ara/log/logging.h" include nil nil [1487 1515])
+            ("vac/container/basic_string.h" include nil nil [1516 1555])
+            ("configuration/application_configuration_parser.h" include nil nil [1557 1616])
+            ("configuration/application_settings_keys.h" include nil nil [1617 1669])
+            ("util/dsa_ara_logger.h" include nil nil [1670 1702])
+            ("vector" type
+               (:members 
+                  ( ("diagnostic_service" type
+                       (:members 
+                          ( ("configuration" type
+                               (:members 
+                                  ( ("ApplicationConfigurationParser::kSoftwarePackageConfig" variable (:type ("constexpr" type (:type "class") nil nil)) (reparse-symbol namespacesubparts) [2121 2186])
+                                    ("ApplicationConfigurationParser::kMaxBlockSize" variable (:type ("constexpr" type (:type "class") nil nil)) (reparse-symbol namespacesubparts) [2215 2271])
+                                    ("ApplicationConfigurationParser::kSwpckgPublicKeySlotUid" variable (:type ("constexpr" type (:type "class") nil nil)) (reparse-symbol namespacesubparts) [2300 2366])
+                                    ("ApplicationConfigurationParser::kSwpckgCryptoAlg" variable (:type ("constexpr" type (:type "class") nil nil)) (reparse-symbol namespacesubparts) [2395 2454])
+                                    ("ApplicationConfigurationParser::kUcmActivationStateTimeout" variable (:type ("constexpr" type (:type "class") nil nil)) (reparse-symbol namespacesubparts) [2483 2552])
+                                    ("ApplicationConfigurationParser::ParserResult" variable (:type "int") (reparse-symbol namespacesubparts) [2613 2658])
+                                    ("ApplicationConfigurationParser" function
+                                       (:constructor-flag t
+                                        :parent "ApplicationConfigurationParser"
+                                        :arguments 
+                                          ( ("document" variable
+                                               (:reference 1
+                                                :type ("Document" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [2723 2742]))                                          
+                                        :type ("ApplicationConfigurationParser" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [2660 2918])
+                                    ("ParseServiceDescElementString" function
+                                       (:parent "ApplicationConfigurationParser"
+                                        :arguments 
+                                          ( ("str" variable (:type ("CStringView" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2995 3011]))                                          
+                                        :type ("ParserResult" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [2920 5022])
+                                    ("ParseSwpckgConfigurationString" function
+                                       (:parent "ApplicationConfigurationParser"
+                                        :arguments 
+                                          ( ("str" variable (:type ("CStringView" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5100 5116]))                                          
+                                        :type ("ParserResult" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [5024 5825])
+                                    ("ParseSfdSignatureVerifierString" function
+                                       (:parent "ApplicationConfigurationParser"
+                                        :arguments 
+                                          ( ("str" variable (:type ("CStringView" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5904 5920]))                                          
+                                        :type ("ParserResult" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [5827 6619])
+                                    ("String" function
+                                       (:parent "ApplicationConfigurationParser"
+                                        :arguments 
+                                          ( ("str" variable (:type ("CStringView" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6673 6689]))                                          
+                                        :type ("ParserResult" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [6621 7910])
+                                    ("ParseSwpckgConfigurationNum" function
+                                       (:parent "ApplicationConfigurationParser"
+                                        :arguments 
+                                          ( ("i" variable (:type ("Num" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7985 7991]))                                          
+                                        :type ("ParserResult" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [7912 9273])
+                                    ("ParseFdsConfigurationNum" function
+                                       (:parent "ApplicationConfigurationParser"
+                                        :arguments 
+                                          ( ("i" variable (:type ("Num" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9345 9351]))                                          
+                                        :type ("ParserResult" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [9275 11798])
+                                    ("Number" function
+                                       (:parent "ApplicationConfigurationParser"
+                                        :arguments 
+                                          ( ("i" variable (:type ("Num" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11852 11858]))                                          
+                                        :type ("ParserResult" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [11800 12627])
+                                    ("ParseRootObject" function
+                                       (:parent "ApplicationConfigurationParser"
+                                        :type ("ParserResult" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [12629 13538])
+                                    ("ParseSfdConfigurationObject" function
+                                       (:parent "ApplicationConfigurationParser"
+                                        :type ("ParserResult" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [13540 14260])
+                                    ("StartObject" function
+                                       (:parent "ApplicationConfigurationParser"
+                                        :type ("ParserResult" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [14262 15346])
+                                    ("EndObject" function
+                                       (:parent "ApplicationConfigurationParser"
+                                        :arguments 
+                                          ( ("" variable (:type ("std::size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15403 15415]))                                          
+                                        :type ("ParserResult" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [15348 16457])
+                                    ("StartArray" function
+                                       (:parent "ApplicationConfigurationParser"
+                                        :type ("ParserResult" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [16459 17315])
+                                    ("EndArray" function
+                                       (:parent "ApplicationConfigurationParser"
+                                        :arguments 
+                                          ( ("" variable (:type ("std::size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [17371 17383]))                                          
+                                        :type ("ParserResult" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [17317 18009]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [2066 18012]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [2035 18044]))                  
+                :type "namespace")
+                nil [2016 18081]))          
+      :file "application_configuration_parser.cpp"
+      :pointmax 18105
+      :fsize 18104
+      :lastmodtime '(24287 13634 354717 131000)
+      :unmatched-syntax '((punctuation 2611 . 2612) (symbol 2598 . 2610) (USING 2592 . 2597) (symbol 2471 . 2482) (punctuation 2470 . 2471) (punctuation 2469 . 2470) (symbol 2460 . 2469) (punctuation 2459 . 2460) (punctuation 2458 . 2459) (symbol 2455 . 2458) (symbol 2383 . 2394) (punctuation 2382 . 2383) (punctuation 2381 . 2382) (symbol 2372 . 2381) (punctuation 2371 . 2372) (punctuation 2370 . 2371) (symbol 2367 . 2370) (symbol 2288 . 2299) (punctuation 2287 . 2288) (punctuation 2286 . 2287) (symbol 2277 . 2286) (punctuation 2276 . 2277) (punctuation 2275 . 2276) (symbol 2272 . 2275) (symbol 2203 . 2214) (punctuation 2202 . 2203) (punctuation 2201 . 2202) (symbol 2192 . 2201) (punctuation 2191 . 2192) (punctuation 2190 . 2191) (symbol 2187 . 2190) (symbol 2109 . 2120) (punctuation 2108 . 2109) (punctuation 2107 . 2108) (symbol 2098 . 2107) (punctuation 2097 . 2098) (punctuation 2096 . 2097) (symbol 2093 . 2096)))
+    (semanticdb-table "semanticdb-table-1e60e18"
+      :major-mode c++-mode
+      :tags 
+        '( ("SRC_CONFIGURATION_APPLICATION_CONFIGURATION_PARSER_H_" variable (:constant-flag t) nil [1223 1276])
+            ("string" include (:system-flag t) nil [1532 1549])
+            ("vector" include (:system-flag t) nil [1550 1567])
+            ("vajson/reader.h" include nil nil [1569 1595])
+            ("vac/container/basic_string.h" include nil nil [1597 1636])
+            ("vac/container/string_literals.h" include nil nil [1637 1679])
+            ("configuration/application_settings.h" include nil nil [1681 1728])
+            ("_sv" variable (:type "int") nil [1772 1776])
+            ("vector" type
+               (:members 
+                  ( ("diagnostic_service" type
+                       (:members 
+                          ( ("configuration" type
+                               (:members 
+                                  ( ("ApplicationConfigurationParser" type
+                                       (:prototype t
+                                        :type "class")
+                                        (reparse-symbol namespacesubparts) [1854 1891])
+                                    ("vajson::reader::Parser::Document" variable (:type "int") (reparse-symbol namespacesubparts) [1949 2014])
+                                    ("vajson::reader::ParserState" variable (:type "int") (reparse-symbol namespacesubparts) [2078 2106])
+                                    ("vajson::reader::Parser" variable (:type "int") (reparse-symbol namespacesubparts) [2248 7821]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [1828 7824]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [1797 7856]))                  
+                :type "namespace")
+                nil [1778 7893]))          
+      :file "application_configuration_parser.h"
+      :pointmax 7983
+      :fsize 7982
+      :lastmodtime '(24287 13634 354717 131000)
+      :unmatched-syntax '((PUBLIC 2241 . 2247) (punctuation 2239 . 2240) (symbol 2233 . 2238) (symbol 2202 . 2232) (CLASS 2196 . 2201) (punctuation 2076 . 2077) (symbol 2064 . 2075) (USING 2058 . 2063) (punctuation 1947 . 1948) (symbol 1938 . 1946) (USING 1932 . 1937) (string 1770 . 1772) (OPERATOR 1762 . 1770) (punctuation 1761 . 1762) (USING 1730 . 1735))
+      :lexical-table 
+        '(("SRC_CONFIGURATION_APPLICATION_CONFIGURATION_PARSER_H_")
+          )
+)
+    (semanticdb-table "semanticdb-table-1e60e38"
+      :file "application_settings_keys.h"
+      :fsize 4549
+      :lastmodtime '(24287 13634 354717 131000))
+    (semanticdb-table "semanticdb-table-1e60e58"
+      :major-mode c++-mode
+      :tags 
+        '( ("SRC_CONFIGURATION_APPLICATION_SETTINGS_H_" variable (:constant-flag t) nil [1218 1259])
+            ("vac/container/basic_string.h" include nil nil [1515 1554])
+            ("ara/crypto/direct/keys/KeyStorageProvider.h" include nil nil [1556 1610])
+            ("vector" type
+               (:members 
+                  ( ("diagnostic_service" type
+                       (:members 
+                          ( ("configuration" type
+                               (:members 
+                                  ( ("final" variable (:type ("SFDConfiguration" type
+                                         (:prototype t
+                                          :type "struct")
+                                          nil nil)) (reparse-symbol namespacesubparts) [1762 2272])
+                                    ("final" variable (:type ("SwpckgConfiguration" type
+                                         (:prototype t
+                                          :type "struct")
+                                          nil nil)) (reparse-symbol namespacesubparts) [2338 3132])
+                                    ("final" variable (:type ("FDSConfiguration" type
+                                         (:prototype t
+                                          :type "struct")
+                                          nil nil)) (reparse-symbol namespacesubparts) [3243 3605])
+                                    ("final" variable (:type ("ApplicationSettings" type
+                                         (:prototype t
+                                          :type "struct")
+                                          nil nil)) (reparse-symbol namespacesubparts) [3661 4444]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [1662 4447]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [1631 4479]))                  
+                :type "namespace")
+                nil [1612 4516]))          
+      :file "application_settings.h"
+      :pointmax 4594
+      :fsize 4593
+      :lastmodtime '(24287 13634 354717 131000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("SRC_CONFIGURATION_APPLICATION_SETTINGS_H_")
+          )
+))
+  :file "!home!hyuk.myeong!work!G550!Apps!source!autosar!third_party!vector!amsr-vag-app-dsa!src!configuration!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

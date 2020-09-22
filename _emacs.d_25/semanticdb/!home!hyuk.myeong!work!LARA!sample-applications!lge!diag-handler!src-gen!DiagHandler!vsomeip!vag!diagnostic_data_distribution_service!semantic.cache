@@ -1,0 +1,45 @@
+;; Object semanticdb-project-database-file-2171fdc
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-2171fdc"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-1e61404"
+      :major-mode c++-mode
+      :tags 
+        '( ("DIAGHANDLER_VSOMEIP_VAG_DIAGNOSTIC_DATA_DISTRIBUTION_SERVICE_PROXY_VSOMEIP_DDDSINTERFACE_H_" variable (:constant-flag t) nil [1123 1214])
+            ("service_desc_dddsinterface.h" include nil nil [1216 1255])
+            ("vag/diagnostic_data_distribution_service/dddsinterface_proxy.h" include nil nil [1256 1329])
+            ("vag" type
+               (:members 
+                  ( ("diagnostic_data_distribution_service" type
+                       (:members 
+                          ( ("dddsinterface_binding" type
+                               (:members 
+                                  ( ("vsomeip" type
+                                       (:members 
+                                          ( ("public" label nil (reparse-symbol namespacesubparts) [1515 1523])
+                                            ("ara::com::internal::vsomeip::proxy::ProxyImplBase" variable (:type "int") (reparse-symbol namespacesubparts) [1524 3003]))                                          
+                                        :type "namespace")
+                                        (reparse-symbol namespacesubparts) [1430 3006]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [1396 3029]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [1347 3066]))                  
+                :type "namespace")
+                nil [1331 3118]))          
+      :file "proxy_vsomeip_dddsinterface.h"
+      :pointmax 3240
+      :fsize 3239
+      :lastmodtime '(24415 860 632785 334000)
+      :unmatched-syntax '((punctuation 1523 . 1524) (punctuation 1513 . 1514) (symbol 1491 . 1513) (punctuation 1490 . 1491) (punctuation 1489 . 1490) (symbol 1484 . 1489) (PUBLIC 1477 . 1483) (punctuation 1475 . 1476) (symbol 1457 . 1474) (CLASS 1451 . 1456))
+      :lexical-table 
+        '(("DIAGHANDLER_VSOMEIP_VAG_DIAGNOSTIC_DATA_DISTRIBUTION_SERVICE_PROXY_VSOMEIP_DDDSINTERFACE_H_")
+          )
+)
+    (semanticdb-table "semanticdb-table-1bc5724"
+      :file "service_desc_dddsinterface.h"
+      :fsize 2693
+      :lastmodtime '(24415 860 632785 334000)))
+  :file "!home!hyuk.myeong!work!LARA!sample-applications!lge!diag-handler!src-gen!DiagHandler!vsomeip!vag!diagnostic_data_distribution_service!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

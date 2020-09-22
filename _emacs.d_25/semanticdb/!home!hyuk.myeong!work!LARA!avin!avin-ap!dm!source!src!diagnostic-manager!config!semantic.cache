@@ -1,0 +1,198 @@
+;; Object semanticdb-project-database-file-2b55234
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-2b55234"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-2b55240"
+      :major-mode c++-mode
+      :tags 
+        '( ("iostream" include (:system-flag t) nil [726 745])
+            ("chrono" include (:system-flag t) nil [746 763])
+            ("algorithm" include (:system-flag t) nil [764 784])
+            ("string" include (:system-flag t) nil [785 802])
+            ("vsomeip/constants.hpp" include (:system-flag t) nil [803 835])
+            ("common/config/doip_config.h" include nil nil [837 875])
+            ("ara" type
+               (:members 
+                  ( ("diag" type
+                       (:members 
+                          ( ("uds_transport" type
+                               (:members 
+                                  ( ("doip" type
+                                       (:members 
+                                          ( ("config" type
+                                               (:members 
+                                                  ( ("DoIpConfig::stDoIpConfigInstance_" variable (:type ("std::shared_ptr" type
+                                                         (:template-specifier 
+                                                            ( ("DoIpConfig" type nil nil nil))                                                            
+                                                          :type "class")
+                                                          nil nil)) (reparse-symbol namespacesubparts) [972 1034])
+                                                    ("DoIpLoadConfig" function
+                                                       (:parent "DoIpConfig"
+                                                        :arguments 
+                                                          ( ("file_name" variable
+                                                               (:pointer 1
+                                                                :constant-flag t
+                                                                :type "char")
+                                                                (reparse-symbol arg-sub-list) [1096 1124]))                                                          
+                                                        :type "void")
+                                                        (reparse-symbol namespacesubparts) [1064 2544])
+                                                    ("LoadDoIpCommon" function
+                                                       (:parent "DoIpConfig"
+                                                        :arguments 
+                                                          ( ("configData" variable
+                                                               (:reference 1
+                                                                :type ("rapidjson::Document" type (:type "class") nil nil))
+                                                                (reparse-symbol arg-sub-list) [2578 2610]))                                                          
+                                                        :type "void")
+                                                        (reparse-symbol namespacesubparts) [2546 4383])
+                                                    ("LoadDoIPRequestConfiguration" function
+                                                       (:parent "DoIpConfig"
+                                                        :arguments 
+                                                          ( ("configData" variable
+                                                               (:reference 1
+                                                                :type ("rapidjson::Document" type (:type "class") nil nil))
+                                                                (reparse-symbol arg-sub-list) [4431 4463]))                                                          
+                                                        :type "void")
+                                                        (reparse-symbol namespacesubparts) [4385 5962])
+                                                    ("LoadDoIpChannel" function
+                                                       (:parent "DoIpConfig"
+                                                        :arguments 
+                                                          ( ("configData" variable
+                                                               (:reference 1
+                                                                :type ("rapidjson::Document" type (:type "class") nil nil))
+                                                                (reparse-symbol arg-sub-list) [5997 6029]))                                                          
+                                                        :type "void")
+                                                        (reparse-symbol namespacesubparts) [5964 7980])
+                                                    ("LoadDoIPPowerModeSrvcInterfaceAraComMapping" function
+                                                       (:parent "DoIpConfig"
+                                                        :arguments 
+                                                          ( ("configData" variable
+                                                               (:reference 1
+                                                                :type ("rapidjson::Document" type (:type "class") nil nil))
+                                                                (reparse-symbol arg-sub-list) [8108 8140]))                                                          
+                                                        :type "void")
+                                                        (reparse-symbol namespacesubparts) [8047 8722])
+                                                    ("LoadDoIPGroupIdentificationSrvcInterfaceAraComMapping" function
+                                                       (:parent "DoIpConfig"
+                                                        :arguments 
+                                                          ( ("configData" variable
+                                                               (:reference 1
+                                                                :type ("rapidjson::Document" type (:type "class") nil nil))
+                                                                (reparse-symbol arg-sub-list) [8870 8902]))                                                          
+                                                        :type "void")
+                                                        (reparse-symbol namespacesubparts) [8799 9536])
+                                                    ("GetTcpInitialInactivityTime" function
+                                                       (:parent "DoIpConfig"
+                                                        :type ("std::uint32_t" type (:type "class") nil nil))
+                                                        (reparse-symbol namespacesubparts) [9582 9689])
+                                                    ("GetTcpGeneralInactivityTime" function
+                                                       (:parent "DoIpConfig"
+                                                        :type ("std::uint32_t" type (:type "class") nil nil))
+                                                        (reparse-symbol namespacesubparts) [9735 9842])
+                                                    ("GetTcpAliveCheckResponseTimeout" function
+                                                       (:parent "DoIpConfig"
+                                                        :type ("std::uint32_t" type (:type "class") nil nil))
+                                                        (reparse-symbol namespacesubparts) [9892 10007])
+                                                    ("GetMaxInitialVehicleAnnouncementTime" function
+                                                       (:parent "DoIpConfig"
+                                                        :type ("std::uint32_t" type (:type "class") nil nil))
+                                                        (reparse-symbol namespacesubparts) [10062 10187])
+                                                    ("GetVehicleAnnouncementCount" function
+                                                       (:parent "DoIpConfig"
+                                                        :type ("std::uint8_t" type (:type "class") nil nil))
+                                                        (reparse-symbol namespacesubparts) [10233 10366])
+                                                    ("GetVehicleAnnouncementInterval" function
+                                                       (:parent "DoIpConfig"
+                                                        :type ("std::uint16_t" type (:type "class") nil nil))
+                                                        (reparse-symbol namespacesubparts) [10415 10556])
+                                                    ("GetEIDValue" function
+                                                       (:parent "DoIpConfig"
+                                                        :type ("std::string" type (:type "class") nil nil))
+                                                        (reparse-symbol namespacesubparts) [10600 10673])
+                                                    ("GetIPType" function
+                                                       (:parent "DoIpConfig"
+                                                        :type ("ara::core::String" type (:type "class") nil nil))
+                                                        (reparse-symbol namespacesubparts) [10699 10775])
+                                                    ("GetIPAddress" function
+                                                       (:parent "DoIpConfig"
+                                                        :type ("ara::core::String" type (:type "class") nil nil))
+                                                        (reparse-symbol namespacesubparts) [10801 10883])
+                                                    ("GetMulticastIPAddress" function
+                                                       (:parent "DoIpConfig"
+                                                        :type ("ara::core::String" type (:type "class") nil nil))
+                                                        (reparse-symbol namespacesubparts) [10931 11030])
+                                                    ("GetDoIPEntityLogicalAddress" function
+                                                       (:parent "DoIpConfig"
+                                                        :type ("std::uint16_t" type (:type "class") nil nil))
+                                                        (reparse-symbol namespacesubparts) [11079 11186])
+                                                    ("GetMaxRequestBytes" function
+                                                       (:parent "DoIpConfig"
+                                                        :type ("std::uint32_t" type (:type "class") nil nil))
+                                                        (reparse-symbol namespacesubparts) [11223 11312])
+                                                    ("IsMacToBeUsedAsEid" function
+                                                       (:parent "DoIpConfig"
+                                                        :type "bool")
+                                                        (reparse-symbol namespacesubparts) [11357 11440])
+                                                    ("IsVehicleIdentificationSyncStatusToBeUsed" function
+                                                       (:parent "DoIpConfig"
+                                                        :type "bool")
+                                                        (reparse-symbol namespacesubparts) [11535 11664])
+                                                    ("GetPersistencyMemoryAddress" function
+                                                       (:parent "DoIpConfig"
+                                                        :type ("std::string" type (:type "class") nil nil))
+                                                        (reparse-symbol namespacesubparts) [11721 11826])
+                                                    ("GetMaxTesterConnections" function
+                                                       (:parent "DoIpConfig"
+                                                        :type ("std::uint8_t" type (:type "class") nil nil))
+                                                        (reparse-symbol namespacesubparts) [11868 11966])
+                                                    ("GetDoIPPowerModeServiceInstanceMapping" function
+                                                       (:parent "DoIpConfig"
+                                                        :type ("std::int32_t" type (:type "class") nil nil))
+                                                        (reparse-symbol namespacesubparts) [12026 12161])
+                                                    ("GetDoIPGroupIdentificationServiceInstanceMapping" function
+                                                       (:parent "DoIpConfig"
+                                                        :type ("std::int32_t" type (:type "class") nil nil))
+                                                        (reparse-symbol namespacesubparts) [12231 12386])
+                                                    ("IsMaxLengthInEntityStatusResponseRequired" function
+                                                       (:parent "DoIpConfig"
+                                                        :type "bool")
+                                                        (reparse-symbol namespacesubparts) [12468 12598])
+                                                    ("getDoIpInstance" function
+                                                       (:parent "DoIpConfig"
+                                                        :type ("std::shared_ptr" type
+                                                             (:template-specifier 
+                                                                ( ("DoIpConfig" type nil nil nil))                                                                
+                                                              :type "class")
+                                                              nil nil))
+                                                        (reparse-symbol namespacesubparts) [12648 12927])
+                                                    ("IsTargetAddressValid" function
+                                                       (:parent "DoIpConfig"
+                                                        :arguments 
+                                                          ( ("targetAddress" variable (:type ("std::uint16_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13019 13047]))                                                          
+                                                        :type "bool")
+                                                        (reparse-symbol namespacesubparts) [12981 13184])
+                                                    ("GetDoIPRequestType" function
+                                                       (:parent "DoIpConfig"
+                                                        :arguments 
+                                                          ( ("targetAddress" variable (:type ("std::uint16_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13298 13326]))                                                          
+                                                        :type ("UdsMessage::TargetAddressType" type (:type "class") nil nil))
+                                                        (reparse-symbol namespacesubparts) [13237 13497]))                                                  
+                                                :type "namespace")
+                                                (reparse-symbol namespacesubparts) [953 13500]))                                          
+                                        :type "namespace")
+                                        (reparse-symbol namespacesubparts) [936 13522]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [910 13542]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [893 13571]))                  
+                :type "namespace")
+                nil [877 13591]))          
+      :file "doip_config.cpp"
+      :pointmax 13609
+      :fsize 13608
+      :lastmodtime '(24417 43484 196252 308000)
+      :unmatched-syntax nil))
+  :file "!home!hyuk.myeong!work!LARA!avin!avin-ap!dm!source!src!diagnostic-manager!config!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

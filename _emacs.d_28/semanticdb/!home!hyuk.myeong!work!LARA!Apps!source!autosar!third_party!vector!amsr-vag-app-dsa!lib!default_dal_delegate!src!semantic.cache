@@ -1,0 +1,84 @@
+;; Object semanticdb-project-database-file-2798fbc
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-2798fbc"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-2798fc8"
+      :major-mode c++-mode
+      :tags 
+        '( ("default_diagnostic_access_delegate.h" include nil nil [1170 1217])
+            ("memory" include (:system-flag t) nil [1219 1236])
+            ("utility" include (:system-flag t) nil [1237 1255])
+            ("vector" include (:system-flag t) nil [1256 1273])
+            ("ara/log/logging.h" include nil nil [1275 1303])
+            ("vag/diagnostic_data_distribution_service/DDDSinterface.h" include nil nil [1479 1546])
+            ("../../liboemdata/include/oem_timer_dsa.h" include nil nil [1555 1606])
+            ("common/diagnostic_access_helper.h" include nil nil [1607 1651])
+            ("libdal" type
+               (:members 
+                  ( ("DefaultDiagnosticAccessDelegate" function
+                       (:constructor-flag t
+                        :parent "DefaultDiagnosticAccessDelegate"
+                        :type ("DefaultDiagnosticAccessDelegate" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [1673 1917])
+                    ("DefaultDiagnosticAccessDelegate" function
+                       (:destructor-flag t
+                        :parent "DefaultDiagnosticAccessDelegate"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [1919 2117])
+                    ("RegisterHashValueChangedCallback" function
+                       (:parent "DefaultDiagnosticAccessDelegate"
+                        :arguments 
+                          ( ("" variable (:type ("std::function" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2195 2209])
+                            ("" variable (:type "void") (reparse-symbol arg-sub-list) [2209 2250])
+                            ("" variable (:type ("callbackFunction" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2252 2269]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [2119 2398])
+                    ("DataValuesHashHandler" function
+                       (:parent "DefaultDiagnosticAccessDelegate"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [2400 3760])
+                    ("EstablishConnection" function
+                       (:parent "DefaultDiagnosticAccessDelegate"
+                        :type ("std::future" type
+                             (:template-specifier 
+                                ( ("bool" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol namespacesubparts) [3762 6874])
+                    ("GetDiagnosticValues" function
+                       (:parent "DefaultDiagnosticAccessDelegate"
+                        :arguments 
+                          ( ("name_space" variable (:type ("DiagnosticNamespace" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6959 6990])
+                            ("category" variable (:type ("DiagnosticCategory" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7074 7102]))                          
+                        :type ("std::future" type
+                             (:template-specifier 
+                                ( ("DiagnosticValues" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol namespacesubparts) [6876 8795])
+                    ("GetDiagnosticDataValues" function
+                       (:parent "DefaultDiagnosticAccessDelegate"
+                        :arguments 
+                          ( ("name_space" variable (:type ("DiagnosticNamespace" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8889 8920])
+                            ("identifiers" variable (:type ("std::vector" type
+                                 (:template-specifier 
+                                    ( ("std::uint64_t" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol arg-sub-list) [8921 8960]))                          
+                        :type ("std::future" type
+                             (:template-specifier 
+                                ( ("DiagnosticValues" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol namespacesubparts) [8797 9961]))                  
+                :type "namespace")
+                nil [1653 9963]))          
+      :file "default_diagnostic_access_delegate.cpp"
+      :pointmax 9985
+      :fsize 9984
+      :lastmodtime '(24359 48950 875777 837000)
+      :unmatched-syntax nil))
+  :file "!home!hyuk.myeong!work!LARA!Apps!source!autosar!third_party!vector!amsr-vag-app-dsa!lib!default_dal_delegate!src!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

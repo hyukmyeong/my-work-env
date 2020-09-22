@@ -1,0 +1,51 @@
+;; Object semanticdb-project-database-file-277f04c
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-277f04c"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-277f368"
+      :major-mode python-mode
+      :tags 
+        '( ("os" include nil nil [25 34])
+            ("re" include nil nil [35 44])
+            ("json" include nil nil [45 56])
+            ("time" include nil nil [57 68])
+            ("getopt" include nil nil [69 87])
+            ("sys" include nil nil [69 87])
+            ("getpass" include nil nil [88 102])
+            ("requests" include nil nil [103 118])
+            ("itertools" include nil nil [119 135])
+            ("pandas" include nil nil [136 155])
+            ("pathlib" include nil nil [157 181])
+            ("requests.auth" include nil nil [182 237])
+            ("extract_SWS_from_code" function (:arguments 
+              ( ("source_path" variable nil (reparse-symbol function_parameters) [267 278]))              ) nil [241 1045])
+            ("read_data_from_excel" function (:arguments 
+              ( ("input_path" variable nil (reparse-symbol function_parameters) [1075 1085])
+                ("sheet_name" variable nil (reparse-symbol function_parameters) [1087 1097]))              ) nil [1050 2772])
+            ("get_page_version" function (:arguments 
+              ( ("page_id" variable nil (reparse-symbol function_parameters) [2798 2805])
+                ("user" variable nil (reparse-symbol function_parameters) [2807 2811])
+                ("passwd" variable nil (reparse-symbol function_parameters) [2813 2819]))              ) nil [2777 3674])
+            ("create_html_table" function (:arguments 
+              ( ("detailed" variable nil (reparse-symbol function_parameters) [3701 3709]))              ) nil [3679 5152])
+            ("create_html_script" function (:arguments 
+              ( ("summarized" variable nil (reparse-symbol function_parameters) [5180 5190])
+                ("detailed" variable nil (reparse-symbol function_parameters) [5192 5200]))              ) nil [5157 9692])
+            ("write_to_collab" function (:arguments 
+              ( ("summarized" variable nil (reparse-symbol function_parameters) [9717 9727])
+                ("detailed" variable nil (reparse-symbol function_parameters) [9729 9737])
+                ("user" variable nil (reparse-symbol function_parameters) [9739 9743])
+                ("passwd" variable nil (reparse-symbol function_parameters) [9745 9751])
+                ("space_key" variable nil (reparse-symbol function_parameters) [9753 9762])
+                ("page_id" variable nil (reparse-symbol function_parameters) [9764 9771])
+                ("page_title" variable nil (reparse-symbol function_parameters) [9773 9783]))              ) nil [9697 11247])
+            ("if" code nil nil [11252 14109]))          
+      :file "spec_coverage_tracer.py"
+      :pointmax 14109
+      :fsize 14248
+      :lastmodtime '(24381 65338 312471 70000)
+      :unmatched-syntax nil))
+  :file "!home!hyuk.myeong!work!LARA_0810!Apps!source!tools!spec_coverage_tracer!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

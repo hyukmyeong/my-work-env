@@ -1,0 +1,117 @@
+;; Object semanticdb-project-database-file-1c0d200
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-1c0d200"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-2134450"
+      :major-mode c++-mode
+      :tags 
+        '( ("iostream" include (:system-flag t) nil [750 769])
+            ("memory" include (:system-flag t) nil [770 787])
+            ("dem/diagnostic_event_manager.h" include nil nil [789 830])
+            ("dcm/diagnostic_communication_manager.h" include nil nil [831 880])
+            ("dem/service/service_skeleton/clear_dtc_impl.h" include nil nil [881 937])
+            ("ara::log" using (:type ("ara::log" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [939 964])
+            ("ara" type
+               (:members 
+                  ( ("diag" type
+                       (:members 
+                          ( ("dem" type
+                               (:members 
+                                  ( ("DEM" function
+                                       (:constructor-flag t
+                                        :parent "DEM"
+                                        :type ("DEM" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [1015 1175])
+                                    ("Initialize" function
+                                       (:parent "DEM"
+                                        :type "void")
+                                        (reparse-symbol namespacesubparts) [1177 1477])
+                                    ("Run" function
+                                       (:parent "DEM"
+                                        :type "void")
+                                        (reparse-symbol namespacesubparts) [1479 1536])
+                                    ("Shutdown" function
+                                       (:parent "DEM"
+                                        :type "void")
+                                        (reparse-symbol namespacesubparts) [1538 1740])
+                                    ("ClearDTC" function
+                                       (:parent "DEM"
+                                        :arguments 
+                                          ( ("groupOfDtc" variable (:type ("std::uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1774 1799]))                                          
+                                        :type ("ClearDtcErrorCode" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [1742 1851])
+                                    ("GetDTCsFilteredBy" function
+                                       (:parent "DEM"
+                                        :arguments 
+                                          ( ("dtcStatusMask" variable (:type ("std::uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1931 1958])
+                                            ("dtcStatusAvailabilityMask" variable (:type ("std::uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1959 1998]))                                          
+                                        :type ("ara::core::Vector" type
+                                             (:template-specifier 
+                                                ( ("std::shared_ptr" type (:template-specifier 
+                                                    ( ("event::DemDtc" type nil nil nil))                                                    ) nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol namespacesubparts) [1853 2088])
+                                    ("GetDTCBy" function
+                                       (:parent "DEM"
+                                        :constant-flag t
+                                        :arguments 
+                                          ( ("dtcValue" variable (:type ("std::uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2162 2185]))                                          
+                                        :type ("ara::core::Optional" type
+                                             (:template-specifier 
+                                                ( ("std::shared_ptr" type (:template-specifier 
+                                                    ( ("event::DemDtc" type nil nil nil))                                                    ) nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol namespacesubparts) [2090 2234])
+                                    ("EnableDTCSetting" function
+                                       (:parent "DEM"
+                                        :type "void")
+                                        (reparse-symbol namespacesubparts) [2236 2322])
+                                    ("DisableDTCSetting" function
+                                       (:parent "DEM"
+                                        :type "void")
+                                        (reparse-symbol namespacesubparts) [2324 2412])
+                                    ("GetDTCFDC" function
+                                       (:parent "DEM"
+                                        :constant-flag t
+                                        :arguments 
+                                          ( ("SubfunctionId" variable
+                                               (:constant-flag t
+                                                :type ("std::uint8_t" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [2498 2531]))                                          
+                                        :type ("ara::core::Vector" type
+                                             (:template-specifier 
+                                                ( ("std::pair" type (:template-specifier 
+                                                    ( ("std::uint32_t" type nil nil nil)
+                                                      ("std::uint8_t" type nil nil nil))                                                    ) nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol namespacesubparts) [2414 2591])
+                                    ("GetDtcs" function
+                                       (:parent "DEM"
+                                        :type ("ara::core::Vector" type
+                                             (:template-specifier 
+                                                ( ("std::shared_ptr" type (:template-specifier 
+                                                    ( ("event::DemDtc" type nil nil nil))                                                    ) nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol namespacesubparts) [2593 2702]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [999 2705]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [982 2724]))                  
+                :type "namespace")
+                nil [966 2744]))          
+      :file "diagnostic_event_manager.cpp"
+      :pointmax 2762
+      :fsize 2854
+      :lastmodtime '(24248 38548 93246 912000)
+      :unmatched-syntax nil))
+  :file "!home!hyuk.myeong!work!ICAS!Apps!source!autosar!avin!avin-ap!dm!source!src!libdem!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

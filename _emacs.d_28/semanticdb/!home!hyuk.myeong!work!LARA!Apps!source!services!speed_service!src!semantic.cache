@@ -1,0 +1,249 @@
+;; Object semanticdb-project-database-file-295ec38
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-295ec38"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-295ec54"
+      :major-mode c++-mode
+      :tags 
+        '( ("chrono" include (:system-flag t) nil [1208 1225])
+            ("limits" include (:system-flag t) nil [1226 1243])
+            ("random" include (:system-flag t) nil [1244 1261])
+            ("thread" include (:system-flag t) nil [1262 1279])
+            ("utility" include (:system-flag t) nil [1280 1298])
+            ("ara/com/runtime.h" include (:system-flag t) nil [1334 1362])
+            ("DisplaySpeedAdaptationService.h" include (:system-flag t) nil [1496 1538])
+            ("ara/log/logging.hpp" include (:system-flag t) nil [1539 1569])
+            ("DisplaySpeedData.h" include (:system-flag t) nil [1570 1599])
+            ("DisplaySpeedDiagnosticParam.h" include (:system-flag t) nil [1600 1640])
+            ("DisplaySpeedLogic.h" include (:system-flag t) nil [1641 1671])
+            ("DisplaySpeedManager.h" include (:system-flag t) nil [1672 1704])
+            ("vwg/services/displayspeed/DisplaySpeed.h" include (:system-flag t) nil [1705 1756])
+            ("pthread.h" include (:system-flag t) nil [1757 1777])
+            ("DisplaySpeed_did_displayspeed.h" include (:system-flag t) nil [1778 1820])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [1822 1842])
+            ("std::placeholders" using (:type ("std::placeholders" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [1843 1877])
+            ("status_primarySpeed" variable
+               (:typemodifiers ("extern")
+                :type "bool")
+                nil [1878 1910])
+            ("odo_timestamp" variable
+               (:typemodifiers ("extern")
+                :type ("uint64_t" type (:type "class") nil nil))
+                nil [1911 1941])
+            ("n_valuecount" variable (:type ("int32_t" type (:type "class") nil nil)) nil [1942 1963])
+            ("vwg" type
+               (:members 
+                  ( ("services" type
+                       (:members 
+                          ( ("displayspeed" type
+                               (:members 
+                                  ( ("DisplaySpeedManager::condition" variable
+                                       (:default-value "{ }"
+                                        :type ("Condition_Variable" type
+                                             (:parent "global_data"
+                                              :prototype t
+                                              :type "struct")
+                                              nil nil))
+                                        (reparse-symbol namespacesubparts) [2027 2103])
+                                    ("DisplaySpeedManager::condition_diag" variable
+                                       (:default-value "{ }"
+                                        :type ("Condition_Variable" type
+                                             (:parent "global_data"
+                                              :prototype t
+                                              :type "struct")
+                                              nil nil))
+                                        (reparse-symbol namespacesubparts) [2104 2185])
+                                    ("SPEED_DIAG_DID_INSTANCEID_4006" function
+                                       (:prototype-flag t
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [2186 2243])
+                                    ("SPEED_DIAG_MONITOR_INSTANCEID_2014" function
+                                       (:prototype-flag t
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [2244 2303])
+                                    ("DisplaySpeedManager" function
+                                       (:constructor-flag t
+                                        :parent "DisplaySpeedManager"
+                                        :arguments 
+                                          ( ("argc" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2346 2359])
+                                            ("argv" variable
+                                               (:pointer 1
+                                                :dereference 1
+                                                :type ("char_t" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [2360 2375]))                                          
+                                        :type ("DisplaySpeedManager" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [2305 4791])
+                                    ("SetTimeout" function
+                                       (:parent "DisplaySpeedManager"
+                                        :type "void")
+                                        (reparse-symbol namespacesubparts) [4793 5664])
+                                    ("Init" function
+                                       (:parent "DisplaySpeedManager"
+                                        :type "void")
+                                        (reparse-symbol namespacesubparts) [5666 7717])
+                                    ("ViwiUpdateStart" function
+                                       (:parent "DisplaySpeedManager"
+                                        :type "void")
+                                        (reparse-symbol namespacesubparts) [8798 11937])
+                                    ("LoadData" function
+                                       (:parent "DisplaySpeedManager"
+                                        :type "void")
+                                        (reparse-symbol namespacesubparts) [11939 12778])
+                                    ("WarningThresholdValuesUpdateStart" function
+                                       (:parent "DisplaySpeedManager"
+                                        :type "void")
+                                        (reparse-symbol namespacesubparts) [12780 13654])
+                                    ("UpdateWarningValuesFromABT" function
+                                       (:parent "DisplaySpeedManager"
+                                        :arguments 
+                                          ( ("warningtype" variable
+                                               (:constant-flag t
+                                                :type ("uint32_t" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [13709 13736]))                                          
+                                        :type "void")
+                                        (reparse-symbol namespacesubparts) [13656 16878])
+                                    ("StartTimerForFindService" function
+                                       (:parent "DisplaySpeedManager"
+                                        :arguments 
+                                          ( ("timer_value" variable
+                                               (:constant-flag t
+                                                :type ("uint32_t" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [16931 16958]))                                          
+                                        :type "void")
+                                        (reparse-symbol namespacesubparts) [16880 17310])
+                                    ("TimerExpiryofFindService" function
+                                       (:parent "DisplaySpeedManager"
+                                        :arguments 
+                                          ( ("timerTask" variable
+                                               (:reference 1
+                                                :type ("Poco::Util::TimerTask" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [17363 17396]))                                          
+                                        :type "void")
+                                        (reparse-symbol namespacesubparts) [17312 18104])
+                                    ("InitInfoData" function
+                                       (:parent "DisplaySpeedManager"
+                                        :type "void")
+                                        (reparse-symbol namespacesubparts) [18106 20541])
+                                    ("Start" function
+                                       (:parent "DisplaySpeedManager"
+                                        :type "bool")
+                                        (reparse-symbol namespacesubparts) [20543 21437])
+                                    ("Stop" function
+                                       (:parent "DisplaySpeedManager"
+                                        :type "void")
+                                        (reparse-symbol namespacesubparts) [21439 22341])
+                                    ("CheckingEthernetConnection" function
+                                       (:parent "DisplaySpeedManager"
+                                        :type "void")
+                                        (reparse-symbol namespacesubparts) [22343 25901])
+                                    ("NotifyEvent" function
+                                       (:parent "DisplaySpeedManager"
+                                        :arguments 
+                                          ( ("clamp_vector" variable
+                                               (:constant-flag t
+                                                :type ("vwg::services::clampcontrol::DT_clamps_vector" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [25940 26005])
+                                            ("odometry_vector" variable
+                                               (:constant-flag t
+                                                :type ("vwg::services::odometry::DT_speeds_vector" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [26014 26078])
+                                            ("units_vector" variable
+                                               (:constant-flag t
+                                                :type ("vwg::services::unitmaster::DT_units_vector" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [26087 26149])
+                                            ("powertrainstatus_v" variable
+                                               (:constant-flag t
+                                                :type ("vwg::services::powertrain::DT_status_vector" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [26158 26227])
+                                            ("parkingbrakestatus_vec" variable
+                                               (:constant-flag t
+                                                :type ("vwg::services::parkingbrake::DT_status_vector" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [26236 26311]))                                          
+                                        :type "void")
+                                        (reparse-symbol namespacesubparts) [25902 28300])
+                                    ("Usage" function
+                                       (:parent "DisplaySpeedManager"
+                                        :arguments 
+                                          ( ("progname" variable
+                                               (:pointer 1
+                                                :constant-flag t
+                                                :type ("char_t" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [28413 28442]))                                          
+                                        :type "void")
+                                        (reparse-symbol namespacesubparts) [28381 29159])
+                                    ("ParseArguments" function
+                                       (:parent "DisplaySpeedManager"
+                                        :arguments 
+                                          ( ("argc" variable
+                                               (:constant-flag t
+                                                :type ("int32_t" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [29424 29443])
+                                            ("argv" variable
+                                               (:pointer 1
+                                                :dereference 1
+                                                :type ("char_t" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [29444 29465]))                                          
+                                        :type ("DisplaySpeedManager::CommandLineArguments" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [29346 31167])
+                                    ("StoringSpeedValues" function
+                                       (:parent "DisplaySpeedManager"
+                                        :type "void")
+                                        (reparse-symbol namespacesubparts) [31169 33058])
+                                    ("SetMeasuredParameterValueInfo" function
+                                       (:parent "DisplaySpeedManager"
+                                        :type "void")
+                                        (reparse-symbol namespacesubparts) [33060 33820])
+                                    ("CheckingForSpeedPersistDataMounted" function
+                                       (:parent "DisplaySpeedManager"
+                                        :type "void")
+                                        (reparse-symbol namespacesubparts) [33822 34327])
+                                    ("PrintResult" function
+                                       (:methodconst-flag t
+                                        :parent "DisplaySpeedManager"
+                                        :constant-flag t
+                                        :arguments 
+                                          ( ("PrintspeedWarnings" variable
+                                               (:constant-flag t
+                                                :type ("DT_speedWarnings_vector" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [34373 34422])
+                                            ("Printspeeds" variable
+                                               (:constant-flag t
+                                                :type ("DT_speeds_vector" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [34431 34466])
+                                            ("printSpeedBlockings" variable
+                                               (:constant-flag t
+                                                :type ("DT_speedBlockings_vector" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [34467 34518]))                                          
+                                        :type "void")
+                                        (reparse-symbol namespacesubparts) [34329 37375]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [2001 37377]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [1980 37395]))                  
+                :type "namespace")
+                nil [1964 37409]))          
+      :file "DisplaySpeedManager.cc"
+      :pointmax 37417
+      :fsize 37420
+      :lastmodtime '(24359 48963 448772 746000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-a2b27c"
+      :file "DisplaySpeedLogic.h"
+      :fsize 13094
+      :lastmodtime '(24359 48963 448772 746000))
+    (semanticdb-table "semanticdb-table-a2b29c"
+      :file "DisplaySpeedManager.h"
+      :fsize 8008
+      :lastmodtime '(24359 48963 448772 746000)))
+  :file "!home!hyuk.myeong!work!LARA!Apps!source!services!speed_service!src!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

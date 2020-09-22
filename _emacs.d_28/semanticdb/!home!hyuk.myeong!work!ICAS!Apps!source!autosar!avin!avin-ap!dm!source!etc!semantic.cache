@@ -1,0 +1,24 @@
+;; Object semanticdb-project-database-file-958a80
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-958a80"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-6a5f14"
+      :major-mode js-mode
+      :tags nil
+      :file "MANIFEST.json"
+      :pointmax 3445
+      :fsize 3539
+      :lastmodtime '(24248 38548 77254 911000)
+      :unmatched-syntax '((BRACK_BLOCK 1 . 3444)))
+    (semanticdb-table "semanticdb-table-6df190"
+      :major-mode js-mode
+      :tags nil
+      :file "someip_config.json"
+      :pointmax 5671
+      :fsize 5670
+      :lastmodtime '(24248 38548 77254 911000)
+      :unmatched-syntax nil))
+  :file "!home!hyuk.myeong!work!ICAS!Apps!source!autosar!avin!avin-ap!dm!source!etc!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

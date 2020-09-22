@@ -1,0 +1,32 @@
+;; Object semanticdb-project-database-file-24daad0
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-24daad0"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-24daaec"
+      :major-mode c++-mode
+      :tags 
+        '( ("common/application_scaffold.h" include nil nil [1233 1273])
+            ("DiagHandlerApp.h" include nil nil [1275 1302])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [1359 1368])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1369 1382]))                  
+                :type "int")
+                nil [1350 1464]))          
+      :file "main.cpp"
+      :pointmax 1465
+      :fsize 1464
+      :lastmodtime '(24409 61939 688 225000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-347c6f0"
+      :file "DiagHandlerApp.h"
+      :fsize 1419
+      :lastmodtime '(24409 61938 988682 225000)))
+  :file "!home!hyuk.myeong!work!LARA_new!sample-applications!lge!diag-handler!src!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

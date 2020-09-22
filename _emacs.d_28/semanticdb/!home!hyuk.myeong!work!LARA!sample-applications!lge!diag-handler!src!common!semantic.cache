@@ -1,0 +1,184 @@
+;; Object semanticdb-project-database-file-810a70
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-810a70"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-75bcc0"
+      :major-mode c++-mode
+      :tags 
+        '( ("APPLICATION_SCAFFOLD_H_" variable (:constant-flag t) nil [1321 1344])
+            ("atomic" include (:system-flag t) nil [1599 1616])
+            ("csignal" include (:system-flag t) nil [1617 1635])
+            ("utility" include (:system-flag t) nil [1636 1654])
+            ("thread" include (:system-flag t) nil [1656 1673])
+            ("ara/log/logging.h" include nil nil [1706 1734])
+            ("ara/log/config/appl_manifest_logging_config.h" include nil nil [1735 1791])
+            ("detail" type
+               (:members 
+                  ( ("final" variable (:type ("SignalHandler" type
+                         (:prototype t
+                          :type "class")
+                          nil nil)) (reparse-symbol namespacesubparts) [2049 4092]))                  
+                :type "namespace")
+                nil [1978 4094])
+            ("kLoggingConfigFile" variable
+               (:dereference 1
+                :constant-flag t
+                :default-value "\"/opt/DiagHandler/etc/application_config_logging.json\""
+                :type "char")
+                nil [4136 4225])
+            ("ApplicationScaffold" type
+               (:template 
+                  ( ("Application" type (:type "class") nil nil))                  
+                :type "class"
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [5310 5317])
+                    ("Application::ArgumentsParser" variable
+                       (:typemodifiers ("typename")
+                        :type "int")
+                        (reparse-symbol classsubparts) [5412 5450])
+                    ("Application::CommandLineArguments" variable
+                       (:typemodifiers ("typename")
+                        :type "int")
+                        (reparse-symbol classsubparts) [5556 5599])
+                    ("Main" function
+                       (:typemodifiers ("static")
+                        :arguments 
+                          ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [5840 5849])
+                            ("argv" variable
+                               (:pointer 1
+                                :dereference 1
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [5850 5863]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [5824 7265])
+                    ("Execute" function
+                       (:typemodifiers ("static")
+                        :arguments 
+                          ( ("app" variable
+                               (:reference 1
+                                :type ("Application" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [7481 7498])
+                            ("args" variable (:type ("CommandLineArguments" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7499 7525])
+                            ("signal_handler" variable
+                               (:reference 1
+                                :type ("detail::SignalHandler" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [7526 7564]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [7461 9450]))                  )
+                nil [5252 9453]))          
+      :file "application_scaffold.h"
+      :pointmax 9493
+      :fsize 9492
+      :lastmodtime '(24415 860 632785 334000)
+      :unmatched-syntax '((punctuation 5554 . 5555) (symbol 5533 . 5553) (USING 5527 . 5532) (punctuation 5410 . 5411) (symbol 5394 . 5409) (USING 5388 . 5393) (symbol 4126 . 4135) (STATIC 4119 . 4125))
+      :lexical-table 
+        '(("APPLICATION_SCAFFOLD_H_")
+          )
+)
+    (semanticdb-table "semanticdb-table-30c6534"
+      :major-mode c++-mode
+      :tags 
+        '( ("iostream" include (:system-flag t) nil [1319 1338])
+            ("arguments_parser.h" include nil nil [1409 1438])
+            ("diag_handler" type
+               (:members 
+                  ( ("Usage" function
+                       (:parent "ArgumentsParser"
+                        :arguments 
+                          ( ("progname" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [1494 1515]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [1466 2122])
+                    ("ParseArguments" function
+                       (:parent "ArgumentsParser"
+                        :arguments 
+                          ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [2177 2186])
+                            ("argv" variable
+                               (:pointer 1
+                                :dereference 1
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [2187 2206]))                          
+                        :type ("CommandLineArguments" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [2124 4098]))                  
+                :type "namespace")
+                nil [1440 4101]))          
+      :file "arguments_parser.cpp"
+      :pointmax 4129
+      :fsize 4128
+      :lastmodtime '(24415 4088 562238 402000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-33c5ff4"
+      :major-mode c++-mode
+      :tags 
+        '( ("ARGUMENTS_PARSER_H_" variable (:constant-flag t) nil [1353 1372])
+            ("string" include (:system-flag t) nil [1627 1644])
+            ("ara/log/logging.h" include nil nil [1645 1673])
+            ("diag_handler" type
+               (:members 
+                  ( ("kPathToAraCom" variable
+                       (:dereference 1
+                        :constant-flag t
+                        :default-value "\"./etc/application.json\""
+                        :type "char")
+                        (reparse-symbol namespacesubparts) [1785 1839])
+                    ("CommandLineArguments" type
+                       (:members 
+                          ( ("CommandLineArguments" function
+                               (:constructor-flag t
+                                :type ("CommandLineArguments" type (:type "struct") nil nil))
+                                (reparse-symbol classsubparts) [1958 2028])
+                            ("path_to_aracom_application_file" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2119 2163])
+                            ("verbosity_level" variable (:type ("ara::log::LogLevel" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2212 2247])
+                            ("monitor_frequency" variable
+                               (:default-value "{1000}"
+                                :type ("std::uint32_t" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [2355 2396]))                          
+                        :type "struct")
+                        (reparse-symbol namespacesubparts) [1897 2399])
+                    ("ArgumentsParser" type
+                       (:members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [2487 2494])
+                            ("ParseArguments" function
+                               (:prototype-flag t
+                                :typemodifiers ("static")
+                                :arguments 
+                                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [2739 2748])
+                                    ("argv" variable
+                                       (:pointer 1
+                                        :dereference 1
+                                        :type "char")
+                                        (reparse-symbol arg-sub-list) [2749 2768]))                                  
+                                :type ("CommandLineArguments" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [2696 2769])
+                            ("private" label nil (reparse-symbol classsubparts) [2772 2780])
+                            ("Usage" function
+                               (:prototype-flag t
+                                :typemodifiers ("static")
+                                :arguments 
+                                  ( ("progname" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type "char")
+                                        (reparse-symbol arg-sub-list) [2891 2912]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [2873 2913]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [2462 2916]))                  
+                :type "namespace")
+                nil [1675 2919]))          
+      :file "arguments_parser.h"
+      :pointmax 2980
+      :fsize 2979
+      :lastmodtime '(24415 860 632785 334000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("ARGUMENTS_PARSER_H_")
+          )
+))
+  :file "!home!hyuk.myeong!work!LARA!sample-applications!lge!diag-handler!src!common!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

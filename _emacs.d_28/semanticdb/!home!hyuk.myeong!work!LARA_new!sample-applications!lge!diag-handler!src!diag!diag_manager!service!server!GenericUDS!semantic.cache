@@ -1,0 +1,668 @@
+;; Object semanticdb-project-database-file-290dc14
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-290dc14"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-290dc20"
+      :major-mode c++-mode
+      :tags 
+        '( ("iostream" include (:system-flag t) nil [1553 1572])
+            ("iomanip" include (:system-flag t) nil [1573 1591])
+            ("DiagCommon.h" include nil nil [1676 1699])
+            ("common/util/DiagHandlerUtil.h" include nil nil [1700 1740])
+            ("data/DiagDataMap.h" include nil nil [1741 1770])
+            ("DiagHandlerApp.h" include nil nil [1772 1799])
+            ("generic_uds_service.h" include nil nil [1801 1833])
+            ("lgRelaySecondsFromReset" variable
+               (:typemodifiers ("extern")
+                :type ("uint16_t" type (:type "class") nil nil))
+                nil [1898 1938])
+            ("diag_handler" type
+               (:members 
+                  ( ("diag" type
+                       (:members 
+                          ( ("service" type
+                               (:members 
+                                  ( ("setDiagDataManager" function
+                                       (:parent "GenericUDSService"
+                                        :arguments 
+                                          ( ("dd_manager" variable (:type ("std::shared_ptr" type
+                                                 (:template-specifier 
+                                                    ( ("diag::data::DiagDataManager" type nil nil nil))                                                    
+                                                  :type "class")
+                                                  nil nil)) (reparse-symbol arg-sub-list) [2049 2106]))                                          
+                                        :type "void")
+                                        (reparse-symbol namespacesubparts) [2003 2138])
+                                    ("decltype" function
+                                       (:arguments 
+                                          ( ("" variable (:type ("guds::skeleton::GenericUDSServiceSkeleton::HandleMessage" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2355 2448]))                                          
+                                        :type "int")
+                                        (reparse-symbol namespacesubparts) [2346 6244])
+                                    ("decltype" function
+                                       (:arguments 
+                                          ( ("" variable (:type ("guds::skeleton::GenericUDSServiceSkeleton::Cancel" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6341 6400]))                                          
+                                        :type "int")
+                                        (reparse-symbol namespacesubparts) [6332 6711])
+                                    ("HandleMeasuredAdaptAbt" function
+                                       (:parent "GenericUDSService"
+                                        :arguments 
+                                          ( ("bMeasuredValue" variable (:type "bool") (reparse-symbol arg-sub-list) [6766 6786])
+                                            ("request_data" variable
+                                               (:reference 1
+                                                :type ("ara::diag::types::ByteVectorType" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [6800 6847])
+                                            ("response" variable
+                                               (:reference 1
+                                                :type ("ara::diag::types::ByteVectorType" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [6855 6898])
+                                            ("did" variable
+                                               (:constant-flag t
+                                                :type ("std::uint32_t" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [6904 6928])
+                                            ("nrc" variable
+                                               (:reference 1
+                                                :type ("ara::diag::types::UDSResponseCodeType" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [6934 6978]))                                          
+                                        :type "bool")
+                                        (reparse-symbol namespacesubparts) [6713 9180])
+                                    ("Create0x22PosResponse" function
+                                       (:parent "GenericUDSService"
+                                        :arguments 
+                                          ( ("request_data" variable
+                                               (:reference 1
+                                                :type ("ara::diag::types::ByteVectorType" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [9236 9283])
+                                            ("response" variable
+                                               (:reference 1
+                                                :type ("ara::diag::types::ByteVectorType" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [9286 9329])
+                                            ("nrc" variable
+                                               (:reference 1
+                                                :type ("ara::diag::types::UDSResponseCodeType" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [9330 9373]))                                          
+                                        :type "bool")
+                                        (reparse-symbol namespacesubparts) [9182 20173])
+                                    ("Create0x2EPosResponse" function
+                                       (:parent "GenericUDSService"
+                                        :arguments 
+                                          ( ("request_data" variable
+                                               (:reference 1
+                                                :type ("ara::diag::types::ByteVectorType" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [20229 20276])
+                                            ("response" variable
+                                               (:reference 1
+                                                :type ("ara::diag::types::ByteVectorType" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [20279 20322])
+                                            ("nrc" variable
+                                               (:reference 1
+                                                :type ("ara::diag::types::UDSResponseCodeType" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [20323 20366]))                                          
+                                        :type "bool")
+                                        (reparse-symbol namespacesubparts) [20175 23276])
+                                    ("Create0xBAPosResponse" function
+                                       (:parent "GenericUDSService"
+                                        :arguments 
+                                          ( ("request_data" variable
+                                               (:reference 1
+                                                :type ("ara::diag::types::ByteVectorType" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [23332 23379])
+                                            ("response" variable
+                                               (:reference 1
+                                                :type ("ara::diag::types::ByteVectorType" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [23428 23471]))                                          
+                                        :type "void")
+                                        (reparse-symbol namespacesubparts) [23278 24304])
+                                    ("CreateNRC" function
+                                       (:parent "GenericUDSService"
+                                        :arguments 
+                                          ( ("promise" variable
+                                               (:reference 1
+                                                :type ("ara::com::Promise" type
+                                                     (:template-specifier 
+                                                        ( ("guds::GenericUDSService::HandleMessageOutput" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil))
+                                                (reparse-symbol arg-sub-list) [24343 24416])
+                                            ("nrc" variable (:type ("ara::diag::types::UDSResponseCodeType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [24419 24461]))                                          
+                                        :type "void")
+                                        (reparse-symbol namespacesubparts) [24306 24870])
+                                    ("MeasurementValue_0x1017_Coding_Condition_byte_3_to_byte_0" function
+                                       (:parent "GenericUDSService"
+                                        :arguments 
+                                          ( ("diag_Hmi" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("gstSafeDiag_HMI" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [24962 24994]))                                          
+                                        :type ("std::uint8_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [24872 26212])
+                                    ("MeasurementValue_0x1017_Coding_Condition_byte_7_to_byte_4" function
+                                       (:parent "GenericUDSService"
+                                        :arguments 
+                                          ( ("diag_Hmi" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("gstSafeDiag_HMI" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [26304 26336]))                                          
+                                        :type ("std::uint8_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [26214 27161])
+                                    ("make_0x1017_status" function
+                                       (:parent "GenericUDSService"
+                                        :arguments 
+                                          ( ("encodingData" variable
+                                               (:constant-flag t
+                                                :type ("std::vector" type
+                                                     (:template-specifier 
+                                                        ( ("uint8_t" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil))
+                                                (reparse-symbol arg-sub-list) [27222 27262]))                                          
+                                        :type ("std::vector" type
+                                             (:template-specifier 
+                                                ( ("uint8_t" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol namespacesubparts) [27163 29158])
+                                    ("Set_Encoding_0x0600_Value" function
+                                       (:parent "GenericUDSService"
+                                        :arguments 
+                                          ( ("value" variable
+                                               (:dereference 1
+                                                :constant-flag t
+                                                :type ("std::uint8_t" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [29243 29270])
+                                            ("size" variable
+                                               (:constant-flag t
+                                                :type ("std::uint8_t" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [29271 29295]))                                          
+                                        :type "void")
+                                        (reparse-symbol namespacesubparts) [29193 30340])
+                                    ("Check_DTC_0x000606" function
+                                       (:parent "GenericUDSService"
+                                        :arguments 
+                                          ( ("data" variable
+                                               (:constant-flag t
+                                                :type ("std::vector" type
+                                                     (:template-specifier 
+                                                        ( ("uint8_t" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil))
+                                                (reparse-symbol arg-sub-list) [30385 30417]))                                          
+                                        :type "bool")
+                                        (reparse-symbol namespacesubparts) [30342 30566])
+                                    ("Check_DTC_0x000607" function
+                                       (:parent "GenericUDSService"
+                                        :arguments 
+                                          ( ("data" variable
+                                               (:constant-flag t
+                                                :type ("std::vector" type
+                                                     (:template-specifier 
+                                                        ( ("uint8_t" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil))
+                                                (reparse-symbol arg-sub-list) [30611 30643]))                                          
+                                        :type "bool")
+                                        (reparse-symbol namespacesubparts) [30568 30836])
+                                    ("Write_DTC_Event_Action" function
+                                       (:parent "GenericUDSService"
+                                        :arguments 
+                                          ( ("is_valid" variable
+                                               (:constant-flag t
+                                                :type "bool")
+                                                (reparse-symbol arg-sub-list) [30885 30905])
+                                            ("dtc" variable
+                                               (:constant-flag t
+                                                :type ("uint32_t" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [30906 30925]))                                          
+                                        :type "void")
+                                        (reparse-symbol namespacesubparts) [30838 31746])
+                                    ("SendUDSCCDataToNmHandler" function
+                                       (:parent "GenericUDSService"
+                                        :arguments 
+                                          ( ("subFunction" variable
+                                               (:constant-flag t
+                                                :type ("std::uint8_t" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [31797 31828])
+                                            ("networkType" variable
+                                               (:constant-flag t
+                                                :type ("std::uint8_t" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [31829 31860]))                                          
+                                        :type "void")
+                                        (reparse-symbol namespacesubparts) [31748 32186]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [1982 40599]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [1965 40622]))                  
+                :type "namespace")
+                nil [1940 40642]))          
+      :file "generic_uds_service.cpp"
+      :pointmax 40670
+      :fsize 40669
+      :lastmodtime '(24409 61938 996686 225000)
+      :unmatched-syntax '((punctuation 23427 . 23428) (punctuation 23426 . 23427) (punctuation 23331 . 23332) (punctuation 23330 . 23331) (CONST 23324 . 23329) (punctuation 20278 . 20279) (punctuation 20277 . 20278) (punctuation 20228 . 20229) (punctuation 20227 . 20228) (CONST 20221 . 20226) (punctuation 9285 . 9286) (punctuation 9284 . 9285) (punctuation 9235 . 9236) (punctuation 9234 . 9235) (CONST 9228 . 9233) (punctuation 6854 . 6855) (punctuation 6853 . 6854) (punctuation 6799 . 6800) (punctuation 6798 . 6799) (CONST 6792 . 6797) (semantic-list 6390 . 6400) (punctuation 6330 . 6331) (punctuation 6329 . 6330) (semantic-list 6276 . 6326) (symbol 6270 . 6276) (punctuation 6284 . 6285) (punctuation 6283 . 6284) (CONST 6277 . 6282) (punctuation 6269 . 6270) (punctuation 6268 . 6269) (symbol 6251 . 6268) (punctuation 6284 . 6285) (punctuation 6283 . 6284) (CONST 6277 . 6282) (symbol 6246 . 6250) (punctuation 6284 . 6285) (punctuation 6283 . 6284) (CONST 6277 . 6282) (semantic-list 2411 . 2448) (punctuation 2344 . 2345) (punctuation 2343 . 2344) (semantic-list 2177 . 2342) (symbol 2164 . 2177) (punctuation 2299 . 2300) (punctuation 2298 . 2299) (CONST 2292 . 2297) (punctuation 2239 . 2240) (punctuation 2238 . 2239) (CONST 2232 . 2237) (punctuation 2163 . 2164) (punctuation 2162 . 2163) (symbol 2145 . 2162) (punctuation 2299 . 2300) (punctuation 2298 . 2299) (CONST 2292 . 2297) (punctuation 2239 . 2240) (punctuation 2238 . 2239) (CONST 2232 . 2237) (symbol 2140 . 2144) (punctuation 2299 . 2300) (punctuation 2298 . 2299) (CONST 2292 . 2297) (punctuation 2239 . 2240) (punctuation 2238 . 2239) (CONST 2232 . 2237)))
+    (semanticdb-table "semanticdb-table-1f05864"
+      :major-mode c++-mode
+      :tags 
+        '( ("GENERIC_UDS_SERVICE_H_" variable (:constant-flag t) nil [1338 1360])
+            ("ara/diag/types/impl_type_udsresponsecodetype.h" include nil nil [1615 1672])
+            ("ara/diag/service_interfaces/generic_uds_service/genericudsservice_skeleton.h" include nil nil [1673 1760])
+            ("data/DiagDataManager.h" include nil nil [1762 1795])
+            ("BIG_ENDIAN" variable (:constant-flag t) nil [1881 1891])
+            ("SHOW_LOG" variable (:constant-flag t) nil [2022 2030])
+            ("HMI_0x0600" type
+               (:members 
+                  ( ("car_class" variable
+                       (:suffix ":4"
+                        :type ("std::uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2204 2229])
+                    ("brand" variable
+                       (:suffix ":4"
+                        :type ("std::uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2293 2314])
+                    ("car_bodystyle" variable
+                       (:suffix ":4"
+                        :type ("std::uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2382 2411])
+                    ("car_generation" variable
+                       (:suffix ":4"
+                        :type ("std::uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2470 2500])
+                    ("car_production_region" variable
+                       (:suffix ":4"
+                        :type ("std::uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2559 2596])
+                    ("car_bodystyle_addition" variable
+                       (:suffix ":4"
+                        :type ("std::uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2647 2685])
+                    ("reserved0" variable
+                       (:suffix ":3"
+                        :type ("std::uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2736 2761])
+                    ("suspension_arm_side" variable
+                       (:suffix ":1"
+                        :type ("std::uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2819 2854])
+                    ("car_type_of_drivetrain" variable
+                       (:suffix ":4"
+                        :type ("std::uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2907 2945])
+                    ("reserved1" variable (:type ("std::uint8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3794 3817])
+                    ("vehicle_type_power_stage_2" variable
+                       (:suffix ":1"
+                        :type ("std::uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3839 3881])
+                    ("vehicle_type_power_stage_1" variable
+                       (:suffix ":1"
+                        :type ("std::uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3927 3969])
+                    ("vehicle_type_costumer_specific" variable
+                       (:suffix ":1"
+                        :type ("std::uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4015 4061])
+                    ("vehicle_type_jacking_head" variable
+                       (:suffix ":1"
+                        :type ("std::uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4103 4144])
+                    ("vehicle_type_pickup" variable
+                       (:suffix ":1"
+                        :type ("std::uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4191 4226])
+                    ("vehicle_type_long_wheel_base" variable
+                       (:suffix ":1"
+                        :type ("std::uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4279 4323])
+                    ("vehicle_type_short_wheel_base" variable
+                       (:suffix ":1"
+                        :type ("std::uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4367 4412])
+                    ("vehicle_type_allroad_alltrack_cross" variable
+                       (:suffix ":1"
+                        :type ("std::uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4455 4506])
+                    ("reserved2" variable
+                       (:suffix ":4"
+                        :type ("std::uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4544 4569])
+                    ("vehicle_type_PA2" variable
+                       (:suffix ":1"
+                        :type ("std::uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4627 4659])
+                    ("vehicle_type_PA1" variable
+                       (:suffix ":1"
+                        :type ("std::uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4715 4747])
+                    ("vehicle_type_modified_drive_concept" variable
+                       (:suffix ":1"
+                        :type ("std::uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4803 4854])
+                    ("vehicle_type_power_stage_3" variable
+                       (:suffix ":1"
+                        :type ("std::uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4891 4933])
+                    ("reserved3" variable
+                       (:dereference 1
+                        :type ("std::uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [6131 6158]))                  
+                :type "struct")
+                nil [2059 6177])
+            ("gstSafeDiag_HMI" type
+               (:typedef ("HMI_0x0600" type (:type "struct") nil nil)
+                :type "typedef")
+                nil [2059 6177])
+            ("Status_Condition" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("status_byte" variable (:type ("" type
+                               (:members 
+                                  ( ("status_0" variable
+                                       (:suffix ":2"
+                                        :type ("std::uint8_t" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [6261 6285])
+                                    ("status_1" variable
+                                       (:suffix ":2"
+                                        :type ("std::uint8_t" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [6290 6314])
+                                    ("status_2" variable
+                                       (:suffix ":2"
+                                        :type ("std::uint8_t" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [6319 6343])
+                                    ("status_3" variable
+                                       (:suffix ":2"
+                                        :type ("std::uint8_t" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [6348 6372]))                                  
+                                :type "struct")
+                                nil nil)) (reparse-symbol classsubparts) [6248 6389])
+                          ("status" variable (:type ("std::uint8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6392 6412]))                        
+                      :type "union")
+                      nil nil)
+                :type "typedef")
+                nil [6230 6432])
+            ("diag_handler" type
+               (:members 
+                  ( ("diag" type
+                       (:members 
+                          ( ("service" type
+                               (:members 
+                                  ( ("guds" type
+                                       (:kind alias
+                                        :members 
+                                          ( ("ara::diag::service_interfaces::generic_uds_service" type (:type "namespace") nil nil))                                          
+                                        :type "namespace")
+                                        (reparse-symbol namespacesubparts) [6652 6720])
+                                    ("GenericUDSService" type
+                                       (:superclasses 
+                                          ( ("guds::skeleton::GenericUDSServiceSkeleton" type
+                                               (:protection "public"
+                                                :type "class")
+                                                nil nil))                                          
+                                        :members 
+                                          ( ("public" label nil (reparse-symbol classsubparts) [7356 7363])
+                                            ("kResponsePendingTestServiceId" variable
+                                               (:default-value "0xBA"
+                                                :type ("ara::diag::types::SIDType" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [7619 7682])
+                                            ("kReadServiceId" variable
+                                               (:default-value "0x22"
+                                                :type ("ara::diag::types::SIDType" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [7702 7750])
+                                            ("kWriteServiceId" variable
+                                               (:default-value "0x2E"
+                                                :type ("ara::diag::types::SIDType" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [7770 7819])
+                                            ("kCommunicationControlId" variable
+                                               (:default-value "0x28"
+                                                :type ("ara::diag::types::SIDType" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [7839 7896])
+                                            ("kRoutineControlServiceId" variable
+                                               (:default-value "0x31"
+                                                :type ("ara::diag::types::SIDType" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [7916 7974])
+                                            ("kPositiveResponseServiceIdModifier" variable
+                                               (:default-value "0x40"
+                                                :type ("autosar_platform::implementationdatatypes::uint8" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [8084 8175])
+                                            ("is_sync_0x1017_" function
+                                               (:arguments 
+                                                  ( ("" variable (:type ("false" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8540 8546]))                                                  
+                                                :type "int")
+                                                (reparse-symbol classsubparts) [8524 8552])
+                                            ("GenericUDSService" function
+                                               (:destructor-flag t
+                                                :typemodifiers ("virtual")
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [8556 8587])
+                                            ("override" variable (:type "int") (reparse-symbol classsubparts) [9232 9241])
+                                            ("override" variable (:type "int") (reparse-symbol classsubparts) [9580 9589])
+                                            ("setDiagDataManager" function
+                                               (:prototype-flag t
+                                                :arguments 
+                                                  ( ("dd_manager" variable (:type ("std::shared_ptr" type
+                                                         (:template-specifier 
+                                                            ( ("diag::data::DiagDataManager" type nil nil nil))                                                            
+                                                          :type "class")
+                                                          nil nil)) (reparse-symbol arg-sub-list) [9617 9673]))                                                  
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [9593 9674])
+                                            ("Set_Encoding_0x0600_Value" function
+                                               (:prototype-flag t
+                                                :arguments 
+                                                  ( ("value" variable
+                                                       (:dereference 1
+                                                        :constant-flag t
+                                                        :type ("std::uint8_t" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [9760 9787])
+                                                    ("size" variable
+                                                       (:constant-flag t
+                                                        :type ("std::uint8_t" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [9788 9812]))                                                  
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [9729 9813])
+                                            ("private" label nil (reparse-symbol classsubparts) [9815 9823])
+                                            ("Create0xBAPosResponse" function
+                                               (:prototype-flag t
+                                                :arguments 
+                                                  ( ("request_data" variable
+                                                       (:reference 1
+                                                        :type ("ara::diag::types::ByteVectorType" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [10068 10115])
+                                                    ("response" variable
+                                                       (:reference 1
+                                                        :type ("ara::diag::types::ByteVectorType" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [10118 10161]))                                                  
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [10033 10162])
+                                            ("Create0x22PosResponse" function
+                                               (:prototype-flag t
+                                                :arguments 
+                                                  ( ("request_data" variable
+                                                       (:reference 1
+                                                        :type ("ara::diag::types::ByteVectorType" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [10200 10247])
+                                                    ("response" variable
+                                                       (:reference 1
+                                                        :type ("ara::diag::types::ByteVectorType" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [10250 10293])
+                                                    ("nrc" variable
+                                                       (:reference 1
+                                                        :type ("ara::diag::types::UDSResponseCodeType" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [10294 10337]))                                                  
+                                                :type "bool")
+                                                (reparse-symbol classsubparts) [10165 10338])
+                                            ("Create0x2EPosResponse" function
+                                               (:prototype-flag t
+                                                :arguments 
+                                                  ( ("request_data" variable
+                                                       (:reference 1
+                                                        :type ("ara::diag::types::ByteVectorType" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [10376 10423])
+                                                    ("response" variable
+                                                       (:reference 1
+                                                        :type ("ara::diag::types::ByteVectorType" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [10426 10469])
+                                                    ("nrc" variable
+                                                       (:reference 1
+                                                        :type ("ara::diag::types::UDSResponseCodeType" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [10470 10513]))                                                  
+                                                :type "bool")
+                                                (reparse-symbol classsubparts) [10341 10514])
+                                            ("HandleMeasuredAdaptAbt" function
+                                               (:prototype-flag t
+                                                :arguments 
+                                                  ( ("bMeasuredValue" variable (:type "bool") (reparse-symbol arg-sub-list) [10546 10566])
+                                                    ("request_data" variable
+                                                       (:reference 1
+                                                        :type ("ara::diag::types::ByteVectorType" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [10575 10622])
+                                                    ("response" variable
+                                                       (:reference 1
+                                                        :type ("ara::diag::types::ByteVectorType" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [10625 10668])
+                                                    ("did" variable
+                                                       (:constant-flag t
+                                                        :type ("std::uint32_t" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [10669 10693])
+                                                    ("nrc" variable
+                                                       (:reference 1
+                                                        :type ("ara::diag::types::UDSResponseCodeType" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [10694 10737]))                                                  
+                                                :type "bool")
+                                                (reparse-symbol classsubparts) [10518 10738])
+                                            ("CreateNRC" function
+                                               (:prototype-flag t
+                                                :arguments 
+                                                  ( ("promise" variable
+                                                       (:reference 1
+                                                        :type ("ara::core::Promise" type
+                                                             (:template-specifier 
+                                                                ( ("guds::GenericUDSService::HandleMessageOutput" type nil nil nil))                                                                
+                                                              :type "class")
+                                                              nil nil))
+                                                        (reparse-symbol arg-sub-list) [10924 10998])
+                                                    ("nrc" variable (:type ("ara::diag::types::UDSResponseCodeType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10999 11041]))                                                  
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [10909 11042])
+                                            ("make_0x1017_status" function
+                                               (:prototype-flag t
+                                                :arguments 
+                                                  ( ("encodingData" variable
+                                                       (:constant-flag t
+                                                        :type ("std::vector" type
+                                                             (:template-specifier 
+                                                                ( ("uint8_t" type nil nil nil))                                                                
+                                                              :type "class")
+                                                              nil nil))
+                                                        (reparse-symbol arg-sub-list) [11472 11512]))                                                  
+                                                :type ("std::vector" type
+                                                     (:template-specifier 
+                                                        ( ("uint8_t" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil))
+                                                (reparse-symbol classsubparts) [11432 11513])
+                                            ("MeasurementValue_0x1017_Coding_Condition_byte_3_to_byte_0" function
+                                               (:prototype-flag t
+                                                :arguments 
+                                                  ( ("diag_Hmi" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("gstSafeDiag_HMI" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [11587 11619]))                                                  
+                                                :type ("std::uint8_t" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [11516 11620])
+                                            ("MeasurementValue_0x1017_Coding_Condition_byte_7_to_byte_4" function
+                                               (:prototype-flag t
+                                                :arguments 
+                                                  ( ("diag_Hmi" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("gstSafeDiag_HMI" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [11694 11726]))                                                  
+                                                :type ("std::uint8_t" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [11623 11727])
+                                            ("Check_DTC_0x000606" function
+                                               (:prototype-flag t
+                                                :arguments 
+                                                  ( ("data" variable
+                                                       (:constant-flag t
+                                                        :type ("std::vector" type
+                                                             (:template-specifier 
+                                                                ( ("uint8_t" type nil nil nil))                                                                
+                                                              :type "class")
+                                                              nil nil))
+                                                        (reparse-symbol arg-sub-list) [11755 11787]))                                                  
+                                                :type "bool")
+                                                (reparse-symbol classsubparts) [11731 11788])
+                                            ("Check_DTC_0x000607" function
+                                               (:prototype-flag t
+                                                :arguments 
+                                                  ( ("data" variable
+                                                       (:constant-flag t
+                                                        :type ("std::vector" type
+                                                             (:template-specifier 
+                                                                ( ("uint8_t" type nil nil nil))                                                                
+                                                              :type "class")
+                                                              nil nil))
+                                                        (reparse-symbol arg-sub-list) [11815 11847]))                                                  
+                                                :type "bool")
+                                                (reparse-symbol classsubparts) [11791 11848])
+                                            ("Write_DTC_Event_Action" function
+                                               (:prototype-flag t
+                                                :arguments 
+                                                  ( ("bError" variable
+                                                       (:constant-flag t
+                                                        :type "bool")
+                                                        (reparse-symbol arg-sub-list) [11879 11897])
+                                                    ("dtc" variable
+                                                       (:constant-flag t
+                                                        :type ("uint32_t" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [11898 11917]))                                                  
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [11851 11918])
+                                            ("SendUDSCCDataToNmHandler" function
+                                               (:prototype-flag t
+                                                :arguments 
+                                                  ( ("subFunction" variable
+                                                       (:constant-flag t
+                                                        :type ("std::uint8_t" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [12007 12038])
+                                                    ("networkType" variable
+                                                       (:constant-flag t
+                                                        :type ("std::uint8_t" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [12039 12070]))                                                  
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [11977 12071])
+                                            ("dd_manager_" variable (:type ("std::shared_ptr" type
+                                                 (:template-specifier 
+                                                    ( ("diag::data::DiagDataManager" type nil nil nil))                                                    
+                                                  :type "class")
+                                                  nil nil)) (reparse-symbol classsubparts) [12247 12304])
+                                            ("measured_value_0x1017_status" variable (:type ("std::vector" type
+                                                 (:template-specifier 
+                                                    ( ("std::uint8_t" type nil nil nil))                                                    
+                                                  :type "class")
+                                                  nil nil)) (reparse-symbol classsubparts) [12308 12363])
+                                            ("is_valid_dtc_0x000606_" variable (:type "bool") (reparse-symbol classsubparts) [12366 12394])
+                                            ("is_valid_dtc_0x000607_" variable (:type "bool") (reparse-symbol classsubparts) [12397 12425])
+                                            ("is_sync_0x1017_" variable (:type "bool") (reparse-symbol classsubparts) [12428 12449]))                                          
+                                        :type "class")
+                                        (reparse-symbol namespacesubparts) [7279 12452]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [6574 12455]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [6557 12479]))                  
+                :type "namespace")
+                nil [6532 12500]))          
+      :file "generic_uds_service.h"
+      :pointmax 12563
+      :fsize 12562
+      :lastmodtime '(24409 61938 996686 225000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("SHOW_LOG" . ((semantic-list "(1)" 2038 . 2041)))
+          ("GENERIC_UDS_SERVICE_H_")
+          ("BIG_ENDIAN" . ((number "1" 1893 . 1894)))
+          )
+))
+  :file "!home!hyuk.myeong!work!LARA_new!sample-applications!lge!diag-handler!src!diag!diag_manager!service!server!GenericUDS!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

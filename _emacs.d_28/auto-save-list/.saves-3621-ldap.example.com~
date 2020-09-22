@@ -1,0 +1,16 @@
+/home/mk/work/test/Makefile
+/home/mk/work/test/#Makefile#
+/home/mk/work/test/main.cpp
+/home/mk/work/test/#main.cpp#
+/home/mk/work/bionic/libc/arch-x86/atom/string/sse2-wcscmp-atom.S
+/home/mk/work/bionic/libc/arch-x86/atom/string/#sse2-wcscmp-atom.S#
+/home/mk/work/*.main
+/home/mk/work/#*.main#
+/home/mk/work/test/foo.cpp
+/home/mk/work/test/#foo.cpp#
+/usr/include/c++/7/istream
+/usr/include/c++/7/#istream#
+/usr/include/c++/7/bits/basic_ios.h
+/usr/include/c++/7/bits/#basic_ios.h#
+/usr/include/c++/7/ostream
+/usr/include/c++/7/#ostream#

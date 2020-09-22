@@ -1,0 +1,64 @@
+;; Object semanticdb-project-database-file-106da40
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-106da40"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-12dd0b0"
+      :major-mode c++-mode
+      :tags 
+        '( ("ARA_LOG_CONFIG_LOGGER_CONFIG_H_" variable (:constant-flag t) nil [343 374])
+            ("unordered_map" include (:system-flag t) nil [376 400])
+            ("list" include (:system-flag t) nil [401 416])
+            ("string" include (:system-flag t) nil [417 434])
+            ("algorithm" include (:system-flag t) nil [435 455])
+            ("cmath" include (:system-flag t) nil [456 472])
+            ("mutex" include (:system-flag t) nil [473 489])
+            ("ctype.h" include (:system-flag t) nil [490 508])
+            ("../common.h" include nil nil [509 531])
+            ("../internal/logger_config.h" include nil nil [532 570])
+            ("LARA_LOGGER_STDIO" variable (:constant-flag t) nil [580 597])
+            ("LARA_LOGGER_SYSLOG" variable (:constant-flag t) nil [611 629])
+            ("LARA_LOGGER_DLT" variable (:constant-flag t) nil [642 657])
+            ("LARA_LOGGER_VW_MLP_KIPC" variable (:constant-flag t) nil [682 705])
+            ("LARA_LOGGER_VW_MLP_CMNBASE" variable (:constant-flag t) nil [726 752])
+            ("LARA_LOGGER" variable (:constant-flag t) nil [791 802])
+            ("LARA_LOG_CONFIG_PATH" variable (:constant-flag t) nil [1039 1059])
+            ("LARA_LOG_LOCAL_CONFIG_PATH" variable (:constant-flag t) nil [1147 1173])
+            ("LARA_LOG_CONFIG_FILE" variable (:constant-flag t) nil [1231 1251])
+            ("ara" type
+               (:members 
+                  ( ("log" type
+                       (:members 
+                          ( ("config" type
+                               (:members 
+                                  ( ("final" variable (:type ("LoggerConfig" type
+                                         (:prototype t
+                                          :type "class")
+                                          nil nil)) (reparse-symbol namespacesubparts) [1348 10811]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [1328 10814]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [1312 10839]))                  
+                :type "namespace")
+                nil [1296 10861]))          
+      :file "logger_config.h"
+      :pointmax 10924
+      :fsize 10923
+      :lastmodtime '(24287 13656 295303 601000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("LARA_LOGGER_SYSLOG" . ((number "1" 632 . 633)))
+          ("LARA_LOGGER_DLT" . ((number "2" 663 . 664)))
+          ("LARA_LOGGER_VW_MLP_KIPC" . ((number "11" 715 . 717)))
+          ("LARA_LOGGER" . ((symbol "LARA_LOGGER_STDIO" 803 . 820)))
+          ("LARA_LOGGER_STDIO" . ((number "0" 601 . 602)))
+          ("LARA_LOG_CONFIG_FILE" . ((string "\"lara_log\"" 1252 . 1262)))
+          ("ARA_LOG_CONFIG_LOGGER_CONFIG_H_")
+          ("LARA_LOGGER_VW_MLP_CMNBASE" . ((number "12" 759 . 761)))
+          ("LARA_LOG_CONFIG_PATH" . ((string "\"/etc/system/\"" 1060 . 1074)))
+          ("LARA_LOG_LOCAL_CONFIG_PATH" . ((string "\"./etc/\"" 1174 . 1182)))
+          )
+))
+  :file "!home!hyuk.myeong!work!G550_old!Apps!source!autosar!ara-api!log!include!public!ara!log!config!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

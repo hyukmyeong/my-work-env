@@ -1,0 +1,32 @@
+;; Object semanticdb-project-database-file-1c6b724
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-1c6b724"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-1c6b6e4"
+      :major-mode js-mode
+      :tags nil
+      :file "lara_log.json"
+      :pointmax 149
+      :fsize 148
+      :lastmodtime '(24305 37797 83256 756000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1c6b704"
+      :major-mode js-mode
+      :tags nil
+      :file "dm_config.json"
+      :pointmax 182011
+      :fsize 182010
+      :lastmodtime '(24305 37797 83256 756000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1c6b744"
+      :major-mode js-mode
+      :tags nil
+      :file "MANIFEST.json"
+      :pointmax 3448
+      :fsize 3541
+      :lastmodtime '(24305 37797 83256 756000)
+      :unmatched-syntax '((BRACK_BLOCK 1 . 3447) (BRACK_BLOCK 1 . 3446))))
+  :file "!home!hyuk.myeong!work!G550!Apps!source!autosar!avin!avin-ap!dm!source!etc!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,385 @@
+;; Object semanticdb-project-database-file-1f8d128
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-1f8d128"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-1f8d068"
+      :major-mode c++-mode
+      :tags 
+        '( ("chrono" include (:system-flag t) nil [746 763])
+            ("cstdint" include (:system-flag t) nil [764 782])
+            ("cstdio" include (:system-flag t) nil [783 800])
+            ("ara/com/e2exf/status_handler.h" include (:system-flag t) nil [802 843])
+            ("ara/exec/execution_client.h" include (:system-flag t) nil [844 882])
+            ("ara/log/logging.h" include (:system-flag t) nil [883 911])
+            ("ara/log/logmanager.h" include (:system-flag t) nil [912 943])
+            ("thread" include (:system-flag t) nil [944 961])
+            ("state_manager.h" include nil nil [963 989])
+            ("state_manager_interface.h" include nil nil [990 1026])
+            ("ara::log" using (:type ("ara::log" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [1057 1082])
+            ("ara" type
+               (:members 
+                  ( ("sm" type
+                       (:members 
+                          ( ("kTime" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("" variable (:type ("200U" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1139 1144]))                                  
+                                :type ("uint16_t" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [1124 1145])
+                            ("ThreadAct1" function (:type "void") (reparse-symbol namespacesubparts) [1146 1469]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [1099 1471]))                  
+                :type "namespace")
+                nil [1083 1489])
+            ("ara::sm" using (:type ("ara::sm" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [1558 1582])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [1592 1601])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1602 1615]))                  
+                :type "int")
+                nil [1583 2523]))          
+      :file "main.cpp"
+      :pointmax 2524
+      :fsize 2523
+      :lastmodtime '(24254 8526 962498 53000)
+      :unmatched-syntax '((symbol 1114 . 1123)))
+    (semanticdb-table "semanticdb-table-1f8d088"
+      :major-mode c++-mode
+      :tags 
+        '( ("trigger_inout.h" include nil nil [725 751])
+            ("cassert" include (:system-flag t) nil [753 771])
+            ("cstdlib" include (:system-flag t) nil [772 790])
+            ("exception" include (:system-flag t) nil [792 812])
+            ("iomanip" include (:system-flag t) nil [813 831])
+            ("iostream" include (:system-flag t) nil [832 851])
+            ("stdint.h" include (:system-flag t) nil [852 871])
+            ("ara/com/e2e_helper.h" include nil nil [873 904])
+            ("ara/com/e2exf/types.h" include nil nil [905 937])
+            ("ara/log/logging.h" include nil nil [938 966])
+            ("ara/sm/triggerinout_laneassist_skeleton.h" include nil nil [967 1019])
+            ("state_manager.h" include nil nil [1020 1046])
+            ("ara::log" using (:type ("ara::log" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [1081 1106])
+            ("statemanager" type
+               (:members 
+                  ( ("ProcessRequests" function
+                       (:parent "SMImpInout"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [1132 1644])
+                    ("SMActivityInout" function
+                       (:constructor-flag t
+                        :parent "SMActivityInout"
+                        :arguments 
+                          ( ("stateMap" variable (:type ("std::shared_ptr" type
+                                 (:template-specifier 
+                                    ( ("RequestedState" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol arg-sub-list) [1679 1720]))                          
+                        :type ("SMActivityInout" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [1646 1891])
+                    ("SMActivityInout" function
+                       (:destructor-flag t
+                        :parent "SMActivityInout"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [1893 1955])
+                    ("GetNotifier" function
+                       (:parent "SMActivityInout"
+                        :type ("ara::core::Future" type
+                             (:template-specifier 
+                                ( ("ara::sm::skeleton::fields::Notifier::value_type" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol namespacesubparts) [1990 2445])
+                    ("SetTrigger" function
+                       (:parent "SMActivityInout"
+                        :arguments 
+                          ( ("field" variable (:type ("ara::core::String" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2545 2569]))                          
+                        :type ("ara::core::Future" type
+                             (:template-specifier 
+                                ( ("ara::core::String" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol namespacesubparts) [2480 2884])
+                    ("init" function
+                       (:parent "SMActivityInout"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [2886 3544]))                  
+                :type "namespace")
+                nil [1107 3546]))          
+      :file "trigger_inout.cpp"
+      :pointmax 4021
+      :fsize 4017
+      :lastmodtime '(24254 8526 962498 53000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1f8d0a8"
+      :major-mode c++-mode
+      :tags 
+        '( ("trigger_out.h" include nil nil [732 756])
+            ("cassert" include (:system-flag t) nil [758 776])
+            ("cstdlib" include (:system-flag t) nil [777 795])
+            ("exception" include (:system-flag t) nil [797 817])
+            ("iomanip" include (:system-flag t) nil [818 836])
+            ("iostream" include (:system-flag t) nil [837 856])
+            ("stdint.h" include (:system-flag t) nil [857 876])
+            ("ara/com/e2e_helper.h" include nil nil [878 909])
+            ("ara/com/e2exf/types.h" include nil nil [910 942])
+            ("ara/log/logging.h" include nil nil [943 971])
+            ("ara/sm/triggerout_laneassist_skeleton.h" include nil nil [972 1022])
+            ("current_status.h" include nil nil [1023 1050])
+            ("network_state.h" include nil nil [1051 1077])
+            ("state_manager.h" include nil nil [1078 1104])
+            ("trigger_in.h" include nil nil [1105 1128])
+            ("trigger_inout.h" include nil nil [1129 1155])
+            ("ara::log" using (:type ("ara::log" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [1190 1215])
+            ("statemanager" type
+               (:members 
+                  ( ("ProcessRequests" function
+                       (:parent "SMImpOut"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [1241 1750])
+                    ("SMActivityOut" function
+                       (:constructor-flag t
+                        :parent "SMActivityOut"
+                        :arguments 
+                          ( ("stateMap" variable (:type ("std::shared_ptr" type
+                                 (:template-specifier 
+                                    ( ("RequestedState" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol arg-sub-list) [1781 1822]))                          
+                        :type ("SMActivityOut" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [1752 1991])
+                    ("SMActivityOut" function
+                       (:destructor-flag t
+                        :parent "SMActivityOut"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [1993 2051])
+                    ("GetNotifier" function
+                       (:parent "SMActivityOut"
+                        :type ("ara::core::Future" type
+                             (:template-specifier 
+                                ( ("ara::sm::skeleton::fields::Notifier::value_type" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol namespacesubparts) [2193 2448])
+                    ("init" function
+                       (:parent "SMActivityOut"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [2450 2906]))                  
+                :type "namespace")
+                nil [1216 2908]))          
+      :file "trigger_out.cpp"
+      :pointmax 2935
+      :fsize 2934
+      :lastmodtime '(24254 8526 962498 53000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1f8d0c8"
+      :major-mode c++-mode
+      :tags 
+        '( ("trigger_in.h" include nil nil [730 753])
+            ("cassert" include (:system-flag t) nil [755 773])
+            ("cstdlib" include (:system-flag t) nil [774 792])
+            ("exception" include (:system-flag t) nil [794 814])
+            ("iomanip" include (:system-flag t) nil [815 833])
+            ("iostream" include (:system-flag t) nil [834 853])
+            ("stdint.h" include (:system-flag t) nil [854 873])
+            ("ara/com/e2e_helper.h" include nil nil [875 906])
+            ("ara/com/e2exf/types.h" include nil nil [907 939])
+            ("ara/log/logging.h" include nil nil [940 968])
+            ("ara/sm/triggerin_laneassist_skeleton.h" include nil nil [969 1018])
+            ("state_manager.h" include nil nil [1019 1045])
+            ("ara::log" using (:type ("ara::log" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [1080 1105])
+            ("ara::sm::skeleton::fields::Notifier" using (:type ("ara::sm::skeleton::fields::Notifier" type
+                 (:prototype t
+                  :type "class")
+                  nil nil)) nil [1106 1148])
+            ("ara::sm::skeleton::fields::Trigger" using (:type ("ara::sm::skeleton::fields::Trigger" type
+                 (:prototype t
+                  :type "class")
+                  nil nil)) nil [1149 1190])
+            ("statemanager" type
+               (:members 
+                  ( ("ProcessRequests" function
+                       (:parent "SMImpIn"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [1216 1724])
+                    ("SMActivityIn" function
+                       (:constructor-flag t
+                        :parent "SMActivityIn"
+                        :arguments 
+                          ( ("stateMap" variable (:type ("std::shared_ptr" type
+                                 (:template-specifier 
+                                    ( ("RequestedState" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol arg-sub-list) [1753 1794]))                          
+                        :type ("SMActivityIn" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [1726 1962])
+                    ("SMActivityIn" function
+                       (:destructor-flag t
+                        :parent "SMActivityIn"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [1964 2020])
+                    ("init" function
+                       (:parent "SMActivityIn"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [2022 2390])
+                    ("SetTrigger" function
+                       (:parent "SMActivityIn"
+                        :arguments 
+                          ( ("field" variable (:type ("ara::core::String" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2453 2477]))                          
+                        :type ("ara::core::Future" type
+                             (:template-specifier 
+                                ( ("ara::core::String" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol namespacesubparts) [2391 2784]))                  
+                :type "namespace")
+                nil [1191 2786]))          
+      :file "trigger_in.cpp"
+      :pointmax 3261
+      :fsize 3260
+      :lastmodtime '(24254 8526 962498 53000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1f8d0e8"
+      :major-mode c++-mode
+      :tags 
+        '( ("network_state.h" include nil nil [735 761])
+            ("cassert" include (:system-flag t) nil [763 781])
+            ("cstdlib" include (:system-flag t) nil [782 800])
+            ("exception" include (:system-flag t) nil [802 822])
+            ("iomanip" include (:system-flag t) nil [823 841])
+            ("iostream" include (:system-flag t) nil [842 861])
+            ("stdint.h" include (:system-flag t) nil [862 881])
+            ("ara/com/e2e_helper.h" include nil nil [883 914])
+            ("ara/com/e2exf/types.h" include nil nil [915 947])
+            ("ara/log/logging.h" include nil nil [948 976])
+            ("ara/nm/networkstate_proxy.h" include nil nil [977 1015])
+            ("state_manager.h" include nil nil [1016 1042])
+            ("ara::log" using (:type ("ara::log" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [1043 1068])
+            ("statemanager" type
+               (:members 
+                  ( ("NMActivity" function
+                       (:constructor-flag t
+                        :parent "NMActivity"
+                        :arguments 
+                          ( ("stateMap" variable (:type ("std::shared_ptr" type
+                                 (:template-specifier 
+                                    ( ("RequestedState" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol arg-sub-list) [1117 1158]))                          
+                        :type ("NMActivity" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [1094 1218])
+                    ("init" function
+                       (:parent "NMActivity"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [1219 1530])
+                    ("act" function
+                       (:parent "NMActivity"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [1531 1661])
+                    ("notifierSubscription" function
+                       (:parent "NMActivity"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [1662 2109])
+                    ("fieldGetter" function
+                       (:parent "NMActivity"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [2110 2434])
+                    ("fieldSetter" function
+                       (:parent "NMActivity"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [2435 2556]))                  
+                :type "namespace")
+                nil [1069 2558]))          
+      :file "network_state.cpp"
+      :pointmax 2585
+      :fsize 2584
+      :lastmodtime '(24254 8526 962498 53000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1f8d108"
+      :major-mode c++-mode
+      :tags 
+        '( ("current_status.h" include nil nil [738 765])
+            ("cassert" include (:system-flag t) nil [767 785])
+            ("cstdlib" include (:system-flag t) nil [786 804])
+            ("exception" include (:system-flag t) nil [806 826])
+            ("iomanip" include (:system-flag t) nil [827 845])
+            ("iostream" include (:system-flag t) nil [846 865])
+            ("stdint.h" include (:system-flag t) nil [866 885])
+            ("ara/com/e2e_helper.h" include nil nil [887 918])
+            ("ara/com/e2exf/types.h" include nil nil [919 951])
+            ("ara/log/logging.h" include nil nil [952 980])
+            ("ara/ucm/pkgmgr/packagemanagement_proxy.h" include nil nil [981 1032])
+            ("state_manager.h" include nil nil [1033 1059])
+            ("ara::log" using (:type ("ara::log" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [1093 1118])
+            ("ara::sm::skeleton::fields::Notifier" using (:type ("ara::sm::skeleton::fields::Notifier" type
+                 (:prototype t
+                  :type "class")
+                  nil nil)) nil [1119 1161])
+            ("ara::sm::skeleton::fields::Trigger" using (:type ("ara::sm::skeleton::fields::Trigger" type
+                 (:prototype t
+                  :type "class")
+                  nil nil)) nil [1162 1203])
+            ("statemanager" type
+               (:members 
+                  ( ("PMActivity" function
+                       (:constructor-flag t
+                        :parent "PMActivity"
+                        :arguments 
+                          ( ("stateMap" variable (:type ("std::shared_ptr" type
+                                 (:template-specifier 
+                                    ( ("RequestedState" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol arg-sub-list) [1252 1293]))                          
+                        :type ("PMActivity" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [1229 1356])
+                    ("init" function
+                       (:parent "PMActivity"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [1358 1768])
+                    ("notifierSubscription" function
+                       (:parent "PMActivity"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [1769 2198])
+                    ("fieldGetter" function
+                       (:parent "PMActivity"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [2228 2569])
+                    ("act" function
+                       (:parent "PMActivity"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [2570 2697]))                  
+                :type "namespace")
+                nil [1204 2699]))          
+      :file "current_status.cpp"
+      :pointmax 2727
+      :fsize 2726
+      :lastmodtime '(24254 8526 962498 53000)
+      :unmatched-syntax nil))
+  :file "!home!hyuk.myeong!work!ICAS!Apps!source!autosar!avin!avin-ap!sm!source!src!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,32 @@
+;; Object semanticdb-project-database-file-156b150
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-156b150"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-156b16c"
+      :major-mode c++-mode
+      :tags 
+        '( ("iostream" include (:system-flag t) nil [2 21])
+            ("sys/types.h" include (:system-flag t) nil [22 44])
+            ("unistd.h" include (:system-flag t) nil [45 64])
+            ("nm.h" include nil nil [65 80])
+            ("ara/log/logging.h" include nil nil [82 110])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [216 225])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [226 245]))                  
+                :type "int")
+                nil [207 600]))          
+      :file "main.cpp"
+      :pointmax 601
+      :fsize 600
+      :lastmodtime '(24305 25427 977961 836000)
+      :unmatched-syntax nil))
+  :file "!home!hyuk.myeong!work!G550!Apps!source!autosar!ara-api!nm!src!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

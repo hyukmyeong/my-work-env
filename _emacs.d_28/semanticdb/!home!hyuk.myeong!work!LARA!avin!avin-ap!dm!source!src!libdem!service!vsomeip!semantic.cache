@@ -1,0 +1,371 @@
+;; Object semanticdb-project-database-file-21e16b8
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-21e16b8"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-21e16d4"
+      :major-mode c++-mode
+      :tags 
+        '( ("SERVICE_DESC_DIAGNOSTICCONDITION_CPP_" variable (:constant-flag t) nil [807 844])
+            ("dem/service/vsomeip/service_desc_diagnosticcondition.h" include nil nil [846 911])
+            ("ara" type
+               (:members 
+                  ( ("diag" type
+                       (:members 
+                          ( ("diagnostic_manager" type
+                               (:members 
+                                  ( ("diagnosticcondition_binding" type
+                                       (:members 
+                                          ( ("vsomeip" type
+                                               (:members 
+                                                  ( ("descriptors" type
+                                                       (:members 
+                                                          ( ("Condition::event_groups" variable
+                                                               (:dereference 1
+                                                                :type ("ara::com::internal::vsomeip::types::EventGroupId" type (:type "class") nil nil))
+                                                                (reparse-symbol namespacesubparts) [1070 1145]))                                                          
+                                                        :type "namespace")
+                                                        (reparse-symbol namespacesubparts) [1036 1148]))                                                  
+                                                :type "namespace")
+                                                (reparse-symbol namespacesubparts) [1016 1175]))                                          
+                                        :type "namespace")
+                                        (reparse-symbol namespacesubparts) [976 1198]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [945 1241]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [928 1275]))                  
+                :type "namespace")
+                nil [912 1295]))          
+      :file "service_desc_diagnosticcondition.cpp"
+      :pointmax 1362
+      :fsize 1361
+      :lastmodtime '(24416 4495 51874 477000)
+      :unmatched-syntax '((symbol 1060 . 1069))
+      :lexical-table 
+        '(("SERVICE_DESC_DIAGNOSTICCONDITION_CPP_")
+          )
+)
+    (semanticdb-table "semanticdb-table-b09514"
+      :major-mode c++-mode
+      :tags 
+        '( ("SERVICE_DESC_DIAGNOSTICMONITOR_CPP_" variable (:constant-flag t) nil [808 843])
+            ("dem/service/vsomeip/service_desc_diagnosticmonitor.h" include nil nil [845 908])
+            ("ara" type
+               (:members 
+                  ( ("diag" type
+                       (:members 
+                          ( ("diagnostic_manager" type
+                               (:members 
+                                  ( ("diagnosticmonitor_binding" type
+                                       (:members 
+                                          ( ("vsomeip" type
+                                               (:members 
+                                                  ( ("descriptors" type
+                                                       (:members 
+                                                          ( ("MonitorAction::event_groups" variable
+                                                               (:dereference 1
+                                                                :type ("ara::com::internal::vsomeip::types::EventGroupId" type (:type "class") nil nil))
+                                                                (reparse-symbol namespacesubparts) [1065 1144]))                                                          
+                                                        :type "namespace")
+                                                        (reparse-symbol namespacesubparts) [1031 1147]))                                                  
+                                                :type "namespace")
+                                                (reparse-symbol namespacesubparts) [1011 1174]))                                          
+                                        :type "namespace")
+                                        (reparse-symbol namespacesubparts) [973 1197]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [942 1238]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [925 1272]))                  
+                :type "namespace")
+                nil [909 1292]))          
+      :file "service_desc_diagnosticmonitor.cpp"
+      :pointmax 1357
+      :fsize 1356
+      :lastmodtime '(24416 4495 51874 477000)
+      :unmatched-syntax '((symbol 1055 . 1064))
+      :lexical-table 
+        '(("SERVICE_DESC_DIAGNOSTICMONITOR_CPP_")
+          )
+)
+    (semanticdb-table "semanticdb-table-c78198"
+      :major-mode c++-mode
+      :tags 
+        '( ("SERVICE_DESC_DTCINFORMATION_CPP_" variable (:constant-flag t) nil [800 832])
+            ("dem/service/vsomeip/service_desc_dtcinformation.h" include nil nil [834 894])
+            ("ara" type
+               (:members 
+                  ( ("diag" type
+                       (:members 
+                          ( ("diagnostic_manager" type
+                               (:members 
+                                  ( ("dtcinformation_binding" type
+                                       (:members 
+                                          ( ("vsomeip" type
+                                               (:members 
+                                                  ( ("descriptors" type
+                                                       (:members 
+                                                          ( ("DTCStatusChanged::event_groups" variable
+                                                               (:dereference 1
+                                                                :type ("ara::com::internal::vsomeip::types::EventGroupId" type (:type "class") nil nil))
+                                                                (reparse-symbol namespacesubparts) [1048 1130])
+                                                            ("SnapshotRecordChanged::event_groups" variable
+                                                               (:dereference 1
+                                                                :type ("ara::com::internal::vsomeip::types::EventGroupId" type (:type "class") nil nil))
+                                                                (reparse-symbol namespacesubparts) [1141 1228]))                                                          
+                                                        :type "namespace")
+                                                        (reparse-symbol namespacesubparts) [1014 1231]))                                                  
+                                                :type "namespace")
+                                                (reparse-symbol namespacesubparts) [994 1258]))                                          
+                                        :type "namespace")
+                                        (reparse-symbol namespacesubparts) [959 1281]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [928 1319]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [911 1353]))                  
+                :type "namespace")
+                nil [895 1373]))          
+      :file "service_desc_dtcinformation.cpp"
+      :pointmax 1435
+      :fsize 1434
+      :lastmodtime '(24416 4495 51874 477000)
+      :unmatched-syntax '((symbol 1131 . 1140) (symbol 1038 . 1047))
+      :lexical-table 
+        '(("SERVICE_DESC_DTCINFORMATION_CPP_")
+          )
+)
+    (semanticdb-table "semanticdb-table-2218be4"
+      :major-mode c++-mode
+      :tags 
+        '( ("SERVICE_DESC_OPERATIONCYCLE_CPP_" variable (:constant-flag t) nil [807 839])
+            ("dem/service/vsomeip/service_desc_operationcycle.h" include nil nil [841 901])
+            ("ara" type
+               (:members 
+                  ( ("diag" type
+                       (:members 
+                          ( ("diagnostic_manager" type
+                               (:members 
+                                  ( ("operationcycle_binding" type
+                                       (:members 
+                                          ( ("vsomeip" type
+                                               (:members 
+                                                  ( ("descriptors" type
+                                                       (:members 
+                                                          ( ("State::event_groups" variable
+                                                               (:dereference 1
+                                                                :type ("ara::com::internal::vsomeip::types::EventGroupId" type (:type "class") nil nil))
+                                                                (reparse-symbol namespacesubparts) [1055 1126]))                                                          
+                                                        :type "namespace")
+                                                        (reparse-symbol namespacesubparts) [1021 1129]))                                                  
+                                                :type "namespace")
+                                                (reparse-symbol namespacesubparts) [1001 1156]))                                          
+                                        :type "namespace")
+                                        (reparse-symbol namespacesubparts) [966 1179]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [935 1217]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [918 1251]))                  
+                :type "namespace")
+                nil [902 1271]))          
+      :file "service_desc_operationcycle.cpp"
+      :pointmax 1333
+      :fsize 1332
+      :lastmodtime '(24416 4495 51874 477000)
+      :unmatched-syntax '((symbol 1045 . 1054))
+      :lexical-table 
+        '(("SERVICE_DESC_OPERATIONCYCLE_CPP_")
+          )
+)
+    (semanticdb-table "semanticdb-table-2097478"
+      :major-mode c++-mode
+      :tags 
+        '( ("VSOMEIP_SERVICE_MAPPING_DEMSwCOMPONENT_CPP_" variable (:constant-flag t) nil [832 875])
+            ("ara/com/internal/vsomeip/vsomeip_service_mapping.h" include nil nil [877 938])
+            ("ara/com/internal/vsomeip/vsomeip_service_mapping_impl.h" include nil nil [939 1005])
+            ("dem/service/vsomeip/proxy_vsomeip_diagnosticmonitor.h" include nil nil [1006 1070])
+            ("dem/service/vsomeip/adapter_diagnosticcondition.h" include nil nil [1071 1131])
+            ("dem/service/vsomeip/adapter_diagnosticevent.h" include nil nil [1132 1188])
+            ("dem/service/vsomeip/adapter_diagnosticeventmemory.h" include nil nil [1189 1251])
+            ("dem/service/vsomeip/adapter_dtcinformation.h" include nil nil [1252 1307])
+            ("dem/service/vsomeip/adapter_operationcycle.h" include nil nil [1308 1363])
+            ("ara" type
+               (:members 
+                  ( ("com" type
+                       (:members 
+                          ( ("internal" type
+                               (:members 
+                                  ( ("vsomeip" type
+                                       (:members 
+                                          ( ("runtime" type
+                                               (:members 
+                                                  ( ("unnamed" type
+                                                       (:members 
+                                                          ( ("ara__diag__diagnostic_manager__diagnosticcondition__mapping" variable (:type ("ServiceMappingImpl" type
+                                                                 (:template-specifier 
+                                                                    ( ("ara::diag::diagnostic_manager::DiagnosticCondition::service_id" type nil nil nil)
+                                                                      ("ara::diag::diagnostic_manager::diagnosticcondition_binding::vsomeip::descriptors::internal::Service::service_id" type nil nil nil)
+                                                                      ("NoProxy" type nil nil nil)
+                                                                      ("ara::diag::diagnostic_manager::diagnosticcondition_binding::vsomeip::DiagnosticConditionServiceAdapter" type nil nil nil))                                                                    
+                                                                  :type "class")
+                                                                  nil nil)) (reparse-symbol namespacesubparts) [1470 1864])
+                                                            ("ara__diag__diagnostic_manager__diagnosticevent__mapping" variable (:type ("ServiceMappingImpl" type
+                                                                 (:template-specifier 
+                                                                    ( ("ara::diag::diagnostic_manager::DiagnosticEvent::service_id" type nil nil nil)
+                                                                      ("ara::diag::diagnostic_manager::diagnosticevent_binding::vsomeip::descriptors::internal::Service::service_id" type nil nil nil)
+                                                                      ("NoProxy" type nil nil nil)
+                                                                      ("ara::diag::diagnostic_manager::diagnosticevent_binding::vsomeip::DiagnosticEventServiceAdapter" type nil nil nil))                                                                    
+                                                                  :type "class")
+                                                                  nil nil)) (reparse-symbol namespacesubparts) [1866 2236])
+                                                            ("ara__diag__diagnostic_manager__diagnosticeventmemory__mapping" variable (:type ("ServiceMappingImpl" type
+                                                                 (:template-specifier 
+                                                                    ( ("ara::diag::diagnostic_manager::DiagnosticEventMemory::service_id" type nil nil nil)
+                                                                      ("ara::diag::diagnostic_manager::diagnosticeventmemory_binding::vsomeip::descriptors::internal::Service::service_id" type nil nil nil)
+                                                                      ("NoProxy" type nil nil nil)
+                                                                      ("ara::diag::diagnostic_manager::diagnosticeventmemory_binding::vsomeip::DiagnosticEventMemoryServiceAdapter" type nil nil nil))                                                                    
+                                                                  :type "class")
+                                                                  nil nil)) (reparse-symbol namespacesubparts) [2238 2651])
+                                                            ("ara__diag__diagnostic_manager__diagnosticmonitor__mapping" variable (:type ("ServiceMappingImpl" type
+                                                                 (:template-specifier 
+                                                                    ( ("ara::diag::diagnostic_manager::DiagnosticMonitor::service_id" type nil nil nil)
+                                                                      ("ara::diag::diagnostic_manager::diagnosticmonitor_binding::vsomeip::descriptors::internal::Service::service_id" type nil nil nil)
+                                                                      ("ara::diag::diagnostic_manager::diagnosticmonitor_binding::vsomeip::DiagnosticMonitorImpl" type nil nil nil)
+                                                                      ("NoAdapter" type nil nil nil))                                                                    
+                                                                  :type "class")
+                                                                  nil nil)) (reparse-symbol namespacesubparts) [2653 3025])
+                                                            ("ara__diag__diagnostic_manager__dtcinformation__mapping" variable (:type ("ServiceMappingImpl" type
+                                                                 (:template-specifier 
+                                                                    ( ("ara::diag::diagnostic_manager::DTCInformation::service_id" type nil nil nil)
+                                                                      ("ara::diag::diagnostic_manager::dtcinformation_binding::vsomeip::descriptors::internal::Service::service_id" type nil nil nil)
+                                                                      ("NoProxy" type nil nil nil)
+                                                                      ("ara::diag::diagnostic_manager::dtcinformation_binding::vsomeip::DTCInformationServiceAdapter" type nil nil nil))                                                                    
+                                                                  :type "class")
+                                                                  nil nil)) (reparse-symbol namespacesubparts) [3027 3392])
+                                                            ("ara__diag__diagnostic_manager__operationcycle__mapping" variable (:type ("ServiceMappingImpl" type
+                                                                 (:template-specifier 
+                                                                    ( ("ara::diag::diagnostic_manager::OperationCycle::service_id" type nil nil nil)
+                                                                      ("ara::diag::diagnostic_manager::operationcycle_binding::vsomeip::descriptors::internal::Service::service_id" type nil nil nil)
+                                                                      ("NoProxy" type nil nil nil)
+                                                                      ("ara::diag::diagnostic_manager::operationcycle_binding::vsomeip::OperationCycleServiceAdapter" type nil nil nil))                                                                    
+                                                                  :type "class")
+                                                                  nil nil)) (reparse-symbol namespacesubparts) [3394 3759]))                                                          
+                                                        :type "namespace")
+                                                        (reparse-symbol namespacesubparts) [1458 3762])
+                                                    ("GetMappingForServiceId" function
+                                                       (:pointer 1
+                                                        :parent "VSomeIPServiceMapping"
+                                                        :constant-flag t
+                                                        :arguments 
+                                                          ( ("service_id" variable (:type ("ServiceId" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3861 3882]))                                                          
+                                                        :type ("VSomeIPServiceMapping::Mapping" type (:type "class") nil nil))
+                                                        (reparse-symbol namespacesubparts) [3777 4781])
+                                                    ("GetMappingForVSomeIPServiceId" function
+                                                       (:parent "VSomeIPServiceMapping"
+                                                        :arguments 
+                                                          ( ("service_id" variable (:type ("vsomeip::service_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4879 4909]))                                                          
+                                                        :type ("VSomeIPServiceMapping::MultiMapping" type (:type "class") nil nil))
+                                                        (reparse-symbol namespacesubparts) [4783 6241]))                                                  
+                                                :type "namespace")
+                                                (reparse-symbol namespacesubparts) [1438 6244]))                                          
+                                        :type "namespace")
+                                        (reparse-symbol namespacesubparts) [1418 6267]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [1397 6290]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [1381 6314]))                  
+                :type "namespace")
+                nil [1365 6333]))          
+      :file "vsomeip_service_mapping-DemSwComponent.cpp"
+      :pointmax 6406
+      :fsize 6405
+      :lastmodtime '(24416 4495 51874 477000)
+      :unmatched-syntax '((punctuation 4878 . 4879) (punctuation 4877 . 4878))
+      :lexical-table 
+        '(("VSOMEIP_SERVICE_MAPPING_DEMSwCOMPONENT_CPP_")
+          )
+)
+    (semanticdb-table "semanticdb-table-1dc9f98"
+      :major-mode c++-mode
+      :tags 
+        '( ("SERVICE_DESC_DIAGNOSTICEVENTMEMORY_CPP_" variable (:constant-flag t) nil [829 868])
+            ("dem/service/vsomeip/service_desc_diagnosticeventmemory.h" include nil nil [870 937])
+            ("ara" type
+               (:members 
+                  ( ("diag" type
+                       (:members 
+                          ( ("diagnostic_manager" type
+                               (:members 
+                                  ( ("diagnosticeventmemory_binding" type
+                                       (:members 
+                                          ( ("vsomeip" type
+                                               (:members 
+                                                  ( ("descriptors" type
+                                                       (:members 
+                                                          ( ("NumberOfStoredEventEntries::event_groups" variable
+                                                               (:dereference 1
+                                                                :type ("ara::com::internal::vsomeip::types::EventGroupId" type (:type "class") nil nil))
+                                                                (reparse-symbol namespacesubparts) [1098 1190]))                                                          
+                                                        :type "namespace")
+                                                        (reparse-symbol namespacesubparts) [1064 1193]))                                                  
+                                                :type "namespace")
+                                                (reparse-symbol namespacesubparts) [1044 1220]))                                          
+                                        :type "namespace")
+                                        (reparse-symbol namespacesubparts) [1002 1243]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [971 1288]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [954 1322]))                  
+                :type "namespace")
+                nil [938 1342]))          
+      :file "service_desc_diagnosticeventmemory.cpp"
+      :pointmax 1411
+      :fsize 1410
+      :lastmodtime '(24416 4495 51874 477000)
+      :unmatched-syntax '((symbol 1088 . 1097))
+      :lexical-table 
+        '(("SERVICE_DESC_DIAGNOSTICEVENTMEMORY_CPP_")
+          )
+)
+    (semanticdb-table "semanticdb-table-1edadb0"
+      :major-mode c++-mode
+      :tags 
+        '( ("SERVICE_DESC_DIAGNOSTICEVENT_CPP_" variable (:constant-flag t) nil [803 836])
+            ("dem/service/vsomeip/service_desc_diagnosticevent.h" include nil nil [838 899])
+            ("ara" type
+               (:members 
+                  ( ("diag" type
+                       (:members 
+                          ( ("diagnostic_manager" type
+                               (:members 
+                                  ( ("diagnosticevent_binding" type
+                                       (:members 
+                                          ( ("vsomeip" type
+                                               (:members 
+                                                  ( ("descriptors" type
+                                                       (:members 
+                                                          ( ("EventStatus::event_groups" variable
+                                                               (:dereference 1
+                                                                :type ("ara::com::internal::vsomeip::types::EventGroupId" type (:type "class") nil nil))
+                                                                (reparse-symbol namespacesubparts) [1054 1131]))                                                          
+                                                        :type "namespace")
+                                                        (reparse-symbol namespacesubparts) [1020 1134]))                                                  
+                                                :type "namespace")
+                                                (reparse-symbol namespacesubparts) [1000 1161]))                                          
+                                        :type "namespace")
+                                        (reparse-symbol namespacesubparts) [964 1184]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [933 1223]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [916 1257]))                  
+                :type "namespace")
+                nil [900 1277]))          
+      :file "service_desc_diagnosticevent.cpp"
+      :pointmax 1340
+      :fsize 1339
+      :lastmodtime '(24416 4495 51874 477000)
+      :unmatched-syntax '((symbol 1044 . 1053))
+      :lexical-table 
+        '(("SERVICE_DESC_DIAGNOSTICEVENT_CPP_")
+          )
+))
+  :file "!home!hyuk.myeong!work!LARA!avin!avin-ap!dm!source!src!libdem!service!vsomeip!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,167 @@
+;; Object semanticdb-project-database-file-18f79fc
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-18f79fc"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-18f7a08"
+      :major-mode c++-mode
+      :tags 
+        '( ("memory" include (:system-flag t) nil [740 757])
+            ("dcm/service/service_dispatch_table.h" include nil nil [759 806])
+            ("dcm/service/vsomeip/service_not_supported_processor.h" include nil nil [807 871])
+            ("uds/uds_services.h" include nil nil [872 901])
+            ("common/service_processor.h" include nil nil [902 939])
+            ("dcm/service/service_dispatch_table.h" include nil nil [940 987])
+            ("dcm/service/vsomeip/service_not_supported_processor.h" include nil nil [988 1052])
+            ("ara::diag::ServiceProcessor" using (:type ("ara::diag::ServiceProcessor" type
+                 (:prototype t
+                  :type "class")
+                  nil nil)) nil [1054 1088])
+            ("ara::diag::uds::UdsServices" using (:type ("ara::diag::uds::UdsServices" type
+                 (:prototype t
+                  :type "class")
+                  nil nil)) nil [1089 1123])
+            ("ara" type
+               (:members 
+                  ( ("diag" type
+                       (:members 
+                          ( ("dcm" type
+                               (:members 
+                                  ( ("service" type
+                                       (:members 
+                                          ( ("ServiceDispatchTable" function
+                                               (:constructor-flag t
+                                                :parent "ServiceDispatchTable"
+                                                :type ("ServiceDispatchTable" type (:type "class") nil nil))
+                                                (reparse-symbol namespacesubparts) [1194 1406])
+                                            ("AddServiceProcessor" function
+                                               (:parent "ServiceDispatchTable"
+                                                :arguments 
+                                                  ( ("sid" variable
+                                                       (:constant-flag t
+                                                        :type ("UdsServices" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [1460 1482])
+                                                    ("serviceProcessor" variable (:type ("ServiceProcessor::ServiceProcessorSharedPtr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1483 1544]))                                                  
+                                                :type "void")
+                                                (reparse-symbol namespacesubparts) [1408 1771])
+                                            ("GetServiceProcessor" function
+                                               (:methodconst-flag t
+                                                :parent "ServiceDispatchTable"
+                                                :arguments 
+                                                  ( ("sid" variable
+                                                       (:constant-flag t
+                                                        :type ("UdsServices" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [1864 1886]))                                                  
+                                                :type ("ServiceProcessor::ServiceProcessorSharedPtr" type (:type "class") nil nil))
+                                                (reparse-symbol namespacesubparts) [1773 2139]))                                          
+                                        :type "namespace")
+                                        (reparse-symbol namespacesubparts) [1174 2142]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [1158 2165]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [1141 2184]))                  
+                :type "namespace")
+                nil [1125 2204]))          
+      :file "service_dispatch_table.cpp"
+      :pointmax 2222
+      :fsize 2282
+      :lastmodtime '(24420 22490 57 903000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1d3bd98"
+      :major-mode c++-mode
+      :tags 
+        '( ("ostream" include (:system-flag t) nil [730 748])
+            ("utility" include (:system-flag t) nil [749 767])
+            ("dcm/service/work_unit_service.h" include nil nil [769 811])
+            ("ara/log/logging.h" include nil nil [812 840])
+            ("dcm/connection/connection.h" include nil nil [841 879])
+            ("uds/session_type.h" include nil nil [880 909])
+            ("uds/uds_error_code.h" include nil nil [910 941])
+            ("uds_transport/uds_message_ext.h" include nil nil [942 984])
+            ("dcm/conversation/conversation.h" include nil nil [985 1027])
+            ("dcm/conversation/conversation_manager.h" include nil nil [1028 1078])
+            ("dcm/service/service_dispatch_table.h" include nil nil [1079 1126])
+            ("ara::diag::uds::UdsNegativeResponseCode" using (:type ("ara::diag::uds::UdsNegativeResponseCode" type
+                 (:prototype t
+                  :type "class")
+                  nil nil)) nil [1128 1174])
+            ("ara::diag::uds::sessiontype::SessionType" using (:type ("ara::diag::uds::sessiontype::SessionType" type
+                 (:prototype t
+                  :type "class")
+                  nil nil)) nil [1175 1222])
+            ("ara::diag::uds_transport::UdsMessageExt" using (:type ("ara::diag::uds_transport::UdsMessageExt" type
+                 (:prototype t
+                  :type "class")
+                  nil nil)) nil [1223 1269])
+            ("ara" type
+               (:members 
+                  ( ("diag" type
+                       (:members 
+                          ( ("dcm" type
+                               (:members 
+                                  ( ("service" type
+                                       (:members 
+                                          ( ("WorkUnitService" function
+                                               (:constructor-flag t
+                                                :parent "WorkUnitService"
+                                                :arguments 
+                                                  ( ("service_processor" variable (:type ("ServiceProcessor::ServiceProcessorSharedPtr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1373 1435])
+                                                    ("conversation" variable (:type ("conversation::Conversation::Ptr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1440 1485])
+                                                    ("message" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("UdsMessageExt" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [1486 1515])
+                                                    ("requestHandle" variable
+                                                       (:constant-flag t
+                                                        :type "unsigned int")
+                                                        (reparse-symbol arg-sub-list) [1520 1549]))                                                  
+                                                :type ("WorkUnitService" type (:type "class") nil nil))
+                                                (reparse-symbol namespacesubparts) [1340 1691])
+                                            ("Run" function
+                                               (:parent "WorkUnitService"
+                                                :type "void")
+                                                (reparse-symbol namespacesubparts) [1693 2016])
+                                            ("PrintToStream" function
+                                               (:methodconst-flag t
+                                                :parent "WorkUnitService"
+                                                :arguments 
+                                                  ( ("stream" variable
+                                                       (:reference 1
+                                                        :type ("ara::log::LogStream" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [2054 2082]))                                                  
+                                                :type "void")
+                                                (reparse-symbol namespacesubparts) [2018 2304])
+                                            ("MemberCompare" function
+                                               (:methodconst-flag t
+                                                :parent "WorkUnitService"
+                                                :arguments 
+                                                  ( ("other" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("WorkUnitService" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [2342 2371]))                                                  
+                                                :type "bool")
+                                                (reparse-symbol namespacesubparts) [2306 2522])
+                                            ("GetResponse" function
+                                               (:parent "WorkUnitService"
+                                                :arguments 
+                                                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2580 2585]))                                                  
+                                                :type ("ServiceProcessor::Response" type (:type "class") nil nil))
+                                                (reparse-symbol namespacesubparts) [2524 3366]))                                          
+                                        :type "namespace")
+                                        (reparse-symbol namespacesubparts) [1320 3369]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [1304 3392]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [1287 3411]))                  
+                :type "namespace")
+                nil [1271 3431]))          
+      :file "work_unit_service.cpp"
+      :pointmax 3449
+      :fsize 3543
+      :lastmodtime '(24420 22490 4057 28000)
+      :unmatched-syntax nil))
+  :file "!home!hyuk.myeong!work!LARA!avin!avin-ap!dm!source!src!libdcm!service!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

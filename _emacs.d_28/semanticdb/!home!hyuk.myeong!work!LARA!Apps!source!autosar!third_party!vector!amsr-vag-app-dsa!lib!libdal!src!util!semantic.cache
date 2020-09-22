@@ -1,0 +1,170 @@
+;; Object semanticdb-project-database-file-18f2da8
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-18f2da8"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-3359aa0"
+      :major-mode c++-mode
+      :tags 
+        '( ("string" include (:system-flag t) nil [1143 1160])
+            ("vector" include (:system-flag t) nil [1161 1178])
+            ("common/diagnostic_access_delegate.h" include nil nil [1180 1226])
+            ("util/dal_persistency_wrapper.h" include nil nil [1227 1268])
+            ("util/dal_string_helper.h" include nil nil [1269 1304])
+            ("libdal" type
+               (:members 
+                  ( ("DalPersistencyWrapper" function
+                       (:constructor-flag t
+                        :parent "DalPersistencyWrapper"
+                        :arguments 
+                          ( ("path" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1569 1593]))                          
+                        :type ("DalPersistencyWrapper" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [1524 1609])
+                    ("SetDiagnosticData" function
+                       (:parent "DalPersistencyWrapper"
+                        :arguments 
+                          ( ("key" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1664 1687])
+                            ("diag_values" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("DiagnosticValues" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1688 1724]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [1618 3433])
+                    ("GetDiagnosticData" function
+                       (:parent "DalPersistencyWrapper"
+                        :arguments 
+                          ( ("key" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3493 3516]))                          
+                        :type ("DiagnosticValues" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [3435 5916]))                  
+                :type "namespace")
+                nil [1306 5919]))          
+      :file "dal_persistency_wrapper.cpp"
+      :pointmax 5941
+      :fsize 5940
+      :lastmodtime '(24359 48950 875777 837000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-21e0bd8"
+      :major-mode c++-mode
+      :tags 
+        '( ("map" include (:system-flag t) nil [1417 1431])
+            ("string" include (:system-flag t) nil [1432 1449])
+            ("utility" include (:system-flag t) nil [1450 1468])
+            ("vector" include (:system-flag t) nil [1469 1486])
+            ("ara/log/logging.h" include nil nil [1488 1516])
+            ("util/dal_persistent_data_manager.h" include nil nil [1517 1562])
+            ("libdal" type
+               (:members 
+                  ( ("DalPersistentDataManager" function
+                       (:constructor-flag t
+                        :parent "DalPersistentDataManager"
+                        :arguments 
+                          ( ("kPathPersistacy" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1708 1743]))                          
+                        :type ("DalPersistentDataManager" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [1657 2178])
+                    ("SetPersistentIdentifiersData" function
+                       (:parent "DalPersistentDataManager"
+                        :arguments 
+                          ( ("diag_values" variable
+                               (:reference 1
+                                :type ("DiagnosticValues" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2240 2270]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [2180 2688])
+                    ("LoadPersistentIdentifiersData" function
+                       (:parent "DalPersistentDataManager"
+                        :arguments 
+                          ( ("diag_hashes" variable
+                               (:reference 1
+                                :type ("std::map" type
+                                     (:template-specifier 
+                                        ( ("std::string" type nil nil nil)
+                                          ("HashValues" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [2751 2798]))                          
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [2690 3581])
+                    ("CalcKey" function
+                       (:parent "DalPersistentDataManager"
+                        :arguments 
+                          ( ("name_space" variable (:type ("DiagnosticNamespace" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4085 4116])
+                            ("category" variable (:type ("DiagnosticCategory" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4117 4145]))                          
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [4039 4284]))                  
+                :type "namespace")
+                nil [1637 4287]))          
+      :file "dal_persistent_data_manager.cpp"
+      :pointmax 4309
+      :fsize 4308
+      :lastmodtime '(24359 48950 875777 837000)
+      :unmatched-syntax '((semantic-list 3736 . 4037) (symbol 3727 . 3735) (semantic-list 3724 . 3726) (symbol 3711 . 3724) (punctuation 3710 . 3711) (punctuation 3709 . 3710) (symbol 3685 . 3709) (VOID 3680 . 3684) (semantic-list 3639 . 3678) (symbol 3630 . 3638) (semantic-list 3627 . 3629) (symbol 3614 . 3627) (punctuation 3613 . 3614) (punctuation 3612 . 3613) (symbol 3588 . 3612) (VOID 3583 . 3587)))
+    (semanticdb-table "semanticdb-table-34baea8"
+      :major-mode c++-mode
+      :tags 
+        '( ("util/dal_string_helper.h" include (:system-flag t) nil [1406 1441])
+            ("algorithm" include (:system-flag t) nil [1442 1462])
+            ("cstdint" include (:system-flag t) nil [1463 1481])
+            ("iterator" include (:system-flag t) nil [1482 1501])
+            ("limits" include (:system-flag t) nil [1502 1519])
+            ("string" include (:system-flag t) nil [1520 1537])
+            ("vector" include (:system-flag t) nil [1538 1555])
+            ("libdal" type
+               (:members 
+                  ( ("string_helper" type
+                       (:members 
+                          ( ("vector_of_bytes_to_string_hex" function
+                               (:arguments 
+                                  ( ("bytes" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::vector" type
+                                             (:template-specifier 
+                                                ( ("uint8_t" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [2029 2063]))                                  
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [1987 2247])
+                            ("vector_of_bytes_from_string_hex" function
+                               (:arguments 
+                                  ( ("str" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2325 2348]))                                  
+                                :type ("vac::memory::optional" type
+                                     (:template-specifier 
+                                        ( ("std::vector" type (:template-specifier 
+                                            ( ("uint8_t" type nil nil nil))                                            ) nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol namespacesubparts) [2249 2850]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [1576 2853]))                  
+                :type "namespace")
+                nil [1557 2885]))          
+      :file "dal_string_helper.cpp"
+      :pointmax 2909
+      :fsize 2908
+      :lastmodtime '(24359 48950 875777 837000)
+      :unmatched-syntax '((semantic-list 1683 . 1985) (symbol 1674 . 1682) (semantic-list 1649 . 1673) (symbol 1634 . 1649) (punctuation 1632 . 1633) (symbol 1625 . 1632) (punctuation 1624 . 1625) (symbol 1616 . 1624) (punctuation 1615 . 1616) (punctuation 1614 . 1615) (symbol 1608 . 1614) (punctuation 1607 . 1608) (punctuation 1606 . 1607) (symbol 1603 . 1606))))
+  :file "!home!hyuk.myeong!work!LARA!Apps!source!autosar!third_party!vector!amsr-vag-app-dsa!lib!libdal!src!util!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

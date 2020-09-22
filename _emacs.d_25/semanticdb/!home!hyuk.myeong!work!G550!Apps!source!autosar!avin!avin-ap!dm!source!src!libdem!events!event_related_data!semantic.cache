@@ -1,0 +1,129 @@
+;; Object semanticdb-project-database-file-d8edac
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-d8edac"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-e32240"
+      :major-mode c++-mode
+      :tags 
+        '( ("fstream" include (:system-flag t) nil [749 767])
+            ("dem/events/event_related_data/diagnostic_extended_data.h" include nil nil [769 836])
+            ("common/config/dm_config.h" include nil nil [837 873])
+            ("runtime_dm.h" include nil nil [874 897])
+            ("unnamed" type
+               (:members 
+                  ( ("kOffsetOne" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type ("1U" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [945 948]))                          
+                        :type ("std::uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [921 949]))                  
+                :type "namespace")
+                nil [899 951])
+            ("ara" type
+               (:members 
+                  ( ("diag" type
+                       (:members 
+                          ( ("dem" type
+                               (:members 
+                                  ( ("eventdata" type
+                                       (:members 
+                                          ( ("DiagnosticExtendedData" function
+                                               (:constructor-flag t
+                                                :parent "DiagnosticExtendedData"
+                                                :arguments 
+                                                  ( ("recNo" variable
+                                                       (:constant-flag t
+                                                        :type ("std::uint8_t" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [1084 1109])
+                                                    ("trigger" variable
+                                                       (:constant-flag t
+                                                        :type ("std::uint8_t" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [1110 1137])
+                                                    ("update" variable
+                                                       (:constant-flag t
+                                                        :type "bool")
+                                                        (reparse-symbol arg-sub-list) [1142 1160])
+                                                    ("extendedDataRecordId" variable
+                                                       (:constant-flag t
+                                                        :type ("std::uint8_t" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [1161 1201]))                                                  
+                                                :type ("DiagnosticExtendedData" type (:type "class") nil nil))
+                                                (reparse-symbol namespacesubparts) [1037 1642])
+                                            ("GetTriggerConfig" function
+                                               (:parent "DiagnosticExtendedData"
+                                                :type ("ExtendedDataTriggerEnum" type (:type "class") nil nil))
+                                                (reparse-symbol namespacesubparts) [1644 1771])
+                                            ("StoreExtendedData" function
+                                               (:parent "DiagnosticExtendedData"
+                                                :arguments 
+                                                  ( ("demDtc" variable
+                                                       (:pointer 1
+                                                        :type ("dem::event::DemDtc" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [1919 1946]))                                                  
+                                                :type "void")
+                                                (reparse-symbol namespacesubparts) [1872 3498])
+                                            ("GetExtendedData" function
+                                               (:parent "DiagnosticExtendedData"
+                                                :arguments 
+                                                  ( ("demDtc" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("std::shared_ptr" type
+                                                             (:template-specifier 
+                                                                ( ("dem::event::DemDtc" type nil nil nil))                                                                
+                                                              :type "class")
+                                                              nil nil))
+                                                        (reparse-symbol arg-sub-list) [3550 3600])
+                                                    ("extendedData" variable
+                                                       (:reference 1
+                                                        :type ("ara::core::vector" type
+                                                             (:template-specifier 
+                                                                ( ("std::uint8_t" type nil nil nil))                                                                
+                                                              :type "class")
+                                                              nil nil))
+                                                        (reparse-symbol arg-sub-list) [3601 3647]))                                                  
+                                                :type "bool")
+                                                (reparse-symbol namespacesubparts) [3500 4154])
+                                            ("ClearExtendedData" function
+                                               (:parent "DiagnosticExtendedData"
+                                                :arguments 
+                                                  ( ("dtcValue" variable (:type ("std::uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4203 4226]))                                                  
+                                                :type "void")
+                                                (reparse-symbol namespacesubparts) [4156 4304])
+                                            ("GetExtendedDataMap" function
+                                               (:parent "DiagnosticExtendedData"
+                                                :constant-flag t
+                                                :type ("DiagnosticExtendedData::extendedDataRecordMap" type (:type "class") nil nil))
+                                                (reparse-symbol namespacesubparts) [4306 4476])
+                                            ("StoreFileExtendedDataToMap" function
+                                               (:parent "DiagnosticExtendedData"
+                                                :arguments 
+                                                  ( ("dtcValue" variable (:type ("std::uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4601 4624])
+                                                    ("dataFromFile" variable (:type ("ara::core::Vector" type
+                                                         (:template-specifier 
+                                                            ( ("std::uint8_t" type nil nil nil))                                                            
+                                                          :type "class")
+                                                          nil nil)) (reparse-symbol arg-sub-list) [4625 4670]))                                                  
+                                                :type "void")
+                                                (reparse-symbol namespacesubparts) [4540 4730])
+                                            ("GetRecordSize" function
+                                               (:parent "DiagnosticExtendedData"
+                                                :type ("std::uint32_t" type (:type "class") nil nil))
+                                                (reparse-symbol namespacesubparts) [4789 5339]))                                          
+                                        :type "namespace")
+                                        (reparse-symbol namespacesubparts) [1015 5342]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [999 5367]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [982 5386]))                  
+                :type "namespace")
+                nil [966 5406]))          
+      :file "diagnostic_extended_data.cpp"
+      :pointmax 5424
+      :fsize 5423
+      :lastmodtime '(24297 58370 0 0)
+      :unmatched-syntax nil))
+  :file "!home!hyuk.myeong!work!G550!Apps!source!autosar!avin!avin-ap!dm!source!src!libdem!events!event_related_data!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

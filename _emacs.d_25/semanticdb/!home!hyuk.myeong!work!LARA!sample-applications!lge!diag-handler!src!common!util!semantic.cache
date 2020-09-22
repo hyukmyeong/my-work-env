@@ -1,0 +1,988 @@
+;; Object semanticdb-project-database-file-3a36144
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-3a36144"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-2970488"
+      :major-mode c-mode
+      :tags 
+        '( ("DIAG_AHANDLER__COMMON_H_" variable (:constant-flag t) nil [1265 1289])
+            ("E_MAX_IDENTIFICATION_DIDS" variable (:constant-flag t) nil [1299 1324])
+            ("eDidList" type
+               (:members 
+                  ( ("E_ADAP_FIRST" variable
+                       (:constant-flag t
+                        :default-value (1424 1425)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1409 1425])
+                    ("E_ADAP_0x0B45" variable
+                       (:constant-flag t
+                        :default-value (1445 1457)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1429 1457])
+                    ("E_ADAP_0x0B47" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1469 1483])
+                    ("E_ADAP_0x0580" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1486 1500])
+                    ("E_ADAP_0x0526" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1503 1517])
+                    ("E_ADAP_0x0527" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1520 1534])
+                    ("E_ADAP_0x0528" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1537 1551])
+                    ("E_ADAP_0x0529" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1554 1568])
+                    ("E_ADAP_0x0902" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1571 1585])
+                    ("E_ADAP_0x057A" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1588 1602])
+                    ("E_ADAP_0x051B" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1605 1619])
+                    ("E_ADAP_0x1021" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1622 1636])
+                    ("E_ADAP_0x0B1D" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1663 1677])
+                    ("E_ADAP_0x0531" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1680 1694])
+                    ("E_ADAP_0x0C9D" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1697 1711])
+                    ("E_ADAP_0x0E3E" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1714 1728])
+                    ("E_ADAP_0x0579" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1731 1745])
+                    ("E_ADAP_0x0590" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1748 1762])
+                    ("E_ADAP_0x0591" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1765 1779])
+                    ("E_ADAP_0x0C3A" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1782 1796])
+                    ("E_ADAP_LAST" variable
+                       (:constant-flag t
+                        :default-value (1837 1850)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1823 1850])
+                    ("E_CODI_FIRST" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1870 1883])
+                    ("E_CODI_0x0600" variable
+                       (:constant-flag t
+                        :default-value (1902 1914)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1886 1914])
+                    ("E_CODI_LAST" variable
+                       (:constant-flag t
+                        :default-value (1941 1954)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1927 1954])
+                    ("E_DSET_FIRST" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1977 1990])
+                    ("E_DSET_0x720B" variable
+                       (:constant-flag t
+                        :default-value (2009 2021)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1993 2021])
+                    ("E_DSET_0x720C" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2034 2048])
+                    ("E_DSET_LAST" variable
+                       (:constant-flag t
+                        :default-value (2089 2102)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2075 2102])
+                    ("E_MEAS_FIRST" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2130 2143])
+                    ("E_MEAS_CACHE_FIRST" variable
+                       (:constant-flag t
+                        :default-value (2167 2179)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2146 2179])
+                    ("E_MEAS_0x1837" variable
+                       (:constant-flag t
+                        :default-value (2199 2211)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2183 2211])
+                    ("E_MEAS_0x0261" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2224 2238])
+                    ("E_MEAS_0x2B16" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2241 2255])
+                    ("E_MEAS_0xF40C" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2258 2272])
+                    ("E_MEAS_0x180C" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2275 2289])
+                    ("E_MEAS_0x1860" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2292 2306])
+                    ("E_MEAS_0x22D2" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2309 2323])
+                    ("E_MEAS_CACHE_LAST" variable
+                       (:constant-flag t
+                        :default-value (2346 2359)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2326 2359])
+                    ("E_MEAS_0x0102" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2363 2377])
+                    ("E_MEAS_0x010D" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2404 2418])
+                    ("E_MEAS_0x010E" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2421 2435])
+                    ("E_MEAS_0x010F" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2438 2452])
+                    ("E_MEAS_0x013D" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2455 2469])
+                    ("E_MEAS_0x013E" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2472 2486])
+                    ("E_MEAS_0x0141" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2489 2503])
+                    ("E_MEAS_0x0286" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2506 2520])
+                    ("E_MEAS_0x0140" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2523 2537])
+                    ("E_MEAS_0x0142" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2540 2554])
+                    ("E_MEAS_0x014E" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2557 2571])
+                    ("E_MEAS_0x014F" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2574 2588])
+                    ("E_MEAS_0x0173" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2591 2605])
+                    ("E_MEAS_0x0A2B" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2608 2622])
+                    ("E_MEAS_0x0A2C" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2625 2639])
+                    ("E_MEAS_0x0A2E" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2642 2656])
+                    ("E_MEAS_0x0A2F" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2659 2673])
+                    ("E_MEAS_0x0401" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2676 2690])
+                    ("E_MEAS_0x1017" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2693 2707])
+                    ("E_MEAS_0x1008" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2710 2724])
+                    ("E_MEAS_0x019C" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2727 2741])
+                    ("E_MEAS_0x1120" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2744 2758])
+                    ("E_MEAS_0x100C" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2761 2775])
+                    ("E_MEAS_0x2C55" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2778 2792])
+                    ("E_MEAS_0x2C56" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2795 2809])
+                    ("E_MEAS_0x2C57" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2812 2826])
+                    ("E_MEAS_0x2C60" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2829 2843])
+                    ("E_MEAS_0x1844" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2846 2860])
+                    ("E_MEAS_LAST" variable
+                       (:constant-flag t
+                        :default-value (2901 2914)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2887 2914])
+                    ("E_ROUT_FIRST" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2943 2956])
+                    ("E_ROUT_0x0452" variable
+                       (:constant-flag t
+                        :default-value (2975 2987)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2959 2987])
+                    ("E_ROUT_0x0580" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [3000 3014])
+                    ("E_ROUT_0x057C" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [3041 3055])
+                    ("E_ROUT_0x05E3" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [3058 3072])
+                    ("E_ROUT_0x05E4" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [3075 3089])
+                    ("E_ROUT_0x05E5" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [3092 3106])
+                    ("E_ROUT_0x05EB" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [3109 3123])
+                    ("E_ROUT_0x057E" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [3150 3164])
+                    ("E_ROUT_0x057F" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [3167 3181])
+                    ("E_ROUT_0x03E7" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [3184 3198])
+                    ("E_ROUT_0x1120" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [3201 3215])
+                    ("E_ROUT_0xC00A" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [3218 3232])
+                    ("E_ROUT_0xC00B" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [3259 3273])
+                    ("E_ROUT_0xC00C" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [3276 3290])
+                    ("E_ROUT_0xC00D" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [3293 3307])
+                    ("E_ROUT_0xC00F" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [3310 3324])
+                    ("E_ROUT_0x0648" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [3327 3341])
+                    ("E_ROUT_0x0202" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [3434 3448])
+                    ("E_ROUT_0x0203" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [3475 3489])
+                    ("E_ROUT_0x0544" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [3492 3506])
+                    ("E_ROUT_0xC004" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [3509 3523])
+                    ("E_ROUT_0xC005" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [3526 3540])
+                    ("E_ROUT_0xC007" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [3567 3581])
+                    ("E_ROUT_0xC008" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [3584 3598])
+                    ("E_ROUT_0xC009" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [3601 3615])
+                    ("E_ROUT_0xC00E" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [3618 3632])
+                    ("E_ROUT_0xC010" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [3635 3649])
+                    ("E_ROUT_0xFF00" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [3676 3690])
+                    ("E_ROUT_0xFF01" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [3693 3707])
+                    ("E_ROUT_LAST" variable
+                       (:constant-flag t
+                        :default-value (3769 3782)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [3755 3782])
+                    ("E_MAX_DIDS" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [3787 3799]))                  
+                :type "enum")
+                nil [1372 3800])
+            ("LGRELAY_DTC_INSTANCE_INDEX" type
+               (:members 
+                  ( ("E_DTC_INSTANCEID_FIRST" variable
+                       (:constant-flag t
+                        :default-value (3883 3884)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [3858 3884])
+                    ("E_DTC_INSTANCEID_1" variable
+                       (:constant-flag t
+                        :default-value (3909 3910)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [3888 3910])
+                    ("E_DTC_INSTANCEID_2" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [3914 3933])
+                    ("E_DTC_INSTANCEID_3" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [3936 3955])
+                    ("E_DTC_INSTANCEID_4" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [3958 3977])
+                    ("E_DTC_INSTANCEID_5" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [3980 3999])
+                    ("E_DTC_INSTANCEID_6" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [4002 4021])
+                    ("E_DTC_INSTANCEID_7" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [4024 4043])
+                    ("E_DTC_INSTANCEID_8" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [4046 4065])
+                    ("E_DTC_INSTANCEID_9" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [4068 4087])
+                    ("E_DTC_INSTANCEID_10" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [4090 4110])
+                    ("E_DTC_INSTANCEID_11" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [4113 4133])
+                    ("E_DTC_INSTANCEID_12" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [4136 4156])
+                    ("E_DTC_INSTANCEID_13" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [4159 4179])
+                    ("E_DTC_INSTANCEID_14" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [4182 4202])
+                    ("E_DTC_INSTANCEID_15" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [4205 4225])
+                    ("E_DTC_INSTANCEID_16" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [4228 4248])
+                    ("E_DTC_INSTANCEID_17" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [4251 4271])
+                    ("E_DTC_INSTANCEID_18" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [4274 4294])
+                    ("E_DTC_INSTANCEID_19" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [4297 4317])
+                    ("E_DTC_INSTANCEID_20" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [4320 4340])
+                    ("E_DTC_INSTANCEID_21" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [4343 4363])
+                    ("E_DTC_INSTANCEID_22" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [4366 4386])
+                    ("E_DTC_INSTANCEID_23" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [4389 4409])
+                    ("E_DTC_INSTANCEID_24" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [4412 4432])
+                    ("E_DTC_INSTANCEID_25" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [4435 4455])
+                    ("E_DTC_INSTANCEID_26" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [4458 4478])
+                    ("E_DTC_INSTANCEID_27" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [4481 4501])
+                    ("E_DTC_INSTANCEID_28" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [4504 4524])
+                    ("E_DTC_INSTANCEID_29" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [4527 4547])
+                    ("E_DTC_INSTANCEID_30" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [4550 4570])
+                    ("E_DTC_INSTANCEID_31" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [4573 4593])
+                    ("E_DTC_INSTANCEID_32" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [4596 4616])
+                    ("E_DTC_INSTANCEID_33" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [4619 4639])
+                    ("E_DTC_INSTANCEID_34" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [4642 4662])
+                    ("E_DTC_INSTANCEID_35" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [4665 4685])
+                    ("E_DTC_INSTANCEID_36" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [4688 4708])
+                    ("E_DTC_INSTANCEID_37" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [4711 4731])
+                    ("E_DTC_INSTANCEID_38" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [4734 4754])
+                    ("E_DTC_INSTANCEID_39" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [4757 4777])
+                    ("E_DTC_INSTANCEID_40" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [4780 4800])
+                    ("E_DTC_INSTANCEID_41" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [4803 4823])
+                    ("E_DTC_INSTANCEID_42" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [4826 4846])
+                    ("E_DTC_INSTANCEID_43" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [4849 4869])
+                    ("E_DTC_INSTANCEID_44" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [4872 4892])
+                    ("E_DTC_INSTANCEID_45" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [4895 4915])
+                    ("E_DTC_INSTANCEID_46" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [4918 4938])
+                    ("E_DTC_INSTANCEID_47" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [4941 4961])
+                    ("E_DTC_INSTANCEID_48" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [4964 4984])
+                    ("E_DTC_INSTANCEID_49" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [4987 5007])
+                    ("E_DTC_INSTANCEID_50" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [5010 5030])
+                    ("E_DTC_INSTANCEID_51" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [5033 5053])
+                    ("E_DTC_INSTANCEID_52" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [5056 5076])
+                    ("E_DTC_INSTANCEID_53" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [5079 5099])
+                    ("E_DTC_INSTANCEID_54" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [5102 5122])
+                    ("E_DTC_INSTANCEID_55" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [5125 5145])
+                    ("E_DTC_INSTANCEID_56" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [5148 5168])
+                    ("E_DTC_INSTANCEID_57" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [5171 5191])
+                    ("E_DTC_INSTANCEID_58" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [5194 5214])
+                    ("E_DTC_INSTANCEID_59" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [5217 5237])
+                    ("E_DTC_INSTANCEID_60" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [5240 5260])
+                    ("E_DTC_INSTANCEID_61" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [5263 5283])
+                    ("E_DTC_INSTANCEID_62" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [5286 5306])
+                    ("E_DTC_INSTANCEID_63" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [5309 5329])
+                    ("E_DTC_INSTANCEID_64" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [5332 5352])
+                    ("E_DTC_INSTANCEID_65" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [5355 5375])
+                    ("E_DTC_INSTANCEID_66" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [5378 5398])
+                    ("E_DTC_INSTANCEID_67" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [5401 5421])
+                    ("E_DTC_INSTANCEID_68" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [5424 5444])
+                    ("E_DTC_INSTANCEID_69" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [5447 5467])
+                    ("E_DTC_INSTANCEID_70" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [5470 5490])
+                    ("E_DTC_INSTANCEID_71" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [5493 5513])
+                    ("E_DTC_INSTANCEID_72" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [5516 5536])
+                    ("E_DTC_INSTANCEID_73" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [5539 5559])
+                    ("E_DTC_INSTANCEID_74" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [5562 5582])
+                    ("E_DTC_INSTANCEID_75" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [5585 5605])
+                    ("E_DTC_INSTANCEID_76" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [5608 5628])
+                    ("E_DTC_INSTANCEID_77" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [5631 5651])
+                    ("E_DTC_INSTANCEID_78" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [5654 5674])
+                    ("E_DTC_INSTANCEID_79" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [5677 5697])
+                    ("E_DTC_INSTANCEID_80" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [5700 5720])
+                    ("E_DTC_INSTANCEID_81" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [5723 5743])
+                    ("E_DTC_INSTANCEID_82" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [5746 5766])
+                    ("E_DTC_INSTANCEID_83" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [5769 5789])
+                    ("E_DTC_INSTANCEID_84" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [5792 5812])
+                    ("E_DTC_INSTANCEID_85" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [5815 5835])
+                    ("E_DTC_INSTANCEID_86" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [5838 5858])
+                    ("E_DTC_INSTANCEID_87" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [5861 5881])
+                    ("E_DTC_INSTANCEID_88" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [5884 5904])
+                    ("E_DTC_INSTANCEID_89" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [5907 5927])
+                    ("E_DTC_INSTANCEID_90" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [5930 5950])
+                    ("E_DTC_INSTANCEID_91" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [5953 5973])
+                    ("E_DTC_INSTANCEID_92" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [5976 5996])
+                    ("E_DTC_INSTANCEID_93" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [5999 6019])
+                    ("E_DTC_INSTANCEID_LAST" variable
+                       (:constant-flag t
+                        :default-value (6046 6065)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [6022 6065])
+                    ("E_DTC_INSTANCEID_MAX" variable
+                       (:constant-flag t
+                        :default-value (6092 6113)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [6069 6113]))                  
+                :type "enum")
+                nil [3802 6117])
+            ("lgRelayDidTotalMap" variable
+               (:dereference 1
+                :typemodifiers ("extern")
+                :type ("gstLgRelay_DidMap" type (:type "class") nil nil))
+                nil [6119 6175])
+            ("lgRelayIdentificationDidTotalMap" variable
+               (:dereference 1
+                :typemodifiers ("extern")
+                :type ("gstLgRelay_DidMap" type (:type "class") nil nil))
+                nil [6176 6261]))          
+      :file "DiagHandlerCommon.h"
+      :pointmax 6302
+      :fsize 6301
+      :lastmodtime '(24415 860 632785 334000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("E_MAX_IDENTIFICATION_DIDS" . ((semantic-list "(45)" 1325 . 1329)))
+          ("DIAG_AHANDLER__COMMON_H_")
+          )
+)
+    (semanticdb-table "semanticdb-table-1fd1fd0"
+      :major-mode c++-mode
+      :tags 
+        '( ("sstream" include (:system-flag t) nil [1 19])
+            ("iomanip" include (:system-flag t) nil [20 38])
+            ("algorithm" include (:system-flag t) nil [39 59])
+            ("DiagHandlerUtil.h" include nil nil [61 89])
+            ("ToHexString" function
+               (:parent "DiagHandlerUtil"
+                :arguments 
+                  ( ("data" variable
+                       (:constant-flag t
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("std::uint8_t" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [158 196]))                  
+                :type ("std::string" type (:type "class") nil nil))
+                nil [114 524])
+            ("ToHexString" function
+               (:parent "DiagHandlerUtil"
+                :arguments 
+                  ( ("byte" variable (:type ("std::uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [570 589]))                  
+                :type ("std::string" type (:type "class") nil nil))
+                nil [526 848])
+            ("ToHexString" function
+               (:parent "DiagHandlerUtil"
+                :arguments 
+                  ( ("data" variable
+                       (:dereference 1
+                        :constant-flag t
+                        :type ("std::uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [921 947])
+                    ("size" variable
+                       (:constant-flag t
+                        :type ("std::uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [950 975]))                  
+                :type ("std::string" type (:type "class") nil nil))
+                nil [877 1151])
+            ("VectorToInteger" function
+               (:parent "DiagHandlerUtil"
+                :arguments 
+                  ( ("vec" variable (:type ("std::vector" type
+                         (:template-specifier 
+                            ( ("std::uint64_t" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol arg-sub-list) [1226 1258]))                  
+                :type ("uint64_t" type (:type "class") nil nil))
+                nil [1181 1439])
+            ("VectorToInteger" function
+               (:parent "DiagHandlerUtil"
+                :arguments 
+                  ( ("vec" variable (:type ("std::vector" type
+                         (:template-specifier 
+                            ( ("std::uint32_t" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol arg-sub-list) [1514 1546]))                  
+                :type ("uint32_t" type (:type "class") nil nil))
+                nil [1469 1727]))          
+      :file "DiagHandlerUtil.cpp"
+      :pointmax 1729
+      :fsize 1728
+      :lastmodtime '(24415 860 632785 334000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-333205c"
+      :major-mode c++-mode
+      :tags 
+        '( ("DIAG_HANDLER_UTIL_H_" variable (:constant-flag t) nil [39 59])
+            ("mutex" include (:system-flag t) nil [61 77])
+            ("condition_variable" include (:system-flag t) nil [78 107])
+            ("vector" include (:system-flag t) nil [108 125])
+            ("Condition" type
+               (:members 
+                  ( ("m" variable (:type ("std::mutex" type (:type "class") nil nil)) (reparse-symbol classsubparts) [148 161])
+                    ("cv" variable (:type ("std::condition_variable" type (:type "class") nil nil)) (reparse-symbol classsubparts) [164 191]))                  
+                :type "struct")
+                nil [127 194])
+            ("DiagHandlerUtil" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [220 227])
+                    ("ToHexString" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :arguments 
+                          ( ("data" variable
+                               (:constant-flag t
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("std::uint8_t" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [262 300]))                          
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [230 301])
+                    ("ToHexString" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :arguments 
+                          ( ("byte" variable (:type ("std::uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [336 355]))                          
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [304 356])
+                    ("ToHexString" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :arguments 
+                          ( ("data" variable
+                               (:dereference 1
+                                :constant-flag t
+                                :type ("std::uint8_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [391 417])
+                            ("size" variable
+                               (:constant-flag t
+                                :type ("std::uint8_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [418 443]))                          
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [359 444])
+                    ("VectorToInteger" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :arguments 
+                          ( ("vec" variable (:type ("std::vector" type
+                                 (:template-specifier 
+                                    ( ("std::uint64_t" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol arg-sub-list) [481 513]))                          
+                        :type ("uint64_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [448 514])
+                    ("VectorToInteger" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :arguments 
+                          ( ("vec" variable (:type ("std::vector" type
+                                 (:template-specifier 
+                                    ( ("std::uint32_t" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol arg-sub-list) [550 582]))                          
+                        :type ("uint32_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [517 583]))                  
+                :type "class")
+                nil [196 586]))          
+      :file "DiagHandlerUtil.h"
+      :pointmax 623
+      :fsize 622
+      :lastmodtime '(24415 860 632785 334000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("DIAG_HANDLER_UTIL_H_")
+          )
+))
+  :file "!home!hyuk.myeong!work!LARA!sample-applications!lge!diag-handler!src!common!util!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

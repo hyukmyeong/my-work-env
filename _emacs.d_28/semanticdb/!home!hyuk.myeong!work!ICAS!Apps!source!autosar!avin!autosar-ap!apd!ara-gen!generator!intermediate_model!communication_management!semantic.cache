@@ -1,0 +1,207 @@
+;; Object semanticdb-project-database-file-1f73af0
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-1f73af0"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-1f73b0c"
+      :major-mode python-mode
+      :tags 
+        '( ("\"\"\"
+Method class.
+\"\"\"" code nil nil [2014 2035])
+            ("typing" include nil nil [2137 2160])
+            ("ApplicationErrorException" include nil nil [2228 2260])
+            ("ImplDataType" include nil nil [2318 2337])
+            ("ErrorContext" type
+               (:documentation "Describes an Argument within a method"
+                :superclasses ("object")
+                :members 
+                  ( ("__str__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2591 2595]))                          
+                        :documentation "To make debugging easier")
+                        (reparse-symbol indented_block_body) [2579 2708])
+                    ("__repr__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2726 2730]))                          )
+                        (reparse-symbol indented_block_body) [2713 2763])
+                    ("referable_fqn" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2800 2804]))                          
+                        :decorators 
+                          ( ("property" function (:type "decorator") nil nil))                          )
+                        (reparse-symbol indented_block_body) [2768 2842])
+                    ("impl_type" function
+                       (:parent "dummy"
+                        :decorators 
+                          ( ("property" function (:type "decorator") nil nil))                          
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2875 2879]))                          
+                        :documentation "Get the implmentation type of the Argument.")
+                        (reparse-symbol indented_block_body) [2847 2971])
+                    ("name" function
+                       (:parent "dummy"
+                        :decorators 
+                          ( ("property" function (:type "decorator") nil nil))                          
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2999 3003]))                          
+                        :documentation "Get the name of the Argument.")
+                        (reparse-symbol indented_block_body) [2976 3100]))                  
+                :type "class")
+                nil [2340 3100])
+            ("Argument" type
+               (:documentation "Describes an Argument within a method"
+                :superclasses ("object")
+                :members 
+                  ( ("__str__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3380 3384]))                          
+                        :documentation "To make debugging easier")
+                        (reparse-symbol indented_block_body) [3368 3506])
+                    ("__repr__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3524 3528]))                          )
+                        (reparse-symbol indented_block_body) [3511 3561])
+                    ("name" function
+                       (:parent "dummy"
+                        :decorators 
+                          ( ("property" function (:type "decorator") nil nil))                          
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3589 3593]))                          
+                        :documentation "Get the name of the Argument.")
+                        (reparse-symbol indented_block_body) [3566 3666])
+                    ("impl_type" function
+                       (:parent "dummy"
+                        :decorators 
+                          ( ("property" function (:type "decorator") nil nil))                          
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3699 3703]))                          
+                        :documentation "Get the implmentation type of the Argument.")
+                        (reparse-symbol indented_block_body) [3671 3795])
+                    ("is_error" function
+                       (:parent "dummy"
+                        :decorators 
+                          ( ("property" function (:type "decorator") nil nil))                          
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3827 3831]))                          
+                        :documentation "Is this an output arg mentioned in an error context")
+                        (reparse-symbol indented_block_body) [3800 3930]))                  
+                :type "class")
+                nil [3102 3930])
+            ("Method" type
+               (:documentation "Describes a Method within a service"
+                :superclasses ("object")
+                :members 
+                  ( ("__str__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4370 4374]))                          
+                        :documentation "To make debugging easier")
+                        (reparse-symbol indented_block_body) [4358 4454])
+                    ("__repr__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4472 4476]))                          )
+                        (reparse-symbol indented_block_body) [4459 4509])
+                    ("name" function
+                       (:parent "dummy"
+                        :decorators 
+                          ( ("property" function (:type "decorator") nil nil))                          
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4537 4541]))                          
+                        :documentation "Get the name of the Method.")
+                        (reparse-symbol indented_block_body) [4514 4612])
+                    ("input_arguments" function
+                       (:parent "dummy"
+                        :decorators 
+                          ( ("property" function (:type "decorator") nil nil))                          
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4651 4655]))                          
+                        :documentation "Get the Method's input arguments.")
+                        (reparse-symbol indented_block_body) [4617 4743])
+                    ("output_arguments" function
+                       (:parent "dummy"
+                        :decorators 
+                          ( ("property" function (:type "decorator") nil nil))                          
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4783 4787]))                          
+                        :documentation "Get the Method's input arguments.")
+                        (reparse-symbol indented_block_body) [4748 4876])
+                    ("add_argument" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4898 4902])
+                            ("Argument" variable nil (reparse-symbol function_parameters) [4909 4917])
+                            ("direction" variable nil (reparse-symbol function_parameters) [4919 4928]))                          )
+                        (reparse-symbol indented_block_body) [4881 5087])
+                    ("errors" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5117 5121]))                          
+                        :decorators 
+                          ( ("property" function (:type "decorator") nil nil))                          )
+                        (reparse-symbol indented_block_body) [5092 5152])
+                    ("add_error" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5171 5175])
+                            ("error" variable nil (reparse-symbol function_parameters) [5177 5182]))                          )
+                        (reparse-symbol indented_block_body) [5157 5217])
+                    ("deployment" function
+                       (:parent "dummy"
+                        :decorators 
+                          ( ("property" function (:type "decorator") nil nil))                          
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5251 5255]))                          
+                        :documentation "Get the deployment of the Method.")
+                        (reparse-symbol indented_block_body) [5222 5338])
+                    ("deployment" function
+                       (:parent "dummy"
+                        :decorators 
+                          ( ("deployment.setter" function (:type "decorator") nil nil))                          
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5381 5385])
+                            ("deployment" variable nil (reparse-symbol function_parameters) [5387 5397]))                          
+                        :documentation "Set the deployment of the Method.")
+                        (reparse-symbol indented_block_body) [5343 5486]))                  
+                :type "class")
+                nil [3931 5486]))          
+      :file "method.py"
+      :pointmax 5486
+      :fsize 5485
+      :lastmodtime '(24248 38547 385600 887000)
+      :unmatched-syntax '((NAME 4904 . 4907) (COLON 4907 . 4908) (INDENT_BLOCK 4042 . 4353) (NEWLINE 4041 . 4042) (COLON 4040 . 4041) (DEF 4003 . 4006) (MINUS 4033 . 4034) (GT 4034 . 4035) (NAME 4022 . 4026) (COLON 4026 . 4027) (INDENT_BLOCK 3263 . 3363) (NEWLINE 3262 . 3263) (COLON 3261 . 3262) (DEF 3179 . 3182) (MINUS 3254 . 3255) (GT 3255 . 3256) (NAME 3234 . 3246) (COLON 3246 . 3247) (NAME 3209 . 3218) (COLON 3218 . 3219) (NAME 3198 . 3202) (COLON 3202 . 3203) (INDENT_BLOCK 2494 . 2574) (NEWLINE 2493 . 2494) (COLON 2492 . 2493) (DEF 2421 . 2424) (MINUS 2485 . 2486) (GT 2486 . 2487) (NAME 2465 . 2478) (COLON 2478 . 2479) (NAME 2440 . 2449) (COLON 2449 . 2450) (PERIOD 2301 . 2302) (FROM 2295 . 2299) (PERIOD 2300 . 2301) (FROM 2194 . 2198) (PERIOD 2199 . 2200)))
+    (semanticdb-table "semanticdb-table-d22c28"
+      :major-mode python-mode
+      :tags 
+        '( ("\"\"\"
+Method output class.
+\"\"\"" code nil nil [2014 2042])
+            ("Output" type
+               (:documentation "The Output class describes the output of a CM method,
+       it consists of all output parameters"
+                :superclasses ("object")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [2207 2233]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2192 2196]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [2179 2234]))                  
+                :type "class")
+                nil [2045 2234]))          
+      :file "output.py"
+      :pointmax 2234
+      :fsize 2233
+      :lastmodtime '(24248 38547 385600 887000)
+      :unmatched-syntax nil))
+  :file "!home!hyuk.myeong!work!ICAS!Apps!source!autosar!avin!autosar-ap!apd!ara-gen!generator!intermediate_model!communication_management!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

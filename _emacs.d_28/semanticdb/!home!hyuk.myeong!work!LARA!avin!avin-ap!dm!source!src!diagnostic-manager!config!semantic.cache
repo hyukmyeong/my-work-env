@@ -1,0 +1,1729 @@
+;; Object semanticdb-project-database-file-30f9dc0
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-30f9dc0"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-30f9da0"
+      :major-mode c++-mode
+      :tags 
+        '( ("iostream" include (:system-flag t) nil [726 745])
+            ("chrono" include (:system-flag t) nil [746 763])
+            ("algorithm" include (:system-flag t) nil [764 784])
+            ("string" include (:system-flag t) nil [785 802])
+            ("vsomeip/constants.hpp" include (:system-flag t) nil [803 835])
+            ("common/config/doip_config.h" include nil nil [837 875])
+            ("ara" type
+               (:members 
+                  ( ("diag" type
+                       (:members 
+                          ( ("uds_transport" type
+                               (:members 
+                                  ( ("doip" type
+                                       (:members 
+                                          ( ("config" type
+                                               (:members 
+                                                  ( ("DoIpConfig::stDoIpConfigInstance_" variable (:type ("std::shared_ptr" type
+                                                         (:template-specifier 
+                                                            ( ("DoIpConfig" type nil nil nil))                                                            
+                                                          :type "class")
+                                                          nil nil)) (reparse-symbol namespacesubparts) [972 1034])
+                                                    ("DoIpLoadConfig" function
+                                                       (:parent "DoIpConfig"
+                                                        :arguments 
+                                                          ( ("file_name" variable
+                                                               (:pointer 1
+                                                                :constant-flag t
+                                                                :type "char")
+                                                                (reparse-symbol arg-sub-list) [1096 1124]))                                                          
+                                                        :type "void")
+                                                        (reparse-symbol namespacesubparts) [1064 2544])
+                                                    ("LoadDoIpCommon" function
+                                                       (:parent "DoIpConfig"
+                                                        :arguments 
+                                                          ( ("configData" variable
+                                                               (:reference 1
+                                                                :type ("rapidjson::Document" type (:type "class") nil nil))
+                                                                (reparse-symbol arg-sub-list) [2578 2610]))                                                          
+                                                        :type "void")
+                                                        (reparse-symbol namespacesubparts) [2546 4383])
+                                                    ("LoadDoIPRequestConfiguration" function
+                                                       (:parent "DoIpConfig"
+                                                        :arguments 
+                                                          ( ("configData" variable
+                                                               (:reference 1
+                                                                :type ("rapidjson::Document" type (:type "class") nil nil))
+                                                                (reparse-symbol arg-sub-list) [4431 4463]))                                                          
+                                                        :type "void")
+                                                        (reparse-symbol namespacesubparts) [4385 5962])
+                                                    ("LoadDoIpChannel" function
+                                                       (:parent "DoIpConfig"
+                                                        :arguments 
+                                                          ( ("configData" variable
+                                                               (:reference 1
+                                                                :type ("rapidjson::Document" type (:type "class") nil nil))
+                                                                (reparse-symbol arg-sub-list) [5997 6029]))                                                          
+                                                        :type "void")
+                                                        (reparse-symbol namespacesubparts) [5964 7980])
+                                                    ("LoadDoIPPowerModeSrvcInterfaceAraComMapping" function
+                                                       (:parent "DoIpConfig"
+                                                        :arguments 
+                                                          ( ("configData" variable
+                                                               (:reference 1
+                                                                :type ("rapidjson::Document" type (:type "class") nil nil))
+                                                                (reparse-symbol arg-sub-list) [8108 8140]))                                                          
+                                                        :type "void")
+                                                        (reparse-symbol namespacesubparts) [8047 8722])
+                                                    ("LoadDoIPGroupIdentificationSrvcInterfaceAraComMapping" function
+                                                       (:parent "DoIpConfig"
+                                                        :arguments 
+                                                          ( ("configData" variable
+                                                               (:reference 1
+                                                                :type ("rapidjson::Document" type (:type "class") nil nil))
+                                                                (reparse-symbol arg-sub-list) [8870 8902]))                                                          
+                                                        :type "void")
+                                                        (reparse-symbol namespacesubparts) [8799 9536])
+                                                    ("GetTcpInitialInactivityTime" function
+                                                       (:parent "DoIpConfig"
+                                                        :type ("std::uint32_t" type (:type "class") nil nil))
+                                                        (reparse-symbol namespacesubparts) [9582 9689])
+                                                    ("GetTcpGeneralInactivityTime" function
+                                                       (:parent "DoIpConfig"
+                                                        :type ("std::uint32_t" type (:type "class") nil nil))
+                                                        (reparse-symbol namespacesubparts) [9735 9842])
+                                                    ("GetTcpAliveCheckResponseTimeout" function
+                                                       (:parent "DoIpConfig"
+                                                        :type ("std::uint32_t" type (:type "class") nil nil))
+                                                        (reparse-symbol namespacesubparts) [9892 10007])
+                                                    ("GetMaxInitialVehicleAnnouncementTime" function
+                                                       (:parent "DoIpConfig"
+                                                        :type ("std::uint32_t" type (:type "class") nil nil))
+                                                        (reparse-symbol namespacesubparts) [10062 10187])
+                                                    ("GetVehicleAnnouncementCount" function
+                                                       (:parent "DoIpConfig"
+                                                        :type ("std::uint8_t" type (:type "class") nil nil))
+                                                        (reparse-symbol namespacesubparts) [10233 10366])
+                                                    ("GetVehicleAnnouncementInterval" function
+                                                       (:parent "DoIpConfig"
+                                                        :type ("std::uint16_t" type (:type "class") nil nil))
+                                                        (reparse-symbol namespacesubparts) [10415 10556])
+                                                    ("GetEIDValue" function
+                                                       (:parent "DoIpConfig"
+                                                        :type ("std::string" type (:type "class") nil nil))
+                                                        (reparse-symbol namespacesubparts) [10600 10673])
+                                                    ("GetIPType" function
+                                                       (:parent "DoIpConfig"
+                                                        :type ("ara::core::String" type (:type "class") nil nil))
+                                                        (reparse-symbol namespacesubparts) [10699 10775])
+                                                    ("GetIPAddress" function
+                                                       (:parent "DoIpConfig"
+                                                        :type ("ara::core::String" type (:type "class") nil nil))
+                                                        (reparse-symbol namespacesubparts) [10801 10883])
+                                                    ("GetMulticastIPAddress" function
+                                                       (:parent "DoIpConfig"
+                                                        :type ("ara::core::String" type (:type "class") nil nil))
+                                                        (reparse-symbol namespacesubparts) [10931 11030])
+                                                    ("GetDoIPEntityLogicalAddress" function
+                                                       (:parent "DoIpConfig"
+                                                        :type ("std::uint16_t" type (:type "class") nil nil))
+                                                        (reparse-symbol namespacesubparts) [11079 11186])
+                                                    ("GetMaxRequestBytes" function
+                                                       (:parent "DoIpConfig"
+                                                        :type ("std::uint32_t" type (:type "class") nil nil))
+                                                        (reparse-symbol namespacesubparts) [11223 11312])
+                                                    ("IsMacToBeUsedAsEid" function
+                                                       (:parent "DoIpConfig"
+                                                        :type "bool")
+                                                        (reparse-symbol namespacesubparts) [11357 11440])
+                                                    ("IsVehicleIdentificationSyncStatusToBeUsed" function
+                                                       (:parent "DoIpConfig"
+                                                        :type "bool")
+                                                        (reparse-symbol namespacesubparts) [11535 11664])
+                                                    ("GetPersistencyMemoryAddress" function
+                                                       (:parent "DoIpConfig"
+                                                        :type ("std::string" type (:type "class") nil nil))
+                                                        (reparse-symbol namespacesubparts) [11721 11826])
+                                                    ("GetMaxTesterConnections" function
+                                                       (:parent "DoIpConfig"
+                                                        :type ("std::uint8_t" type (:type "class") nil nil))
+                                                        (reparse-symbol namespacesubparts) [11868 11966])
+                                                    ("GetDoIPPowerModeServiceInstanceMapping" function
+                                                       (:parent "DoIpConfig"
+                                                        :type ("std::int32_t" type (:type "class") nil nil))
+                                                        (reparse-symbol namespacesubparts) [12026 12161])
+                                                    ("GetDoIPGroupIdentificationServiceInstanceMapping" function
+                                                       (:parent "DoIpConfig"
+                                                        :type ("std::int32_t" type (:type "class") nil nil))
+                                                        (reparse-symbol namespacesubparts) [12231 12386])
+                                                    ("IsMaxLengthInEntityStatusResponseRequired" function
+                                                       (:parent "DoIpConfig"
+                                                        :type "bool")
+                                                        (reparse-symbol namespacesubparts) [12468 12598])
+                                                    ("getDoIpInstance" function
+                                                       (:parent "DoIpConfig"
+                                                        :type ("std::shared_ptr" type
+                                                             (:template-specifier 
+                                                                ( ("DoIpConfig" type nil nil nil))                                                                
+                                                              :type "class")
+                                                              nil nil))
+                                                        (reparse-symbol namespacesubparts) [12648 12927])
+                                                    ("IsTargetAddressValid" function
+                                                       (:parent "DoIpConfig"
+                                                        :arguments 
+                                                          ( ("targetAddress" variable (:type ("std::uint16_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13019 13047]))                                                          
+                                                        :type "bool")
+                                                        (reparse-symbol namespacesubparts) [12981 13184])
+                                                    ("GetDoIPRequestType" function
+                                                       (:parent "DoIpConfig"
+                                                        :arguments 
+                                                          ( ("targetAddress" variable (:type ("std::uint16_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13298 13326]))                                                          
+                                                        :type ("UdsMessage::TargetAddressType" type (:type "class") nil nil))
+                                                        (reparse-symbol namespacesubparts) [13237 13497]))                                                  
+                                                :type "namespace")
+                                                (reparse-symbol namespacesubparts) [953 13500]))                                          
+                                        :type "namespace")
+                                        (reparse-symbol namespacesubparts) [936 13522]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [910 13542]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [893 13571]))                  
+                :type "namespace")
+                nil [877 13591]))          
+      :file "doip_config.cpp"
+      :pointmax 13609
+      :fsize 13608
+      :lastmodtime '(24420 22489 996058 778000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-30f9de0"
+      :major-mode c++-mode
+      :tags 
+        '( ("common/config/dm_config.h" include nil nil [721 757])
+            ("iostream" include nil nil [758 777])
+            ("chrono" include (:system-flag t) nil [779 796])
+            ("algorithm" include (:system-flag t) nil [797 817])
+            ("vsomeip/constants.hpp" include (:system-flag t) nil [818 850])
+            ("ara" type
+               (:members 
+                  ( ("diag" type
+                       (:members 
+                          ( ("config" type
+                               (:members 
+                                  ( ("ara::diag::config::DMConfig::dmConfigInstance_" variable (:type ("std::shared_ptr" type
+                                         (:template-specifier 
+                                            ( ("ara::diag::config::DMConfig" type nil nil nil))                                            
+                                          :type "class")
+                                          nil nil)) (reparse-symbol namespacesubparts) [939 1031])
+                                    ("LoadConfig" function
+                                       (:parent "DMConfig"
+                                        :arguments 
+                                          ( ("file_name" variable
+                                               (:pointer 1
+                                                :constant-flag t
+                                                :type "char")
+                                                (reparse-symbol arg-sub-list) [1086 1114]))                                          
+                                        :type "void")
+                                        (reparse-symbol namespacesubparts) [1060 9311])
+                                    ("LoadExtendedDataRecordInfoTable" function
+                                       (:parent "DMConfig"
+                                        :arguments 
+                                          ( ("configData" variable
+                                               (:reference 1
+                                                :type ("rapidjson::Document" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [9360 9392]))                                          
+                                        :type "void")
+                                        (reparse-symbol namespacesubparts) [9313 10911])
+                                    ("LoadEnableConditionGroupsData" function
+                                       (:parent "DMConfig"
+                                        :arguments 
+                                          ( ("configData" variable
+                                               (:reference 1
+                                                :type ("rapidjson::Document" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [11001 11033]))                                          
+                                        :type "void")
+                                        (reparse-symbol namespacesubparts) [10956 12142])
+                                    ("LoadEnableConditionsData" function
+                                       (:parent "DMConfig"
+                                        :arguments 
+                                          ( ("configData" variable
+                                               (:reference 1
+                                                :type ("rapidjson::Document" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [12223 12255]))                                          
+                                        :type "void")
+                                        (reparse-symbol namespacesubparts) [12183 13369])
+                                    ("LoadNumberofEnableConditions" function
+                                       (:parent "DMConfig"
+                                        :arguments 
+                                          ( ("configData" variable
+                                               (:reference 1
+                                                :type ("rapidjson::Document" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [13455 13487]))                                          
+                                        :type "void")
+                                        (reparse-symbol namespacesubparts) [13411 13659])
+                                    ("LoadNumberofEnableConditionGroups" function
+                                       (:parent "DMConfig"
+                                        :arguments 
+                                          ( ("configData" variable
+                                               (:reference 1
+                                                :type ("rapidjson::Document" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [13755 13787]))                                          
+                                        :type "void")
+                                        (reparse-symbol namespacesubparts) [13706 13975])
+                                    ("GetNumberofEnableConditionGroups" function
+                                       (:parent "DMConfig"
+                                        :arguments 
+                                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [14081 14086]))                                          
+                                        :type ("std::uint32_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [14024 14133])
+                                    ("GetNumberofEnableConditions" function
+                                       (:parent "DMConfig"
+                                        :arguments 
+                                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [14229 14234]))                                          
+                                        :type ("std::uint32_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [14177 14276])
+                                    ("GetAraComEnableConditionServiceInstanceId" function
+                                       (:parent "DMConfig"
+                                        :arguments 
+                                          ( ("enableConditionId" variable (:type ("std::uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14438 14470]))                                          
+                                        :type ("std::uint32_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [14372 14570])
+                                    ("GetEnableConditionInitValue" function
+                                       (:parent "DMConfig"
+                                        :arguments 
+                                          ( ("enableConditionId" variable (:type ("std::uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14695 14727]))                                          
+                                        :type "bool")
+                                        (reparse-symbol namespacesubparts) [14652 14815])
+                                    ("GetAraComEnableConditionRefs" function
+                                       (:parent "DMConfig"
+                                        :arguments 
+                                          ( ("enableConditionGroupId" variable (:type ("std::uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14968 15005]))                                          
+                                        :type ("ara::core::Vector" type
+                                             (:template-specifier 
+                                                ( ("std::uint8_t" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol namespacesubparts) [14897 15103])
+                                    ("LoadDTCPropsInfoTableData" function
+                                       (:parent "DMConfig"
+                                        :arguments 
+                                          ( ("configData" variable
+                                               (:reference 1
+                                                :type ("rapidjson::Document" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [15189 15221]))                                          
+                                        :type "void")
+                                        (reparse-symbol namespacesubparts) [15148 17147])
+                                    ("LoadNumberofDTCPropsInfoTables" function
+                                       (:parent "DMConfig"
+                                        :arguments 
+                                          ( ("configData" variable
+                                               (:reference 1
+                                                :type ("rapidjson::Document" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [17234 17266]))                                          
+                                        :type "void")
+                                        (reparse-symbol namespacesubparts) [17188 17370])
+                                    ("GetNumberofDTCProps" function
+                                       (:parent "DMConfig"
+                                        :arguments 
+                                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [17457 17462]))                                          
+                                        :type ("std::uint32_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [17413 17496])
+                                    ("LoadFFRecordsData" function
+                                       (:parent "DMConfig"
+                                        :arguments 
+                                          ( ("configData" variable
+                                               (:reference 1
+                                                :type ("rapidjson::Document" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [17565 17597]))                                          
+                                        :type "void")
+                                        (reparse-symbol namespacesubparts) [17532 18558])
+                                    ("LoadNumberofFFRecords" function
+                                       (:parent "DMConfig"
+                                        :arguments 
+                                          ( ("configData" variable
+                                               (:reference 1
+                                                :type ("rapidjson::Document" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [18630 18662]))                                          
+                                        :type "void")
+                                        (reparse-symbol namespacesubparts) [18593 18799])
+                                    ("LoadDtcInfoTableData" function
+                                       (:parent "DMConfig"
+                                        :arguments 
+                                          ( ("configData" variable
+                                               (:reference 1
+                                                :type ("rapidjson::Document" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [18877 18909]))                                          
+                                        :type "void")
+                                        (reparse-symbol namespacesubparts) [18841 20113])
+                                    ("LoadDTCGroupsInfoTable" function
+                                       (:parent "DMConfig"
+                                        :arguments 
+                                          ( ("configData" variable
+                                               (:reference 1
+                                                :type ("rapidjson::Document" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [20184 20216]))                                          
+                                        :type "void")
+                                        (reparse-symbol namespacesubparts) [20146 20694])
+                                    ("LoadNumberofDtcInfoTables" function
+                                       (:parent "DMConfig"
+                                        :arguments 
+                                          ( ("configData" variable
+                                               (:reference 1
+                                                :type ("rapidjson::Document" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [20773 20805]))                                          
+                                        :type "void")
+                                        (reparse-symbol namespacesubparts) [20732 20952])
+                                    ("LoadFFDIDSetInfoTableData" function
+                                       (:parent "DMConfig"
+                                        :arguments 
+                                          ( ("configData" variable
+                                               (:reference 1
+                                                :type ("rapidjson::Document" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [21032 21064]))                                          
+                                        :type "void")
+                                        (reparse-symbol namespacesubparts) [20991 21814])
+                                    ("LoadNumberofDidSetInfoTables" function
+                                       (:parent "DMConfig"
+                                        :arguments 
+                                          ( ("configData" variable
+                                               (:reference 1
+                                                :type ("rapidjson::Document" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [21897 21929]))                                          
+                                        :type "void")
+                                        (reparse-symbol namespacesubparts) [21853 22039])
+                                    ("GetNumberofDidSetInfoTables" function
+                                       (:parent "DMConfig"
+                                        :arguments 
+                                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [22131 22136]))                                          
+                                        :type ("std::uint8_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [22080 22178])
+                                    ("GetDIDRefs" function
+                                       (:parent "DMConfig"
+                                        :arguments 
+                                          ( ("didsetId" variable (:type ("std::uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [22289 22311]))                                          
+                                        :type ("ara::core::Vector" type
+                                             (:template-specifier 
+                                                ( ("std::uint16_t" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol namespacesubparts) [22235 22360])
+                                    ("LoadFreezeFrameDIDInfoTableData" function
+                                       (:parent "DMConfig"
+                                        :arguments 
+                                          ( ("configData" variable
+                                               (:reference 1
+                                                :type ("rapidjson::Document" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [22460 22492]))                                          
+                                        :type "void")
+                                        (reparse-symbol namespacesubparts) [22413 23378])
+                                    ("LoadNumberofFreezeFrameDIDInfos" function
+                                       (:parent "DMConfig"
+                                        :arguments 
+                                          ( ("configData" variable
+                                               (:reference 1
+                                                :type ("rapidjson::Document" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [23474 23506]))                                          
+                                        :type "void")
+                                        (reparse-symbol namespacesubparts) [23427 23681])
+                                    ("GetNumberofFreezeFrameDIDInfos" function
+                                       (:parent "DMConfig"
+                                        :type ("std::uint32_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [23732 23833])
+                                    ("GetDidNumber" function
+                                       (:parent "DMConfig"
+                                        :arguments 
+                                          ( ("freezeframedidinfoid" variable (:type ("std::uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [23922 23957]))                                          
+                                        :type ("std::uint32_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [23885 24025])
+                                    ("GetDidSize" function
+                                       (:parent "DMConfig"
+                                        :arguments 
+                                          ( ("freezeframedidinfoid" variable (:type ("std::uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [24112 24147]))                                          
+                                        :type ("std::uint32_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [24077 24217])
+                                    ("LoadOperationCyclesData" function
+                                       (:parent "DMConfig"
+                                        :arguments 
+                                          ( ("configData" variable
+                                               (:reference 1
+                                                :type ("rapidjson::Document" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [24299 24331]))                                          
+                                        :type "void")
+                                        (reparse-symbol namespacesubparts) [24260 25833])
+                                    ("LoadNumberofOperationCycles" function
+                                       (:parent "DMConfig"
+                                        :arguments 
+                                          ( ("configData" variable
+                                               (:reference 1
+                                                :type ("rapidjson::Document" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [25917 25949]))                                          
+                                        :type "void")
+                                        (reparse-symbol namespacesubparts) [25874 26104])
+                                    ("LoadTimeBasedEventDebounceInfoTableData" function
+                                       (:parent "DMConfig"
+                                        :arguments 
+                                          ( ("configData" variable
+                                               (:reference 1
+                                                :type ("rapidjson::Document" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [26220 26252]))                                          
+                                        :type "void")
+                                        (reparse-symbol namespacesubparts) [26165 27773])
+                                    ("LoadCounterBasedEventDebounceInfoTableData" function
+                                       (:parent "DMConfig"
+                                        :arguments 
+                                          ( ("configData" variable
+                                               (:reference 1
+                                                :type ("rapidjson::Document" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [27894 27926]))                                          
+                                        :type "void")
+                                        (reparse-symbol namespacesubparts) [27836 30578])
+                                    ("LoadEventInfoTable" function
+                                       (:parent "DMConfig"
+                                        :arguments 
+                                          ( ("data" variable
+                                               (:reference 1
+                                                :type ("rapidjson::Value" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [30655 30678])
+                                            ("eventmemoryinfodatainstance" variable (:type ("std::shared_ptr" type
+                                                 (:template-specifier 
+                                                    ( ("ara::diag::cfg::EventMemoryInfoTable" type nil nil nil))                                                    
+                                                  :type "class")
+                                                  nil nil)) (reparse-symbol arg-sub-list) [30679 30761]))                                          
+                                        :type "void")
+                                        (reparse-symbol namespacesubparts) [30616 33280])
+                                    ("LoadEventMemoryInfoTableData" function
+                                       (:parent "DMConfig"
+                                        :arguments 
+                                          ( ("configData" variable
+                                               (:reference 1
+                                                :type ("rapidjson::Document" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [33372 33404]))                                          
+                                        :type "void")
+                                        (reparse-symbol namespacesubparts) [33328 35535])
+                                    ("LoadNumberofEventMemoryInfoTables" function
+                                       (:parent "DMConfig"
+                                        :arguments 
+                                          ( ("configData" variable
+                                               (:reference 1
+                                                :type ("rapidjson::Document" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [35631 35663]))                                          
+                                        :type "void")
+                                        (reparse-symbol namespacesubparts) [35582 35825])
+                                    ("GetEventEntryStorageTrigger" function
+                                       (:parent "DMConfig"
+                                        :arguments 
+                                          ( ("EventMemoryInfoTableId" variable (:type ("std::uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [35961 35998]))                                          
+                                        :type ("std::uint32_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [35909 36074])
+                                    ("GetProcessOccurrenceCounter" function
+                                       (:parent "DMConfig"
+                                        :arguments 
+                                          ( ("EventMemoryInfoTableId" variable (:type ("std::uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [36210 36247]))                                          
+                                        :type ("std::uint32_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [36158 36322])
+                                    ("LoadGenericUDSServiceInstanceMapping" function
+                                       (:parent "DMConfig"
+                                        :arguments 
+                                          ( ("configData" variable
+                                               (:reference 1
+                                                :type ("rapidjson::Document" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [36430 36462]))                                          
+                                        :type "void")
+                                        (reparse-symbol namespacesubparts) [36378 37020])
+                                    ("LoadSecurityAccessSrvcIntfcAraComMapping" function
+                                       (:parent "DMConfig"
+                                        :arguments 
+                                          ( ("configData" variable
+                                               (:reference 1
+                                                :type ("rapidjson::Document" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [37136 37168]))                                          
+                                        :type "void")
+                                        (reparse-symbol namespacesubparts) [37080 37774])
+                                    ("LoadCommCtrltSrvcIntfcAraComMapping" function
+                                       (:parent "DMConfig"
+                                        :arguments 
+                                          ( ("configData" variable
+                                               (:reference 1
+                                                :type ("rapidjson::Document" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [37880 37912]))                                          
+                                        :type "void")
+                                        (reparse-symbol namespacesubparts) [37829 38509])
+                                    ("LoadRequestRestartSrvcIntfcAraComMapping" function
+                                       (:parent "DMConfig"
+                                        :arguments 
+                                          ( ("configData" variable
+                                               (:reference 1
+                                                :type ("rapidjson::Document" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [38625 38657]))                                          
+                                        :type "void")
+                                        (reparse-symbol namespacesubparts) [38569 39251])
+                                    ("LoadGenericRoutineServiceInstanceMapping" function
+                                       (:parent "DMConfig"
+                                        :arguments 
+                                          ( ("configData" variable
+                                               (:reference 1
+                                                :type ("rapidjson::Document" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [39367 39399]))                                          
+                                        :type "void")
+                                        (reparse-symbol namespacesubparts) [39311 39981])
+                                    ("LoadGenericDataIdentifierServiceInstanceMapping" function
+                                       (:parent "DMConfig"
+                                        :arguments 
+                                          ( ("configData" variable
+                                               (:reference 1
+                                                :type ("rapidjson::Document" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [40111 40143]))                                          
+                                        :type "void")
+                                        (reparse-symbol namespacesubparts) [40048 40767])
+                                    ("LoadDiagConversationServiceInstanceMapping" function
+                                       (:parent "DMConfig"
+                                        :arguments 
+                                          ( ("configData" variable
+                                               (:reference 1
+                                                :type ("rapidjson::Document" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [40887 40919]))                                          
+                                        :type "void")
+                                        (reparse-symbol namespacesubparts) [40829 41525])
+                                    ("LoadDataElementUint8ServiceInstanceMapping" function
+                                       (:parent "DMConfig"
+                                        :arguments 
+                                          ( ("configData" variable
+                                               (:reference 1
+                                                :type ("rapidjson::Document" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [41649 41681]))                                          
+                                        :type "void")
+                                        (reparse-symbol namespacesubparts) [41591 42208])
+                                    ("LoadDataElementVectorServiceInstanceMapping" function
+                                       (:parent "DMConfig"
+                                        :arguments 
+                                          ( ("configData" variable
+                                               (:reference 1
+                                                :type ("rapidjson::Document" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [42334 42366]))                                          
+                                        :type "void")
+                                        (reparse-symbol namespacesubparts) [42275 42898])
+                                    ("LoadAccessPermissionGroup" function
+                                       (:parent "DMConfig"
+                                        :arguments 
+                                          ( ("configData" variable
+                                               (:reference 1
+                                                :type ("rapidjson::Document" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [42984 43016]))                                          
+                                        :type "void")
+                                        (reparse-symbol namespacesubparts) [42943 44392])
+                                    ("LoadSecAccessLevelInfoTableData" function
+                                       (:parent "DMConfig"
+                                        :arguments 
+                                          ( ("configData" variable
+                                               (:reference 1
+                                                :type ("rapidjson::Document" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [44490 44522]))                                          
+                                        :type "void")
+                                        (reparse-symbol namespacesubparts) [44443 46217])
+                                    ("LoadDiagConversations" function
+                                       (:parent "DMConfig"
+                                        :arguments 
+                                          ( ("configData" variable
+                                               (:reference 1
+                                                :type ("rapidjson::Document" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [46300 46332]))                                          
+                                        :type "void")
+                                        (reparse-symbol namespacesubparts) [46263 47642])
+                                    ("LoadSupportedServicesSubFunctions" function
+                                       (:parent "DMConfig"
+                                        :arguments 
+                                          ( ("data" variable
+                                               (:reference 1
+                                                :type ("rapidjson::Value" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [47744 47767])
+                                            ("serviceprocessorsdatainstance" variable (:type ("std::shared_ptr" type
+                                                 (:template-specifier 
+                                                    ( ("ara::diag::cfg::ServiceProcessorsTable" type nil nil nil))                                                    
+                                                  :type "class")
+                                                  nil nil)) (reparse-symbol arg-sub-list) [47772 47858]))                                          
+                                        :type "void")
+                                        (reparse-symbol namespacesubparts) [47695 49099])
+                                    ("LoadServiceProcessorsInfo" function
+                                       (:parent "DMConfig"
+                                        :arguments 
+                                          ( ("configData" variable
+                                               (:reference 1
+                                                :type ("rapidjson::Document" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [49190 49222]))                                          
+                                        :type "void")
+                                        (reparse-symbol namespacesubparts) [49149 50983])
+                                    ("LoadSupportedDIDSubFunctions" function
+                                       (:parent "DMConfig"
+                                        :arguments 
+                                          ( ("data" variable
+                                               (:reference 1
+                                                :type ("rapidjson::Value" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [51082 51105])
+                                            ("dataIdentifierInstance" variable (:type ("std::shared_ptr" type
+                                                 (:template-specifier 
+                                                    ( ("ara::diag::cfg::DataIdentifierInfoTable" type nil nil nil))                                                    
+                                                  :type "class")
+                                                  nil nil)) (reparse-symbol arg-sub-list) [51106 51186]))                                          
+                                        :type "void")
+                                        (reparse-symbol namespacesubparts) [51033 52360])
+                                    ("LoadDIDInfoTable" function
+                                       (:parent "DMConfig"
+                                        :arguments 
+                                          ( ("configData" variable
+                                               (:reference 1
+                                                :type ("rapidjson::Document" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [52428 52460]))                                          
+                                        :type "void")
+                                        (reparse-symbol namespacesubparts) [52396 53852])
+                                    ("LoadMaxDIDToRead" function
+                                       (:parent "DMConfig"
+                                        :arguments 
+                                          ( ("configData" variable
+                                               (:reference 1
+                                                :type ("rapidjson::Document" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [53920 53952]))                                          
+                                        :type "void")
+                                        (reparse-symbol namespacesubparts) [53888 54077])
+                                    ("LoadResponseToEcuReset" function
+                                       (:parent "DMConfig"
+                                        :arguments 
+                                          ( ("configData" variable
+                                               (:reference 1
+                                                :type ("rapidjson::Document" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [54157 54189]))                                          
+                                        :type "void")
+                                        (reparse-symbol namespacesubparts) [54119 54332])
+                                    ("LoadMaxCorrectlyReceivedResponsePending" function
+                                       (:parent "DMConfig"
+                                        :arguments 
+                                          ( ("configData" variable
+                                               (:reference 1
+                                                :type ("rapidjson::Document" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [54435 54467]))                                          
+                                        :type "void")
+                                        (reparse-symbol namespacesubparts) [54380 54639])
+                                    ("LoadNumberOfConversations" function
+                                       (:parent "DMConfig"
+                                        :arguments 
+                                          ( ("configData" variable
+                                               (:reference 1
+                                                :type ("rapidjson::Document" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [54725 54757]))                                          
+                                        :type "void")
+                                        (reparse-symbol namespacesubparts) [54684 54909])
+                                    ("LoadDiagnosticTargetAddress" function
+                                       (:parent "DMConfig"
+                                        :arguments 
+                                          ( ("configData" variable
+                                               (:reference 1
+                                                :type ("rapidjson::Document" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [54999 55031]))                                          
+                                        :type "void")
+                                        (reparse-symbol namespacesubparts) [54956 55189])
+                                    ("LoadUDSMessageLength" function
+                                       (:parent "DMConfig"
+                                        :arguments 
+                                          ( ("configData" variable
+                                               (:reference 1
+                                                :type ("rapidjson::Document" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [55265 55297]))                                          
+                                        :type "void")
+                                        (reparse-symbol namespacesubparts) [55229 55434])
+                                    ("LoadSecurityDelayTimeOnBoot" function
+                                       (:parent "DMConfig"
+                                        :arguments 
+                                          ( ("configData" variable
+                                               (:reference 1
+                                                :type ("rapidjson::Document" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [55524 55556]))                                          
+                                        :type "void")
+                                        (reparse-symbol namespacesubparts) [55481 55714])
+                                    ("LoadIsSharedTimer" function
+                                       (:parent "DMConfig"
+                                        :arguments 
+                                          ( ("configData" variable
+                                               (:reference 1
+                                                :type ("rapidjson::Document" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [55782 55814]))                                          
+                                        :type "void")
+                                        (reparse-symbol namespacesubparts) [55749 55938])
+                                    ("LoadECUResetDataPath" function
+                                       (:parent "DMConfig"
+                                        :arguments 
+                                          ( ("configData" variable
+                                               (:reference 1
+                                                :type ("rapidjson::Document" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [55976 56008]))                                          
+                                        :type "void")
+                                        (reparse-symbol namespacesubparts) [55940 56106])
+                                    ("LoadSupportedRoutineServicesSubFunctions" function
+                                       (:parent "DMConfig"
+                                        :arguments 
+                                          ( ("data" variable
+                                               (:reference 1
+                                                :type ("rapidjson::Value" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [56222 56245])
+                                            ("routineIdentifierInstance" variable (:type ("std::shared_ptr" type
+                                                 (:template-specifier 
+                                                    ( ("ara::diag::cfg::RoutineControlInfoTable" type nil nil nil))                                                    
+                                                  :type "class")
+                                                  nil nil)) (reparse-symbol arg-sub-list) [56250 56333]))                                          
+                                        :type "void")
+                                        (reparse-symbol namespacesubparts) [56166 57666])
+                                    ("LoadRoutineControlInfo" function
+                                       (:parent "DMConfig"
+                                        :arguments 
+                                          ( ("configData" variable
+                                               (:reference 1
+                                                :type ("rapidjson::Document" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [57756 57788]))                                          
+                                        :type "void")
+                                        (reparse-symbol namespacesubparts) [57718 59182])
+                                    ("LoadDataElementInfoTable" function
+                                       (:parent "DMConfig"
+                                        :arguments 
+                                          ( ("configData" variable
+                                               (:reference 1
+                                                :type ("rapidjson::Document" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [59270 59302]))                                          
+                                        :type "void")
+                                        (reparse-symbol namespacesubparts) [59230 61246])
+                                    ("GetNumberofFFRecords" function
+                                       (:parent "DMConfig"
+                                        :type ("std::uint32_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [61283 61364])
+                                    ("GetRecordNumber" function
+                                       (:parent "DMConfig"
+                                        :arguments 
+                                          ( ("recordindex" variable (:type ("std::uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [61484 61510]))                                          
+                                        :type ("std::uint32_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [61444 61577])
+                                    ("GetRecordUpdate" function
+                                       (:parent "DMConfig"
+                                        :arguments 
+                                          ( ("recordindex" variable (:type ("std::uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [61685 61711]))                                          
+                                        :type "bool")
+                                        (reparse-symbol namespacesubparts) [61654 61777])
+                                    ("GetRecordTrigger" function
+                                       (:parent "DMConfig"
+                                        :arguments 
+                                          ( ("recordindex" variable (:type ("std::uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [61900 61926]))                                          
+                                        :type ("ara::core::String" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [61855 61991])
+                                    ("GetRecordDidRef" function
+                                       (:parent "DMConfig"
+                                        :arguments 
+                                          ( ("dtcPropsInfoTableId" variable (:type ("std::uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [62129 62163]))                                          
+                                        :type ("ara::core::Vector" type
+                                             (:template-specifier 
+                                                ( ("std::uint32_t" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol namespacesubparts) [62070 62225])
+                                    ("GetGenericDataIdentifierServiceInstanceMapping" function
+                                       (:parent "DMConfig"
+                                        :type ("std::unordered_set" type
+                                             (:template-specifier 
+                                                ( ("std::uint16_t" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol namespacesubparts) [62289 62444])
+                                    ("GetGenericRoutineServiceInstanceMapping" function
+                                       (:parent "DMConfig"
+                                        :type ("std::unordered_set" type
+                                             (:template-specifier 
+                                                ( ("std::uint16_t" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol namespacesubparts) [62501 62642])
+                                    ("GetSecurityAccessServiceInstanceMapping" function
+                                       (:parent "DMConfig"
+                                        :type ("std::unordered_set" type
+                                             (:template-specifier 
+                                                ( ("std::uint16_t" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol namespacesubparts) [62703 62848])
+                                    ("GetCommunicationControlServiceInstanceMapping" function
+                                       (:parent "DMConfig"
+                                        :type ("std::unordered_set" type
+                                             (:template-specifier 
+                                                ( ("std::uint16_t" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol namespacesubparts) [62915 63072])
+                                    ("GetRequestRestartServiceInstanceMapping" function
+                                       (:parent "DMConfig"
+                                        :type ("std::unordered_set" type
+                                             (:template-specifier 
+                                                ( ("std::uint16_t" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol namespacesubparts) [63133 63278])
+                                    ("GetDiagConversationServiceInstanceMapping" function
+                                       (:parent "DMConfig"
+                                        :type ("std::int32_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [63351 63486])
+                                    ("GetGenericUDSServiceInstanceMapping" function
+                                       (:parent "DMConfig"
+                                        :type ("std::unordered_set" type
+                                             (:template-specifier 
+                                                ( ("std::uint16_t" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol namespacesubparts) [63539 63672])
+                                    ("GetDataElementUint8ServiceInstanceMapping" function
+                                       (:parent "DMConfig"
+                                        :type ("std::unordered_set" type
+                                             (:template-specifier 
+                                                ( ("std::uint16_t" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol namespacesubparts) [63731 63876])
+                                    ("GetDataElementVectorServiceInstanceMapping" function
+                                       (:parent "DMConfig"
+                                        :type ("std::unordered_set" type
+                                             (:template-specifier 
+                                                ( ("std::uint16_t" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol namespacesubparts) [63936 64083])
+                                    ("GetDiagnosticTargetAddress" function
+                                       (:parent "DMConfig"
+                                        :arguments 
+                                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [64192 64197]))                                          
+                                        :type ("std::uint16_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [64141 64236])
+                                    ("GetMaxDIDToRead" function
+                                       (:parent "DMConfig"
+                                        :arguments 
+                                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [64307 64312]))                                          
+                                        :type ("std::uint32_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [64267 64340])
+                                    ("GetResponseToEcuReset" function
+                                       (:parent "DMConfig"
+                                        :arguments 
+                                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [64423 64428]))                                          
+                                        :type ("std::uint32_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [64377 64462])
+                                    ("GetMaximumPendingResponse" function
+                                       (:parent "DMConfig"
+                                        :arguments 
+                                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [64553 64558]))                                          
+                                        :type ("std::uint8_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [64504 64592])
+                                    ("GetNumberOfConversations" function
+                                       (:parent "DMConfig"
+                                        :arguments 
+                                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [64681 64686]))                                          
+                                        :type ("std::uint32_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [64632 64723])
+                                    ("GetUDSMessageLength" function
+                                       (:parent "DMConfig"
+                                        :arguments 
+                                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [64802 64807]))                                          
+                                        :type ("std::uint32_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [64758 64839])
+                                    ("GetSecurityDelayTimeOnBoot" function
+                                       (:parent "DMConfig"
+                                        :arguments 
+                                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [64932 64937]))                                          
+                                        :type ("std::uint32_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [64881 64976])
+                                    ("GetDIDAccessPermissionGroup" function
+                                       (:parent "DMConfig"
+                                        :arguments 
+                                          ( ("DataId" variable (:type ("std::uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [65171 65192])
+                                            ("SubFunctionId" variable (:type ("std::uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [65193 65220]))                                          
+                                        :type ("std::uint32_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [65119 65330])
+                                    ("GetRIDAccessPermissionGroup" function
+                                       (:parent "DMConfig"
+                                        :arguments 
+                                          ( ("RoutineId" variable (:type ("std::uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [65468 65492]))                                          
+                                        :type ("std::uint32_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [65416 65567])
+                                    ("GetRIDAccessPermissionGroup" function
+                                       (:parent "DMConfig"
+                                        :arguments 
+                                          ( ("RoutineId" variable (:type ("std::uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [65768 65792])
+                                            ("SubFunctionId" variable (:type ("std::uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [65793 65820]))                                          
+                                        :type ("std::uint32_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [65716 65943])
+                                    ("GetRoutineIdRequestMaxLength" function
+                                       (:parent "DMConfig"
+                                        :arguments 
+                                          ( ("RoutineId" variable (:type ("std::uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [66137 66161])
+                                            ("SubFunctionId" variable (:type ("std::uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [66162 66189]))                                          
+                                        :type ("std::uint32_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [66084 66297])
+                                    ("GetRoutineIdRequestMinLength" function
+                                       (:parent "DMConfig"
+                                        :arguments 
+                                          ( ("RoutineId" variable (:type ("std::uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [66491 66515])
+                                            ("SubFunctionId" variable (:type ("std::uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [66516 66543]))                                          
+                                        :type ("std::uint32_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [66438 66651])
+                                    ("GetDidDataSize" function
+                                       (:parent "DMConfig"
+                                        :arguments 
+                                          ( ("DataId" variable (:type ("std::uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [66754 66775]))                                          
+                                        :type ("std::uint32_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [66715 66827])
+                                    ("GetDidSizeFixed" function
+                                       (:parent "DMConfig"
+                                        :arguments 
+                                          ( ("DataId" variable (:type ("std::uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [66930 66951]))                                          
+                                        :type "bool")
+                                        (reparse-symbol namespacesubparts) [66899 67010])
+                                    ("GetDIDServiceInterface" function
+                                       (:parent "DMConfig"
+                                        :arguments 
+                                          ( ("DataId" variable (:type ("std::uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [67129 67150]))                                          
+                                        :type ("ServiceInterfaceType" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [67075 67236])
+                                    ("GetDIDServiceInstance" function
+                                       (:parent "DMConfig"
+                                        :arguments 
+                                          ( ("DataId" variable (:type ("std::uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [67356 67377]))                                          
+                                        :type ("std::uint32_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [67310 67439])
+                                    ("GetRIDServiceInterface" function
+                                       (:parent "DMConfig"
+                                        :arguments 
+                                          ( ("RoutineId" variable (:type ("std::uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [67557 67581]))                                          
+                                        :type ("std::uint32_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [67510 67640])
+                                    ("GetRIDServiceInstance" function
+                                       (:parent "DMConfig"
+                                        :arguments 
+                                          ( ("RoutineId" variable (:type ("std::uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [67766 67790]))                                          
+                                        :type ("std::uint32_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [67720 67858])
+                                    ("GetServiceProcAccPermGroupId" function
+                                       (:parent "DMConfig"
+                                        :arguments 
+                                          ( ("serviceDataId" variable (:type ("std::uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [68006 68034]))                                          
+                                        :type ("std::uint32_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [67953 68117])
+                                    ("GetCommCtrlSubFuncAccPermGroupId" function
+                                       (:parent "DMConfig"
+                                        :arguments 
+                                          ( ("subFunctionId" variable (:type ("std::uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [68269 68297]))                                          
+                                        :type ("std::uint32_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [68212 68459])
+                                    ("GetEcuResetSubFuncAccPermGroupId" function
+                                       (:parent "DMConfig"
+                                        :arguments 
+                                          ( ("subFunctionId" variable (:type ("std::uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [68611 68639]))                                          
+                                        :type ("std::uint32_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [68554 68796])
+                                    ("GetServiceProcessorCategory" function
+                                       (:parent "DMConfig"
+                                        :arguments 
+                                          ( ("serviceDataId" variable (:type ("std::uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [68926 68953]))                                          
+                                        :type ("std::uint8_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [68875 69020])
+                                    ("GetServiceProcessorServiceInstance" function
+                                       (:parent "DMConfig"
+                                        :arguments 
+                                          ( ("serviceDataId" variable (:type ("std::uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [69167 69194]))                                          
+                                        :type ("std::uint32_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [69108 69270])
+                                    ("IsDIDExists" function
+                                       (:parent "DMConfig"
+                                        :arguments 
+                                          ( ("DataId" variable (:type ("std::uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [69327 69348]))                                          
+                                        :type "bool")
+                                        (reparse-symbol namespacesubparts) [69300 69502])
+                                    ("GetSessionName" function
+                                       (:parent "DMConfig"
+                                        :arguments 
+                                          ( ("sessionId" variable
+                                               (:constant-flag t
+                                                :type ("SessionType" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [69551 69579]))                                          
+                                        :type ("DiagnosticSessionType" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [69504 69640])
+                                    ("IsSessionExist" function
+                                       (:parent "DMConfig"
+                                        :arguments 
+                                          ( ("sessionId" variable
+                                               (:constant-flag t
+                                                :type ("SessionType" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [69672 69700]))                                          
+                                        :type "bool")
+                                        (reparse-symbol namespacesubparts) [69642 69863])
+                                    ("IsDIDWriteOperationSupported" function
+                                       (:parent "DMConfig"
+                                        :arguments 
+                                          ( ("DataId" variable (:type ("std::uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [69940 69961]))                                          
+                                        :type "bool")
+                                        (reparse-symbol namespacesubparts) [69896 70202])
+                                    ("IsRIDOperationSupported" function
+                                       (:parent "DMConfig"
+                                        :arguments 
+                                          ( ("RoutineId" variable (:type ("std::uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [70279 70303])
+                                            ("SubFunctionId" variable (:type ("std::uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [70304 70331]))                                          
+                                        :type "bool")
+                                        (reparse-symbol namespacesubparts) [70240 70605])
+                                    ("IsRIDExists" function
+                                       (:parent "DMConfig"
+                                        :arguments 
+                                          ( ("rid" variable (:type ("std::uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [70663 70681]))                                          
+                                        :type "bool")
+                                        (reparse-symbol namespacesubparts) [70636 70794])
+                                    ("IsReadDTCSubfunctionSupported" function
+                                       (:parent "DMConfig"
+                                        :arguments 
+                                          ( ("subfunctionId" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [70877 70899]))                                          
+                                        :type "bool")
+                                        (reparse-symbol namespacesubparts) [70832 71187])
+                                    ("IsControlDTCSubfunctionSupported" function
+                                       (:parent "DMConfig"
+                                        :arguments 
+                                          ( ("subfunctionId" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [71237 71259]))                                          
+                                        :type "bool")
+                                        (reparse-symbol namespacesubparts) [71189 71545])
+                                    ("IsCommCtrlSubfunctionSupported" function
+                                       (:parent "DMConfig"
+                                        :arguments 
+                                          ( ("subfunctionId" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [71651 71673]))                                          
+                                        :type "bool")
+                                        (reparse-symbol namespacesubparts) [71605 71979])
+                                    ("IsEcuResetSubfunctionSupported" function
+                                       (:parent "DMConfig"
+                                        :arguments 
+                                          ( ("subfunctionId" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [72073 72095]))                                          
+                                        :type "bool")
+                                        (reparse-symbol namespacesubparts) [72027 72391])
+                                    ("IsSecurityAccessLevelExists" function
+                                       (:parent "DMConfig"
+                                        :arguments 
+                                          ( ("subFunctionId" variable (:type ("std::uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [72472 72499]))                                          
+                                        :type "bool")
+                                        (reparse-symbol namespacesubparts) [72429 72791])
+                                    ("GetListOfServiceProcessor" function
+                                       (:parent "DMConfig"
+                                        :arguments 
+                                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [72911 72916]))                                          
+                                        :type ("std::vector" type
+                                             (:template-specifier 
+                                                ( ("std::uint8_t" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol namespacesubparts) [72849 73377])
+                                    ("GetListOfRequestSeeds" function
+                                       (:parent "DMConfig"
+                                        :arguments 
+                                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [73499 73504]))                                          
+                                        :type ("std::vector" type
+                                             (:template-specifier 
+                                                ( ("std::uint8_t" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol namespacesubparts) [73441 73992])
+                                    ("GetAccPermSessionMask" function
+                                       (:parent "DMConfig"
+                                        :arguments 
+                                          ( ("accessPermissionId" variable (:type ("std::uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [74129 74162]))                                          
+                                        :type ("std::uint32_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [74083 74241])
+                                    ("GetSecurityAccessMapping" function
+                                       (:parent "DMConfig"
+                                        :arguments 
+                                          ( ("accessPermissionId" variable (:type ("std::uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [74388 74421]))                                          
+                                        :type ("std::uint32_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [74339 74507])
+                                    ("GetSecurityAccessDataRecordSize" function
+                                       (:parent "DMConfig"
+                                        :arguments 
+                                          ( ("securityAccessLevel" variable (:type ("std::uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [74658 74692]))                                          
+                                        :type ("std::uint32_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [74602 74775])
+                                    ("GetSecurityAccessLevelSeedSize" function
+                                       (:parent "DMConfig"
+                                        :arguments 
+                                          ( ("securityAccessLevel" variable (:type ("std::uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [74913 74947]))                                          
+                                        :type ("std::uint32_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [74858 75018])
+                                    ("GetSecurityLevelInstanceID" function
+                                       (:parent "DMConfig"
+                                        :arguments 
+                                          ( ("securityAccessLevel" variable (:type ("std::uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [75167 75201]))                                          
+                                        :type ("std::uint32_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [75116 75287])
+                                    ("GetNumberOfFailedSecurityAccess" function
+                                       (:parent "DMConfig"
+                                        :arguments 
+                                          ( ("securityAccessLevel" variable (:type ("std::uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [75443 75477]))                                          
+                                        :type ("std::uint32_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [75387 75565])
+                                    ("GetKeySize" function
+                                       (:parent "DMConfig"
+                                        :arguments 
+                                          ( ("securityAccessLevel" variable (:type ("std::uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [75682 75716]))                                          
+                                        :type ("std::uint32_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [75647 75786])
+                                    ("GetSecurityMaskedId" function
+                                       (:parent "DMConfig"
+                                        :arguments 
+                                          ( ("securityAccessLevel" variable (:type ("std::uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [75919 75953]))                                          
+                                        :type ("std::uint32_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [75875 76030])
+                                    ("GetDiagConvSessionMask" function
+                                       (:parent "DMConfig"
+                                        :arguments 
+                                          ( ("sessionId" variable (:type ("std::uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [76150 76174]))                                          
+                                        :type ("std::uint32_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [76103 76235])
+                                    ("GetDiagConvP2Time" function
+                                       (:parent "DMConfig"
+                                        :arguments 
+                                          ( ("sessionId" variable (:type ("std::uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [76345 76369]))                                          
+                                        :type ("std::uint32_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [76303 76425])
+                                    ("GetDiagConvP2StarTime" function
+                                       (:parent "DMConfig"
+                                        :arguments 
+                                          ( ("sessionId" variable (:type ("std::uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [76543 76567]))                                          
+                                        :type ("std::uint32_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [76497 76627])
+                                    ("GetEventDtcInfoTableId" function
+                                       (:parent "DMConfig"
+                                        :arguments 
+                                          ( ("eventMemoryInfoTableId" variable (:type ("std::uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [76813 76850])
+                                            ("eventId" variable (:type ("std::uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [76851 76872]))                                          
+                                        :type ("std::uint32_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [76766 76977])
+                                    ("GetEnableConditionGroupId" function
+                                       (:parent "DMConfig"
+                                        :arguments 
+                                          ( ("eventMemoryInfoTableId" variable (:type ("std::uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [77174 77211])
+                                            ("eventId" variable (:type ("std::uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [77212 77233]))                                          
+                                        :type ("std::uint32_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [77124 77346])
+                                    ("GetTimeBasedEventDebounceInfoTableId" function
+                                       (:parent "DMConfig"
+                                        :arguments 
+                                          ( ("eventMemoryInfoTableId" variable (:type ("std::uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [77570 77607])
+                                            ("eventId" variable (:type ("std::uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [77608 77629]))                                          
+                                        :type ("std::uint32_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [77504 77783])
+                                    ("GetCounterBasedEventDebounceInfoTableId" function
+                                       (:parent "DMConfig"
+                                        :arguments 
+                                          ( ("eventMemoryInfoTableId" variable (:type ("std::uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [78013 78050])
+                                            ("eventId" variable (:type ("std::uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [78051 78072]))                                          
+                                        :type ("std::uint32_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [77944 78229])
+                                    ("GetOperationCycleMask" function
+                                       (:parent "DMConfig"
+                                        :arguments 
+                                          ( ("eventMemoryInfoTableId" variable (:type ("std::uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [78422 78459])
+                                            ("eventId" variable (:type ("std::uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [78460 78481]))                                          
+                                        :type ("std::uint32_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [78376 78594])
+                                    ("GetFailureCycleCounterThreshold" function
+                                       (:parent "DMConfig"
+                                        :arguments 
+                                          ( ("EventMemoryInfoTableId" variable (:type ("std::uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [78700 78737])
+                                            ("EventId" variable (:type ("std::uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [78738 78759]))                                          
+                                        :type ("std::uint8_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [78640 78884])
+                                    ("IsEventRecoverableInSameOperationCycle" function
+                                       (:parent "DMConfig"
+                                        :arguments 
+                                          ( ("eventMemoryInfoTableId" variable (:type ("std::uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [79106 79143])
+                                            ("eventId" variable (:type ("std::uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [79144 79165]))                                          
+                                        :type "bool")
+                                        (reparse-symbol namespacesubparts) [79047 79323])
+                                    ("GetAraComDiagEventServiceInstanceId" function
+                                       (:parent "DMConfig"
+                                        :arguments 
+                                          ( ("eventMemoryInfoTableId" variable (:type ("std::uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [79536 79573])
+                                            ("eventId" variable (:type ("std::uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [79574 79595]))                                          
+                                        :type ("std::uint32_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [79471 79747])
+                                    ("GetAraComDiagMonitorEventServiceInstanceId" function
+                                       (:parent "DMConfig"
+                                        :arguments 
+                                          ( ("eventMemoryInfoTableId" variable (:type ("std::uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [79974 80011])
+                                            ("eventId" variable (:type ("std::uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [80012 80033]))                                          
+                                        :type ("std::uint32_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [79902 80192])
+                                    ("GetEventMemoryKind" function
+                                       (:parent "DMConfig"
+                                        :arguments 
+                                          ( ("eventMemoryInfoTableId" variable (:type ("std::uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [80323 80360]))                                          
+                                        :type ("ara::core::String" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [80276 80432])
+                                    ("GetSnapShotRecordType" function
+                                       (:parent "DMConfig"
+                                        :arguments 
+                                          ( ("eventMemoryInfoTableId" variable (:type ("std::uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [80570 80607]))                                          
+                                        :type ("std::uint32_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [80524 80687])
+                                    ("GetDtcStatusAvailabilityMask" function
+                                       (:parent "DMConfig"
+                                        :arguments 
+                                          ( ("eventMemoryInfoTableId" variable (:type ("std::uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [80839 80876]))                                          
+                                        :type ("std::uint32_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [80786 80963])
+                                    ("GetAgingRequiresTestedCycles" function
+                                       (:parent "DMConfig"
+                                        :arguments 
+                                          ( ("eventMemoryInfoTableId" variable (:type ("std::uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [81063 81100]))                                          
+                                        :type "bool")
+                                        (reparse-symbol namespacesubparts) [81019 81188])
+                                    ("GetHandlingTestFailedSinceLastClear" function
+                                       (:parent "DMConfig"
+                                        :arguments 
+                                          ( ("eventMemoryInfoTableId" variable (:type ("std::uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [81310 81347]))                                          
+                                        :type ("std::uint8_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [81251 81441])
+                                    ("GetAraComEventMemoryServiceInstanceId" function
+                                       (:parent "DMConfig"
+                                        :arguments 
+                                          ( ("eventMemoryInfoTableId" variable (:type ("std::uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [81607 81644]))                                          
+                                        :type ("std::uint32_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [81545 81740])
+                                    ("GetNumberofEvents" function
+                                       (:parent "DMConfig"
+                                        :arguments 
+                                          ( ("eventMemoryInfoTableId" variable (:type ("std::uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [81870 81907]))                                          
+                                        :type ("std::uint32_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [81828 81983])
+                                    ("GetNumberofEventMemoryInfoTables" function
+                                       (:parent "DMConfig"
+                                        :type ("std::uint32_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [82031 82136])
+                                    ("GetCounterDecrementStepSize" function
+                                       (:parent "DMConfig"
+                                        :arguments 
+                                          ( ("counterBasedEventDebounceInfoTableId" variable (:type ("std::uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [82317 82368]))                                          
+                                        :type ("std::uint32_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [82265 82482])
+                                    ("GetCounterFailedThreshold" function
+                                       (:parent "DMConfig"
+                                        :arguments 
+                                          ( ("counterBasedEventDebounceInfoTableId" variable (:type ("std::uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [82659 82710]))                                          
+                                        :type ("std::uint32_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [82609 82822])
+                                    ("GetCounterPassedThreshold" function
+                                       (:parent "DMConfig"
+                                        :arguments 
+                                          ( ("counterBasedEventDebounceInfoTableId" variable (:type ("std::uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [82999 83050]))                                          
+                                        :type ("std::uint32_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [82949 83162])
+                                    ("GetCounterIncrementStepSize" function
+                                       (:parent "DMConfig"
+                                        :arguments 
+                                          ( ("counterBasedEventDebounceInfoTableId" variable (:type ("std::uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [83343 83394]))                                          
+                                        :type ("std::uint32_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [83291 83508])
+                                    ("GetCounterJumpDownValue" function
+                                       (:parent "DMConfig"
+                                        :arguments 
+                                          ( ("counterBasedEventDebounceInfoTableId" variable (:type ("std::uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [83681 83732]))                                          
+                                        :type ("std::uint32_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [83633 83842])
+                                    ("GetCounterJumpUpValue" function
+                                       (:parent "DMConfig"
+                                        :arguments 
+                                          ( ("counterBasedEventDebounceInfoTableId" variable (:type ("std::uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [84011 84062]))                                          
+                                        :type ("std::uint32_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [83965 84170])
+                                    ("GetCounterDebounceBehavior" function
+                                       (:parent "DMConfig"
+                                        :arguments 
+                                          ( ("counterBasedEventDebounceInfoTableId" variable (:type ("std::uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [84342 84393]))                                          
+                                        :type ("std::uint32_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [84291 84499])
+                                    ("GetDebounceCounterStorage" function
+                                       (:parent "DMConfig"
+                                        :arguments 
+                                          ( ("counterBasedEventDebounceInfoTableId" variable (:type ("std::uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [84668 84719]))                                          
+                                        :type "bool")
+                                        (reparse-symbol namespacesubparts) [84627 84833])
+                                    ("GetCounterJumpDown" function
+                                       (:parent "DMConfig"
+                                        :arguments 
+                                          ( ("counterBasedEventDebounceInfoTableId" variable (:type ("std::uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [84990 85041]))                                          
+                                        :type "bool")
+                                        (reparse-symbol namespacesubparts) [84956 85148])
+                                    ("GetCounterJumpUp" function
+                                       (:parent "DMConfig"
+                                        :arguments 
+                                          ( ("counterBasedEventDebounceInfoTableId" variable (:type ("std::uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [85301 85352]))                                          
+                                        :type "bool")
+                                        (reparse-symbol namespacesubparts) [85269 85457])
+                                    ("GetNumberofOperationCycles" function
+                                       (:parent "DMConfig"
+                                        :type ("std::uint32_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [85499 85592])
+                                    ("GetAraComOperationcycleSvcInstanceId" function
+                                       (:parent "DMConfig"
+                                        :arguments 
+                                          ( ("operationCycleId" variable (:type ("std::uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [85760 85791]))                                          
+                                        :type ("std::uint32_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [85699 85891])
+                                    ("GetOperationcycleType" function
+                                       (:parent "DMConfig"
+                                        :arguments 
+                                          ( ("operationCycleId" variable (:type ("std::uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [86020 86051]))                                          
+                                        :type ("ara::core::String" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [85970 86118])
+                                    ("GetOperationcycleAutostart" function
+                                       (:parent "DMConfig"
+                                        :arguments 
+                                          ( ("operationCycleId" variable (:type ("std::uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [86252 86283]))                                          
+                                        :type "bool")
+                                        (reparse-symbol namespacesubparts) [86210 86362])
+                                    ("GetOperationcycleEnd" function
+                                       (:parent "DMConfig"
+                                        :arguments 
+                                          ( ("operationCycleId" variable (:type ("std::uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [86488 86519]))                                          
+                                        :type "bool")
+                                        (reparse-symbol namespacesubparts) [86452 86596])
+                                    ("GetNumberOfDtcInfoTables" function
+                                       (:parent "DMConfig"
+                                        :arguments 
+                                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [86685 86690]))                                          
+                                        :type ("std::uint32_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [86636 86727])
+                                    ("GetDtcGroups" function
+                                       (:parent "DMConfig"
+                                        :type ("std::shared_ptr" type
+                                             (:template-specifier 
+                                                ( ("ara::diag::cfg::DtcGroupInfoTable" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol namespacesubparts) [86788 86890])
+                                    ("GetAraComDtcInfoSvcInstanceId" function
+                                       (:parent "DMConfig"
+                                        :arguments 
+                                          ( ("DtcId" variable (:type ("std::uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [87015 87035]))                                          
+                                        :type ("std::uint32_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [86961 87102])
+                                    ("GetDtcDataFilePath" function
+                                       (:parent "DMConfig"
+                                        :arguments 
+                                          ( ("DtcId" variable (:type ("std::uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [87220 87240]))                                          
+                                        :type ("ara::core::String" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [87173 87288])
+                                    ("GetDtcValue" function
+                                       (:parent "DMConfig"
+                                        :arguments 
+                                          ( ("DtcId" variable (:type ("std::uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [87381 87401]))                                          
+                                        :type ("std::uint32_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [87345 87446])
+                                    ("GetDtcPropsInfoTableId" function
+                                       (:parent "DMConfig"
+                                        :arguments 
+                                          ( ("DtcId" variable (:type ("std::uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [87561 87581]))                                          
+                                        :type ("std::uint32_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [87514 87637])
+                                    ("GetDtcGroupId" function
+                                       (:parent "DMConfig"
+                                        :arguments 
+                                          ( ("DtcId" variable (:type ("std::uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [87734 87754]))                                          
+                                        :type ("std::uint32_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [87696 87801])
+                                    ("GetMaxNumberOfFreezeFrames" function
+                                       (:parent "DMConfig"
+                                        :arguments 
+                                          ( ("dtcPropsInfoTableId" variable (:type ("std::uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [87942 87976]))                                          
+                                        :type ("std::uint8_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [87892 88055])
+                                    ("GetDIDSetRef" function
+                                       (:parent "DMConfig"
+                                        :arguments 
+                                          ( ("dtcPropsInfoTableId" variable (:type ("std::uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [88168 88202]))                                          
+                                        :type ("std::uint8_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [88132 88267])
+                                    ("GetPriority" function
+                                       (:parent "DMConfig"
+                                        :arguments 
+                                          ( ("dtcPropsInfoTableId" variable (:type ("std::uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [88379 88413]))                                          
+                                        :type ("std::uint32_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [88343 88477])
+                                    ("GetFreezeFrameInfoTableRef" function
+                                       (:parent "DMConfig"
+                                        :arguments 
+                                          ( ("dtcPropsInfoTableId" variable (:type ("std::uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [88638 88672]))                                          
+                                        :type ("ara::core::Vector" type
+                                             (:template-specifier 
+                                                ( ("std::uint32_t" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol namespacesubparts) [88568 88751])
+                                    ("GetAgingAllowed" function
+                                       (:parent "DMConfig"
+                                        :arguments 
+                                          ( ("dtcPropsInfoTableId" variable (:type ("std::uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [88822 88856]))                                          
+                                        :type "bool")
+                                        (reparse-symbol namespacesubparts) [88791 88926])
+                                    ("GetAgingThreshold" function
+                                       (:parent "DMConfig"
+                                        :arguments 
+                                          ( ("dtcPropsInfoTableId" variable (:type ("std::uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [89019 89053]))                                          
+                                        :type ("std::uint32_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [88977 89123])
+                                    ("GetFreezeFrameRef" function
+                                       (:parent "DMConfig"
+                                        :arguments 
+                                          ( ("dtcPropsInfoTableId" variable (:type ("std::uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [89257 89291]))                                          
+                                        :type ("ara::core::Vector" type
+                                             (:template-specifier 
+                                                ( ("std::uint32_t" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol namespacesubparts) [89196 89352])
+                                    ("GetExtendedDataRecordsRef" function
+                                       (:parent "DMConfig"
+                                        :arguments 
+                                          ( ("dtcPropsInfoTableId" variable (:type ("std::uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [89514 89548]))                                          
+                                        :type ("ara::core::Vector" type
+                                             (:template-specifier 
+                                                ( ("std::uint32_t" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol namespacesubparts) [89445 89618])
+                                    ("GetIsSharedTimer" function
+                                       (:parent "DMConfig"
+                                        :arguments 
+                                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [89681 89686]))                                          
+                                        :type "bool")
+                                        (reparse-symbol namespacesubparts) [89649 89716])
+                                    ("GetECUResetDataPath" function
+                                       (:parent "DMConfig"
+                                        :arguments 
+                                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [89760 89765]))                                          
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [89718 89799])
+                                    ("GetRepresentVinDid" function
+                                       (:parent "DMConfig"
+                                        :arguments 
+                                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [89875 89880]))                                          
+                                        :type ("std::uint16_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [89832 89913])
+                                    ("GetSecurityDelayTime" function
+                                       (:parent "DMConfig"
+                                        :arguments 
+                                          ( ("securityLevel" variable (:type ("std::uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [90044 90072]))                                          
+                                        :type ("std::uint32_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [89999 90146])
+                                    ("GetSupportedSubFuncAccPermissionGroupId" function
+                                       (:parent "DMConfig"
+                                        :arguments 
+                                          ( ("serviceId" variable (:type ("std::uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [90367 90391])
+                                            ("subFunction" variable (:type ("std::uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [90392 90418]))                                          
+                                        :type ("std::uint32_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [90298 90543])
+                                    ("GetTimeBasedFailedThreshold" function
+                                       (:parent "DMConfig"
+                                        :arguments 
+                                          ( ("timeBasedEventDebounceInfoTableId" variable (:type ("std::uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [90713 90761]))                                          
+                                        :type ("std::uint32_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [90661 90864])
+                                    ("GetTimeBasedPassedThreshold" function
+                                       (:parent "DMConfig"
+                                        :arguments 
+                                          ( ("timeBasedEventDebounceInfoTableId" variable (:type ("std::uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [91034 91082]))                                          
+                                        :type ("std::uint32_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [90982 91185])
+                                    ("GetTimeBasedFdcThresholdValue" function
+                                       (:parent "DMConfig"
+                                        :arguments 
+                                          ( ("timeBasedEventDebounceInfoTableId" variable (:type ("std::uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [91364 91412]))                                          
+                                        :type ("std::uint32_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [91310 91522])
+                                    ("GetTimeBasedDebounceBehavior" function
+                                       (:parent "DMConfig"
+                                        :arguments 
+                                          ( ("timeBasedEventDebounceInfoTableId" variable (:type ("std::uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [91704 91752]))                                          
+                                        :type ("std::uint32_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [91651 91852])
+                                    ("GetDataElementMinLength" function
+                                       (:parent "DMConfig"
+                                        :arguments 
+                                          ( ("id" variable (:type ("std::uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [92011 92028]))                                          
+                                        :type ("std::uint32_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [91963 92079])
+                                    ("GetDataElementMaxLength" function
+                                       (:parent "DMConfig"
+                                        :arguments 
+                                          ( ("id" variable (:type ("std::uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [92238 92255]))                                          
+                                        :type ("std::uint32_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [92190 92306])
+                                    ("GetDataElementInstanceId" function
+                                       (:parent "DMConfig"
+                                        :arguments 
+                                          ( ("id" variable (:type ("std::uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [92467 92484]))                                          
+                                        :type ("std::uint32_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [92418 92536])
+                                    ("IsDataElementValid" function
+                                       (:parent "DMConfig"
+                                        :arguments 
+                                          ( ("id" variable (:type ("std::uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [92626 92643]))                                          
+                                        :type "bool")
+                                        (reparse-symbol namespacesubparts) [92592 92816])
+                                    ("GetDataElementDataType" function
+                                       (:parent "DMConfig"
+                                        :arguments 
+                                          ( ("id" variable (:type ("std::uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [92982 92999]))                                          
+                                        :type ("ara::diag::dcm::DataElementDataType" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [92913 93099])
+                                    ("GetDataElementCategory" function
+                                       (:parent "DMConfig"
+                                        :arguments 
+                                          ( ("id" variable (:type ("std::uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [93247 93264]))                                          
+                                        :type ("ServiceInterfaceType" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [93193 93349])
+                                    ("GetDataElementEndianness" function
+                                       (:parent "DMConfig"
+                                        :arguments 
+                                          ( ("id" variable (:type ("std::uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [93493 93510]))                                          
+                                        :type ("std::uint8_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [93445 93562])
+                                    ("IsDataElementInternal" function
+                                       (:parent "DMConfig"
+                                        :arguments 
+                                          ( ("id" variable (:type ("std::uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [93694 93711]))                                          
+                                        :type "bool")
+                                        (reparse-symbol namespacesubparts) [93657 93849])
+                                    ("GetDataElementRefDataIdentifier" function
+                                       (:parent "DMConfig"
+                                        :arguments 
+                                          ( ("dataElementId" variable (:type ("std::uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [93962 93990]))                                          
+                                        :type ("std::uint32_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [93906 94275])
+                                    ("GetExtendedDataElementsRef" function
+                                       (:parent "DMConfig"
+                                        :arguments 
+                                          ( ("id" variable (:type ("std::uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [94382 94399]))                                          
+                                        :type ("ara::core::Vector" type
+                                             (:template-specifier 
+                                                ( ("std::uint32_t" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol namespacesubparts) [94312 94459])
+                                    ("GetNumberOfExtendedDataRecords" function
+                                       (:parent "DMConfig"
+                                        :type ("std::uint32_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [94461 94562])
+                                    ("GetExtendedDataRecordNumber" function
+                                       (:parent "DMConfig"
+                                        :arguments 
+                                          ( ("id" variable (:type ("std::uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [94616 94633]))                                          
+                                        :type ("std::uint32_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [94564 94687])
+                                    ("GetExtendedDataTrigger" function
+                                       (:parent "DMConfig"
+                                        :arguments 
+                                          ( ("id" variable (:type ("std::uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [94736 94753]))                                          
+                                        :type ("std::uint32_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [94689 94806])
+                                    ("GetExtendedDataUpdate" function
+                                       (:parent "DMConfig"
+                                        :arguments 
+                                          ( ("id" variable (:type ("std::uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [94845 94862]))                                          
+                                        :type "bool")
+                                        (reparse-symbol namespacesubparts) [94808 94916])
+                                    ("GetSizeOfExtendedData" function
+                                       (:parent "DMConfig"
+                                        :type ("std::uint32_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [94976 95496])
+                                    ("GetFreezeFrameSize" function
+                                       (:parent "DMConfig"
+                                        :arguments 
+                                          ( ("dtcId" variable (:type ("std::uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [95592 95612]))                                          
+                                        :type ("std::uint32_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [95549 96104])
+                                    ("GetMaxFreezeFrameSize" function
+                                       (:parent "DMConfig"
+                                        :arguments 
+                                          ( ("dtcId" variable (:type ("std::uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [96152 96172]))                                          
+                                        :type ("std::uint32_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [96106 96447])
+                                    ("LoadEnvironmentConditionInfoTable" function
+                                       (:parent "DMConfig"
+                                        :arguments 
+                                          ( ("configData" variable
+                                               (:reference 1
+                                                :type ("rapidjson::Document" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [96553 96585]))                                          
+                                        :type "void")
+                                        (reparse-symbol namespacesubparts) [96504 98163])
+                                    ("LoadEnvironmentConditionExpressionsInfo" function
+                                       (:parent "DMConfig"
+                                        :arguments 
+                                          ( ("configData" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("rapidjson::Value" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [98281 98316])
+                                            ("envConditionInfo" variable (:type ("std::shared_ptr" type
+                                                 (:template-specifier 
+                                                    ( ("ara::diag::cfg::EnvironmentConditionInfoTable" type nil nil nil))                                                    
+                                                  :type "class")
+                                                  nil nil)) (reparse-symbol arg-sub-list) [98321 98401]))                                          
+                                        :type "void")
+                                        (reparse-symbol namespacesubparts) [98226 99843])
+                                    ("GetEnvironmentConditionReference" function
+                                       (:parent "DMConfig"
+                                        :arguments 
+                                          ( ("accessPermissionId" variable (:type ("std::uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [99979 100012]))                                          
+                                        :type ("std::uint16_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [99922 100188])
+                                    ("GetEnvironmentConditionLogicalOperator" function
+                                       (:parent "DMConfig"
+                                        :arguments 
+                                          ( ("envCondInfoId" variable (:type ("std::uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [100374 100402]))                                          
+                                        :type ("EnvironmentConditionOperatorType" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [100292 100525])
+                                    ("GetEnvironmentConditionExpressionCount" function
+                                       (:parent "DMConfig"
+                                        :arguments 
+                                          ( ("envCondInfoId" variable (:type ("std::uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [100668 100696]))                                          
+                                        :type ("std::uint32_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [100605 100771])
+                                    ("GetEnvironmentConditionNrc" function
+                                       (:parent "DMConfig"
+                                        :arguments 
+                                          ( ("envCondInfoId" variable (:type ("std::uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [100952 100980]))                                          
+                                        :type ("ara::diag::uds::UdsNegativeResponseCode" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [100875 101089])
+                                    ("GetEnvironmentConditionRefDataIdentifier" function
+                                       (:parent "DMConfig"
+                                        :arguments 
+                                          ( ("envCondInfoId" variable (:type ("std::uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [101226 101254])
+                                            ("expressionId" variable (:type ("std::uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [101255 101282]))                                          
+                                        :type ("std::uint32_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [101156 101405])
+                                    ("GetEnvironmentConditionExpressionCompareValue" function
+                                       (:parent "DMConfig"
+                                        :arguments 
+                                          ( ("envCondInfoId" variable (:type ("std::uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [101559 101587])
+                                            ("expressionId" variable (:type ("std::uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [101588 101615]))                                          
+                                        :type ("std::uint32_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [101484 101711])
+                                    ("GetEnvironmentConditionExpressionCompareType" function
+                                       (:parent "DMConfig"
+                                        :arguments 
+                                          ( ("envCondInfoId" variable (:type ("std::uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [101878 101906])
+                                            ("expressionId" variable (:type ("std::uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [101907 101934]))                                          
+                                        :type ("EnvCondExpressionCompareType" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [101789 102077]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [885 102080]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [868 102102]))                  
+                :type "namespace")
+                nil [852 102122]))          
+      :file "dm_config.cpp"
+      :pointmax 102140
+      :fsize 102139
+      :lastmodtime '(24420 22489 996058 778000)
+      :unmatched-syntax nil))
+  :file "!home!hyuk.myeong!work!LARA!avin!avin-ap!dm!source!src!diagnostic-manager!config!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

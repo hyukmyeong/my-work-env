@@ -1,0 +1,403 @@
+;; Object semanticdb-project-database-file-2758888
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-2758888"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-27588a4"
+      :major-mode c++-mode
+      :tags 
+        '( ("SOURCE_DEM_DEM_RUNTIME_CONTEXT_H_" variable (:constant-flag t) nil [792 825])
+            ("iostream" include (:system-flag t) nil [827 846])
+            ("fstream" include (:system-flag t) nil [847 865])
+            ("memory" include (:system-flag t) nil [866 883])
+            ("ara/log/logging.h" include nil nil [885 913])
+            ("ara/core/map.h" include nil nil [914 939])
+            ("ara/core/vector.h" include nil nil [940 968])
+            ("ara/per/shared_handle.h" include nil nil [969 1003])
+            ("ara/per/key_value_storage.h" include nil nil [1004 1042])
+            ("ara/core/result.h" include nil nil [1043 1071])
+            ("dem/events/dem_dtc_fwd.h" include nil nil [1072 1107])
+            ("dem/events/dem_event_fwd.h" include nil nil [1108 1145])
+            ("dem/config/did_configuration.h" include nil nil [1146 1187])
+            ("dem/events/dem_dtc_group_fwd.h" include nil nil [1188 1229])
+            ("dem/opcycle/operation_cycle_fwd.h" include nil nil [1230 1274])
+            ("dem/events/diagnostic_monitor_proxy.h" include nil nil [1275 1323])
+            ("dem/events/diagnostic_monitor_manager.h" include nil nil [1324 1374])
+            ("dem/condition/enable_condition_group_fwd.h" include nil nil [1375 1428])
+            ("dem/condition/enable_condition.h" include nil nil [1429 1472])
+            ("dem/events/dem_diagnostic_common_props.h" include nil nil [1473 1524])
+            ("dem/service/service_skeleton/clear_dtc_impl_fwd.h" include nil nil [1525 1585])
+            ("dem/events/event_related_data/diagnostic_freeze_frame_fwd.h" include nil nil [1586 1656])
+            ("dem/events/event_related_data/diagnostic_extended_data_fwd.h" include nil nil [1657 1728])
+            ("ara::core::Result" using (:type ("ara::core::Result" type
+                 (:prototype t
+                  :type "class")
+                  nil nil)) nil [1729 1753])
+            ("ara::per::KeyValueStorage" using (:type ("ara::per::KeyValueStorage" type
+                 (:prototype t
+                  :type "class")
+                  nil nil)) nil [1754 1786])
+            ("ara::per::SharedHandle" using (:type ("ara::per::SharedHandle" type
+                 (:prototype t
+                  :type "class")
+                  nil nil)) nil [1787 1816])
+            ("ara" type
+               (:members 
+                  ( ("diag" type
+                       (:members 
+                          ( ("dem" type
+                               (:members 
+                                  ( ("runtime" type
+                                       (:members 
+                                          ( ("ara::core::Result" using (:type ("ara::core::Result" type
+                                                 (:prototype t
+                                                  :type "class")
+                                                  nil nil)) (reparse-symbol namespacesubparts) [1886 1910])
+                                            ("ara::per::KeyValueStorage" using (:type ("ara::per::KeyValueStorage" type
+                                                 (:prototype t
+                                                  :type "class")
+                                                  nil nil)) (reparse-symbol namespacesubparts) [1911 1943])
+                                            ("ara::per::SharedHandle" using (:type ("ara::per::SharedHandle" type
+                                                 (:prototype t
+                                                  :type "class")
+                                                  nil nil)) (reparse-symbol namespacesubparts) [1944 1973])
+                                            ("event::DiagnosticMonitorManager" using (:type ("event::DiagnosticMonitorManager" type
+                                                 (:prototype t
+                                                  :type "class")
+                                                  nil nil)) (reparse-symbol namespacesubparts) [1974 2012])
+                                            ("kGroupOfAllDTCs" variable
+                                               (:typemodifiers ("static")
+                                                :constant-flag t
+                                                :default-value "0xFFFFFF"
+                                                :type ("std::uint32_t" type (:type "class") nil nil))
+                                                (reparse-symbol namespacesubparts) [2087 2141])
+                                            ("maximumNumberOfFF" variable
+                                               (:default-value "255U"
+                                                :type ("uint8_t" type (:type "class") nil nil))
+                                                (reparse-symbol namespacesubparts) [2214 2247])
+                                            ("reportDTCFaultDetectionCounter" variable
+                                               (:default-value "0x14"
+                                                :type ("uint8_t" type (:type "class") nil nil))
+                                                (reparse-symbol namespacesubparts) [2259 2305])
+                                            ("maxFaultDetectionCounter" variable
+                                               (:default-value "127U"
+                                                :type ("uint8_t" type (:type "class") nil nil))
+                                                (reparse-symbol namespacesubparts) [2317 2357])
+                                            ("kInvalidInstanceId" variable
+                                               (:default-value "65535U"
+                                                :type ("uint32_t" type (:type "class") nil nil))
+                                                (reparse-symbol namespacesubparts) [2369 2406])
+                                            ("DemRuntimeContext" type
+                                               (:members 
+                                                  ( ("public" label nil (reparse-symbol classsubparts) [2515 2522])
+                                                    ("DemRuntimeContext" function
+                                                       (:prototype-flag t
+                                                        :constructor-flag t
+                                                        :type ("DemRuntimeContext" type (:type "class") nil nil))
+                                                        (reparse-symbol classsubparts) [2678 2698])
+                                                    ("GetOperationCycle" function
+                                                       (:prototype-flag t
+                                                        :methodconst-flag t
+                                                        :arguments 
+                                                          ( ("id" variable (:type ("std::uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3205 3222]))                                                          
+                                                        :type ("std::shared_ptr" type
+                                                             (:template-specifier 
+                                                                ( ("opcycle::OperationCycle" type nil nil nil))                                                                
+                                                              :type "class")
+                                                              nil nil))
+                                                        (reparse-symbol classsubparts) [3146 3229])
+                                                    ("GetEnableCondition" function
+                                                       (:prototype-flag t
+                                                        :methodconst-flag t
+                                                        :arguments 
+                                                          ( ("id" variable (:type ("std::uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3498 3514]))                                                          
+                                                        :type ("std::shared_ptr" type
+                                                             (:template-specifier 
+                                                                ( ("condition::EnableCondition" type nil nil nil))                                                                
+                                                              :type "class")
+                                                              nil nil))
+                                                        (reparse-symbol classsubparts) [3435 3521])
+                                                    ("GetDtc" function
+                                                       (:prototype-flag t
+                                                        :methodconst-flag t
+                                                        :typemodifiers ("virtual")
+                                                        :arguments 
+                                                          ( ("id" variable (:type ("std::uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3966 3983]))                                                          
+                                                        :type ("std::shared_ptr" type
+                                                             (:template-specifier 
+                                                                ( ("event::DemDtc" type nil nil nil))                                                                
+                                                              :type "class")
+                                                              nil nil))
+                                                        (reparse-symbol classsubparts) [3920 3990])
+                                                    ("GetDtcs" function
+                                                       (:prototype-flag t
+                                                        :methodconst-flag t
+                                                        :typemodifiers ("virtual")
+                                                        :type ("ara::core::Vector" type
+                                                             (:template-specifier 
+                                                                ( ("std::shared_ptr" type (:template-specifier 
+                                                                    ( ("event::DemDtc" type nil nil nil))                                                                    ) nil nil))                                                                
+                                                              :type "class")
+                                                              nil nil))
+                                                        (reparse-symbol classsubparts) [4114 4188])
+                                                    ("GetEvents" function
+                                                       (:prototype-flag t
+                                                        :arguments 
+                                                          ( ("subfunction" variable
+                                                               (:constant-flag t
+                                                                :type ("std::uint8_t" type (:type "class") nil nil))
+                                                                (reparse-symbol arg-sub-list) [4538 4569]))                                                          
+                                                        :type ("ara::core::Vector" type
+                                                             (:template-specifier 
+                                                                ( ("std::pair" type (:template-specifier 
+                                                                    ( ("std::uint32_t" type nil nil nil)
+                                                                      ("std::uint8_t" type nil nil nil))                                                                    ) nil nil))                                                                
+                                                              :type "class")
+                                                              nil nil))
+                                                        (reparse-symbol classsubparts) [4470 4570])
+                                                    ("GetDidById" function
+                                                       (:prototype-flag t
+                                                        :typemodifiers ("virtual")
+                                                        :arguments 
+                                                          ( ("didId" variable (:type ("std::uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4960 4980]))                                                          
+                                                        :type ("eventdata::DidConfiguration::Ptr" type (:type "class") nil nil))
+                                                        (reparse-symbol classsubparts) [4908 4981])
+                                                    ("GetEvent" function
+                                                       (:prototype-flag t
+                                                        :methodconst-flag t
+                                                        :typemodifiers ("virtual")
+                                                        :arguments 
+                                                          ( ("id" variable (:type ("std::uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5128 5145]))                                                          
+                                                        :type ("std::shared_ptr" type
+                                                             (:template-specifier 
+                                                                ( ("event::DemEvent" type nil nil nil))                                                                
+                                                              :type "class")
+                                                              nil nil))
+                                                        (reparse-symbol classsubparts) [5078 5152])
+                                                    ("GetDtcForUdsId" function
+                                                       (:prototype-flag t
+                                                        :methodconst-flag t
+                                                        :typemodifiers ("virtual")
+                                                        :arguments 
+                                                          ( ("udsDtcValue" variable (:type ("std::uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5604 5630]))                                                          
+                                                        :type ("std::shared_ptr" type
+                                                             (:template-specifier 
+                                                                ( ("event::DemDtc" type nil nil nil))                                                                
+                                                              :type "class")
+                                                              nil nil))
+                                                        (reparse-symbol classsubparts) [5550 5637])
+                                                    ("GetDtcGroup" function
+                                                       (:prototype-flag t
+                                                        :methodconst-flag t
+                                                        :typemodifiers ("virtual")
+                                                        :arguments 
+                                                          ( ("groupNumber" variable (:type ("std::uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6108 6134]))                                                          
+                                                        :type ("std::shared_ptr" type
+                                                             (:template-specifier 
+                                                                ( ("event::DemDtcGroup" type nil nil nil))                                                                
+                                                              :type "class")
+                                                              nil nil))
+                                                        (reparse-symbol classsubparts) [6052 6141])
+                                                    ("GetCommonProps" function
+                                                       (:prototype-flag t
+                                                        :methodconst-flag t
+                                                        :typemodifiers ("virtual")
+                                                        :type ("event::DemDiagnosticCommonProps::Ptr" type (:type "class") nil nil))
+                                                        (reparse-symbol classsubparts) [6350 6418])
+                                                    ("InitProxies" function
+                                                       (:prototype-flag t
+                                                        :type "void")
+                                                        (reparse-symbol classsubparts) [6488 6507])
+                                                    ("OfferServices" function
+                                                       (:prototype-flag t
+                                                        :type "void")
+                                                        (reparse-symbol classsubparts) [6598 6619])
+                                                    ("StopOfferServices" function
+                                                       (:prototype-flag t
+                                                        :type "void")
+                                                        (reparse-symbol classsubparts) [6710 6735])
+                                                    ("StopFindService" function
+                                                       (:prototype-flag t
+                                                        :type "void")
+                                                        (reparse-symbol classsubparts) [6739 6762])
+                                                    ("GetClearDtcInterface" function
+                                                       (:prototype-flag t
+                                                        :type ("service::ClearDtcImpl" type (:type "class") nil nil))
+                                                        (reparse-symbol classsubparts) [6794 6840])
+                                                    ("CreateAndStoreDTCDataToFile" function
+                                                       (:prototype-flag t
+                                                        :type "void")
+                                                        (reparse-symbol classsubparts) [6972 7007])
+                                                    ("UpdateConfiguration" function
+                                                       (:prototype-flag t
+                                                        :type "void")
+                                                        (reparse-symbol classsubparts) [7192 7219])
+                                                    ("CheckEventForEnableDTCSetting" function
+                                                       (:prototype-flag t
+                                                        :type "void")
+                                                        (reparse-symbol classsubparts) [7261 7298])
+                                                    ("CheckEventForDisableDTCSetting" function
+                                                       (:prototype-flag t
+                                                        :type "void")
+                                                        (reparse-symbol classsubparts) [7341 7379])
+                                                    ("protected" label nil (reparse-symbol classsubparts) [7382 7392])
+                                                    ("events_" variable (:type ("ara::core::Map" type
+                                                         (:template-specifier 
+                                                            ( ("std::uint32_t" type nil nil nil)
+                                                              ("std::shared_ptr" type (:template-specifier 
+                                                                ( ("event::DemEvent" type nil nil nil))                                                                ) nil nil))                                                            
+                                                          :type "class")
+                                                          nil nil)) (reparse-symbol classsubparts) [7451 7523])
+                                                    ("operationCycles_" variable (:type ("ara::core::Map" type
+                                                         (:template-specifier 
+                                                            ( ("std::uint32_t" type nil nil nil)
+                                                              ("std::shared_ptr" type (:template-specifier 
+                                                                ( ("opcycle::OperationCycle" type nil nil nil))                                                                ) nil nil))                                                            
+                                                          :type "class")
+                                                          nil nil)) (reparse-symbol classsubparts) [7595 7684])
+                                                    ("dtcs_" variable (:type ("ara::core::Map" type
+                                                         (:template-specifier 
+                                                            ( ("std::int32_t" type nil nil nil)
+                                                              ("std::shared_ptr" type (:template-specifier 
+                                                                ( ("event::DemDtc" type nil nil nil))                                                                ) nil nil))                                                            
+                                                          :type "class")
+                                                          nil nil)) (reparse-symbol classsubparts) [7787 7854])
+                                                    ("dtcGroups_" variable (:type ("ara::core::Map" type
+                                                         (:template-specifier 
+                                                            ( ("std::int32_t" type nil nil nil)
+                                                              ("std::shared_ptr" type (:template-specifier 
+                                                                ( ("event::DemDtcGroup" type nil nil nil))                                                                ) nil nil))                                                            
+                                                          :type "class")
+                                                          nil nil)) (reparse-symbol classsubparts) [7978 8055])
+                                                    ("extendedData_" variable (:type ("ara::core::Map" type
+                                                         (:template-specifier 
+                                                            ( ("std::uint32_t" type nil nil nil)
+                                                              ("std::shared_ptr" type (:template-specifier 
+                                                                ( ("dem::eventdata::DiagnosticExtendedData" type nil nil nil))                                                                ) nil nil))                                                            
+                                                          :type "class")
+                                                          nil nil)) (reparse-symbol classsubparts) [8124 8225])
+                                                    ("commonProps_" variable (:type ("event::DemDiagnosticCommonProps::Ptr" type (:type "class") nil nil)) (reparse-symbol classsubparts) [8308 8358])
+                                                    ("dtcIdMapping_" variable (:type ("ara::core::Map" type
+                                                         (:template-specifier 
+                                                            ( ("std::int32_t" type nil nil nil)
+                                                              ("std::int32_t" type nil nil nil))                                                            
+                                                          :type "class")
+                                                          nil nil)) (reparse-symbol classsubparts) [8504 8561])
+                                                    ("dtcIdtoValueMap_" variable (:type ("ara::core::Map" type
+                                                         (:template-specifier 
+                                                            ( ("std::int32_t" type nil nil nil)
+                                                              ("std::int32_t" type nil nil nil))                                                            
+                                                          :type "class")
+                                                          nil nil)) (reparse-symbol classsubparts) [8565 8625])
+                                                    ("dids_" variable (:type ("ara::core::Map" type
+                                                         (:template-specifier 
+                                                            ( ("std::uint32_t" type nil nil nil)
+                                                              ("dem::eventdata::DidConfiguration::Ptr" type nil nil nil))                                                            
+                                                          :type "class")
+                                                          nil nil)) (reparse-symbol classsubparts) [8668 8743])
+                                                    ("ffMap_" variable (:type ("ara::core::Map" type
+                                                         (:template-specifier 
+                                                            ( ("std::uint32_t" type nil nil nil)
+                                                              ("std::shared_ptr" type (:template-specifier 
+                                                                ( ("dem::eventdata::DiagnosticFreezeFrame" type nil nil nil))                                                                ) nil nil))                                                            
+                                                          :type "class")
+                                                          nil nil)) (reparse-symbol classsubparts) [8801 8894])
+                                                    ("ffMapCnt_" variable (:type ("ara::core::Map" type
+                                                         (:template-specifier 
+                                                            ( ("std::uint32_t" type nil nil nil)
+                                                              ("std::uint8_t" type nil nil nil))                                                            
+                                                          :type "class")
+                                                          nil nil)) (reparse-symbol classsubparts) [8951 9005])
+                                                    ("enableConditionGroups_" variable (:type ("ara::core::Map" type
+                                                         (:template-specifier 
+                                                            ( ("std::uint8_t" type nil nil nil)
+                                                              ("std::shared_ptr" type (:template-specifier 
+                                                                ( ("condition::EnableConditionGroup" type nil nil nil))                                                                ) nil nil))                                                            
+                                                          :type "class")
+                                                          nil nil)) (reparse-symbol classsubparts) [9090 9192])
+                                                    ("enableConditions_" variable (:type ("ara::core::Map" type
+                                                         (:template-specifier 
+                                                            ( ("std::uint8_t" type nil nil nil)
+                                                              ("std::shared_ptr" type (:template-specifier 
+                                                                ( ("condition::EnableCondition" type nil nil nil))                                                                ) nil nil))                                                            
+                                                          :type "class")
+                                                          nil nil)) (reparse-symbol classsubparts) [9266 9358])
+                                                    ("monitorManager_" variable (:type ("event::DiagnosticMonitorManager" type
+                                                         (:template-specifier 
+                                                            ( ("event::DiagnosticMonitorProxy" type nil nil nil))                                                            
+                                                          :type "class")
+                                                          nil nil)) (reparse-symbol classsubparts) [9431 9510])
+                                                    ("clearDtc_" variable (:type ("std::shared_ptr" type
+                                                         (:template-specifier 
+                                                            ( ("service::ClearDtcImpl" type nil nil nil))                                                            
+                                                          :type "class")
+                                                          nil nil)) (reparse-symbol classsubparts) [9543 9592])
+                                                    ("ReadDTCProperties" function
+                                                       (:prototype-flag t
+                                                        :type "void")
+                                                        (reparse-symbol classsubparts) [9704 9729])
+                                                    ("CreateConfiguredDids" function
+                                                       (:prototype-flag t
+                                                        :type "void")
+                                                        (reparse-symbol classsubparts) [9828 9856])
+                                                    ("CreateExtendedDataRecords" function
+                                                       (:prototype-flag t
+                                                        :type "void")
+                                                        (reparse-symbol classsubparts) [9954 9987])
+                                                    ("MapDIDsToFFs" function
+                                                       (:prototype-flag t
+                                                        :type "void")
+                                                        (reparse-symbol classsubparts) [10043 10063])
+                                                    ("MapDIDsToFFsCal" function
+                                                       (:prototype-flag t
+                                                        :type "void")
+                                                        (reparse-symbol classsubparts) [10131 10154])
+                                                    ("CreateDTCGroups" function
+                                                       (:prototype-flag t
+                                                        :type "void")
+                                                        (reparse-symbol classsubparts) [10262 10285])
+                                                    ("CreateInitialDTCFiles" function
+                                                       (:prototype-flag t
+                                                        :type "void")
+                                                        (reparse-symbol classsubparts) [10508 10537])
+                                                    ("DefineDefaultGroups" function
+                                                       (:prototype-flag t
+                                                        :type "void")
+                                                        (reparse-symbol classsubparts) [10709 10736])
+                                                    ("CreateEnableConditionGroups" function
+                                                       (:prototype-flag t
+                                                        :type "void")
+                                                        (reparse-symbol classsubparts) [10850 10885])
+                                                    ("CreateOperationCycles" function
+                                                       (:prototype-flag t
+                                                        :type "void")
+                                                        (reparse-symbol classsubparts) [10993 11022])
+                                                    ("CreateAndMapEvents" function
+                                                       (:prototype-flag t
+                                                        :type "void")
+                                                        (reparse-symbol classsubparts) [11286 11312])
+                                                    ("private" label nil (reparse-symbol classsubparts) [11315 11323])
+                                                    ("aralog_" variable (:type ("ara::log::Logger" type (:type "class") nil nil)) (reparse-symbol classsubparts) [11326 11352])
+                                                    ("dtcStatusFile_" variable (:type ("std::fstream" type (:type "class") nil nil)) (reparse-symbol classsubparts) [11356 11384]))                                                  
+                                                :type "class")
+                                                (reparse-symbol namespacesubparts) [2488 11387]))                                          
+                                        :type "namespace")
+                                        (reparse-symbol namespacesubparts) [1866 11390]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [1850 11413]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [1833 11432]))                  
+                :type "namespace")
+                nil [1817 11452]))          
+      :file "dem_runtime_context.h"
+      :pointmax 11515
+      :fsize 11780
+      :lastmodtime '(24310 62486 530801 187000)
+      :unmatched-syntax '((punctuation 2739 . 2740) (DEFAULT 2732 . 2739) (punctuation 2730 . 2731) (semantic-list 2727 . 2729) (symbol 2710 . 2727) (punctuation 2709 . 2710) (VIRTUAL 2701 . 2708) (EXPLICIT 2669 . 2677) (symbol 2359 . 2368) (symbol 2307 . 2316) (symbol 2249 . 2258) (symbol 2204 . 2213) (punctuation 2739 . 2740) (DEFAULT 2732 . 2739) (punctuation 2730 . 2731) (semantic-list 2727 . 2729) (symbol 2710 . 2727) (punctuation 2709 . 2710) (VIRTUAL 2701 . 2708) (EXPLICIT 2669 . 2677) (symbol 2359 . 2368) (symbol 2307 . 2316) (symbol 2249 . 2258) (symbol 2204 . 2213) (punctuation 2739 . 2740) (DEFAULT 2732 . 2739) (punctuation 2730 . 2731) (semantic-list 2727 . 2729) (symbol 2710 . 2727) (punctuation 2709 . 2710) (VIRTUAL 2701 . 2708) (EXPLICIT 2669 . 2677) (symbol 2359 . 2368) (symbol 2307 . 2316) (symbol 2249 . 2258) (symbol 2204 . 2213))
+      :lexical-table 
+        '(("SOURCE_DEM_DEM_RUNTIME_CONTEXT_H_")
+          )
+))
+  :file "!home!hyuk.myeong!work!G550_x86!CPU!QNX!Apps!source!autosar!avin!avin-ap!dm!source!inc!private!dem!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

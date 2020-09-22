@@ -1,0 +1,51 @@
+;; Object semanticdb-project-database-file-19e2120
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-19e2120"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-199d134"
+      :major-mode c++-mode
+      :tags 
+        '( ("AMSR_VAG_APP_DSA_VSOMEIP_ARA_DIAG_SERVICE_INTERFACES_GENERIC_UDS_SERVICE_SERVICE_DESC_GENERICUDSSERVICE_CPP_" variable (:constant-flag t) nil [1147 1255])
+            ("service_desc_genericudsservice.h" include nil nil [1257 1300])
+            ("ara" type
+               (:members 
+                  ( ("diag" type
+                       (:members 
+                          ( ("service_interfaces" type
+                               (:members 
+                                  ( ("generic_uds_service" type
+                                       (:members 
+                                          ( ("genericudsservice_binding" type
+                                               (:members 
+                                                  ( ("vsomeip" type
+                                                       (:members 
+                                                          ( ("descriptors" type (:type "namespace") (reparse-symbol namespacesubparts) [1456 1483]))                                                          
+                                                        :type "namespace")
+                                                        (reparse-symbol namespacesubparts) [1436 1510]))                                                  
+                                                :type "namespace")
+                                                (reparse-symbol namespacesubparts) [1398 1533]))                                          
+                                        :type "namespace")
+                                        (reparse-symbol namespacesubparts) [1366 1574]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [1335 1609]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [1318 1643]))                  
+                :type "namespace")
+                nil [1302 1663]))          
+      :file "service_desc_genericudsservice.cpp"
+      :pointmax 1803
+      :fsize 1850
+      :lastmodtime '(24359 48962 180672 400000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("AMSR_VAG_APP_DSA_VSOMEIP_ARA_DIAG_SERVICE_INTERFACES_GENERIC_UDS_SERVICE_SERVICE_DESC_GENERICUDSSERVICE_CPP_")
+          )
+)
+    (semanticdb-table "semanticdb-table-4609c8"
+      :file "service_desc_genericudsservice.h"
+      :fsize 2666
+      :lastmodtime '(24359 48962 180672 400000)))
+  :file "!home!hyuk.myeong!work!LARA!Apps!source!model!avin-gen!amsr_vag_app_dsa!vsomeip!ara!diag!service_interfaces!generic_uds_service!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

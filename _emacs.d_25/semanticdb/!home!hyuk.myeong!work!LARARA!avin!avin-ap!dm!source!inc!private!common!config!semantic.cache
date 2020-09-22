@@ -1,0 +1,41 @@
+;; Object semanticdb-project-database-file-3d30164
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-3d30164"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-1f43554"
+      :major-mode c++-mode
+      :tags 
+        '( ("ARA_DIAG_CFG_DOIP_CHANNEL_H_" variable (:constant-flag t) nil [767 795])
+            ("string" include (:system-flag t) nil [797 814])
+            ("ara/core/string.h" include nil nil [815 843])
+            ("ara" type
+               (:members 
+                  ( ("diag" type
+                       (:members 
+                          ( ("cfg" type
+                               (:members 
+                                  ( ("DoIpChannel" type
+                                       (:members 
+                                          ( ("ipType" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1064 1083])
+                                            ("ipAddress" variable (:type ("ara::core::String" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1155 1185]))                                          
+                                        :type "struct")
+                                        (reparse-symbol namespacesubparts) [972 1188]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [878 1191]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [861 1210]))                  
+                :type "namespace")
+                nil [845 1230]))          
+      :file "doip_channel.h"
+      :pointmax 1286
+      :fsize 1320
+      :lastmodtime '(24419 4974 997208 652000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("ARA_DIAG_CFG_DOIP_CHANNEL_H_")
+          )
+))
+  :file "!home!hyuk.myeong!work!LARARA!avin!avin-ap!dm!source!inc!private!common!config!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

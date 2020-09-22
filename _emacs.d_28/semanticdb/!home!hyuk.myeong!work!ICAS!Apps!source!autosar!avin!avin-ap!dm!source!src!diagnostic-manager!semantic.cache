@@ -1,0 +1,241 @@
+;; Object semanticdb-project-database-file-1445fa4
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-1445fa4"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-1445f44"
+      :major-mode c++-mode
+      :tags 
+        '( ("iostream" include (:system-flag t) nil [838 857])
+            ("ara/log/logging.h" include nil nil [859 887])
+            ("runtime_dm.h" include nil nil [888 911])
+            ("ara::log" using (:type ("ara::log" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [913 938])
+            ("main" function (:type "int") nil [1084 1660]))          
+      :file "main.cpp"
+      :pointmax 1661
+      :fsize 1700
+      :lastmodtime '(24254 11456 217924 300000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1445f64"
+      :major-mode c++-mode
+      :tags 
+        '( ("csignal" include (:system-flag t) nil [733 751])
+            ("common/config/dm_config.h" include nil nil [753 789])
+            ("common/config/do_ip_config.h" include nil nil [790 829])
+            ("ara/com/internal/vsomeip/vsomeip_connection.h" include nil nil [830 886])
+            ("common/exception/errno_exception.h" include nil nil [887 932])
+            ("dcm/diagnostic_communication_manager.h" include nil nil [933 982])
+            ("dem/diagnostic_event_manager.h" include nil nil [983 1024])
+            ("dem/service/service_skeleton/clear_dtc_impl.h" include nil nil [1025 1081])
+            ("dem/service/service_skeleton/diagnostic_event_impl.h" include nil nil [1082 1145])
+            ("runtime_dm.h" include nil nil [1146 1169])
+            ("ara::diag::dcm::DCM" using (:type ("ara::diag::dcm::DCM" type
+                 (:prototype t
+                  :type "class")
+                  nil nil)) nil [1171 1197])
+            ("ara::diag::dem::DEM" using (:type ("ara::diag::dem::DEM" type
+                 (:prototype t
+                  :type "class")
+                  nil nil)) nil [1198 1224])
+            ("ara::diag::exception::ErrnoException" using (:type ("ara::diag::exception::ErrnoException" type
+                 (:prototype t
+                  :type "class")
+                  nil nil)) nil [1225 1268])
+            ("ara::diag::config" using (:type ("ara::diag::config" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [1269 1303])
+            ("ara" type
+               (:members 
+                  ( ("diag" type
+                       (:members 
+                          ( ("kDemThreadCount" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "1"
+                                :type ("uint8_t" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [1447 1488])
+                            ("kDcmThreadCount" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "1"
+                                :type ("uint8_t" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [1537 1578])
+                            ("ara::diag::config::DMConfig::dmconfiginstance_" variable (:type ("std::shared_ptr" type
+                                 (:template-specifier 
+                                    ( ("ara::diag::config::DMConfig" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol namespacesubparts) [1617 1709])
+                            ("RuntimeDM" function
+                               (:constructor-flag t
+                                :parent "RuntimeDM"
+                                :type ("RuntimeDM" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [1711 1799])
+                            ("MakeInstance" function
+                               (:parent "RuntimeDM"
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [1801 2411])
+                            ("GetInstance" function
+                               (:parent "RuntimeDM"
+                                :type ("RuntimeDM" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [2413 2572])
+                            ("Initialize" function
+                               (:parent "RuntimeDM"
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [2574 2934])
+                            ("Run" function
+                               (:parent "RuntimeDM"
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [2936 3485])
+                            ("Shutdown" function
+                               (:parent "RuntimeDM"
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [3487 3684]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [1383 3687]))                  
+                :type "namespace")
+                nil [1367 3707]))          
+      :file "runtime_dm.cpp"
+      :pointmax 3725
+      :fsize 3849
+      :lastmodtime '(24254 8526 934495 879000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1445f84"
+      :major-mode c++-mode
+      :tags 
+        '( ("vsomeip_service_mapping_diagnostic_manager_cc" variable (:constant-flag t) nil [818 863])
+            ("ara/com/internal/vsomeip/vsomeip_service_mapping.h" include nil nil [865 926])
+            ("ara/com/internal/vsomeip/vsomeip_service_mapping_impl.h" include nil nil [927 993])
+            ("ara" type
+               (:members 
+                  ( ("com" type
+                       (:members 
+                          ( ("internal" type
+                               (:members 
+                                  ( ("vsomeip" type
+                                       (:members 
+                                          ( ("runtime" type
+                                               (:members 
+                                                  ( ("DemVSomeIPServiceMapping" type
+                                                       (:superclasses 
+                                                          ( ("VSomeIPServiceMapping" type
+                                                               (:protection "public"
+                                                                :type "class")
+                                                                nil nil))                                                          
+                                                        :members 
+                                                          ( ("public" label nil (reparse-symbol classsubparts) [1153 1160])
+                                                            ("GetMappingForServiceId" function
+                                                               (:prototype-flag t
+                                                                :pointer 1
+                                                                :typemodifiers ("static")
+                                                                :constant-flag t
+                                                                :arguments 
+                                                                  ( ("service_id" variable (:type ("ServiceId" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1208 1229]))                                                                  
+                                                                :type ("Mapping" type (:type "class") nil nil))
+                                                                (reparse-symbol classsubparts) [1163 1230])
+                                                            ("GetMappingForVSomeIPServiceId" function
+                                                               (:prototype-flag t
+                                                                :typemodifiers ("static")
+                                                                :arguments 
+                                                                  ( ("service_id" variable (:type ("vsomeip::service_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1285 1315]))                                                                  
+                                                                :type ("MultiMapping" type (:type "class") nil nil))
+                                                                (reparse-symbol classsubparts) [1233 1316]))                                                          
+                                                        :type "class")
+                                                        (reparse-symbol namespacesubparts) [1088 1319])
+                                                    ("DcmServiceInterfaceVSomeIPServiceMapping" type
+                                                       (:superclasses 
+                                                          ( ("VSomeIPServiceMapping" type
+                                                               (:protection "public"
+                                                                :type "class")
+                                                                nil nil))                                                          
+                                                        :members 
+                                                          ( ("public" label nil (reparse-symbol classsubparts) [1402 1409])
+                                                            ("GetMappingForServiceId" function
+                                                               (:prototype-flag t
+                                                                :pointer 1
+                                                                :typemodifiers ("static")
+                                                                :constant-flag t
+                                                                :arguments 
+                                                                  ( ("service_id" variable (:type ("ServiceId" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1457 1478]))                                                                  
+                                                                :type ("Mapping" type (:type "class") nil nil))
+                                                                (reparse-symbol classsubparts) [1412 1479])
+                                                            ("GetMappingForVSomeIPServiceId" function
+                                                               (:prototype-flag t
+                                                                :typemodifiers ("static")
+                                                                :arguments 
+                                                                  ( ("service_id" variable (:type ("vsomeip::service_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1534 1564]))                                                                  
+                                                                :type ("MultiMapping" type (:type "class") nil nil))
+                                                                (reparse-symbol classsubparts) [1482 1565]))                                                          
+                                                        :type "class")
+                                                        (reparse-symbol namespacesubparts) [1321 1568])
+                                                    ("DiagnosticCoversationVSomeIPServiceMapping" type
+                                                       (:superclasses 
+                                                          ( ("VSomeIPServiceMapping" type
+                                                               (:protection "public"
+                                                                :type "class")
+                                                                nil nil))                                                          
+                                                        :members 
+                                                          ( ("public" label nil (reparse-symbol classsubparts) [1653 1660])
+                                                            ("GetMappingForServiceId" function
+                                                               (:prototype-flag t
+                                                                :pointer 1
+                                                                :typemodifiers ("static")
+                                                                :constant-flag t
+                                                                :arguments 
+                                                                  ( ("service_id" variable (:type ("ServiceId" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1708 1729]))                                                                  
+                                                                :type ("Mapping" type (:type "class") nil nil))
+                                                                (reparse-symbol classsubparts) [1663 1730])
+                                                            ("GetMappingForVSomeIPServiceId" function
+                                                               (:prototype-flag t
+                                                                :typemodifiers ("static")
+                                                                :arguments 
+                                                                  ( ("service_id" variable (:type ("vsomeip::service_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1785 1815]))                                                                  
+                                                                :type ("MultiMapping" type (:type "class") nil nil))
+                                                                (reparse-symbol classsubparts) [1733 1816]))                                                          
+                                                        :type "class")
+                                                        (reparse-symbol namespacesubparts) [1570 1819])
+                                                    ("GetMappingForServiceId" function
+                                                       (:pointer 1
+                                                        :parent "VSomeIPServiceMapping"
+                                                        :constant-flag t
+                                                        :arguments 
+                                                          ( ("service_id" variable (:type ("ServiceId" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1992 2013]))                                                          
+                                                        :type ("VSomeIPServiceMapping::Mapping" type (:type "class") nil nil))
+                                                        (reparse-symbol namespacesubparts) [1908 2414])
+                                                    ("GetMappingForVSomeIPServiceId" function
+                                                       (:parent "VSomeIPServiceMapping"
+                                                        :arguments 
+                                                          ( ("service_id" variable (:type ("vsomeip::service_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2512 2542]))                                                          
+                                                        :type ("VSomeIPServiceMapping::MultiMapping" type (:type "class") nil nil))
+                                                        (reparse-symbol namespacesubparts) [2416 3076]))                                                  
+                                                :type "namespace")
+                                                (reparse-symbol namespacesubparts) [1068 3079]))                                          
+                                        :type "namespace")
+                                        (reparse-symbol namespacesubparts) [1048 3102]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [1027 3125]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [1011 3149]))                  
+                :type "namespace")
+                nil [995 3168])
+            ("VSomeIPServiceMapping" variable (:constant-flag t) nil [3644 3665])
+            ("vsomeip_service_mapping-serviceinterface.cpp" include nil nil [3707 3762])
+            ("VSomeIPServiceMapping" variable (:constant-flag t) nil [3801 3822])
+            ("vsomeip_service_mapping-DemSwComponent.cpp" include nil nil [3848 3901])
+            ("VSomeIPServiceMapping" variable (:constant-flag t) nil [3940 3961])
+            ("vsomeip_service_mapping-diagnostic-conversation.cpp" include nil nil [4005 4067]))          
+      :file "vsomeip_service_mapping_diagnostic_manager.cpp"
+      :pointmax 4154
+      :fsize 4266
+      :lastmodtime '(24254 8526 934495 879000)
+      :unmatched-syntax '((punctuation 2511 . 2512) (punctuation 2510 . 2511) (punctuation 1784 . 1785) (punctuation 1783 . 1784) (punctuation 1533 . 1534) (punctuation 1532 . 1533) (punctuation 1284 . 1285) (punctuation 1283 . 1284))
+      :lexical-table 
+        '(("vsomeip_service_mapping_diagnostic_manager_cc")
+          )
+))
+  :file "!home!hyuk.myeong!work!ICAS!Apps!source!autosar!avin!avin-ap!dm!source!src!diagnostic-manager!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

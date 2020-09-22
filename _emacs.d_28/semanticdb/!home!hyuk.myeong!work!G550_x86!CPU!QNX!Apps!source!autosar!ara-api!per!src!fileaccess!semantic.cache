@@ -1,0 +1,245 @@
+;; Object semanticdb-project-database-file-255f0bc
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-255f0bc"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-255f0c8"
+      :major-mode c++-mode
+      :tags 
+        '( ("fileaccess/file_storage_impl.h" include nil nil [295 336])
+            ("numeric" include (:system-flag t) nil [338 356])
+            ("boost/system/error_code.hpp" include (:system-flag t) nil [357 395])
+            ("boost/filesystem.hpp" include (:system-flag t) nil [396 427])
+            ("ara/core/map.h" include (:system-flag t) nil [428 453])
+            ("ara/core/vector.h" include (:system-flag t) nil [454 482])
+            ("apd/crc/buffer.h" include (:system-flag t) nil [483 510])
+            ("apd/crc/crc.h" include (:system-flag t) nil [511 535])
+            ("ara/log/shared/static_buffer.h" include (:system-flag t) nil [536 577])
+            ("ara/per/manifestaccess/manifest_helper.h" include nil nil [579 630])
+            ("utility/logging.h" include nil nil [632 660])
+            ("utility/smartptr.h" include nil nil [661 690])
+            ("utility/filesystem.h" include nil nil [691 722])
+            ("fileaccess/checksum_calculator.h" include nil nil [723 766])
+            ("fileaccess/file_lock.h" include nil nil [767 800])
+            ("fileaccess/read_accessor_impl.h" include nil nil [801 843])
+            ("fileaccess/read_write_accessor_impl.h" include nil nil [844 892])
+            ("fileaccess/encrypted_read_accessor_impl.h" include nil nil [893 945])
+            ("fileaccess/encrypted_read_write_accessor_impl.h" include nil nil [946 1004])
+            ("fileaccess/file_storage_redundancy.h" include nil nil [1005 1052])
+            ("boost::system::error_code" using (:type ("boost::system::error_code" type
+                 (:prototype t
+                  :type "class")
+                  nil nil)) nil [1054 1086])
+            ("ara::core::Result" using (:type ("ara::core::Result" type
+                 (:prototype t
+                  :type "class")
+                  nil nil)) nil [1087 1111])
+            ("ara::core::String" using (:type ("ara::core::String" type
+                 (:prototype t
+                  :type "class")
+                  nil nil)) nil [1112 1136])
+            ("ara::core::StringView" using (:type ("ara::core::StringView" type
+                 (:prototype t
+                  :type "class")
+                  nil nil)) nil [1137 1165])
+            ("ara::core::Vector" using (:type ("ara::core::Vector" type
+                 (:prototype t
+                  :type "class")
+                  nil nil)) nil [1166 1190])
+            ("ara::per::ManifestHelper" using (:type ("ara::per::ManifestHelper" type
+                 (:prototype t
+                  :type "class")
+                  nil nil)) nil [1191 1222])
+            ("ara::per::smartptr::make_unique" using (:type ("ara::per::smartptr::make_unique" type
+                 (:prototype t
+                  :type "class")
+                  nil nil)) nil [1223 1261])
+            ("ara::per::utility::logger" using (:type ("ara::per::utility::logger" type
+                 (:prototype t
+                  :type "class")
+                  nil nil)) nil [1262 1294])
+            ("fs" type
+               (:kind alias
+                :members 
+                  ( ("boost::filesystem" type (:type "namespace") nil nil))                  
+                :type "namespace")
+                nil [1296 1329])
+            ("ara" type
+               (:members 
+                  ( ("per" type
+                       (:members 
+                          ( ("FileStorageImpl::sFactoriesRegistry" variable (:type ("utility::SharedObjectsRegistry" type
+                                 (:template-specifier 
+                                    ( ("FileStorageImpl" type nil nil nil)
+                                      ("FileStorage" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol namespacesubparts) [1364 1461])
+                            ("FileStorageImpl" function
+                               (:destructor-flag t
+                                :parent "FileStorageImpl"
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [1618 1713])
+                            ("Initialize" function
+                               (:parent "FileStorageImpl"
+                                :arguments 
+                                  ( ("key" variable (:type ("ara::core::StringView" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2657 2683]))                                  
+                                :type ("ara::core::Result" type
+                                     (:template-specifier 
+                                        ( ("void" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol namespacesubparts) [2605 4813])
+                            ("Recover" function
+                               (:parent "FileStorageImpl"
+                                :arguments 
+                                  ( ("key" variable (:type ("ara::core::StringView" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4864 4890]))                                  
+                                :type ("ara::core::Result" type
+                                     (:template-specifier 
+                                        ( ("void" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol namespacesubparts) [4815 6626])
+                            ("Reset" function
+                               (:parent "FileStorageImpl"
+                                :arguments 
+                                  ( ("key" variable (:type ("ara::core::StringView" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6675 6701]))                                  
+                                :type ("ara::core::Result" type
+                                     (:template-specifier 
+                                        ( ("void" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol namespacesubparts) [6628 7368])
+                            ("ScanDirectory" function
+                               (:parent "FileStorageImpl"
+                                :arguments 
+                                  ( ("folder" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("ara::core::String" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [8501 8533])
+                                    ("fullPath" variable (:type "bool") (reparse-symbol arg-sub-list) [8535 8549])
+                                    ("paths" variable
+                                       (:reference 1
+                                        :type ("ara::core::Vector" type
+                                             (:template-specifier 
+                                                ( ("ara::core::String" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [8558 8602])
+                                    ("names" variable
+                                       (:reference 1
+                                        :type ("std::set" type
+                                             (:template-specifier 
+                                                ( ("ara::core::String" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [8603 8638]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [8456 9418])
+                            ("UpdateRedundancyData" function
+                               (:parent "FileStorageImpl"
+                                :arguments 
+                                  ( ("filename" variable (:type ("ara::core::StringView" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [31631 31662]))                                  
+                                :type ("ara::core::Result" type
+                                     (:template-specifier 
+                                        ( ("void" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol namespacesubparts) [31569 35440])
+                            ("IsFileExists" function
+                               (:parent "FileStorageImpl"
+                                :arguments 
+                                  ( ("path" variable (:type ("ara::core::StringView" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [35477 35504]))                                  
+                                :type "bool")
+                                (reparse-symbol namespacesubparts) [35442 35645])
+                            ("RemoveFiles" function
+                               (:parent "FileStorageImpl"
+                                :arguments 
+                                  ( ("folder" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("ara::core::String" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [35697 35729])
+                                    ("dests" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("ara::core::Vector" type
+                                             (:template-specifier 
+                                                ( ("ara::core::String" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [35730 35780]))                                  
+                                :type ("std::size_t" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [35647 36213]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [1347 38585]))                  
+                :type "namespace")
+                nil [1331 38605]))          
+      :file "file_storage_impl.cpp"
+      :pointmax 38624
+      :fsize 38623
+      :lastmodtime '(24310 62485 483203 886000)
+      :unmatched-syntax '((semantic-list 36790 . 38581) (symbol 36781 . 36789) (semantic-list 36754 . 36780) (symbol 36729 . 36754) (punctuation 36727 . 36728) (symbol 36719 . 36727) (punctuation 36718 . 36719) (symbol 36712 . 36718) (punctuation 36711 . 36712) (punctuation 36710 . 36711) (symbol 36706 . 36710) (punctuation 36705 . 36706) (punctuation 36704 . 36705) (symbol 36701 . 36704) (semantic-list 36630 . 36699) (symbol 36621 . 36629) (semantic-list 36594 . 36620) (symbol 36581 . 36594) (punctuation 36579 . 36580) (VOID 36575 . 36579) (punctuation 36574 . 36575) (symbol 36568 . 36574) (punctuation 36567 . 36568) (punctuation 36566 . 36567) (symbol 36562 . 36566) (punctuation 36561 . 36562) (punctuation 36560 . 36561) (symbol 36557 . 36560) (semantic-list 36484 . 36555) (symbol 36475 . 36483) (semantic-list 36448 . 36474) (symbol 36433 . 36448) (punctuation 36431 . 36432) (VOID 36427 . 36431) (punctuation 36426 . 36427) (symbol 36420 . 36426) (punctuation 36419 . 36420) (punctuation 36418 . 36419) (symbol 36414 . 36418) (punctuation 36413 . 36414) (punctuation 36412 . 36413) (symbol 36409 . 36412) (semantic-list 36340 . 36407) (symbol 36331 . 36339) (semantic-list 36304 . 36330) (symbol 36289 . 36304) (punctuation 36287 . 36288) (punctuation 36286 . 36287) (symbol 36275 . 36286) (punctuation 36274 . 36275) (symbol 36262 . 36274) (punctuation 36261 . 36262) (symbol 36255 . 36261) (punctuation 36254 . 36255) (punctuation 36253 . 36254) (symbol 36249 . 36253) (punctuation 36248 . 36249) (punctuation 36247 . 36248) (symbol 36244 . 36247) (semantic-list 27140 . 31567) (symbol 27131 . 27139) (semantic-list 27051 . 27130) (symbol 27032 . 27051) (punctuation 27031 . 27032) (punctuation 27030 . 27031) (symbol 27015 . 27030) (punctuation 27013 . 27014) (VOID 27009 . 27013) (punctuation 27008 . 27009) (symbol 27002 . 27008) (punctuation 27001 . 27002) (punctuation 27000 . 27001) (symbol 26996 . 27000) (punctuation 26995 . 26996) (punctuation 26994 . 26995) (symbol 26991 . 26994) (semantic-list 25106 . 26989) (symbol 25097 . 25105) (semantic-list 25017 . 25096) (symbol 25000 . 25017) (punctuation 24999 . 25000) (punctuation 24998 . 24999) (symbol 24983 . 24998) (punctuation 24981 . 24982) (punctuation 24980 . 24981) (symbol 24963 . 24980) (punctuation 24962 . 24963) (symbol 24950 . 24962) (punctuation 24949 . 24950) (symbol 24943 . 24949) (punctuation 24942 . 24943) (punctuation 24941 . 24942) (symbol 24937 . 24941) (punctuation 24936 . 24937) (punctuation 24935 . 24936) (symbol 24932 . 24935) (semantic-list 23048 . 24930) (symbol 23039 . 23047) (semantic-list 22959 . 23038) (symbol 22943 . 22959) (punctuation 22942 . 22943) (punctuation 22941 . 22942) (symbol 22926 . 22941) (punctuation 22924 . 22925) (punctuation 22923 . 22924) (symbol 22911 . 22923) (punctuation 22910 . 22911) (symbol 22898 . 22910) (punctuation 22897 . 22898) (symbol 22891 . 22897) (punctuation 22890 . 22891) (punctuation 22889 . 22890) (symbol 22885 . 22889) (punctuation 22884 . 22885) (punctuation 22883 . 22884) (symbol 22880 . 22883) (semantic-list 20022 . 22878) (symbol 20013 . 20021) (semantic-list 19933 . 20012) (symbol 19916 . 19933) (punctuation 19915 . 19916) (punctuation 19914 . 19915) (symbol 19899 . 19914) (punctuation 19897 . 19898) (punctuation 19896 . 19897) (symbol 19879 . 19896) (punctuation 19878 . 19879) (symbol 19866 . 19878) (punctuation 19865 . 19866) (symbol 19859 . 19865) (punctuation 19858 . 19859) (punctuation 19857 . 19858) (symbol 19853 . 19857) (punctuation 19852 . 19853) (punctuation 19851 . 19852) (symbol 19848 . 19851) (semantic-list 18833 . 19846) (symbol 18824 . 18832) (semantic-list 18788 . 18823) (symbol 18764 . 18788) (punctuation 18763 . 18764) (punctuation 18762 . 18763) (symbol 18747 . 18762) (punctuation 18745 . 18746) (symbol 18737 . 18745) (punctuation 18736 . 18737) (symbol 18730 . 18736) (punctuation 18729 . 18730) (punctuation 18728 . 18729) (symbol 18724 . 18728) (punctuation 18723 . 18724) (punctuation 18722 . 18723) (symbol 18719 . 18722) (semantic-list 18550 . 18717) (symbol 18541 . 18549) (semantic-list 18508 . 18540) (symbol 18490 . 18508) (punctuation 18489 . 18490) (punctuation 18488 . 18489) (symbol 18473 . 18488) (punctuation 18471 . 18472) (symbol 18463 . 18471) (punctuation 18462 . 18463) (symbol 18456 . 18462) (punctuation 18455 . 18456) (punctuation 18454 . 18455) (symbol 18450 . 18454) (punctuation 18449 . 18450) (punctuation 18448 . 18449) (symbol 18445 . 18448) (semantic-list 17865 . 18443) (symbol 17856 . 17864) (semantic-list 17820 . 17855) (symbol 17805 . 17820) (punctuation 17804 . 17805) (punctuation 17803 . 17804) (symbol 17788 . 17803) (punctuation 17786 . 17787) (VOID 17782 . 17786) (punctuation 17781 . 17782) (symbol 17775 . 17781) (punctuation 17774 . 17775) (punctuation 17773 . 17774) (symbol 17769 . 17773) (punctuation 17768 . 17769) (punctuation 17767 . 17768) (symbol 17764 . 17767) (semantic-list 17277 . 17762) (symbol 17268 . 17276) (semantic-list 17235 . 17267) (symbol 17226 . 17235) (punctuation 17225 . 17226) (punctuation 17224 . 17225) (symbol 17209 . 17224) (punctuation 17207 . 17208) (VOID 17203 . 17207) (punctuation 17202 . 17203) (symbol 17196 . 17202) (punctuation 17195 . 17196) (punctuation 17194 . 17195) (symbol 17190 . 17194) (punctuation 17189 . 17190) (punctuation 17188 . 17189) (symbol 17185 . 17188) (semantic-list 15350 . 17183) (symbol 15341 . 15349) (semantic-list 15270 . 15340) (symbol 15253 . 15270) (punctuation 15252 . 15253) (punctuation 15251 . 15252) (symbol 15236 . 15251) (punctuation 15234 . 15235) (VOID 15230 . 15234) (punctuation 15229 . 15230) (symbol 15223 . 15229) (punctuation 15222 . 15223) (punctuation 15221 . 15222) (symbol 15217 . 15221) (punctuation 15216 . 15217) (punctuation 15215 . 15216) (symbol 15212 . 15215) (semantic-list 14364 . 15210) (symbol 14355 . 14363) (semantic-list 14322 . 14354) (symbol 14311 . 14322) (punctuation 14310 . 14311) (punctuation 14309 . 14310) (symbol 14294 . 14309) (punctuation 14292 . 14293) (VOID 14288 . 14292) (punctuation 14287 . 14288) (symbol 14281 . 14287) (punctuation 14280 . 14281) (punctuation 14279 . 14280) (symbol 14275 . 14279) (punctuation 14274 . 14275) (punctuation 14273 . 14274) (symbol 14270 . 14273) (semantic-list 13718 . 14268) (symbol 13709 . 13717) (semantic-list 13639 . 13708) (symbol 13619 . 13639) (punctuation 13618 . 13619) (punctuation 13617 . 13618) (symbol 13602 . 13617) (punctuation 13600 . 13601) (symbol 13592 . 13600) (punctuation 13591 . 13592) (symbol 13585 . 13591) (punctuation 13584 . 13585) (punctuation 13583 . 13584) (symbol 13579 . 13583) (punctuation 13578 . 13579) (punctuation 13577 . 13578) (symbol 13574 . 13577) (semantic-list 12756 . 13572) (symbol 12747 . 12755) (semantic-list 12594 . 12746) (symbol 12583 . 12594) (punctuation 12582 . 12583) (punctuation 12581 . 12582) (symbol 12566 . 12581) (BOOL 12561 . 12565) (semantic-list 11860 . 12559) (symbol 11851 . 11859) (CONST 11845 . 11850) (semantic-list 11809 . 11844) (symbol 11793 . 11809) (punctuation 11792 . 11793) (punctuation 11791 . 11792) (symbol 11776 . 11791) (punctuation 11774 . 11775) (BOOL 11770 . 11774) (punctuation 11769 . 11770) (symbol 11763 . 11769) (punctuation 11762 . 11763) (punctuation 11761 . 11762) (symbol 11757 . 11761) (punctuation 11756 . 11757) (punctuation 11755 . 11756) (symbol 11752 . 11755) (semantic-list 11501 . 11750) (symbol 11492 . 11500) (CONST 11486 . 11491) (semantic-list 11457 . 11485) (symbol 11447 . 11457) (punctuation 11446 . 11447) (punctuation 11445 . 11446) (symbol 11430 . 11445) (punctuation 11428 . 11429) (BOOL 11424 . 11428) (punctuation 11423 . 11424) (symbol 11417 . 11423) (punctuation 11416 . 11417) (punctuation 11415 . 11416) (symbol 11411 . 11415) (punctuation 11410 . 11411) (punctuation 11409 . 11410) (symbol 11406 . 11409) (semantic-list 10054 . 11404) (symbol 10045 . 10053) (semantic-list 10009 . 10044) (symbol 9993 . 10009) (punctuation 9992 . 9993) (punctuation 9991 . 9992) (symbol 9976 . 9991) (punctuation 9974 . 9975) (VOID 9970 . 9974) (punctuation 9969 . 9970) (symbol 9963 . 9969) (punctuation 9962 . 9963) (punctuation 9961 . 9962) (symbol 9957 . 9961) (punctuation 9956 . 9957) (punctuation 9955 . 9956) (symbol 9952 . 9955) (semantic-list 9508 . 9950) (symbol 9499 . 9507) (semantic-list 9471 . 9498) (symbol 9461 . 9471) (punctuation 9460 . 9461) (punctuation 9459 . 9460) (symbol 9444 . 9459) (punctuation 9442 . 9443) (VOID 9438 . 9442) (punctuation 9437 . 9438) (symbol 9431 . 9437) (punctuation 9430 . 9431) (punctuation 9429 . 9430) (symbol 9425 . 9429) (punctuation 9424 . 9425) (punctuation 9423 . 9424) (symbol 9420 . 9423) (semantic-list 7693 . 8454) (symbol 7684 . 7692) (CONST 7678 . 7683) (semantic-list 7662 . 7677) (symbol 7641 . 7662) (punctuation 7640 . 7641) (punctuation 7639 . 7640) (symbol 7624 . 7639) (punctuation 7622 . 7623) (punctuation 7621 . 7622) (symbol 7615 . 7621) (punctuation 7614 . 7615) (punctuation 7613 . 7614) (symbol 7609 . 7613) (punctuation 7608 . 7609) (punctuation 7607 . 7608) (symbol 7604 . 7607) (punctuation 7603 . 7604) (symbol 7597 . 7603) (punctuation 7596 . 7597) (punctuation 7595 . 7596) (symbol 7591 . 7595) (punctuation 7590 . 7591) (punctuation 7589 . 7590) (symbol 7586 . 7589) (punctuation 7585 . 7586) (symbol 7579 . 7585) (punctuation 7578 . 7579) (punctuation 7577 . 7578) (symbol 7573 . 7577) (punctuation 7572 . 7573) (punctuation 7571 . 7572) (symbol 7568 . 7571) (semantic-list 7476 . 7566) (symbol 7467 . 7475) (CONST 7461 . 7466) (semantic-list 7458 . 7460) (symbol 7443 . 7458) (punctuation 7442 . 7443) (punctuation 7441 . 7442) (symbol 7426 . 7441) (punctuation 7424 . 7425) (punctuation 7423 . 7424) (symbol 7417 . 7423) (punctuation 7416 . 7417) (punctuation 7415 . 7416) (symbol 7411 . 7415) (punctuation 7410 . 7411) (punctuation 7409 . 7410) (symbol 7406 . 7409) (punctuation 7405 . 7406) (symbol 7399 . 7405) (punctuation 7398 . 7399) (punctuation 7397 . 7398) (symbol 7393 . 7397) (punctuation 7392 . 7393) (punctuation 7391 . 7392) (symbol 7388 . 7391) (punctuation 7387 . 7388) (symbol 7381 . 7387) (punctuation 7380 . 7381) (punctuation 7379 . 7380) (symbol 7375 . 7379) (punctuation 7374 . 7375) (punctuation 7373 . 7374) (symbol 7370 . 7373) (semantic-list 1807 . 2603) (symbol 1798 . 1806) (CONST 1792 . 1797) (semantic-list 1760 . 1790) (symbol 1750 . 1760) (punctuation 1749 . 1750) (punctuation 1748 . 1749) (symbol 1733 . 1748) (symbol 1726 . 1732) (punctuation 1725 . 1726) (punctuation 1724 . 1725) (symbol 1720 . 1724) (punctuation 1719 . 1720) (punctuation 1718 . 1719) (symbol 1715 . 1718) (semantic-list 1614 . 1616) (semantic-list 1603 . 1613) (symbol 1596 . 1603) (punctuation 1594 . 1595) (semantic-list 1587 . 1594) (symbol 1578 . 1587) (punctuation 1576 . 1577) (semantic-list 1569 . 1576) (symbol 1562 . 1569) (punctuation 1560 . 1561) (semantic-list 1555 . 1560) (symbol 1540 . 1555) (punctuation 1538 . 1539) (semantic-list 1533 . 1538) (symbol 1517 . 1533) (punctuation 1507 . 1508) (symbol 1498 . 1506) (semantic-list 1495 . 1497) (symbol 1480 . 1495) (punctuation 1479 . 1480) (punctuation 1478 . 1479) (symbol 1463 . 1478)))
+    (semanticdb-table "semanticdb-table-1dbd948"
+      :major-mode c++-mode
+      :tags 
+        '( ("fileaccess/read_write_accessor_impl.h" include nil nil [295 343])
+            ("fileaccess/file_lock.h" include nil nil [344 377])
+            ("ara/per/per_error_domain.h" include nil nil [378 415])
+            ("utility/logging.h" include nil nil [416 444])
+            ("fcntl.h" include (:system-flag t) nil [445 463])
+            ("boost/filesystem.hpp" include (:system-flag t) nil [464 495])
+            ("ara::core::Result" using (:type ("ara::core::Result" type
+                 (:prototype t
+                  :type "class")
+                  nil nil)) nil [497 521])
+            ("ara::core::String" using (:type ("ara::core::String" type
+                 (:prototype t
+                  :type "class")
+                  nil nil)) nil [522 546])
+            ("ara" type
+               (:members 
+                  ( ("per" type
+                       (:members 
+                          ( ("ReadWriteAccessorImpl" function
+                               (:constructor-flag t
+                                :parent "ReadWriteAccessorImpl"
+                                :arguments 
+                                  ( ("filename" variable (:type ("ara::core::StringView" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [625 656])
+                                    ("fsyncCallback" variable (:type ("fsync_callback_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [657 688]))                                  
+                                :type ("ReadWriteAccessorImpl" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [580 868])
+                            ("ReadWriteAccessorImpl" function
+                               (:destructor-flag t
+                                :parent "ReadWriteAccessorImpl"
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [870 1204])
+                            ("open" function
+                               (:parent "ReadWriteAccessorImpl"
+                                :arguments 
+                                  ( ("mode" variable
+                                       (:constant-flag t
+                                        :type ("BasicOperations::OpenMode" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1247 1284])
+                                    ("readable" variable
+                                       (:constant-flag t
+                                        :type "bool")
+                                        (reparse-symbol arg-sub-list) [1285 1305]))                                  
+                                :type ("Result" type
+                                     (:template-specifier 
+                                        ( ("void" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol namespacesubparts) [1206 3655]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [564 8073]))                  
+                :type "namespace")
+                nil [548 8093]))          
+      :file "read_write_accessor_impl.cpp"
+      :pointmax 8112
+      :fsize 8111
+      :lastmodtime '(24310 62485 483203 886000)
+      :unmatched-syntax '((semantic-list 8048 . 8070) (symbol 8039 . 8047) (semantic-list 8036 . 8038) (symbol 8031 . 8036) (punctuation 8030 . 8031) (punctuation 8029 . 8030) (symbol 8008 . 8029) (VOID 8003 . 8007) (semantic-list 7956 . 7979) (symbol 7947 . 7955) (CONST 7941 . 7946) (semantic-list 7938 . 7940) (BOOL 7934 . 7938) (OPERATOR 7925 . 7933) (punctuation 7924 . 7925) (punctuation 7923 . 7924) (symbol 7902 . 7923) (semantic-list 7825 . 7877) (symbol 7816 . 7824) (CONST 7810 . 7815) (semantic-list 7807 . 7809) (punctuation 7806 . 7807) (OPERATOR 7798 . 7806) (punctuation 7797 . 7798) (punctuation 7796 . 7797) (symbol 7775 . 7796) (BOOL 7770 . 7774) (semantic-list 7694 . 7746) (symbol 7685 . 7693) (CONST 7679 . 7684) (semantic-list 7676 . 7678) (symbol 7673 . 7676) (punctuation 7672 . 7673) (punctuation 7671 . 7672) (symbol 7650 . 7671) (BOOL 7645 . 7649) (semantic-list 7551 . 7603) (symbol 7542 . 7550) (CONST 7536 . 7541) (semantic-list 7533 . 7535) (symbol 7529 . 7533) (punctuation 7528 . 7529) (punctuation 7527 . 7528) (symbol 7506 . 7527) (BOOL 7501 . 7505) (semantic-list 7422 . 7472) (symbol 7413 . 7421) (CONST 7407 . 7412) (semantic-list 7404 . 7406) (symbol 7401 . 7404) (punctuation 7400 . 7401) (punctuation 7399 . 7400) (symbol 7378 . 7399) (BOOL 7373 . 7377) (semantic-list 7295 . 7347) (symbol 7286 . 7294) (CONST 7280 . 7285) (semantic-list 7277 . 7279) (symbol 7273 . 7277) (punctuation 7272 . 7273) (punctuation 7271 . 7272) (symbol 7250 . 7271) (BOOL 7245 . 7249) (semantic-list 6915 . 7221) (symbol 6906 . 6914) (semantic-list 6875 . 6905) (symbol 6871 . 6875) (punctuation 6870 . 6871) (punctuation 6869 . 6870) (symbol 6848 . 6869) (VOID 6843 . 6847) (semantic-list 6711 . 6764) (symbol 6702 . 6710) (semantic-list 6687 . 6701) (symbol 6683 . 6687) (punctuation 6682 . 6683) (punctuation 6681 . 6682) (symbol 6660 . 6681) (VOID 6655 . 6659) (semantic-list 6575 . 6601) (symbol 6566 . 6574) (semantic-list 6563 . 6565) (symbol 6559 . 6563) (punctuation 6558 . 6559) (punctuation 6557 . 6558) (symbol 6536 . 6557) (symbol 6527 . 6535) (semantic-list 6117 . 6525) (symbol 6108 . 6116) (semantic-list 6064 . 6107) (symbol 6057 . 6064) (punctuation 6056 . 6057) (punctuation 6055 . 6056) (symbol 6034 . 6055) (symbol 6025 . 6033) (semantic-list 5974 . 6023) (symbol 5965 . 5973) (semantic-list 5939 . 5964) (symbol 5935 . 5939) (punctuation 5934 . 5935) (punctuation 5933 . 5934) (symbol 5912 . 5933) (symbol 5903 . 5911) (semantic-list 5876 . 5901) (symbol 5867 . 5875) (semantic-list 5864 . 5866) (symbol 5861 . 5864) (punctuation 5860 . 5861) (punctuation 5859 . 5860) (symbol 5838 . 5859) (symbol 5829 . 5837) (semantic-list 5732 . 5827) (symbol 5723 . 5731) (semantic-list 5720 . 5722) (symbol 5716 . 5720) (punctuation 5715 . 5716) (punctuation 5714 . 5715) (symbol 5693 . 5714) (symbol 5684 . 5692) (semantic-list 4275 . 5682) (symbol 4266 . 4274) (semantic-list 4263 . 4265) (symbol 4258 . 4263) (punctuation 4257 . 4258) (punctuation 4256 . 4257) (symbol 4235 . 4256) (punctuation 4233 . 4234) (VOID 4229 . 4233) (punctuation 4228 . 4229) (symbol 4222 . 4228) (semantic-list 4181 . 4220) (symbol 4172 . 4180) (semantic-list 4169 . 4171) (symbol 4164 . 4169) (punctuation 4163 . 4164) (punctuation 4162 . 4163) (symbol 4141 . 4162) (VOID 4136 . 4140) (semantic-list 4095 . 4134) (symbol 4086 . 4094) (semantic-list 4039 . 4085) (punctuation 4038 . 4039) (punctuation 4037 . 4038) (OPERATOR 4029 . 4037) (punctuation 4028 . 4029) (punctuation 4027 . 4028) (symbol 4006 . 4027) (punctuation 4004 . 4005) (symbol 3987 . 4004) (semantic-list 3884 . 3985) (symbol 3875 . 3883) (semantic-list 3844 . 3874) (punctuation 3843 . 3844) (punctuation 3842 . 3843) (OPERATOR 3834 . 3842) (punctuation 3833 . 3834) (punctuation 3832 . 3833) (symbol 3811 . 3832) (punctuation 3809 . 3810) (symbol 3792 . 3809) (semantic-list 3729 . 3790) (symbol 3720 . 3728) (semantic-list 3694 . 3719) (symbol 3689 . 3694) (punctuation 3688 . 3689) (punctuation 3687 . 3688) (symbol 3666 . 3687) (symbol 3657 . 3665))))
+  :file "!home!hyuk.myeong!work!G550_x86!CPU!QNX!Apps!source!autosar!ara-api!per!src!fileaccess!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

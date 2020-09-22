@@ -1,0 +1,30 @@
+;; Object semanticdb-project-database-file-1a6ca64
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-1a6ca64"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-1a6ca70"
+      :major-mode mhtml-mode
+      :tags 
+        '( ("System Test Report" section nil nil [26 80109])
+            ("AUTOSAR Adaptive Platform" section (:members 
+              ( ("AVIN SYSTEMS" anchor nil nil [153440 153443]))              ) nil [80109 153555]))          
+      :file "TestResult.html"
+      :pointmax 153555
+      :fsize 153554
+      :lastmodtime '(24416 4495 19883 655000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1ba5e68"
+      :major-mode mhtml-mode
+      :tags 
+        '( ("System Test Report" section nil nil [26 80109])
+            ("AUTOSAR Adaptive Platform" section (:members 
+              ( ("AVIN SYSTEMS" anchor nil nil [210849 210852]))              ) nil [80109 210964]))          
+      :file "TestResult_Dem.html"
+      :pointmax 210964
+      :fsize 210963
+      :lastmodtime '(24416 4495 19883 655000)
+      :unmatched-syntax nil))
+  :file "!home!hyuk.myeong!work!LARA!avin!avin-ap!dm!doc!testing!test_result!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

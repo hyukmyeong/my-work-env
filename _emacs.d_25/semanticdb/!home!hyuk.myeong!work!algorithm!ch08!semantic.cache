@@ -1,0 +1,187 @@
+;; Object semanticdb-project-database-file-242f5a8
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-242f5a8"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-242f5c4"
+      :major-mode c++-mode
+      :tags 
+        '( ("iostream" include (:system-flag t) nil [20 39])
+            ("string" include (:system-flag t) nil [40 57])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [59 79])
+            ("endl" variable (:type "int") nil [358 363])
+            ("fibo" function
+               (:arguments 
+                  ( ("N" variable (:type "int") (reparse-symbol arg-sub-list) [90 96]))                  
+                :type "int")
+                nil [81 322])
+            ("main" function (:type "int") nil [324 365]))          
+      :file "main.cpp"
+      :pointmax 127
+      :fsize 365
+      :lastmodtime '(24316 6165 519305 826000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1f20b48"
+      :major-mode c++-mode
+      :tags 
+        '( ("iostream" include (:system-flag t) nil [1 20])
+            ("vector" include (:system-flag t) nil [21 38])
+            ("cmath" include (:system-flag t) nil [39 55])
+            ("cstring" include (:system-flag t) nil [56 74])
+            ("cstdlib" include (:system-flag t) nil [75 93])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [95 115])
+            ("g_cnt" variable
+               (:typemodifiers ("static")
+                :default-value "0"
+                :type "int")
+                nil [117 138])
+            ("lis" function
+               (:arguments 
+                  ( ("A" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("vector" type
+                             (:template-specifier 
+                                ( ("int" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [148 169]))                  
+                :type "int")
+                nil [140 443])
+            ("main" function (:type "int") nil [445 848]))          
+      :file "code_8_LIS_1.cpp"
+      :pointmax 849
+      :fsize 848
+      :lastmodtime '(24316 5290 796869 761000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-184ce84"
+      :major-mode c++-mode
+      :tags 
+        '( ("iostream" include (:system-flag t) nil [1 20])
+            ("vector" include (:system-flag t) nil [21 38])
+            ("memory" include (:system-flag t) nil [39 56])
+            ("cstring" include (:system-flag t) nil [57 75])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [77 97])
+            ("problem" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [115 122])
+                    ("pattern" variable (:type ("string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [125 140])
+                    ("words" variable (:type ("vector" type
+                         (:template-specifier 
+                            ( ("string" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [143 164]))                  
+                :type "class")
+                nil [99 167])
+            ("cnt" variable (:type "int") nil [168 176])
+            ("problems" variable (:type ("vector" type
+                 (:template-specifier 
+                    ( ("problem" type nil nil nil))                    
+                  :type "class")
+                  nil nil)) nil [177 202])
+            ("g_problem" variable (:type ("problem" type (:type "class") nil nil)) nil [204 222])
+            ("g_pattern" variable (:type ("string" type (:type "class") nil nil)) nil [223 240])
+            ("g_word" variable (:type ("string" type (:type "class") nil nil)) nil [241 255])
+            ("cache" variable
+               (:dereference 2
+                :type "int")
+                nil [257 277])
+            ("get_input" function (:type "void") nil [279 581])
+            ("match" function
+               (:arguments 
+                  ( ("pattern_idx" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [600 625])
+                    ("word_idx" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [626 648]))                  
+                :type "bool")
+                nil [589 1403])
+            ("main" function (:type "int") nil [1412 2100]))          
+      :file "code_8_6_4.cpp"
+      :pointmax 2101
+      :fsize 2122
+      :lastmodtime '(24316 5290 796869 761000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-17caaa0"
+      :major-mode c++-mode
+      :tags 
+        '( ("iostream" include (:system-flag t) nil [1 20])
+            ("vector" include (:system-flag t) nil [21 38])
+            ("cmath" include (:system-flag t) nil [39 55])
+            ("cstring" include (:system-flag t) nil [56 74])
+            ("cstdlib" include (:system-flag t) nil [75 93])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [95 115])
+            ("fib" function
+               (:arguments 
+                  ( ("N" variable (:type "int") (reparse-symbol arg-sub-list) [166 172]))                  
+                :type "int")
+                nil [158 245])
+            ("fib_tabulation" function
+               (:arguments 
+                  ( ("N" variable (:type "int") (reparse-symbol arg-sub-list) [297 303]))                  
+                :type "int")
+                nil [278 451])
+            ("cache" variable
+               (:dereference 1
+                :type "int")
+                nil [742 757])
+            ("fib_memoization" function
+               (:arguments 
+                  ( ("N" variable (:type "int") (reparse-symbol arg-sub-list) [778 784]))                  
+                :type "int")
+                nil [758 948])
+            ("main" function (:type "int") nil [950 1102]))          
+      :file "code_8.cpp"
+      :pointmax 1103
+      :fsize 1102
+      :lastmodtime '(24316 6358 538751 370000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1f15448"
+      :major-mode c++-mode
+      :tags 
+        '( ("iostream" include (:system-flag t) nil [1 20])
+            ("vector" include (:system-flag t) nil [21 38])
+            ("cmath" include (:system-flag t) nil [39 55])
+            ("cstring" include (:system-flag t) nil [56 74])
+            ("cstdlib" include (:system-flag t) nil [75 93])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [95 115])
+            ("fib" function
+               (:arguments 
+                  ( ("N" variable (:type "int") (reparse-symbol arg-sub-list) [166 172]))                  
+                :type "int")
+                nil [158 245])
+            ("fib_tabulation" function
+               (:arguments 
+                  ( ("N" variable (:type "int") (reparse-symbol arg-sub-list) [291 297]))                  
+                :type "int")
+                nil [272 445])
+            ("cache" variable
+               (:dereference 1
+                :type "int")
+                nil [470 485])
+            ("fib_memoization" function
+               (:arguments 
+                  ( ("N" variable (:type "int") (reparse-symbol arg-sub-list) [506 512]))                  
+                :type "int")
+                nil [486 676])
+            ("main" function (:type "int") nil [678 830]))          
+      :file "code_8_top_down_bottom_up.cpp"
+      :pointmax 831
+      :fsize 830
+      :lastmodtime '(24316 5290 796869 761000)
+      :unmatched-syntax nil))
+  :file "!home!hyuk.myeong!work!algorithm!ch08!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

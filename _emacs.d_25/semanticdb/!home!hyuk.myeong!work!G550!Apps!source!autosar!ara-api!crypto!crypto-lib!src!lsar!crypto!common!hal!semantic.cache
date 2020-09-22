@@ -1,0 +1,180 @@
+;; Object semanticdb-project-database-file-15245cc
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-15245cc"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-15245ac"
+      :major-mode c++-mode
+      :tags 
+        '( ("iostream" include (:system-flag t) nil [566 585])
+            ("lsar/crypto/common/baseIdTypesImpl.h" include nil nil [586 633])
+            ("lsar/crypto/common/hal/hal_hashFunctionCtx.h" include nil nil [687 742])
+            ("lsar/crypto/common/cryptoUtil.h" include nil nil [743 785])
+            ("lsar/crypto/common/cryptoGlobal.h" include nil nil [786 830])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [832 852])
+            ("lsar::crypto::cryp" using (:type ("lsar::crypto::cryp" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [853 888])
+            ("hal_HashFunctionCtx" function
+               (:constructor-flag t
+                :parent "hal_HashFunctionCtx"
+                :arguments 
+                  ( ("algId" variable (:type ("ara::crypto::cryp::CryptoPrimitiveId::AlgId" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [931 981])
+                    ("pUuid" variable (:type ("ara::crypto::Uuid" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [982 1006]))                  
+                :type ("hal_HashFunctionCtx" type (:type "class") nil nil))
+                nil [890 1845])
+            ("hal_HashFunctionCtx" function
+               (:destructor-flag t
+                :parent "hal_HashFunctionCtx"
+                :type "void")
+                nil [1847 2618])
+            ("GetDigestSize" function
+               (:parent "hal_HashFunctionCtx"
+                :arguments 
+                  ( ("algId" variable (:type ("ara::crypto::cryp::CryptoPrimitiveId::AlgId" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2667 2717]))                  
+                :type ("std::size_t" type (:type "class") nil nil))
+                nil [2620 6245])
+            ("Start" function
+               (:parent "hal_HashFunctionCtx"
+                :type "void")
+                nil [6248 9409])
+            ("Update" function
+               (:parent "hal_HashFunctionCtx"
+                :arguments 
+                  ( ("data" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [9444 9461])
+                    ("len" variable
+                       (:constant-flag t
+                        :type ("size_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9462 9479]))                  
+                :type "void")
+                nil [9411 12677])
+            ("Finish" function
+               (:parent "hal_HashFunctionCtx"
+                :type ("ara::crypto::cryp::Signature::Uptrc" type (:type "class") nil nil))
+                nil [12679 13270])
+            ("GetDigest" function
+               (:parent "hal_HashFunctionCtx"
+                :arguments 
+                  ( ("data" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [13315 13326]))                  
+                :type ("std::size_t" type (:type "class") nil nil))
+                nil [13272 16471]))          
+      :file "hal_HashFunctionCtx.cpp"
+      :pointmax 16472
+      :fsize 16471
+      :lastmodtime '(24305 25427 909961 609000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-15245ec"
+      :major-mode c++-mode
+      :tags 
+        '( ("openssl/bio.h" include nil nil [566 590])
+            ("openssl/x509.h" include nil nil [591 616])
+            ("openssl/err.h" include nil nil [617 641])
+            ("openssl/pem.h" include nil nil [642 666])
+            ("lsar/crypto/common/baseIdTypesImpl.h" include nil nil [667 714])
+            ("lsar/crypto/common/cryptoUtil.h" include nil nil [715 757])
+            ("lsar/crypto/common/hal/hal_VerifierPublicCtx.h" include nil nil [758 815])
+            ("iostream" include (:system-flag t) nil [817 836])
+            ("lsar" type
+               (:members 
+                  ( ("crypto" type
+                       (:members 
+                          ( ("cryp" type
+                               (:members 
+                                  ( ("hal_VerifierPublicCtx" function
+                                       (:constructor-flag t
+                                        :parent "hal_VerifierPublicCtx"
+                                        :arguments 
+                                          ( ("algId" variable (:type ("ara::crypto::cryp::CryptoPrimitiveId::AlgId" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [937 987]))                                          
+                                        :type ("hal_VerifierPublicCtx" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [892 1191])
+                                    ("SetKey" function
+                                       (:parent "hal_VerifierPublicCtx"
+                                        :arguments 
+                                          ( ("key" variable
+                                               (:pointer 1
+                                                :constant-flag t
+                                                :type ("ara::crypto::cryp::PublicKey" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [1228 1268]))                                          
+                                        :type "void")
+                                        (reparse-symbol namespacesubparts) [1193 1438])
+                                    ("Verify" function
+                                       (:parent "hal_VerifierPublicCtx"
+                                        :arguments 
+                                          ( ("signature" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("ara::crypto::cryp::Signature" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [1475 1530])
+                                            ("hash" variable
+                                               (:pointer 1
+                                                :constant-flag t
+                                                :type "void")
+                                                (reparse-symbol arg-sub-list) [1531 1548])
+                                            ("hashLen" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1549 1564]))                                          
+                                        :type "bool")
+                                        (reparse-symbol namespacesubparts) [1440 1971])
+                                    ("Verify" function
+                                       (:parent "hal_VerifierPublicCtx"
+                                        :arguments 
+                                          ( ("signature" variable
+                                               (:pointer 1
+                                                :constant-flag t
+                                                :type "void")
+                                                (reparse-symbol arg-sub-list) [2008 2030])
+                                            ("signatureLen" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2031 2060])
+                                            ("hash" variable
+                                               (:pointer 1
+                                                :constant-flag t
+                                                :type "void")
+                                                (reparse-symbol arg-sub-list) [2061 2078])
+                                            ("hashLen" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2079 2094]))                                          
+                                        :type "bool")
+                                        (reparse-symbol namespacesubparts) [1973 4425])
+                                    ("GetKey" function
+                                       (:pointer 1
+                                        :parent "hal_VerifierPublicCtx"
+                                        :type ("EVP_PKEY" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [4427 5608])
+                                    ("SetPadding" function
+                                       (:parent "hal_VerifierPublicCtx"
+                                        :arguments 
+                                          ( ("ctx" variable
+                                               (:pointer 1
+                                                :type ("EVP_PKEY_CTX" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [5648 5666]))                                          
+                                        :type "int")
+                                        (reparse-symbol namespacesubparts) [5610 6851])
+                                    ("SetHashAlg" function
+                                       (:parent "hal_VerifierPublicCtx"
+                                        :arguments 
+                                          ( ("ctx" variable
+                                               (:pointer 1
+                                                :type ("EVP_PKEY_CTX" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [6891 6909]))                                          
+                                        :type "int")
+                                        (reparse-symbol namespacesubparts) [6853 8360]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [874 8363]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [855 8382]))                  
+                :type "namespace")
+                nil [838 8403]))          
+      :file "hal_VerifierPublicCtx.cpp"
+      :pointmax 8421
+      :fsize 8420
+      :lastmodtime '(24305 25427 909961 609000)
+      :unmatched-syntax nil))
+  :file "!home!hyuk.myeong!work!G550!Apps!source!autosar!ara-api!crypto!crypto-lib!src!lsar!crypto!common!hal!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,90 @@
+;; Object semanticdb-project-database-file-2384c54
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-2384c54"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-185a948"
+      :major-mode c++-mode
+      :tags 
+        '( ("LIB_DEFAULT_DAL_DELEGATE_INCLUDE_DEFAULT_DIAGNOSTIC_ACCESS_DELEGATE_H_" variable (:constant-flag t) nil [1237 1307])
+            ("memory" include (:system-flag t) nil [1562 1579])
+            ("utility" include (:system-flag t) nil [1580 1598])
+            ("vector" include (:system-flag t) nil [1599 1616])
+            ("vag/diagnostic_data_distribution_service/dddsinterface_proxy.h" include nil nil [1669 1742])
+            ("common/diagnostic_access_delegate.h" include nil nil [1743 1789])
+            ("libdal" type
+               (:members 
+                  ( ("ddds" type
+                       (:kind alias
+                        :members 
+                          ( ("vag::diagnostic_data_distribution_service" type (:type "namespace") nil nil))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [1873 1932])
+                    ("DefaultDiagnosticAccessDelegate" type
+                       (:superclasses 
+                          ( ("DiagnosticAccessDelegate" type
+                               (:protection "public"
+                                :type "class")
+                                nil nil))                          
+                        :members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [2116 2123])
+                            ("DefaultDiagnosticAccessDelegate" function
+                               (:prototype-flag t
+                                :constructor-flag t
+                                :type ("DefaultDiagnosticAccessDelegate" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [2126 2160])
+                            ("override" variable (:type "int") (reparse-symbol classsubparts) [2275 2284])
+                            ("override" variable (:type "int") (reparse-symbol classsubparts) [2611 2620])
+                            ("override" variable (:type "int") (reparse-symbol classsubparts) [2864 2873])
+                            ("override" variable (:type "int") (reparse-symbol classsubparts) [3279 3288])
+                            ("override" variable (:type "int") (reparse-symbol classsubparts) [3707 3716])
+                            ("private" label nil (reparse-symbol classsubparts) [3719 3727])
+                            ("hash_value_changed_callback_" variable (:type "int") (reparse-symbol classsubparts) [3786 3815])
+                            ("ddds_proxy_" variable (:type ("std::shared_ptr" type
+                                 (:template-specifier 
+                                    ( ("ddds::proxy::DDDSinterfaceProxy" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [3818 3879])
+                            ("establish_connection_promise_" variable
+                               (:default-value "std::promise<bool>()"
+                                :type ("std::promise" type
+                                     (:template-specifier 
+                                        ( ("bool" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol classsubparts) [3882 3954])
+                            ("find_service_handle_" variable (:type ("ara::com::FindServiceHandle" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4208 4257])
+                            ("logger_ctx_" variable (:type ("ara::log::Logger" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4260 4290])
+                            ("FindServiceHandler" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("ddds" variable (:type ("ara::com::ServiceHandleContainer" type
+                                         (:template-specifier 
+                                            ( ("ara::com::HandleType" type nil nil nil))                                            
+                                          :type "class")
+                                          nil nil)) (reparse-symbol arg-sub-list) [4513 4573]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [4489 4574])
+                            ("DataValuesHashHandler" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [4611 4616]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [4584 4617])
+                            ("Cdd_DefaultDiagnosticAccessDelegate" friend nil (reparse-symbol classsubparts) [4621 4669]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [2041 4673]))                  
+                :type "namespace")
+                nil [1853 4676]))          
+      :file "default_diagnostic_access_delegate.h"
+      :pointmax 4785
+      :fsize 4784
+      :lastmodtime '(24359 48950 875777 837000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("LIB_DEFAULT_DAL_DELEGATE_INCLUDE_DEFAULT_DIAGNOSTIC_ACCESS_DELEGATE_H_")
+          )
+))
+  :file "!home!hyuk.myeong!work!LARA!Apps!source!autosar!third_party!vector!amsr-vag-app-dsa!lib!default_dal_delegate!include!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

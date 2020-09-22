@@ -1,0 +1,97 @@
+;; Object semanticdb-project-database-file-33df180
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-33df180"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-33df19c"
+      :major-mode c++-mode
+      :tags 
+        '( ("service/SecurityAccessActivityFactory.h" include nil nil [1060 1110])
+            ("SecurityAccessManager.h" include nil nil [1112 1146])
+            ("diag_handler" type
+               (:members 
+                  ( ("security_access" type
+                       (:members 
+                          ( ("SecurityAccessManager" function
+                               (:constructor-flag t
+                                :parent "SecurityAccessManager"
+                                :type ("SecurityAccessManager" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [1202 1333])
+                            ("Init" function
+                               (:parent "SecurityAccessManager"
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [1335 1614])
+                            ("Start" function
+                               (:parent "SecurityAccessManager"
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [1616 1709])
+                            ("Stop" function
+                               (:parent "SecurityAccessManager"
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [1711 1875]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [1173 1878]))                  
+                :type "namespace")
+                nil [1148 1902]))          
+      :file "SecurityAccessManager.cpp"
+      :pointmax 1923
+      :fsize 1922
+      :lastmodtime '(24415 860 640785 140000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-23eb1a0"
+      :major-mode c++-mode
+      :tags 
+        '( ("SECURITYACCESS_MANAGER_H_" variable (:constant-flag t) nil [1103 1128])
+            ("diag/IRuntime.h" include nil nil [1130 1156])
+            ("service/SecurityAccessActivity.h" include nil nil [1157 1200])
+            ("ara/log/logging.h" include nil nil [1202 1230])
+            ("diag_handler" type
+               (:members 
+                  ( ("security_access" type
+                       (:members 
+                          ( ("SecurityAccessManager" type
+                               (:superclasses 
+                                  ( ("IRuntime" type
+                                       (:protection "public"
+                                        :type "class")
+                                        nil nil))                                  
+                                :members 
+                                  ( ("public" label nil (reparse-symbol classsubparts) [1334 1341])
+                                    ("SecurityAccessManager" function
+                                       (:prototype-flag t
+                                        :constructor-flag t
+                                        :type ("SecurityAccessManager" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [1344 1368])
+                                    ("SecurityAccessManager" function
+                                       (:destructor-flag t
+                                        :typemodifiers ("virtual")
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [1371 1406])
+                                    ("override" variable (:type "int") (reparse-symbol classsubparts) [1422 1431])
+                                    ("override" variable (:type "int") (reparse-symbol classsubparts) [1447 1456])
+                                    ("override" variable (:type "int") (reparse-symbol classsubparts) [1471 1480])
+                                    ("private" label nil (reparse-symbol classsubparts) [1482 1490])
+                                    ("security_access_" variable (:type ("std::unique_ptr" type
+                                         (:template-specifier 
+                                            ( ("SecurityAccessActivity" type nil nil nil))                                            
+                                          :type "class")
+                                          nil nil)) (reparse-symbol classsubparts) [1493 1550])
+                                    ("logger_" variable (:type ("ara::log::Logger" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1554 1580]))                                  
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [1286 1583]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [1257 1586]))                  
+                :type "namespace")
+                nil [1232 1610]))          
+      :file "SecurityAccessManager.h"
+      :pointmax 1667
+      :fsize 1666
+      :lastmodtime '(24415 860 640785 140000)
+      :unmatched-syntax '((semantic-list 1468 . 1470) (symbol 1464 . 1468) (VOID 1459 . 1463) (semantic-list 1444 . 1446) (symbol 1439 . 1444) (VOID 1434 . 1438) (semantic-list 1419 . 1421) (symbol 1415 . 1419) (VOID 1410 . 1414))
+      :lexical-table 
+        '(("SECURITYACCESS_MANAGER_H_")
+          )
+))
+  :file "!home!hyuk.myeong!work!LARA!sample-applications!lge!diag-handler!src!diag!security_access!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

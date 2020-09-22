@@ -1,0 +1,890 @@
+;; Object semanticdb-project-database-file-3e232e8
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-3e232e8"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-3e23304"
+      :major-mode c++-mode
+      :tags 
+        '( ("DIAGNOSTICMANAGEREXE_INCLUDES_ARA_DIAG_CLEARFAILEDREASON_ERROR_DOMAIN_ERRORDOMAIN_H_" variable (:constant-flag t) nil [1110 1194])
+            ("ara/core/error_code.h" include nil nil [1196 1228])
+            ("ara/core/error_domain.h" include nil nil [1229 1263])
+            ("ara/core/exception.h" include nil nil [1264 1295])
+            ("ara" type
+               (:members 
+                  ( ("diag" type
+                       (:members 
+                          ( ("clearfailedreason" type
+                               (:members 
+                                  ( ("ErrorDomainErrc" type
+                                       (:superclasses 
+                                          ( ("ara::core::ErrorDomain::CodeType" type
+                                               (:protection "unspecified"
+                                                :type "class")
+                                                nil nil))                                          
+                                        :type "class")
+                                        (reparse-symbol namespacesubparts) [1365 1499])
+                                    ("ErrorDomainException" type
+                                       (:superclasses 
+                                          ( ("ara::core::Exception" type
+                                               (:protection "public"
+                                                :type "class")
+                                                nil nil))                                          
+                                        :members 
+                                          ( ("public" label nil (reparse-symbol classsubparts) [1561 1568])
+                                            ("Exception" function
+                                               (:parent "ara::core"
+                                                :arguments 
+                                                  ( ("" variable (:type ("err" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1659 1663]))                                                  
+                                                :type "int")
+                                                (reparse-symbol classsubparts) [1638 1668]))                                          
+                                        :type "class")
+                                        (reparse-symbol namespacesubparts) [1501 1671])
+                                    ("ara::core::ErrorDomain" variable (:type "int") (reparse-symbol namespacesubparts) [1717 2753])
+                                    ("internal" type
+                                       (:members 
+                                          ( ("g_ErrorDomainErrorDomain" variable (:type ("ErrorDomainErrorDomain" type (:type "class") nil nil)) (reparse-symbol namespacesubparts) [2786 2834]))                                          
+                                        :type "namespace")
+                                        (reparse-symbol namespacesubparts) [2755 2836]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [1330 3238]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [1313 3271]))                  
+                :type "namespace")
+                nil [1297 3291]))          
+      :file "error_domain_errordomain.h"
+      :pointmax 3405
+      :fsize 3404
+      :lastmodtime '(24419 4975 13205 152000)
+      :unmatched-syntax '((semantic-list 3106 . 3235) (symbol 3097 . 3105) (semantic-list 3023 . 3096) (symbol 3010 . 3023) (symbol 3000 . 3009) (punctuation 2999 . 3000) (punctuation 2998 . 2999) (symbol 2994 . 2998) (punctuation 2993 . 2994) (punctuation 2992 . 2993) (symbol 2989 . 2992) (symbol 2979 . 2988) (INLINE 2972 . 2978) (semantic-list 2922 . 2970) (symbol 2913 . 2921) (semantic-list 2910 . 2912) (symbol 2885 . 2910) (punctuation 2883 . 2884) (CONST 2878 . 2883) (symbol 2866 . 2877) (punctuation 2865 . 2866) (punctuation 2864 . 2865) (symbol 2860 . 2864) (punctuation 2859 . 2860) (punctuation 2858 . 2859) (symbol 2855 . 2858) (symbol 2845 . 2854) (INLINE 2838 . 2844) (symbol 2776 . 2785) (PUBLIC 1710 . 1716) (punctuation 1708 . 1709) (symbol 1702 . 1707) (symbol 1679 . 1701) (CLASS 1673 . 1678) (punctuation 1636 . 1637) (symbol 1627 . 1635) (semantic-list 1600 . 1626) (symbol 1580 . 1600) (EXPLICIT 1571 . 1579) (punctuation 1495 . 1496) (number 1492 . 1495) (punctuation 1490 . 1491) (symbol 1480 . 1489) (punctuation 1476 . 1477) (number 1473 . 1476) (punctuation 1471 . 1472) (symbol 1458 . 1470) (punctuation 1454 . 1455) (number 1451 . 1454) (punctuation 1449 . 1450) (symbol 1441 . 1448) (punctuation 1437 . 1438) (number 1434 . 1437) (punctuation 1432 . 1433) (symbol 1426 . 1431) (ENUM 1360 . 1364))
+      :lexical-table 
+        '(("DIAGNOSTICMANAGEREXE_INCLUDES_ARA_DIAG_CLEARFAILEDREASON_ERROR_DOMAIN_ERRORDOMAIN_H_")
+          )
+)
+    (semanticdb-table "semanticdb-table-22d0230"
+      :major-mode c-mode
+      :tags 
+        '( ("_ARA_DIAG_IMPL_TYPE_MONITORACTIONTYPE_H_" variable (:constant-flag t) nil [813 853])
+            ("cstdint" include (:system-flag t) nil [855 873])
+            ("ara" type
+               (:members 
+                  ( ("diag" type
+                       (:members 
+                          ( ("MonitorActionType" type
+                               (:superclasses 
+                                  ( ("std::uint8_t" type
+                                       (:protection "unspecified"
+                                        :type "class")
+                                        nil nil))                                  
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [912 1271]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [890 1274]))                  
+                :type "namespace")
+                nil [874 1294]))          
+      :file "impl_type_monitoractiontype.h"
+      :pointmax 1364
+      :fsize 1363
+      :lastmodtime '(24419 4975 13205 152000)
+      :unmatched-syntax '((symbol 1265 . 1268) (punctuation 1263 . 1264) (symbol 1248 . 1262) (punctuation 1167 . 1168) (symbol 1165 . 1167) (punctuation 1163 . 1164) (symbol 1148 . 1162) (punctuation 1144 . 1145) (symbol 1142 . 1144) (punctuation 1140 . 1141) (symbol 1130 . 1139) (punctuation 1126 . 1127) (symbol 1124 . 1126) (punctuation 1122 . 1123) (symbol 1105 . 1121) (punctuation 1101 . 1102) (symbol 1099 . 1101) (punctuation 1097 . 1098) (symbol 1079 . 1096) (punctuation 1075 . 1076) (symbol 1073 . 1075) (punctuation 1071 . 1072) (symbol 1054 . 1070) (punctuation 1050 . 1051) (symbol 1048 . 1050) (punctuation 1046 . 1047) (symbol 1025 . 1045) (punctuation 1021 . 1022) (symbol 1019 . 1021) (punctuation 1017 . 1018) (symbol 1006 . 1016) (punctuation 1002 . 1003) (symbol 1000 . 1002) (punctuation 998 . 999) (symbol 987 . 997) (punctuation 983 . 984) (symbol 981 . 983) (punctuation 979 . 980) (symbol 971 . 978) (punctuation 967 . 968) (symbol 965 . 967) (punctuation 963 . 964) (symbol 955 . 962) (ENUM 907 . 911))
+      :lexical-table 
+        '(("_ARA_DIAG_IMPL_TYPE_MONITORACTIONTYPE_H_")
+          )
+)
+    (semanticdb-table "semanticdb-table-39445d8"
+      :major-mode c++-mode
+      :tags 
+        '( ("_ARA_DIAG_IMPL_TYPE_UDSDTCSTATUSBYTETYPE_H_" variable (:constant-flag t) nil [815 858])
+            ("cstdint" include (:system-flag t) nil [860 878])
+            ("ara" type
+               (:members 
+                  ( ("diag" type
+                       (:members 
+                          ( ("std::uint8_t" variable (:type "int") (reparse-symbol namespacesubparts) [941 954]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [895 956]))                  
+                :type "namespace")
+                nil [879 976]))          
+      :file "impl_type_udsdtcstatusbytetype.h"
+      :pointmax 1049
+      :fsize 1048
+      :lastmodtime '(24419 4975 13205 152000)
+      :unmatched-syntax '((punctuation 939 . 940) (symbol 918 . 938) (USING 912 . 917))
+      :lexical-table 
+        '(("_ARA_DIAG_IMPL_TYPE_UDSDTCSTATUSBYTETYPE_H_")
+          )
+)
+    (semanticdb-table "semanticdb-table-3d2ea4c"
+      :major-mode c++-mode
+      :tags 
+        '( ("DEMSERVICE_EXE_INCLUDES_BASE_TYPE_STD_UINT32_T_H_" variable (:constant-flag t) nil [1071 1120])
+            ("cstdint" include (:system-flag t) nil [1122 1140])
+            ("string" include (:system-flag t) nil [1141 1158])
+            ("vector" include (:system-flag t) nil [1159 1176])
+            ("array" include (:system-flag t) nil [1177 1193])
+            ("map" include (:system-flag t) nil [1194 1208])
+            ("std_uint32_t" type
+               (:typedef ("std::uint32_t" type (:type "class") nil nil)
+                :type "typedef")
+                nil [1210 1245]))          
+      :file "base_type_std_uint32_t.h"
+      :pointmax 1307
+      :fsize 1306
+      :lastmodtime '(24419 4975 13205 152000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("DEMSERVICE_EXE_INCLUDES_BASE_TYPE_STD_UINT32_T_H_")
+          )
+)
+    (semanticdb-table "semanticdb-table-1ebc7c8"
+      :major-mode c++-mode
+      :tags 
+        '( ("_TYPE_FAULTDETECTIONCOUNTERTYPE_H_" variable (:constant-flag t) nil [813 847])
+            ("cstdint" include (:system-flag t) nil [849 867])
+            ("ara" type
+               (:members 
+                  ( ("diag" type
+                       (:members 
+                          ( ("std::uint8_t" variable (:type "int") (reparse-symbol namespacesubparts) [935 948]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [884 950]))                  
+                :type "namespace")
+                nil [868 970]))          
+      :file "impl_type_faultdetectioncountertype.h"
+      :pointmax 1034
+      :fsize 1033
+      :lastmodtime '(24419 4975 13205 152000)
+      :unmatched-syntax '((punctuation 933 . 934) (symbol 907 . 932) (USING 901 . 906))
+      :lexical-table 
+        '(("_TYPE_FAULTDETECTIONCOUNTERTYPE_H_")
+          )
+)
+    (semanticdb-table "semanticdb-table-3e8b834"
+      :major-mode c++-mode
+      :tags 
+        '( ("ARA_DIAG_IMPL_TYPE_DEBOUNCINGSTATETYPE_H_" variable (:constant-flag t) nil [814 855])
+            ("cstdint" include (:system-flag t) nil [857 875])
+            ("ara" type
+               (:members 
+                  ( ("diag" type
+                       (:members 
+                          ( ("std::uint8_t" variable (:type "int") (reparse-symbol namespacesubparts) [937 950]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [892 952]))                  
+                :type "namespace")
+                nil [876 972]))          
+      :file "impl_type_debouncingstatetype.h"
+      :pointmax 1043
+      :fsize 1042
+      :lastmodtime '(24419 4975 13205 152000)
+      :unmatched-syntax '((punctuation 935 . 936) (symbol 915 . 934) (USING 909 . 914))
+      :lexical-table 
+        '(("ARA_DIAG_IMPL_TYPE_DEBOUNCINGSTATETYPE_H_")
+          )
+)
+    (semanticdb-table "semanticdb-table-35fcd20"
+      :major-mode c++-mode
+      :tags 
+        '( ("__IMPL_TYPE_EVENTSTATUSBYTETYPE_H_" variable (:constant-flag t) nil [807 841])
+            ("cstdint" include (:system-flag t) nil [843 861])
+            ("ara" type
+               (:members 
+                  ( ("diag" type
+                       (:members 
+                          ( ("std::uint8_t" variable (:type "int") (reparse-symbol namespacesubparts) [923 936]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [878 938]))                  
+                :type "namespace")
+                nil [862 958]))          
+      :file "impl_type_eventstatusbytetype.h"
+      :pointmax 1022
+      :fsize 1021
+      :lastmodtime '(24419 4975 13205 152000)
+      :unmatched-syntax '((punctuation 921 . 922) (symbol 901 . 920) (USING 895 . 900))
+      :lexical-table 
+        '(("__IMPL_TYPE_EVENTSTATUSBYTETYPE_H_")
+          )
+)
+    (semanticdb-table "semanticdb-table-23dfeb8"
+      :major-mode c-mode
+      :tags 
+        '( ("ARA_DIAG_IMPL_TYPE_CONDITIONTYPE_H_" variable (:constant-flag t) nil [806 841])
+            ("cstdint" include (:system-flag t) nil [843 861])
+            ("ara" type
+               (:members 
+                  ( ("diag" type (:type "namespace") (reparse-symbol namespacesubparts) [878 980]))                  
+                :type "namespace")
+                nil [862 1000]))          
+      :file "impl_type_conditiontype.h"
+      :pointmax 1065
+      :fsize 1064
+      :lastmodtime '(24419 4975 13205 152000)
+      :unmatched-syntax '((punctuation 976 . 977) (semantic-list 927 . 976) (BOOL 922 . 926) (punctuation 920 . 921) (symbol 906 . 919) (CLASS 900 . 905) (ENUM 895 . 899))
+      :lexical-table 
+        '(("ARA_DIAG_IMPL_TYPE_CONDITIONTYPE_H_")
+          )
+)
+    (semanticdb-table "semanticdb-table-9f5928"
+      :major-mode c-mode
+      :tags 
+        '( ("_ARA_DIAG_IMPL_TYPE_INITMONITORREASONTYPE_H_" variable (:constant-flag t) nil [821 865])
+            ("cstdint" include (:system-flag t) nil [867 885])
+            ("ara" type
+               (:members 
+                  ( ("diag" type
+                       (:members 
+                          ( ("InitMonitorReasonType" type
+                               (:superclasses 
+                                  ( ("std::uint8_t" type
+                                       (:protection "unspecified"
+                                        :type "class")
+                                        nil nil))                                  
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [924 1045]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [902 1048]))                  
+                :type "namespace")
+                nil [886 1068]))          
+      :file "impl_type_initmonitorreasontype.h"
+      :pointmax 1142
+      :fsize 1141
+      :lastmodtime '(24419 4975 13205 152000)
+      :unmatched-syntax '((symbol 1040 . 1042) (punctuation 1038 . 1039) (symbol 1022 . 1037) (punctuation 1018 . 1019) (symbol 1016 . 1018) (punctuation 1014 . 1015) (symbol 1003 . 1013) (punctuation 999 . 1000) (symbol 997 . 999) (punctuation 995 . 996) (symbol 986 . 994) (punctuation 982 . 983) (symbol 980 . 982) (punctuation 978 . 979) (symbol 971 . 977) (ENUM 919 . 923) (ENUM 919 . 923))
+      :lexical-table 
+        '(("_ARA_DIAG_IMPL_TYPE_INITMONITORREASONTYPE_H_")
+          )
+)
+    (semanticdb-table "semanticdb-table-3816178"
+      :major-mode c++-mode
+      :tags 
+        '( ("ARA_DIAG_DEM_TYPES_DEBOUNCING_STATE_H_" variable (:constant-flag t) nil [798 836])
+            ("bitset" include (:system-flag t) nil [838 855])
+            ("ara/core/optional.h" include nil nil [857 887])
+            ("dem/types/impl_type_monitoractiontype.h" include nil nil [889 939])
+            ("ara" type
+               (:members 
+                  ( ("diag" type
+                       (:members 
+                          ( ("dem" type
+                               (:members 
+                                  ( ("DebouncingStateBit" type
+                                       (:superclasses 
+                                          ( ("std::int8_t" type
+                                               (:protection "unspecified"
+                                                :type "class")
+                                                nil nil))                                          
+                                        :type "class")
+                                        (reparse-symbol namespacesubparts) [1292 1808])
+                                    ("DebouncingState" type
+                                       (:members 
+                                          ( ("public" label nil (reparse-symbol classsubparts) [1908 1915])
+                                            ("noexcept" variable (:type "int") (reparse-symbol classsubparts) [2396 2405])
+                                            ("noexcept" variable
+                                               (:constant-flag t
+                                                :type "int")
+                                                (reparse-symbol classsubparts) [2875 2890])
+                                            ("private" label nil (reparse-symbol classsubparts) [2893 2901])
+                                            ("std::bitset" variable (:type "int") (reparse-symbol classsubparts) [3025 3040])
+                                            ("noexcept" variable
+                                               (:constant-flag t
+                                                :type "int")
+                                                (reparse-symbol classsubparts) [3511 3526])
+                                            ("debouncingState_" variable
+                                               (:constant-flag t
+                                                :type ("DebouncingStateType" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [3630 3673]))                                          
+                                        :type "class")
+                                        (reparse-symbol namespacesubparts) [1883 3676]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [974 3679]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [957 3698]))                  
+                :type "namespace")
+                nil [941 3718]))          
+      :file "debouncing_state.h"
+      :pointmax 3786
+      :fsize 3876
+      :lastmodtime '(24419 4975 13205 152000)
+      :unmatched-syntax '((semantic-list 3383 . 3510) (symbol 3359 . 3383) (symbol 3339 . 3358) (punctuation 3023 . 3024) (symbol 3003 . 3022) (USING 2997 . 3002) (semantic-list 2872 . 2874) (symbol 2869 . 2872) (symbol 2861 . 2868) (punctuation 2860 . 2861) (punctuation 2859 . 2860) (symbol 2856 . 2859) (punctuation 2445 . 2446) (DEFAULT 2438 . 2445) (punctuation 2436 . 2437) (semantic-list 2433 . 2435) (symbol 2418 . 2433) (punctuation 2417 . 2418) (VIRTUAL 2409 . 2416) (semantic-list 2247 . 2395) (symbol 2232 . 2247) (punctuation 2380 . 2381) (punctuation 2379 . 2380) (number 1804 . 1805) (punctuation 1802 . 1803) (symbol 1791 . 1801) (punctuation 1676 . 1677) (number 1675 . 1676) (punctuation 1673 . 1674) (symbol 1659 . 1672) (punctuation 1592 . 1593) (number 1591 . 1592) (punctuation 1589 . 1590) (symbol 1570 . 1588) (punctuation 1500 . 1501) (number 1499 . 1500) (punctuation 1497 . 1498) (symbol 1479 . 1496) (punctuation 1421 . 1422) (number 1420 . 1421) (punctuation 1418 . 1419) (symbol 1396 . 1417) (ENUM 1287 . 1291))
+      :lexical-table 
+        '(("ARA_DIAG_DEM_TYPES_DEBOUNCING_STATE_H_")
+          )
+)
+    (semanticdb-table "semanticdb-table-340ef40"
+      :major-mode c-mode
+      :tags 
+        '( ("_IMPL_TYPE_CLEARFAILEDREASONTYPE_H_" variable (:constant-flag t) nil [809 844])
+            ("cstdint" include (:system-flag t) nil [846 864])
+            ("ara" type
+               (:members 
+                  ( ("diag" type
+                       (:members 
+                          ( ("ClearFailedReasonType" type
+                               (:superclasses 
+                                  ( ("std::uint8_t" type
+                                       (:protection "unspecified"
+                                        :type "class")
+                                        nil nil))                                  
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [904 1046]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [882 1049]))                  
+                :type "namespace")
+                nil [866 1069]))          
+      :file "impl_type_clearfailedreasontype.h"
+      :pointmax 1134
+      :fsize 1133
+      :lastmodtime '(24419 4975 13205 152000)
+      :unmatched-syntax '((symbol 1041 . 1043) (punctuation 1039 . 1040) (symbol 1022 . 1038) (punctuation 1018 . 1019) (symbol 1016 . 1018) (punctuation 1014 . 1015) (symbol 1003 . 1013) (punctuation 999 . 1000) (symbol 997 . 999) (punctuation 995 . 996) (symbol 981 . 994) (punctuation 977 . 978) (symbol 975 . 977) (punctuation 973 . 974) (symbol 967 . 972) (punctuation 963 . 964) (symbol 961 . 963) (punctuation 959 . 960) (symbol 951 . 958) (ENUM 899 . 903))
+      :lexical-table 
+        '(("_IMPL_TYPE_CLEARFAILEDREASONTYPE_H_")
+          )
+)
+    (semanticdb-table "semanticdb-table-39d78ac"
+      :major-mode c++-mode
+      :tags 
+        '( ("_ERROR_DOMAIN_CLEARFAILEDREASONERRORDOMAIN_H_" variable (:constant-flag t) nil [832 877])
+            ("ara/core/error_code.h" include nil nil [879 911])
+            ("ara/core/error_domain.h" include nil nil [912 946])
+            ("ara/core/exception.h" include nil nil [947 978])
+            ("ara" type
+               (:members 
+                  ( ("diag" type
+                       (:members 
+                          ( ("clearfailedreason" type
+                               (:members 
+                                  ( ("ClearFailedReasonErrorDomainErrc" type
+                                       (:superclasses 
+                                          ( ("ara::core::ErrorDomain::CodeType" type
+                                               (:protection "unspecified"
+                                                :type "class")
+                                                nil nil))                                          
+                                        :type "class")
+                                        (reparse-symbol namespacesubparts) [1048 1191])
+                                    ("ClearFailedReasonErrorDomainException" type
+                                       (:superclasses 
+                                          ( ("ara::core::Exception" type
+                                               (:protection "public"
+                                                :type "class")
+                                                nil nil))                                          
+                                        :members 
+                                          ( ("public" label nil (reparse-symbol classsubparts) [1270 1277])
+                                            ("Exception" function
+                                               (:parent "ara::core"
+                                                :arguments 
+                                                  ( ("" variable (:type ("err" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1391 1395]))                                                  
+                                                :type "int")
+                                                (reparse-symbol classsubparts) [1370 1400]))                                          
+                                        :type "class")
+                                        (reparse-symbol namespacesubparts) [1193 1403])
+                                    ("ara::core::ErrorDomain" variable (:type "int") (reparse-symbol namespacesubparts) [1466 2756])
+                                    ("internal" type
+                                       (:members 
+                                          ( ("g_ClearFailedReasonErrorDomainErrorDomain" variable (:type ("ClearFailedReasonErrorDomainErrorDomain" type (:type "class") nil nil)) (reparse-symbol namespacesubparts) [2789 2871]))                                          
+                                        :type "namespace")
+                                        (reparse-symbol namespacesubparts) [2758 2873]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [1013 3346]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [996 3379]))                  
+                :type "namespace")
+                nil [980 3399]))          
+      :file "error_domain_clearfailedreason_errordomain.h"
+      :pointmax 3474
+      :fsize 3473
+      :lastmodtime '(24419 4975 13205 152000)
+      :unmatched-syntax '((semantic-list 3196 . 3343) (symbol 3187 . 3195) (semantic-list 3096 . 3186) (symbol 3083 . 3096) (symbol 3073 . 3082) (punctuation 3072 . 3073) (punctuation 3071 . 3072) (symbol 3067 . 3071) (punctuation 3066 . 3067) (punctuation 3065 . 3066) (symbol 3062 . 3065) (symbol 3052 . 3061) (INLINE 3045 . 3051) (semantic-list 2976 . 3043) (symbol 2967 . 2975) (semantic-list 2964 . 2966) (symbol 2922 . 2964) (punctuation 2920 . 2921) (CONST 2915 . 2920) (symbol 2903 . 2914) (punctuation 2902 . 2903) (punctuation 2901 . 2902) (symbol 2897 . 2901) (punctuation 2896 . 2897) (punctuation 2895 . 2896) (symbol 2892 . 2895) (symbol 2882 . 2891) (INLINE 2875 . 2881) (symbol 2779 . 2788) (PUBLIC 1459 . 1465) (punctuation 1457 . 1458) (symbol 1451 . 1456) (symbol 1411 . 1450) (CLASS 1405 . 1410) (punctuation 1362 . 1363) (symbol 1353 . 1361) (semantic-list 1326 . 1352) (symbol 1289 . 1326) (EXPLICIT 1280 . 1288) (punctuation 1187 . 1188) (number 1186 . 1187) (punctuation 1184 . 1185) (symbol 1174 . 1183) (punctuation 1170 . 1171) (number 1169 . 1170) (punctuation 1167 . 1168) (symbol 1154 . 1166) (punctuation 1150 . 1151) (number 1149 . 1150) (punctuation 1147 . 1148) (symbol 1139 . 1146) (punctuation 1135 . 1136) (number 1134 . 1135) (punctuation 1132 . 1133) (symbol 1126 . 1131) (ENUM 1043 . 1047))
+      :lexical-table 
+        '(("_ERROR_DOMAIN_CLEARFAILEDREASONERRORDOMAIN_H_")
+          )
+)
+    (semanticdb-table "semanticdb-table-2ad9ecc"
+      :major-mode c++-mode
+      :tags 
+        '( ("_ARA_DIAG_IMPL_TYPE_SNAPSHOTDATARECORDTYPE_H_" variable (:constant-flag t) nil [831 876])
+            ("cstdint" include (:system-flag t) nil [878 896])
+            ("dem/types/impl_type_snapshotdatainfotypearray.h" include nil nil [898 956])
+            ("ara" type
+               (:members 
+                  ( ("diag" type
+                       (:members 
+                          ( ("SnapshotDataRecordType" type
+                               (:members 
+                                  ( ("SnapshotRecordNumber" variable (:type ("std::uint8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1025 1059])
+                                    ("SnapshotDataElements" variable (:type ("ara::diag::SnapshotDataInfoTypeArray" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1064 1122])
+                                    ("enumerate" function
+                                       (:template 
+                                          ( ("F" type (:type "class") nil nil))                                          
+                                        :type "void"
+                                        :arguments 
+                                          ( ("fun" variable
+                                               (:reference 1
+                                                :type ("F" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [1197 1204]))                                          )
+                                        (reparse-symbol classsubparts) [1158 1286]))                                  
+                                :type "struct")
+                                (reparse-symbol namespacesubparts) [991 1289]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [974 1291]))                  
+                :type "namespace")
+                nil [958 1311]))          
+      :file "impl_type_snapshotdatarecordtype.h"
+      :pointmax 1386
+      :fsize 1385
+      :lastmodtime '(24419 4975 13205 152000)
+      :unmatched-syntax '((punctuation 1154 . 1155) (VOID 1150 . 1154) (punctuation 1148 . 1149) (symbol 1132 . 1147) (USING 1126 . 1131) (punctuation 1063 . 1064) (punctuation 1062 . 1063))
+      :lexical-table 
+        '(("_ARA_DIAG_IMPL_TYPE_SNAPSHOTDATARECORDTYPE_H_")
+          )
+)
+    (semanticdb-table "semanticdb-table-2da38c4"
+      :major-mode c-mode
+      :tags 
+        '( ("DEMSERVICE_EXE_INCLUDES_ARA_STDTYPES_IMPL_TYPE_UINT32_H_" variable (:constant-flag t) nil [1066 1122])
+            ("base_type_std_uint32_t.h" include nil nil [1124 1159])
+            ("ara" type
+               (:members 
+                  ( ("stdtypes" type
+                       (:members 
+                          ( ("UInt32" variable (:type ("std_uint32_t" type (:type "class") nil nil)) (reparse-symbol namespacesubparts) [1208 1228]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [1177 1231]))                  
+                :type "namespace")
+                nil [1161 1255]))          
+      :file "impl_type_uint32.h"
+      :pointmax 1341
+      :fsize 1340
+      :lastmodtime '(24419 4975 13205 152000)
+      :unmatched-syntax '((punctuation 1207 . 1208) (punctuation 1206 . 1207) (TYPEDEF 1198 . 1205))
+      :lexical-table 
+        '(("DEMSERVICE_EXE_INCLUDES_ARA_STDTYPES_IMPL_TYPE_UINT32_H_")
+          )
+)
+    (semanticdb-table "semanticdb-table-264855c"
+      :major-mode c-mode
+      :tags 
+        '( ("ARA_DIAG_IMPL_TYPE_DTCFORMATTYPE_H_" variable (:constant-flag t) nil [802 837])
+            ("cstdint" include (:system-flag t) nil [839 857])
+            ("ara" type
+               (:members 
+                  ( ("diag" type
+                       (:members 
+                          ( ("DTCFormatType" type
+                               (:superclasses 
+                                  ( ("std::uint8_t" type
+                                       (:protection "unspecified"
+                                        :type "class")
+                                        nil nil))                                  
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [896 1002]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [874 1005]))                  
+                :type "namespace")
+                nil [858 1025]))          
+      :file "impl_type_dtcformattype.h"
+      :pointmax 1090
+      :fsize 1089
+      :lastmodtime '(24419 4975 13205 152000)
+      :unmatched-syntax '((symbol 997 . 999) (punctuation 995 . 996) (symbol 979 . 994) (punctuation 975 . 976) (symbol 973 . 975) (punctuation 971 . 972) (symbol 957 . 970) (punctuation 953 . 954) (symbol 951 . 953) (punctuation 949 . 950) (symbol 935 . 948) (ENUM 891 . 895))
+      :lexical-table 
+        '(("ARA_DIAG_IMPL_TYPE_DTCFORMATTYPE_H_")
+          )
+)
+    (semanticdb-table "semanticdb-table-3ba2de8"
+      :major-mode c++-mode
+      :tags 
+        '( ("_ARA_DIAG_IMPL_TYPE_UDSDTCSTATUSBYTECHANGEDTYPE_H_" variable (:constant-flag t) nil [841 891])
+            ("cstdint" include (:system-flag t) nil [893 911])
+            ("ara" type
+               (:members 
+                  ( ("diag" type
+                       (:members 
+                          ( ("UdsDTCStatusByteChangedType" type
+                               (:members 
+                                  ( ("uds_dtc_status_old" variable (:type ("std::uint8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [985 1017])
+                                    ("uds_dtc_status_new" variable (:type ("std::uint8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1020 1052])
+                                    ("enumerate" function
+                                       (:template 
+                                          ( ("F" type (:type "class") nil nil))                                          
+                                        :type "void"
+                                        :arguments 
+                                          ( ("fun" variable
+                                               (:reference 1
+                                                :type ("F" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [1127 1134]))                                          )
+                                        (reparse-symbol classsubparts) [1088 1212]))                                  
+                                :type "struct")
+                                (reparse-symbol namespacesubparts) [946 1215]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [929 1217]))                  
+                :type "namespace")
+                nil [913 1237]))          
+      :file "impl_type_udsdtcstatusbytechangedtype.h"
+      :pointmax 1317
+      :fsize 1316
+      :lastmodtime '(24419 4975 13205 152000)
+      :unmatched-syntax '((punctuation 1084 . 1085) (VOID 1080 . 1084) (punctuation 1078 . 1079) (symbol 1062 . 1077) (USING 1056 . 1061))
+      :lexical-table 
+        '(("_ARA_DIAG_IMPL_TYPE_UDSDTCSTATUSBYTECHANGEDTYPE_H_")
+          )
+)
+    (semanticdb-table "semanticdb-table-369871c"
+      :major-mode c++-mode
+      :tags 
+        '( ("ARA_DIAG_IMPL_TYPE_DTCTYPE_H_" variable (:constant-flag t) nil [790 819])
+            ("cstdint" include (:system-flag t) nil [821 839])
+            ("ara" type
+               (:members 
+                  ( ("diag" type
+                       (:members 
+                          ( ("std::uint32_t" variable (:type "int") (reparse-symbol namespacesubparts) [889 903]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [856 905]))                  
+                :type "namespace")
+                nil [840 925]))          
+      :file "impl_type_dtctype.h"
+      :pointmax 984
+      :fsize 983
+      :lastmodtime '(24419 4975 13205 152000)
+      :unmatched-syntax '((punctuation 887 . 888) (symbol 879 . 886) (USING 873 . 878))
+      :lexical-table 
+        '(("ARA_DIAG_IMPL_TYPE_DTCTYPE_H_")
+          )
+)
+    (semanticdb-table "semanticdb-table-c7bb3c"
+      :major-mode c-mode
+      :tags 
+        '( ("SOURCE_DEM_TYPES_STD_TYPES_H_" variable (:constant-flag t) nil [784 813])
+            ("bitset" include (:system-flag t) nil [815 832])
+            ("ara" type
+               (:members 
+                  ( ("diag" type
+                       (:members 
+                          ( ("dem" type
+                               (:members 
+                                  ( ("EventIdType" type
+                                       (:typedef ("uint32_t" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol namespacesubparts) [883 912])
+                                    ("OperationCycleIdType" type
+                                       (:typedef ("uint32_t" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol namespacesubparts) [913 951])
+                                    ("DtcType" type
+                                       (:typedef ("uint32_t" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol namespacesubparts) [953 978])
+                                    ("DebounceResetStatusType" type
+                                       (:typedef ("" type
+                                             (:members 
+                                                ( ("DEM_DEBOUNCE_STATUS_FREEZE" variable
+                                                     (:constant-flag t
+                                                      :type "int")
+                                                      (reparse-symbol enumsubparts) [997 1024])
+                                                  ("DEM_DEBOUNCE_STATUS_RESET" variable
+                                                     (:constant-flag t
+                                                      :type "int")
+                                                      (reparse-symbol enumsubparts) [1027 1054]))                                                
+                                              :type "enum")
+                                              nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol namespacesubparts) [980 1079])
+                                    ("DemDebounceAlgorithmType" type
+                                       (:typedef ("" type
+                                             (:members 
+                                                ( ("COUNTER_BASED" variable
+                                                     (:constant-flag t
+                                                      :type "int")
+                                                      (reparse-symbol enumsubparts) [1098 1112])
+                                                  ("TIMER_BASED" variable
+                                                     (:constant-flag t
+                                                      :type "int")
+                                                      (reparse-symbol enumsubparts) [1115 1127])
+                                                  ("NO_DEBOUNCE" variable
+                                                     (:constant-flag t
+                                                      :type "int")
+                                                      (reparse-symbol enumsubparts) [1130 1143]))                                                
+                                              :type "enum")
+                                              nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol namespacesubparts) [1081 1169])
+                                    ("CounterBasedParams" type
+                                       (:typedef ("" type
+                                             (:members 
+                                                ( ("counter_failed_threshold_" variable (:type ("int16_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1190 1224])
+                                                  ("counter_passed_threshold_" variable (:type ("int16_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1227 1261])
+                                                  ("decrement_step_size_" variable (:type ("int8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1264 1292])
+                                                  ("increment_step_size_" variable (:type ("int8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1295 1323])
+                                                  ("counter_jump_down_value_" variable (:type ("int8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1326 1358])
+                                                  ("counter_jump_up_value_" variable (:type ("int8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1361 1391])
+                                                  ("counter_jump_down_" variable (:type "bool") (reparse-symbol classsubparts) [1394 1418])
+                                                  ("counter_jump_up_" variable (:type "bool") (reparse-symbol classsubparts) [1421 1443]))                                                
+                                              :type "struct")
+                                              nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol namespacesubparts) [1171 1465])
+                                    ("TimeValueType" type
+                                       (:typedef ("int")
+                                        :type "typedef")
+                                        (reparse-symbol namespacesubparts) [1498 1524])
+                                    ("TimeBasedParams" type
+                                       (:typedef ("" type
+                                             (:members 
+                                                ( ("time_passed_threshold_" variable (:type ("TimeValueType" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1594 1631])
+                                                  ("time_failed_threshold_" variable (:type ("TimeValueType" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1634 1671]))                                                
+                                              :type "struct")
+                                              nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol namespacesubparts) [1575 1690])
+                                    ("DiagnosticMemoryEntryStorageTriggerEnum" type
+                                       (:members 
+                                          ( ("kCONFIRMED" variable
+                                               (:constant-flag t
+                                                :type "int")
+                                                (reparse-symbol enumsubparts) [1833 1844])
+                                            ("kFDC_THRESHOLD" variable
+                                               (:constant-flag t
+                                                :type "int")
+                                                (reparse-symbol enumsubparts) [1847 1862])
+                                            ("kPENDING" variable
+                                               (:constant-flag t
+                                                :type "int")
+                                                (reparse-symbol enumsubparts) [1865 1874])
+                                            ("kTEST_FAILED" variable
+                                               (:constant-flag t
+                                                :type "int")
+                                                (reparse-symbol enumsubparts) [1877 1891]))                                          
+                                        :type "enum")
+                                        (reparse-symbol namespacesubparts) [1784 1892]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [867 2032]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [850 2051]))                  
+                :type "namespace")
+                nil [834 2071]))          
+      :file "std_types.h"
+      :pointmax 2130
+      :fsize 2209
+      :lastmodtime '(24419 4975 13205 152000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("SOURCE_DEM_TYPES_STD_TYPES_H_")
+          )
+)
+    (semanticdb-table "semanticdb-table-1f8d69c"
+      :major-mode c++-mode
+      :tags 
+        '( ("__ARA_DIAG_IMPL_TYPE_SNAPSHOTDATAINFOTYPE_H_" variable (:constant-flag t) nil [828 872])
+            ("cstdint" include (:system-flag t) nil [874 892])
+            ("common/stdtypes/std_types.h" include nil nil [894 932])
+            ("ara" type
+               (:members 
+                  ( ("diag" type
+                       (:members 
+                          ( ("SnapshotDataInfoType" type
+                               (:members 
+                                  ( ("DataIdentifier" variable (:type ("std::uint16_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [999 1028])
+                                    ("Data" variable (:type ("ByteArray" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1033 1048])
+                                    ("enumerate" function
+                                       (:template 
+                                          ( ("F" type (:type "class") nil nil))                                          
+                                        :type "void"
+                                        :arguments 
+                                          ( ("fun" variable
+                                               (:reference 1
+                                                :type ("F" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [1123 1130]))                                          )
+                                        (reparse-symbol classsubparts) [1084 1190]))                                  
+                                :type "struct")
+                                (reparse-symbol namespacesubparts) [967 1193]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [950 1195]))                  
+                :type "namespace")
+                nil [934 1215]))          
+      :file "impl_type_snapshotdatainfotype.h"
+      :pointmax 1289
+      :fsize 1288
+      :lastmodtime '(24419 4975 13205 152000)
+      :unmatched-syntax '((punctuation 1080 . 1081) (VOID 1076 . 1080) (punctuation 1074 . 1075) (symbol 1058 . 1073) (USING 1052 . 1057) (punctuation 1032 . 1033) (punctuation 1031 . 1032))
+      :lexical-table 
+        '(("__ARA_DIAG_IMPL_TYPE_SNAPSHOTDATAINFOTYPE_H_")
+          )
+)
+    (semanticdb-table "semanticdb-table-250ba90"
+      :major-mode c++-mode
+      :tags 
+        '( ("ARA_DIAG_DEM_TYPES_EVENT_STATUS_H_" variable (:constant-flag t) nil [790 824])
+            ("bitset" include (:system-flag t) nil [826 843])
+            ("ara" type
+               (:members 
+                  ( ("diag" type
+                       (:members 
+                          ( ("dem" type
+                               (:members 
+                                  ( ("types" type
+                                       (:members 
+                                          ( ("EventStatusBit" type
+                                               (:superclasses 
+                                                  ( ("std::int8_t" type
+                                                       (:protection "unspecified"
+                                                        :type "class")
+                                                        nil nil))                                                  
+                                                :type "class")
+                                                (reparse-symbol namespacesubparts) [1162 1419])
+                                            ("EventStatus" type
+                                               (:members 
+                                                  ( ("public" label nil (reparse-symbol classsubparts) [1516 1523])
+                                                    ("noexcept" variable (:type "int") (reparse-symbol classsubparts) [1635 1644])
+                                                    ("noexcept" variable
+                                                       (:constant-flag t
+                                                        :type "int")
+                                                        (reparse-symbol classsubparts) [2146 2161])
+                                                    ("noexcept" variable
+                                                       (:constant-flag t
+                                                        :type "int")
+                                                        (reparse-symbol classsubparts) [2297 2312])
+                                                    ("noexcept" variable (:type "int") (reparse-symbol classsubparts) [2435 2444])
+                                                    ("noexcept" variable (:type "int") (reparse-symbol classsubparts) [2569 2578])
+                                                    ("noexcept" variable (:type "int") (reparse-symbol classsubparts) [2662 2671])
+                                                    ("==" function
+                                                       (:prototype-flag t
+                                                        :methodconst-flag t
+                                                        :operator-flag t
+                                                        :arguments 
+                                                          ( ("other" variable
+                                                               (:reference 1
+                                                                :constant-flag t
+                                                                :type ("EventStatus" type (:type "class") nil nil))
+                                                                (reparse-symbol arg-sub-list) [2691 2716]))                                                          
+                                                        :type "bool")
+                                                        (reparse-symbol classsubparts) [2675 2723])
+                                                    ("!=" function
+                                                       (:methodconst-flag t
+                                                        :operator-flag t
+                                                        :arguments 
+                                                          ( ("other" variable
+                                                               (:reference 1
+                                                                :constant-flag t
+                                                                :type ("EventStatus" type (:type "class") nil nil))
+                                                                (reparse-symbol arg-sub-list) [2742 2767]))                                                          
+                                                        :type "bool")
+                                                        (reparse-symbol classsubparts) [2726 2811])
+                                                    ("private" label nil (reparse-symbol classsubparts) [2814 2822])
+                                                    ("std::bitset" variable (:type "int") (reparse-symbol classsubparts) [2943 2958])
+                                                    ("eventStatus_" variable (:type ("EventStatusType" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3001 3030]))                                                  
+                                                :type "class")
+                                                (reparse-symbol namespacesubparts) [1495 3033]))                                          
+                                        :type "namespace")
+                                        (reparse-symbol namespacesubparts) [894 3036]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [878 3057]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [861 3076]))                  
+                :type "namespace")
+                nil [845 3096]))          
+      :file "event_status.h"
+      :pointmax 3160
+      :fsize 3252
+      :lastmodtime '(24419 4975 13205 152000)
+      :unmatched-syntax '((punctuation 2941 . 2942) (symbol 2925 . 2940) (USING 2919 . 2924) (semantic-list 2659 . 2661) (symbol 2654 . 2659) (VOID 2649 . 2653) (semantic-list 2549 . 2568) (symbol 2544 . 2549) (VOID 2539 . 2543) (semantic-list 2415 . 2434) (symbol 2412 . 2415) (VOID 2407 . 2411) (semantic-list 2277 . 2296) (symbol 2274 . 2277) (BOOL 2269 . 2273) (semantic-list 2143 . 2145) (symbol 2140 . 2143) (symbol 2132 . 2139) (punctuation 1881 . 1882) (DEFAULT 1874 . 1881) (punctuation 1872 . 1873) (semantic-list 1856 . 1871) (punctuation 1855 . 1856) (OPERATOR 1847 . 1855) (punctuation 1869 . 1870) (punctuation 1845 . 1846) (symbol 1834 . 1845) (punctuation 1869 . 1870) (punctuation 1830 . 1831) (DEFAULT 1823 . 1830) (punctuation 1821 . 1822) (semantic-list 1800 . 1820) (punctuation 1799 . 1800) (OPERATOR 1791 . 1799) (punctuation 1789 . 1790) (symbol 1778 . 1789) (punctuation 1774 . 1775) (DEFAULT 1767 . 1774) (punctuation 1765 . 1766) (symbol 1756 . 1764) (semantic-list 1740 . 1755) (symbol 1729 . 1740) (punctuation 1753 . 1754) (punctuation 1725 . 1726) (DEFAULT 1718 . 1725) (punctuation 1716 . 1717) (semantic-list 1695 . 1715) (symbol 1684 . 1695) (punctuation 1680 . 1681) (DEFAULT 1673 . 1680) (punctuation 1671 . 1672) (semantic-list 1668 . 1670) (symbol 1657 . 1668) (punctuation 1656 . 1657) (VIRTUAL 1648 . 1655) (semantic-list 1632 . 1634) (symbol 1621 . 1632) (punctuation 1415 . 1416) (number 1414 . 1415) (punctuation 1412 . 1413) (symbol 1376 . 1411) (punctuation 1322 . 1323) (number 1321 . 1322) (punctuation 1319 . 1320) (symbol 1289 . 1318) (punctuation 1241 . 1242) (number 1240 . 1241) (punctuation 1238 . 1239) (symbol 1226 . 1237) (ENUM 1157 . 1161))
+      :lexical-table 
+        '(("ARA_DIAG_DEM_TYPES_EVENT_STATUS_H_")
+          )
+)
+    (semanticdb-table "semanticdb-table-2e54e08"
+      :major-mode c++-mode
+      :tags 
+        '( ("ARA_DIAG_IMPL_TYPE_SNAPSHOTDATAINFOTYPEARRAY_H_" variable (:constant-flag t) nil [836 883])
+            ("ara/core/vector.h" include nil nil [885 913])
+            ("dem/types/impl_type_snapshotdatainfotype.h" include nil nil [914 967])
+            ("ara" type
+               (:members 
+                  ( ("diag" type (:type "namespace") (reparse-symbol namespacesubparts) [984 1090]))                  
+                :type "namespace")
+                nil [968 1110]))          
+      :file "impl_type_snapshotdatainfotypearray.h"
+      :pointmax 1187
+      :fsize 1186
+      :lastmodtime '(24419 4975 13205 152000)
+      :unmatched-syntax '((punctuation 1087 . 1088) (punctuation 1086 . 1087) (symbol 1066 . 1086) (punctuation 1065 . 1066) (punctuation 1064 . 1065) (symbol 1060 . 1064) (punctuation 1059 . 1060) (punctuation 1058 . 1059) (symbol 1055 . 1058) (punctuation 1054 . 1055) (punctuation 1053 . 1054) (punctuation 1052 . 1053) (symbol 1046 . 1052) (punctuation 1045 . 1046) (punctuation 1044 . 1045) (symbol 1040 . 1044) (punctuation 1039 . 1040) (punctuation 1038 . 1039) (symbol 1035 . 1038) (punctuation 1033 . 1034) (symbol 1007 . 1032) (USING 1001 . 1006))
+      :lexical-table 
+        '(("ARA_DIAG_IMPL_TYPE_SNAPSHOTDATAINFOTYPEARRAY_H_")
+          )
+)
+    (semanticdb-table "semanticdb-table-cbcd20"
+      :major-mode c-mode
+      :tags 
+        '( ("__ARA_DIAG_IMPL_TYPE_OPERATIONCYCLESTATETYPE_H_" variable (:constant-flag t) nil [834 881])
+            ("cstdint" include (:system-flag t) nil [883 901])
+            ("ara" type
+               (:members 
+                  ( ("diag" type
+                       (:members 
+                          ( ("OperationCycleStateType" type
+                               (:superclasses 
+                                  ( ("std::uint8_t" type
+                                       (:protection "unspecified"
+                                        :type "class")
+                                        nil nil))                                  
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [940 1016]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [918 1019]))                  
+                :type "namespace")
+                nil [902 1039]))          
+      :file "impl_type_operationcyclestatetype.h"
+      :pointmax 1116
+      :fsize 1115
+      :lastmodtime '(24419 4975 13205 152000)
+      :unmatched-syntax '((symbol 1011 . 1013) (punctuation 1009 . 1010) (symbol 1004 . 1008) (punctuation 1000 . 1001) (symbol 998 . 1000) (punctuation 996 . 997) (symbol 989 . 995) (ENUM 935 . 939))
+      :lexical-table 
+        '(("__ARA_DIAG_IMPL_TYPE_OPERATIONCYCLESTATETYPE_H_")
+          )
+)
+    (semanticdb-table "semanticdb-table-204150c"
+      :major-mode c++-mode
+      :tags 
+        '( ("ARA_DIAG_DEM_TYPES_DTC_STATUS_H_" variable (:constant-flag t) nil [780 812])
+            ("cstdint" include (:system-flag t) nil [814 832])
+            ("bitset" include (:system-flag t) nil [833 850])
+            ("ara/log/logging.h" include nil nil [852 880])
+            ("ara" type
+               (:members 
+                  ( ("diag" type
+                       (:members 
+                          ( ("dem" type
+                               (:members 
+                                  ( ("types" type
+                                       (:members 
+                                          ( ("DTCStatusBit" type
+                                               (:superclasses 
+                                                  ( ("std::int8_t" type
+                                                       (:protection "unspecified"
+                                                        :type "class")
+                                                        nil nil))                                                  
+                                                :type "class")
+                                                (reparse-symbol namespacesubparts) [1001 1282])
+                                            ("final" variable (:type ("DTCStatus" type
+                                                 (:prototype t
+                                                  :type "class")
+                                                  nil nil)) (reparse-symbol namespacesubparts) [1357 2912]))                                          
+                                        :type "namespace")
+                                        (reparse-symbol namespacesubparts) [931 2915]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [915 2936]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [898 2955]))                  
+                :type "namespace")
+                nil [882 2975]))          
+      :file "dtc_status.h"
+      :pointmax 3037
+      :fsize 3129
+      :lastmodtime '(24419 4975 13205 152000)
+      :unmatched-syntax '((number 1278 . 1279) (punctuation 1276 . 1277) (symbol 1249 . 1275) (punctuation 1245 . 1246) (number 1244 . 1245) (punctuation 1242 . 1243) (symbol 1206 . 1241) (punctuation 1202 . 1203) (number 1201 . 1202) (punctuation 1199 . 1200) (symbol 1173 . 1198) (punctuation 1169 . 1170) (number 1168 . 1169) (punctuation 1166 . 1167) (symbol 1134 . 1165) (punctuation 1130 . 1131) (number 1129 . 1130) (punctuation 1127 . 1128) (symbol 1113 . 1126) (punctuation 1109 . 1110) (number 1108 . 1109) (punctuation 1106 . 1107) (symbol 1094 . 1105) (punctuation 1090 . 1091) (number 1089 . 1090) (punctuation 1087 . 1088) (symbol 1057 . 1086) (punctuation 1053 . 1054) (number 1052 . 1053) (punctuation 1050 . 1051) (symbol 1038 . 1049) (ENUM 996 . 1000))
+      :lexical-table 
+        '(("ARA_DIAG_DEM_TYPES_DTC_STATUS_H_")
+          )
+))
+  :file "!home!hyuk.myeong!work!LARARA!avin!avin-ap!dm!source!inc!private!dem!types!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

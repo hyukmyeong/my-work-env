@@ -1,0 +1,14 @@
+;; Object semanticdb-project-database-file-27c7144
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-27c7144"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-27c7150"
+      :major-mode c++-mode
+      :tags nil
+      :file "main.cpp"
+      :pointmax 1
+      :unmatched-syntax nil))
+  :file "!home!hyuk.myeong!work!LARA!Apps!source!services!update_adapter!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

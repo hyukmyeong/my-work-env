@@ -1,0 +1,383 @@
+;; Object semanticdb-project-database-file-31cd2d0
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-31cd2d0"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-31cd2ec"
+      :major-mode c++-mode
+      :tags 
+        '( ("DiagCommon.h" include nil nil [34 57])
+            ("DiagDataMap.h" include nil nil [59 83])
+            ("Identification_Map" variable
+               (:dereference 1
+                :default-value "{
+  // ID     size   promise  cache  bRoutineRunning routineStatus
+  { 0x0407,   90,    NULL,  NULL, false, ROUTINE_INACTIVE},//[Dia_Ident_28]  DSDL
+  { 0x040F,   90,    NULL,  NULL, false, ROUTINE_INACTIVE},//[Dia_Ident_95]  DSDL
+  { 0x0410,    1,    NULL,  NULL, false, ROUTINE_INACTIVE},//[Dia_Ident_144] DSDL
+  { 0x04A3,    1,    NULL,  NULL, false, ROUTINE_INACTIVE},//[Dia_Ident_228] DSDL
+  { 0x0611,   15,    NULL,  NULL, false, ROUTINE_INACTIVE},//[Dia_Ident_197] ABT
+  { 0x0612,    8,    NULL,  NULL, false, ROUTINE_INACTIVE},//[Dia_Ident_201] ABT
+  { 0x0613,    7,    NULL,  NULL, false, ROUTINE_INACTIVE},//[Dia_Ident_205] ABT
+  { 0x0614,   15,    NULL,  NULL, false, ROUTINE_INACTIVE},//[Dia_Ident_209] ABT
+  { 0x0615,   24,    NULL,  NULL, false, ROUTINE_INACTIVE},//[Dia_Ident_213] ABT
+  { 0x0616,   27,    NULL,  NULL, false, ROUTINE_INACTIVE},//[Dia_Ident_217] ABT
+  { 0x0617,   17,    NULL,  NULL, false, ROUTINE_INACTIVE},//[Dia_Ident_221] ABT
+  { 0x061A,    4,    NULL,  NULL, false, ROUTINE_INACTIVE},//[Dia_Ident_235] ABT
+  { 0x061B,   64,    NULL,  NULL, false, ROUTINE_INACTIVE},//[Dia_Ident_236] ABT
+  { 0x061C,   64,    NULL,  NULL, false, ROUTINE_INACTIVE},//[Dia_Ident_237] ABT
+  { 0x061D,    4,    NULL,  NULL, false, ROUTINE_INACTIVE},//[Dia_Ident_238] ABT
+  { 0x2A26,    1,    NULL,  NULL, false, ROUTINE_INACTIVE},//[Dia_Ident_229] MCU, own
+  { 0x2A27,    1,    NULL,  NULL, false, ROUTINE_INACTIVE},//[Dia_Ident_230] MCU, own
+  { 0x2A28,    1,    NULL,  NULL, false, ROUTINE_INACTIVE},//[Dia_Ident_231] MCU <= when booting...
+  { 0x2A29,    2,    NULL,  NULL, false, ROUTINE_INACTIVE},//[Dia_Ident_232] MCU, own
+  { 0x2A2D,    2,    NULL,  NULL, false, ROUTINE_INACTIVE},//[Dia_Ident_233] MCU, own
+  { 0x2EE0,    1,    NULL,  NULL, false, ROUTINE_INACTIVE},//[Dia_Ident_240] MCU, own
+  { 0x2EE1,    1,    NULL,  NULL, false, ROUTINE_INACTIVE},//[Dia_Ident_241] MCU, own
+  { 0xF15A,    9,    NULL,  NULL, false, ROUTINE_INACTIVE},//[Dia_Ident_93]  DSA
+  { 0xF15B,  450,    NULL,  NULL, false, ROUTINE_INACTIVE},//[Dia_Ident_94]  DSDL
+  { 0xF17C,   23,    NULL,  NULL, false, ROUTINE_INACTIVE},//[Dia_Ident_5]   MCU <= Read request
+  { 0xF186,    1,    NULL,  NULL, false, ROUTINE_INACTIVE},//[Dia_Ident_89]  SAFE, own
+  { 0xF187,   11,    NULL,  NULL, false, ROUTINE_INACTIVE},//[Dia_Ident_7]   MCU <= Read request
+  { 0xF189,    4,    NULL,  NULL, false, ROUTINE_INACTIVE},//[Dia_Ident_110] VCI <= Safe partition
+  { 0xF190,   17,    NULL,  NULL, false, ROUTINE_INACTIVE},//[Dia_Ident_9]   VCI <= Safe partition
+  { 0xF191,   11,    NULL,  NULL, false, ROUTINE_INACTIVE},//[Dia_Ident_9]   VCI <= Safe partition
+  { 0xF197,   13,    NULL,  NULL, false, ROUTINE_INACTIVE},//[Dia_Ident_10]  fixed, own
+  { 0xF1A0,   11,    NULL,  NULL, false, ROUTINE_INACTIVE},//[Dia_Ident_39]  DSA
+  { 0xF1A1,    4,    NULL,  NULL, false, ROUTINE_INACTIVE},//[Dia_Ident_40]  DSA
+  { 0xF1A2,    6,    NULL,  NULL, false, ROUTINE_INACTIVE},//[Dia_Ident_91]  DSDL
+  { 0xF1A3,    3,    NULL,  NULL, false, ROUTINE_INACTIVE},//[Dia_Ident_11]  SAFE, own
+  { 0xF1AA,    5,    NULL,  NULL, false, ROUTINE_INACTIVE},//[Dia_Ident_12]  VCI, ???
+  { 0xF1AB,  180,    NULL,  NULL, false, ROUTINE_INACTIVE},//[Dia_Ident_109] DSDL
+  { 0xF1AF, 4090,    NULL,  NULL, false, ROUTINE_INACTIVE},//[Dia_Ident_69]  //???
+  { 0xF1B1,  154,    NULL,  NULL, false, ROUTINE_INACTIVE},//[Dia_Ident_183] DSA
+  { 0xF1B3,  309,    NULL,  NULL, false, ROUTINE_INACTIVE},//[Dia_Ident_194] DSA
+  { 0xF1B4,   26,    NULL,  NULL, false, ROUTINE_INACTIVE},//[Dia_Ident_195] SAFE, own
+  { 0xF1B5,    5,    NULL,  NULL, false, ROUTINE_INACTIVE},//[Dia_Ident_226] SAFE, own
+  { 0xF1B7,    4,    NULL,  NULL, false, ROUTINE_INACTIVE},//[Dia_Ident_239] SAFE, own
+  { 0xF1D5, 4090,    NULL,  NULL, false, ROUTINE_INACTIVE},//[Dia_Ident_139] DSDL
+  { 0xF1DF,    1,    NULL,  NULL, false, ROUTINE_INACTIVE}//[Dia_Ident_32]    DSDL
+}"
+                :type ("DiagDataInfo" type (:type "class") nil nil))
+                nil [185 4124])
+            ("Adaptation_Map" variable
+               (:dereference 1
+                :default-value "{
+  // ID       size    promise    cache bRoutineRunning  routineStatus
+  //{ 0x051B,   4,      NULL,    NULL, false, ROUTINE_INACTIVE},//[Dia_Anp_686]
+  { 0x0526,    60,      NULL,    NULL, false, ROUTINE_INACTIVE},//[Dia_Anp_550] ABT
+  { 0x0527,    60,      NULL,    NULL, false, ROUTINE_INACTIVE},//[Dia_Anp_553] ABT
+  { 0x0528,    60,      NULL,    NULL, false, ROUTINE_INACTIVE},//[Dia_Anp_557] ABT
+  { 0x0529,    20,      NULL,    NULL, false, ROUTINE_INACTIVE},//[Dia_Anp_560] ABT TODO: length check
+  { 0x0531,     2,      NULL,    NULL, false, ROUTINE_INACTIVE},//[Dia_Anp_4244] HMI
+  { 0x0571,     2,      NULL,    NULL, false, ROUTINE_INACTIVE},//[Dia_Anp_674] PSO
+  { 0x0579,     1,      NULL,    NULL, false, ROUTINE_INACTIVE},//[Dia_Anp_4516] HMI
+  { 0x057A,     1,      NULL,    NULL, false, ROUTINE_INACTIVE},//[Dia_Anp_666]
+  { 0x0580,    18,      NULL,    NULL, false, ROUTINE_INACTIVE},//[Dia_Anp_4528] ABT
+  { 0x0590,     2,      NULL,    NULL, false, ROUTINE_INACTIVE},//[Dia_Anp_5216]
+  { 0x0591,     3,      NULL,    NULL, false, ROUTINE_INACTIVE},//[Dia_Anp_5210]
+  { 0x0B1D,   256,      NULL,    NULL, false, ROUTINE_INACTIVE},//[Dia_Anp_700]
+  { 0x0B45,     6,      NULL,    NULL, false, ROUTINE_INACTIVE},//[Dia_Anp_512] ABT
+  { 0x0B47,    18,      NULL,    NULL, false, ROUTINE_INACTIVE},//[Dia_Anp_525] ABT
+  { 0x0902,     1,      NULL,    NULL, false, ROUTINE_INACTIVE},//[Dia_Anp_658] MCU
+  { 0x0C3A,     2,      NULL,    NULL, false, ROUTINE_INACTIVE},//[Dia_Anp_3992] HMI
+  { 0x0C9D,     2,      NULL,    NULL, false, ROUTINE_INACTIVE},//[Dia_Anp_4270] HMI
+  { 0x0E3E,     6,      NULL,    NULL, false, ROUTINE_INACTIVE},//[Dia_Anp_4296] HMI
+  { 0x1021,     1,      NULL,    NULL, false, ROUTINE_INACTIVE}//[Dia_Anp_696]
+}"
+                :type ("DiagDataInfo" type (:type "class") nil nil))
+                nil [4143 5931])
+            ("Encoding_Map" variable
+               (:dereference 1
+                :default-value "{
+  // ID       size    promise    cache bRoutineRunning  routineStatus
+  { 0x0600,    25,      NULL,    NULL, false, ROUTINE_INACTIVE},//[Dia_Cod_8] HMI
+}"
+                :type ("DiagDataInfo" type (:type "class") nil nil))
+                nil [5952 6138])
+            ("Dataset_Map" variable
+               (:dereference 1
+                :default-value "{
+  // ID       size    promise    cache bRoutineRunning  routineStatus
+  { 0x720B,    26,      NULL,    NULL, false, ROUTINE_INACTIVE},//[Dia_Ds_55]
+  { 0x720C,   778,      NULL,    NULL, false, ROUTINE_INACTIVE},//[Dia_Ds_111]
+}"
+                :type ("DiagDataInfo" type (:type "class") nil nil))
+                nil [6154 6414])
+            ("Measurement_Map" variable
+               (:dereference 1
+                :default-value "{
+  // ID        size    promise    cache bRoutineRunning  routineStatus
+  { 0x0102,      1,      NULL,    NULL, false, ROUTINE_INACTIVE}, //[Dia_Mes_289] Routine status
+  { 0x010D,      1,      NULL,    NULL, false, ROUTINE_INACTIVE}, //[Dia_Mes_300]
+  { 0x010E,      1,      NULL,    NULL, false, ROUTINE_INACTIVE}, //[Dia_Mes_306]
+  { 0x010F,      1,      NULL,    NULL, false, ROUTINE_INACTIVE}, //[Dia_Mes_309]
+  { 0x013D,    160,      NULL,    NULL, false, ROUTINE_INACTIVE}, //[Dia_Mes_312]
+  { 0x013E,    800,      NULL,    NULL, false, ROUTINE_INACTIVE}, //[Dia_Mes_317]
+  { 0x0140,     20,      NULL,    NULL, false, ROUTINE_INACTIVE}, //[Dia_Mes_327]
+  { 0x0141,     30,      NULL,    NULL, false, ROUTINE_INACTIVE}, //[Dia_Mes_322]
+  { 0x0142,   1440,      NULL,    NULL, false, ROUTINE_INACTIVE}, //[Dia_Mes_332]
+  { 0x014E,      2,      NULL,    NULL, false, ROUTINE_INACTIVE}, //[Dia_Mes_341]
+  { 0x014F,    510,      NULL,    NULL, false, ROUTINE_INACTIVE}, //[Dia_Mes_344]
+  { 0x0173,      4,      NULL,    NULL, false, ROUTINE_INACTIVE}, //[Dia_Mes_353]
+  { 0x019C,      1,      NULL,    NULL, false, ROUTINE_INACTIVE}, //[Dia_Mes_614]
+  { 0x0261,      1,      NULL,    NULL, false, ROUTINE_INACTIVE}, //[Dia_Mes_293] MCU - cache
+  { 0x0286,      1,      NULL,    NULL, false, ROUTINE_INACTIVE}, //[] MCU for FreezeFrame
+  { 0x0401,      1,      NULL,    NULL, false, ROUTINE_INACTIVE}, //[Dia_Mes_418] MCU
+  { 0x0A2B,      2,      NULL,    NULL, false, ROUTINE_INACTIVE}, //[Dia_Mes_357]
+  { 0x0A2C,      2,      NULL,    NULL, false, ROUTINE_INACTIVE}, //[Dia_Mes_360]
+  { 0x0A2E,      2,      NULL,    NULL, false, ROUTINE_INACTIVE}, //[Dia_Mes_363]
+  { 0x0A2F,      2,      NULL,    NULL, false, ROUTINE_INACTIVE}, //[Dia_Mes_366]
+  { 0x1008,     22,      NULL,    NULL, false, ROUTINE_INACTIVE}, //[Dia_Mes_609]
+  { 0x100C,      2,      NULL,    NULL, false, ROUTINE_INACTIVE}, //[Dia_Mes_637]
+  { 0x1017,      7,      NULL,    NULL, false, ROUTINE_INACTIVE}, //[Dia_Mes_425] HMI
+  { 0x1120,      6,      NULL,    NULL, false, ROUTINE_INACTIVE}, //[Dia_Mes_620] always return 0;
+  { 0x180C,      2,      NULL,    NULL, false, ROUTINE_INACTIVE}, //[Dia_Mes_860] MCU - cache
+  { 0x1837,      8,      NULL,    NULL, false, ROUTINE_INACTIVE}, //[Dia_Mes_197] MCU - cache
+  { 0x1844,      1,      NULL,    NULL, false, ROUTINE_INACTIVE}, //[Dia_Mes_778]
+  { 0x1860,      1,      NULL,    NULL, false, ROUTINE_INACTIVE}, //[Dia_Mes_564] MCU - cache
+  { 0x22D2,      2,      NULL,    NULL, false, ROUTINE_INACTIVE}, //[Dia_Mes_788] MCU - cache
+  { 0x2B16,      2,      NULL,    NULL, false, ROUTINE_INACTIVE}, //[Dia_Mes_404] MCU - cache
+  { 0x2C55,     18,      NULL,    NULL, false, ROUTINE_INACTIVE}, //[Dia_Mes_641]
+  { 0x2C56,      3,      NULL,    NULL, false, ROUTINE_INACTIVE}, //[Dia_Mes_647]
+  { 0x2C57,    202,      NULL,    NULL, false, ROUTINE_INACTIVE}, //[Dia_Mes_653]
+  { 0x2C60,    402,      NULL,    NULL, false, ROUTINE_INACTIVE}, //[Dia_Mes_663]
+  { 0xF40C,      2,      NULL,    NULL, false, ROUTINE_INACTIVE}, //[Dia_Mes_860] MCU - cache
+}"
+                :type ("DiagDataInfo" type (:type "class") nil nil))
+                nil [6437 9548])
+            ("Routine_Map" variable
+               (:dereference 1
+                :default-value "{
+  /* Routine Control - size is flexible. */
+  // ID       size    promise    cache bRoutineRunning  routineStatus
+  { 0x0452,     0,     NULL,    NULL, false, ROUTINE_INACTIVE}, //[Dia_Rou_83]
+  { 0x0580,     0,     NULL,    NULL, false, ROUTINE_INACTIVE}, //[Dia_Rou_177]
+  { 0x057C,     0,     NULL,    NULL, false, ROUTINE_INACTIVE}, //[Dia_Rou_197]
+  { 0x05E3,     0,     NULL,    NULL, false, ROUTINE_INACTIVE}, //[Dia_Rou_212]
+  { 0x05E4,     0,     NULL,    NULL, false, ROUTINE_INACTIVE}, //[Dia_Rou_227]
+  { 0x05E5,     0,     NULL,    NULL, false, ROUTINE_INACTIVE}, //[Dia_Rou_242]
+  { 0x05EB,     0,     NULL,    NULL, false, ROUTINE_INACTIVE}, //[Dia_Rou_257]
+  { 0x057E,     0,     NULL,    NULL, false, ROUTINE_INACTIVE}, //[Dia_Rou_272]
+  { 0x057F,     0,     NULL,    NULL, false, ROUTINE_INACTIVE}, //[Dia_Rou_287]
+  { 0x03E7,     0,     NULL,    NULL, false, ROUTINE_INACTIVE}, //[Dia_Rou_304] always return positively
+  { 0x1120,     0,     NULL,    NULL, false, ROUTINE_INACTIVE}, //[Dia_Rou_323] always return positively
+  { 0xC00A,     0,     NULL,    NULL, false, ROUTINE_INACTIVE}, //[Dia_Anp_512]
+  { 0xC00B,     0,     NULL,    NULL, false, ROUTINE_INACTIVE}, //[Dia_Anp_512]
+  { 0xC00C,     0,     NULL,    NULL, false, ROUTINE_INACTIVE}, //[Dia_Anp_512]
+  { 0xC00D,     0,     NULL,    NULL, false, ROUTINE_INACTIVE}, //[Dia_Anp_512]
+  { 0xC00F,     0,     NULL,    NULL, false, ROUTINE_INACTIVE}, //[Dia_Anp_512]
+  { 0x0648,     0,     NULL,    NULL, false, ROUTINE_INACTIVE}, //[Dia_Anp_512]
+
+  //RID of DSA - only set bRoutineRunning for checking routineStatus of measured value 0x0102
+  { 0x0202,   0,     NULL,    NULL, false, ROUTINE_INACTIVE}, //[Dia_Rou_114]
+  { 0x0203,   0,     NULL,    NULL, false, ROUTINE_INACTIVE}, //[Dia_Rou_130]
+  { 0xC004,   0,     NULL,    NULL, false, ROUTINE_INACTIVE}, //[Dia_Rou_536]
+  { 0xC005,   0,     NULL,    NULL, false, ROUTINE_INACTIVE}, //[Dia_Rou_679]
+  { 0xC007,   0,     NULL,    NULL, false, ROUTINE_INACTIVE}, //[Dia_Rou_680]
+  { 0xC008,   0,     NULL,    NULL, false, ROUTINE_INACTIVE}, //[Dia_Rou_615]
+  { 0xC009,   0,     NULL,    NULL, false, ROUTINE_INACTIVE}, //[Dia_Rou_638]
+  { 0xC00E,   0,     NULL,    NULL, false, ROUTINE_INACTIVE}, //[Dia_Rou_780]
+  { 0xC010,   0,     NULL,    NULL, false, ROUTINE_INACTIVE}, //[Dia_Rou_751]
+  { 0xFF00,   0,     NULL,    NULL, false, ROUTINE_INACTIVE}, //[Dia_Rou_144]
+  { 0xFF01,   0,     NULL,    NULL, false, ROUTINE_INACTIVE}  //[Dia_Rou_160]
+}"
+                :type ("DiagDataInfo" type (:type "class") nil nil))
+                nil [9572 12081])
+            ("NO_USE" variable (:constant-flag t) nil [12091 12097])
+            ("DTC_Map" variable
+               (:dereference 1
+                :default-value "{
+  /* InstanceID, DTC number, CyclicTimer(ms => 1 means counter-based or timer-based which is when DTC occurs just once),  promise, monitorAction */
+  { NO_USE, 0x000000, DTC_COUNTER_BASED,    NULL, DTC_PASS },
+  { 1,      0xffffae,             25000,    NULL, DTC_PASS },  // No_ADAS_information_from_Gateway
+  { 2,      0x001b66, DTC_COUNTER_BASED,    NULL, DTC_PASS },  // SoundControl2_0x66_function_restriction_due_to_communication_error_BapErr_timeout_heartbeat
+  { 3,      0x001a01,              5000,    NULL, DTC_PASS },  // Data_bus_faulty
+  { 4,      0x001b2e, DTC_COUNTER_BASED,    NULL, DTC_PASS },  // Rear_Seat_Entertainment_0x2E_function_restriction_due_to_communication_error_BapErr_timeout_heartbeat
+  { 5,      0x001b51, DTC_COUNTER_BASED,    NULL, DTC_PASS },  // DAF_0x51_function_restriction_due_to_communication_error_BapErr_timeout_heartbeat
+  { 6,      0x001c66, DTC_COUNTER_BASED,    NULL, DTC_PASS },  // SoundControl2_0x66_function_restriction_due_to_communication_error_BapErr_retry_not_successful
+  { 7,      0x001a3f,              5000,    NULL, DTC_PASS },  // Sub_bus_one_wire_mode
+  { 8,      0x001c6f, DTC_COUNTER_BASED,    NULL, DTC_PASS },  // ENI4_0x6F_function_restriction_due_to_communication_error_BapErr_retry_not_successful
+  { 9,      0x001c65, DTC_COUNTER_BASED,    NULL, DTC_PASS },  // ITM_0x65_function_restriction_due_to_communication_error_BapErr_retry_not_successful
+  { 10,     0x001a03,              5000,    NULL, DTC_PASS },  // Sub_bus_faulty
+  { 11,     0x001e1e, DTC_COUNTER_BASED,    NULL, DTC_PASS },  // Side_view_0x1E_control_module_incorrect_software_version_BapErr_incompatible_protocol_version
+  { 12,     0x001c51, DTC_COUNTER_BASED,    NULL, DTC_PASS },  // DAF_0x51_function_restriction_due_to_communication_error_BapErr_retry_not_successful
+  { 13,     0x001c52, DTC_COUNTER_BASED,    NULL, DTC_PASS },  // IAA_PSO_0x52_function_restriction_due_to_communication_error_BapErr_retry_not_successful
+  { 14,     0x001e53, DTC_COUNTER_BASED,    NULL, DTC_PASS },  // Mascot_0x53_control_module_incorrect_software_version_BapErr_incompatible_protocol_version
+  { 15,     0x00301b,              1000,    NULL, DTC_PASS },  // Ip_Ipv6_address_conflict
+  { 16,     0x001b37, DTC_COUNTER_BASED,    NULL, DTC_PASS },  // ENI_0x37_function_restriction_due_to_communication_error_BapErr_timeout_heartbeat
+  { NO_USE, 0x001010, DTC_COUNTER_BASED,    NULL, DTC_PASS },  // Unlock_protection_of_vehicle_diagnosis_active
+  { 18,     0x001b1e, DTC_COUNTER_BASED,    NULL, DTC_PASS },  // Side_view_0x1E_function_restriction_due_to_communication_error_BapErr_timeout_heartbeat
+  { 19,     0x001f1e, DTC_COUNTER_BASED,    NULL, DTC_PASS },  // Side_view_0x1E_control_module_incorrect_software_version_BapErr_incompatible_data_specification
+  { 20,     0x001b4e, DTC_COUNTER_BASED,    NULL, DTC_PASS },  // RemoteServices_0x4E_function_restriction_due_to_communication_error_BapErr_timeout_heartbeat
+  { 21,     0x000609, DTC_COUNTER_BASED,    NULL, DTC_PASS },  // Control_module_faulty_CAN_controller_RAM_check
+  { 22,     0x001e35, DTC_COUNTER_BASED,    NULL, DTC_PASS },  // Special_functions_0x35_control_module_incorrect_software_version_BapErr_incompatible_protocol_version
+  { 23,     0x001e4e, DTC_COUNTER_BASED,    NULL, DTC_PASS },  // RemoteServices_0x4E_control_module_incorrect_software_version_BapErr_incompatible_protocol_version
+  { 24,     0x002001, DTC_COUNTER_BASED,    NULL, DTC_PASS },  // VKMS_first_download_container_required
+  { 25,     0x000608, DTC_COUNTER_BASED,    NULL, DTC_PASS },  // Control_module_faulty_error_in_flash_flash_programing_incorrect_
+  { 26,     0x001f37, DTC_COUNTER_BASED,    NULL, DTC_PASS },  // ENI_0x37_control_module_incorrect_software_version_BapErr_incompatible_data_specification
+  { 27,     0x00180a,              1000,    NULL, DTC_PASS },  // Display_1_temperature_error_upper_limit_value_exceeded
+  { 28,     0x001b53, DTC_COUNTER_BASED,    NULL, DTC_PASS },  // Mascot_0x53_function_restriction_due_to_communication_error_BapErr_timeout_heartbeat
+  { 29,     0x000610,              1000,    NULL, DTC_PASS },  // Expanded_bus_operation_active
+  { 30,     0xd1000e, DTC_COUNTER_BASED,    NULL, DTC_PASS },  // Component_protection_no_basic_setting_abt1
+  { 31,     0x001f2e, DTC_COUNTER_BASED,    NULL, DTC_PASS },  // Rear_Seat_Entertainment_0x2E_control_module_incorrect_software_version_BapErr_incompatible_data_specification
+  { 32,     0x001f35, DTC_COUNTER_BASED,    NULL, DTC_PASS },  // Special_functions_0x35_control_module_incorrect_software_version_BapErr_incompatible_data_specification
+  { 33,     0x001e54, DTC_COUNTER_BASED,    NULL, DTC_PASS },  // VAS_0x54_control_module_incorrect_software_version_BapErr_incompatible_protocol_version
+  { 34,     0x000603, DTC_COUNTER_BASED,    NULL, DTC_PASS },  // Function_restriction_due_to_insufficient_voltage_lower_limit_value_not_reached
+  { 35,     0x001820,              1000,    NULL, DTC_PASS },  // Display_1_EEPROM_faulty
+  { 36,     0x001b54, DTC_COUNTER_BASED,    NULL, DTC_PASS },  // VAS_0x54_function_restriction_due_to_communication_error_BapErr_timeout_heartbeat
+  { 37,     0x00063c, DTC_COUNTER_BASED,    NULL, DTC_PASS },  // Control_module_data_record_download_implausible_data_record_speech
+  { 38,     0x002003, DTC_COUNTER_BASED,    NULL, DTC_PASS },  // VKMS_application_requested_missing_key
+  { 39,     0xea680e, DTC_COUNTER_BASED,    NULL, DTC_PASS },  // Fazit_Identification_implausible_abt1
+  { 40,     0x001e37, DTC_COUNTER_BASED,    NULL, DTC_PASS },  // ENI_0x37_control_module_incorrect_software_version_BapErr_incompatible_protocol_version
+  { 41,     0x001f54, DTC_COUNTER_BASED,    NULL, DTC_PASS },  // VAS_0x54_control_module_incorrect_software_version_BapErr_incompatible_data_specification
+  { 42,     0x001812,              1000,    NULL, DTC_PASS },  // Display_1_supply_voltage_error_upper_limit_value_exceeded
+  { 43,     0x001f52, DTC_COUNTER_BASED,    NULL, DTC_PASS },  // IAA_PSO_0x52_control_module_incorrect_software_version_BapErr_incompatible_data_specification
+  { 44,     0x001c2e, DTC_COUNTER_BASED,    NULL, DTC_PASS },  // Rear_Seat_Entertainment_0x2E_function_restriction_due_to_communication_error_BapErr_retry_not_successful
+  { 45,     0x001c37, DTC_COUNTER_BASED,    NULL, DTC_PASS },  // ENI_0x37_function_restriction_due_to_communication_error_BapErr_retry_not_successful
+  { 46,     0x000601,              2000,    NULL, DTC_PASS },  // Supply_voltage_lower_limit_value_not_reached
+  { 47,     0x001b65, DTC_COUNTER_BASED,    NULL, DTC_PASS },  // ITM_0x65_function_restriction_due_to_communication_error_BapErr_timeout_heartbeat
+  { 48,     0x001813,              1000,    NULL, DTC_PASS },  // Display_1_supply_voltage_error_lower_limit_value_not_reached
+  { 49,     0x00301c,              1500,    NULL, DTC_PASS },  // Ip_clock_sync_outage
+  { 50,     0x001c53, DTC_COUNTER_BASED,    NULL, DTC_PASS },  // Mascot_0x53_function_restriction_due_to_communication_error_BapErr_retry_not_successful
+  { 51,     0x001a3e,              5000,    NULL, DTC_PASS },  // BCM_no_communication
+  { NO_USE, 0x001a45, DTC_COUNTER_BASED,    NULL, DTC_PASS },  // rear_view_cam_ethernet_corrupt_signal
+  { 53,     0xea610e, DTC_COUNTER_BASED,    NULL, DTC_PASS },  // Anti_theft_protection_component_protection_active_xEA_x61_x0E_ABT
+  { 54,     0xea640e, DTC_COUNTER_BASED,    NULL, DTC_PASS },  // Anti_theft_protection_component_protection_active_xEA_x64_x00_abt1
+  { 55,     0x001f6f, DTC_COUNTER_BASED,    NULL, DTC_PASS },  // ENI4_0x6F_control_module_incorrect_software_version_BapErr_incompatible_data_specification
+  { 56,     0x001e66, DTC_COUNTER_BASED,    NULL, DTC_PASS },  // SoundControl2_0x66_control_module_incorrect_software_version_BapErr_incompatible_protocol_version
+  { 57,     0x000602, DTC_COUNTER_BASED,    NULL, DTC_PASS },  // Function_restriction_due_to_excessive_voltage_upper_limit_value_exceeded
+  { 58,     0x002000, DTC_COUNTER_BASED,    NULL, DTC_PASS },  // VKMS_new_download_container_required_due_to_vehicle_change
+  { 59,     0x001803,              1000,    NULL, DTC_PASS },  // Display_1_backlighting_short_circuit
+  { 60,     0x002002, DTC_COUNTER_BASED,    NULL, DTC_PASS },  // VKMS_new_download_container_required_due_to_data_corruption
+  { 61,     0x001e6f, DTC_COUNTER_BASED,    NULL, DTC_PASS },  // ENI4_0x6F_control_module_incorrect_software_version_BapErr_incompatible_protocol_version
+  { 62,     0x001c54, DTC_COUNTER_BASED,    NULL, DTC_PASS },  // VAS_0x54_function_restriction_due_to_communication_error_BapErr_retry_not_successful
+  { 63,     0x001f66, DTC_COUNTER_BASED,    NULL, DTC_PASS },  // SoundControl2_0x66_control_module_incorrect_software_version_BapErr_incompatible_data_specification
+  { 64,     0x000600,              2000,    NULL, DTC_PASS },  // Supply_voltage_upper_limit_value_exceeded
+  { 65,     0xea620e, DTC_COUNTER_BASED,    NULL, DTC_PASS },  // Anti_theft_protection_component_protection_active_xEA_x62_x0E_ABT
+  { 66,     0x001823,              1000,    NULL, DTC_PASS },  // Display_1_LVDS_connection_open_circuit
+  { 67,     0x000607, DTC_COUNTER_BASED,    NULL, DTC_PASS },  // Control_module_incorrectly_coded
+  { 68,     0x001f4e, DTC_COUNTER_BASED,    NULL, DTC_PASS },  // RemoteServices_0x4E_control_module_incorrect_software_version_BapErr_incompatible_data_specification
+  { 69,     0x001e52, DTC_COUNTER_BASED,    NULL, DTC_PASS },  // IAA_PSO_0x52_control_module_incorrect_software_version_BapErr_incompatible_protocol_version
+  { 70,     0x001f65, DTC_COUNTER_BASED,    NULL, DTC_PASS },  // ITM_0x65_control_module_incorrect_software_version_BapErr_incompatible_data_specification
+  { 71,     0x001802,              1000,    NULL, DTC_PASS },  // Display_1_backlighting_open_circuit
+  { 72,     0xffffa7, DTC_COUNTER_BASED,    NULL, DTC_PASS },  // Personalisierung_01_communication_error_can_error_timeout
+  { 73,     0x001e65, DTC_COUNTER_BASED,    NULL, DTC_PASS },  // ITM_0x65_control_module_incorrect_software_version_BapErr_incompatible_protocol_version
+  { 74,     0x001b6f, DTC_COUNTER_BASED,    NULL, DTC_PASS },  // ENI4_0x6F_function_restriction_due_to_communication_error_BapErr_timeout_heartbeat
+  { 75,     0x001a32,              5000,    NULL, DTC_PASS },  // Instrument_cluster_no_communication
+  { 76,     0x001a09,              5000,    NULL, DTC_PASS },  // Display_and_operating_unit_no_signal_communication
+  { 77,     0x000689, DTC_COUNTER_BASED,    NULL, DTC_PASS },  // Control_module_data_record_download_invalid_data_record
+  { 78,     0x001b52, DTC_COUNTER_BASED,    NULL, DTC_PASS },  // IAA_PSO_0x52_function_restriction_due_to_communication_error_BapErr_timeout_heartbeat
+  { 79,     0x00063e, DTC_COUNTER_BASED,    NULL, DTC_PASS },  // Control_module_data_record_download_implausible_data_record_visible_MMI_languages
+  { 80,     0x001f53, DTC_COUNTER_BASED,    NULL, DTC_PASS },  // Mascot_0x53_control_module_incorrect_software_version_BapErr_incompatible_data_specification
+  { 81,     0x001c1e, DTC_COUNTER_BASED,    NULL, DTC_PASS },  // Side_view_0x1E_function_restriction_due_to_communication_error_BapErr_retry_not_successful
+  { 82,     0x001f51, DTC_COUNTER_BASED,    NULL, DTC_PASS },  // DAF_0x51_control_module_incorrect_software_version_BapErr_incompatible_data_specification
+  { 83,     0x001a3b,              5000,    NULL, DTC_PASS },  // BEM_no_communication
+  { 84,     0x001c35, DTC_COUNTER_BASED,    NULL, DTC_PASS },  // Special_functions_0x35_function_restriction_due_to_communication_error_BapErr_retry_not_successful
+  { 85,     0x001c4e, DTC_COUNTER_BASED,    NULL, DTC_PASS },  // RemoteServices_0x4E_function_restriction_due_to_communication_error_BapErr_retry_not_successful
+  { 86,     0x001a31,              5000,    NULL, DTC_PASS },  // Terminal_status_no_communication
+  { 87,     0x000606, DTC_COUNTER_BASED,    NULL, DTC_PASS },  // Control_module_not_coded
+  { 88,     0x001e51, DTC_COUNTER_BASED,    NULL, DTC_PASS },  // DAF_0x51_control_module_incorrect_software_version_BapErr_incompatible_protocol_version
+  { 89,     0xd3000e, DTC_COUNTER_BASED,    NULL, DTC_PASS },  // Component_protection_no_basic_setting_for_SHE_key_abt1
+  { 90,     0x001a53,              5000,    NULL, DTC_PASS },  // smartlight_no_communication
+  { 91,     0x001e2e, DTC_COUNTER_BASED,    NULL, DTC_PASS },  // Rear_Seat_Entertainment_0x2E_control_module_incorrect_software_version_BapErr_incompatible_protocol_version
+  { 92,     0x001b35, DTC_COUNTER_BASED,    NULL, DTC_PASS },  // Special_functions_0x35_function_restriction_due_to_communication_error_BapErr_timeout_heartbeat
+  { 93,     0xffffad, DTC_COUNTER_BASED,    NULL, DTC_PASS }   // No_speed_information_from_Gateway
+}"
+                :type ("DTCInfo" type (:type "class") nil nil))
+                nil [12119 24891])
+            ("GetDiagDataInfo" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("map" variable
+                       (:pointer 1
+                        :type ("DiagDataInfo" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [25560 25578])
+                    ("max" variable (:type ("std::uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [25581 25599])
+                    ("id" variable (:type ("std::uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [25602 25620]))                  
+                :type ("DiagDataInfo" type (:type "class") nil nil))
+                nil [25519 25811])
+            ("GetDiagDataInfos" function
+               (:arguments 
+                  ( ("types" variable (:type ("std::uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [25861 25881]))                  
+                :type ("std::vector" type
+                     (:template-specifier 
+                        ( ("DiagDataInfo" type (:pointer 1) nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [25813 26965])
+            ("GetIdentificationInfo" function
+               (:pointer 1
+                :arguments 
+                  ( ("id" variable (:type ("std::uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [27007 27025]))                  
+                :type ("DiagDataInfo" type (:type "class") nil nil))
+                nil [26967 27098])
+            ("GetAdaptationInfo" function
+               (:pointer 1
+                :arguments 
+                  ( ("id" variable (:type ("std::uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [27136 27154]))                  
+                :type ("DiagDataInfo" type (:type "class") nil nil))
+                nil [27100 27219])
+            ("GetEncodingInfo" function
+               (:pointer 1
+                :arguments 
+                  ( ("id" variable (:type ("std::uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [27255 27273]))                  
+                :type ("DiagDataInfo" type (:type "class") nil nil))
+                nil [27221 27334])
+            ("GetDatasetInfo" function
+               (:pointer 1
+                :arguments 
+                  ( ("id" variable (:type ("std::uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [27369 27387]))                  
+                :type ("DiagDataInfo" type (:type "class") nil nil))
+                nil [27336 27446])
+            ("GetMeasurementInfo" function
+               (:pointer 1
+                :arguments 
+                  ( ("id" variable (:type ("std::uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [27485 27503]))                  
+                :type ("DiagDataInfo" type (:type "class") nil nil))
+                nil [27448 27570])
+            ("GetRoutineInfo" function
+               (:pointer 1
+                :arguments 
+                  ( ("id" variable (:type ("std::uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [27605 27623]))                  
+                :type ("DiagDataInfo" type (:type "class") nil nil))
+                nil [27572 27682])
+            ("GetDiagDataInfo_for_DAL" function
+               (:pointer 1
+                :arguments 
+                  ( ("id" variable (:type ("std::uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [27726 27744]))                  
+                :type ("DiagDataInfo" type (:type "class") nil nil))
+                nil [27684 27959])
+            ("getValidDTCInfos" function (:type ("std::vector" type
+                 (:template-specifier 
+                    ( ("DTCInfo" type (:pointer 1) nil nil))                    
+                  :type "class")
+                  nil nil)) nil [27961 28209])
+            ("GetDTCInfo" function
+               (:pointer 1
+                :arguments 
+                  ( ("id" variable (:type ("std::uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [28235 28253]))                  
+                :type ("DTCInfo" type (:type "class") nil nil))
+                nil [28211 28449])
+            ("IsRoutineRunning" function (:type "bool") nil [28451 28673]))          
+      :file "DiagDataMap.cpp"
+      :pointmax 28675
+      :fsize 28674
+      :lastmodtime '(24409 61938 992684 225000)
+      :unmatched-syntax '((punctuation 25516 . 25517) (semantic-list 25505 . 25516) (SIZEOF 25499 . 25505) (punctuation 25497 . 25498) (semantic-list 25473 . 25484) (SIZEOF 25467 . 25473) (punctuation 25465 . 25466) (symbol 25449 . 25453) (symbol 25440 . 25448) (punctuation 25439 . 25440) (punctuation 25438 . 25439) (symbol 25435 . 25438) (punctuation 25433 . 25434) (semantic-list 25417 . 25433) (SIZEOF 25411 . 25417) (punctuation 25409 . 25410) (semantic-list 25385 . 25400) (SIZEOF 25379 . 25385) (punctuation 25377 . 25378) (symbol 25361 . 25369) (symbol 25352 . 25360) (punctuation 25351 . 25352) (punctuation 25350 . 25351) (symbol 25347 . 25350) (punctuation 25345 . 25346) (semantic-list 25329 . 25345) (SIZEOF 25323 . 25329) (punctuation 25321 . 25322) (semantic-list 25297 . 25316) (SIZEOF 25291 . 25297) (punctuation 25289 . 25290) (symbol 25273 . 25285) (symbol 25264 . 25272) (punctuation 25263 . 25264) (punctuation 25262 . 25263) (symbol 25259 . 25262) (punctuation 25257 . 25258) (semantic-list 25241 . 25257) (SIZEOF 25235 . 25241) (punctuation 25233 . 25234) (semantic-list 25209 . 25224) (SIZEOF 25203 . 25209) (punctuation 25201 . 25202) (symbol 25185 . 25193) (symbol 25176 . 25184) (punctuation 25175 . 25176) (punctuation 25174 . 25175) (symbol 25171 . 25174) (punctuation 25169 . 25170) (semantic-list 25153 . 25169) (SIZEOF 25147 . 25153) (punctuation 25145 . 25146) (semantic-list 25121 . 25137) (SIZEOF 25115 . 25121) (punctuation 25113 . 25114) (symbol 25097 . 25106) (symbol 25088 . 25096) (punctuation 25087 . 25088) (punctuation 25086 . 25087) (symbol 25083 . 25086) (punctuation 25081 . 25082) (semantic-list 25065 . 25081) (SIZEOF 25059 . 25065) (punctuation 25057 . 25058) (semantic-list 25033 . 25051) (SIZEOF 25027 . 25033) (punctuation 25025 . 25026) (symbol 25009 . 25020) (symbol 25000 . 25008) (punctuation 24999 . 25000) (punctuation 24998 . 24999) (symbol 24995 . 24998) (punctuation 24993 . 24994) (semantic-list 24977 . 24993) (SIZEOF 24971 . 24977) (punctuation 24969 . 24970) (semantic-list 24945 . 24967) (SIZEOF 24939 . 24945) (punctuation 24937 . 24938) (symbol 24921 . 24936) (symbol 24912 . 24920) (punctuation 24911 . 24912) (punctuation 24910 . 24911) (symbol 24907 . 24910))
+      :lexical-table 
+        '(("NO_USE" . ((semantic-list "(0)" 12098 . 12101)))
+          )
+)
+    (semanticdb-table "semanticdb-table-1ffd984"
+      :file "DiagCommon.h"
+      :fsize 3301
+      :lastmodtime '(24409 61938 992684 225000))
+    (semanticdb-table "semanticdb-table-1ffd9a4"
+      :file "DiagDataMap.h"
+      :fsize 2291
+      :lastmodtime '(24409 61938 992684 225000)))
+  :file "!home!hyuk.myeong!work!LARA_new!sample-applications!lge!diag-handler!src!diag!data!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

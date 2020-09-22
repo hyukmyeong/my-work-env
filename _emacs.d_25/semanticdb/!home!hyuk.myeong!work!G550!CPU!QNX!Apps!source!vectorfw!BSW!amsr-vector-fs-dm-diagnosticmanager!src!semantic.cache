@@ -1,0 +1,37 @@
+;; Object semanticdb-project-database-file-2074058
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-2074058"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-2083d64"
+      :major-mode c++-mode
+      :tags 
+        '( ("common/application_scaffold.h" include nil nil [1382 1422])
+            ("diagnostic_manager.h" include nil nil [1423 1454])
+            ("configuration_checker.h" include nil nil [1501 1535])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [1787 1796])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1797 1810]))                  
+                :type "int")
+                nil [1778 2007]))          
+      :file "main.cpp"
+      :pointmax 2008
+      :fsize 2007
+      :lastmodtime '(24310 58952 117441 35000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-2794644"
+      :file "diagnostic_manager.h"
+      :fsize 3393
+      :lastmodtime '(24310 58952 117441 35000))
+    (semanticdb-table "semanticdb-table-27c8fe0"
+      :file "configuration_checker.h"
+      :fsize 7377
+      :lastmodtime '(24310 58952 117441 35000)))
+  :file "!home!hyuk.myeong!work!G550!CPU!QNX!Apps!source!vectorfw!BSW!amsr-vector-fs-dm-diagnosticmanager!src!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

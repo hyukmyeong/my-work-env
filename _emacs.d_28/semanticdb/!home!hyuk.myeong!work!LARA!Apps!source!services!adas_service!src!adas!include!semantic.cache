@@ -1,0 +1,330 @@
+;; Object semanticdb-project-database-file-2118afc
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-2118afc"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-2117a64"
+      :major-mode c++-mode
+      :tags 
+        '( ("ADAPTIVEAUTOSARAPPLICATION_SRC_ADAS_MANAGER_H_" variable (:constant-flag t) nil [1125 1171])
+            ("ADASDiagAdaptation.h" include nil nil [1173 1204])
+            ("ara/com/runtime.h" include (:system-flag t) nil [1206 1234])
+            ("ara/log/config/appl_manifest_logging_config.h" include (:system-flag t) nil [1235 1291])
+            ("ADASActivityFactory.h" include (:system-flag t) nil [1385 1417])
+            ("ADASViwiService.h" include (:system-flag t) nil [1418 1446])
+            ("ADASIntelligence.h" include (:system-flag t) nil [1574 1603])
+            ("ADASCommon.h" include (:system-flag t) nil [1604 1626])
+            ("ADASDBManager.h" include (:system-flag t) nil [1627 1653])
+            ("vwg" type
+               (:members 
+                  ( ("services" type
+                       (:members 
+                          ( ("adas" type
+                               (:members 
+                                  ( ("CommandLine_Arguments_t" type
+                                       (:members 
+                                          ( ("cfg_path_" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2018 2040])
+                                            ("verbose_" variable (:type ("std::size_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2092 2113])
+                                            ("iterations_" variable (:type ("std::size_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2183 2207])
+                                            ("event_triggers_" variable (:type ("std::size_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2281 2309])
+                                            ("iteration_pause_us_" variable (:type ("std::size_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2388 2420])
+                                            ("event_trigger_pause_us_" variable (:type ("std::size_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2503 2539]))                                          
+                                        :type "struct")
+                                        (reparse-symbol namespacesubparts) [1915 2563])
+                                    ("CommandLine_Arguments" type
+                                       (:typedef ("CommandLine_Arguments_t" type (:type "struct") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol namespacesubparts) [1915 2563])
+                                    ("TimeOutData_t" type
+                                       (:members 
+                                          ( ("cruiseControl_timeout_" variable
+                                               (:default-value "true"
+                                                :type "bool")
+                                                (reparse-symbol classsubparts) [2606 2641])
+                                            ("acc_timeout_" variable
+                                               (:default-value "true"
+                                                :type "bool")
+                                                (reparse-symbol classsubparts) [2647 2672])
+                                            ("clamp_timeout_" variable
+                                               (:default-value "true"
+                                                :type "bool")
+                                                (reparse-symbol classsubparts) [2676 2703])
+                                            ("driverDisplay_timeout_" variable
+                                               (:default-value "true"
+                                                :type "bool")
+                                                (reparse-symbol classsubparts) [2705 2740])
+                                            ("IsAnyProxyServiceTimeOutOccurred" function
+                                               (:methodconst-flag t
+                                                :typemodifiers ("inline")
+                                                :type "bool")
+                                                (reparse-symbol classsubparts) [2747 2865])
+                                            ("IsCruiseControl_timeout_" function
+                                               (:methodconst-flag t
+                                                :typemodifiers ("inline")
+                                                :type "bool")
+                                                (reparse-symbol classsubparts) [2876 2960])
+                                            ("IsACC_timeout_" function
+                                               (:methodconst-flag t
+                                                :typemodifiers ("inline")
+                                                :type "bool")
+                                                (reparse-symbol classsubparts) [2971 3035])
+                                            ("IsClamp_timeout_" function
+                                               (:methodconst-flag t
+                                                :typemodifiers ("inline")
+                                                :type "bool")
+                                                (reparse-symbol classsubparts) [3037 3105])
+                                            ("IsDriverDisplay_timeout_" function
+                                               (:methodconst-flag t
+                                                :typemodifiers ("inline")
+                                                :type "bool")
+                                                (reparse-symbol classsubparts) [3107 3191]))                                          
+                                        :type "struct")
+                                        (reparse-symbol namespacesubparts) [2574 3194])
+                                    ("ADASManager" type
+                                       (:members 
+                                          ( ("public" label nil (reparse-symbol classsubparts) [3217 3224])
+                                            ("ADASManager" function
+                                               (:prototype-flag t
+                                                :constructor-flag t
+                                                :arguments 
+                                                  ( ("argc" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3238 3251])
+                                                    ("argv" variable
+                                                       (:pointer 1
+                                                        :dereference 1
+                                                        :type ("char_t" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [3252 3274]))                                                  
+                                                :type ("ADASManager" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [3226 3275])
+                                            ("ADASManager" function
+                                               (:destructor-flag t
+                                                :typemodifiers ("virtual")
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [3281 3381])
+                                            ("Init" function
+                                               (:prototype-flag t
+                                                :arguments 
+                                                  ( ("argc" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3397 3410])
+                                                    ("argv" variable
+                                                       (:pointer 1
+                                                        :dereference 1
+                                                        :type ("char_t" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [3411 3426]))                                                  
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [3387 3427])
+                                            ("Start_ADASMgr" function
+                                               (:prototype-flag t
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [3433 3454])
+                                            ("Stop_ADASMgr" function
+                                               (:prototype-flag t
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [3460 3480])
+                                            ("adasMainThread_cv" variable (:type ("ConditionVariable" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3483 3519])
+                                            ("cv_" variable (:type ("ConditionVariable" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3525 3547])
+                                            ("timeout_cv" variable (:type ("ConditionVariable" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3553 3582])
+                                            ("adasViWiThread_cv" variable (:type ("ConditionVariable" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3592 3628])
+                                            ("SendViWiData" function
+                                               (:prototype-flag t
+                                                :arguments 
+                                                  ( ("value_ViWi" variable
+                                                       (:constant-flag t
+                                                        :type "bool")
+                                                        (reparse-symbol arg-sub-list) [3652 3674]))                                                  
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [3634 3675])
+                                            ("i_timer_find_service" variable (:type ("Poco::Util::Timer" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3691 3730])
+                                            ("i_timerTask_find_service" variable (:type ("Poco::Util::TimerTask::Ptr" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3768 3820])
+                                            ("Start_Timer_Proxy_FindService_Timer" function
+                                               (:prototype-flag t
+                                                :arguments 
+                                                  ( ("timer_value" variable
+                                                       (:constant-flag t
+                                                        :type ("uint32_t" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [3863 3890]))                                                  
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [3822 3891])
+                                            ("FindService_Timer_Expiry" function
+                                               (:prototype-flag t
+                                                :arguments 
+                                                  ( ("timerTask" variable
+                                                       (:reference 1
+                                                        :type ("Poco::Util::TimerTask" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [3923 3956]))                                                  
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [3893 3957])
+                                            ("adas_app_states" variable
+                                               (:typemodifiers ("static")
+                                                :type ("ADAS_application_states_t" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [4127 4176])
+                                            ("Set_application_states" function
+                                               (:typemodifiers ("static")
+                                                :arguments 
+                                                  ( ("adas_app_states_value" variable (:type ("ADAS_application_states_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4213 4261]))                                                  
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [4178 4308])
+                                            ("Get_application_states" function
+                                               (:typemodifiers ("static")
+                                                :type ("ADAS_application_states_t" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [4310 4397])
+                                            ("i_timer_application_state" variable (:type ("Poco::Util::Timer" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4414 4458])
+                                            ("i_timerTask_application_state" variable (:type ("Poco::Util::TimerTask::Ptr" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4496 4553])
+                                            ("Start_Application_state_Timer" function
+                                               (:prototype-flag t
+                                                :arguments 
+                                                  ( ("timer_value" variable
+                                                       (:constant-flag t
+                                                        :type ("uint32_t" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [4594 4621]))                                                  
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [4559 4622])
+                                            ("Application_state_Timer_Expiry" function
+                                               (:prototype-flag t
+                                                :arguments 
+                                                  ( ("timerTask" variable
+                                                       (:reference 1
+                                                        :type ("Poco::Util::TimerTask" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [4660 4693]))                                                  
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [4624 4694])
+                                            ("private" label nil (reparse-symbol classsubparts) [4831 4839])
+                                            ("adasIntelligence_" variable (:type ("std::unique_ptr" type
+                                                 (:template-specifier 
+                                                    ( ("ADASIntelligence" type nil nil nil))                                                    
+                                                  :type "class")
+                                                  nil nil)) (reparse-symbol classsubparts) [4855 4907])
+                                            ("mutex_adasIntelligence_" variable (:type ("std::mutex" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4918 4953])
+                                            ("logger_mgr" variable (:type ("ara::log::Logger" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4959 4988])
+                                            ("longitudinalctrlhmistate_" variable (:type ("std::unique_ptr" type
+                                                 (:template-specifier 
+                                                    ( ("LongitudinalCtrlHmiStateSkeletonActivity" type nil nil nil))                                                    
+                                                  :type "class")
+                                                  nil nil)) (reparse-symbol classsubparts) [5024 5108])
+                                            ("longitudinalctrlhmistate_displayStates_data_vector" variable (:type ("vwg::services::longitudinalctrlhmistate::DT_displayStates_vector" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5143 5261])
+                                            ("longitudinalctrlhmistate_functionSelection_data_vector" variable (:type ("vwg::services::longitudinalctrlhmistate::DT_functionSelection_vector" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5268 5394])
+                                            ("cruiseControl_" variable (:type ("std::unique_ptr" type
+                                                 (:template-specifier 
+                                                    ( ("CruiseControlProxyActivity" type nil nil nil))                                                    
+                                                  :type "class")
+                                                  nil nil)) (reparse-symbol classsubparts) [5432 5498])
+                                            ("acc_" variable (:type ("std::unique_ptr" type
+                                                 (:template-specifier 
+                                                    ( ("ACCProxyActivity" type nil nil nil))                                                    
+                                                  :type "class")
+                                                  nil nil)) (reparse-symbol classsubparts) [5505 5554])
+                                            ("clamp_" variable (:type ("std::unique_ptr" type
+                                                 (:template-specifier 
+                                                    ( ("ClampControlProxyActivity" type nil nil nil))                                                    
+                                                  :type "class")
+                                                  nil nil)) (reparse-symbol classsubparts) [5557 5615])
+                                            ("driverDisplay_" variable
+                                               (:default-value "nullptr"
+                                                :type ("std::unique_ptr" type
+                                                     (:template-specifier 
+                                                        ( ("DriverDisplayProxyActivity" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil))
+                                                (reparse-symbol classsubparts) [5618 5694])
+                                            ("cruiseControl_Notifications_data_struct" variable (:type ("vwg::services::cruisecontrol::DT_notifications_struct" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5731 5838])
+                                            ("cruiseControl_SystemStatusForHMI_data_struct" variable (:type ("vwg::services::cruisecontrol::DT_systemStatusForHMI_struct" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5845 5957])
+                                            ("cruiseControl_FunctionOnDemandStates_data_struct" variable (:type ("vwg::services::cruisecontrol::DT_functionOnDemandStates_struct" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5965 6081])
+                                            ("acc_info_data_struct" variable (:type ("vwg::services::acc::DT_info_struct" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6091 6156])
+                                            ("clampControl_clamp_data_struct" variable (:type ("vwg::services::clampcontrol::DT_clamps_struct" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6162 6265])
+                                            ("driverDisplay_notifications_data_struct" variable (:type ("vwg::services::driverdisplay::DT_notifications_struct" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6271 6383])
+                                            ("viwiService_" variable (:type ("std::unique_ptr" type
+                                                 (:template-specifier 
+                                                    ( ("ADASViwiService" type nil nil nil))                                                    
+                                                  :type "class")
+                                                  nil nil)) (reparse-symbol classsubparts) [6414 6460])
+                                            ("send_ViWidata_thread" variable (:type ("std::unique_ptr" type
+                                                 (:template-specifier 
+                                                    ( ("std::thread" type nil nil nil))                                                    
+                                                  :type "class")
+                                                  nil nil)) (reparse-symbol classsubparts) [6467 6517])
+                                            ("driverassistantfunctionselection_switch_control_data_vector" variable (:type ("DT_switchControls_vector" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6674 6764])
+                                            ("driverassistantfunctionselection_clients_data_vector" variable (:type ("DT_clients_vector" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6767 6842])
+                                            ("Usage" function
+                                               (:prototype-flag t
+                                                :arguments 
+                                                  ( ("progname" variable
+                                                       (:pointer 1
+                                                        :constant-flag t
+                                                        :type ("char_t" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [6861 6890]))                                                  
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [6850 6891])
+                                            ("ParseArguments" function
+                                               (:prototype-flag t
+                                                :arguments 
+                                                  ( ("argc" variable
+                                                       (:constant-flag t
+                                                        :type ("int32_t" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [6934 6953])
+                                                    ("argv" variable
+                                                       (:pointer 1
+                                                        :dereference 1
+                                                        :type ("char_t" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [6954 6975]))                                                  
+                                                :type ("CommandLine_Arguments" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [6897 6976])
+                                            ("adas_diag_adaptation_" variable (:type ("std::shared_ptr" type
+                                                 (:template-specifier 
+                                                    ( ("ADASDiagAdaptation" type nil nil nil))                                                    
+                                                  :type "class")
+                                                  nil nil)) (reparse-symbol classsubparts) [6982 7040])
+                                            ("i_test_timer_find_service" variable (:type ("Poco::Util::Timer" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7061 7105])
+                                            ("i_test_timerTask_find_service" variable (:type ("Poco::Util::TimerTask::Ptr" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7145 7202])
+                                            ("test_adas_db_mgr_" variable (:type ("std::unique_ptr" type
+                                                 (:template-specifier 
+                                                    ( ("ADASDBManager" type nil nil nil))                                                    
+                                                  :type "class")
+                                                  nil nil)) (reparse-symbol classsubparts) [7208 7257])
+                                            ("Start_Test_Timer_Proxy_FindService_Timer" function
+                                               (:prototype-flag t
+                                                :arguments 
+                                                  ( ("timer_value" variable
+                                                       (:constant-flag t
+                                                        :type ("uint32_t" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [7308 7335]))                                                  
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [7262 7336])
+                                            ("Test_FindService_Timer_Expiry" function
+                                               (:prototype-flag t
+                                                :arguments 
+                                                  ( ("timerTask" variable
+                                                       (:reference 1
+                                                        :type ("Poco::Util::TimerTask" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [7374 7407]))                                                  
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [7339 7408]))                                          
+                                        :type "class")
+                                        (reparse-symbol namespacesubparts) [3196 7412]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [1895 7416]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [1874 7426]))                  
+                :type "namespace")
+                nil [1858 7440]))          
+      :file "ADASManager.h"
+      :pointmax 7456
+      :fsize 7455
+      :lastmodtime '(24359 48963 300761 33000)
+      :unmatched-syntax '((TYPEDEF 2566 . 2573))
+      :lexical-table 
+        '(("ADAPTIVEAUTOSARAPPLICATION_SRC_ADAS_MANAGER_H_")
+          )
+)
+    (semanticdb-table "semanticdb-table-211b79c"
+      :file "ADASIntelligence.h"
+      :fsize 6689
+      :lastmodtime '(24359 48963 300761 33000))
+    (semanticdb-table "semanticdb-table-211b7bc"
+      :file "ADASCommon.h"
+      :fsize 7407
+      :lastmodtime '(24359 48963 300761 33000))
+    (semanticdb-table "semanticdb-table-211b7dc"
+      :file "ADASDBManager.h"
+      :fsize 5690
+      :lastmodtime '(24359 48963 300761 33000)))
+  :file "!home!hyuk.myeong!work!LARA!Apps!source!services!adas_service!src!adas!include!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

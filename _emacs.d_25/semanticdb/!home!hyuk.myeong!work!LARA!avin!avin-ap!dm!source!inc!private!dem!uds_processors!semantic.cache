@@ -1,0 +1,488 @@
+;; Object semanticdb-project-database-file-2b2ddf0
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-2b2ddf0"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-2b2de0c"
+      :major-mode c++-mode
+      :tags 
+        '( ("SOURCE_DEM_UDS_PROCESSORS_0x19_READ_DTC_INFORMATION_H_" variable (:constant-flag t) nil [821 875])
+            ("ara/log/logging.h" include nil nil [877 905])
+            ("uds_transport/uds_message_ext.h" include nil nil [907 949])
+            ("dcm/conversation/conversation.h" include nil nil [950 992])
+            ("common/service_processor_with_sid.h" include nil nil [993 1039])
+            ("dem/diagnostic_event_manager_interface.h" include nil nil [1040 1091])
+            ("common/diagnostic_server.h" include nil nil [1092 1129])
+            ("dcm/diagnostic_communication_manager.h" include nil nil [1130 1179])
+            ("ara" type
+               (:members 
+                  ( ("diag" type
+                       (:members 
+                          ( ("dem" type
+                               (:members 
+                                  ( ("service" type
+                                       (:members 
+                                          ( ("kPayloadSizeForSubfunctionsRNODTCBSMAndRDTCBSM" variable
+                                               (:default-value "1U"
+                                                :type ("std::uint8_t" type (:type "class") nil nil))
+                                                (reparse-symbol namespacesubparts) [1326 1391])
+                                            ("kPayloadSizeForSubfunctionRDTCSSBDTC" variable
+                                               (:default-value "4U"
+                                                :type ("std::uint8_t" type (:type "class") nil nil))
+                                                (reparse-symbol namespacesubparts) [1555 1610])
+                                            ("kPayloadSizeForSubfunctionRDTCEDRBDTC" variable
+                                               (:default-value "4U"
+                                                :type ("std::uint8_t" type (:type "class") nil nil))
+                                                (reparse-symbol namespacesubparts) [1774 1830])
+                                            ("kPayloadOffset" variable
+                                               (:default-value "2U"
+                                                :type ("std::uint8_t" type (:type "class") nil nil))
+                                                (reparse-symbol namespacesubparts) [1915 1948])
+                                            ("reportNumberOfDTCByStatusMask" variable
+                                               (:default-value "0x01"
+                                                :type ("std::uint8_t" type (:type "class") nil nil))
+                                                (reparse-symbol namespacesubparts) [2009 2059])
+                                            ("reportDTCByStatusMask" variable
+                                               (:default-value "0x02"
+                                                :type ("std::uint8_t" type (:type "class") nil nil))
+                                                (reparse-symbol namespacesubparts) [2112 2154])
+                                            ("reportDTCSnapshotIdentification" variable
+                                               (:default-value "0x03"
+                                                :type ("std::uint8_t" type (:type "class") nil nil))
+                                                (reparse-symbol namespacesubparts) [2217 2269])
+                                            ("reportDTCSnapshotRecordByDTCNumber" variable
+                                               (:default-value "0x04"
+                                                :type ("std::uint8_t" type (:type "class") nil nil))
+                                                (reparse-symbol namespacesubparts) [2335 2390])
+                                            ("reportDTCExtendedDataRecordByDTCNumber" variable
+                                               (:default-value "0x06"
+                                                :type ("std::uint8_t" type (:type "class") nil nil))
+                                                (reparse-symbol namespacesubparts) [2461 2520])
+                                            ("reportSupportedDTC" variable
+                                               (:default-value "0x0A"
+                                                :type ("std::uint8_t" type (:type "class") nil nil))
+                                                (reparse-symbol namespacesubparts) [2571 2610])
+                                            ("kReportDTCFaultDetectionCounter" variable
+                                               (:default-value "0x14"
+                                                :type ("std::uint8_t" type (:type "class") nil nil))
+                                                (reparse-symbol namespacesubparts) [2672 2724])
+                                            ("shiftByEight" variable
+                                               (:default-value "8U"
+                                                :type ("std::uint8_t" type (:type "class") nil nil))
+                                                (reparse-symbol namespacesubparts) [2735 2766])
+                                            ("shiftBySixteen" variable
+                                               (:default-value "16U"
+                                                :type ("std::uint8_t" type (:type "class") nil nil))
+                                                (reparse-symbol namespacesubparts) [2777 2811])
+                                            ("highestDTCStatusMask" variable
+                                               (:default-value "0xFF"
+                                                :type ("std::uint16_t" type (:type "class") nil nil))
+                                                (reparse-symbol namespacesubparts) [2822 2864])
+                                            ("allRecords" variable
+                                               (:default-value "0xFF"
+                                                :type ("std::uint16_t" type (:type "class") nil nil))
+                                                (reparse-symbol namespacesubparts) [2875 2907])
+                                            ("flagTrue" variable
+                                               (:default-value "1U"
+                                                :type ("std::uint8_t" type (:type "class") nil nil))
+                                                (reparse-symbol namespacesubparts) [2918 2945])
+                                            ("kSupportedDTCStatusBits" variable
+                                               (:default-value "0xFF"
+                                                :type ("std::uint8_t" type (:type "class") nil nil))
+                                                (reparse-symbol namespacesubparts) [3087 3131])
+                                            ("kDTCFormatIdentifier" variable
+                                               (:default-value "0x01"
+                                                :type ("std::uint8_t" type (:type "class") nil nil))
+                                                (reparse-symbol namespacesubparts) [3270 3311])
+                                            ("ReadDTCInformation" type
+                                               (:superclasses 
+                                                  ( ("ara::diag::ServiceProcessorWithSid" type
+                                                       (:protection "public"
+                                                        :type "class")
+                                                        nil nil))                                                  
+                                                :members 
+                                                  ( ("public" label nil (reparse-symbol classsubparts) [3453 3460])
+                                                    ("ReadDTCInformation" function
+                                                       (:prototype-flag t
+                                                        :constructor-flag t
+                                                        :arguments 
+                                                          ( ("dem" variable
+                                                               (:reference 1
+                                                                :default-value "ara::diag::DiagnosticServer::GetInstance().GetDEMInterface()"
+                                                                :type ("dem::DEMInterface" type (:type "class") nil nil))
+                                                                (reparse-symbol arg-sub-list) [3790 3875]))                                                          
+                                                        :type ("ReadDTCInformation" type (:type "class") nil nil))
+                                                        (reparse-symbol classsubparts) [3771 3877])
+                                                    ("override" variable (:type "int") (reparse-symbol classsubparts) [4575 4584])
+                                                    ("private" label nil (reparse-symbol classsubparts) [4660 4668])
+                                                    ("mDem_" variable (:type ("dem::DEMInterface" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4671 4696])
+                                                    ("HandleSubfunctionRNODTCBSMOrRDTCBSM" function
+                                                       (:prototype-flag t
+                                                        :arguments 
+                                                          ( ("request" variable
+                                                               (:reference 1
+                                                                :constant-flag t
+                                                                :type ("ara::diag::uds_transport::UdsMessageExt" type (:type "class") nil nil))
+                                                                (reparse-symbol arg-sub-list) [5106 5161])
+                                                            ("subfunction" variable
+                                                               (:constant-flag t
+                                                                :type ("std::uint8_t" type (:type "class") nil nil))
+                                                                (reparse-symbol arg-sub-list) [5162 5193]))                                                          
+                                                        :type ("ServiceProcessor::Response" type (:type "class") nil nil))
+                                                        (reparse-symbol classsubparts) [5036 5194])
+                                                    ("HandleSubfunctionRDTCSSBDTC" function
+                                                       (:prototype-flag t
+                                                        :arguments 
+                                                          ( ("request" variable
+                                                               (:reference 1
+                                                                :constant-flag t
+                                                                :type ("ara::diag::uds_transport::UdsMessageExt" type (:type "class") nil nil))
+                                                                (reparse-symbol arg-sub-list) [5489 5544]))                                                          
+                                                        :type ("ServiceProcessor::Response" type (:type "class") nil nil))
+                                                        (reparse-symbol classsubparts) [5427 5545])
+                                                    ("HandleSubfunctionRDTCFDCOrRSUPDTC" function
+                                                       (:prototype-flag t
+                                                        :arguments 
+                                                          ( ("request" variable
+                                                               (:reference 1
+                                                                :constant-flag t
+                                                                :type ("ara::diag::uds_transport::UdsMessageExt" type (:type "class") nil nil))
+                                                                (reparse-symbol arg-sub-list) [5800 5855])
+                                                            ("subfunction" variable
+                                                               (:constant-flag t
+                                                                :type ("std::uint8_t" type (:type "class") nil nil))
+                                                                (reparse-symbol arg-sub-list) [5856 5887]))                                                          
+                                                        :type ("ServiceProcessor::Response" type (:type "class") nil nil))
+                                                        (reparse-symbol classsubparts) [5732 5888])
+                                                    ("HandleSubfunctionRDTCEDRBDTC" function
+                                                       (:prototype-flag t
+                                                        :arguments 
+                                                          ( ("request" variable
+                                                               (:reference 1
+                                                                :constant-flag t
+                                                                :type ("ara::diag::uds_transport::UdsMessageExt" type (:type "class") nil nil))
+                                                                (reparse-symbol arg-sub-list) [6129 6184]))                                                          
+                                                        :type ("ServiceProcessor::Response" type (:type "class") nil nil))
+                                                        (reparse-symbol classsubparts) [6066 6185])
+                                                    ("HandleSubfunctionRDTCSSI" function
+                                                       (:prototype-flag t
+                                                        :arguments 
+                                                          ( ("request" variable
+                                                               (:reference 1
+                                                                :constant-flag t
+                                                                :type ("ara::diag::uds_transport::UdsMessageExt" type (:type "class") nil nil))
+                                                                (reparse-symbol arg-sub-list) [6389 6444]))                                                          
+                                                        :type ("ServiceProcessor::Response" type (:type "class") nil nil))
+                                                        (reparse-symbol classsubparts) [6337 6445])
+                                                    ("ServiceValidationCheck" function
+                                                       (:prototype-flag t
+                                                        :arguments 
+                                                          ( ("request" variable
+                                                               (:reference 1
+                                                                :constant-flag t
+                                                                :type ("ara::diag::uds_transport::UdsMessageExt" type (:type "class") nil nil))
+                                                                (reparse-symbol arg-sub-list) [6647 6702])
+                                                            ("conversation" variable
+                                                               (:reference 1
+                                                                :type ("ara::diag::dcm::conversation::Conversation" type (:type "class") nil nil))
+                                                                (reparse-symbol arg-sub-list) [6709 6766]))                                                          
+                                                        :type ("std::tuple" type
+                                                             (:template-specifier 
+                                                                ( ("bool" type nil nil nil)
+                                                                  ("ara::diag::uds::UdsNegativeResponseCode" type nil nil nil))                                                                
+                                                              :type "class")
+                                                              nil nil))
+                                                        (reparse-symbol classsubparts) [6559 6767])
+                                                    ("isDtcValueUpdate_" variable (:type "bool") (reparse-symbol classsubparts) [6805 6828])
+                                                    ("aralog_" variable (:type ("ara::log::Logger" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6832 6858]))                                                  
+                                                :type "class")
+                                                (reparse-symbol namespacesubparts) [3381 6861]))                                          
+                                        :type "namespace")
+                                        (reparse-symbol namespacesubparts) [1230 6864]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [1214 6887]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [1197 6906]))                  
+                :type "namespace")
+                nil [1181 6926]))          
+      :file "0x19_read_dtc_information.h"
+      :pointmax 7010
+      :fsize 7162
+      :lastmodtime '(24420 22489 992059 653000)
+      :unmatched-syntax '((semantic-list 4635 . 4657) (symbol 4624 . 4632) (CONST 4618 . 4623) (semantic-list 4615 . 4617) (symbol 4600 . 4615) (BOOL 4595 . 4599) (INLINE 4588 . 4594) (semantic-list 4454 . 4574) (symbol 4441 . 4454) (symbol 4432 . 4440) (punctuation 4431 . 4432) (punctuation 4430 . 4431) (symbol 4414 . 4430) (punctuation 3920 . 3921) (DEFAULT 3913 . 3920) (punctuation 3911 . 3912) (semantic-list 3908 . 3910) (symbol 3890 . 3908) (punctuation 3889 . 3890) (VIRTUAL 3881 . 3888) (symbol 3260 . 3269) (symbol 3077 . 3086) (symbol 2908 . 2917) (symbol 2865 . 2874) (symbol 2812 . 2821) (symbol 2767 . 2776) (symbol 2725 . 2734) (symbol 2662 . 2671) (symbol 2561 . 2570) (symbol 2451 . 2460) (symbol 2325 . 2334) (symbol 2207 . 2216) (symbol 2102 . 2111) (symbol 1999 . 2008) (symbol 1905 . 1914) (symbol 1764 . 1773) (symbol 1545 . 1554) (symbol 1316 . 1325))
+      :lexical-table 
+        '(("SOURCE_DEM_UDS_PROCESSORS_0x19_READ_DTC_INFORMATION_H_")
+          )
+)
+    (semanticdb-table "semanticdb-table-6dab10"
+      :major-mode c++-mode
+      :tags 
+        '( ("_0x14_CLEAR_DIAGNOSITC_INFORMATION_H_" variable (:constant-flag t) nil [805 842])
+            ("ara/log/logging.h" include nil nil [844 872])
+            ("uds_transport/uds_message_ext.h" include nil nil [874 916])
+            ("dcm/conversation/conversation.h" include nil nil [917 959])
+            ("common/service_processor_with_sid.h" include nil nil [960 1006])
+            ("dem/diagnostic_event_manager_interface.h" include nil nil [1007 1058])
+            ("common/diagnostic_server.h" include nil nil [1059 1096])
+            ("dcm/diagnostic_communication_manager.h" include nil nil [1097 1146])
+            ("ara" type
+               (:members 
+                  ( ("diag" type
+                       (:members 
+                          ( ("dem" type
+                               (:members 
+                                  ( ("service" type
+                                       (:members 
+                                          ( ("kClearDiagnosticInformationPayloadSize" variable
+                                               (:typemodifiers ("static")
+                                                :constant-flag t
+                                                :default-value "3"
+                                                :type ("uint8_t" type (:type "class") nil nil))
+                                                (reparse-symbol namespacesubparts) [1299 1363])
+                                            ("ClearDiagnosticInformation" type
+                                               (:superclasses 
+                                                  ( ("ara::diag::ServiceProcessorWithSid" type
+                                                       (:protection "public"
+                                                        :type "class")
+                                                        nil nil))                                                  
+                                                :members 
+                                                  ( ("public" label nil (reparse-symbol classsubparts) [1549 1556])
+                                                    ("ClearDiagnosticInformation" function
+                                                       (:prototype-flag t
+                                                        :constructor-flag t
+                                                        :arguments 
+                                                          ( ("dem" variable
+                                                               (:reference 1
+                                                                :default-value "ara::diag::DiagnosticServer::GetInstance().GetDEMInterface()"
+                                                                :type ("dem::DEMInterface" type (:type "class") nil nil))
+                                                                (reparse-symbol arg-sub-list) [1774 1859]))                                                          
+                                                        :type ("ClearDiagnosticInformation" type (:type "class") nil nil))
+                                                        (reparse-symbol classsubparts) [1747 1861])
+                                                    ("override" variable (:type "int") (reparse-symbol classsubparts) [2629 2638])
+                                                    ("private" label nil (reparse-symbol classsubparts) [2641 2649])
+                                                    ("noexcept" variable
+                                                       (:constant-flag t
+                                                        :type "int")
+                                                        (reparse-symbol classsubparts) [3200 3215])
+                                                    ("mDem_" variable (:type ("dem::DEMInterface" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3284 3309])
+                                                    ("aralog_" variable (:type ("ara::log::Logger" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3340 3366]))                                                  
+                                                :type "class")
+                                                (reparse-symbol namespacesubparts) [1469 3369]))                                          
+                                        :type "namespace")
+                                        (reparse-symbol namespacesubparts) [1197 3372]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [1181 3395]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [1164 3414]))                  
+                :type "namespace")
+                nil [1148 3434]))          
+      :file "0x14_clear_dtc_information.h"
+      :pointmax 3501
+      :fsize 3577
+      :lastmodtime '(24420 22489 992059 653000)
+      :unmatched-syntax '((semantic-list 3174 . 3199) (symbol 3159 . 3174) (symbol 3135 . 3158) (punctuation 3134 . 3135) (punctuation 3133 . 3134) (symbol 3130 . 3133) (punctuation 3129 . 3130) (punctuation 3128 . 3129) (symbol 3124 . 3128) (punctuation 3123 . 3124) (punctuation 3122 . 3123) (symbol 3119 . 3122) (semantic-list 2508 . 2628) (symbol 2495 . 2508) (symbol 2486 . 2494) (punctuation 2485 . 2486) (punctuation 2484 . 2485) (symbol 2468 . 2484) (punctuation 1912 . 1913) (DEFAULT 1905 . 1912) (punctuation 1903 . 1904) (semantic-list 1900 . 1902) (symbol 1874 . 1900) (punctuation 1873 . 1874) (VIRTUAL 1865 . 1872))
+      :lexical-table 
+        '(("_0x14_CLEAR_DIAGNOSITC_INFORMATION_H_")
+          )
+)
+    (semanticdb-table "semanticdb-table-2287008"
+      :major-mode c++-mode
+      :tags 
+        '( ("SOURCE_DEM_UDS_PROCESSORS_0X85_CONTROL_DTC_SETTING_H_" variable (:constant-flag t) nil [811 864])
+            ("SOURCE_DEM_UDS_PROCESSORS_0X85_CONTROL_DTC_SETTING_H_" variable (:constant-flag t) nil [811 864])
+            ("functional" include (:system-flag t) nil [866 887])
+            ("boost/property_tree/ptree_fwd.hpp" include nil nil [889 933])
+            ("ara/core/optional.h" include nil nil [935 965])
+            ("common/service_processor_with_sid.h" include nil nil [967 1013])
+            ("dcm/conversation/conversation.h" include nil nil [1014 1056])
+            ("dcm/service/registry/session_registry.h" include nil nil [1057 1107])
+            ("dem/diagnostic_event_manager_interface.h" include nil nil [1108 1159])
+            ("common/diagnostic_server.h" include nil nil [1160 1197])
+            ("uds/session_type.h" include nil nil [1198 1227])
+            ("uds_transport/uds_message_ext.h" include nil nil [1228 1270])
+            ("ara" type
+               (:members 
+                  ( ("diag" type
+                       (:members 
+                          ( ("dem" type
+                               (:members 
+                                  ( ("service" type
+                                       (:members 
+                                          ( ("unnamed" type
+                                               (:members 
+                                                  ( ("kRequestFirstByte" function
+                                                       (:prototype-flag t
+                                                        :arguments 
+                                                          ( ("" variable (:type ("0U" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1394 1397]))                                                          
+                                                        :type ("std::uint8_t" type (:type "class") nil nil))
+                                                        (reparse-symbol namespacesubparts) [1363 1398])
+                                                    ("kRequestSecondByte" function
+                                                       (:prototype-flag t
+                                                        :arguments 
+                                                          ( ("" variable (:type ("1U" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1441 1444]))                                                          
+                                                        :type ("std::uint8_t" type (:type "class") nil nil))
+                                                        (reparse-symbol namespacesubparts) [1409 1445])
+                                                    ("kRequestThirdByte" function
+                                                       (:prototype-flag t
+                                                        :arguments 
+                                                          ( ("" variable (:type ("2U" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1487 1490]))                                                          
+                                                        :type ("std::uint8_t" type (:type "class") nil nil))
+                                                        (reparse-symbol namespacesubparts) [1456 1491])
+                                                    ("kRequestFourthByte" function
+                                                       (:prototype-flag t
+                                                        :arguments 
+                                                          ( ("" variable (:type ("3U" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1534 1537]))                                                          
+                                                        :type ("std::uint8_t" type (:type "class") nil nil))
+                                                        (reparse-symbol namespacesubparts) [1502 1538])
+                                                    ("kRequestFifthByte" function
+                                                       (:prototype-flag t
+                                                        :arguments 
+                                                          ( ("" variable (:type ("4U" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1580 1583]))                                                          
+                                                        :type ("std::uint8_t" type (:type "class") nil nil))
+                                                        (reparse-symbol namespacesubparts) [1549 1584])
+                                                    ("kLeftShiftedBySixteen" function
+                                                       (:prototype-flag t
+                                                        :arguments 
+                                                          ( ("" variable (:type ("16U" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1630 1634]))                                                          
+                                                        :type ("std::uint8_t" type (:type "class") nil nil))
+                                                        (reparse-symbol namespacesubparts) [1595 1635])
+                                                    ("kLeftShiftedByEight" function
+                                                       (:prototype-flag t
+                                                        :arguments 
+                                                          ( ("" variable (:type ("8U" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1679 1682]))                                                          
+                                                        :type ("std::uint8_t" type (:type "class") nil nil))
+                                                        (reparse-symbol namespacesubparts) [1646 1683])
+                                                    ("kSubfunctionON" function
+                                                       (:prototype-flag t
+                                                        :type ("std::uint8_t" type (:type "class") nil nil))
+                                                        (reparse-symbol namespacesubparts) [1694 1728])
+                                                    ("kSubfunctionOFF" function
+                                                       (:prototype-flag t
+                                                        :type ("std::uint8_t" type (:type "class") nil nil))
+                                                        (reparse-symbol namespacesubparts) [1739 1774])
+                                                    ("kMinimumLength" function
+                                                       (:prototype-flag t
+                                                        :type ("std::uint8_t" type (:type "class") nil nil))
+                                                        (reparse-symbol namespacesubparts) [1785 1816])
+                                                    ("kMaximumLength" function
+                                                       (:prototype-flag t
+                                                        :type ("std::uint8_t" type (:type "class") nil nil))
+                                                        (reparse-symbol namespacesubparts) [1827 1858])
+                                                    ("kAllowedOptionalRecord" function
+                                                       (:prototype-flag t
+                                                        :arguments 
+                                                          ( ("" variable (:type ("0xFFFFFFU" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1906 1916]))                                                          
+                                                        :type ("std::uint32_t" type (:type "class") nil nil))
+                                                        (reparse-symbol namespacesubparts) [1869 1917]))                                                  
+                                                :type "namespace")
+                                                (reparse-symbol namespacesubparts) [1341 1919])
+                                            ("ControlDTCSetting" type
+                                               (:superclasses 
+                                                  ( ("ara::diag::ServiceProcessorWithSid" type
+                                                       (:protection "public"
+                                                        :type "class")
+                                                        nil nil))                                                  
+                                                :members 
+                                                  ( ("public" label nil (reparse-symbol classsubparts) [2068 2075])
+                                                    ("ControlDTCSetting" function
+                                                       (:prototype-flag t
+                                                        :constructor-flag t
+                                                        :arguments 
+                                                          ( ("dem" variable
+                                                               (:reference 1
+                                                                :default-value "ara::diag::DiagnosticServer::GetInstance().GetDEMInterface()"
+                                                                :type ("dem::DEMInterface" type (:type "class") nil nil))
+                                                                (reparse-symbol arg-sub-list) [2264 2349]))                                                          
+                                                        :type ("ControlDTCSetting" type (:type "class") nil nil))
+                                                        (reparse-symbol classsubparts) [2246 2351])
+                                                    ("ControlDTCSetting" function
+                                                       (:prototype-flag t
+                                                        :destructor-flag t
+                                                        :typemodifiers ("virtual")
+                                                        :type "void")
+                                                        (reparse-symbol classsubparts) [2401 2430])
+                                                    ("optionalRecord_" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2472 2497])
+                                                    ("override" variable (:type "int") (reparse-symbol classsubparts) [3123 3132])
+                                                    ("OnSessionChange" function
+                                                       (:prototype-flag t
+                                                        :arguments 
+                                                          ( ("newSession" variable
+                                                               (:constant-flag t
+                                                                :type ("ara::core::Optional" type
+                                                                     (:template-specifier 
+                                                                        ( ("ara::diag::uds::sessiontype::SessionType" type (:constant-flag t) nil nil))                                                                        
+                                                                      :type "class")
+                                                                      nil nil))
+                                                                (reparse-symbol arg-sub-list) [3222 3307]))                                                          
+                                                        :type "void")
+                                                        (reparse-symbol classsubparts) [3201 3308])
+                                                    ("private" label nil (reparse-symbol classsubparts) [3311 3319])
+                                                    ("ServiceValidationCheck" function
+                                                       (:prototype-flag t
+                                                        :arguments 
+                                                          ( ("request" variable
+                                                               (:reference 1
+                                                                :constant-flag t
+                                                                :type ("ara::diag::uds_transport::UdsMessageExt" type (:type "class") nil nil))
+                                                                (reparse-symbol arg-sub-list) [3520 3575])
+                                                            ("conversation" variable
+                                                               (:reference 1
+                                                                :type ("ara::diag::dcm::conversation::Conversation" type (:type "class") nil nil))
+                                                                (reparse-symbol arg-sub-list) [3582 3639]))                                                          
+                                                        :type ("std::tuple" type
+                                                             (:template-specifier 
+                                                                ( ("bool" type nil nil nil)
+                                                                  ("ara::diag::uds::UdsNegativeResponseCode" type nil nil nil))                                                                
+                                                              :type "class")
+                                                              nil nil))
+                                                        (reparse-symbol classsubparts) [3432 3640])
+                                                    ("isDtcSettingEnable" variable (:type "bool") (reparse-symbol classsubparts) [3703 3727])
+                                                    ("aralog_" variable (:type ("ara::log::Logger" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3731 3757])
+                                                    ("mDem_" variable (:type ("diag::dem::DEMInterface" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3797 3828])
+                                                    ("ExecutePositiveTransition" function
+                                                       (:prototype-flag t
+                                                        :arguments 
+                                                          ( ("message" variable
+                                                               (:reference 1
+                                                                :constant-flag t
+                                                                :type ("ara::diag::uds_transport::UdsMessageExt" type (:type "class") nil nil))
+                                                                (reparse-symbol arg-sub-list) [4028 4083])
+                                                            ("" variable
+                                                               (:constant-flag t
+                                                                :type ("std::function" type (:type "class") nil nil))
+                                                                (reparse-symbol arg-sub-list) [4090 4110])
+                                                            ("" variable (:type "void") (reparse-symbol arg-sub-list) [4110 4120])
+                                                            ("" variable (:type ("demif_func" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4123 4134])
+                                                            ("newState" variable
+                                                               (:constant-flag t
+                                                                :type "bool")
+                                                                (reparse-symbol arg-sub-list) [4135 4155]))                                                          
+                                                        :type ("ServiceProcessor::Response" type (:type "class") nil nil))
+                                                        (reparse-symbol classsubparts) [3975 4156])
+                                                    ("subscriber_id_" variable (:type ("ara::core::Optional" type
+                                                         (:template-specifier 
+                                                            ( ("ara::diag::dcm::service::SessionRegistry::SubscriberId" type nil nil nil))                                                            
+                                                          :type "class")
+                                                          nil nil)) (reparse-symbol classsubparts) [4191 4282]))                                                  
+                                                :type "class")
+                                                (reparse-symbol namespacesubparts) [1997 4285]))                                          
+                                        :type "namespace")
+                                        (reparse-symbol namespacesubparts) [1321 4288]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [1305 4311]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [1288 4330]))                  
+                :type "namespace")
+                nil [1272 4350]))          
+      :file "0x85_control_dtc_setting.h"
+      :pointmax 4433
+      :fsize 4430
+      :lastmodtime '(24420 22489 992059 653000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("SOURCE_DEM_UDS_PROCESSORS_0X85_CONTROL_DTC_SETTING_H_")
+          )
+))
+  :file "!home!hyuk.myeong!work!LARA!avin!avin-ap!dm!source!inc!private!dem!uds_processors!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,154 @@
+;; Object semanticdb-project-database-file-3f4259c
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-3f4259c"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-3f425a8"
+      :major-mode c++-mode
+      :tags 
+        '( ("SOURCE_DCM_CONNECTION_DOIP_UDP_HANDLER_H_" variable (:constant-flag t) nil [793 834])
+            ("atomic" include (:system-flag t) nil [836 853])
+            ("cstddef" include (:system-flag t) nil [854 872])
+            ("memory" include (:system-flag t) nil [873 890])
+            ("thread" include (:system-flag t) nil [891 908])
+            ("unordered_map" include (:system-flag t) nil [909 933])
+            ("ara/core/string.h" include nil nil [935 963])
+            ("ara/core/optional.h" include nil nil [964 994])
+            ("ara/log/logging.h" include nil nil [995 1023])
+            ("dcm/connection/doip_udp_connection.h" include nil nil [1024 1071])
+            ("unnamed" type
+               (:members 
+                  ( ("kUdpDiscoveryPort" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type ("13400u" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1209 1216]))                          
+                        :type ("uint16_t" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [1182 1217]))                  
+                :type "namespace")
+                nil [1073 1219])
+            ("ara" type
+               (:members 
+                  ( ("diag" type
+                       (:members 
+                          ( ("uds_transport" type
+                               (:members 
+                                  ( ("doip" type
+                                       (:members 
+                                          ( ("DoIpUdpSocketHandler" type
+                                               (:members 
+                                                  ( ("public" label nil (reparse-symbol classsubparts) [1343 1350])
+                                                    ("DoIpUdpSocketHandler" function
+                                                       (:prototype-flag t
+                                                        :constructor-flag t
+                                                        :type ("DoIpUdpSocketHandler" type (:type "class") nil nil))
+                                                        (reparse-symbol classsubparts) [1413 1436])
+                                                    ("Initialize" function
+                                                       (:prototype-flag t
+                                                        :type "bool")
+                                                        (reparse-symbol classsubparts) [1481 1499])
+                                                    ("Start" function
+                                                       (:prototype-flag t
+                                                        :type "void")
+                                                        (reparse-symbol classsubparts) [1542 1555])
+                                                    ("Stop" function
+                                                       (:prototype-flag t
+                                                        :type "void")
+                                                        (reparse-symbol classsubparts) [1597 1609])
+                                                    ("IsSocketClosed" function
+                                                       (:prototype-flag t
+                                                        :typemodifiers ("static")
+                                                        :arguments 
+                                                          ( ("currentErrno" variable (:type "int") (reparse-symbol arg-sub-list) [1845 1862]))                                                          
+                                                        :type "bool")
+                                                        (reparse-symbol classsubparts) [1818 1863])
+                                                    ("GetDeviceNameFromIPAddress" function
+                                                       (:prototype-flag t
+                                                        :typemodifiers ("static")
+                                                        :type ("ara::core::Optional" type
+                                                             (:template-specifier 
+                                                                ( ("ara::core::String" type nil nil nil))                                                                
+                                                              :type "class")
+                                                              nil nil))
+                                                        (reparse-symbol classsubparts) [1961 2036])
+                                                    ("GetMACAddress" function
+                                                       (:prototype-flag t
+                                                        :typemodifiers ("static")
+                                                        :arguments 
+                                                          ( ("givenSocket" variable
+                                                               (:constant-flag t
+                                                                :type ("std::int32_t" type (:type "class") nil nil))
+                                                                (reparse-symbol arg-sub-list) [2248 2279])
+                                                            ("eid" variable
+                                                               (:reference 1
+                                                                :type ("ByteVector" type (:type "class") nil nil))
+                                                                (reparse-symbol arg-sub-list) [2280 2296]))                                                          
+                                                        :type "bool")
+                                                        (reparse-symbol classsubparts) [2222 2297])
+                                                    ("private" label nil (reparse-symbol classsubparts) [2302 2310])
+                                                    ("ipAddress_" variable (:type ("ara::core::String" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2338 2369])
+                                                    ("udpMulticastSocket_" variable (:type "int") (reparse-symbol classsubparts) [2428 2456])
+                                                    ("udpUnicastSocket_" variable (:type "int") (reparse-symbol classsubparts) [2511 2537])
+                                                    ("interfaceIndex_" variable (:type "int") (reparse-symbol classsubparts) [2571 2594])
+                                                    ("isIpTypeIPv6_" variable (:type "bool") (reparse-symbol classsubparts) [2670 2696])
+                                                    ("exitRequested_" variable (:type ("std::atomic_bool" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2792 2831])
+                                                    ("udpThread_" variable (:type ("std::thread" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2898 2921])
+                                                    ("doIpUdpConnection_" variable (:type ("std::unique_ptr" type
+                                                         (:template-specifier 
+                                                            ( ("DoIpUdpConnection" type nil nil nil))                                                            
+                                                          :type "class")
+                                                          nil nil)) (reparse-symbol classsubparts) [2980 3034])
+                                                    ("aralog_" variable (:type ("ara::log::Logger" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3078 3104])
+                                                    ("SetupUdpSocketIPv4" function
+                                                       (:prototype-flag t
+                                                        :type "bool")
+                                                        (reparse-symbol classsubparts) [3243 3269])
+                                                    ("SetupUdpSocketIPv6" function
+                                                       (:prototype-flag t
+                                                        :type "bool")
+                                                        (reparse-symbol classsubparts) [3408 3434])
+                                                    ("SetupUdpUnicastSocketIPv6" function
+                                                       (:prototype-flag t
+                                                        :type "bool")
+                                                        (reparse-symbol classsubparts) [3589 3622])
+                                                    ("SetupUdpMulticastSocketIPv6" function
+                                                       (:prototype-flag t
+                                                        :type "bool")
+                                                        (reparse-symbol classsubparts) [3782 3817])
+                                                    ("SendVehicleAnnouncementWhenSocketIsBound" function
+                                                       (:prototype-flag t
+                                                        :type "bool")
+                                                        (reparse-symbol classsubparts) [4013 4061])
+                                                    ("GetDeviceIndexFromIPAddress" function
+                                                       (:prototype-flag t
+                                                        :type "bool")
+                                                        (reparse-symbol classsubparts) [4161 4196])
+                                                    ("UdpHandler" function
+                                                       (:prototype-flag t
+                                                        :type "void")
+                                                        (reparse-symbol classsubparts) [4289 4307]))                                                  
+                                                :type "class")
+                                                (reparse-symbol namespacesubparts) [1312 4311]))                                          
+                                        :type "namespace")
+                                        (reparse-symbol namespacesubparts) [1294 4314]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [1268 4334]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [1251 4363]))                  
+                :type "namespace")
+                nil [1235 4383]))          
+      :file "doip_udp_handler.h"
+      :pointmax 4454
+      :fsize 4592
+      :lastmodtime '(24418 50056 113268 734000)
+      :unmatched-syntax '((EXPLICIT 1404 . 1412) (symbol 1172 . 1181) (STATIC 1165 . 1171))
+      :lexical-table 
+        '(("SOURCE_DCM_CONNECTION_DOIP_UDP_HANDLER_H_")
+          )
+)
+    (semanticdb-table "semanticdb-table-20fb2b4"
+      :file "doip_udp_connection.h"
+      :fsize 11521
+      :lastmodtime '(24418 50056 113268 734000)))
+  :file "!home!hyuk.myeong!work!LARA_new!avin!avin-ap!dm!source!inc!private!dcm!connection!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

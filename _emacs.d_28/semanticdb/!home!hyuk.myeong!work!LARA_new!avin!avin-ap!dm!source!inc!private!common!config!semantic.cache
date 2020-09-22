@@ -1,0 +1,52 @@
+;; Object semanticdb-project-database-file-38a7fa8
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-38a7fa8"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-38a7fc4"
+      :major-mode c++-mode
+      :tags 
+        '( ("ARA_DIAG_CFG_DOIP_COMMON_H_" variable (:constant-flag t) nil [775 802])
+            ("string" include (:system-flag t) nil [804 821])
+            ("ara/core/string.h" include nil nil [822 850])
+            ("ara" type
+               (:members 
+                  ( ("diag" type
+                       (:members 
+                          ( ("cfg" type
+                               (:members 
+                                  ( ("DoIpCommon" type
+                                       (:members 
+                                          ( ("tcpInitialInactivityTime" variable (:type ("std::uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1089 1128])
+                                            ("tcpGeneralInactivityTime" variable (:type ("std::uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1192 1231])
+                                            ("tcpAliveCheckResponseTimeout" variable (:type ("std::uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1299 1342])
+                                            ("maxInitialVehicleAnnouncementTime" variable (:type ("std::uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1419 1467])
+                                            ("vehicleAnnouncementCount" variable (:type ("std::uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1532 1571])
+                                            ("vehicleAnnouncementInterval" variable (:type ("std::uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1639 1681])
+                                            ("maxRequestBytes" variable (:type ("std::uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1762 1792])
+                                            ("doIpEntityLogicalAddress" variable (:type ("std::uint16_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1858 1897])
+                                            ("eidValue" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1963 1984])
+                                            ("persistencyMemoryAddress" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2054 2091])
+                                            ("isMacToBeUsedAsEid" variable (:type "bool") (reparse-symbol classsubparts) [2200 2224])
+                                            ("isVehicleIdentificationSyncStatusToBeUsed" variable (:type "bool") (reparse-symbol classsubparts) [2369 2416])
+                                            ("isMaxLengthInEntityStatusResponseRequired_" variable (:type "bool") (reparse-symbol classsubparts) [2516 2564]))                                          
+                                        :type "struct")
+                                        (reparse-symbol namespacesubparts) [1007 2567]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [885 2570]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [868 2589]))                  
+                :type "namespace")
+                nil [852 2609]))          
+      :file "doip_common.h"
+      :pointmax 2664
+      :fsize 2732
+      :lastmodtime '(24418 50056 109269 609000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("ARA_DIAG_CFG_DOIP_COMMON_H_")
+          )
+))
+  :file "!home!hyuk.myeong!work!LARA_new!avin!avin-ap!dm!source!inc!private!common!config!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

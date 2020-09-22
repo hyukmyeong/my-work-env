@@ -1,0 +1,239 @@
+;; Object semanticdb-project-database-file-32fcab8
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-32fcab8"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-32fcad4"
+      :major-mode c++-mode
+      :tags 
+        '( ("ucm/ucm_proxy.h" include nil nil [1405 1431])
+            ("utility" include (:system-flag t) nil [1433 1451])
+            ("ara/crypto/direct/crypt/CryptoProvider.h" include nil nil [1453 1504])
+            ("ara/crypto/direct/keys/EntryPoint.h" include nil nil [1505 1551])
+            ("vac/language/cpp14_backport.h" include nil nil [1552 1592])
+            ("crc/crc.h" include nil nil [1594 1614])
+            ("diagnostic_service_constants.h" include nil nil [1615 1656])
+            ("oem_programming_preconditions_impl.h" include nil nil [1657 1704])
+            ("util/bytes_helper.h" include nil nil [1705 1735])
+            ("util/dsa_ara_logger.h" include nil nil [1736 1768])
+            ("vector" type
+               (:members 
+                  ( ("diagnostic_service" type
+                       (:members 
+                          ( ("ucm" type
+                               (:members 
+                                  ( ("vector::diagnostic_service::vendor::OEMProgrammingPreconditionsImpl" using (:type ("vector::diagnostic_service::vendor::OEMProgrammingPreconditionsImpl" type
+                                         (:prototype t
+                                          :type "class")
+                                          nil nil)) (reparse-symbol namespacesubparts) [1931 2005])
+                                    ("ara::diag::service_interfaces::generic_uds_service::UDSResponseCodeType" variable (:type "int") (reparse-symbol namespacesubparts) [2080 2152])
+                                    ("UCMProxy" function
+                                       (:constructor-flag t
+                                        :parent "UCMProxy"
+                                        :arguments 
+                                          ( ("swpckg_config" variable (:type ("configuration::SwpckgConfiguration" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2173 2222])
+                                            ("components_expected_running" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("std::vector" type
+                                                     (:template-specifier 
+                                                        ( ("std::string" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil))
+                                                (reparse-symbol arg-sub-list) [2242 2302]))                                          
+                                        :type ("UCMProxy" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [2154 2852])
+                                    ("Initialize" function
+                                       (:parent "UCMProxy"
+                                        :type "void")
+                                        (reparse-symbol namespacesubparts) [3138 4471])
+                                    ("Shutdown" function
+                                       (:parent "UCMProxy"
+                                        :type "void")
+                                        (reparse-symbol namespacesubparts) [4473 5227])
+                                    ("Run" function
+                                       (:parent "UCMProxy"
+                                        :type "void")
+                                        (reparse-symbol namespacesubparts) [5229 5252])
+                                    ("IsUcmConnected" function
+                                       (:methodconst-flag t
+                                        :parent "UCMProxy"
+                                        :type "bool")
+                                        (reparse-symbol namespacesubparts) [5254 5324])
+                                    ("IsUcmReady" function
+                                       (:methodconst-flag t
+                                        :parent "UCMProxy"
+                                        :type "bool")
+                                        (reparse-symbol namespacesubparts) [5326 5569])
+                                    ("ConnectToUcm" function
+                                       (:parent "UCMProxy"
+                                        :type "void")
+                                        (reparse-symbol namespacesubparts) [5571 8309])
+                                    ("PackageManagementStatusHandler" function
+                                       (:parent "UCMProxy"
+                                        :type "void")
+                                        (reparse-symbol namespacesubparts) [8311 9264])
+                                    ("CheckPlatformStateThread" function
+                                       (:parent "UCMProxy"
+                                        :type "void")
+                                        (reparse-symbol namespacesubparts) [9266 13071])
+                                    ("CheckProgrammingPreconditions" function
+                                       (:parent "UCMProxy"
+                                        :type ("std::vector" type
+                                             (:template-specifier 
+                                                ( ("std::uint8_t" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol namespacesubparts) [13073 13272])
+                                    ("RequestDownload" function
+                                       (:parent "UCMProxy"
+                                        :arguments 
+                                          ( ("args" variable
+                                               (:reference 1
+                                                :type ("RequestDownloadArgs" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [13322 13348]))                                          
+                                        :type ("RequestDownloadResult" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [13274 16945])
+                                    ("TransferData" function
+                                       (:parent "UCMProxy"
+                                        :arguments 
+                                          ( ("args" variable
+                                               (:reference 1
+                                                :type ("TransferDataArgs" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [16989 17012]))                                          
+                                        :type ("TransferDataResult" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [16947 20287])
+                                    ("TransferDataExit" function
+                                       (:parent "UCMProxy"
+                                        :type ("TransferExitResult" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [20289 22872])
+                                    ("CheckMemory" function
+                                       (:parent "UCMProxy"
+                                        :arguments 
+                                          ( ("args" variable
+                                               (:reference 1
+                                                :type ("RcCheckMemoryArgs" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [22910 22934]))                                          
+                                        :type ("RoutineStatus" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [22874 24263])
+                                    ("StartUpdate" function
+                                       (:parent "UCMProxy"
+                                        :arguments 
+                                          ( ("args" variable
+                                               (:reference 1
+                                                :type ("RcStartUpdateArgs" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [24302 24326]))                                          
+                                        :type ("RcUpdateResult" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [24265 29306])
+                                    ("StartUpdateRequestResult" function
+                                       (:parent "UCMProxy"
+                                        :type ("RcUpdateResult" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [29308 31326])
+                                    ("CheckProgrammingDependencies" function
+                                       (:parent "UCMProxy"
+                                        :type ("RoutineStatus" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [31328 33280])
+                                    ("CheckUpdate" function
+                                       (:parent "UCMProxy"
+                                        :arguments 
+                                          ( ("args" variable
+                                               (:reference 1
+                                                :type ("RcCheckUpdateArgs" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [33319 33343]))                                          
+                                        :type ("RcUpdateResult" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [33282 35666])
+                                    ("CheckUpdateReqResult" function
+                                       (:parent "UCMProxy"
+                                        :type ("RcUpdateResult" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [35668 41219])
+                                    ("EraseMemory" function
+                                       (:parent "UCMProxy"
+                                        :type ("RoutineStatus" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [41221 41300])
+                                    ("ComputeCRC" function
+                                       (:parent "UCMProxy"
+                                        :arguments 
+                                          ( ("args" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("TransferDataArgs" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [41328 41357]))                                          
+                                        :type "void")
+                                        (reparse-symbol namespacesubparts) [41302 41784])
+                                    ("GetHashOfSignatureVerifierKey" function
+                                       (:methodconst-flag t
+                                        :parent "UCMProxy"
+                                        :constant-flag t
+                                        :type ("std::vector" type
+                                             (:template-specifier 
+                                                ( ("std::uint8_t" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol namespacesubparts) [41786 41909])
+                                    ("ExtractAndVerifySignature" function
+                                       (:parent "UCMProxy"
+                                        :arguments 
+                                          ( ("value" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("std::vector" type
+                                                     (:template-specifier 
+                                                        ( ("uint8_t" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil))
+                                                (reparse-symbol arg-sub-list) [41952 41986]))                                          
+                                        :type "bool")
+                                        (reparse-symbol namespacesubparts) [41911 43154])
+                                    ("ExtractAndVerifyCRC" function
+                                       (:parent "UCMProxy"
+                                        :arguments 
+                                          ( ("value" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("std::vector" type
+                                                     (:template-specifier 
+                                                        ( ("uint8_t" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil))
+                                                (reparse-symbol arg-sub-list) [43191 43225]))                                          
+                                        :type "bool")
+                                        (reparse-symbol namespacesubparts) [43156 44433])
+                                    ("SetupCryptoInstance" function
+                                       (:parent "UCMProxy"
+                                        :type "bool")
+                                        (reparse-symbol namespacesubparts) [44435 47467])
+                                    ("CalculateSignatureVerifierKeyHash" function
+                                       (:parent "UCMProxy"
+                                        :type "void")
+                                        (reparse-symbol namespacesubparts) [47469 48327])
+                                    ("AbortSession" function
+                                       (:parent "UCMProxy"
+                                        :type "void")
+                                        (reparse-symbol namespacesubparts) [48329 49358])
+                                    ("UcmActivationStateMonitor" function
+                                       (:parent "UCMProxy"
+                                        :type "void")
+                                        (reparse-symbol namespacesubparts) [49360 51531])
+                                    ("GetCurrentStatusCacheSize" function
+                                       (:methodconst-flag t
+                                        :parent "UCMProxy"
+                                        :type ("std::uint32_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [51533 51858]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [1820 51860]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [1789 51880]))                  
+                :type "namespace")
+                nil [1770 51915]))          
+      :file "ucm_proxy.cpp"
+      :pointmax 51937
+      :fsize 51935
+      :lastmodtime '(24308 13344 510836 449000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-a37948"
+      :file "ucm_proxy.h"
+      :fsize 15195
+      :lastmodtime '(24308 13344 510836 449000)))
+  :file "!home!hyuk.myeong!work!G550_0625!Apps!source!vectorfw!BSW!amsr-vag-app-dsa!src!ucm!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

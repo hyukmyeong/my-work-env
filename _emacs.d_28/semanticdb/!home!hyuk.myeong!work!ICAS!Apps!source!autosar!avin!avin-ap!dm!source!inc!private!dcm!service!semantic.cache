@@ -1,0 +1,114 @@
+;; Object semanticdb-project-database-file-17f5be4
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-17f5be4"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-17f5bf0"
+      :major-mode c++-mode
+      :tags 
+        '( ("SOURCE_DCM_SERVICE_WORK_UNIT_SERVICE_H_" variable (:constant-flag t) nil [793 832])
+            ("memory" include (:system-flag t) nil [834 851])
+            ("ara/log/logging.h" include nil nil [853 881])
+            ("common/work_unit.h" include nil nil [882 911])
+            ("uds_transport/uds_message_ext.h" include nil nil [912 954])
+            ("dcm/conversation/conversation.h" include nil nil [955 997])
+            ("common/service_processor.h" include nil nil [998 1035])
+            ("ara" type
+               (:members 
+                  ( ("diag" type
+                       (:members 
+                          ( ("dcm" type
+                               (:members 
+                                  ( ("service" type
+                                       (:members 
+                                          ( ("WorkUnitService" type
+                                               (:superclasses 
+                                                  ( ("common::WorkUnit" type
+                                                       (:protection "public"
+                                                        :type "class")
+                                                        nil nil))                                                  
+                                                :members 
+                                                  ( ("public" label nil (reparse-symbol classsubparts) [1236 1243])
+                                                    ("Ptr" type
+                                                       (:typedef ("std::shared_ptr" type
+                                                             (:template-specifier 
+                                                                ( ("WorkUnitService" type nil nil nil))                                                                
+                                                              :type "class")
+                                                              nil nil)
+                                                        :type "typedef")
+                                                        (reparse-symbol classsubparts) [1305 1350])
+                                                    ("WorkUnitService" function
+                                                       (:prototype-flag t
+                                                        :constructor-flag t
+                                                        :arguments 
+                                                          ( ("service_processor" variable (:type ("ara::diag::ServiceProcessor::ServiceProcessorSharedPtr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1678 1751])
+                                                            ("conversation" variable (:type ("conversation::Conversation::Ptr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1758 1803])
+                                                            ("message" variable
+                                                               (:reference 1
+                                                                :constant-flag t
+                                                                :type ("ara::diag::uds_transport::UdsMessageExt" type (:type "class") nil nil))
+                                                                (reparse-symbol arg-sub-list) [1804 1859])
+                                                            ("request_handle" variable
+                                                               (:constant-flag t
+                                                                :type "unsigned int")
+                                                                (reparse-symbol arg-sub-list) [1866 1896]))                                                          
+                                                        :type ("WorkUnitService" type (:type "class") nil nil))
+                                                        (reparse-symbol classsubparts) [1662 1897])
+                                                    ("override" variable (:type "int") (reparse-symbol classsubparts) [1953 1962])
+                                                    ("override" variable
+                                                       (:constant-flag t
+                                                        :type "int")
+                                                        (reparse-symbol classsubparts) [2013 2028])
+                                                    ("MemberCompare" function
+                                                       (:prototype-flag t
+                                                        :methodconst-flag t
+                                                        :arguments 
+                                                          ( ("other" variable
+                                                               (:reference 1
+                                                                :constant-flag t
+                                                                :type ("WorkUnitService" type (:type "class") nil nil))
+                                                                (reparse-symbol arg-sub-list) [2274 2303]))                                                          
+                                                        :type "bool")
+                                                        (reparse-symbol classsubparts) [2255 2310])
+                                                    ("GetMessage" function
+                                                       (:methodconst-flag t
+                                                        :constant-flag t
+                                                        :type ("ara::diag::uds_transport::UdsMessageExt" type (:type "class") nil nil))
+                                                        (reparse-symbol classsubparts) [2385 2481])
+                                                    ("protected" label nil (reparse-symbol classsubparts) [2484 2494])
+                                                    ("service_processor_" variable (:type ("ara::diag::ServiceProcessor::ServiceProcessorSharedPtr" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2561 2635])
+                                                    ("conversation_" variable (:type ("conversation::Conversation::Ptr" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2695 2741])
+                                                    ("message_" variable (:type ("ara::diag::uds_transport::UdsMessageExt" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2779 2828])
+                                                    ("private" label nil (reparse-symbol classsubparts) [2831 2839])
+                                                    ("request_handle_" variable
+                                                       (:constant-flag t
+                                                        :type "unsigned int")
+                                                        (reparse-symbol classsubparts) [2895 2926])
+                                                    ("GetResponse" function
+                                                       (:prototype-flag t
+                                                        :arguments 
+                                                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [3351 3356]))                                                          
+                                                        :type ("ara::diag::ServiceProcessor::Response" type (:type "class") nil nil))
+                                                        (reparse-symbol classsubparts) [3301 3357]))                                                  
+                                                :type "class")
+                                                (reparse-symbol namespacesubparts) [1185 3360]))                                          
+                                        :type "namespace")
+                                        (reparse-symbol namespacesubparts) [1086 3363]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [1070 3386]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [1053 3405]))                  
+                :type "namespace")
+                nil [1037 3425]))          
+      :file "work_unit_service.h"
+      :pointmax 3494
+      :fsize 3585
+      :lastmodtime '(24248 38548 81252 911000)
+      :unmatched-syntax '((semantic-list 1983 . 2012) (symbol 1970 . 1983) (VOID 1965 . 1969) (semantic-list 1950 . 1952) (symbol 1947 . 1950) (VOID 1942 . 1946) (punctuation 1937 . 1938) (DEFAULT 1930 . 1937) (punctuation 1928 . 1929) (semantic-list 1925 . 1927) (symbol 1910 . 1925) (punctuation 1909 . 1910) (VIRTUAL 1901 . 1908))
+      :lexical-table 
+        '(("SOURCE_DCM_SERVICE_WORK_UNIT_SERVICE_H_")
+          )
+))
+  :file "!home!hyuk.myeong!work!ICAS!Apps!source!autosar!avin!avin-ap!dm!source!inc!private!dcm!service!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

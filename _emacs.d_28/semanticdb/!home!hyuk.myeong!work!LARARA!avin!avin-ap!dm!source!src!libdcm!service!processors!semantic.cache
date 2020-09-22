@@ -1,0 +1,186 @@
+;; Object semanticdb-project-database-file-385e47c
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-385e47c"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-385e488"
+      :major-mode c++-mode
+      :tags 
+        '( ("dcm/service/processors/0x11_ecu_reset.h" include nil nil [732 782])
+            ("cstring" include (:system-flag t) nil [784 802])
+            ("algorithm" include (:system-flag t) nil [804 824])
+            ("iostream" include (:system-flag t) nil [825 844])
+            ("memory" include (:system-flag t) nil [845 862])
+            ("netinet/in.h" include (:system-flag t) nil [863 886])
+            ("utility" include (:system-flag t) nil [887 905])
+            ("ara/diag/uds_transport/protocol_types.h" include nil nil [907 957])
+            ("common/exception/lookup_table_entry_not_found_exception.h" include nil nil [958 1026])
+            ("common/exception/nrc_exception.h" include nil nil [1027 1070])
+            ("common/multi_byte_type.h" include nil nil [1071 1106])
+            ("common/service_processor.h" include nil nil [1107 1144])
+            ("common/service_processor_with_sid.h" include nil nil [1145 1191])
+            ("dcm/conversation/conversation.h" include nil nil [1192 1234])
+            ("dcm/diagnostic_communication_manager.h" include nil nil [1235 1284])
+            ("dcm/service/processors/did_handler.h" include nil nil [1285 1332])
+            ("uds/uds_error_code.h" include nil nil [1333 1364])
+            ("uds/uds_services.h" include nil nil [1365 1394])
+            ("uds_transport/uds_message_ext.h" include nil nil [1395 1437])
+            ("dcm/types/impl_type_udsresponsecodetype.h" include nil nil [1438 1490])
+            ("ara/per/key_value_storage.h" include nil nil [1491 1529])
+            ("ara::diag::ServiceProcessor" using (:type ("ara::diag::ServiceProcessor" type
+                 (:prototype t
+                  :type "class")
+                  nil nil)) nil [1531 1565])
+            ("ara::diag::ServiceProcessorWithSid" using (:type ("ara::diag::ServiceProcessorWithSid" type
+                 (:prototype t
+                  :type "class")
+                  nil nil)) nil [1566 1607])
+            ("ara::diag::config::DMConfig" using (:type ("ara::diag::config::DMConfig" type
+                 (:prototype t
+                  :type "class")
+                  nil nil)) nil [1608 1642])
+            ("ara::diag::dcm::conversation::Conversation" using (:type ("ara::diag::dcm::conversation::Conversation" type
+                 (:prototype t
+                  :type "class")
+                  nil nil)) nil [1643 1692])
+            ("ara::diag::uds::UdsNegativeResponseCode" using (:type ("ara::diag::uds::UdsNegativeResponseCode" type
+                 (:prototype t
+                  :type "class")
+                  nil nil)) nil [1693 1739])
+            ("ara::diag::uds::UdsServices" using (:type ("ara::diag::uds::UdsServices" type
+                 (:prototype t
+                  :type "class")
+                  nil nil)) nil [1740 1774])
+            ("ara::diag::uds_transport::ByteVector" using (:type ("ara::diag::uds_transport::ByteVector" type
+                 (:prototype t
+                  :type "class")
+                  nil nil)) nil [1775 1818])
+            ("ara::diag::uds_transport::ChannelID" using (:type ("ara::diag::uds_transport::ChannelID" type
+                 (:prototype t
+                  :type "class")
+                  nil nil)) nil [1819 1861])
+            ("ara::diag::uds_transport::UdsMessageExt" using (:type ("ara::diag::uds_transport::UdsMessageExt" type
+                 (:prototype t
+                  :type "class")
+                  nil nil)) nil [1862 1908])
+            ("ara::diag::uds_transport::UdsTransportProtocolHandlerID" using (:type ("ara::diag::uds_transport::UdsTransportProtocolHandlerID" type
+                 (:prototype t
+                  :type "class")
+                  nil nil)) nil [1909 1971])
+            ("unnamed" type
+               (:members 
+                  ( ("kZero" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type ("0U" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2021 2024]))                          
+                        :type ("std::uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [2002 2025])
+                    ("kOne" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type ("1U" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2061 2064]))                          
+                        :type ("std::uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [2043 2065]))                  
+                :type "namespace")
+                nil [1973 2067])
+            ("ara" type
+               (:members 
+                  ( ("diag" type
+                       (:members 
+                          ( ("dcm" type
+                               (:members 
+                                  ( ("service" type
+                                       (:members 
+                                          ( ("ara::log" using (:type ("ara::log" type
+                                                 (:prototype t
+                                                  :type "namespace")
+                                                  nil nil)) (reparse-symbol namespacesubparts) [2338 2363])
+                                            ("EcuReset" function
+                                               (:constructor-flag t
+                                                :parent "EcuReset"
+                                                :arguments 
+                                                  ( ("DcmRuntimeContext" variable (:type ("std::shared_ptr" type
+                                                         (:template-specifier 
+                                                            ( ("runtime::DcmRuntimeContext" type nil nil nil))                                                            
+                                                          :type "class")
+                                                          nil nil)) (reparse-symbol arg-sub-list) [2384 2446]))                                                  
+                                                :type ("EcuReset" type (:type "class") nil nil))
+                                                (reparse-symbol namespacesubparts) [2365 2625])
+                                            ("HandleMessage" function
+                                               (:parent "EcuReset"
+                                                :arguments 
+                                                  ( ("message" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("UdsMessageExt" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [2768 2797])
+                                                    ("conversation" variable
+                                                       (:reference 1
+                                                        :type ("Conversation" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [2798 2825]))                                                  
+                                                :type ("ServiceProcessor::Response" type (:type "class") nil nil))
+                                                (reparse-symbol namespacesubparts) [2717 4581])
+                                            ("ProcessEcuResetServiceRequest" function
+                                               (:parent "EcuReset"
+                                                :arguments 
+                                                  ( ("message" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("ara::diag::uds_transport::UdsMessageExt" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [4655 4710])
+                                                    ("conversation" variable
+                                                       (:reference 1
+                                                        :type ("conversation::Conversation" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [4711 4752]))                                                  
+                                                :type ("ServiceProcessor::Response" type (:type "class") nil nil))
+                                                (reparse-symbol namespacesubparts) [4583 8427])
+                                            ("PrepareForResponseAfterReset" function
+                                               (:parent "EcuReset"
+                                                :arguments 
+                                                  ( ("conversation" variable
+                                                       (:reference 1
+                                                        :type ("Conversation" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [8478 8505])
+                                                    ("message" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("UdsMessageExt" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [8506 8535])
+                                                    ("resetType" variable (:type ("std::uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8536 8559]))                                                  
+                                                :type "bool")
+                                                (reparse-symbol namespacesubparts) [8429 8695])
+                                            ("ServiceValidationCheck" function
+                                               (:parent "EcuReset"
+                                                :arguments 
+                                                  ( ("message" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("ara::diag::uds_transport::UdsMessageExt" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [8793 8848])
+                                                    ("conversation" variable
+                                                       (:reference 1
+                                                        :type ("conversation::Conversation" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [8849 8890]))                                                  
+                                                :type ("std::tuple" type
+                                                     (:template-specifier 
+                                                        ( ("bool" type nil nil nil)
+                                                          ("ara::diag::uds::UdsNegativeResponseCode" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil))
+                                                (reparse-symbol namespacesubparts) [8697 11629]))                                          
+                                        :type "namespace")
+                                        (reparse-symbol namespacesubparts) [2318 11631]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [2259 11654]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [2190 11673]))                  
+                :type "namespace")
+                nil [2135 11693]))          
+      :file "0x11_ecu_reset.cpp"
+      :pointmax 11711
+      :fsize 11710
+      :lastmodtime '(24419 4975 25202 526000)
+      :unmatched-syntax '((symbol 2033 . 2042) (STATIC 2026 . 2032) (symbol 1992 . 2001) (STATIC 1985 . 1991))))
+  :file "!home!hyuk.myeong!work!LARARA!avin!avin-ap!dm!source!src!libdcm!service!processors!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

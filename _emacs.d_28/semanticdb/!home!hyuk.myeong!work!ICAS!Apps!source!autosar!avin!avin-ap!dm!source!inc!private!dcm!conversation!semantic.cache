@@ -1,0 +1,205 @@
+;; Object semanticdb-project-database-file-4b5f44
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-4b5f44"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-4b5f50"
+      :major-mode c++-mode
+      :tags 
+        '( ("SOURCE_DCM_CONVERSATION_CONVERSATION_MANAGER_H_" variable (:constant-flag t) nil [807 854])
+            ("bitset" include (:system-flag t) nil [856 873])
+            ("memory" include (:system-flag t) nil [874 891])
+            ("mutex" include (:system-flag t) nil [892 908])
+            ("tuple" include (:system-flag t) nil [909 925])
+            ("ara/core/map.h" include nil nil [927 952])
+            ("ara/core/vector.h" include nil nil [953 981])
+            ("ara/log/logging.h" include nil nil [982 1010])
+            ("common/thread_pool.h" include nil nil [1012 1043])
+            ("dcm/connection/connection.h" include nil nil [1044 1082])
+            ("uds_transport/uds_message_ext.h" include nil nil [1083 1125])
+            ("dcm/conversation/conversation.h" include nil nil [1126 1168])
+            ("dcm/service/i_service_validation.h" include nil nil [1169 1214])
+            ("dcm/service/service_dispatch_table.h" include nil nil [1215 1262])
+            ("dcm/service/service_skeleton/diagnostic_status_impl.h" include nil nil [1263 1327])
+            ("ara" type
+               (:members 
+                  ( ("diag" type
+                       (:members 
+                          ( ("dcm" type
+                               (:members 
+                                  ( ("connection" type
+                                       (:members 
+                                          ( ("DoIpConnectionFixture_WithSocket_TcpResponse_Diagnostics_Test" type
+                                               (:prototype t
+                                                :type "class")
+                                                (reparse-symbol namespacesubparts) [1463 1531]))                                          
+                                        :type "namespace")
+                                        (reparse-symbol namespacesubparts) [1378 1533])
+                                    ("conversation" type
+                                       (:members 
+                                          ( ("std::uint8_t" variable (:type "int") (reparse-symbol namespacesubparts) [1708 1799])
+                                            ("kConversationIdMax" variable
+                                               (:typemodifiers ("static")
+                                                :constant-flag t
+                                                :type ("Conversation::ConversationId" type (:type "class") nil nil))
+                                                (reparse-symbol namespacesubparts) [1861 1929])
+                                            ("ConversationManager" type
+                                               (:superclasses 
+                                                  ( ("std::enable_shared_from_this" type
+                                                       (:protection "public"
+                                                        :type "class")
+                                                        nil nil)
+                                                    ("std::recursive_mutex" type
+                                                       (:protection "public"
+                                                        :type "class")
+                                                        nil nil))                                                  
+                                                :members 
+                                                  ( ("public" label nil (reparse-symbol classsubparts) [2496 2503])
+                                                    ("ara::core::Vector" variable (:type "int") (reparse-symbol classsubparts) [2597 2648])
+                                                    ("Ptr" type
+                                                       (:typedef ("std::shared_ptr" type
+                                                             (:template-specifier 
+                                                                ( ("ConversationManager" type nil nil nil))                                                                
+                                                              :type "class")
+                                                              nil nil)
+                                                        :type "typedef")
+                                                        (reparse-symbol classsubparts) [2712 2761])
+                                                    ("WeakPtr" type
+                                                       (:typedef ("std::weak_ptr" type
+                                                             (:template-specifier 
+                                                                ( ("ConversationManager" type nil nil nil))                                                                
+                                                              :type "class")
+                                                              nil nil)
+                                                        :type "typedef")
+                                                        (reparse-symbol classsubparts) [2836 2887])
+                                                    ("ConversationKey" type
+                                                       (:typedef ("std::tuple" type
+                                                             (:template-specifier 
+                                                                ( ("connection::Connection::IdentifyingTuple" type nil nil nil)
+                                                                  ("std::uint16_t" type nil nil nil)
+                                                                  ("std::uint16_t" type nil nil nil))                                                                
+                                                              :type "class")
+                                                              nil nil)
+                                                        :type "typedef")
+                                                        (reparse-symbol classsubparts) [2921 3028])
+                                                    ("ConversationCollection" type
+                                                       (:typedef ("ara::core::Map" type
+                                                             (:template-specifier 
+                                                                ( ("ConversationKey" type nil nil nil)
+                                                                  ("Conversation::Ptr" type nil nil nil))                                                                
+                                                              :type "class")
+                                                              nil nil)
+                                                        :type "typedef")
+                                                        (reparse-symbol classsubparts) [3076 3158])
+                                                    ("GetThreadPool" function
+                                                       (:typemodifiers ("virtual")
+                                                        :type ("common::ThreadPool" type (:type "class") nil nil))
+                                                        (reparse-symbol classsubparts) [3242 3320])
+                                                    ("GetSessionP2TimeoutMap" function
+                                                       (:methodconst-flag t
+                                                        :typemodifiers ("virtual")
+                                                        :constant-flag t
+                                                        :type ("Conversation::SessionP2TimeoutMap" type (:type "class") nil nil))
+                                                        (reparse-symbol classsubparts) [3426 3551])
+                                                    ("GetConversations" function
+                                                       (:methodconst-flag t
+                                                        :typemodifiers ("virtual")
+                                                        :constant-flag t
+                                                        :type ("ConversationCollection" type (:type "class") nil nil))
+                                                        (reparse-symbol classsubparts) [3639 3738])
+                                                    ("session_change_mutex_" variable (:type ("std::recursive_mutex" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3825 3868])
+                                                    ("ConversationManager" function
+                                                       (:prototype-flag t
+                                                        :constructor-flag t
+                                                        :type ("ConversationManager" type (:type "class") nil nil))
+                                                        (reparse-symbol classsubparts) [3969 3991])
+                                                    ("ConversationManager" function
+                                                       (:prototype-flag t
+                                                        :destructor-flag t
+                                                        :typemodifiers ("virtual")
+                                                        :type "void")
+                                                        (reparse-symbol classsubparts) [3994 4025])
+                                                    ("FindOrCreateConversation" function
+                                                       (:prototype-flag t
+                                                        :typemodifiers ("virtual")
+                                                        :arguments 
+                                                          ( ("message" variable
+                                                               (:reference 1
+                                                                :constant-flag t
+                                                                :type ("ara::diag::uds_transport::UdsMessageExt" type (:type "class") nil nil))
+                                                                (reparse-symbol arg-sub-list) [4339 4394])
+                                                            ("connection" variable (:type ("connection::Connection::Ptr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4395 4434]))                                                          
+                                                        :type ("Conversation::Ptr" type (:type "class") nil nil))
+                                                        (reparse-symbol classsubparts) [4281 4435])
+                                                    ("GetServiceDispatchTable" function
+                                                       (:typemodifiers ("virtual")
+                                                        :type ("service::ServiceDispatchTable" type (:type "class") nil nil))
+                                                        (reparse-symbol classsubparts) [4491 4601])
+                                                    ("GetServiceValidationVector" function
+                                                       (:typemodifiers ("virtual")
+                                                        :type ("ServiceValidationVector" type (:type "class") nil nil))
+                                                        (reparse-symbol classsubparts) [4660 4770])
+                                                    ("GetNextRequestHandle" function
+                                                       (:prototype-flag t
+                                                        :type ("std::uint16_t" type (:type "class") nil nil))
+                                                        (reparse-symbol classsubparts) [4818 4855])
+                                                    ("GetDiagnosticStatusInterface" function (:type ("service::DiagnosticStatusImpl" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4909 5011])
+                                                    ("GetNextConversationId" function
+                                                       (:prototype-flag t
+                                                        :type ("Conversation::ConversationId" type (:type "class") nil nil))
+                                                        (reparse-symbol classsubparts) [5055 5108])
+                                                    ("ReleaseConversationId" function
+                                                       (:prototype-flag t
+                                                        :arguments 
+                                                          ( ("conversation_id" variable (:type ("Conversation::ConversationId" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5252 5297]))                                                          
+                                                        :type "void")
+                                                        (reparse-symbol classsubparts) [5225 5298])
+                                                    ("GetConversation" function
+                                                       (:prototype-flag t
+                                                        :arguments 
+                                                          ( ("conversation_id" variable (:type ("Conversation::ConversationId" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5415 5460]))                                                          
+                                                        :type ("Conversation::Ptr" type (:type "class") nil nil))
+                                                        (reparse-symbol classsubparts) [5381 5461])
+                                                    ("protected" label nil (reparse-symbol classsubparts) [5464 5474])
+                                                    ("conversations_" variable (:type ("ConversationCollection" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5536 5574])
+                                                    ("service_dispatch_table_" variable (:type ("service::ServiceDispatchTable" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5633 5687])
+                                                    ("service_validation_vector_" variable (:type ("ServiceValidationVector" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5761 5812])
+                                                    ("thread_pool_" variable (:type ("common::ThreadPool" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5880 5912])
+                                                    ("session_p2_timeout_map_" variable (:type ("Conversation::SessionP2TimeoutMap" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5977 6035])
+                                                    ("private" label nil (reparse-symbol classsubparts) [6038 6046])
+                                                    ("current_request_handle_" variable (:type ("std::uint16_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6101 6139])
+                                                    ("get_next_request_handle_mutex_" variable (:type ("std::mutex" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6212 6254])
+                                                    ("conversation_ids_" variable (:type ("std::bitset" type
+                                                         (:template-specifier (("256"))
+                                                          :type "class")
+                                                          nil nil)) (reparse-symbol classsubparts) [6385 6420])
+                                                    ("last_conversation_id_" variable (:type ("Conversation::ConversationId" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6468 6519])
+                                                    ("handle_conversation_ids_" variable (:type ("std::mutex" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6587 6623])
+                                                    ("diagnostic_status_" variable (:type ("service::DiagnosticStatusImpl" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6701 6750])
+                                                    ("aralog_" variable (:type ("ara::log::Logger" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6792 6818]))                                                  
+                                                :type "class")
+                                                (reparse-symbol namespacesubparts) [2370 6821]))                                          
+                                        :type "namespace")
+                                        (reparse-symbol namespacesubparts) [1559 6824]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [1362 6852]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [1345 6871]))                  
+                :type "namespace")
+                nil [1329 6891]))          
+      :file "conversation_manager.h"
+      :pointmax 6968
+      :fsize 7164
+      :lastmodtime '(24248 38548 81252 911000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("SOURCE_DCM_CONVERSATION_CONVERSATION_MANAGER_H_")
+          )
+)
+    (semanticdb-table "semanticdb-table-1902330"
+      :file "conversation.h"
+      :fsize 10737
+      :lastmodtime '(24248 38548 81252 911000)))
+  :file "!home!hyuk.myeong!work!ICAS!Apps!source!autosar!avin!avin-ap!dm!source!inc!private!dcm!conversation!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

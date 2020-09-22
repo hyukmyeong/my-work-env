@@ -1,0 +1,56 @@
+;; Object semanticdb-project-database-file-21e665c
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-21e665c"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-2143234"
+      :major-mode c++-mode
+      :tags 
+        '( ("DSA_ADAPTER_VAG_DIAGNOSTIC_DATA_DISTRIBUTION_SERVICE_DIAGNOSTIC_DATA_DISTRIBUTION_SERVICE_H__" variable (:constant-flag t) nil [111 204])
+            ("vag/diagnostic_data_distribution_service/dddsinterface_skeleton.h" include nil nil [206 282])
+            ("vag" type
+               (:members 
+                  ( ("diagnostic_data_distribution_service" type
+                       (:members 
+                          ( ("vector::dsa::DataValueHashType" variable (:type "int") (reparse-symbol namespacesubparts) [378 409])
+                            ("vector::dsa::DiagnosticData" variable (:type "int") (reparse-symbol namespacesubparts) [435 463])
+                            ("vector::dsa::HashValues" variable (:type "int") (reparse-symbol namespacesubparts) [485 509])
+                            ("vector::dsa::ReturnType" variable (:type "int") (reparse-symbol namespacesubparts) [531 555])
+                            ("vector::dsa::ids" variable (:type "int") (reparse-symbol namespacesubparts) [571 588])
+                            ("autosar_platform::implementationdatatypes::uint32" variable (:type "int") (reparse-symbol namespacesubparts) [604 654])
+                            ("skeleton" type
+                               (:members 
+                                  ( ("methods" type
+                                       (:members 
+                                          ( ("GetDiagnosticData" type
+                                               (:members 
+                                                  ( ("public" label nil (reparse-symbol classsubparts) [725 732])
+                                                    ("vag::diagnostic_data_distribution_service::DDDSinterface::getDiagnosticDataOutput" variable (:type "int") (reparse-symbol classsubparts) [750 832]))                                                  
+                                                :type "class")
+                                                (reparse-symbol namespacesubparts) [698 835])
+                                            ("GetDiagnosticDataValues" type
+                                               (:members 
+                                                  ( ("public" label nil (reparse-symbol classsubparts) [870 877])
+                                                    ("vag::diagnostic_data_distribution_service::DDDSinterface::GetDiagnosticDataValuesOutput" variable (:type "int") (reparse-symbol classsubparts) [895 983]))                                                  
+                                                :type "class")
+                                                (reparse-symbol namespacesubparts) [837 986]))                                          
+                                        :type "namespace")
+                                        (reparse-symbol namespacesubparts) [677 989]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [656 1012]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [300 1037]))                  
+                :type "namespace")
+                nil [284 1056]))          
+      :file "diagnostic_data_distribution_service.h"
+      :pointmax 1212
+      :fsize 1211
+      :lastmodtime '(24359 48950 875777 837000)
+      :unmatched-syntax '((punctuation 893 . 894) (symbol 886 . 892) (USING 880 . 885) (punctuation 748 . 749) (symbol 741 . 747) (USING 735 . 740) (punctuation 602 . 603) (symbol 595 . 601) (USING 589 . 594) (punctuation 570 . 571) (punctuation 569 . 570) (punctuation 567 . 568) (symbol 563 . 566) (USING 557 . 562) (punctuation 530 . 531) (punctuation 529 . 530) (punctuation 527 . 528) (symbol 516 . 526) (USING 510 . 515) (punctuation 484 . 485) (punctuation 483 . 484) (punctuation 481 . 482) (symbol 470 . 480) (USING 464 . 469) (punctuation 434 . 435) (punctuation 433 . 434) (punctuation 431 . 432) (symbol 416 . 430) (USING 410 . 415) (punctuation 377 . 378) (punctuation 376 . 377) (punctuation 374 . 375) (symbol 356 . 373) (USING 350 . 355))
+      :lexical-table 
+        '(("DSA_ADAPTER_VAG_DIAGNOSTIC_DATA_DISTRIBUTION_SERVICE_DIAGNOSTIC_DATA_DISTRIBUTION_SERVICE_H__")
+          )
+))
+  :file "!home!hyuk.myeong!work!LARA!Apps!source!autosar!third_party!vector!amsr-vag-app-dsa!adapter!include!vag!diagnostic_data_distribution_service!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

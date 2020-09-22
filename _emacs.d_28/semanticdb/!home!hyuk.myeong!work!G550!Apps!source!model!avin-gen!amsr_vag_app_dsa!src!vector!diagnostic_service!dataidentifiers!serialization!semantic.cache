@@ -1,0 +1,55 @@
+;; Object semanticdb-project-database-file-1b43d58
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-1b43d58"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-1b43d74"
+      :major-mode c++-mode
+      :tags 
+        '( ("vector/diagnostic_service/dataidentifiers/serialization/did_serialization.h" include nil nil [1702 1788])
+            ("ara/log/logging.h" include nil nil [1790 1818])
+            ("vector" type
+               (:members 
+                  ( ("diagnostic_service" type
+                       (:members 
+                          ( ("dataidentifiers" type
+                               (:members 
+                                  ( ("serialization" type
+                                       (:members 
+                                          ( ("kDEXTHashSum" variable
+                                               (:typemodifiers ("static")
+                                                :constant-flag t
+                                                :default-value "0xc0e13ece4a74b3b8U"
+                                                :type ("std::uint64_t" type (:type "class") nil nil))
+                                                (reparse-symbol namespacesubparts) [1925 1987])
+                                            ("Serialize" function
+                                               (:arguments 
+                                                  ( ("diag_map" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("DidMap" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [2018 2041])
+                                                    ("diag_namespace" variable (:type ("DiagnosticNamespace" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2042 2077])
+                                                    ("category" variable (:type ("DiagnosticCategory" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2078 2106]))                                                  
+                                                :type ("std::vector" type
+                                                     (:template-specifier 
+                                                        ( ("uint8" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil))
+                                                (reparse-symbol namespacesubparts) [1989 3599]))                                          
+                                        :type "namespace")
+                                        (reparse-symbol namespacesubparts) [1898 3602]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [1870 3634]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [1839 3668]))                  
+                :type "namespace")
+                nil [1820 3705]))          
+      :file "did_serialization.cpp"
+      :pointmax 3730
+      :fsize 3729
+      :lastmodtime '(24287 13647 720637 652000)
+      :unmatched-syntax nil))
+  :file "!home!hyuk.myeong!work!G550!Apps!source!model!avin-gen!amsr_vag_app_dsa!src!vector!diagnostic_service!dataidentifiers!serialization!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

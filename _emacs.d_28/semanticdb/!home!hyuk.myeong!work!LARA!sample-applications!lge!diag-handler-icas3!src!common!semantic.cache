@@ -1,0 +1,48 @@
+;; Object semanticdb-project-database-file-3442008
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-3442008"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-3442024"
+      :major-mode c++-mode
+      :tags 
+        '( ("iostream" include (:system-flag t) nil [1319 1338])
+            ("osabstraction/commandlineparser/command_line_parser.h" include nil nil [1340 1404])
+            ("arguments_parser.h" include nil nil [1406 1435])
+            ("diag_handler" type
+               (:members 
+                  ( ("Usage" function
+                       (:parent "ArgumentsParser"
+                        :arguments 
+                          ( ("progname" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [1491 1512]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [1463 2119])
+                    ("ParseArguments" function
+                       (:parent "ArgumentsParser"
+                        :arguments 
+                          ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [2174 2183])
+                            ("argv" variable
+                               (:pointer 1
+                                :dereference 1
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [2184 2203]))                          
+                        :type ("CommandLineArguments" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [2121 4095]))                  
+                :type "namespace")
+                nil [1437 4098]))          
+      :file "arguments_parser.cpp"
+      :pointmax 4126
+      :fsize 4125
+      :lastmodtime '(24415 2832 744796 879000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1cf50fc"
+      :file "arguments_parser.h"
+      :fsize 2981
+      :lastmodtime '(24415 860 596786 210000)))
+  :file "!home!hyuk.myeong!work!LARA!sample-applications!lge!diag-handler-icas3!src!common!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

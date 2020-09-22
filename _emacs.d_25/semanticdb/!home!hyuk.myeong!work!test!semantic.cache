@@ -1,0 +1,60 @@
+;; Object semanticdb-project-database-file-37282c4
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-37282c4"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-37282a4"
+      :major-mode c++-mode
+      :tags 
+        '( ("iostream" include (:system-flag t) nil [1 20])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [22 42])
+            ("temp" type
+               (:members 
+                  ( ("Base1" type
+                       (:members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [75 82])
+                            ("foo" function (:type "void") (reparse-symbol classsubparts) [85 140]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [61 143]))                  
+                :type "namespace")
+                nil [44 145])
+            ("Base1" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [161 168])
+                    ("foo" function (:type "void") (reparse-symbol classsubparts) [171 226]))                  
+                :type "class")
+                nil [147 229])
+            ("Base2" type
+               (:superclasses 
+                  ( ("Base1" type
+                       (:protection "unspecified"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [253 260])
+                    ("Base1::foo" variable (:type "int") (reparse-symbol classsubparts) [297 308]))                  
+                :type "class")
+                nil [231 311])
+            ("Base3" type
+               (:superclasses 
+                  ( ("Base2" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [342 349])
+                    ("Base2::foo" variable (:type "int") (reparse-symbol classsubparts) [358 369]))                  
+                :type "class")
+                nil [313 442])
+            ("main" function (:type "int") nil [445 481]))          
+      :file "main.cpp"
+      :pointmax 482
+      :fsize 481
+      :lastmodtime '(24414 55389 852619 200000)
+      :unmatched-syntax nil))
+  :file "!home!hyuk.myeong!work!test!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

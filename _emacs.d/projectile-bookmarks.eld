@@ -1,1 +1,0 @@
-("~/work/G550/Apps/source/autosar/avin/avin-ap/dm/" "~/work/G550/Apps/source/autosar/third_party/vector/amsr-vag-app-dsa/" "~/work/G550/Apps/" "~/work/ICAS/Apps/source/autosar/avin/" "~/local/emacs/" "~/.emacs.d/")

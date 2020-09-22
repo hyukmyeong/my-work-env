@@ -1,0 +1,1996 @@
+;; Object semanticdb-project-database-file-296a410
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-296a410"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-296a3f0"
+      :major-mode c++-mode
+      :tags 
+        '( ("AMSR_VAG_APP_DSA_INCLUDES_VECTOR_DIAGNOSTIC_SERVICE_DATAIDENTIFIERS_DID_NAMESPACE_IDENTIFIERS_H_" variable (:constant-flag t) nil [1825 1921])
+            ("cstdint" include (:system-flag t) nil [1923 1941])
+            ("vector" type
+               (:members 
+                  ( ("diagnostic_service" type
+                       (:members 
+                          ( ("dataidentifiers" type
+                               (:members 
+                                  ( ("DidNamespaceIdentifier" type
+                                       (:superclasses 
+                                          ( ("std::uint32_t" type
+                                               (:protection "unspecified"
+                                                :type "class")
+                                                nil nil))                                          
+                                        :type "class")
+                                        (reparse-symbol namespacesubparts) [2081 8927])
+                                    ("GetDidNamespaceIdentifier" function
+                                       (:typemodifiers ("inline")
+                                        :arguments 
+                                          ( ("did_bytes" variable (:type ("std::uint16_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9230 9254])
+                                            ("namespace_bytes" variable (:type ("std::uint16_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9255 9285]))                                          
+                                        :type ("DidNamespaceIdentifier" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [9174 9400])
+                                    ("GetDidBytes" function
+                                       (:typemodifiers ("inline")
+                                        :arguments 
+                                          ( ("did_identifier" variable (:type ("DidNamespaceIdentifier" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9611 9649]))                                          
+                                        :type ("std::uint16_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [9578 9740])
+                                    ("GetNamespaceBytes" function
+                                       (:typemodifiers ("inline")
+                                        :arguments 
+                                          ( ("did_identifier" variable (:type ("DidNamespaceIdentifier" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9963 10001]))                                          
+                                        :type ("std::uint32_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [9924 10067]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [1993 10070]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [1962 10104]))                  
+                :type "namespace")
+                nil [1943 10141]))          
+      :file "did_namespace_identifiers.h"
+      :pointmax 10275
+      :fsize 10274
+      :lastmodtime '(24310 58950 813942 104000)
+      :unmatched-syntax '((punctuation 8923 . 8924) (number 8913 . 8923) (punctuation 8911 . 8912) (symbol 8817 . 8910) (punctuation 8813 . 8814) (number 8803 . 8813) (punctuation 8801 . 8802) (symbol 8778 . 8800) (punctuation 8774 . 8775) (number 8764 . 8774) (punctuation 8762 . 8763) (symbol 8736 . 8761) (punctuation 8732 . 8733) (number 8722 . 8732) (punctuation 8720 . 8721) (symbol 8683 . 8719) (punctuation 8679 . 8680) (number 8669 . 8679) (punctuation 8667 . 8668) (symbol 8633 . 8666) (punctuation 8629 . 8630) (number 8619 . 8629) (punctuation 8617 . 8618) (symbol 8592 . 8616) (punctuation 8588 . 8589) (number 8578 . 8588) (punctuation 8576 . 8577) (symbol 8550 . 8575) (punctuation 8546 . 8547) (number 8536 . 8546) (punctuation 8534 . 8535) (symbol 8489 . 8533) (punctuation 8485 . 8486) (number 8475 . 8485) (punctuation 8473 . 8474) (symbol 8443 . 8472) (punctuation 8439 . 8440) (number 8429 . 8439) (punctuation 8427 . 8428) (symbol 8383 . 8426) (punctuation 8379 . 8380) (number 8369 . 8379) (punctuation 8367 . 8368) (symbol 8339 . 8366) (punctuation 8335 . 8336) (number 8325 . 8335) (punctuation 8323 . 8324) (symbol 8275 . 8322) (punctuation 8271 . 8272) (number 8261 . 8271) (punctuation 8259 . 8260) (symbol 8225 . 8258) (punctuation 8221 . 8222) (number 8211 . 8221) (punctuation 8209 . 8210) (symbol 8160 . 8208) (punctuation 8156 . 8157) (number 8146 . 8156) (punctuation 8144 . 8145) (symbol 8110 . 8143) (punctuation 8106 . 8107) (number 8096 . 8106) (punctuation 8094 . 8095) (symbol 8049 . 8093) (punctuation 8045 . 8046) (number 8035 . 8045) (punctuation 8033 . 8034) (symbol 8009 . 8032) (punctuation 8005 . 8006) (number 7995 . 8005) (punctuation 7993 . 7994) (symbol 7967 . 7992) (punctuation 7963 . 7964) (number 7953 . 7963) (punctuation 7951 . 7952) (symbol 7922 . 7950) (punctuation 7918 . 7919) (number 7908 . 7918) (punctuation 7906 . 7907) (symbol 7867 . 7905) (punctuation 7863 . 7864) (number 7853 . 7863) (punctuation 7851 . 7852) (symbol 7812 . 7850) (punctuation 7808 . 7809) (number 7798 . 7808) (punctuation 7796 . 7797) (symbol 7752 . 7795) (punctuation 7748 . 7749) (number 7738 . 7748) (punctuation 7736 . 7737) (symbol 7701 . 7735) (punctuation 7697 . 7698) (number 7687 . 7697) (punctuation 7685 . 7686) (symbol 7652 . 7684) (punctuation 7648 . 7649) (number 7638 . 7648) (punctuation 7636 . 7637) (symbol 7605 . 7635) (punctuation 7601 . 7602) (number 7591 . 7601) (punctuation 7589 . 7590) (symbol 7550 . 7588) (punctuation 7546 . 7547) (number 7536 . 7546) (punctuation 7534 . 7535) (symbol 7500 . 7533) (punctuation 7496 . 7497) (number 7486 . 7496) (punctuation 7484 . 7485) (symbol 7416 . 7483) (punctuation 7412 . 7413) (number 7402 . 7412) (punctuation 7400 . 7401) (symbol 7351 . 7399) (punctuation 7347 . 7348) (number 7337 . 7347) (punctuation 7335 . 7336) (symbol 7277 . 7334) (punctuation 7273 . 7274) (number 7263 . 7273) (punctuation 7261 . 7262) (symbol 7221 . 7260) (punctuation 7217 . 7218) (number 7207 . 7217) (punctuation 7205 . 7206) (symbol 7175 . 7204) (punctuation 7171 . 7172) (number 7161 . 7171) (punctuation 7159 . 7160) (symbol 7125 . 7158) (punctuation 7121 . 7122) (number 7111 . 7121) (punctuation 7109 . 7110) (symbol 7083 . 7108) (punctuation 7079 . 7080) (number 7069 . 7079) (punctuation 7067 . 7068) (symbol 7022 . 7066) (punctuation 7018 . 7019) (number 7008 . 7018) (punctuation 7006 . 7007) (symbol 6971 . 7005) (punctuation 6967 . 6968) (number 6957 . 6967) (punctuation 6955 . 6956) (symbol 6916 . 6954) (punctuation 6912 . 6913) (number 6902 . 6912) (punctuation 6900 . 6901) (symbol 6861 . 6899) (punctuation 6857 . 6858) (number 6847 . 6857) (punctuation 6845 . 6846) (symbol 6811 . 6844) (punctuation 6807 . 6808) (number 6797 . 6807) (punctuation 6795 . 6796) (symbol 6761 . 6794) (punctuation 6757 . 6758) (number 6747 . 6757) (punctuation 6745 . 6746) (symbol 6722 . 6744) (punctuation 6718 . 6719) (number 6708 . 6718) (punctuation 6706 . 6707) (symbol 6666 . 6705) (punctuation 6662 . 6663) (number 6652 . 6662) (punctuation 6650 . 6651) (symbol 6621 . 6649) (punctuation 6617 . 6618) (number 6607 . 6617) (punctuation 6605 . 6606) (symbol 6553 . 6604) (punctuation 6549 . 6550) (number 6539 . 6549) (punctuation 6537 . 6538) (symbol 6503 . 6536) (punctuation 6499 . 6500) (number 6489 . 6499) (punctuation 6487 . 6488) (symbol 6442 . 6486) (punctuation 6438 . 6439) (number 6428 . 6438) (punctuation 6426 . 6427) (symbol 6397 . 6425) (punctuation 6393 . 6394) (number 6383 . 6393) (punctuation 6381 . 6382) (symbol 6330 . 6380) (punctuation 6326 . 6327) (number 6316 . 6326) (punctuation 6314 . 6315) (symbol 6249 . 6313) (punctuation 6245 . 6246) (number 6235 . 6245) (punctuation 6233 . 6234) (symbol 6187 . 6232) (punctuation 6183 . 6184) (number 6173 . 6183) (punctuation 6171 . 6172) (symbol 6135 . 6170) (punctuation 6131 . 6132) (number 6121 . 6131) (punctuation 6119 . 6120) (symbol 6077 . 6118) (punctuation 6073 . 6074) (number 6063 . 6073) (punctuation 6061 . 6062) (symbol 6028 . 6060) (punctuation 6024 . 6025) (number 6014 . 6024) (punctuation 6012 . 6013) (symbol 5973 . 6011) (punctuation 5969 . 5970) (number 5959 . 5969) (punctuation 5957 . 5958) (symbol 5897 . 5956) (punctuation 5893 . 5894) (number 5883 . 5893) (punctuation 5881 . 5882) (symbol 5845 . 5880) (punctuation 5841 . 5842) (number 5831 . 5841) (punctuation 5829 . 5830) (symbol 5787 . 5828) (punctuation 5783 . 5784) (number 5773 . 5783) (punctuation 5771 . 5772) (symbol 5737 . 5770) (punctuation 5733 . 5734) (number 5723 . 5733) (punctuation 5721 . 5722) (symbol 5679 . 5720) (punctuation 5675 . 5676) (number 5665 . 5675) (punctuation 5663 . 5664) (symbol 5612 . 5662) (punctuation 5608 . 5609) (number 5598 . 5608) (punctuation 5596 . 5597) (symbol 5563 . 5595) (punctuation 5559 . 5560) (number 5549 . 5559) (punctuation 5547 . 5548) (symbol 5509 . 5546) (punctuation 5505 . 5506) (number 5495 . 5505) (punctuation 5493 . 5494) (symbol 5451 . 5492) (punctuation 5447 . 5448) (number 5437 . 5447) (punctuation 5435 . 5436) (symbol 5363 . 5434) (punctuation 5359 . 5360) (number 5349 . 5359) (punctuation 5347 . 5348) (symbol 5323 . 5346) (punctuation 5319 . 5320) (number 5309 . 5319) (punctuation 5307 . 5308) (symbol 5254 . 5306) (punctuation 5250 . 5251) (number 5240 . 5250) (punctuation 5238 . 5239) (symbol 5210 . 5237) (punctuation 5206 . 5207) (number 5196 . 5206) (punctuation 5194 . 5195) (symbol 5140 . 5193) (punctuation 5136 . 5137) (number 5126 . 5136) (punctuation 5124 . 5125) (symbol 5079 . 5123) (punctuation 5075 . 5076) (number 5065 . 5075) (punctuation 5063 . 5064) (symbol 5005 . 5062) (punctuation 5001 . 5002) (number 4991 . 5001) (punctuation 4989 . 4990) (symbol 4944 . 4988) (punctuation 4940 . 4941) (number 4930 . 4940) (punctuation 4928 . 4929) (symbol 4889 . 4927) (punctuation 4885 . 4886) (number 4875 . 4885) (punctuation 4873 . 4874) (symbol 4822 . 4872) (punctuation 4818 . 4819) (number 4808 . 4818) (punctuation 4806 . 4807) (symbol 4763 . 4805) (punctuation 4759 . 4760) (number 4749 . 4759) (punctuation 4747 . 4748) (symbol 4712 . 4746) (punctuation 4708 . 4709) (number 4698 . 4708) (punctuation 4696 . 4697) (symbol 4660 . 4695) (punctuation 4656 . 4657) (number 4646 . 4656) (punctuation 4644 . 4645) (symbol 4619 . 4643) (punctuation 4615 . 4616) (number 4605 . 4615) (punctuation 4603 . 4604) (symbol 4575 . 4602) (punctuation 4571 . 4572) (number 4561 . 4571) (punctuation 4559 . 4560) (symbol 4509 . 4558) (punctuation 4505 . 4506) (number 4495 . 4505) (punctuation 4493 . 4494) (symbol 4425 . 4492) (punctuation 4421 . 4422) (number 4411 . 4421) (punctuation 4409 . 4410) (symbol 4375 . 4408) (punctuation 4371 . 4372) (number 4361 . 4371) (punctuation 4359 . 4360) (symbol 4312 . 4358) (punctuation 4308 . 4309) (number 4298 . 4308) (punctuation 4296 . 4297) (symbol 4255 . 4295) (punctuation 4251 . 4252) (number 4241 . 4251) (punctuation 4239 . 4240) (symbol 4187 . 4238) (punctuation 4183 . 4184) (number 4173 . 4183) (punctuation 4171 . 4172) (symbol 4115 . 4170) (punctuation 4111 . 4112) (number 4101 . 4111) (punctuation 4099 . 4100) (symbol 4066 . 4098) (punctuation 4062 . 4063) (number 4052 . 4062) (punctuation 4050 . 4051) (symbol 3997 . 4049) (punctuation 3993 . 3994) (number 3983 . 3993) (punctuation 3981 . 3982) (symbol 3928 . 3980) (punctuation 3924 . 3925) (number 3914 . 3924) (punctuation 3912 . 3913) (symbol 3871 . 3911) (punctuation 3867 . 3868) (number 3857 . 3867) (punctuation 3855 . 3856) (symbol 3813 . 3854) (punctuation 3809 . 3810) (number 3799 . 3809) (punctuation 3797 . 3798) (symbol 3743 . 3796) (punctuation 3739 . 3740) (number 3729 . 3739) (punctuation 3727 . 3728) (symbol 3677 . 3726) (punctuation 3673 . 3674) (number 3663 . 3673) (punctuation 3661 . 3662) (symbol 3617 . 3660) (punctuation 3613 . 3614) (number 3603 . 3613) (punctuation 3601 . 3602) (symbol 3563 . 3600) (punctuation 3559 . 3560) (number 3549 . 3559) (punctuation 3547 . 3548) (symbol 3520 . 3546) (punctuation 3516 . 3517) (number 3506 . 3516) (punctuation 3504 . 3505) (symbol 3443 . 3503) (punctuation 3439 . 3440) (number 3429 . 3439) (punctuation 3427 . 3428) (symbol 3382 . 3426) (punctuation 3378 . 3379) (number 3368 . 3378) (punctuation 3366 . 3367) (symbol 3321 . 3365) (punctuation 3317 . 3318) (number 3307 . 3317) (punctuation 3305 . 3306) (symbol 3264 . 3304) (punctuation 3260 . 3261) (number 3250 . 3260) (punctuation 3248 . 3249) (symbol 3209 . 3247) (punctuation 3205 . 3206) (number 3195 . 3205) (punctuation 3193 . 3194) (symbol 3163 . 3192) (punctuation 3159 . 3160) (number 3149 . 3159) (punctuation 3147 . 3148) (symbol 3102 . 3146) (punctuation 3098 . 3099) (number 3088 . 3098) (punctuation 3086 . 3087) (symbol 3057 . 3085) (punctuation 3053 . 3054) (number 3043 . 3053) (punctuation 3041 . 3042) (symbol 3014 . 3040) (punctuation 3010 . 3011) (number 3000 . 3010) (punctuation 2998 . 2999) (symbol 2966 . 2997) (punctuation 2962 . 2963) (number 2952 . 2962) (punctuation 2950 . 2951) (symbol 2919 . 2949) (punctuation 2915 . 2916) (number 2905 . 2915) (punctuation 2903 . 2904) (symbol 2866 . 2902) (punctuation 2862 . 2863) (number 2852 . 2862) (punctuation 2850 . 2851) (symbol 2821 . 2849) (punctuation 2817 . 2818) (number 2807 . 2817) (punctuation 2805 . 2806) (symbol 2771 . 2804) (punctuation 2767 . 2768) (number 2757 . 2767) (punctuation 2755 . 2756) (symbol 2728 . 2754) (punctuation 2724 . 2725) (number 2714 . 2724) (punctuation 2712 . 2713) (symbol 2686 . 2711) (punctuation 2682 . 2683) (number 2672 . 2682) (punctuation 2670 . 2671) (symbol 2644 . 2669) (punctuation 2640 . 2641) (number 2630 . 2640) (punctuation 2628 . 2629) (symbol 2602 . 2627) (punctuation 2598 . 2599) (number 2588 . 2598) (punctuation 2586 . 2587) (symbol 2544 . 2585) (punctuation 2540 . 2541) (number 2530 . 2540) (punctuation 2528 . 2529) (symbol 2504 . 2527) (punctuation 2500 . 2501) (number 2490 . 2500) (punctuation 2488 . 2489) (symbol 2461 . 2487) (punctuation 2457 . 2458) (number 2447 . 2457) (punctuation 2445 . 2446) (symbol 2407 . 2444) (punctuation 2403 . 2404) (number 2393 . 2403) (punctuation 2391 . 2392) (symbol 2356 . 2390) (punctuation 2352 . 2353) (number 2342 . 2352) (punctuation 2340 . 2341) (symbol 2291 . 2339) (punctuation 2287 . 2288) (number 2277 . 2287) (punctuation 2275 . 2276) (symbol 2205 . 2274) (punctuation 2201 . 2202) (number 2191 . 2201) (punctuation 2189 . 2190) (symbol 2130 . 2188) (ENUM 2076 . 2080))
+      :lexical-table 
+        '(("AMSR_VAG_APP_DSA_INCLUDES_VECTOR_DIAGNOSTIC_SERVICE_DATAIDENTIFIERS_DID_NAMESPACE_IDENTIFIERS_H_")
+          )
+)
+    (semanticdb-table "semanticdb-table-296a430"
+      :major-mode c++-mode
+      :tags 
+        '( ("AMSR_VAG_APP_DSA_INCLUDES_VECTOR_DIAGNOSTIC_SERVICE_DATAIDENTIFIERS_DID_MAPPINGS_H_" variable (:constant-flag t) nil [1803 1886])
+            ("cstdint" include (:system-flag t) nil [1888 1906])
+            ("utility" include (:system-flag t) nil [1908 1926])
+            ("vector" include (:system-flag t) nil [1927 1944])
+            ("vac/container/static_map.h" include nil nil [1946 1983])
+            ("vac/container/static_vector.h" include nil nil [1984 2024])
+            ("did_categories.h" include nil nil [2026 2053])
+            ("did_datatypes.h" include nil nil [2054 2080])
+            ("did_namespaces.h" include nil nil [2081 2108])
+            ("impl_type_uint32.h" include nil nil [2109 2138])
+            ("impl_type_uint8.h" include nil nil [2139 2167])
+            ("vector" type
+               (:members 
+                  ( ("diagnostic_service" type
+                       (:members 
+                          ( ("dataidentifiers" type
+                               (:members 
+                                  ( ("kNumberOfDid" variable
+                                       (:constant-flag t
+                                        :default-value "121"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [2317 2356])
+                                    ("kNumberOfNamespaces" variable
+                                       (:constant-flag t
+                                        :default-value "4"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [2409 2453])
+                                    ("kDidByteSize" variable
+                                       (:constant-flag t
+                                        :default-value "2"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [2494 2531])
+                                    ("kMaxDiagDataElements" variable
+                                       (:constant-flag t
+                                        :default-value "808"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [2616 2663])
+                                    ("kMaxDataBytesInNamespace" variable
+                                       (:constant-flag t
+                                        :default-value "11721"
+                                        :type ("std::uint32_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [2769 2822])
+                                    ("kReadDataByIdentifierMinLength" variable
+                                       (:constant-flag t
+                                        :default-value "2"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [2887 2942])
+                                    ("kReadDataByIdentifierMaxLength" variable
+                                       (:constant-flag t
+                                        :default-value "128"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [3004 3061])
+                                    ("kReadDataByIdentifierResponseMaxLength" variable
+                                       (:constant-flag t
+                                        :default-value "1024"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [3132 3198])
+                                    ("kWriteDataByIdentifierMinLength" variable
+                                       (:constant-flag t
+                                        :default-value "3"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [3282 3338])
+                                    ("kNumberOfDidNamespaceCalibration" variable
+                                       (:constant-flag t
+                                        :default-value "80"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [3400 3458])
+                                    ("kNumberOfDidNamespaceCoding" variable
+                                       (:constant-flag t
+                                        :default-value "1"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [3476 3528])
+                                    ("kNumberOfDidNamespaceMeasurement" variable
+                                       (:constant-flag t
+                                        :default-value "40"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [3546 3604])
+                                    ("kNumberOfDidNamespaceIdentification" variable
+                                       (:constant-flag t
+                                        :default-value "0"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [3622 3682])
+                                    ("kDidBasicSettingsStatusMeasurement" variable
+                                       (:constant-flag t
+                                        :default-value "0x0102"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [3723 3787])
+                                    ("kDidEthernetLinkQualityMeasurement" variable
+                                       (:constant-flag t
+                                        :default-value "0x010D"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [3805 3869])
+                                    ("kDidEthernetLinkLostCounterMeasurement" variable
+                                       (:constant-flag t
+                                        :default-value "0x010E"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [3887 3955])
+                                    ("kDidEthernetCRCErrorCounterMeasurement" variable
+                                       (:constant-flag t
+                                        :default-value "0x010F"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [3973 4041])
+                                    ("kDidIpIpv6AddressesListMeasurement" variable
+                                       (:constant-flag t
+                                        :default-value "0x013D"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [4059 4123])
+                                    ("kDidIpIpv6MulticastAddressesListMeasurement" variable
+                                       (:constant-flag t
+                                        :default-value "0x013E"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [4141 4214])
+                                    ("kDidIpVlansListMeasurement" variable
+                                       (:constant-flag t
+                                        :default-value "0x0140"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [4232 4288])
+                                    ("kDidIpMacAddressesListMeasurement" variable
+                                       (:constant-flag t
+                                        :default-value "0x0141"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [4306 4369])
+                                    ("kDidIpNdpCacheListMeasurement" variable
+                                       (:constant-flag t
+                                        :default-value "0x0142"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [4387 4446])
+                                    ("kDidIpCounterDroppedMessagesMeasurement" variable
+                                       (:constant-flag t
+                                        :default-value "0x014E"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [4464 4533])
+                                    ("kDidIpReturnValueTestCommunicationConnectionMeasurement" variable
+                                       (:constant-flag t
+                                        :default-value "0x014F"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [4551 4636])
+                                    ("kDidIPNetworkMaxCorrectionSyncClockMeasurement" variable
+                                       (:constant-flag t
+                                        :default-value "0x0173"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [4654 4730])
+                                    ("kDidUnlockStatusOfECUOfProtectionOfVehicleDiagnosisMeasurement" variable
+                                       (:constant-flag t
+                                        :default-value "0x0174"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [4748 4840])
+                                    ("kDidVWLogicalBlockDowngradeProtectionVersionsCalibration" variable
+                                       (:constant-flag t
+                                        :default-value "0x0189"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [4858 4944])
+                                    ("kDidStatusProductionmodeMeasurement" variable
+                                       (:constant-flag t
+                                        :default-value "0x019C"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [4962 5027])
+                                    ("kDidOBDDrivingCycleSetOnceMeasurement" variable
+                                       (:constant-flag t
+                                        :default-value "0x0261"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [5045 5112])
+                                    ("kDidVoltageTerminal30Measurement" variable
+                                       (:constant-flag t
+                                        :default-value "0x0286"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [5130 5192])
+                                    ("kDidNumberOfECUResetsMeasurement" variable
+                                       (:constant-flag t
+                                        :default-value "0x0401"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [5210 5272])
+                                    ("kDidVWLogicalSoftwareBlockCounterOfProgrammingAttemptsCalibration" variable
+                                       (:constant-flag t
+                                        :default-value "0x0407"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [5290 5385])
+                                    ("kDidVWLogicalSoftwareBlockLockValueCalibration" variable
+                                       (:constant-flag t
+                                        :default-value "0x040F"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [5403 5479])
+                                    ("kDidGatewayComponentListCalibration" variable
+                                       (:constant-flag t
+                                        :default-value "0x04A3"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [5497 5562])
+                                    ("kDidProductionmodeDeactivateCalibration" variable
+                                       (:constant-flag t
+                                        :default-value "0x04FC"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [5580 5649])
+                                    ("kDidProductionmodeCalibration" variable
+                                       (:constant-flag t
+                                        :default-value "0x04FE"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [5667 5726])
+                                    ("kDidTemperatureCalibration" variable
+                                       (:constant-flag t
+                                        :default-value "0x050D"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [5744 5800])
+                                    ("kDidDisplayManagerConfigurationCalibration" variable
+                                       (:constant-flag t
+                                        :default-value "0x051B"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [5818 5890])
+                                    ("kDidDisplaySpeedCalibration" variable
+                                       (:constant-flag t
+                                        :default-value "0x051D"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [5908 5965])
+                                    ("kDidTripComputerCalibration" variable
+                                       (:constant-flag t
+                                        :default-value "0x051E"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [5983 6040])
+                                    ("kDidGesturesRoomCalibration" variable
+                                       (:constant-flag t
+                                        :default-value "0x0526"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [6058 6115])
+                                    ("kDidProximityRoomCalibration" variable
+                                       (:constant-flag t
+                                        :default-value "0x0527"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [6133 6191])
+                                    ("kDidNearbyDetectionRoomCalibration" variable
+                                       (:constant-flag t
+                                        :default-value "0x0528"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [6209 6273])
+                                    ("kDidSliderParameterCalibration" variable
+                                       (:constant-flag t
+                                        :default-value "0x0529"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [6291 6351])
+                                    ("kDidDesignvariantActivationCalibration" variable
+                                       (:constant-flag t
+                                        :default-value "0x0531"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [6369 6437])
+                                    ("kDidSoundSettingSafeCalibration" variable
+                                       (:constant-flag t
+                                        :default-value "0x0534"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [6455 6516])
+                                    ("kDidSafetyBeltWarningCalibration" variable
+                                       (:constant-flag t
+                                        :default-value "0x0536"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [6534 6596])
+                                    ("kDidUnitMasterDaCalibration" variable
+                                       (:constant-flag t
+                                        :default-value "0x0537"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [6614 6671])
+                                    ("kDidDisplaySpeedDaCalibration" variable
+                                       (:constant-flag t
+                                        :default-value "0x0538"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [6689 6748])
+                                    ("kDidLongitudinalControlCoordinatorCalibration" variable
+                                       (:constant-flag t
+                                        :default-value "0x0539"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [6766 6841])
+                                    ("kDidServiceIntervallCalibration" variable
+                                       (:constant-flag t
+                                        :default-value "0x0541"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [6859 6920])
+                                    ("kDidFunctionConfigurationPsoCalibration" variable
+                                       (:constant-flag t
+                                        :default-value "0x0571"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [6938 7007])
+                                    ("kDidFunctionConfigurationKombiCalibration" variable
+                                       (:constant-flag t
+                                        :default-value "0x0578"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [7025 7096])
+                                    ("kDidFunctionConfigurationKombiHmiCalibration" variable
+                                       (:constant-flag t
+                                        :default-value "0x0579"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [7114 7188])
+                                    ("kDidFunctionConfigurationSafePartCalibration" variable
+                                       (:constant-flag t
+                                        :default-value "0x057A"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [7206 7280])
+                                    ("kDidDimmingIlluminationForDisplayUnitDayDesignCalibration" variable
+                                       (:constant-flag t
+                                        :default-value "0x0580"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [7298 7385])
+                                    ("kDidMarketVariantCalibration" variable
+                                       (:constant-flag t
+                                        :default-value "0x0590"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [7403 7461])
+                                    ("kDidParkingsystemVideoInputCalibration" variable
+                                       (:constant-flag t
+                                        :default-value "0x0591"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [7479 7547])
+                                    ("kDidVWCodingValueCoding" variable
+                                       (:constant-flag t
+                                        :default-value "0x0600"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [7565 7618])
+                                    ("kDidSlaveListVWSparePartNumberCalibration" variable
+                                       (:constant-flag t
+                                        :default-value "0x0611"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [7636 7707])
+                                    ("kDidSlaveListVWSoftwareVersionNumberCalibration" variable
+                                       (:constant-flag t
+                                        :default-value "0x0612"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [7725 7802])
+                                    ("kDidSlaveListVWEcuHardwareVersionNumberCalibration" variable
+                                       (:constant-flag t
+                                        :default-value "0x0613"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [7820 7900])
+                                    ("kDidSlaveListVWHardwareNumberCalibration" variable
+                                       (:constant-flag t
+                                        :default-value "0x0614"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [7918 7988])
+                                    ("kDidSlaveListEcuSerialNumberCalibration" variable
+                                       (:constant-flag t
+                                        :default-value "0x0615"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [8006 8075])
+                                    ("kDidSlaveListVWFAZITIdentificationStringCalibration" variable
+                                       (:constant-flag t
+                                        :default-value "0x0616"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [8093 8174])
+                                    ("kDidSlaveListVWSystemNameOrEngineTypeCalibration" variable
+                                       (:constant-flag t
+                                        :default-value "0x0617"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [8192 8270])
+                                    ("kDidSlaveComponentListCalibration" variable
+                                       (:constant-flag t
+                                        :default-value "0x061A"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [8288 8351])
+                                    ("kDidSlaveComponentListDatabusIdentificationCalibration" variable
+                                       (:constant-flag t
+                                        :default-value "0x061B"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [8369 8453])
+                                    ("kDidSlaveComponentListEcuIdentificationCalibration" variable
+                                       (:constant-flag t
+                                        :default-value "0x061C"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [8471 8551])
+                                    ("kDidSlaveComponentListPresentCalibration" variable
+                                       (:constant-flag t
+                                        :default-value "0x061D"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [8569 8639])
+                                    ("kDidActivationOfDevelopmentMessagesCalibration" variable
+                                       (:constant-flag t
+                                        :default-value "0x0902"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [8657 8733])
+                                    ("kDidIpCounterWrongVlansMeasurement" variable
+                                       (:constant-flag t
+                                        :default-value "0x0A2B"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [8751 8815])
+                                    ("kDidIpCounterWrongIpv6AddressesMeasurement" variable
+                                       (:constant-flag t
+                                        :default-value "0x0A2C"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [8833 8905])
+                                    ("kDidIpCounterWrongTcpPortsMeasurement" variable
+                                       (:constant-flag t
+                                        :default-value "0x0A2E"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [8923 8990])
+                                    ("kDidIpCounterWrongUdpPortsMeasurement" variable
+                                       (:constant-flag t
+                                        :default-value "0x0A2F"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [9008 9075])
+                                    ("kDidCarFunctionListBAPCalibration" variable
+                                       (:constant-flag t
+                                        :default-value "0x0B1D"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [9093 9156])
+                                    ("kDidDimmingAmbientIlluminationOperatingAndDisplayUnitCalibration" variable
+                                       (:constant-flag t
+                                        :default-value "0x0B45"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [9174 9268])
+                                    ("kDidDimmingIlluminationForDisplayUnitCalibration" variable
+                                       (:constant-flag t
+                                        :default-value "0x0B47"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [9286 9364])
+                                    ("kDidCountryVariantCalibration" variable
+                                       (:constant-flag t
+                                        :default-value "0x0C3A"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [9382 9441])
+                                    ("kDidUnlockViewsCalibration" variable
+                                       (:constant-flag t
+                                        :default-value "0x0C9D"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [9459 9515])
+                                    ("kDidLockingDisplayContentCalibration" variable
+                                       (:constant-flag t
+                                        :default-value "0x0E3E"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [9533 9599])
+                                    ("kDidStatusDataSetsMeasurement" variable
+                                       (:constant-flag t
+                                        :default-value "0x1008"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [9617 9676])
+                                    ("kDidStartupTimerMeasurement" variable
+                                       (:constant-flag t
+                                        :default-value "0x100C"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [9694 9751])
+                                    ("kDidUnitMasterMeasurement" variable
+                                       (:constant-flag t
+                                        :default-value "0x100E"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [9769 9824])
+                                    ("kDidDisplaySpeedInstrumentClusterMeasurement" variable
+                                       (:constant-flag t
+                                        :default-value "0x100F"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [9842 9916])
+                                    ("kDidByteCodingConditionMeasurement" variable
+                                       (:constant-flag t
+                                        :default-value "0x1017"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [9934 9998])
+                                    ("kDidBAPDebugModeReleaseCalibration" variable
+                                       (:constant-flag t
+                                        :default-value "0x1021"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [10016 10080])
+                                    ("kDidResetIdentsToDefaultValueStatusMeasurement" variable
+                                       (:constant-flag t
+                                        :default-value "0x1120"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [10098 10174])
+                                    ("kDidSystemOperatingTimeMeasurement" variable
+                                       (:constant-flag t
+                                        :default-value "0x180C"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [10192 10256])
+                                    ("kDidDisplayUnit1ForMultimediaSystemMeasurement" variable
+                                       (:constant-flag t
+                                        :default-value "0x1837"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [10274 10350])
+                                    ("kDidBAPFunctionIDMeasurement" variable
+                                       (:constant-flag t
+                                        :default-value "0x1844"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [10368 10426])
+                                    ("kDidGPSLastOccuranceNoSatelliteMeasurement" variable
+                                       (:constant-flag t
+                                        :default-value "0x184D"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [10444 10516])
+                                    ("kDidNetworkDiagnosisMeasurement" variable
+                                       (:constant-flag t
+                                        :default-value "0x1860"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [10534 10595])
+                                    ("kDidVehicleSpeedInstrumentClusterMeasurement" variable
+                                       (:constant-flag t
+                                        :default-value "0x22D2"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [10613 10687])
+                                    ("kDidGatewayComponentListPresentCalibration" variable
+                                       (:constant-flag t
+                                        :default-value "0x2A26"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [10705 10777])
+                                    ("kDidGatewayComponentListSleepindicationCalibration" variable
+                                       (:constant-flag t
+                                        :default-value "0x2A27"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [10795 10875])
+                                    ("kDidGatewayComponentListDtcCalibration" variable
+                                       (:constant-flag t
+                                        :default-value "0x2A28"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [10893 10961])
+                                    ("kDidGatewayComponentListDiagProtCalibration" variable
+                                       (:constant-flag t
+                                        :default-value "0x2A29"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [10979 11052])
+                                    ("kDidGatewayComponentListDatabusIdentificationCalibration" variable
+                                       (:constant-flag t
+                                        :default-value "0x2A2D"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [11070 11156])
+                                    ("kDidVehicleSpeedMeasurement" variable
+                                       (:constant-flag t
+                                        :default-value "0x2B16"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [11174 11231])
+                                    ("kDidVkmsVkmsvinMeasurement" variable
+                                       (:constant-flag t
+                                        :default-value "0x2C55"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [11249 11305])
+                                    ("kDidVkmsTrainingCounterMeasurement" variable
+                                       (:constant-flag t
+                                        :default-value "0x2C56"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [11323 11387])
+                                    ("kDidVkmsMissingKeyHistoryMeasurement" variable
+                                       (:constant-flag t
+                                        :default-value "0x2C57"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [11405 11471])
+                                    ("kDidVkmsKeyListMeasurement" variable
+                                       (:constant-flag t
+                                        :default-value "0x2C60"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [11489 11545])
+                                    ("kDidGatewayComponentListDiagPathCalibration" variable
+                                       (:constant-flag t
+                                        :default-value "0x2EE0"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [11563 11636])
+                                    ("kDidGatewayComponentListEcuAuthenticationCalibration" variable
+                                       (:constant-flag t
+                                        :default-value "0x2EE1"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [11654 11736])
+                                    ("kDidSpracheSPRACHECalibration" variable
+                                       (:constant-flag t
+                                        :default-value "0x720B"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [11754 11813])
+                                    ("kDidSichtbareMMISystemsprachenMMISYSTSPRACalibration" variable
+                                       (:constant-flag t
+                                        :default-value "0x720C"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [11831 11913])
+                                    ("kDidFingerprintCalibration" variable
+                                       (:constant-flag t
+                                        :default-value "0xF15A"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [11931 11987])
+                                    ("kDidFingerprintAndProgrammingDateOfLogicalSoftwareBlocksCalibration" variable
+                                       (:constant-flag t
+                                        :default-value "0xF15B"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [12005 12102])
+                                    ("kDidVWFAZITIdentificationStringCalibration" variable
+                                       (:constant-flag t
+                                        :default-value "0xF17C"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [12120 12192])
+                                    ("kDidActiveDiagnosticSessionCalibration" variable
+                                       (:constant-flag t
+                                        :default-value "0xF186"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [12210 12278])
+                                    ("kDidVWSparePartNumberCalibration" variable
+                                       (:constant-flag t
+                                        :default-value "0xF187"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [12296 12358])
+                                    ("kDidVWApplicationSoftwareVersionNumberCalibration" variable
+                                       (:constant-flag t
+                                        :default-value "0xF189"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [12376 12455])
+                                    ("kDidVehicleIdentificationNumberCalibration" variable
+                                       (:constant-flag t
+                                        :default-value "0xF190"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [12473 12545])
+                                    ("kDidVWECUHardwareNumberCalibration" variable
+                                       (:constant-flag t
+                                        :default-value "0xF191"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [12563 12627])
+                                    ("kDidVWSystemNameOrEngineTypeCalibration" variable
+                                       (:constant-flag t
+                                        :default-value "0xF197"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [12645 12714])
+                                    ("kDidASAMODXFileIdentifierCalibration" variable
+                                       (:constant-flag t
+                                        :default-value "0xF19E"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [12732 12798])
+                                    ("kDidVWDataSetNumberOrECUDataContainerNumberCalibration" variable
+                                       (:constant-flag t
+                                        :default-value "0xF1A0"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [12816 12900])
+                                    ("kDidVWDataSetVersionNumberCalibration" variable
+                                       (:constant-flag t
+                                        :default-value "0xF1A1"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [12918 12985])
+                                    ("kDidASAMODXFileVersionCalibration" variable
+                                       (:constant-flag t
+                                        :default-value "0xF1A2"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [13003 13066])
+                                    ("kDidVWECUHardwareVersionNumberCalibration" variable
+                                       (:constant-flag t
+                                        :default-value "0xF1A3"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [13084 13155])
+                                    ("kDidVWWorkshopSystemNameCalibration" variable
+                                       (:constant-flag t
+                                        :default-value "0xF1AA"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [13173 13238])
+                                    ("kDidVWLogicalSoftwareBlockVersionCalibration" variable
+                                       (:constant-flag t
+                                        :default-value "0xF1AB"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [13256 13330])
+                                    ("kDidAUTOSARStandardApplicationSoftwareIdentificationCalibration" variable
+                                       (:constant-flag t
+                                        :default-value "0xF1AF"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [13348 13441])
+                                    ("kDidVWApplicationDataSetIdentificationCalibration" variable
+                                       (:constant-flag t
+                                        :default-value "0xF1B1"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [13459 13538])
+                                    ("kDidVWDataSetNameCalibration" variable
+                                       (:constant-flag t
+                                        :default-value "0xF1B3"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [13556 13614])
+                                    ("kDidTechnicalSpecificationsVersionCalibration" variable
+                                       (:constant-flag t
+                                        :default-value "0xF1B4"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [13632 13707])
+                                    ("kDidBusmasterDescriptionCalibration" variable
+                                       (:constant-flag t
+                                        :default-value "0xF1B5"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [13725 13790])
+                                    ("kDidGatewayComponentListECUNodeAddressCalibration" variable
+                                       (:constant-flag t
+                                        :default-value "0xF1B7"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [13808 13887])
+                                    ("kDidFDSProjectDataCalibration" variable
+                                       (:constant-flag t
+                                        :default-value "0xF1D5"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [13905 13964])
+                                    ("kDidECUProgrammingInformationCalibration" variable
+                                       (:constant-flag t
+                                        :default-value "0xF1DF"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [13982 14052])
+                                    ("kDidEngineRPMMeasurement" variable
+                                       (:constant-flag t
+                                        :default-value "0xF40C"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [14070 14124])
+                                    ("kDidUnlockStatusOfECUOfProtectionOfVehicleDiagnosisForEnvironmentConditionMeasurement" variable
+                                       (:constant-flag t
+                                        :default-value "0xFEFF"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [14142 14257])
+                                    ("kDidBasicSettingsStatusMeasurement_LowerSize" variable
+                                       (:constant-flag t
+                                        :default-value "1"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [14319 14388])
+                                    ("kDidBasicSettingsStatusMeasurement_UpperSize" variable
+                                       (:constant-flag t
+                                        :default-value "1"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [14406 14475])
+                                    ("kDidEthernetLinkQualityMeasurement_LowerSize" variable
+                                       (:constant-flag t
+                                        :default-value "1"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [14493 14562])
+                                    ("kDidEthernetLinkQualityMeasurement_UpperSize" variable
+                                       (:constant-flag t
+                                        :default-value "1"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [14580 14649])
+                                    ("kDidEthernetLinkLostCounterMeasurement_LowerSize" variable
+                                       (:constant-flag t
+                                        :default-value "1"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [14667 14740])
+                                    ("kDidEthernetLinkLostCounterMeasurement_UpperSize" variable
+                                       (:constant-flag t
+                                        :default-value "1"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [14758 14831])
+                                    ("kDidEthernetCRCErrorCounterMeasurement_LowerSize" variable
+                                       (:constant-flag t
+                                        :default-value "1"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [14849 14922])
+                                    ("kDidEthernetCRCErrorCounterMeasurement_UpperSize" variable
+                                       (:constant-flag t
+                                        :default-value "1"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [14940 15013])
+                                    ("kDidIpIpv6AddressesListMeasurement_LowerSize" variable
+                                       (:constant-flag t
+                                        :default-value "1"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [15031 15100])
+                                    ("kDidIpIpv6AddressesListMeasurement_UpperSize" variable
+                                       (:constant-flag t
+                                        :default-value "160"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [15118 15189])
+                                    ("kDidIpIpv6MulticastAddressesListMeasurement_LowerSize" variable
+                                       (:constant-flag t
+                                        :default-value "1"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [15207 15285])
+                                    ("kDidIpIpv6MulticastAddressesListMeasurement_UpperSize" variable
+                                       (:constant-flag t
+                                        :default-value "800"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [15303 15383])
+                                    ("kDidIpVlansListMeasurement_LowerSize" variable
+                                       (:constant-flag t
+                                        :default-value "1"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [15401 15462])
+                                    ("kDidIpVlansListMeasurement_UpperSize" variable
+                                       (:constant-flag t
+                                        :default-value "20"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [15480 15542])
+                                    ("kDidIpMacAddressesListMeasurement_LowerSize" variable
+                                       (:constant-flag t
+                                        :default-value "1"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [15560 15628])
+                                    ("kDidIpMacAddressesListMeasurement_UpperSize" variable
+                                       (:constant-flag t
+                                        :default-value "30"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [15646 15715])
+                                    ("kDidIpNdpCacheListMeasurement_LowerSize" variable
+                                       (:constant-flag t
+                                        :default-value "1"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [15733 15797])
+                                    ("kDidIpNdpCacheListMeasurement_UpperSize" variable
+                                       (:constant-flag t
+                                        :default-value "1440"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [15815 15882])
+                                    ("kDidIpCounterDroppedMessagesMeasurement_LowerSize" variable
+                                       (:constant-flag t
+                                        :default-value "2"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [15900 15974])
+                                    ("kDidIpCounterDroppedMessagesMeasurement_UpperSize" variable
+                                       (:constant-flag t
+                                        :default-value "2"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [15992 16066])
+                                    ("kDidIpReturnValueTestCommunicationConnectionMeasurement_LowerSize" variable
+                                       (:constant-flag t
+                                        :default-value "1"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [16084 16174])
+                                    ("kDidIpReturnValueTestCommunicationConnectionMeasurement_UpperSize" variable
+                                       (:constant-flag t
+                                        :default-value "510"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [16192 16284])
+                                    ("kDidIPNetworkMaxCorrectionSyncClockMeasurement_LowerSize" variable
+                                       (:constant-flag t
+                                        :default-value "4"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [16302 16383])
+                                    ("kDidIPNetworkMaxCorrectionSyncClockMeasurement_UpperSize" variable
+                                       (:constant-flag t
+                                        :default-value "4"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [16401 16482])
+                                    ("kDidUnlockStatusOfECUOfProtectionOfVehicleDiagnosisMeasurement_LowerSize" variable
+                                       (:constant-flag t
+                                        :default-value "4"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [16500 16597])
+                                    ("kDidUnlockStatusOfECUOfProtectionOfVehicleDiagnosisMeasurement_UpperSize" variable
+                                       (:constant-flag t
+                                        :default-value "4"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [16615 16712])
+                                    ("kDidVWLogicalBlockDowngradeProtectionVersionsCalibration_LowerSize" variable
+                                       (:constant-flag t
+                                        :default-value "361"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [16730 16823])
+                                    ("kDidVWLogicalBlockDowngradeProtectionVersionsCalibration_UpperSize" variable
+                                       (:constant-flag t
+                                        :default-value "361"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [16841 16934])
+                                    ("kDidStatusProductionmodeMeasurement_LowerSize" variable
+                                       (:constant-flag t
+                                        :default-value "1"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [16952 17022])
+                                    ("kDidStatusProductionmodeMeasurement_UpperSize" variable
+                                       (:constant-flag t
+                                        :default-value "1"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [17040 17110])
+                                    ("kDidOBDDrivingCycleSetOnceMeasurement_LowerSize" variable
+                                       (:constant-flag t
+                                        :default-value "1"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [17128 17200])
+                                    ("kDidOBDDrivingCycleSetOnceMeasurement_UpperSize" variable
+                                       (:constant-flag t
+                                        :default-value "1"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [17218 17290])
+                                    ("kDidVoltageTerminal30Measurement_LowerSize" variable
+                                       (:constant-flag t
+                                        :default-value "1"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [17308 17375])
+                                    ("kDidVoltageTerminal30Measurement_UpperSize" variable
+                                       (:constant-flag t
+                                        :default-value "1"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [17393 17460])
+                                    ("kDidNumberOfECUResetsMeasurement_LowerSize" variable
+                                       (:constant-flag t
+                                        :default-value "1"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [17478 17545])
+                                    ("kDidNumberOfECUResetsMeasurement_UpperSize" variable
+                                       (:constant-flag t
+                                        :default-value "1"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [17563 17630])
+                                    ("kDidVWLogicalSoftwareBlockCounterOfProgrammingAttemptsCalibration_LowerSize" variable
+                                       (:constant-flag t
+                                        :default-value "90"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [17648 17749])
+                                    ("kDidVWLogicalSoftwareBlockCounterOfProgrammingAttemptsCalibration_UpperSize" variable
+                                       (:constant-flag t
+                                        :default-value "90"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [17767 17868])
+                                    ("kDidVWLogicalSoftwareBlockLockValueCalibration_LowerSize" variable
+                                       (:constant-flag t
+                                        :default-value "90"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [17886 17968])
+                                    ("kDidVWLogicalSoftwareBlockLockValueCalibration_UpperSize" variable
+                                       (:constant-flag t
+                                        :default-value "90"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [17986 18068])
+                                    ("kDidGatewayComponentListCalibration_LowerSize" variable
+                                       (:constant-flag t
+                                        :default-value "1"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [18086 18156])
+                                    ("kDidGatewayComponentListCalibration_UpperSize" variable
+                                       (:constant-flag t
+                                        :default-value "1"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [18174 18244])
+                                    ("kDidProductionmodeDeactivateCalibration_LowerSize" variable
+                                       (:constant-flag t
+                                        :default-value "3"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [18262 18336])
+                                    ("kDidProductionmodeDeactivateCalibration_UpperSize" variable
+                                       (:constant-flag t
+                                        :default-value "3"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [18354 18428])
+                                    ("kDidProductionmodeCalibration_LowerSize" variable
+                                       (:constant-flag t
+                                        :default-value "3"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [18446 18510])
+                                    ("kDidProductionmodeCalibration_UpperSize" variable
+                                       (:constant-flag t
+                                        :default-value "3"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [18528 18592])
+                                    ("kDidTemperatureCalibration_LowerSize" variable
+                                       (:constant-flag t
+                                        :default-value "17"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [18610 18672])
+                                    ("kDidTemperatureCalibration_UpperSize" variable
+                                       (:constant-flag t
+                                        :default-value "17"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [18690 18752])
+                                    ("kDidDisplayManagerConfigurationCalibration_LowerSize" variable
+                                       (:constant-flag t
+                                        :default-value "4"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [18770 18847])
+                                    ("kDidDisplayManagerConfigurationCalibration_UpperSize" variable
+                                       (:constant-flag t
+                                        :default-value "4"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [18865 18942])
+                                    ("kDidDisplaySpeedCalibration_LowerSize" variable
+                                       (:constant-flag t
+                                        :default-value "51"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [18960 19023])
+                                    ("kDidDisplaySpeedCalibration_UpperSize" variable
+                                       (:constant-flag t
+                                        :default-value "51"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [19041 19104])
+                                    ("kDidTripComputerCalibration_LowerSize" variable
+                                       (:constant-flag t
+                                        :default-value "24"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [19122 19185])
+                                    ("kDidTripComputerCalibration_UpperSize" variable
+                                       (:constant-flag t
+                                        :default-value "24"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [19203 19266])
+                                    ("kDidGesturesRoomCalibration_LowerSize" variable
+                                       (:constant-flag t
+                                        :default-value "60"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [19284 19347])
+                                    ("kDidGesturesRoomCalibration_UpperSize" variable
+                                       (:constant-flag t
+                                        :default-value "60"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [19365 19428])
+                                    ("kDidProximityRoomCalibration_LowerSize" variable
+                                       (:constant-flag t
+                                        :default-value "60"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [19446 19510])
+                                    ("kDidProximityRoomCalibration_UpperSize" variable
+                                       (:constant-flag t
+                                        :default-value "60"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [19528 19592])
+                                    ("kDidNearbyDetectionRoomCalibration_LowerSize" variable
+                                       (:constant-flag t
+                                        :default-value "60"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [19610 19680])
+                                    ("kDidNearbyDetectionRoomCalibration_UpperSize" variable
+                                       (:constant-flag t
+                                        :default-value "60"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [19698 19768])
+                                    ("kDidSliderParameterCalibration_LowerSize" variable
+                                       (:constant-flag t
+                                        :default-value "20"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [19786 19852])
+                                    ("kDidSliderParameterCalibration_UpperSize" variable
+                                       (:constant-flag t
+                                        :default-value "20"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [19870 19936])
+                                    ("kDidDesignvariantActivationCalibration_LowerSize" variable
+                                       (:constant-flag t
+                                        :default-value "2"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [19954 20027])
+                                    ("kDidDesignvariantActivationCalibration_UpperSize" variable
+                                       (:constant-flag t
+                                        :default-value "2"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [20045 20118])
+                                    ("kDidSoundSettingSafeCalibration_LowerSize" variable
+                                       (:constant-flag t
+                                        :default-value "3"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [20136 20202])
+                                    ("kDidSoundSettingSafeCalibration_UpperSize" variable
+                                       (:constant-flag t
+                                        :default-value "3"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [20220 20286])
+                                    ("kDidSafetyBeltWarningCalibration_LowerSize" variable
+                                       (:constant-flag t
+                                        :default-value "4"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [20304 20371])
+                                    ("kDidSafetyBeltWarningCalibration_UpperSize" variable
+                                       (:constant-flag t
+                                        :default-value "4"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [20389 20456])
+                                    ("kDidUnitMasterDaCalibration_LowerSize" variable
+                                       (:constant-flag t
+                                        :default-value "4"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [20474 20536])
+                                    ("kDidUnitMasterDaCalibration_UpperSize" variable
+                                       (:constant-flag t
+                                        :default-value "4"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [20554 20616])
+                                    ("kDidDisplaySpeedDaCalibration_LowerSize" variable
+                                       (:constant-flag t
+                                        :default-value "9"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [20634 20698])
+                                    ("kDidDisplaySpeedDaCalibration_UpperSize" variable
+                                       (:constant-flag t
+                                        :default-value "9"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [20716 20780])
+                                    ("kDidLongitudinalControlCoordinatorCalibration_LowerSize" variable
+                                       (:constant-flag t
+                                        :default-value "1"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [20798 20878])
+                                    ("kDidLongitudinalControlCoordinatorCalibration_UpperSize" variable
+                                       (:constant-flag t
+                                        :default-value "1"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [20896 20976])
+                                    ("kDidServiceIntervallCalibration_LowerSize" variable
+                                       (:constant-flag t
+                                        :default-value "9"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [20994 21060])
+                                    ("kDidServiceIntervallCalibration_UpperSize" variable
+                                       (:constant-flag t
+                                        :default-value "9"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [21078 21144])
+                                    ("kDidFunctionConfigurationPsoCalibration_LowerSize" variable
+                                       (:constant-flag t
+                                        :default-value "2"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [21162 21236])
+                                    ("kDidFunctionConfigurationPsoCalibration_UpperSize" variable
+                                       (:constant-flag t
+                                        :default-value "2"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [21254 21328])
+                                    ("kDidFunctionConfigurationKombiCalibration_LowerSize" variable
+                                       (:constant-flag t
+                                        :default-value "12"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [21346 21423])
+                                    ("kDidFunctionConfigurationKombiCalibration_UpperSize" variable
+                                       (:constant-flag t
+                                        :default-value "12"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [21441 21518])
+                                    ("kDidFunctionConfigurationKombiHmiCalibration_LowerSize" variable
+                                       (:constant-flag t
+                                        :default-value "1"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [21536 21615])
+                                    ("kDidFunctionConfigurationKombiHmiCalibration_UpperSize" variable
+                                       (:constant-flag t
+                                        :default-value "1"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [21633 21712])
+                                    ("kDidFunctionConfigurationSafePartCalibration_LowerSize" variable
+                                       (:constant-flag t
+                                        :default-value "1"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [21730 21809])
+                                    ("kDidFunctionConfigurationSafePartCalibration_UpperSize" variable
+                                       (:constant-flag t
+                                        :default-value "1"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [21827 21906])
+                                    ("kDidDimmingIlluminationForDisplayUnitDayDesignCalibration_LowerSize" variable
+                                       (:constant-flag t
+                                        :default-value "18"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [21924 22017])
+                                    ("kDidDimmingIlluminationForDisplayUnitDayDesignCalibration_UpperSize" variable
+                                       (:constant-flag t
+                                        :default-value "18"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [22035 22128])
+                                    ("kDidMarketVariantCalibration_LowerSize" variable
+                                       (:constant-flag t
+                                        :default-value "2"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [22146 22209])
+                                    ("kDidMarketVariantCalibration_UpperSize" variable
+                                       (:constant-flag t
+                                        :default-value "2"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [22227 22290])
+                                    ("kDidParkingsystemVideoInputCalibration_LowerSize" variable
+                                       (:constant-flag t
+                                        :default-value "3"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [22308 22381])
+                                    ("kDidParkingsystemVideoInputCalibration_UpperSize" variable
+                                       (:constant-flag t
+                                        :default-value "3"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [22399 22472])
+                                    ("kDidVWCodingValueCoding_LowerSize" variable
+                                       (:constant-flag t
+                                        :default-value "25"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [22490 22549])
+                                    ("kDidVWCodingValueCoding_UpperSize" variable
+                                       (:constant-flag t
+                                        :default-value "25"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [22567 22626])
+                                    ("kDidSlaveListVWSparePartNumberCalibration_LowerSize" variable
+                                       (:constant-flag t
+                                        :default-value "15"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [22644 22721])
+                                    ("kDidSlaveListVWSparePartNumberCalibration_UpperSize" variable
+                                       (:constant-flag t
+                                        :default-value "15"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [22739 22816])
+                                    ("kDidSlaveListVWSoftwareVersionNumberCalibration_LowerSize" variable
+                                       (:constant-flag t
+                                        :default-value "8"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [22834 22916])
+                                    ("kDidSlaveListVWSoftwareVersionNumberCalibration_UpperSize" variable
+                                       (:constant-flag t
+                                        :default-value "8"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [22934 23016])
+                                    ("kDidSlaveListVWEcuHardwareVersionNumberCalibration_LowerSize" variable
+                                       (:constant-flag t
+                                        :default-value "7"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [23034 23119])
+                                    ("kDidSlaveListVWEcuHardwareVersionNumberCalibration_UpperSize" variable
+                                       (:constant-flag t
+                                        :default-value "7"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [23137 23222])
+                                    ("kDidSlaveListVWHardwareNumberCalibration_LowerSize" variable
+                                       (:constant-flag t
+                                        :default-value "15"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [23240 23316])
+                                    ("kDidSlaveListVWHardwareNumberCalibration_UpperSize" variable
+                                       (:constant-flag t
+                                        :default-value "15"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [23334 23410])
+                                    ("kDidSlaveListEcuSerialNumberCalibration_LowerSize" variable
+                                       (:constant-flag t
+                                        :default-value "24"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [23428 23503])
+                                    ("kDidSlaveListEcuSerialNumberCalibration_UpperSize" variable
+                                       (:constant-flag t
+                                        :default-value "24"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [23521 23596])
+                                    ("kDidSlaveListVWFAZITIdentificationStringCalibration_LowerSize" variable
+                                       (:constant-flag t
+                                        :default-value "27"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [23614 23701])
+                                    ("kDidSlaveListVWFAZITIdentificationStringCalibration_UpperSize" variable
+                                       (:constant-flag t
+                                        :default-value "27"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [23719 23806])
+                                    ("kDidSlaveListVWSystemNameOrEngineTypeCalibration_LowerSize" variable
+                                       (:constant-flag t
+                                        :default-value "17"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [23824 23908])
+                                    ("kDidSlaveListVWSystemNameOrEngineTypeCalibration_UpperSize" variable
+                                       (:constant-flag t
+                                        :default-value "17"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [23926 24010])
+                                    ("kDidSlaveComponentListCalibration_LowerSize" variable
+                                       (:constant-flag t
+                                        :default-value "4"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [24028 24096])
+                                    ("kDidSlaveComponentListCalibration_UpperSize" variable
+                                       (:constant-flag t
+                                        :default-value "4"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [24114 24182])
+                                    ("kDidSlaveComponentListDatabusIdentificationCalibration_LowerSize" variable
+                                       (:constant-flag t
+                                        :default-value "64"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [24200 24290])
+                                    ("kDidSlaveComponentListDatabusIdentificationCalibration_UpperSize" variable
+                                       (:constant-flag t
+                                        :default-value "64"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [24308 24398])
+                                    ("kDidSlaveComponentListEcuIdentificationCalibration_LowerSize" variable
+                                       (:constant-flag t
+                                        :default-value "64"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [24416 24502])
+                                    ("kDidSlaveComponentListEcuIdentificationCalibration_UpperSize" variable
+                                       (:constant-flag t
+                                        :default-value "64"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [24520 24606])
+                                    ("kDidSlaveComponentListPresentCalibration_LowerSize" variable
+                                       (:constant-flag t
+                                        :default-value "4"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [24624 24699])
+                                    ("kDidSlaveComponentListPresentCalibration_UpperSize" variable
+                                       (:constant-flag t
+                                        :default-value "4"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [24717 24792])
+                                    ("kDidActivationOfDevelopmentMessagesCalibration_LowerSize" variable
+                                       (:constant-flag t
+                                        :default-value "1"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [24810 24891])
+                                    ("kDidActivationOfDevelopmentMessagesCalibration_UpperSize" variable
+                                       (:constant-flag t
+                                        :default-value "1"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [24909 24990])
+                                    ("kDidIpCounterWrongVlansMeasurement_LowerSize" variable
+                                       (:constant-flag t
+                                        :default-value "2"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [25008 25077])
+                                    ("kDidIpCounterWrongVlansMeasurement_UpperSize" variable
+                                       (:constant-flag t
+                                        :default-value "2"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [25095 25164])
+                                    ("kDidIpCounterWrongIpv6AddressesMeasurement_LowerSize" variable
+                                       (:constant-flag t
+                                        :default-value "2"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [25182 25259])
+                                    ("kDidIpCounterWrongIpv6AddressesMeasurement_UpperSize" variable
+                                       (:constant-flag t
+                                        :default-value "2"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [25277 25354])
+                                    ("kDidIpCounterWrongTcpPortsMeasurement_LowerSize" variable
+                                       (:constant-flag t
+                                        :default-value "2"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [25372 25444])
+                                    ("kDidIpCounterWrongTcpPortsMeasurement_UpperSize" variable
+                                       (:constant-flag t
+                                        :default-value "2"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [25462 25534])
+                                    ("kDidIpCounterWrongUdpPortsMeasurement_LowerSize" variable
+                                       (:constant-flag t
+                                        :default-value "2"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [25552 25624])
+                                    ("kDidIpCounterWrongUdpPortsMeasurement_UpperSize" variable
+                                       (:constant-flag t
+                                        :default-value "2"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [25642 25714])
+                                    ("kDidCarFunctionListBAPCalibration_LowerSize" variable
+                                       (:constant-flag t
+                                        :default-value "256"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [25732 25802])
+                                    ("kDidCarFunctionListBAPCalibration_UpperSize" variable
+                                       (:constant-flag t
+                                        :default-value "256"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [25820 25890])
+                                    ("kDidDimmingAmbientIlluminationOperatingAndDisplayUnitCalibration_LowerSize" variable
+                                       (:constant-flag t
+                                        :default-value "6"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [25908 26007])
+                                    ("kDidDimmingAmbientIlluminationOperatingAndDisplayUnitCalibration_UpperSize" variable
+                                       (:constant-flag t
+                                        :default-value "6"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [26025 26124])
+                                    ("kDidDimmingIlluminationForDisplayUnitCalibration_LowerSize" variable
+                                       (:constant-flag t
+                                        :default-value "18"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [26142 26226])
+                                    ("kDidDimmingIlluminationForDisplayUnitCalibration_UpperSize" variable
+                                       (:constant-flag t
+                                        :default-value "18"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [26244 26328])
+                                    ("kDidCountryVariantCalibration_LowerSize" variable
+                                       (:constant-flag t
+                                        :default-value "2"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [26346 26410])
+                                    ("kDidCountryVariantCalibration_UpperSize" variable
+                                       (:constant-flag t
+                                        :default-value "2"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [26428 26492])
+                                    ("kDidUnlockViewsCalibration_LowerSize" variable
+                                       (:constant-flag t
+                                        :default-value "2"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [26510 26571])
+                                    ("kDidUnlockViewsCalibration_UpperSize" variable
+                                       (:constant-flag t
+                                        :default-value "2"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [26589 26650])
+                                    ("kDidLockingDisplayContentCalibration_LowerSize" variable
+                                       (:constant-flag t
+                                        :default-value "6"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [26668 26739])
+                                    ("kDidLockingDisplayContentCalibration_UpperSize" variable
+                                       (:constant-flag t
+                                        :default-value "6"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [26757 26828])
+                                    ("kDidStatusDataSetsMeasurement_LowerSize" variable
+                                       (:constant-flag t
+                                        :default-value "22"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [26846 26911])
+                                    ("kDidStatusDataSetsMeasurement_UpperSize" variable
+                                       (:constant-flag t
+                                        :default-value "22"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [26929 26994])
+                                    ("kDidStartupTimerMeasurement_LowerSize" variable
+                                       (:constant-flag t
+                                        :default-value "2"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [27012 27074])
+                                    ("kDidStartupTimerMeasurement_UpperSize" variable
+                                       (:constant-flag t
+                                        :default-value "2"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [27092 27154])
+                                    ("kDidUnitMasterMeasurement_LowerSize" variable
+                                       (:constant-flag t
+                                        :default-value "6"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [27172 27232])
+                                    ("kDidUnitMasterMeasurement_UpperSize" variable
+                                       (:constant-flag t
+                                        :default-value "6"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [27250 27310])
+                                    ("kDidDisplaySpeedInstrumentClusterMeasurement_LowerSize" variable
+                                       (:constant-flag t
+                                        :default-value "16"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [27328 27408])
+                                    ("kDidDisplaySpeedInstrumentClusterMeasurement_UpperSize" variable
+                                       (:constant-flag t
+                                        :default-value "16"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [27426 27506])
+                                    ("kDidByteCodingConditionMeasurement_LowerSize" variable
+                                       (:constant-flag t
+                                        :default-value "7"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [27524 27593])
+                                    ("kDidByteCodingConditionMeasurement_UpperSize" variable
+                                       (:constant-flag t
+                                        :default-value "7"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [27611 27680])
+                                    ("kDidBAPDebugModeReleaseCalibration_LowerSize" variable
+                                       (:constant-flag t
+                                        :default-value "1"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [27698 27767])
+                                    ("kDidBAPDebugModeReleaseCalibration_UpperSize" variable
+                                       (:constant-flag t
+                                        :default-value "1"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [27785 27854])
+                                    ("kDidResetIdentsToDefaultValueStatusMeasurement_LowerSize" variable
+                                       (:constant-flag t
+                                        :default-value "6"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [27872 27953])
+                                    ("kDidResetIdentsToDefaultValueStatusMeasurement_UpperSize" variable
+                                       (:constant-flag t
+                                        :default-value "6"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [27971 28052])
+                                    ("kDidSystemOperatingTimeMeasurement_LowerSize" variable
+                                       (:constant-flag t
+                                        :default-value "2"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [28070 28139])
+                                    ("kDidSystemOperatingTimeMeasurement_UpperSize" variable
+                                       (:constant-flag t
+                                        :default-value "2"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [28157 28226])
+                                    ("kDidDisplayUnit1ForMultimediaSystemMeasurement_LowerSize" variable
+                                       (:constant-flag t
+                                        :default-value "8"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [28244 28325])
+                                    ("kDidDisplayUnit1ForMultimediaSystemMeasurement_UpperSize" variable
+                                       (:constant-flag t
+                                        :default-value "8"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [28343 28424])
+                                    ("kDidBAPFunctionIDMeasurement_LowerSize" variable
+                                       (:constant-flag t
+                                        :default-value "1"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [28442 28505])
+                                    ("kDidBAPFunctionIDMeasurement_UpperSize" variable
+                                       (:constant-flag t
+                                        :default-value "1"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [28523 28586])
+                                    ("kDidGPSLastOccuranceNoSatelliteMeasurement_LowerSize" variable
+                                       (:constant-flag t
+                                        :default-value "6"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [28604 28681])
+                                    ("kDidGPSLastOccuranceNoSatelliteMeasurement_UpperSize" variable
+                                       (:constant-flag t
+                                        :default-value "6"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [28699 28776])
+                                    ("kDidNetworkDiagnosisMeasurement_LowerSize" variable
+                                       (:constant-flag t
+                                        :default-value "1"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [28794 28860])
+                                    ("kDidNetworkDiagnosisMeasurement_UpperSize" variable
+                                       (:constant-flag t
+                                        :default-value "1"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [28878 28944])
+                                    ("kDidVehicleSpeedInstrumentClusterMeasurement_LowerSize" variable
+                                       (:constant-flag t
+                                        :default-value "2"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [28962 29041])
+                                    ("kDidVehicleSpeedInstrumentClusterMeasurement_UpperSize" variable
+                                       (:constant-flag t
+                                        :default-value "2"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [29059 29138])
+                                    ("kDidGatewayComponentListPresentCalibration_LowerSize" variable
+                                       (:constant-flag t
+                                        :default-value "1"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [29156 29233])
+                                    ("kDidGatewayComponentListPresentCalibration_UpperSize" variable
+                                       (:constant-flag t
+                                        :default-value "1"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [29251 29328])
+                                    ("kDidGatewayComponentListSleepindicationCalibration_LowerSize" variable
+                                       (:constant-flag t
+                                        :default-value "1"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [29346 29431])
+                                    ("kDidGatewayComponentListSleepindicationCalibration_UpperSize" variable
+                                       (:constant-flag t
+                                        :default-value "1"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [29449 29534])
+                                    ("kDidGatewayComponentListDtcCalibration_LowerSize" variable
+                                       (:constant-flag t
+                                        :default-value "1"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [29552 29625])
+                                    ("kDidGatewayComponentListDtcCalibration_UpperSize" variable
+                                       (:constant-flag t
+                                        :default-value "1"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [29643 29716])
+                                    ("kDidGatewayComponentListDiagProtCalibration_LowerSize" variable
+                                       (:constant-flag t
+                                        :default-value "2"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [29734 29812])
+                                    ("kDidGatewayComponentListDiagProtCalibration_UpperSize" variable
+                                       (:constant-flag t
+                                        :default-value "2"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [29830 29908])
+                                    ("kDidGatewayComponentListDatabusIdentificationCalibration_LowerSize" variable
+                                       (:constant-flag t
+                                        :default-value "2"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [29926 30017])
+                                    ("kDidGatewayComponentListDatabusIdentificationCalibration_UpperSize" variable
+                                       (:constant-flag t
+                                        :default-value "2"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [30035 30126])
+                                    ("kDidVehicleSpeedMeasurement_LowerSize" variable
+                                       (:constant-flag t
+                                        :default-value "2"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [30144 30206])
+                                    ("kDidVehicleSpeedMeasurement_UpperSize" variable
+                                       (:constant-flag t
+                                        :default-value "2"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [30224 30286])
+                                    ("kDidVkmsVkmsvinMeasurement_LowerSize" variable
+                                       (:constant-flag t
+                                        :default-value "18"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [30304 30366])
+                                    ("kDidVkmsVkmsvinMeasurement_UpperSize" variable
+                                       (:constant-flag t
+                                        :default-value "18"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [30384 30446])
+                                    ("kDidVkmsTrainingCounterMeasurement_LowerSize" variable
+                                       (:constant-flag t
+                                        :default-value "3"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [30464 30533])
+                                    ("kDidVkmsTrainingCounterMeasurement_UpperSize" variable
+                                       (:constant-flag t
+                                        :default-value "3"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [30551 30620])
+                                    ("kDidVkmsMissingKeyHistoryMeasurement_LowerSize" variable
+                                       (:constant-flag t
+                                        :default-value "3"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [30638 30709])
+                                    ("kDidVkmsMissingKeyHistoryMeasurement_UpperSize" variable
+                                       (:constant-flag t
+                                        :default-value "202"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [30727 30800])
+                                    ("kDidVkmsKeyListMeasurement_LowerSize" variable
+                                       (:constant-flag t
+                                        :default-value "3"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [30818 30879])
+                                    ("kDidVkmsKeyListMeasurement_UpperSize" variable
+                                       (:constant-flag t
+                                        :default-value "402"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [30897 30960])
+                                    ("kDidGatewayComponentListDiagPathCalibration_LowerSize" variable
+                                       (:constant-flag t
+                                        :default-value "1"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [30978 31056])
+                                    ("kDidGatewayComponentListDiagPathCalibration_UpperSize" variable
+                                       (:constant-flag t
+                                        :default-value "1"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [31074 31152])
+                                    ("kDidGatewayComponentListEcuAuthenticationCalibration_LowerSize" variable
+                                       (:constant-flag t
+                                        :default-value "1"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [31170 31257])
+                                    ("kDidGatewayComponentListEcuAuthenticationCalibration_UpperSize" variable
+                                       (:constant-flag t
+                                        :default-value "1"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [31275 31362])
+                                    ("kDidSpracheSPRACHECalibration_LowerSize" variable
+                                       (:constant-flag t
+                                        :default-value "26"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [31380 31445])
+                                    ("kDidSpracheSPRACHECalibration_UpperSize" variable
+                                       (:constant-flag t
+                                        :default-value "26"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [31463 31528])
+                                    ("kDidSichtbareMMISystemsprachenMMISYSTSPRACalibration_LowerSize" variable
+                                       (:constant-flag t
+                                        :default-value "778"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [31546 31635])
+                                    ("kDidSichtbareMMISystemsprachenMMISYSTSPRACalibration_UpperSize" variable
+                                       (:constant-flag t
+                                        :default-value "778"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [31653 31742])
+                                    ("kDidFingerprintCalibration_LowerSize" variable
+                                       (:constant-flag t
+                                        :default-value "9"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [31760 31821])
+                                    ("kDidFingerprintCalibration_UpperSize" variable
+                                       (:constant-flag t
+                                        :default-value "9"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [31839 31900])
+                                    ("kDidFingerprintAndProgrammingDateOfLogicalSoftwareBlocksCalibration_LowerSize" variable
+                                       (:constant-flag t
+                                        :default-value "450"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [31918 32022])
+                                    ("kDidFingerprintAndProgrammingDateOfLogicalSoftwareBlocksCalibration_UpperSize" variable
+                                       (:constant-flag t
+                                        :default-value "450"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [32040 32144])
+                                    ("kDidVWFAZITIdentificationStringCalibration_LowerSize" variable
+                                       (:constant-flag t
+                                        :default-value "23"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [32162 32240])
+                                    ("kDidVWFAZITIdentificationStringCalibration_UpperSize" variable
+                                       (:constant-flag t
+                                        :default-value "23"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [32258 32336])
+                                    ("kDidActiveDiagnosticSessionCalibration_LowerSize" variable
+                                       (:constant-flag t
+                                        :default-value "1"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [32354 32427])
+                                    ("kDidActiveDiagnosticSessionCalibration_UpperSize" variable
+                                       (:constant-flag t
+                                        :default-value "1"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [32445 32518])
+                                    ("kDidVWSparePartNumberCalibration_LowerSize" variable
+                                       (:constant-flag t
+                                        :default-value "11"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [32536 32604])
+                                    ("kDidVWSparePartNumberCalibration_UpperSize" variable
+                                       (:constant-flag t
+                                        :default-value "11"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [32622 32690])
+                                    ("kDidVWApplicationSoftwareVersionNumberCalibration_LowerSize" variable
+                                       (:constant-flag t
+                                        :default-value "4"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [32708 32792])
+                                    ("kDidVWApplicationSoftwareVersionNumberCalibration_UpperSize" variable
+                                       (:constant-flag t
+                                        :default-value "4"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [32810 32894])
+                                    ("kDidVehicleIdentificationNumberCalibration_LowerSize" variable
+                                       (:constant-flag t
+                                        :default-value "17"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [32912 32990])
+                                    ("kDidVehicleIdentificationNumberCalibration_UpperSize" variable
+                                       (:constant-flag t
+                                        :default-value "17"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [33008 33086])
+                                    ("kDidVWECUHardwareNumberCalibration_LowerSize" variable
+                                       (:constant-flag t
+                                        :default-value "11"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [33104 33174])
+                                    ("kDidVWECUHardwareNumberCalibration_UpperSize" variable
+                                       (:constant-flag t
+                                        :default-value "11"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [33192 33262])
+                                    ("kDidVWSystemNameOrEngineTypeCalibration_LowerSize" variable
+                                       (:constant-flag t
+                                        :default-value "13"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [33280 33355])
+                                    ("kDidVWSystemNameOrEngineTypeCalibration_UpperSize" variable
+                                       (:constant-flag t
+                                        :default-value "13"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [33373 33448])
+                                    ("kDidASAMODXFileIdentifierCalibration_LowerSize" variable
+                                       (:constant-flag t
+                                        :default-value "1"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [33466 33537])
+                                    ("kDidASAMODXFileIdentifierCalibration_UpperSize" variable
+                                       (:constant-flag t
+                                        :default-value "25"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [33555 33627])
+                                    ("kDidVWDataSetNumberOrECUDataContainerNumberCalibration_LowerSize" variable
+                                       (:constant-flag t
+                                        :default-value "11"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [33645 33735])
+                                    ("kDidVWDataSetNumberOrECUDataContainerNumberCalibration_UpperSize" variable
+                                       (:constant-flag t
+                                        :default-value "11"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [33753 33843])
+                                    ("kDidVWDataSetVersionNumberCalibration_LowerSize" variable
+                                       (:constant-flag t
+                                        :default-value "4"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [33861 33933])
+                                    ("kDidVWDataSetVersionNumberCalibration_UpperSize" variable
+                                       (:constant-flag t
+                                        :default-value "4"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [33951 34023])
+                                    ("kDidASAMODXFileVersionCalibration_LowerSize" variable
+                                       (:constant-flag t
+                                        :default-value "6"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [34041 34109])
+                                    ("kDidASAMODXFileVersionCalibration_UpperSize" variable
+                                       (:constant-flag t
+                                        :default-value "6"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [34127 34195])
+                                    ("kDidVWECUHardwareVersionNumberCalibration_LowerSize" variable
+                                       (:constant-flag t
+                                        :default-value "3"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [34213 34289])
+                                    ("kDidVWECUHardwareVersionNumberCalibration_UpperSize" variable
+                                       (:constant-flag t
+                                        :default-value "3"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [34307 34383])
+                                    ("kDidVWWorkshopSystemNameCalibration_LowerSize" variable
+                                       (:constant-flag t
+                                        :default-value "5"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [34401 34471])
+                                    ("kDidVWWorkshopSystemNameCalibration_UpperSize" variable
+                                       (:constant-flag t
+                                        :default-value "5"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [34489 34559])
+                                    ("kDidVWLogicalSoftwareBlockVersionCalibration_LowerSize" variable
+                                       (:constant-flag t
+                                        :default-value "180"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [34577 34658])
+                                    ("kDidVWLogicalSoftwareBlockVersionCalibration_UpperSize" variable
+                                       (:constant-flag t
+                                        :default-value "180"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [34676 34757])
+                                    ("kDidAUTOSARStandardApplicationSoftwareIdentificationCalibration_LowerSize" variable
+                                       (:constant-flag t
+                                        :default-value "1"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [34775 34873])
+                                    ("kDidAUTOSARStandardApplicationSoftwareIdentificationCalibration_UpperSize" variable
+                                       (:constant-flag t
+                                        :default-value "4090"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [34891 34992])
+                                    ("kDidVWApplicationDataSetIdentificationCalibration_LowerSize" variable
+                                       (:constant-flag t
+                                        :default-value "154"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [35010 35096])
+                                    ("kDidVWApplicationDataSetIdentificationCalibration_UpperSize" variable
+                                       (:constant-flag t
+                                        :default-value "154"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [35114 35200])
+                                    ("kDidVWDataSetNameCalibration_LowerSize" variable
+                                       (:constant-flag t
+                                        :default-value "309"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [35218 35283])
+                                    ("kDidVWDataSetNameCalibration_UpperSize" variable
+                                       (:constant-flag t
+                                        :default-value "309"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [35301 35366])
+                                    ("kDidTechnicalSpecificationsVersionCalibration_LowerSize" variable
+                                       (:constant-flag t
+                                        :default-value "26"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [35384 35465])
+                                    ("kDidTechnicalSpecificationsVersionCalibration_UpperSize" variable
+                                       (:constant-flag t
+                                        :default-value "26"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [35483 35564])
+                                    ("kDidBusmasterDescriptionCalibration_LowerSize" variable
+                                       (:constant-flag t
+                                        :default-value "5"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [35582 35652])
+                                    ("kDidBusmasterDescriptionCalibration_UpperSize" variable
+                                       (:constant-flag t
+                                        :default-value "5"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [35670 35740])
+                                    ("kDidGatewayComponentListECUNodeAddressCalibration_LowerSize" variable
+                                       (:constant-flag t
+                                        :default-value "4"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [35758 35842])
+                                    ("kDidGatewayComponentListECUNodeAddressCalibration_UpperSize" variable
+                                       (:constant-flag t
+                                        :default-value "4"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [35860 35944])
+                                    ("kDidFDSProjectDataCalibration_LowerSize" variable
+                                       (:constant-flag t
+                                        :default-value "6"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [35962 36026])
+                                    ("kDidFDSProjectDataCalibration_UpperSize" variable
+                                       (:constant-flag t
+                                        :default-value "4090"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [36044 36111])
+                                    ("kDidECUProgrammingInformationCalibration_LowerSize" variable
+                                       (:constant-flag t
+                                        :default-value "1"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [36129 36204])
+                                    ("kDidECUProgrammingInformationCalibration_UpperSize" variable
+                                       (:constant-flag t
+                                        :default-value "1"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [36222 36297])
+                                    ("kDidEngineRPMMeasurement_LowerSize" variable
+                                       (:constant-flag t
+                                        :default-value "2"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [36315 36374])
+                                    ("kDidEngineRPMMeasurement_UpperSize" variable
+                                       (:constant-flag t
+                                        :default-value "2"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [36392 36451])
+                                    ("kDidUnlockStatusOfECUOfProtectionOfVehicleDiagnosisForEnvironmentConditionMeasurement_LowerSize" variable
+                                       (:constant-flag t
+                                        :default-value "1"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [36469 36589])
+                                    ("kDidUnlockStatusOfECUOfProtectionOfVehicleDiagnosisForEnvironmentConditionMeasurement_UpperSize" variable
+                                       (:constant-flag t
+                                        :default-value "1"
+                                        :type ("std::uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [36607 36727]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [2219 36730]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [2188 36764]))                  
+                :type "namespace")
+                nil [2169 36801]))          
+      :file "did_mappings.h"
+      :pointmax 36922
+      :fsize 36921
+      :lastmodtime '(24310 58950 813942 104000)
+      :unmatched-syntax '((symbol 36597 . 36606) (STATIC 36590 . 36596) (symbol 36459 . 36468) (STATIC 36452 . 36458) (symbol 36382 . 36391) (STATIC 36375 . 36381) (symbol 36305 . 36314) (STATIC 36298 . 36304) (symbol 36212 . 36221) (STATIC 36205 . 36211) (symbol 36119 . 36128) (STATIC 36112 . 36118) (symbol 36034 . 36043) (STATIC 36027 . 36033) (symbol 35952 . 35961) (STATIC 35945 . 35951) (symbol 35850 . 35859) (STATIC 35843 . 35849) (symbol 35748 . 35757) (STATIC 35741 . 35747) (symbol 35660 . 35669) (STATIC 35653 . 35659) (symbol 35572 . 35581) (STATIC 35565 . 35571) (symbol 35473 . 35482) (STATIC 35466 . 35472) (symbol 35374 . 35383) (STATIC 35367 . 35373) (symbol 35291 . 35300) (STATIC 35284 . 35290) (symbol 35208 . 35217) (STATIC 35201 . 35207) (symbol 35104 . 35113) (STATIC 35097 . 35103) (symbol 35000 . 35009) (STATIC 34993 . 34999) (symbol 34881 . 34890) (STATIC 34874 . 34880) (symbol 34765 . 34774) (STATIC 34758 . 34764) (symbol 34666 . 34675) (STATIC 34659 . 34665) (symbol 34567 . 34576) (STATIC 34560 . 34566) (symbol 34479 . 34488) (STATIC 34472 . 34478) (symbol 34391 . 34400) (STATIC 34384 . 34390) (symbol 34297 . 34306) (STATIC 34290 . 34296) (symbol 34203 . 34212) (STATIC 34196 . 34202) (symbol 34117 . 34126) (STATIC 34110 . 34116) (symbol 34031 . 34040) (STATIC 34024 . 34030) (symbol 33941 . 33950) (STATIC 33934 . 33940) (symbol 33851 . 33860) (STATIC 33844 . 33850) (symbol 33743 . 33752) (STATIC 33736 . 33742) (symbol 33635 . 33644) (STATIC 33628 . 33634) (symbol 33545 . 33554) (STATIC 33538 . 33544) (symbol 33456 . 33465) (STATIC 33449 . 33455) (symbol 33363 . 33372) (STATIC 33356 . 33362) (symbol 33270 . 33279) (STATIC 33263 . 33269) (symbol 33182 . 33191) (STATIC 33175 . 33181) (symbol 33094 . 33103) (STATIC 33087 . 33093) (symbol 32998 . 33007) (STATIC 32991 . 32997) (symbol 32902 . 32911) (STATIC 32895 . 32901) (symbol 32800 . 32809) (STATIC 32793 . 32799) (symbol 32698 . 32707) (STATIC 32691 . 32697) (symbol 32612 . 32621) (STATIC 32605 . 32611) (symbol 32526 . 32535) (STATIC 32519 . 32525) (symbol 32435 . 32444) (STATIC 32428 . 32434) (symbol 32344 . 32353) (STATIC 32337 . 32343) (symbol 32248 . 32257) (STATIC 32241 . 32247) (symbol 32152 . 32161) (STATIC 32145 . 32151) (symbol 32030 . 32039) (STATIC 32023 . 32029) (symbol 31908 . 31917) (STATIC 31901 . 31907) (symbol 31829 . 31838) (STATIC 31822 . 31828) (symbol 31750 . 31759) (STATIC 31743 . 31749) (symbol 31643 . 31652) (STATIC 31636 . 31642) (symbol 31536 . 31545) (STATIC 31529 . 31535) (symbol 31453 . 31462) (STATIC 31446 . 31452) (symbol 31370 . 31379) (STATIC 31363 . 31369) (symbol 31265 . 31274) (STATIC 31258 . 31264) (symbol 31160 . 31169) (STATIC 31153 . 31159) (symbol 31064 . 31073) (STATIC 31057 . 31063) (symbol 30968 . 30977) (STATIC 30961 . 30967) (symbol 30887 . 30896) (STATIC 30880 . 30886) (symbol 30808 . 30817) (STATIC 30801 . 30807) (symbol 30717 . 30726) (STATIC 30710 . 30716) (symbol 30628 . 30637) (STATIC 30621 . 30627) (symbol 30541 . 30550) (STATIC 30534 . 30540) (symbol 30454 . 30463) (STATIC 30447 . 30453) (symbol 30374 . 30383) (STATIC 30367 . 30373) (symbol 30294 . 30303) (STATIC 30287 . 30293) (symbol 30214 . 30223) (STATIC 30207 . 30213) (symbol 30134 . 30143) (STATIC 30127 . 30133) (symbol 30025 . 30034) (STATIC 30018 . 30024) (symbol 29916 . 29925) (STATIC 29909 . 29915) (symbol 29820 . 29829) (STATIC 29813 . 29819) (symbol 29724 . 29733) (STATIC 29717 . 29723) (symbol 29633 . 29642) (STATIC 29626 . 29632) (symbol 29542 . 29551) (STATIC 29535 . 29541) (symbol 29439 . 29448) (STATIC 29432 . 29438) (symbol 29336 . 29345) (STATIC 29329 . 29335) (symbol 29241 . 29250) (STATIC 29234 . 29240) (symbol 29146 . 29155) (STATIC 29139 . 29145) (symbol 29049 . 29058) (STATIC 29042 . 29048) (symbol 28952 . 28961) (STATIC 28945 . 28951) (symbol 28868 . 28877) (STATIC 28861 . 28867) (symbol 28784 . 28793) (STATIC 28777 . 28783) (symbol 28689 . 28698) (STATIC 28682 . 28688) (symbol 28594 . 28603) (STATIC 28587 . 28593) (symbol 28513 . 28522) (STATIC 28506 . 28512) (symbol 28432 . 28441) (STATIC 28425 . 28431) (symbol 28333 . 28342) (STATIC 28326 . 28332) (symbol 28234 . 28243) (STATIC 28227 . 28233) (symbol 28147 . 28156) (STATIC 28140 . 28146) (symbol 28060 . 28069) (STATIC 28053 . 28059) (symbol 27961 . 27970) (STATIC 27954 . 27960) (symbol 27862 . 27871) (STATIC 27855 . 27861) (symbol 27775 . 27784) (STATIC 27768 . 27774) (symbol 27688 . 27697) (STATIC 27681 . 27687) (symbol 27601 . 27610) (STATIC 27594 . 27600) (symbol 27514 . 27523) (STATIC 27507 . 27513) (symbol 27416 . 27425) (STATIC 27409 . 27415) (symbol 27318 . 27327) (STATIC 27311 . 27317) (symbol 27240 . 27249) (STATIC 27233 . 27239) (symbol 27162 . 27171) (STATIC 27155 . 27161) (symbol 27082 . 27091) (STATIC 27075 . 27081) (symbol 27002 . 27011) (STATIC 26995 . 27001) (symbol 26919 . 26928) (STATIC 26912 . 26918) (symbol 26836 . 26845) (STATIC 26829 . 26835) (symbol 26747 . 26756) (STATIC 26740 . 26746) (symbol 26658 . 26667) (STATIC 26651 . 26657) (symbol 26579 . 26588) (STATIC 26572 . 26578) (symbol 26500 . 26509) (STATIC 26493 . 26499) (symbol 26418 . 26427) (STATIC 26411 . 26417) (symbol 26336 . 26345) (STATIC 26329 . 26335) (symbol 26234 . 26243) (STATIC 26227 . 26233) (symbol 26132 . 26141) (STATIC 26125 . 26131) (symbol 26015 . 26024) (STATIC 26008 . 26014) (symbol 25898 . 25907) (STATIC 25891 . 25897) (symbol 25810 . 25819) (STATIC 25803 . 25809) (symbol 25722 . 25731) (STATIC 25715 . 25721) (symbol 25632 . 25641) (STATIC 25625 . 25631) (symbol 25542 . 25551) (STATIC 25535 . 25541) (symbol 25452 . 25461) (STATIC 25445 . 25451) (symbol 25362 . 25371) (STATIC 25355 . 25361) (symbol 25267 . 25276) (STATIC 25260 . 25266) (symbol 25172 . 25181) (STATIC 25165 . 25171) (symbol 25085 . 25094) (STATIC 25078 . 25084) (symbol 24998 . 25007) (STATIC 24991 . 24997) (symbol 24899 . 24908) (STATIC 24892 . 24898) (symbol 24800 . 24809) (STATIC 24793 . 24799) (symbol 24707 . 24716) (STATIC 24700 . 24706) (symbol 24614 . 24623) (STATIC 24607 . 24613) (symbol 24510 . 24519) (STATIC 24503 . 24509) (symbol 24406 . 24415) (STATIC 24399 . 24405) (symbol 24298 . 24307) (STATIC 24291 . 24297) (symbol 24190 . 24199) (STATIC 24183 . 24189) (symbol 24104 . 24113) (STATIC 24097 . 24103) (symbol 24018 . 24027) (STATIC 24011 . 24017) (symbol 23916 . 23925) (STATIC 23909 . 23915) (symbol 23814 . 23823) (STATIC 23807 . 23813) (symbol 23709 . 23718) (STATIC 23702 . 23708) (symbol 23604 . 23613) (STATIC 23597 . 23603) (symbol 23511 . 23520) (STATIC 23504 . 23510) (symbol 23418 . 23427) (STATIC 23411 . 23417) (symbol 23324 . 23333) (STATIC 23317 . 23323) (symbol 23230 . 23239) (STATIC 23223 . 23229) (symbol 23127 . 23136) (STATIC 23120 . 23126) (symbol 23024 . 23033) (STATIC 23017 . 23023) (symbol 22924 . 22933) (STATIC 22917 . 22923) (symbol 22824 . 22833) (STATIC 22817 . 22823) (symbol 22729 . 22738) (STATIC 22722 . 22728) (symbol 22634 . 22643) (STATIC 22627 . 22633) (symbol 22557 . 22566) (STATIC 22550 . 22556) (symbol 22480 . 22489) (STATIC 22473 . 22479) (symbol 22389 . 22398) (STATIC 22382 . 22388) (symbol 22298 . 22307) (STATIC 22291 . 22297) (symbol 22217 . 22226) (STATIC 22210 . 22216) (symbol 22136 . 22145) (STATIC 22129 . 22135) (symbol 22025 . 22034) (STATIC 22018 . 22024) (symbol 21914 . 21923) (STATIC 21907 . 21913) (symbol 21817 . 21826) (STATIC 21810 . 21816) (symbol 21720 . 21729) (STATIC 21713 . 21719) (symbol 21623 . 21632) (STATIC 21616 . 21622) (symbol 21526 . 21535) (STATIC 21519 . 21525) (symbol 21431 . 21440) (STATIC 21424 . 21430) (symbol 21336 . 21345) (STATIC 21329 . 21335) (symbol 21244 . 21253) (STATIC 21237 . 21243) (symbol 21152 . 21161) (STATIC 21145 . 21151) (symbol 21068 . 21077) (STATIC 21061 . 21067) (symbol 20984 . 20993) (STATIC 20977 . 20983) (symbol 20886 . 20895) (STATIC 20879 . 20885) (symbol 20788 . 20797) (STATIC 20781 . 20787) (symbol 20706 . 20715) (STATIC 20699 . 20705) (symbol 20624 . 20633) (STATIC 20617 . 20623) (symbol 20544 . 20553) (STATIC 20537 . 20543) (symbol 20464 . 20473) (STATIC 20457 . 20463) (symbol 20379 . 20388) (STATIC 20372 . 20378) (symbol 20294 . 20303) (STATIC 20287 . 20293) (symbol 20210 . 20219) (STATIC 20203 . 20209) (symbol 20126 . 20135) (STATIC 20119 . 20125) (symbol 20035 . 20044) (STATIC 20028 . 20034) (symbol 19944 . 19953) (STATIC 19937 . 19943) (symbol 19860 . 19869) (STATIC 19853 . 19859) (symbol 19776 . 19785) (STATIC 19769 . 19775) (symbol 19688 . 19697) (STATIC 19681 . 19687) (symbol 19600 . 19609) (STATIC 19593 . 19599) (symbol 19518 . 19527) (STATIC 19511 . 19517) (symbol 19436 . 19445) (STATIC 19429 . 19435) (symbol 19355 . 19364) (STATIC 19348 . 19354) (symbol 19274 . 19283) (STATIC 19267 . 19273) (symbol 19193 . 19202) (STATIC 19186 . 19192) (symbol 19112 . 19121) (STATIC 19105 . 19111) (symbol 19031 . 19040) (STATIC 19024 . 19030) (symbol 18950 . 18959) (STATIC 18943 . 18949) (symbol 18855 . 18864) (STATIC 18848 . 18854) (symbol 18760 . 18769) (STATIC 18753 . 18759) (symbol 18680 . 18689) (STATIC 18673 . 18679) (symbol 18600 . 18609) (STATIC 18593 . 18599) (symbol 18518 . 18527) (STATIC 18511 . 18517) (symbol 18436 . 18445) (STATIC 18429 . 18435) (symbol 18344 . 18353) (STATIC 18337 . 18343) (symbol 18252 . 18261) (STATIC 18245 . 18251) (symbol 18164 . 18173) (STATIC 18157 . 18163) (symbol 18076 . 18085) (STATIC 18069 . 18075) (symbol 17976 . 17985) (STATIC 17969 . 17975) (symbol 17876 . 17885) (STATIC 17869 . 17875) (symbol 17757 . 17766) (STATIC 17750 . 17756) (symbol 17638 . 17647) (STATIC 17631 . 17637) (symbol 17553 . 17562) (STATIC 17546 . 17552) (symbol 17468 . 17477) (STATIC 17461 . 17467) (symbol 17383 . 17392) (STATIC 17376 . 17382) (symbol 17298 . 17307) (STATIC 17291 . 17297) (symbol 17208 . 17217) (STATIC 17201 . 17207) (symbol 17118 . 17127) (STATIC 17111 . 17117) (symbol 17030 . 17039) (STATIC 17023 . 17029) (symbol 16942 . 16951) (STATIC 16935 . 16941) (symbol 16831 . 16840) (STATIC 16824 . 16830) (symbol 16720 . 16729) (STATIC 16713 . 16719) (symbol 16605 . 16614) (STATIC 16598 . 16604) (symbol 16490 . 16499) (STATIC 16483 . 16489) (symbol 16391 . 16400) (STATIC 16384 . 16390) (symbol 16292 . 16301) (STATIC 16285 . 16291) (symbol 16182 . 16191) (STATIC 16175 . 16181) (symbol 16074 . 16083) (STATIC 16067 . 16073) (symbol 15982 . 15991) (STATIC 15975 . 15981) (symbol 15890 . 15899) (STATIC 15883 . 15889) (symbol 15805 . 15814) (STATIC 15798 . 15804) (symbol 15723 . 15732) (STATIC 15716 . 15722) (symbol 15636 . 15645) (STATIC 15629 . 15635) (symbol 15550 . 15559) (STATIC 15543 . 15549) (symbol 15470 . 15479) (STATIC 15463 . 15469) (symbol 15391 . 15400) (STATIC 15384 . 15390) (symbol 15293 . 15302) (STATIC 15286 . 15292) (symbol 15197 . 15206) (STATIC 15190 . 15196) (symbol 15108 . 15117) (STATIC 15101 . 15107) (symbol 15021 . 15030) (STATIC 15014 . 15020) (symbol 14930 . 14939) (STATIC 14923 . 14929) (symbol 14839 . 14848) (STATIC 14832 . 14838) (symbol 14748 . 14757) (STATIC 14741 . 14747) (symbol 14657 . 14666) (STATIC 14650 . 14656) (symbol 14570 . 14579) (STATIC 14563 . 14569) (symbol 14483 . 14492) (STATIC 14476 . 14482) (symbol 14396 . 14405) (STATIC 14389 . 14395) (symbol 14309 . 14318) (STATIC 14302 . 14308) (symbol 14132 . 14141) (STATIC 14125 . 14131) (symbol 14060 . 14069) (STATIC 14053 . 14059) (symbol 13972 . 13981) (STATIC 13965 . 13971) (symbol 13895 . 13904) (STATIC 13888 . 13894) (symbol 13798 . 13807) (STATIC 13791 . 13797) (symbol 13715 . 13724) (STATIC 13708 . 13714) (symbol 13622 . 13631) (STATIC 13615 . 13621) (symbol 13546 . 13555) (STATIC 13539 . 13545) (symbol 13449 . 13458) (STATIC 13442 . 13448) (symbol 13338 . 13347) (STATIC 13331 . 13337) (symbol 13246 . 13255) (STATIC 13239 . 13245) (symbol 13163 . 13172) (STATIC 13156 . 13162) (symbol 13074 . 13083) (STATIC 13067 . 13073) (symbol 12993 . 13002) (STATIC 12986 . 12992) (symbol 12908 . 12917) (STATIC 12901 . 12907) (symbol 12806 . 12815) (STATIC 12799 . 12805) (symbol 12722 . 12731) (STATIC 12715 . 12721) (symbol 12635 . 12644) (STATIC 12628 . 12634) (symbol 12553 . 12562) (STATIC 12546 . 12552) (symbol 12463 . 12472) (STATIC 12456 . 12462) (symbol 12366 . 12375) (STATIC 12359 . 12365) (symbol 12286 . 12295) (STATIC 12279 . 12285) (symbol 12200 . 12209) (STATIC 12193 . 12199) (symbol 12110 . 12119) (STATIC 12103 . 12109) (symbol 11995 . 12004) (STATIC 11988 . 11994) (symbol 11921 . 11930) (STATIC 11914 . 11920) (symbol 11821 . 11830) (STATIC 11814 . 11820) (symbol 11744 . 11753) (STATIC 11737 . 11743) (symbol 11644 . 11653) (STATIC 11637 . 11643) (symbol 11553 . 11562) (STATIC 11546 . 11552) (symbol 11479 . 11488) (STATIC 11472 . 11478) (symbol 11395 . 11404) (STATIC 11388 . 11394) (symbol 11313 . 11322) (STATIC 11306 . 11312) (symbol 11239 . 11248) (STATIC 11232 . 11238) (symbol 11164 . 11173) (STATIC 11157 . 11163) (symbol 11060 . 11069) (STATIC 11053 . 11059) (symbol 10969 . 10978) (STATIC 10962 . 10968) (symbol 10883 . 10892) (STATIC 10876 . 10882) (symbol 10785 . 10794) (STATIC 10778 . 10784) (symbol 10695 . 10704) (STATIC 10688 . 10694) (symbol 10603 . 10612) (STATIC 10596 . 10602) (symbol 10524 . 10533) (STATIC 10517 . 10523) (symbol 10434 . 10443) (STATIC 10427 . 10433) (symbol 10358 . 10367) (STATIC 10351 . 10357) (symbol 10264 . 10273) (STATIC 10257 . 10263) (symbol 10182 . 10191) (STATIC 10175 . 10181) (symbol 10088 . 10097) (STATIC 10081 . 10087) (symbol 10006 . 10015) (STATIC 9999 . 10005) (symbol 9924 . 9933) (STATIC 9917 . 9923) (symbol 9832 . 9841) (STATIC 9825 . 9831) (symbol 9759 . 9768) (STATIC 9752 . 9758) (symbol 9684 . 9693) (STATIC 9677 . 9683) (symbol 9607 . 9616) (STATIC 9600 . 9606) (symbol 9523 . 9532) (STATIC 9516 . 9522) (symbol 9449 . 9458) (STATIC 9442 . 9448) (symbol 9372 . 9381) (STATIC 9365 . 9371) (symbol 9276 . 9285) (STATIC 9269 . 9275) (symbol 9164 . 9173) (STATIC 9157 . 9163) (symbol 9083 . 9092) (STATIC 9076 . 9082) (symbol 8998 . 9007) (STATIC 8991 . 8997) (symbol 8913 . 8922) (STATIC 8906 . 8912) (symbol 8823 . 8832) (STATIC 8816 . 8822) (symbol 8741 . 8750) (STATIC 8734 . 8740) (symbol 8647 . 8656) (STATIC 8640 . 8646) (symbol 8559 . 8568) (STATIC 8552 . 8558) (symbol 8461 . 8470) (STATIC 8454 . 8460) (symbol 8359 . 8368) (STATIC 8352 . 8358) (symbol 8278 . 8287) (STATIC 8271 . 8277) (symbol 8182 . 8191) (STATIC 8175 . 8181) (symbol 8083 . 8092) (STATIC 8076 . 8082) (symbol 7996 . 8005) (STATIC 7989 . 7995) (symbol 7908 . 7917) (STATIC 7901 . 7907) (symbol 7810 . 7819) (STATIC 7803 . 7809) (symbol 7715 . 7724) (STATIC 7708 . 7714) (symbol 7626 . 7635) (STATIC 7619 . 7625) (symbol 7555 . 7564) (STATIC 7548 . 7554) (symbol 7469 . 7478) (STATIC 7462 . 7468) (symbol 7393 . 7402) (STATIC 7386 . 7392) (symbol 7288 . 7297) (STATIC 7281 . 7287) (symbol 7196 . 7205) (STATIC 7189 . 7195) (symbol 7104 . 7113) (STATIC 7097 . 7103) (symbol 7015 . 7024) (STATIC 7008 . 7014) (symbol 6928 . 6937) (STATIC 6921 . 6927) (symbol 6849 . 6858) (STATIC 6842 . 6848) (symbol 6756 . 6765) (STATIC 6749 . 6755) (symbol 6679 . 6688) (STATIC 6672 . 6678) (symbol 6604 . 6613) (STATIC 6597 . 6603) (symbol 6524 . 6533) (STATIC 6517 . 6523) (symbol 6445 . 6454) (STATIC 6438 . 6444) (symbol 6359 . 6368) (STATIC 6352 . 6358) (symbol 6281 . 6290) (STATIC 6274 . 6280) (symbol 6199 . 6208) (STATIC 6192 . 6198) (symbol 6123 . 6132) (STATIC 6116 . 6122) (symbol 6048 . 6057) (STATIC 6041 . 6047) (symbol 5973 . 5982) (STATIC 5966 . 5972) (symbol 5898 . 5907) (STATIC 5891 . 5897) (symbol 5808 . 5817) (STATIC 5801 . 5807) (symbol 5734 . 5743) (STATIC 5727 . 5733) (symbol 5657 . 5666) (STATIC 5650 . 5656) (symbol 5570 . 5579) (STATIC 5563 . 5569) (symbol 5487 . 5496) (STATIC 5480 . 5486) (symbol 5393 . 5402) (STATIC 5386 . 5392) (symbol 5280 . 5289) (STATIC 5273 . 5279) (symbol 5200 . 5209) (STATIC 5193 . 5199) (symbol 5120 . 5129) (STATIC 5113 . 5119) (symbol 5035 . 5044) (STATIC 5028 . 5034) (symbol 4952 . 4961) (STATIC 4945 . 4951) (symbol 4848 . 4857) (STATIC 4841 . 4847) (symbol 4738 . 4747) (STATIC 4731 . 4737) (symbol 4644 . 4653) (STATIC 4637 . 4643) (symbol 4541 . 4550) (STATIC 4534 . 4540) (symbol 4454 . 4463) (STATIC 4447 . 4453) (symbol 4377 . 4386) (STATIC 4370 . 4376) (symbol 4296 . 4305) (STATIC 4289 . 4295) (symbol 4222 . 4231) (STATIC 4215 . 4221) (symbol 4131 . 4140) (STATIC 4124 . 4130) (symbol 4049 . 4058) (STATIC 4042 . 4048) (symbol 3963 . 3972) (STATIC 3956 . 3962) (symbol 3877 . 3886) (STATIC 3870 . 3876) (symbol 3795 . 3804) (STATIC 3788 . 3794) (symbol 3713 . 3722) (STATIC 3706 . 3712) (symbol 3612 . 3621) (STATIC 3605 . 3611) (symbol 3536 . 3545) (STATIC 3529 . 3535) (symbol 3466 . 3475) (STATIC 3459 . 3465) (symbol 3390 . 3399) (STATIC 3383 . 3389) (symbol 3272 . 3281) (STATIC 3265 . 3271) (symbol 3122 . 3131) (STATIC 3115 . 3121) (symbol 2994 . 3003) (STATIC 2987 . 2993) (symbol 2877 . 2886) (STATIC 2870 . 2876) (symbol 2759 . 2768) (STATIC 2752 . 2758) (symbol 2606 . 2615) (STATIC 2599 . 2605) (symbol 2484 . 2493) (STATIC 2477 . 2483) (symbol 2399 . 2408) (STATIC 2392 . 2398) (symbol 2307 . 2316) (STATIC 2300 . 2306))
+      :lexical-table 
+        '(("AMSR_VAG_APP_DSA_INCLUDES_VECTOR_DIAGNOSTIC_SERVICE_DATAIDENTIFIERS_DID_MAPPINGS_H_")
+          )
+)
+    (semanticdb-table "semanticdb-table-1daed7c"
+      :file "did_categories.h"
+      :fsize 2326
+      :lastmodtime '(24310 58950 813942 104000))
+    (semanticdb-table "semanticdb-table-1daed9c"
+      :file "did_datatypes.h"
+      :fsize 2981
+      :lastmodtime '(24310 58950 813942 104000))
+    (semanticdb-table "semanticdb-table-1daedbc"
+      :file "did_namespaces.h"
+      :fsize 2435
+      :lastmodtime '(24310 58950 813942 104000))
+    (semanticdb-table "semanticdb-table-1daeddc"
+      :file "impl_type_uint32.h"
+      :fsize 2714
+      :lastmodtime '(24310 58950 813942 104000))
+    (semanticdb-table "semanticdb-table-1daedfc"
+      :file "impl_type_uint8.h"
+      :fsize 2689
+      :lastmodtime '(24310 58950 813942 104000)))
+  :file "!home!hyuk.myeong!work!G550!CPU!QNX!Apps!source!model!src-gen!amsr_vag_app_dsa!includes!vector!diagnostic_service!dataidentifiers!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

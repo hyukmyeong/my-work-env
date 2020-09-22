@@ -1,0 +1,71 @@
+;; Object semanticdb-project-database-file-1ec9bcc
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-1ec9bcc"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-1ec9bd8"
+      :major-mode c++-mode
+      :tags 
+        '( ("atomic" include (:system-flag t) nil [1354 1371])
+            ("csignal" include (:system-flag t) nil [1372 1390])
+            ("iostream" include (:system-flag t) nil [1391 1410])
+            ("application/diagnostic_service_application.h" include nil nil [1412 1467])
+            ("ara/exec/application_client.hpp" include nil nil [1468 1510])
+            ("ara/log/logging.h" include nil nil [1511 1539])
+            ("vac/memory/three_phase_allocator.h" include nil nil [1566 1611])
+            ("vac::memory::AllocationPhaseManager" variable (:type "int") nil [1730 1766])
+            ("ara::exec::ApplicationClient" variable (:type "int") nil [1800 1829])
+            ("ara::exec::ApplicationState" variable (:type "int") nil [1892 1920])
+            ("TerminateDsa" function (:type "void") nil [2071 2172])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [3376 3385])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [3386 3399]))                  
+                :type "int")
+                nil [3367 5282]))          
+      :file "main.cpp"
+      :pointmax 5283
+      :fsize 5282
+      :lastmodtime '(24359 48950 923781 635000)
+      :unmatched-syntax '((semantic-list 2283 . 3215) (symbol 2274 . 2282) (semantic-list 2271 . 2273) (symbol 2247 . 2271) (VOID 2242 . 2246) (USING 1867 . 1872) (USING 1774 . 1779) (USING 1718 . 1723)))
+    (semanticdb-table "semanticdb-table-1a8e0b8"
+      :major-mode c++-mode
+      :tags 
+        '( ("RoutineStatusReport.h" include nil nil [1401 1433])
+            ("ara/log/logging.h" include nil nil [1434 1462])
+            ("Cmn/CReceiver.h" include nil nil [1499 1525])
+            ("Cmn/Utils/CSender.h" include nil nil [1526 1556])
+            ("Cmn/Utils/CSharedMemory.h" include nil nil [1557 1593])
+            ("Cmn/GlobalHeader.h" include nil nil [1594 1623])
+            ("Cmn/core/CGlobalData.h" include nil nil [1645 1678])
+            ("DSA_ROUTINE_SID" variable (:constant-flag t) nil [1688 1703])
+            ("DSA_LGRELAY_HEADER_LENGTH" variable (:constant-flag t) nil [1751 1776])
+            ("DSA_LENGTH_RID_FLAG" variable (:constant-flag t) nil [1817 1836])
+            ("ReportRoutineStatus" function
+               (:arguments 
+                  ( ("rid" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1903 1916])
+                    ("bRunning" variable (:type "bool") (reparse-symbol arg-sub-list) [1917 1931]))                  
+                :type "void")
+                nil [1878 2534]))          
+      :file "RoutineStatusReport.cpp"
+      :pointmax 2535
+      :fsize 2534
+      :lastmodtime '(24359 48950 919781 319000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("DSA_LENGTH_RID_FLAG" . ((semantic-list "(0x05)" 1837 . 1843)))
+          ("DSA_ROUTINE_SID" . ((semantic-list "(0xDD)" 1708 . 1714)))
+          ("DSA_LGRELAY_HEADER_LENGTH" . ((semantic-list "(0x03)" 1777 . 1783)))
+          )
+)
+    (semanticdb-table "semanticdb-table-456004"
+      :file "RoutineStatusReport.h"
+      :fsize 2009
+      :lastmodtime '(24359 48950 919781 319000)))
+  :file "!home!hyuk.myeong!work!LARA!Apps!source!autosar!third_party!vector!amsr-vag-app-dsa!src!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

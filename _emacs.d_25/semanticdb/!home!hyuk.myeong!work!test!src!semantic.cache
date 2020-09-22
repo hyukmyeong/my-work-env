@@ -1,0 +1,51 @@
+;; Object semanticdb-project-database-file-363fd34
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-363fd34"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-c7b950"
+      :major-mode c-mode
+      :tags 
+        '( ("DOC" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [14 21])
+                    ("foo" function
+                       (:typemodifiers ("virtual")
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [24 72]))                  
+                :type "class")
+                nil [1 75]))          
+      :file "doc.h"
+      :pointmax 76
+      :fsize 75
+      :lastmodtime '(24372 53727 576336 802000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-9aeb04"
+      :major-mode c-mode
+      :tags 
+        '( ("doc.h" include nil nil [1 17])
+            ("SUT" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [32 39])
+                    ("SUT" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("param" variable
+                               (:reference 1
+                                :type ("DOC" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [45 56]))                          
+                        :type ("SUT" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [41 72])
+                    ("foo" function (:type "void") (reparse-symbol classsubparts) [75 122])
+                    ("private" label nil (reparse-symbol classsubparts) [124 132])
+                    ("doc" variable (:type ("DOC" type (:type "class") nil nil)) (reparse-symbol classsubparts) [135 144]))                  
+                :type "class")
+                nil [19 147]))          
+      :file "sut.h"
+      :pointmax 148
+      :fsize 147
+      :lastmodtime '(24372 53694 331416 511000)
+      :unmatched-syntax nil))
+  :file "!home!hyuk.myeong!work!test!src!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

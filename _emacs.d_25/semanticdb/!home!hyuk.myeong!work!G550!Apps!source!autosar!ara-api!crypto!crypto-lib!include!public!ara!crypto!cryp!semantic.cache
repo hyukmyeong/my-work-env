@@ -1,0 +1,62 @@
+;; Object semanticdb-project-database-file-1144028
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-1144028"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-1144044"
+      :major-mode c++-mode
+      :tags 
+        '( ("ARA_CRYPTO_CRYP_PASSWORD_HASH_H_" variable (:constant-flag t) nil [2177 2209])
+            ("ara/crypto/common/std_api.h" include nil nil [2465 2503])
+            ("ara/crypto/common/base_id_types.h" include nil nil [2504 2548])
+            ("crypto_object.h" include nil nil [2550 2576])
+            ("ara" type
+               (:members 
+                  ( ("crypto" type
+                       (:members 
+                          ( ("cryp" type
+                               (:members 
+                                  ( ("PasswordHash" type
+                                       (:superclasses 
+                                          ( ("CryptoObject" type
+                                               (:protection "public"
+                                                :type "class")
+                                                nil nil))                                          
+                                        :members 
+                                          ( ("public" label nil (reparse-symbol classsubparts) [3024 3031])
+                                            ("CryptoObjectType::kPasswordHash" variable (:type "int") (reparse-symbol classsubparts) [3080 3112])
+                                            ("std::unique_ptr" variable (:type "int") (reparse-symbol classsubparts) [3271 3316])
+                                            ("noexcept" variable
+                                               (:constant-flag t
+                                                :default-value "0"
+                                                :type "int")
+                                                (reparse-symbol classsubparts) [3610 3629])
+                                            ("noexcept" variable
+                                               (:constant-flag t
+                                                :default-value "0"
+                                                :type "int")
+                                                (reparse-symbol classsubparts) [3923 3942]))                                          
+                                        :type "class")
+                                        (reparse-symbol namespacesubparts) [2981 3945]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [2613 3948]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [2594 3969]))                  
+                :type "namespace")
+                nil [2578 3992]))          
+      :file "password_hash.h"
+      :pointmax 4056
+      :fsize 4055
+      :lastmodtime '(24287 13656 163324 134000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("ARA_CRYPTO_CRYP_PASSWORD_HASH_H_")
+          )
+)
+    (semanticdb-table "semanticdb-table-12426a8"
+      :file "crypto_object.h"
+      :fsize 11790
+      :lastmodtime '(24287 13656 159324 756000)))
+  :file "!home!hyuk.myeong!work!G550!Apps!source!autosar!ara-api!crypto!crypto-lib!include!public!ara!crypto!cryp!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

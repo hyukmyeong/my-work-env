@@ -1,0 +1,10 @@
+;;;; Emacs Bookmark Format Version 1;;;; -*- coding: utf-8-emacs; mode: lisp-data -*-
+;;; This format is meant to be slightly human-readable;
+;;; nevertheless, you probably don't want to edit it.
+;;; -*- End Of Bookmark File Format Version Stamp -*-
+(("doip_udp_handler.cpp"
+ (filename . "~/work/LARA/avin/avin-ap/dm/source/src/libdcm/connection/doip_udp_handler.cpp")
+ (front-context-string . "\n    case DoIpUd")
+ (rear-context-string . "   break;\n    }\n")
+ (position . 21669))
+)

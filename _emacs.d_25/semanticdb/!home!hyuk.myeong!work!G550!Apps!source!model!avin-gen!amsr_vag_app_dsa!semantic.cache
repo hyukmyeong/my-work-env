@@ -1,0 +1,39 @@
+;; Object semanticdb-project-database-file-149ebb4
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-149ebb4"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-1487638"
+      :major-mode c++-mode
+      :tags 
+        '( ("AMSR_VAG_APP_DSA_ARA_COM_MAIN_SERVER_CPP_" variable (:constant-flag t) nil [1058 1099])
+            ("ara/com/internal/ara_com_main.h" include nil nil [1101 1143])
+            ("ara" type
+               (:members 
+                  ( ("com" type
+                       (:members 
+                          ( ("internal" type
+                               (:members 
+                                  ( ("runtime" type
+                                       (:members 
+                                          ( ("Initialize" function (:type "void") (reparse-symbol namespacesubparts) [2461 3958]))                                          
+                                        :type "namespace")
+                                        (reparse-symbol namespacesubparts) [2440 3961]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [2419 3984]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [2403 4008]))                  
+                :type "namespace")
+                nil [2387 4027]))          
+      :file "ara_com_main-server.cpp"
+      :pointmax 4100
+      :fsize 4183
+      :lastmodtime '(24287 13647 712638 896000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("AMSR_VAG_APP_DSA_ARA_COM_MAIN_SERVER_CPP_")
+          )
+))
+  :file "!home!hyuk.myeong!work!G550!Apps!source!model!avin-gen!amsr_vag_app_dsa!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

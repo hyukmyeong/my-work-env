@@ -1,0 +1,22 @@
+;; Object semanticdb-project-database-file-47ebe00
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-47ebe00"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-47ebe1c"
+      :major-mode c-mode
+      :tags 
+        '( ("DSA_ADAPTER_ARA_CRC_CRC_H__" variable (:constant-flag t) nil [45 72])
+            ("apd/crc/crc.h" include nil nil [74 98]))          
+      :file "crc.h"
+      :pointmax 138
+      :fsize 137
+      :lastmodtime '(24409 61938 956666 224000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("DSA_ADAPTER_ARA_CRC_CRC_H__")
+          )
+))
+  :file "!home!hyuk.myeong!work!LARA_new!sample-applications!lge!diag-handler!amsr-vag-app-dsa!adapter!include!ara!crc!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

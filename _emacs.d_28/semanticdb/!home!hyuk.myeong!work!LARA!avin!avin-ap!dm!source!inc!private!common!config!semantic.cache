@@ -1,0 +1,395 @@
+;; Object semanticdb-project-database-file-1abf700
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-1abf700"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-1be374c"
+      :major-mode c-mode
+      :tags 
+        '( ("ARA_DIAG_CFG_ACCESS_PERMISSION_GROUP_H_" variable (:constant-flag t) nil [804 843])
+            ("ara" type
+               (:members 
+                  ( ("diag" type
+                       (:members 
+                          ( ("cfg" type
+                               (:members 
+                                  ( ("AccessPermissionGroup" type
+                                       (:members 
+                                          ( ("sessionMappings" variable (:type ("std::uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1112 1142])
+                                            ("securityAccessMappings" variable (:type ("std::uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1241 1278])
+                                            ("environmentConditionRef" variable (:type ("std::uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1378 1416]))                                          
+                                        :type "struct")
+                                        (reparse-symbol namespacesubparts) [991 1419]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [878 1422]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [861 1441]))                  
+                :type "namespace")
+                nil [845 1461]))          
+      :file "access_permission_group.h"
+      :pointmax 1529
+      :fsize 1528
+      :lastmodtime '(24416 4495 23882 507000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("ARA_DIAG_CFG_ACCESS_PERMISSION_GROUP_H_")
+          )
+)
+    (semanticdb-table "semanticdb-table-1be45c8"
+      :major-mode c++-mode
+      :tags 
+        '( ("ARA_DIAG_CFG_COUNTER_BASED_EVENT_DEBOUNCE_INFO_TABLE_H_" variable (:constant-flag t) nil [835 890])
+            ("ara/core/string.h" include (:system-flag t) nil [892 920])
+            ("iostream" include (:system-flag t) nil [921 940])
+            ("memory" include (:system-flag t) nil [941 958])
+            ("unordered_map" include (:system-flag t) nil [959 983])
+            ("ara" type
+               (:members 
+                  ( ("diag" type
+                       (:members 
+                          ( ("cfg" type
+                               (:members 
+                                  ( ("CounterBasedEventDebounceInfoTable" type
+                                       (:members 
+                                          ( ("counterDecrementStepSize" variable (:type ("std::uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1317 1356])
+                                            ("counterFailedThreshold" variable (:type ("std::uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1467 1504])
+                                            ("counterPassedThreshold" variable (:type ("std::uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1615 1652])
+                                            ("counterIncrementStepSize" variable (:type ("std::uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1765 1804])
+                                            ("counterJumpDownValue" variable (:type ("std::uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1913 1948])
+                                            ("counterJumpUpValue" variable (:type ("std::uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2055 2088])
+                                            ("debounceBehavior" variable (:type ("std::uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2193 2224])
+                                            ("isCounterJumpDown" variable (:type "bool") (reparse-symbol classsubparts) [2328 2351])
+                                            ("isCounterJumpUp" variable (:type "bool") (reparse-symbol classsubparts) [2452 2473])
+                                            ("isDebounceCounterStorage" variable (:type "bool") (reparse-symbol classsubparts) [2585 2615]))                                          
+                                        :type "struct")
+                                        (reparse-symbol namespacesubparts) [1162 2618]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [1018 2621]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [1001 2640]))                  
+                :type "namespace")
+                nil [985 2660]))          
+      :file "counter_based_event_debounce_info_table.h"
+      :pointmax 2744
+      :fsize 2805
+      :lastmodtime '(24416 4495 23882 507000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("ARA_DIAG_CFG_COUNTER_BASED_EVENT_DEBOUNCE_INFO_TABLE_H_")
+          )
+)
+    (semanticdb-table "semanticdb-table-1be4f14"
+      :major-mode c++-mode
+      :tags 
+        '( ("ARA_DIAG_CFG_UDP_CHANNEL_H_" variable (:constant-flag t) nil [779 806])
+            ("string" include (:system-flag t) nil [808 825])
+            ("ara" type
+               (:members 
+                  ( ("diag" type
+                       (:members 
+                          ( ("cfg" type
+                               (:members 
+                                  ( ("UdpChannel" type
+                                       (:members 
+                                          ( ("multicastIPAddress" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1031 1062])
+                                            ("ttl" variable (:type ("std::uint8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1108 1125]))                                          
+                                        :type "struct")
+                                        (reparse-symbol namespacesubparts) [952 1128]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [860 1131]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [843 1150]))                  
+                :type "namespace")
+                nil [827 1170]))          
+      :file "udp_channel.h"
+      :pointmax 1226
+      :fsize 1260
+      :lastmodtime '(24416 4495 23882 507000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("ARA_DIAG_CFG_UDP_CHANNEL_H_")
+          )
+)
+    (semanticdb-table "semanticdb-table-1da452c"
+      :major-mode c++-mode
+      :tags 
+        '( ("ARA_DIAG_CONFIG_DOIP_CONFIG_H_" variable (:constant-flag t) nil [782 812])
+            ("cstdint" include (:system-flag t) nil [814 832])
+            ("sstream" include (:system-flag t) nil [833 851])
+            ("ara/core/string.h" include (:system-flag t) nil [852 880])
+            ("ara/core/vector.h" include (:system-flag t) nil [881 909])
+            ("fstream" include (:system-flag t) nil [910 928])
+            ("unordered_set" include (:system-flag t) nil [929 953])
+            ("unordered_map" include (:system-flag t) nil [954 978])
+            ("ara/log/logging.h" include nil nil [980 1008])
+            ("rapidjson/document.h" include nil nil [1009 1040])
+            ("rapidjson/filereadstream.h" include nil nil [1041 1078])
+            ("rapidjson/stringbuffer.h" include nil nil [1079 1114])
+            ("doip_request_configuration.h" include nil nil [1116 1155])
+            ("doip_channel.h" include nil nil [1156 1181])
+            ("udp_channel.h" include nil nil [1182 1206])
+            ("tcp_channel.h" include nil nil [1207 1231])
+            ("doip_common.h" include nil nil [1232 1256])
+            ("ara/diag/uds_transport/uds_message.h" include nil nil [1257 1304])
+            ("ara" type
+               (:members 
+                  ( ("diag" type
+                       (:members 
+                          ( ("uds_transport" type
+                               (:members 
+                                  ( ("doip" type
+                                       (:members 
+                                          ( ("config" type
+                                               (:members 
+                                                  ( ("kNotConfigured" function
+                                                       (:prototype-flag t
+                                                        :arguments 
+                                                          ( ("" variable (:type ("0U" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1446 1449]))                                                          
+                                                        :type ("std::uint8_t" type (:type "class") nil nil))
+                                                        (reparse-symbol namespacesubparts) [1418 1450])
+                                                    ("DoIpConfig" type
+                                                       (:members 
+                                                          ( ("private" label nil (reparse-symbol classsubparts) [1471 1479])
+                                                            ("stDoIpConfigInstance_" variable
+                                                               (:typemodifiers ("static")
+                                                                :type ("std::shared_ptr" type
+                                                                     (:template-specifier 
+                                                                        ( ("DoIpConfig" type nil nil nil))                                                                        
+                                                                      :type "class")
+                                                                      nil nil))
+                                                                (reparse-symbol classsubparts) [1540 1597])
+                                                            ("public" label nil (reparse-symbol classsubparts) [1600 1607])
+                                                            ("DoIpConfig" function
+                                                               (:constructor-flag t
+                                                                :type ("DoIpConfig" type (:type "class") nil nil))
+                                                                (reparse-symbol classsubparts) [1679 2044])
+                                                            ("getDoIpInstance" function
+                                                               (:prototype-flag t
+                                                                :typemodifiers ("static")
+                                                                :type ("std::shared_ptr" type
+                                                                     (:template-specifier 
+                                                                        ( ("DoIpConfig" type nil nil nil))                                                                        
+                                                                      :type "class")
+                                                                      nil nil))
+                                                                (reparse-symbol classsubparts) [2131 2184])
+                                                            ("DoIpLoadConfig" function
+                                                               (:prototype-flag t
+                                                                :arguments 
+                                                                  ( ("file_name" variable
+                                                                       (:pointer 1
+                                                                        :constant-flag t
+                                                                        :type "char")
+                                                                        (reparse-symbol arg-sub-list) [2330 2358]))                                                                  
+                                                                :type "void")
+                                                                (reparse-symbol classsubparts) [2310 2359])
+                                                            ("GetTcpInitialInactivityTime" function
+                                                               (:prototype-flag t
+                                                                :type ("std::uint32_t" type (:type "class") nil nil))
+                                                                (reparse-symbol classsubparts) [2457 2501])
+                                                            ("GetTcpGeneralInactivityTime" function
+                                                               (:prototype-flag t
+                                                                :type ("std::uint32_t" type (:type "class") nil nil))
+                                                                (reparse-symbol classsubparts) [2599 2643])
+                                                            ("GetTcpAliveCheckResponseTimeout" function
+                                                               (:prototype-flag t
+                                                                :type ("std::uint32_t" type (:type "class") nil nil))
+                                                                (reparse-symbol classsubparts) [2749 2797])
+                                                            ("GetMaxInitialVehicleAnnouncementTime" function
+                                                               (:prototype-flag t
+                                                                :type ("std::uint32_t" type (:type "class") nil nil))
+                                                                (reparse-symbol classsubparts) [2913 2966])
+                                                            ("GetVehicleAnnouncementCount" function
+                                                               (:prototype-flag t
+                                                                :type ("std::uint8_t" type (:type "class") nil nil))
+                                                                (reparse-symbol classsubparts) [3064 3107])
+                                                            ("GetVehicleAnnouncementInterval" function
+                                                               (:prototype-flag t
+                                                                :type ("std::uint16_t" type (:type "class") nil nil))
+                                                                (reparse-symbol classsubparts) [3211 3258])
+                                                            ("LoadDoIpChannel" function
+                                                               (:prototype-flag t
+                                                                :arguments 
+                                                                  ( ("configData" variable
+                                                                       (:reference 1
+                                                                        :type ("rapidjson::Document" type (:type "class") nil nil))
+                                                                        (reparse-symbol arg-sub-list) [3429 3461]))                                                                  
+                                                                :type "void")
+                                                                (reparse-symbol classsubparts) [3408 3462])
+                                                            ("LoadDoIpCommon" function
+                                                               (:prototype-flag t
+                                                                :arguments 
+                                                                  ( ("configData" variable
+                                                                       (:reference 1
+                                                                        :type ("rapidjson::Document" type (:type "class") nil nil))
+                                                                        (reparse-symbol arg-sub-list) [3668 3700]))                                                                  
+                                                                :type "void")
+                                                                (reparse-symbol classsubparts) [3648 3701])
+                                                            ("LoadDoIPRequestConfiguration" function
+                                                               (:prototype-flag t
+                                                                :arguments 
+                                                                  ( ("configData" variable
+                                                                       (:reference 1
+                                                                        :type ("rapidjson::Document" type (:type "class") nil nil))
+                                                                        (reparse-symbol arg-sub-list) [3872 3904]))                                                                  
+                                                                :type "void")
+                                                                (reparse-symbol classsubparts) [3838 3905])
+                                                            ("LoadDoIPPowerModeSrvcInterfaceAraComMapping" function
+                                                               (:prototype-flag t
+                                                                :arguments 
+                                                                  ( ("configData" variable
+                                                                       (:reference 1
+                                                                        :type ("rapidjson::Document" type (:type "class") nil nil))
+                                                                        (reparse-symbol arg-sub-list) [4146 4178]))                                                                  
+                                                                :type "void")
+                                                                (reparse-symbol classsubparts) [4097 4179])
+                                                            ("LoadDoIPGroupIdentificationSrvcInterfaceAraComMapping" function
+                                                               (:prototype-flag t
+                                                                :arguments 
+                                                                  ( ("configData" variable
+                                                                       (:reference 1
+                                                                        :type ("rapidjson::Document" type (:type "class") nil nil))
+                                                                        (reparse-symbol arg-sub-list) [4436 4468]))                                                                  
+                                                                :type "void")
+                                                                (reparse-symbol classsubparts) [4377 4469])
+                                                            ("GetIPType" function
+                                                               (:prototype-flag t
+                                                                :type ("ara::core::String" type (:type "class") nil nil))
+                                                                (reparse-symbol classsubparts) [4528 4558])
+                                                            ("GetEIDValue" function
+                                                               (:prototype-flag t
+                                                                :type ("std::string" type (:type "class") nil nil))
+                                                                (reparse-symbol classsubparts) [4614 4640])
+                                                            ("GetIPAddress" function
+                                                               (:prototype-flag t
+                                                                :type ("ara::core::String" type (:type "class") nil nil))
+                                                                (reparse-symbol classsubparts) [4697 4730])
+                                                            ("GetMulticastIPAddress" function
+                                                               (:prototype-flag t
+                                                                :type ("ara::core::String" type (:type "class") nil nil))
+                                                                (reparse-symbol classsubparts) [4807 4849])
+                                                            ("GetDoIPEntityLogicalAddress" function
+                                                               (:prototype-flag t
+                                                                :type ("std::uint16_t" type (:type "class") nil nil))
+                                                                (reparse-symbol classsubparts) [4939 4983])
+                                                            ("GetMaxRequestBytes" function
+                                                               (:prototype-flag t
+                                                                :type ("std::uint32_t" type (:type "class") nil nil))
+                                                                (reparse-symbol classsubparts) [5058 5093])
+                                                            ("GetDoIPRequestType" function
+                                                               (:prototype-flag t
+                                                                :arguments 
+                                                                  ( ("targetAddress" variable (:type ("std::uint16_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5321 5349]))                                                                  
+                                                                :type ("UdsMessage::TargetAddressType" type (:type "class") nil nil))
+                                                                (reparse-symbol classsubparts) [5272 5350])
+                                                            ("IsTargetAddressValid" function
+                                                               (:prototype-flag t
+                                                                :arguments 
+                                                                  ( ("targetAddress" variable (:type ("std::uint16_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5569 5597]))                                                                  
+                                                                :type "bool")
+                                                                (reparse-symbol classsubparts) [5543 5598])
+                                                            ("IsVehicleIdentificationSyncStatusToBeUsed" function
+                                                               (:prototype-flag t
+                                                                :type "bool")
+                                                                (reparse-symbol classsubparts) [5749 5798])
+                                                            ("IsMacToBeUsedAsEid" function
+                                                               (:prototype-flag t
+                                                                :type "bool")
+                                                                (reparse-symbol classsubparts) [5890 5916])
+                                                            ("GetMaxTesterConnections" function
+                                                               (:prototype-flag t
+                                                                :type ("std::uint8_t" type (:type "class") nil nil))
+                                                                (reparse-symbol classsubparts) [6024 6063])
+                                                            ("GetDoIPPowerModeServiceInstanceMapping" function
+                                                               (:prototype-flag t
+                                                                :type ("std::int32_t" type (:type "class") nil nil))
+                                                                (reparse-symbol classsubparts) [6182 6236])
+                                                            ("GetDoIPGroupIdentificationServiceInstanceMapping" function
+                                                               (:prototype-flag t
+                                                                :type ("std::int32_t" type (:type "class") nil nil))
+                                                                (reparse-symbol classsubparts) [6370 6434])
+                                                            ("GetPersistencyMemoryAddress" function
+                                                               (:prototype-flag t
+                                                                :type ("std::string" type (:type "class") nil nil))
+                                                                (reparse-symbol classsubparts) [6497 6539])
+                                                            ("IsMaxLengthInEntityStatusResponseRequired" function
+                                                               (:prototype-flag t
+                                                                :type "bool")
+                                                                (reparse-symbol classsubparts) [6689 6738])
+                                                            ("private" label nil (reparse-symbol classsubparts) [6741 6749])
+                                                            ("udpChannel_" variable (:type ("std::shared_ptr" type
+                                                                 (:template-specifier 
+                                                                    ( ("ara::diag::cfg::UdpChannel" type nil nil nil))                                                                    
+                                                                  :type "class")
+                                                                  nil nil)) (reparse-symbol classsubparts) [6802 6858])
+                                                            ("tcpChannel_" variable (:type ("std::shared_ptr" type
+                                                                 (:template-specifier 
+                                                                    ( ("ara::diag::cfg::TcpChannel" type nil nil nil))                                                                    
+                                                                  :type "class")
+                                                                  nil nil)) (reparse-symbol classsubparts) [6912 6968])
+                                                            ("doIpChannel_" variable (:type ("std::shared_ptr" type
+                                                                 (:template-specifier 
+                                                                    ( ("ara::diag::cfg::DoIpChannel" type nil nil nil))                                                                    
+                                                                  :type "class")
+                                                                  nil nil)) (reparse-symbol classsubparts) [7018 7076])
+                                                            ("doIpCommon_" variable (:type ("std::shared_ptr" type
+                                                                 (:template-specifier 
+                                                                    ( ("ara::diag::cfg::DoIpCommon" type nil nil nil))                                                                    
+                                                                  :type "class")
+                                                                  nil nil)) (reparse-symbol classsubparts) [7119 7175])
+                                                            ("araComDiagDoIPPowerModeServiceInstanceSet_" variable (:type ("std::unordered_set" type
+                                                                 (:template-specifier 
+                                                                    ( ("std::uint16_t" type nil nil nil))                                                                    
+                                                                  :type "class")
+                                                                  nil nil)) (reparse-symbol classsubparts) [7293 7370])
+                                                            ("araComDiagDoIPGroupIdentificationServiceInstanceSet_" variable (:type ("std::unordered_set" type
+                                                                 (:template-specifier 
+                                                                    ( ("std::uint16_t" type nil nil nil))                                                                    
+                                                                  :type "class")
+                                                                  nil nil)) (reparse-symbol classsubparts) [7490 7577])
+                                                            ("doIpRequestConfigurationMap_" variable (:type ("std::unordered_map" type
+                                                                 (:template-specifier 
+                                                                    ( ("std::uint16_t" type nil nil nil)
+                                                                      ("std::uint8_t" type nil nil nil))                                                                    
+                                                                  :type "class")
+                                                                  nil nil)) (reparse-symbol classsubparts) [7721 7798])
+                                                            ("aralog_" variable (:type ("ara::log::Logger" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7829 7855]))                                                          
+                                                        :type "class")
+                                                        (reparse-symbol namespacesubparts) [1451 7858]))                                                  
+                                                :type "namespace")
+                                                (reparse-symbol namespacesubparts) [1382 7861]))                                          
+                                        :type "namespace")
+                                        (reparse-symbol namespacesubparts) [1365 7883]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [1339 7903]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [1322 7932]))                  
+                :type "namespace")
+                nil [1306 7952]))          
+      :file "doip_config.h"
+      :pointmax 8012
+      :fsize 8223
+      :lastmodtime '(24416 4495 23882 507000)
+      :unmatched-syntax '((symbol 1408 . 1417) (STATIC 1401 . 1407))
+      :lexical-table 
+        '(("ARA_DIAG_CONFIG_DOIP_CONFIG_H_")
+          )
+)
+    (semanticdb-table "semanticdb-table-1ccd07c"
+      :file "doip_request_configuration.h"
+      :fsize 1486
+      :lastmodtime '(24416 4495 23882 507000))
+    (semanticdb-table "semanticdb-table-1ccd09c"
+      :file "doip_channel.h"
+      :fsize 1320
+      :lastmodtime '(24416 4495 23882 507000))
+    (semanticdb-table "semanticdb-table-1ccd0d8"
+      :file "tcp_channel.h"
+      :fsize 1259
+      :lastmodtime '(24416 4495 23882 507000))
+    (semanticdb-table "semanticdb-table-1ccd0f8"
+      :file "doip_common.h"
+      :fsize 2732
+      :lastmodtime '(24416 4495 23882 507000)))
+  :file "!home!hyuk.myeong!work!LARA!avin!avin-ap!dm!source!inc!private!common!config!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

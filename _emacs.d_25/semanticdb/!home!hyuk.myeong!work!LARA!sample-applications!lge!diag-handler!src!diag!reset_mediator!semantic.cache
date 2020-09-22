@@ -1,0 +1,120 @@
+;; Object semanticdb-project-database-file-31c2dd0
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-31c2dd0"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-20f2870"
+      :major-mode c++-mode
+      :tags 
+        '( ("ResetMediatorManager.h" include nil nil [1076 1109])
+            ("diag_handler" type
+               (:members 
+                  ( ("reset_mediator" type
+                       (:members 
+                          ( ("ResetMediatorManager" function
+                               (:constructor-flag t
+                                :parent "ResetMediatorManager"
+                                :type ("ResetMediatorManager" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [1164 1293])
+                            ("Init" function
+                               (:parent "ResetMediatorManager"
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [1295 1512])
+                            ("Start" function
+                               (:parent "ResetMediatorManager"
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [1514 1605])
+                            ("Stop" function
+                               (:parent "ResetMediatorManager"
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [1607 1767]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [1136 1770]))                  
+                :type "namespace")
+                nil [1111 1793]))          
+      :file "ResetMediatorManager.cpp"
+      :pointmax 1814
+      :fsize 1813
+      :lastmodtime '(24415 860 640785 140000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-295d3ac"
+      :major-mode c++-mode
+      :tags 
+        '( ("limits" include (:system-flag t) nil [1076 1093])
+            ("random" include (:system-flag t) nil [1094 1111])
+            ("thread" include (:system-flag t) nil [1112 1129])
+            ("utility" include (:system-flag t) nil [1130 1148])
+            ("unistd.h" include (:system-flag t) nil [1149 1168])
+            ("DiagHandlerApp.h" include nil nil [1238 1265])
+            ("ResetMediatorActivity.h" include nil nil [1267 1301])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [1303 1323])
+            ("ara::com" using (:type ("ara::com" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [1324 1349])
+            ("ara::diag::service_interfaces::requestrestart" using (:type ("ara::diag::service_interfaces::requestrestart" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [1350 1412])
+            ("diag_handler" type
+               (:members 
+                  ( ("reset_mediator" type
+                       (:members 
+                          ( ("ResetMediatorSkeletonImpl" function
+                               (:constructor-flag t
+                                :parent "ResetMediatorSkeletonImpl"
+                                :arguments 
+                                  ( ("instance" variable (:type ("ara::com::InstanceIdentifier" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1523 1561])
+                                    ("mode" variable (:type ("ara::com::MethodCallProcessingMode" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1564 1605]))                                  
+                                :type ("ResetMediatorSkeletonImpl" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [1467 1790])
+                            ("RequestRestart" function
+                               (:parent "ResetMediatorSkeletonImpl"
+                                :arguments 
+                                  ( ("restart_type" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("ara::diag::types::RestartTypeType" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1912 1966])
+                                    ("execution_type" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("ara::diag::types::ExecutionTypeType" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1967 2025]))                                  
+                                :type ("ara::core::Future" type
+                                     (:template-specifier 
+                                        ( ("RequestRestart::RequestRestartOutput" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol namespacesubparts) [1814 2523])
+                            ("HandleReset" function
+                               (:parent "ResetMediatorSkeletonImpl"
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [2525 3097])
+                            ("OfferService" function
+                               (:parent "ResetMediatorActivity"
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [3099 3237]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [1439 3240]))                  
+                :type "namespace")
+                nil [1414 3263]))          
+      :file "ResetMediatorActivity.cpp"
+      :pointmax 3284
+      :fsize 3283
+      :lastmodtime '(24415 860 640785 140000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-27e34f4"
+      :file "ResetMediatorActivity.h"
+      :fsize 3091
+      :lastmodtime '(24415 860 640785 140000))
+    (semanticdb-table "semanticdb-table-229e158"
+      :file "ResetMediatorManager.h"
+      :fsize 1664
+      :lastmodtime '(24415 860 640785 140000)))
+  :file "!home!hyuk.myeong!work!LARA!sample-applications!lge!diag-handler!src!diag!reset_mediator!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

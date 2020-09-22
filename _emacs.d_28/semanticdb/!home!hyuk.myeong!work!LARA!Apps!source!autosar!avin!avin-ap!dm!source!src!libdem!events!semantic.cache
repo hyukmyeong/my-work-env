@@ -1,0 +1,39 @@
+;; Object semanticdb-project-database-file-27c8bbc
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-27c8bbc"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-27c8bc8"
+      :major-mode c++-mode
+      :tags 
+        '( ("common/config/dm_config.h" include nil nil [764 800])
+            ("dem/events/dem_diagnostic_common_props.h" include nil nil [801 852])
+            ("ara" type
+               (:members 
+                  ( ("diag" type
+                       (:members 
+                          ( ("dem" type
+                               (:members 
+                                  ( ("event" type
+                                       (:members 
+                                          ( ("DemDiagnosticCommonProps" function
+                                               (:constructor-flag t
+                                                :parent "DemDiagnosticCommonProps"
+                                                :type ("DemDiagnosticCommonProps" type (:type "class") nil nil))
+                                                (reparse-symbol namespacesubparts) [921 1576]))                                          
+                                        :type "namespace")
+                                        (reparse-symbol namespacesubparts) [903 1692]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [887 1713]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [870 1732]))                  
+                :type "namespace")
+                nil [854 1752]))          
+      :file "dem_diagnostic_common_props.cpp"
+      :pointmax 1770
+      :fsize 1811
+      :lastmodtime '(24359 48971 261390 962000)
+      :unmatched-syntax '((semantic-list 1649 . 1689) (symbol 1640 . 1648) (CONST 1634 . 1639) (semantic-list 1631 . 1633) (symbol 1608 . 1631) (punctuation 1607 . 1608) (punctuation 1606 . 1607) (symbol 1582 . 1606) (BOOL 1577 . 1581))))
+  :file "!home!hyuk.myeong!work!LARA!Apps!source!autosar!avin!avin-ap!dm!source!src!libdem!events!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

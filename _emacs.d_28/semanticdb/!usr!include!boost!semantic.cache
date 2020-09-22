@@ -1,0 +1,124 @@
+;; Object semanticdb-project-database-file-1b54bbc
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-1b54bbc"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-1b54bc8"
+      :major-mode c++-mode
+      :tags 
+        '( ("BOOST_CONFIG_HPP" variable (:constant-flag t) nil [631 647])
+            ("BOOST_USER_CONFIG" variable (:constant-flag t) nil [791 808])
+            ("boost/config/select_compiler_config.hpp" include (:system-flag t) nil [1163 1215])
+            ("boost/config/select_stdlib_config.hpp" include (:system-flag t) nil [1529 1579])
+            ("boost/config/select_platform_config.hpp" include (:system-flag t) nil [1869 1921])
+            ("boost/config/suffix.hpp" include (:system-flag t) nil [2075 2109]))          
+      :file "config.hpp"
+      :pointmax 2189
+      :fsize 2188
+      :lastmodtime '(22367 50452 0 0)
+      :unmatched-syntax '((punctuation ">" 973 . 990) (symbol "hpp" 973 . 990) (punctuation "." 973 . 990) (symbol "user" 973 . 990) (punctuation "/" 973 . 990) (symbol "config" 973 . 990) (punctuation "/" 973 . 990) (symbol "boost" 973 . 990) (punctuation "<" 973 . 990) (symbol 965 . 972) (punctuation 962 . 963))
+      :lexical-table 
+        '(("BOOST_CONFIG_HPP")
+          ("BOOST_USER_CONFIG" . 
+              ((punctuation "<" 809 . 810) (symbol "boost" 810 . 815) (punctuation "/" 815 . 816) (symbol "config" 816 . 822) (punctuation "/" 822 . 823) (symbol "user" 823 . 827) (punctuation "." 827 . 828) (symbol "hpp" 828 . 831) (punctuation ">" 831 . 832)))
+          )
+)
+    (semanticdb-table "semanticdb-table-1b54c54"
+      :major-mode c++-mode
+      :tags 
+        '( ("UUID_AA15E74A856F11E08B8D93F24824019B" variable (:constant-flag t) nil [55 92])
+            ("boost/detail/workaround.hpp" include (:system-flag t) nil [813 851])
+            ("boost/config.hpp" include (:system-flag t) nil [852 879])
+            ("exception" include (:system-flag t) nil [880 900])
+            ("boost/exception/exception.hpp" include (:system-flag t) nil [1258 1299])
+            ("boost/current_function.hpp" include (:system-flag t) nil [1353 1391])
+            ("BOOST_THROW_EXCEPTION_CURRENT_FUNCTION" variable (:constant-flag t) nil [1401 1439])
+            ("BOOST_THROW_EXCEPTION" variable (:constant-flag t) nil [1479 1500])
+            ("boost" type
+               (:members 
+                  ( ("throw_exception_assert_compatibility" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::exception" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1854 1878]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [1804 1882])
+                    ("throw_exception" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("e" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("E" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1946 1959]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [1917 2252])
+                    ("exception_detail" type
+                       (:members 
+                          ( ("throw_exception_" function
+                               (:arguments 
+                                  ( ("x" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("E" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2432 2444])
+                                    ("current_function" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type "char")
+                                        (reparse-symbol arg-sub-list) [2445 2475])
+                                    ("file" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type "char")
+                                        (reparse-symbol arg-sub-list) [2476 2494])
+                                    ("line" variable (:type "int") (reparse-symbol arg-sub-list) [2495 2505]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [2401 2847]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [2306 2853]))                  
+                :type "namespace")
+                nil [1684 2862]))          
+      :file "throw_exception.hpp"
+      :pointmax 2985
+      :fsize 2984
+      :lastmodtime '(22367 50452 0 0)
+      :unmatched-syntax '((symbol 2378 . 2392) (punctuation 2368 . 2369) (symbol 2367 . 2368) (CLASS 2361 . 2366) (punctuation 2360 . 2361) (TEMPLATE 2351 . 2359) (symbol 1902 . 1916) (punctuation 1900 . 1901) (symbol 1899 . 1900) (CLASS 1893 . 1898) (punctuation 1892 . 1893) (TEMPLATE 1884 . 1892) (symbol 188 . 201) (symbol 184 . 187) (symbol 177 . 183) (punctuation 176 . 177))
+      :lexical-table 
+        '(("BOOST_THROW_EXCEPTION_CURRENT_FUNCTION" . ((symbol "BOOST_CURRENT_FUNCTION" 1440 . 1462)))
+          ("UUID_AA15E74A856F11E08B8D93F24824019B")
+          ("BOOST_THROW_EXCEPTION" (spp-arg-list ("x") 1500 . 1503) . 
+              ((punctuation ":" 1504 . 1505) (punctuation ":" 1505 . 1506) (symbol "boost" 1506 . 1511) (punctuation ":" 1511 . 1512) (punctuation ":" 1512 . 1513) (symbol "exception_detail" 1513 . 1529) (punctuation ":" 1529 . 1530) (punctuation ":" 1530 . 1531) (symbol "throw_exception_" 1531 . 1547) (semantic-list "(x,BOOST_THROW_EXCEPTION_CURRENT_FUNCTION,__FILE__,__LINE__)" 1547 . 1607)))
+          )
+)
+    (semanticdb-table "semanticdb-table-1f9b7c0"
+      :major-mode c++-mode
+      :tags 
+        '( ("BOOST_CURRENT_FUNCTION_HPP_INCLUDED" variable (:constant-flag t) nil [53 88])
+            ("boost" type
+               (:members 
+                  ( ("detail" type
+                       (:members 
+                          ( ("current_function_helper" function
+                               (:typemodifiers ("inline")
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [588 1507]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [568 1510]))                  
+                :type "namespace")
+                nil [549 1533]))          
+      :file "current_function.hpp"
+      :pointmax 1608
+      :fsize 1607
+      :lastmodtime '(22367 50452 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("BOOST_CURRENT_FUNCTION_HPP_INCLUDED")
+          )
+))
+  :file "!usr!include!boost!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

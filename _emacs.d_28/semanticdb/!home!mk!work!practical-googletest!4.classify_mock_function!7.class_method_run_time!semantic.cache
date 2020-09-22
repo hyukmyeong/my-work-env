@@ -1,0 +1,21 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode makefile-gmake-mode
+      :tags 
+        '( ("GTEST_DIR" variable (:default-value ("../../googletest/googletest/include/")) nil [1 48])
+            ("GMOCK_DIR" variable (:default-value ("../../googletest/googlemock/include/")) nil [48 95])
+            ("LIB_DIR" variable (:default-value ("../../googletest/build/lib")) nil [95 130])
+            (".PHONY" function (:arguments ("test")) nil [131 144])
+            ("test" function nil nil [144 257]))          
+      :file "Makefile"
+      :pointmax 257
+      :fsize 256
+      :lastmodtime '(24171 46862 491197 277000)
+      :unmatched-syntax '((shell-command 151 . 256) (bol 150 . 150))))
+  :file "!home!mk!work!practical-googletest!4.classify_mock_function!7.class_method_run_time!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

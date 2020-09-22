@@ -1,0 +1,53 @@
+;; Object semanticdb-project-database-file-31999ec
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-31999ec"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-9ac7d0"
+      :major-mode c-mode
+      :tags 
+        '( ("asm-generic/errno.h" include (:system-flag t) nil [1 31]))          
+      :file "errno.h"
+      :pointmax 32
+      :fsize 31
+      :lastmodtime '(24370 41438 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-a95fc0"
+      :major-mode c-mode
+      :tags 
+        '( ("asm-generic/ioctls.h" include (:system-flag t) nil [1 32]))          
+      :file "ioctls.h"
+      :pointmax 33
+      :fsize 32
+      :lastmodtime '(24370 41438 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1ec69f4"
+      :major-mode c-mode
+      :tags 
+        '( ("asm-generic/socket.h" include (:system-flag t) nil [1 32]))          
+      :file "socket.h"
+      :pointmax 33
+      :fsize 32
+      :lastmodtime '(24370 41438 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-2141c74"
+      :major-mode c-mode
+      :tags 
+        '( ("asm-generic/sockios.h" include (:system-flag t) nil [1 33]))          
+      :file "sockios.h"
+      :pointmax 34
+      :fsize 33
+      :lastmodtime '(24370 41438 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-27fdae4"
+      :major-mode c-mode
+      :tags 
+        '( ("asm-generic/ioctl.h" include (:system-flag t) nil [1 31]))          
+      :file "ioctl.h"
+      :pointmax 32
+      :fsize 31
+      :lastmodtime '(24370 41438 0 0)
+      :unmatched-syntax nil))
+  :file "!usr!include!x86_64-linux-gnu!asm!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

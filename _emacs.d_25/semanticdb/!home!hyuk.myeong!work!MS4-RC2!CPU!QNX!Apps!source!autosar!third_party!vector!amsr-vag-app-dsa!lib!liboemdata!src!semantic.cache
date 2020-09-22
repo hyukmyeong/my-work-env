@@ -1,0 +1,38 @@
+;; Object semanticdb-project-database-file-19abda0
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-19abda0"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-19abdbc"
+      :major-mode c++-mode
+      :tags 
+        '( ("oem_programming_preconditions_impl.h" include nil nil [1409 1456])
+            ("vector" include (:system-flag t) nil [1457 1474])
+            ("vector" type
+               (:members 
+                  ( ("diagnostic_service" type
+                       (:members 
+                          ( ("vendor" type
+                               (:members 
+                                  ( ("CheckProgrammingPreconditions" function
+                                       (:parent "OEMProgrammingPreconditionsImpl"
+                                        :type ("std::vector" type
+                                             (:template-specifier 
+                                                ( ("uint8_t" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol namespacesubparts) [1546 1666]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [1526 1668]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [1495 1691]))                  
+                :type "namespace")
+                nil [1476 1726]))          
+      :file "oem_programming_preconditions_impl.cpp"
+      :pointmax 1748
+      :fsize 1747
+      :lastmodtime '(24334 50479 194120 828000)
+      :unmatched-syntax nil))
+  :file "!home!hyuk.myeong!work!MS4-RC2!CPU!QNX!Apps!source!autosar!third_party!vector!amsr-vag-app-dsa!lib!liboemdata!src!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

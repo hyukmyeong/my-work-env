@@ -1,0 +1,101 @@
+;; Object semanticdb-project-database-file-30cfaa8
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-30cfaa8"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-2341814"
+      :major-mode c++-mode
+      :tags 
+        '( ("chrono" include (:system-flag t) nil [1 18])
+            ("diag/IRuntime.h" include nil nil [20 46])
+            ("DiagHandlerApp.h" include nil nil [47 74])
+            ("diag_handler" type
+               (:members 
+                  ( ("DiagHandlerApp::Name" variable
+                       (:dereference 1
+                        :type "char")
+                        (reparse-symbol namespacesubparts) [112 140])
+                    ("DiagHandlerApp::Description" variable
+                       (:dereference 1
+                        :type "char")
+                        (reparse-symbol namespacesubparts) [151 186])
+                    ("DiagHandlerApp::seconds_from_reset_" variable
+                       (:default-value "0"
+                        :type ("std::uint16_t" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [188 242])
+                    ("DiagHandlerApp::reset_requested_" variable
+                       (:default-value "ATOMIC_VAR_INIT( false )"
+                        :type ("std::atomic_bool" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [243 320])
+                    ("DiagHandlerApp" function
+                       (:constructor-flag t
+                        :parent "DiagHandlerApp"
+                        :type ("DiagHandlerApp" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [322 944])
+                    ("DiagHandlerApp" function
+                       (:destructor-flag t
+                        :parent "DiagHandlerApp"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [946 1031])
+                    ("Initialize" function
+                       (:parent "DiagHandlerApp"
+                        :arguments 
+                          ( ("args" variable (:type ("CommandLineArguments" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1065 1091]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [1033 1188])
+                    ("Run" function
+                       (:parent "DiagHandlerApp"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [1190 1980])
+                    ("RequestShutdown" function
+                       (:parent "DiagHandlerApp"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [1982 2084])
+                    ("Shutdown" function
+                       (:parent "DiagHandlerApp"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [2086 2240])
+                    ("NotifyReset" function
+                       (:parent "DiagHandlerApp"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [2242 2307])
+                    ("GetRunningTime" function
+                       (:parent "DiagHandlerApp"
+                        :type ("std::uint16_t" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [2309 2389]))                  
+                :type "namespace")
+                nil [76 2392]))          
+      :file "DiagHandlerApp.cpp"
+      :pointmax 2413
+      :fsize 2412
+      :lastmodtime '(24407 11443 910145 729000)
+      :unmatched-syntax '((symbol 141 . 150) (symbol 102 . 111)))
+    (semanticdb-table "semanticdb-table-1f1f424"
+      :major-mode c++-mode
+      :tags 
+        '( ("DIAG_HANDLER_APP_H_" variable (:constant-flag t) nil [38 57])
+            ("common/arguments_parser.h" include nil nil [59 95])
+            ("diag/diag_manager/DiagManager.h" include nil nil [131 173])
+            ("diag/security_access/SecurityAccessManager.h" include nil nil [174 229])
+            ("diag/reset_mediator/ResetMediatorManager.h" include nil nil [230 283])
+            ("ara/log/logging.h" include nil nil [285 313])
+            ("diag_handler" type
+               (:members 
+                  ( ("final" variable (:type ("DiagHandlerApp" type
+                         (:prototype t
+                          :type "class")
+                          nil nil)) (reparse-symbol namespacesubparts) [341 1362]))                  
+                :type "namespace")
+                nil [315 1365]))          
+      :file "DiagHandlerApp.h"
+      :pointmax 1420
+      :fsize 1419
+      :lastmodtime '(24407 11443 910145 729000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("DIAG_HANDLER_APP_H_")
+          )
+))
+  :file "!home!hyuk.myeong!work!LARA_final!sample-applications!lge!diag-handler!src!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

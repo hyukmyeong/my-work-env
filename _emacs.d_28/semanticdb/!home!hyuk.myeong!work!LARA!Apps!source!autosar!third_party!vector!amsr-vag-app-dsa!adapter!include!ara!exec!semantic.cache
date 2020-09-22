@@ -1,0 +1,68 @@
+;; Object semanticdb-project-database-file-3438a30
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-3438a30"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-34372a0"
+      :major-mode c++-mode
+      :tags 
+        '( ("DSA_ADAPTER_ARA_EXEC_DIAGNOSTIC_SERVICE_APPLICATION_H__" variable (:constant-flag t) nil [73 128])
+            ("ara/core/vector.h" include nil nil [130 158])
+            ("ara/core/string_view.h" include nil nil [159 192])
+            ("ara/core/result.h" include nil nil [193 221])
+            ("ara/exec/phm_client.h" include nil nil [222 254])
+            ("ara" type
+               (:members 
+                  ( ("exec" type
+                       (:members 
+                          ( ("DSAProcessState" type
+                               (:superclasses 
+                                  ( ("std::uint8_t" type
+                                       (:protection "unspecified"
+                                        :type "class")
+                                        nil nil))                                  
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [295 362])
+                            ("DSAProcessListEntry" type
+                               (:members 
+                                  ( ("short_name_path_" variable (:type ("ara::core::StringView" type (:type "class") nil nil)) (reparse-symbol classsubparts) [395 434])
+                                    ("state_" variable (:type ("DSAProcessState" type (:type "class") nil nil)) (reparse-symbol classsubparts) [437 460])
+                                    ("DSAProcessListEntry" function
+                                       (:constructor-flag t
+                                        :arguments 
+                                          ( ("path" variable (:type ("ara::core::StringView" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [483 510])
+                                            ("state" variable (:type ("DSAProcessState" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [511 533]))                                          
+                                        :type ("DSAProcessListEntry" type (:type "struct") nil nil))
+                                        (reparse-symbol classsubparts) [463 575]))                                  
+                                :type "struct")
+                                (reparse-symbol namespacesubparts) [364 579])
+                            ("ara::core::Result" variable (:type "int") (reparse-symbol namespacesubparts) [618 639])
+                            ("DiagnosticServiceApplicationClient" type
+                               (:members 
+                                  ( ("public" label nil (reparse-symbol classsubparts) [684 691])
+                                    ("ara::core::Vector" variable (:type "int") (reparse-symbol classsubparts) [714 753])
+                                    ("GetProcessList" function (:type ("Result" type
+                                         (:template-specifier 
+                                            ( ("ProcessList" type nil nil nil))                                            
+                                          :type "class")
+                                          nil nil)) (reparse-symbol classsubparts) [757 1299])
+                                    ("private" label nil (reparse-symbol classsubparts) [1301 1309])
+                                    ("client_" variable (:type ("ara::exec::phminterface::PHMClient" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1312 1357]))                                  
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [641 1360]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [272 1363]))                  
+                :type "namespace")
+                nil [256 1383]))          
+      :file "diagnostic_service_application_client.h"
+      :pointmax 1468
+      :fsize 1467
+      :lastmodtime '(24368 43219 211044 894000)
+      :unmatched-syntax '((punctuation 712 . 713) (symbol 700 . 711) (USING 694 . 699) (punctuation 616 . 617) (symbol 609 . 615) (USING 603 . 608) (punctuation 601 . 602) (symbol 600 . 601) (TYPENAME 591 . 599) (punctuation 590 . 591) (TEMPLATE 581 . 589) (punctuation 575 . 576) (symbol 348 . 359) (punctuation 344 . 345) (symbol 336 . 344) (ENUM 290 . 294))
+      :lexical-table 
+        '(("DSA_ADAPTER_ARA_EXEC_DIAGNOSTIC_SERVICE_APPLICATION_H__")
+          )
+))
+  :file "!home!hyuk.myeong!work!LARA!Apps!source!autosar!third_party!vector!amsr-vag-app-dsa!adapter!include!ara!exec!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

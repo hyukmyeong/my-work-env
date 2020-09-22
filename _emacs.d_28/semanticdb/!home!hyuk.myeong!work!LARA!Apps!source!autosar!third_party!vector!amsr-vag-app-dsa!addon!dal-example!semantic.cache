@@ -1,0 +1,127 @@
+;; Object semanticdb-project-database-file-30867f0
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-30867f0"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-308680c"
+      :major-mode c++-mode
+      :tags 
+        '( ("dal_example_application.h" include nil nil [1400 1436])
+            ("atomic" include (:system-flag t) nil [1438 1455])
+            ("csignal" include (:system-flag t) nil [1456 1474])
+            ("iostream" include (:system-flag t) nil [1475 1494])
+            ("memory" include (:system-flag t) nil [1495 1512])
+            ("string" include (:system-flag t) nil [1513 1530])
+            ("vector" include (:system-flag t) nil [1531 1548])
+            ("common/diagnostic_access_helper.h" include nil nil [1550 1594])
+            ("common/diagnostic_access_library.h" include nil nil [1595 1640])
+            ("default_diagnostic_access_delegate.h" include nil nil [1641 1688])
+            ("libdal/data_access_exception.h" include nil nil [1689 1730])
+            ("libdal/diagnostic_data_access.h" include nil nil [1731 1773])
+            ("ara/com/runtime.h" include nil nil [1775 1803])
+            ("ara/log/logging.h" include nil nil [1804 1832])
+            ("Usage" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("argc" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [2438 2453])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2454 2467]))                  
+                :type "void")
+                nil [2392 2717])
+            ("ParseArguments" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [2753 2762])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2763 2776]))                  
+                :type ("std::string" type (:type "class") nil nil))
+                nil [2719 3401])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [4489 4498])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [4499 4512]))                  
+                :type "int")
+                nil [4480 5403])
+            ("vector" type
+               (:members 
+                  ( ("dal_example" type
+                       (:members 
+                          ( ("DalExampleApplication" function
+                               (:constructor-flag t
+                                :parent "DalExampleApplication"
+                                :type ("DalExampleApplication" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [5449 5691])
+                            ("valuesChangedCallback" function
+                               (:parent "DalExampleApplication"
+                                :arguments 
+                                  ( ("identifiers" variable (:type ("std::vector" type
+                                         (:template-specifier 
+                                            ( ("std::uint64_t" type nil nil nil))                                            
+                                          :type "class")
+                                          nil nil)) (reparse-symbol arg-sub-list) [5743 5782]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [5693 6105])
+                            ("DiagnosticAccessLibraryStateChange" function
+                               (:parent "DalExampleApplication"
+                                :arguments 
+                                  ( ("state" variable (:type ("libdal::DiagnosticState" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6170 6200]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [6107 6961])
+                            ("SignalHandlerThread" function
+                               (:parent "DalExampleApplication"
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [7199 9031])
+                            ("PeriodicWork" function
+                               (:parent "DalExampleApplication"
+                                :arguments 
+                                  ( ("state" variable
+                                       (:reference 1
+                                        :type ("PeriodicWorkStateType" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [9074 9103]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [9033 11896])
+                            ("PeriodicThread" function
+                               (:parent "DalExampleApplication"
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [11898 12675])
+                            ("Initialize" function
+                               (:parent "DalExampleApplication"
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [12677 13930])
+                            ("Run" function
+                               (:parent "DalExampleApplication"
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [13932 14588])
+                            ("Shutdown" function
+                               (:parent "DalExampleApplication"
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [14590 14890]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [5424 14892]))                  
+                :type "namespace")
+                nil [5405 14920]))          
+      :file "dal_example_application.cpp"
+      :pointmax 14942
+      :fsize 14945
+      :lastmodtime '(24359 48950 875777 837000)
+      :unmatched-syntax '((semantic-list 3512 . 4432) (symbol 3503 . 3511) (semantic-list 3500 . 3502) (symbol 3476 . 3500) (VOID 3471 . 3475)))
+    (semanticdb-table "semanticdb-table-20fe630"
+      :file "dal_example_application.h"
+      :fsize 3480
+      :lastmodtime '(24359 48950 875777 837000)))
+  :file "!home!hyuk.myeong!work!LARA!Apps!source!autosar!third_party!vector!amsr-vag-app-dsa!addon!dal-example!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

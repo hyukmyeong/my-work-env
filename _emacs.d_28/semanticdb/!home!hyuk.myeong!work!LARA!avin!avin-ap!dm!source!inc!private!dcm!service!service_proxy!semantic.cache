@@ -1,0 +1,238 @@
+;; Object semanticdb-project-database-file-9f28f4
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-9f28f4"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-9f3d58"
+      :major-mode c++-mode
+      :tags 
+        '( ("DM_EXE_INCLUDES_ARA_DIAG_SERVICE_INTERFACES_GENERIC_UDS_SERVICE_GENERICUDSSERVICE_COMMON_H_" variable (:constant-flag t) nil [1117 1208])
+            ("string.h" include (:system-flag t) nil [1210 1229])
+            ("ara/core/array.h" include nil nil [1230 1257])
+            ("ara/com/types.h" include nil nil [1259 1285])
+            ("ara/com/exception.h" include nil nil [1287 1317])
+            ("ara/core/error_code.h" include nil nil [1318 1350])
+            ("dcm/types/impl_type_bytevectortype.h" include nil nil [1351 1398])
+            ("dcm/types/impl_type_metainfotype.h" include nil nil [1399 1444])
+            ("dcm/types/impl_type_sidtype.h" include nil nil [1445 1485])
+            ("dcm/types/error_domain_udserrorseterrordomain.h" include nil nil [1486 1544])
+            ("ara" type
+               (:members 
+                  ( ("diag" type
+                       (:members 
+                          ( ("service_interfaces" type
+                               (:members 
+                                  ( ("generic_uds_service" type
+                                       (:members 
+                                          ( ("GenericUDSService" type
+                                               (:members 
+                                                  ( ("public" label nil (reparse-symbol classsubparts) [1669 1676])
+                                                    ("service_id" variable
+                                                       (:default-value "0x3aed"
+                                                        :type ("ara::com::internal::ServiceId" type (:type "class") nil nil))
+                                                        (reparse-symbol classsubparts) [1696 1746])
+                                                    ("service_version" variable
+                                                       (:default-value "0x01000000"
+                                                        :type ("ara::com::internal::ServiceVersion" type (:type "class") nil nil))
+                                                        (reparse-symbol classsubparts) [1766 1830])
+                                                    ("Cancel_PossibleErrors" variable
+                                                       (:default-value "{
+      ::ara::MakeErrorCode(ara::UDSErrorSetErrorDomainErrc::kExceedNumberOfAttempts, 0),
+      ::ara::MakeErrorCode(ara::UDSErrorSetErrorDomainErrc::kSubFunctionNotSupportedInActiveSession, 0),
+      ::ara::MakeErrorCode(ara::UDSErrorSetErrorDomainErrc::kTransferDataSuspended, 0),
+      ::ara::MakeErrorCode(ara::UDSErrorSetErrorDomainErrc::kGeneralProgrammingFailure, 0),
+      ::ara::MakeErrorCode(ara::UDSErrorSetErrorDomainErrc::kUploadDownloadNotAccepted, 0),
+      ::ara::MakeErrorCode(ara::UDSErrorSetErrorDomainErrc::kGeneralReject, 0),
+      ::ara::MakeErrorCode(ara::UDSErrorSetErrorDomainErrc::kServiceNotSupported, 0),
+      ::ara::MakeErrorCode(ara::UDSErrorSetErrorDomainErrc::kBusyRepeatRequest, 0),
+      ::ara::MakeErrorCode(ara::UDSErrorSetErrorDomainErrc::kRequestOutOfRange, 0),
+      ::ara::MakeErrorCode(ara::UDSErrorSetErrorDomainErrc::kRequiredTimeDelayNotExpired, 0),
+      ::ara::MakeErrorCode(ara::UDSErrorSetErrorDomainErrc::kSecurityAccessDenied, 0),
+      ::ara::MakeErrorCode(ara::UDSErrorSetErrorDomainErrc::kPositiveResponse, 0),
+      ::ara::MakeErrorCode(ara::UDSErrorSetErrorDomainErrc::kNoProcessingNoResponse, 0),
+      ::ara::MakeErrorCode(ara::UDSErrorSetErrorDomainErrc::kNoResponseFromSubnetComponent, 0),
+      ::ara::MakeErrorCode(ara::UDSErrorSetErrorDomainErrc::kRequestCorrectlyReceivedResponsePending, 0),
+      ::ara::MakeErrorCode(ara::UDSErrorSetErrorDomainErrc::kInvalidKey, 0),
+      ::ara::MakeErrorCode(ara::UDSErrorSetErrorDomainErrc::kConditionsNotCorrect, 0),
+      ::ara::MakeErrorCode(ara::UDSErrorSetErrorDomainErrc::kRequestSequenceError, 0),
+      ::ara::MakeErrorCode(ara::UDSErrorSetErrorDomainErrc::kServiceNotSupportedInActiveSession, 0),
+      ::ara::MakeErrorCode(ara::UDSErrorSetErrorDomainErrc::kFailurePreventsExecutionOfRequestedAction, 0),
+      ::ara::MakeErrorCode(ara::UDSErrorSetErrorDomainErrc::kIncorrectMessageLengthOrInvalidFormat, 0),
+      ::ara::MakeErrorCode(ara::UDSErrorSetErrorDomainErrc::kSubfunctionNotSupported, 0),
+  }"
+                                                        :type ("ara::core::Array" type
+                                                             (:template-specifier 
+                                                                ( ("ara::core::ErrorCode" type nil nil nil)
+                                                                  ("22"))                                                                
+                                                              :type "class")
+                                                              nil nil))
+                                                        (reparse-symbol classsubparts) [1850 3932])
+                                                    ("HandleMessage_PossibleErrors" variable
+                                                       (:default-value "{
+      ::ara::MakeErrorCode(ara::UDSErrorSetErrorDomainErrc::kExceedNumberOfAttempts, 0),
+      ::ara::MakeErrorCode(ara::UDSErrorSetErrorDomainErrc::kSubFunctionNotSupportedInActiveSession, 0),
+      ::ara::MakeErrorCode(ara::UDSErrorSetErrorDomainErrc::kTransferDataSuspended, 0),
+      ::ara::MakeErrorCode(ara::UDSErrorSetErrorDomainErrc::kGeneralProgrammingFailure, 0),
+      ::ara::MakeErrorCode(ara::UDSErrorSetErrorDomainErrc::kUploadDownloadNotAccepted, 0),
+      ::ara::MakeErrorCode(ara::UDSErrorSetErrorDomainErrc::kGeneralReject, 0),
+      ::ara::MakeErrorCode(ara::UDSErrorSetErrorDomainErrc::kServiceNotSupported, 0),
+      ::ara::MakeErrorCode(ara::UDSErrorSetErrorDomainErrc::kBusyRepeatRequest, 0),
+      ::ara::MakeErrorCode(ara::UDSErrorSetErrorDomainErrc::kRequestOutOfRange, 0),
+      ::ara::MakeErrorCode(ara::UDSErrorSetErrorDomainErrc::kRequiredTimeDelayNotExpired, 0),
+      ::ara::MakeErrorCode(ara::UDSErrorSetErrorDomainErrc::kSecurityAccessDenied, 0),
+      ::ara::MakeErrorCode(ara::UDSErrorSetErrorDomainErrc::kPositiveResponse, 0),
+      ::ara::MakeErrorCode(ara::UDSErrorSetErrorDomainErrc::kNoProcessingNoResponse, 0),
+      ::ara::MakeErrorCode(ara::UDSErrorSetErrorDomainErrc::kNoResponseFromSubnetComponent, 0),
+      ::ara::MakeErrorCode(ara::UDSErrorSetErrorDomainErrc::kRequestCorrectlyReceivedResponsePending, 0),
+      ::ara::MakeErrorCode(ara::UDSErrorSetErrorDomainErrc::kInvalidKey, 0),
+      ::ara::MakeErrorCode(ara::UDSErrorSetErrorDomainErrc::kConditionsNotCorrect, 0),
+      ::ara::MakeErrorCode(ara::UDSErrorSetErrorDomainErrc::kRequestSequenceError, 0),
+      ::ara::MakeErrorCode(ara::UDSErrorSetErrorDomainErrc::kServiceNotSupportedInActiveSession, 0),
+      ::ara::MakeErrorCode(ara::UDSErrorSetErrorDomainErrc::kFailurePreventsExecutionOfRequestedAction, 0),
+      ::ara::MakeErrorCode(ara::UDSErrorSetErrorDomainErrc::kIncorrectMessageLengthOrInvalidFormat, 0),
+      ::ara::MakeErrorCode(ara::UDSErrorSetErrorDomainErrc::kSubfunctionNotSupported, 0),
+  }"
+                                                        :type ("ara::core::Array" type
+                                                             (:template-specifier 
+                                                                ( ("ara::core::ErrorCode" type nil nil nil)
+                                                                  ("22"))                                                                
+                                                              :type "class")
+                                                              nil nil))
+                                                        (reparse-symbol classsubparts) [3952 6041])
+                                                    ("HandleMessageOutput" type
+                                                       (:members 
+                                                          ( ("response_data" variable (:type ("ara::diag::types::ByteVectorType" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6082 6129])
+                                                            ("enumerate" function
+                                                               (:template 
+                                                                  ( ("F" type (:type "class") nil nil))                                                                  
+                                                                :type "void"
+                                                                :arguments 
+                                                                  ( ("fun" variable
+                                                                       (:reference 1
+                                                                        :type ("F" type (:type "class") nil nil))
+                                                                        (reparse-symbol arg-sub-list) [6210 6217]))                                                                  )
+                                                                (reparse-symbol classsubparts) [6169 6255]))                                                          
+                                                        :type "struct")
+                                                        (reparse-symbol classsubparts) [6045 6260]))                                                  
+                                                :type "class")
+                                                (reparse-symbol namespacesubparts) [1642 6263]))                                          
+                                        :type "namespace")
+                                        (reparse-symbol namespacesubparts) [1610 6266]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [1579 6301]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [1562 6335]))                  
+                :type "namespace")
+                nil [1546 6355]))          
+      :file "genericudsservice_common.h"
+      :pointmax 6476
+      :fsize 6475
+      :lastmodtime '(24416 4495 31880 213000)
+      :unmatched-syntax '((punctuation 6163 . 6164) (VOID 6159 . 6163) (punctuation 6157 . 6158) (symbol 6141 . 6156) (USING 6135 . 6140) (punctuation 6081 . 6082) (punctuation 6080 . 6081) (punctuation 6163 . 6164) (VOID 6159 . 6163) (punctuation 6157 . 6158) (symbol 6141 . 6156) (USING 6135 . 6140) (punctuation 6081 . 6082) (punctuation 6080 . 6081) (symbol 3942 . 3951) (STATIC 3935 . 3941) (symbol 1840 . 1849) (STATIC 1833 . 1839) (symbol 1756 . 1765) (STATIC 1749 . 1755) (symbol 1686 . 1695) (STATIC 1679 . 1685) (symbol 6476 . 6477) (punctuation 6163 . 6164) (VOID 6159 . 6163) (punctuation 6157 . 6158) (symbol 6141 . 6156) (USING 6135 . 6140) (punctuation 6081 . 6082) (punctuation 6080 . 6081) (punctuation 6163 . 6164) (VOID 6159 . 6163) (punctuation 6157 . 6158) (symbol 6141 . 6156) (USING 6135 . 6140) (punctuation 6081 . 6082) (punctuation 6080 . 6081) (symbol 3942 . 3951) (STATIC 3935 . 3941) (symbol 1840 . 1849) (STATIC 1833 . 1839) (symbol 1756 . 1765) (STATIC 1749 . 1755) (symbol 1686 . 1695) (STATIC 1679 . 1685) (punctuation 6163 . 6164) (VOID 6159 . 6163) (punctuation 6157 . 6158) (symbol 6141 . 6156) (USING 6135 . 6140) (punctuation 6081 . 6082) (punctuation 6080 . 6081) (punctuation 6163 . 6164) (VOID 6159 . 6163) (punctuation 6157 . 6158) (symbol 6141 . 6156) (USING 6135 . 6140) (punctuation 6081 . 6082) (punctuation 6080 . 6081) (symbol 3942 . 3951) (STATIC 3935 . 3941) (symbol 1840 . 1849) (STATIC 1833 . 1839) (symbol 1756 . 1765) (STATIC 1749 . 1755) (symbol 1686 . 1695) (STATIC 1679 . 1685))
+      :lexical-table 
+        '(("DM_EXE_INCLUDES_ARA_DIAG_SERVICE_INTERFACES_GENERIC_UDS_SERVICE_GENERICUDSSERVICE_COMMON_H_")
+          )
+)
+    (semanticdb-table "semanticdb-table-28296e8"
+      :major-mode c++-mode
+      :tags 
+        '( ("DM_EXE_INCLUDES_ARA_DIAG_SERVICE_INTERFACES_GENERIC_ROUTINE_GENERICROUTINE_PROXY_H_" variable (:constant-flag t) nil [1101 1184])
+            ("ara/com/internal/proxy/ara_proxy_base.h" include nil nil [1186 1236])
+            ("dcm/service/service_proxy/genericroutine_common.h" include nil nil [1237 1297])
+            ("ara" type
+               (:members 
+                  ( ("diag" type
+                       (:members 
+                          ( ("service_interfaces" type
+                               (:members 
+                                  ( ("generic_routine" type
+                                       (:members 
+                                          ( ("proxy" type
+                                               (:members 
+                                                  ( ("methods" type (:type "namespace") (reparse-symbol namespacesubparts) [1409 2229])
+                                                    ("GenericRoutineProxyBase" type
+                                                       (:superclasses 
+                                                          ( ("ara::com::internal::proxy::ProxyBindingBase" type
+                                                               (:protection "public"
+                                                                :type "class")
+                                                                nil nil)
+                                                            ("ara::diag::service_interfaces::generic_routine::GenericRoutine" type
+                                                               (:protection "public"
+                                                                :type "class")
+                                                                nil nil))                                                          
+                                                        :members 
+                                                          ( ("public" label nil (reparse-symbol classsubparts) [2418 2425])
+                                                            ("GetRequestResults" function
+                                                               (:pure-virtual-flag t
+                                                                :prototype-flag t
+                                                                :typemodifiers ("virtual")
+                                                                :type ("methods::RequestResults" type (:type "class") nil nil))
+                                                                (reparse-symbol classsubparts) [2428 2485])
+                                                            ("GetStart" function
+                                                               (:pure-virtual-flag t
+                                                                :prototype-flag t
+                                                                :typemodifiers ("virtual")
+                                                                :type ("methods::Start" type (:type "class") nil nil))
+                                                                (reparse-symbol classsubparts) [2488 2527])
+                                                            ("GetStop" function
+                                                               (:pure-virtual-flag t
+                                                                :prototype-flag t
+                                                                :typemodifiers ("virtual")
+                                                                :type ("methods::Stop" type (:type "class") nil nil))
+                                                                (reparse-symbol classsubparts) [2530 2567]))                                                          
+                                                        :type "class")
+                                                        (reparse-symbol namespacesubparts) [2252 2570])
+                                                    ("GenericRoutineProxy" type
+                                                       (:superclasses 
+                                                          ( ("ara::com::internal::proxy::ProxyBase" type
+                                                               (:protection "public"
+                                                                :type "class")
+                                                                nil nil)
+                                                            ("ara::diag::service_interfaces::generic_routine::GenericRoutine" type
+                                                               (:protection "public"
+                                                                :type "class")
+                                                                nil nil))                                                          
+                                                        :members 
+                                                          ( ("private" label nil (reparse-symbol classsubparts) [2752 2760])
+                                                            ("public" label nil (reparse-symbol classsubparts) [2762 2769])
+                                                            ("GenericRoutineProxy" function
+                                                               (:constructor-flag t
+                                                                :arguments 
+                                                                  ( ("proxy_base_factory" variable
+                                                                       (:reference 1
+                                                                        :constant-flag t
+                                                                        :type ("HandleType" type (:type "class") nil nil))
+                                                                        (reparse-symbol arg-sub-list) [2801 2838]))                                                                  
+                                                                :type ("GenericRoutineProxy" type (:type "class") nil nil))
+                                                                (reparse-symbol classsubparts) [2781 3057])
+                                                            ("RequestResults" variable (:type ("methods::RequestResults" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3531 3571])
+                                                            ("Start" variable (:type ("methods::Start" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3574 3596])
+                                                            ("Stop" variable (:type ("methods::Stop" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3599 3619]))                                                          
+                                                        :type "class")
+                                                        (reparse-symbol namespacesubparts) [2572 3622]))                                                  
+                                                :type "namespace")
+                                                (reparse-symbol namespacesubparts) [1391 3624]))                                          
+                                        :type "namespace")
+                                        (reparse-symbol namespacesubparts) [1363 3646]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [1332 3677]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [1315 3711]))                  
+                :type "namespace")
+                nil [1299 3731]))          
+      :file "genericroutine_proxy.h"
+      :pointmax 3844
+      :fsize 3843
+      :lastmodtime '(24416 4495 31880 213000)
+      :unmatched-syntax '((punctuation 3526 . 3527) (DELETE 3520 . 3526) (punctuation 3518 . 3519) (semantic-list 3489 . 3517) (punctuation 3488 . 3489) (OPERATOR 3480 . 3488) (punctuation 3478 . 3479) (symbol 3459 . 3478) (punctuation 3405 . 3406) (DELETE 3399 . 3405) (punctuation 3397 . 3398) (semantic-list 3368 . 3396) (symbol 3349 . 3368) (EXPLICIT 3340 . 3348) (punctuation 3283 . 3284) (DEFAULT 3276 . 3283) (punctuation 3274 . 3275) (semantic-list 3250 . 3273) (punctuation 3249 . 3250) (OPERATOR 3241 . 3249) (punctuation 3271 . 3272) (punctuation 3239 . 3240) (symbol 3220 . 3239) (punctuation 3271 . 3272) (punctuation 3170 . 3171) (DEFAULT 3163 . 3170) (punctuation 3161 . 3162) (semantic-list 3137 . 3160) (symbol 3118 . 3137) (punctuation 3158 . 3159) (EXPLICIT 3109 . 3117) (EXPLICIT 2772 . 2780) (punctuation 2226 . 2227) (punctuation 2225 . 2226) (semantic-list 2101 . 2225) (symbol 2091 . 2101) (punctuation 2192 . 2193) (punctuation 2191 . 2192) (CONST 2185 . 2190) (punctuation 2149 . 2150) (punctuation 2148 . 2149) (CONST 2142 . 2147) (punctuation 2109 . 2110) (punctuation 2108 . 2109) (CONST 2102 . 2107) (punctuation 2090 . 2091) (punctuation 2089 . 2090) (symbol 2075 . 2089) (punctuation 2192 . 2193) (punctuation 2191 . 2192) (CONST 2185 . 2190) (punctuation 2149 . 2150) (punctuation 2148 . 2149) (CONST 2142 . 2147) (punctuation 2109 . 2110) (punctuation 2108 . 2109) (CONST 2102 . 2107) (punctuation 2074 . 2075) (punctuation 2073 . 2074) (symbol 2058 . 2073) (punctuation 2192 . 2193) (punctuation 2191 . 2192) (CONST 2185 . 2190) (punctuation 2149 . 2150) (punctuation 2148 . 2149) (CONST 2142 . 2147) (punctuation 2109 . 2110) (punctuation 2108 . 2109) (CONST 2102 . 2107) (punctuation 2057 . 2058) (punctuation 2056 . 2057) (symbol 2038 . 2056) (punctuation 2192 . 2193) (punctuation 2191 . 2192) (CONST 2185 . 2190) (punctuation 2149 . 2150) (punctuation 2148 . 2149) (CONST 2142 . 2147) (punctuation 2109 . 2110) (punctuation 2108 . 2109) (CONST 2102 . 2107) (punctuation 2037 . 2038) (punctuation 2036 . 2037) (symbol 2032 . 2036) (punctuation 2192 . 2193) (punctuation 2191 . 2192) (CONST 2185 . 2190) (punctuation 2149 . 2150) (punctuation 2148 . 2149) (CONST 2142 . 2147) (punctuation 2109 . 2110) (punctuation 2108 . 2109) (CONST 2102 . 2107) (punctuation 2031 . 2032) (punctuation 2030 . 2031) (symbol 2027 . 2030) (punctuation 2192 . 2193) (punctuation 2191 . 2192) (CONST 2185 . 2190) (punctuation 2149 . 2150) (punctuation 2148 . 2149) (CONST 2142 . 2147) (punctuation 2109 . 2110) (punctuation 2108 . 2109) (CONST 2102 . 2107) (punctuation 2021 . 2022) (symbol 2015 . 2021) (punctuation 2014 . 2015) (punctuation 2013 . 2014) (symbol 2008 . 2013) (punctuation 2007 . 2008) (punctuation 2006 . 2007) (symbol 1998 . 2006) (punctuation 1997 . 1998) (punctuation 1996 . 1997) (symbol 1993 . 1996) (punctuation 1992 . 1993) (punctuation 1991 . 1992) (symbol 1988 . 1991) (punctuation 1986 . 1987) (symbol 1981 . 1985) (USING 1975 . 1980) (punctuation 1973 . 1974) (punctuation 1972 . 1973) (semantic-list 1839 . 1972) (symbol 1828 . 1839) (punctuation 1939 . 1940) (punctuation 1938 . 1939) (CONST 1932 . 1937) (punctuation 1888 . 1889) (punctuation 1887 . 1888) (CONST 1881 . 1886) (punctuation 1856 . 1857) (punctuation 1855 . 1856) (CONST 1849 . 1854) (punctuation 1827 . 1828) (punctuation 1826 . 1827) (symbol 1812 . 1826) (punctuation 1939 . 1940) (punctuation 1938 . 1939) (CONST 1932 . 1937) (punctuation 1888 . 1889) (punctuation 1887 . 1888) (CONST 1881 . 1886) (punctuation 1856 . 1857) (punctuation 1855 . 1856) (CONST 1849 . 1854) (punctuation 1811 . 1812) (punctuation 1810 . 1811) (symbol 1795 . 1810) (punctuation 1939 . 1940) (punctuation 1938 . 1939) (CONST 1932 . 1937) (punctuation 1888 . 1889) (punctuation 1887 . 1888) (CONST 1881 . 1886) (punctuation 1856 . 1857) (punctuation 1855 . 1856) (CONST 1849 . 1854) (punctuation 1794 . 1795) (punctuation 1793 . 1794) (symbol 1775 . 1793) (punctuation 1939 . 1940) (punctuation 1938 . 1939) (CONST 1932 . 1937) (punctuation 1888 . 1889) (punctuation 1887 . 1888) (CONST 1881 . 1886) (punctuation 1856 . 1857) (punctuation 1855 . 1856) (CONST 1849 . 1854) (punctuation 1774 . 1775) (punctuation 1773 . 1774) (symbol 1769 . 1773) (punctuation 1939 . 1940) (punctuation 1938 . 1939) (CONST 1932 . 1937) (punctuation 1888 . 1889) (punctuation 1887 . 1888) (CONST 1881 . 1886) (punctuation 1856 . 1857) (punctuation 1855 . 1856) (CONST 1849 . 1854) (punctuation 1768 . 1769) (punctuation 1767 . 1768) (symbol 1764 . 1767) (punctuation 1939 . 1940) (punctuation 1938 . 1939) (CONST 1932 . 1937) (punctuation 1888 . 1889) (punctuation 1887 . 1888) (CONST 1881 . 1886) (punctuation 1856 . 1857) (punctuation 1855 . 1856) (CONST 1849 . 1854) (punctuation 1758 . 1759) (symbol 1752 . 1758) (punctuation 1751 . 1752) (punctuation 1750 . 1751) (symbol 1745 . 1750) (punctuation 1744 . 1745) (punctuation 1743 . 1744) (symbol 1735 . 1743) (punctuation 1734 . 1735) (punctuation 1733 . 1734) (symbol 1730 . 1733) (punctuation 1729 . 1730) (punctuation 1728 . 1729) (symbol 1725 . 1728) (punctuation 1723 . 1724) (symbol 1717 . 1722) (USING 1711 . 1716) (punctuation 1709 . 1710) (punctuation 1708 . 1709) (semantic-list 1575 . 1708) (symbol 1555 . 1575) (punctuation 1675 . 1676) (punctuation 1674 . 1675) (CONST 1668 . 1673) (punctuation 1624 . 1625) (punctuation 1623 . 1624) (CONST 1617 . 1622) (punctuation 1592 . 1593) (punctuation 1591 . 1592) (CONST 1585 . 1590) (punctuation 1554 . 1555) (punctuation 1553 . 1554) (symbol 1539 . 1553) (punctuation 1675 . 1676) (punctuation 1674 . 1675) (CONST 1668 . 1673) (punctuation 1624 . 1625) (punctuation 1623 . 1624) (CONST 1617 . 1622) (punctuation 1592 . 1593) (punctuation 1591 . 1592) (CONST 1585 . 1590) (punctuation 1538 . 1539) (punctuation 1537 . 1538) (symbol 1522 . 1537) (punctuation 1675 . 1676) (punctuation 1674 . 1675) (CONST 1668 . 1673) (punctuation 1624 . 1625) (punctuation 1623 . 1624) (CONST 1617 . 1622) (punctuation 1592 . 1593) (punctuation 1591 . 1592) (CONST 1585 . 1590) (punctuation 1521 . 1522) (punctuation 1520 . 1521) (symbol 1502 . 1520) (punctuation 1675 . 1676) (punctuation 1674 . 1675) (CONST 1668 . 1673) (punctuation 1624 . 1625) (punctuation 1623 . 1624) (CONST 1617 . 1622) (punctuation 1592 . 1593) (punctuation 1591 . 1592) (CONST 1585 . 1590) (punctuation 1501 . 1502) (punctuation 1500 . 1501) (symbol 1496 . 1500) (punctuation 1675 . 1676) (punctuation 1674 . 1675) (CONST 1668 . 1673) (punctuation 1624 . 1625) (punctuation 1623 . 1624) (CONST 1617 . 1622) (punctuation 1592 . 1593) (punctuation 1591 . 1592) (CONST 1585 . 1590) (punctuation 1495 . 1496) (punctuation 1494 . 1495) (symbol 1491 . 1494) (punctuation 1675 . 1676) (punctuation 1674 . 1675) (CONST 1668 . 1673) (punctuation 1624 . 1625) (punctuation 1623 . 1624) (CONST 1617 . 1622) (punctuation 1592 . 1593) (punctuation 1591 . 1592) (CONST 1585 . 1590) (punctuation 1485 . 1486) (symbol 1479 . 1485) (punctuation 1478 . 1479) (punctuation 1477 . 1478) (symbol 1472 . 1477) (punctuation 1471 . 1472) (punctuation 1470 . 1471) (symbol 1462 . 1470) (punctuation 1461 . 1462) (punctuation 1460 . 1461) (symbol 1457 . 1460) (punctuation 1456 . 1457) (punctuation 1455 . 1456) (symbol 1452 . 1455) (punctuation 1450 . 1451) (symbol 1435 . 1449) (USING 1429 . 1434))
+      :lexical-table 
+        '(("DM_EXE_INCLUDES_ARA_DIAG_SERVICE_INTERFACES_GENERIC_ROUTINE_GENERICROUTINE_PROXY_H_")
+          )
+)
+    (semanticdb-table "semanticdb-table-24a7cfc"
+      :file "genericroutine_common.h"
+      :fsize 9012
+      :lastmodtime '(24416 4495 31880 213000)))
+  :file "!home!hyuk.myeong!work!LARA!avin!avin-ap!dm!source!inc!private!dcm!service!service_proxy!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

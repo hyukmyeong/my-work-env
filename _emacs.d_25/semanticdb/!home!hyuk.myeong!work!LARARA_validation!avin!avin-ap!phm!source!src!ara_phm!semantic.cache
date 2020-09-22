@@ -1,0 +1,48 @@
+;; Object semanticdb-project-database-file-2d11c90
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-2d11c90"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-29cfc34"
+      :major-mode c++-mode
+      :tags 
+        '( ("application_recovery_action.h" include nil nil [729 769])
+            ("ara" type
+               (:members 
+                  ( ("phm" type
+                       (:members 
+                          ( ("ApplicationRecoveryAction" function
+                               (:constructor-flag t
+                                :parent "ApplicationRecoveryAction"
+                                :arguments 
+                                  ( ("instance" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("ara::core::InstanceSpecifier" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [856 901]))                                  
+                                :type ("ApplicationRecoveryAction" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [803 1179])
+                            ("Offer" function
+                               (:parent "ApplicationRecoveryAction"
+                                :type ("ara::core::Result" type
+                                     (:template-specifier 
+                                        ( ("void" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol namespacesubparts) [1181 1402])
+                            ("StopOffer" function
+                               (:parent "ApplicationRecoveryAction"
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [1404 1558]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [787 1561]))                  
+                :type "namespace")
+                nil [771 1580]))          
+      :file "application_recovery_action.cpp"
+      :pointmax 1598
+      :fsize 1597
+      :lastmodtime '(24420 14685 339920 328000)
+      :unmatched-syntax nil))
+  :file "!home!hyuk.myeong!work!LARARA_validation!avin!avin-ap!phm!source!src!ara_phm!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")
