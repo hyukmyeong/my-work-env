@@ -75,7 +75,7 @@
 ;; scroll 부드럽게
 ;; for smooth scrolling and disabling the automatical recentering of emacs when moving the cursor
 ;; (setq scroll-conservatively 0
-(setq-default scroll-margin 1
+(setq-default scroll-margin 0
               scroll-conservatively 0
               scroll-up-aggressively 0.01
               scroll-down-aggressively 0.01)
