@@ -26,6 +26,8 @@
 (add-to-list 'package-archives
              '("melpa" . "http://melpa.org/packages/") t)
 
+(push (substitute-in-file-name "/home/hyukmyeong/.emacs.d/ztree") load-path)
+(require 'ztree)
 
 (add-to-list 'load-path "~/.emacs.d/custom")
 
