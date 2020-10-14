@@ -11,7 +11,11 @@
                                         ;             '("melpa" . "http://melpa.milkbox.net/packages/") t)
 
 (package-initialize)
-                                        ;(setq-default package-check-signature nil)
+
+;; if keyring error occur
+;; https://emacs.stackexchange.com/questions/233/how-to-proceed-on-package-el-signature-check-failure
+;; (setq package-check-signature nil)
+;; M-x package-install RET gnu-elpa-keyring-update RET
 
 (when (not package-archive-contents)
   (package-refresh-contents))
@@ -382,13 +386,13 @@
                                         ;(load-file (concat user-emacs-directory "/cedet/cedet-devel-load.el"))
                                         ;(load-file (concat user-emacs-directory "cedet/contrib/cedet-contrib-load.el"))
 
-(set
+;;(set
  ;; use gdb-many-windows by default
- gdb-many-windows t
+;; gdb-many-windows t
 
  ;; Non-nil means display source file containing the main routine at startup
- gdb-show-main t
- )
+;; gdb-show-main t
+;; )
 
 (put 'erase-buffer 'disabled nil)
 
