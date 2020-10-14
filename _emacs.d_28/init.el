@@ -26,9 +26,6 @@
 (add-to-list 'package-archives
              '("melpa" . "http://melpa.org/packages/") t)
 
-(push (substitute-in-file-name "/home/hyukmyeong/.emacs.d/ztree") load-path)
-(require 'ztree)
-
 (add-to-list 'load-path "~/.emacs.d/custom")
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
@@ -86,6 +83,12 @@
 (when (version<= "26.0.50" emacs-version )
   (global-display-line-numbers-mode))
 ;; (global-linum-mode 1)
+
+(custom-set-variables
+ '(ediff-window-setup-function 'ediff-setup-windows-plain)
+ '(ediff-diff-options "-w")
+ '(ediff-split-window-function 'split-window-horizontally))
+
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; mikki finish (테마, 윈도우)
