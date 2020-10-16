@@ -195,7 +195,14 @@
 (global-set-key (kbd "M-p n") 'find-file)
 (global-set-key (kbd "M-p b") 'sr-speedbar-toggle)
 
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+;; finally found how to only disable helm's completion while using helm-mode
+;; from ".emacs.d/elpa/helm-xxx/helm-mode.el"
+;(add-hook 'shell-mode-hook (lambda () (setq helm-mode nil)))
+(add-hook 'shell-mode-hook (remove-function completion-in-region-function #'helm--completion-in-region))
+	
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; mikki finish (helm)
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
@@ -411,6 +418,7 @@
 ;; mikki start (etc)
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
+
 (defun my-shell-hook ()
   (local-set-key "C-c l" 'comint-clear-buffer))
 
@@ -426,6 +434,7 @@ p  (interactive)
 (setq-default ediff-diff-options "-w"
               ediff-split-window-function 'split-window-horizontally
               ediff-window-setup-function 'ediff-setup-windows-plain)
+
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; mikki finish (etc)
