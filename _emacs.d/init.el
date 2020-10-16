@@ -196,10 +196,19 @@
 (global-set-key (kbd "M-p b") 'sr-speedbar-toggle)
 
 
-;; finally found how to only disable helm's completion while using helm-mode
+;; helm's completion while using helm-mode
 ;; from ".emacs.d/elpa/helm-xxx/helm-mode.el"
 ;(add-hook 'shell-mode-hook (lambda () (setq helm-mode nil)))
-(add-hook 'shell-mode-hook (remove-function completion-in-region-function #'helm--completion-in-region))
+;(add-hook 'shell-mode-hook (remove-function completion-in-region-function #'helm--completion-in-region))
+
+;; but above fail.. cuz add-hook disappeared after I visit dired or other mode 
+;; just use helm only... not with company-capf
+(add-hook 'shell-mode-hook (lambda () (setq-local company-backends '((company-shell company-files)))))
+
+;(eval-after-load "helm"
+;  (progn
+;    (remove-hook 'helm-move-selection-after-hook 'helm-maybe-update-keymap)))
+;    (remove-hook 'helm-after-update-hook 'helm-maybe-update-keymap)))
 	
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
@@ -340,6 +349,7 @@
 (eval-after-load 'company '(add-to-list 'company-backends '(company-irony-c-headers
 							    company-irony
 							    company-cmake
+							    company-capf
 							    )))
 
 (add-hook 'after-init-hook 'global-company-mode)
@@ -425,7 +435,7 @@
 (add-hook 'shell-mode-hook 'my-shell-hook)
 
 (defun connect-otto ()
-p  (interactive)
+  (interactive)
   (dired "/ssh:hyuk.myeong@10.178.97.152:/home/hyuk.myeong/work"))
 
 (put 'erase-buffer 'disabled nil)
