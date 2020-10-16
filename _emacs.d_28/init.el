@@ -2,6 +2,21 @@
 ;; mikki start (초기화)
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
+(setq user-full-name "Hyuk Myeong"
+      user-mail-address "hyuk.myeong@lge.com")
+
+(set-language-environment "Korean")
+(setq locale-coding-system 'utf-8)
+(set-terminal-coding-system 'utf-8)
+(set-keyboard-coding-system 'utf-8)
+(set-selection-coding-system 'utf-8)
+(prefer-coding-system 'utf-8)
+
+(setq package-archives '(("gnu"           . "http://elpa.gnu.org/packages/")
+                         ("melpa-stable" . "http://stable.melpa.org/packages/")
+                         ("melpa"        . "http://melpa.org/packages/")
+                         ("org"          . "http://orgmode.org/elpa/")))
+
 (require 'package)
 (add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/") t)
 ;; Comment/uncomment this line to enable MELPA Stable if desired.  See `package-archive-priorities`
@@ -17,7 +32,7 @@
 
 (add-to-list 'load-path "~/.emacs.d/custom")
 
-;; created by ~/.emacs.d/custom
+;; created by ~/.emacs.d/custom (use custom menu in default emacs)
 ;; package-selected-packages are install by me(user)
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
@@ -25,7 +40,20 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(package-selected-packages
-   '(company-statistics company-irony-c-headers company-irony auto-complete company-c-headers sr-speedbar zygospore helm-gtags helm yasnippet ws-butler volatile-highlights use-package undo-tree iedit dtrt-indent counsel-projectile company clean-aindent-mode anzu)))
+   '(cmake-mode company-statistics company-irony-c-headers company-irony auto-complete company-c-headers sr-speedbar zygospore helm-gtags helm yasnippet ws-butler volatile-highlights use-package undo-tree iedit dtrt-indent counsel-projectile company clean-aindent-mode anzu)))
+
+(use-package dashboard
+  :ensure t
+  :config
+  (dashboard-setup-startup-hook)
+  (setq dashboard-items '((recents  . 20)
+                          (bookmarks . 10)
+                          (projects . 10))))
+
+;; No Menu Bar, No tool bar, No Scrollbar
+(menu-bar-mode -1)
+(tool-bar-mode -1)
+(scroll-bar-mode -1)
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; mikki finish (초기화)
@@ -38,6 +66,8 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; mikki start (테마, 윈도우)
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+;(set-frame-parameter nil 'alpha 1)
 
 (use-package doom-themes
   :config
@@ -69,6 +99,11 @@
               scroll-conservatively 0
               scroll-up-aggressively 0.01
               scroll-down-aggressively 0.01)
+
+;;; whell setup
+;(setq mouse-wheel-scroll-amount '(1 ((shift) . 1))) ;; one line at a time
+;(setq mouse-wheel-progressive-speed nil) ;; don't accelerate scrolling
+;(setq mouse-wheel-follow-mouse 't) ;; scroll window under mouse
 
 
 ;; always show line numbers
@@ -283,6 +318,7 @@
 ;; mikki start (ide)
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
+;; invalidate tags whenver it is updated
 (setq tags-revert-without-query 1)
 (defalias 'yes-or-no-p 'y-or-n-p)
 
@@ -292,15 +328,31 @@
 
 ;; Use compilation database first, clang_complete as fallback.
 (setq-default irony-cdb-compilation-databases '(irony-cdb-libclang
-					        irony-cdb-clang-complete))
+				irony-cdb-clang-complete))
 
-(eval-after-load 'company '(add-to-list 'company-backends '(company-irony-c-headers company-irony)))
+(eval-after-load 'company '(add-to-list 'company-backends '(company-irony-c-headers
+							    company-irony
+							    company-cmake
+							    )))
 
 (add-hook 'after-init-hook 'global-company-mode)
 (add-hook 'c++-mode-hook 'irony-mode)
 (add-hook 'c-mode-hook 'irony-mode)
 (add-hook 'objc-mode-hook 'irony-mode)
 (add-hook 'irony-mode-hook 'irony-cdb-autosetup-compile-options)
+
+;(add-hook 'cmake-mode-hook (lambda () (electric-indent-local-mode -1)))
+
+;((nil . ((tab-width . 8)
+;     (indent-tabs-mode . t)))
+; (c++-mode . ((c-basic-offset . 2)
+;          (tab-width . 4)
+;          (indent-tabs-mode . t)
+;          (compile-command . "make -C ../build -j 2 run_tests")))
+; ((c-mode . ((c-basic-offset . 8)
+;         (tab-width . 8)
+;         (indent-tabs-mode . t)
+;         (compile-command . "make -C ../build -j 2 run_tests")))))
 
 (setq company-idle-delay 0)
 (setq company-minimum-prefix-length 1)
@@ -313,7 +365,6 @@
 
 (add-to-list 'company-backends 'company-c-headers)
 (add-to-list 'company-c-headers-path-system "/usr/include/c++/7.5.0/")
-
 
 ;; etc.
 ;(require 'setup-ggtags)
@@ -331,9 +382,22 @@
 ;; gdb-show-main t
 ;; )
 
-(setq-default ediff-diff-options "-w"
-              ediff-split-window-function 'split-window-horizontally
-              ediff-window-setup-function 'ediff-setup-windows-plain)
+
+;; syntax check
+;; (use-package flycheck
+;;  :ensure t
+;;  :init (global-flycheck-mode))
+
+;; (add-hook 'after-init-hook #'global-flycheck-mode)
+
+;; (eval-after-load 'flycheck '(add-hook 'flycheck-mode-hook #'flycheck-irony-setup))
+;; (add-hook 'c++-mode-hook (lambda () (setq flycheck-gcc-language-standard "c++11"))
+;; (add-hook 'c++-mode-hook (lambda () (setq flycheck-gcc-include-path "/usr/include/c++/7.5.0"))
+;; (add-hook 'c++-mode-hook (lambda () (setq flycheck-gcc-standard-library "/usr/include/c++/7.5.0"))
+
+;(add-hook 'c++-mode-hook (lambda () (setq flycheck-clang-language-standard "c++11")))
+;(setq flycheck-clang-standard-library "libc++")
+
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; mikki finish (ide)
@@ -357,6 +421,11 @@ p  (interactive)
   (dired "/ssh:hyuk.myeong@10.178.97.152:/home/hyuk.myeong/work"))
 
 (put 'erase-buffer 'disabled nil)
+
+;; ediff
+(setq-default ediff-diff-options "-w"
+              ediff-split-window-function 'split-window-horizontally
+              ediff-window-setup-function 'ediff-setup-windows-plain)
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; mikki finish (etc)
