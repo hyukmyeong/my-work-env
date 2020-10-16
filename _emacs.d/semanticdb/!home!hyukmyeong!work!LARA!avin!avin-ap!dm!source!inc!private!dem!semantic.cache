@@ -1,0 +1,120 @@
+;; Object semanticdb-project-database-file-15935c7c97d4
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-15935c7c97d4"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-15935ca57ccc"
+      :major-mode c++-mode
+      :tags 
+        '( ("SOURCE_DEM_DIAGNOSTIC_EVENT_MANAGER_INTERFACE_H_" variable (:constant-flag t) nil [927 975])
+            ("memory" include (:system-flag t) nil [977 994])
+            ("ara/core/optional.h" include nil nil [995 1025])
+            ("ara/core/vector.h" include nil nil [1026 1054])
+            ("common/dtc_error_code.h" include nil nil [1055 1089])
+            ("dem/events/dem_dtc_fwd.h" include nil nil [1090 1125])
+            ("ara" type
+               (:members 
+                  ( ("diag" type
+                       (:members 
+                          ( ("dem" type
+                               (:members 
+                                  ( ("DEMInterface" type
+                                       (:members 
+                                          ( ("public" label nil (reparse-symbol classsubparts) [1297 1304])
+                                            ("EnableDTCSetting" function
+                                               (:pure-virtual-flag t
+                                                :prototype-flag t
+                                                :typemodifiers ("virtual")
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [1406 1442])
+                                            ("DisableDTCSetting" function
+                                               (:pure-virtual-flag t
+                                                :prototype-flag t
+                                                :typemodifiers ("virtual")
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [1480 1517])
+                                            ("ClearDTC" function
+                                               (:pure-virtual-flag t
+                                                :prototype-flag t
+                                                :typemodifiers ("virtual")
+                                                :arguments 
+                                                  ( ("groupOfDtc" variable (:type ("std::uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1809 1834]))                                                  
+                                                :type ("ClearDtcErrorCode" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [1774 1839])
+                                            ("GetDTCsFilteredBy" function
+                                               (:pure-virtual-flag t
+                                                :prototype-flag t
+                                                :typemodifiers ("virtual")
+                                                :arguments 
+                                                  ( ("dtcStatusMask" variable (:type ("std::uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2346 2373])
+                                                    ("dtcStatusAvailabilityMask" variable (:type ("std::uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2374 2413]))                                                  
+                                                :type ("ara::core::Vector" type
+                                                     (:template-specifier 
+                                                        ( ("std::shared_ptr" type (:template-specifier 
+                                                            ( ("ara::diag::dem::event::DemDtc" type nil nil nil))                                                            ) nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil))
+                                                (reparse-symbol classsubparts) [2247 2424])
+                                            ("GetDTCBy" function
+                                               (:pure-virtual-flag t
+                                                :prototype-flag t
+                                                :typemodifiers ("virtual")
+                                                :constant-flag t
+                                                :arguments 
+                                                  ( ("dtcValue" variable (:type ("std::uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2809 2832]))                                                  
+                                                :type ("ara::core::Optional" type
+                                                     (:template-specifier 
+                                                        ( ("std::shared_ptr" type (:template-specifier 
+                                                            ( ("ara::diag::dem::event::DemDtc" type nil nil nil))                                                            ) nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil))
+                                                (reparse-symbol classsubparts) [2711 2843])
+                                            ("GetDTCFDC" function
+                                               (:pure-virtual-flag t
+                                                :prototype-flag t
+                                                :typemodifiers ("virtual")
+                                                :constant-flag t
+                                                :arguments 
+                                                  ( ("subfunction" variable
+                                                       (:constant-flag t
+                                                        :type ("std::uint8_t" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [3205 3236]))                                                  
+                                                :type ("ara::core::Vector" type
+                                                     (:template-specifier 
+                                                        ( ("std::pair" type (:template-specifier 
+                                                            ( ("std::uint32_t" type nil nil nil)
+                                                              ("std::uint8_t" type nil nil nil))                                                            ) nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil))
+                                                (reparse-symbol classsubparts) [3116 3247])
+                                            ("GetDtcs" function
+                                               (:pure-virtual-flag t
+                                                :prototype-flag t
+                                                :typemodifiers ("virtual")
+                                                :type ("ara::core::Vector" type
+                                                     (:template-specifier 
+                                                        ( ("std::shared_ptr" type (:template-specifier 
+                                                            ( ("ara::diag::dem::event::DemDtc" type nil nil nil))                                                            ) nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil))
+                                                (reparse-symbol classsubparts) [3371 3459]))                                          
+                                        :type "class")
+                                        (reparse-symbol namespacesubparts) [1275 3462]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [1160 3465]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [1143 3484]))                  
+                :type "namespace")
+                nil [1127 3504]))          
+      :file "diagnostic_event_manager_interface.h"
+      :pointmax 3582
+      :fsize 3581
+      :lastmodtime '(24455 41031 115199 217000)
+      :unmatched-syntax '((punctuation 1368 . 1369) (DEFAULT 1361 . 1368) (punctuation 1359 . 1360) (semantic-list 1356 . 1358) (symbol 1344 . 1356) (punctuation 1343 . 1344) (VIRTUAL 1335 . 1342) (punctuation 1331 . 1332) (DEFAULT 1324 . 1331) (punctuation 1322 . 1323) (semantic-list 1319 . 1321) (symbol 1307 . 1319))
+      :lexical-table 
+        '(("SOURCE_DEM_DIAGNOSTIC_EVENT_MANAGER_INTERFACE_H_")
+          )
+))
+  :file "!home!hyukmyeong!work!LARA!avin!avin-ap!dm!source!inc!private!dem!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

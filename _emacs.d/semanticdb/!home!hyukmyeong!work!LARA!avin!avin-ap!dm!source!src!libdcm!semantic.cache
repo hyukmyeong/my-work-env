@@ -1,0 +1,153 @@
+;; Object semanticdb-project-database-file-15628f5ab5e8
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-15628f5ab5e8"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-15628d41d1c4"
+      :major-mode c++-mode
+      :tags 
+        '( ("iostream" include (:system-flag t) nil [870 889])
+            ("memory" include (:system-flag t) nil [890 907])
+            ("ara/core/string.h" include nil nil [908 936])
+            ("thread" include (:system-flag t) nil [937 954])
+            ("common/config/dm_config.h" include nil nil [956 992])
+            ("dcm/diagnostic_communication_manager.h" include nil nil [993 1042])
+            ("ara/log/logging.h" include nil nil [1043 1071])
+            ("common/exception/service_processor_not_found.h" include nil nil [1072 1129])
+            ("dcm/service/processors/all_processors.h" include nil nil [1130 1180])
+            ("dcm/service/processors/did_handler.h" include nil nil [1181 1228])
+            ("dcm/service/processors/routine_handler.h" include nil nil [1229 1280])
+            ("common/service_processor.h" include nil nil [1281 1318])
+            ("dcm/runtime_context/dcm_runtime_context.h" include nil nil [1319 1371])
+            ("ara/diag/uds_transport/protocol_mgr.h" include nil nil [1372 1420])
+            ("dcm/conversation/conversation_manager.h" include nil nil [1421 1471])
+            ("dcm/service/service_dispatch_table.h" include nil nil [1472 1519])
+            ("dcm/service/service_skeleton/diagnostic_status_impl.h" include nil nil [1520 1584])
+            ("common/diagnostic_server.h" include nil nil [1585 1622])
+            ("uds/uds_services.h" include nil nil [1623 1652])
+            ("../../inc/private/common/data_element.h" include nil nil [1688 1738])
+            ("ara/diag/uds_transport/uds_message.h" include nil nil [1739 1786])
+            ("ara::diag::ServiceProcessor" using (:type ("ara::diag::ServiceProcessor" type
+                 (:prototype t
+                  :type "class")
+                  nil nil)) nil [1788 1822])
+            ("ara::diag::dcm::service::SecurityAccess" using (:type ("ara::diag::dcm::service::SecurityAccess" type
+                 (:prototype t
+                  :type "class")
+                  nil nil)) nil [1823 1869])
+            ("ara::diag::dem::service::ControlDTCSetting" using (:type ("ara::diag::dem::service::ControlDTCSetting" type
+                 (:prototype t
+                  :type "class")
+                  nil nil)) nil [1870 1919])
+            ("ara::diag::dem::service::ReadDTCInformation" using (:type ("ara::diag::dem::service::ReadDTCInformation" type
+                 (:prototype t
+                  :type "class")
+                  nil nil)) nil [1920 1970])
+            ("ara::diag::uds::UdsServices" using (:type ("ara::diag::uds::UdsServices" type
+                 (:prototype t
+                  :type "class")
+                  nil nil)) nil [1971 2005])
+            ("ara::log" using (:type ("ara::log" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [2006 2031])
+            ("ara" type
+               (:members 
+                  ( ("diag" type
+                       (:members 
+                          ( ("dcm" type
+                               (:members 
+                                  ( ("DCM" function
+                                       (:constructor-flag t
+                                        :parent "DCM"
+                                        :arguments 
+                                          ( ("udsTransportProtocolMgr" variable (:type ("std::shared_ptr" type
+                                                 (:template-specifier 
+                                                    ( ("ara::diag::uds_transport::UdsTransportProtocolMgr" type nil nil nil))                                                    
+                                                  :type "class")
+                                                  nil nil)) (reparse-symbol arg-sub-list) [2235 2326]))                                          
+                                        :type ("DCM" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [2226 2659])
+                                    ("Initialize" function
+                                       (:parent "DCM"
+                                        :type "void")
+                                        (reparse-symbol namespacesubparts) [2724 3261])
+                                    ("GetSecurityTimerValue" function
+                                       (:parent "DCM"
+                                        :type "void")
+                                        (reparse-symbol namespacesubparts) [3263 6157])
+                                    ("CreateServiceProcessor" function
+                                       (:parent "DCM"
+                                        :arguments 
+                                          ( ("serviceId" variable
+                                               (:constant-flag t
+                                                :type ("uint8_t" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [6554 6578]))                                          
+                                        :type ("ServiceProcessor::ServiceProcessorSharedPtr" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [6482 8821])
+                                    ("Run" function
+                                       (:parent "DCM"
+                                        :type "void")
+                                        (reparse-symbol namespacesubparts) [8877 9028])
+                                    ("Shutdown" function
+                                       (:parent "DCM"
+                                        :type "void")
+                                        (reparse-symbol namespacesubparts) [9030 9141])
+                                    ("OfferServices" function
+                                       (:parent "DCM"
+                                        :type "void")
+                                        (reparse-symbol namespacesubparts) [9143 9318])
+                                    ("StopOfferServices" function
+                                       (:parent "DCM"
+                                        :type "void")
+                                        (reparse-symbol namespacesubparts) [9320 9428])
+                                    ("StartHandlers" function
+                                       (:parent "DCM"
+                                        :type "void")
+                                        (reparse-symbol namespacesubparts) [9430 9458])
+                                    ("StopHandlers" function
+                                       (:parent "DCM"
+                                        :type "void")
+                                        (reparse-symbol namespacesubparts) [9460 9487])
+                                    ("GetVin" function
+                                       (:parent "DCM"
+                                        :type ("ByteVector" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [9489 10016])
+                                    ("ReadDIDValue" function
+                                       (:parent "DCM"
+                                        :arguments 
+                                          ( ("dataId" variable (:type ("std::uint16_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10041 10062])
+                                            ("dataRec" variable
+                                               (:reference 1
+                                                :type ("ByteVector" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [10063 10083]))                                          
+                                        :type "bool")
+                                        (reparse-symbol namespacesubparts) [10018 11040])
+                                    ("ReadDataElementValue" function
+                                       (:parent "DCM"
+                                        :arguments 
+                                          ( ("elementId" variable (:type ("std::uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11073 11097])
+                                            ("metaInfo" variable
+                                               (:constant-flag t
+                                                :type ("uds_transport::UdsMessage::MetaInfoMap" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [11098 11152])
+                                            ("dataElementValue" variable
+                                               (:reference 1
+                                                :type ("ByteVector" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [11157 11186]))                                          
+                                        :type "bool")
+                                        (reparse-symbol namespacesubparts) [11042 11290]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [2210 11294]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [2141 11313]))                  
+                :type "namespace")
+                nil [2086 11333]))          
+      :file "diagnostic_communication_manager.cpp"
+      :pointmax 11351
+      :fsize 11350
+      :lastmodtime '(24455 47060 54913 593000)
+      :unmatched-syntax nil))
+  :file "!home!hyukmyeong!work!LARA!avin!avin-ap!dm!source!src!libdcm!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

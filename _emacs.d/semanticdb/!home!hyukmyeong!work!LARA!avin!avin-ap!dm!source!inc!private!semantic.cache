@@ -1,0 +1,78 @@
+;; Object semanticdb-project-database-file-15935dc28b28
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-15935dc28b28"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-15935dc28b44"
+      :major-mode c++-mode
+      :tags 
+        '( ("APPLICATION_LIFECYCLE_H_" variable (:constant-flag t) nil [883 907])
+            ("thread" include (:system-flag t) nil [909 926])
+            ("atomic" include (:system-flag t) nil [927 944])
+            ("csignal" include (:system-flag t) nil [945 963])
+            ("utility" include (:system-flag t) nil [964 982])
+            ("ara/log/logging.h" include nil nil [984 1012])
+            ("common/diagnostic_manager.h" include nil nil [1013 1051])
+            ("ara::log" using (:type ("ara::log" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [1294 1319])
+            ("ara::diag::diagnostic_manager" using (:type ("ara::diag::diagnostic_manager" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [1320 1366])
+            ("signal_handler" type
+               (:members 
+                  ( ("final" variable (:type ("SignalHandler" type
+                         (:prototype t
+                          :type "class")
+                          nil nil)) (reparse-symbol namespacesubparts) [1447 3490]))                  
+                :type "namespace")
+                nil [1368 3493])
+            ("ApplicationLifeCycle" type
+               (:template 
+                  ( ("Application" type (:type "class") nil nil))                  
+                :type "class"
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [4219 4226])
+                    ("Main" function
+                       (:typemodifiers ("static")
+                        :arguments 
+                          ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [4467 4476])
+                            ("argv" variable
+                               (:pointer 1
+                                :dereference 1
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [4477 4490]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [4451 5770])
+                    ("Execute" function
+                       (:typemodifiers ("static")
+                        :arguments 
+                          ( ("app" variable
+                               (:reference 1
+                                :type ("Application" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5986 6003])
+                            ("aralog" variable
+                               (:reference 1
+                                :type ("Logger" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6004 6019])
+                            ("signal_handler" variable
+                               (:reference 1
+                                :type ("signal_handler::SignalHandler" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6020 6066]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [5966 7449]))                  )
+                nil [4160 7453]))          
+      :file "application_lifecycle.h"
+      :pointmax 7494
+      :fsize 7493
+      :lastmodtime '(24455 41031 107199 106000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("APPLICATION_LIFECYCLE_H_")
+          )
+))
+  :file "!home!hyukmyeong!work!LARA!avin!avin-ap!dm!source!inc!private!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

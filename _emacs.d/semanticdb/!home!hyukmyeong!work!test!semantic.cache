@@ -1,0 +1,104 @@
+;; Object semanticdb-project-database-file-1579652fa818
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-1579652fa818"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-157965241c34"
+      :major-mode c++-mode
+      :tags 
+        '( ("vector" include (:system-flag t) nil [1 18])
+            ("sut.h" include nil nil [19 35])
+            ("temp" using (:type ("temp" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [37 58])
+            ("main" function (:type "int") nil [60 102]))          
+      :file "main.cpp"
+      :pointmax 103
+      :fsize 100
+      :lastmodtime '(24457 415 261917 612000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1579652fa7d8"
+      :major-mode c++-mode
+      :tags 
+        '( ("doc.h" include nil nil [1 17])
+            ("temp" type
+               (:members 
+                  ( ("AAA" type
+                       (:members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [48 55])
+                            ("foo" function (:type "int") (reparse-symbol classsubparts) [60 84])
+                            ("boo" function (:type "int") (reparse-symbol classsubparts) [89 113]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [36 116])
+                    ("BBB" type
+                       (:members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [130 137])
+                            ("goo" function (:type "int") (reparse-symbol classsubparts) [142 166])
+                            ("joo" function (:type "int") (reparse-symbol classsubparts) [171 195]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [118 198])
+                    ("CCC" type
+                       (:members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [212 219])
+                            ("koo" function (:type "int") (reparse-symbol classsubparts) [224 248])
+                            ("ooo" function (:type "int") (reparse-symbol classsubparts) [253 277]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [200 280])
+                    ("DDD" type
+                       (:members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [294 301])
+                            ("koo" function (:type "int") (reparse-symbol classsubparts) [306 330])
+                            ("ooo" function (:type "int") (reparse-symbol classsubparts) [335 359]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [282 362])
+                    ("EEE" type
+                       (:members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [376 383])
+                            ("koo" function (:type "int") (reparse-symbol classsubparts) [388 412])
+                            ("ooo" function (:type "int") (reparse-symbol classsubparts) [417 441]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [364 444])
+                    ("FFF" type
+                       (:members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [458 465])
+                            ("koo" function (:type "int") (reparse-symbol classsubparts) [470 494])
+                            ("ooo" function (:type "int") (reparse-symbol classsubparts) [499 523]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [446 526])
+                    ("GGG" type
+                       (:members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [540 547])
+                            ("koo" function (:type "int") (reparse-symbol classsubparts) [552 576])
+                            ("ooo" function (:type "int") (reparse-symbol classsubparts) [581 605]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [528 608]))                  
+                :type "namespace")
+                nil [19 612]))          
+      :file "sut.h"
+      :pointmax 614
+      :fsize 613
+      :lastmodtime '(24457 363 513132 712000)
+      :unmatched-syntax '((punctuation 612 . 613) (punctuation 530 . 531) (punctuation 610 . 611)))
+    (semanticdb-table "semanticdb-table-1579652fa7f8"
+      :major-mode c++-mode
+      :tags 
+        '( ("temp" type
+               (:members 
+                  ( ("AAA" type
+                       (:members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [31 38])
+                            ("foo" function (:type "int") (reparse-symbol classsubparts) [43 67])
+                            ("boo" function (:type "int") (reparse-symbol classsubparts) [72 96]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [19 99]))                  
+                :type "namespace")
+                nil [1 102]))          
+      :file "doc.h"
+      :pointmax 103
+      :fsize 21
+      :lastmodtime '(24456 64380 162087 942000)
+      :unmatched-syntax nil))
+  :file "!home!hyukmyeong!work!test!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

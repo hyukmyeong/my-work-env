@@ -1,0 +1,66 @@
+;; Object semanticdb-project-database-file-155c8fa8aba4
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-155c8fa8aba4"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-155c8fa8ab84"
+      :major-mode c++-mode
+      :tags 
+        '( ("chrono" include (:system-flag t) nil [840 857])
+            ("thread" include (:system-flag t) nil [858 875])
+            ("common/diagnostic_manager.h" include nil nil [876 914])
+            ("ara/diag/uds_transport/uds_transport_protocol_mgr_impl.h" include nil nil [915 982])
+            ("ara::diag::uds_transport::UdsTransportProtocolMgrImpl" using (:type ("ara::diag::uds_transport::UdsTransportProtocolMgrImpl" type
+                 (:prototype t
+                  :type "class")
+                  nil nil)) nil [984 1044])
+            ("ara::log" using (:type ("ara::log" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [1045 1070])
+            ("ara" type
+               (:members 
+                  ( ("diag" type
+                       (:members 
+                          ( ("diagnostic_manager" type
+                               (:members 
+                                  ( ("DiagnosticManager" function
+                                       (:constructor-flag t
+                                        :parent "DiagnosticManager"
+                                        :type ("DiagnosticManager" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [1140 1395])
+                                    ("DiagnosticManager" function
+                                       (:destructor-flag t
+                                        :parent "DiagnosticManager"
+                                        :type "void")
+                                        (reparse-symbol namespacesubparts) [1397 1487])
+                                    ("Initialize" function
+                                       (:parent "DiagnosticManager"
+                                        :type "void")
+                                        (reparse-symbol namespacesubparts) [1489 1921])
+                                    ("Run" function
+                                       (:parent "DiagnosticManager"
+                                        :type "void")
+                                        (reparse-symbol namespacesubparts) [1923 2441])
+                                    ("RequestShutdown" function
+                                       (:parent "DiagnosticManager"
+                                        :type "void")
+                                        (reparse-symbol namespacesubparts) [2443 2547])
+                                    ("Shutdown" function
+                                       (:parent "DiagnosticManager"
+                                        :type "void")
+                                        (reparse-symbol namespacesubparts) [2549 2809]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [1107 2812]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [1089 2846]))                  
+                :type "namespace")
+                nil [1072 2866]))          
+      :file "diagnostic_manager.cpp"
+      :pointmax 2884
+      :fsize 2883
+      :lastmodtime '(24455 43763 249136 51000)
+      :unmatched-syntax nil))
+  :file "!home!hyukmyeong!work!LARA!avin!avin-ap!dm!source!src!diagnostic-manager!common!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

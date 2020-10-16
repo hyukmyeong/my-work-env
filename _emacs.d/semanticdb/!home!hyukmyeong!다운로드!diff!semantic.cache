@@ -1,0 +1,16 @@
+;; Object semanticdb-project-database-file-1566aea6139c
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-1566aea6139c"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-1566aea613c0"
+      :major-mode js-mode
+      :tags nil
+      :file "DM_Test_dm_config.json"
+      :pointmax 191025
+      :fsize 191024
+      :lastmodtime '(24451 50413 925613 131000)
+      :unmatched-syntax nil))
+  :file "!home!hyukmyeong!다운로드!diff!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

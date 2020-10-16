@@ -1,0 +1,34 @@
+;; Object semanticdb-project-database-file-1568d211502c
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-1568d211502c"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-1568d2115038"
+      :major-mode c++-mode
+      :tags 
+        '( ("ara/com/internal/ara_com_main.h" include nil nil [868 910])
+            ("ara" type
+               (:members 
+                  ( ("com" type
+                       (:members 
+                          ( ("internal" type
+                               (:members 
+                                  ( ("runtime" type
+                                       (:members 
+                                          ( ("Initialize" function (:type "void") (reparse-symbol namespacesubparts) [1617 2490]))                                          
+                                        :type "namespace")
+                                        (reparse-symbol namespacesubparts) [1597 2493]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [1576 2516]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [1560 2540]))                  
+                :type "namespace")
+                nil [1544 2559]))          
+      :file "ara_com_main-DiagnosticManagerSwComponent.cpp"
+      :pointmax 2577
+      :fsize 2576
+      :lastmodtime '(24455 41031 119199 272000)
+      :unmatched-syntax nil))
+  :file "!home!hyukmyeong!work!LARA!avin!avin-ap!dm!source!src!common!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

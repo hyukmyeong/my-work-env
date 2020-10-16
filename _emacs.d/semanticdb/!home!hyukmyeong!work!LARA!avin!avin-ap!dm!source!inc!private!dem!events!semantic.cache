@@ -1,0 +1,41 @@
+;; Object semanticdb-project-database-file-15935c79b244
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-15935c79b244"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-15935c234e90"
+      :major-mode c++-mode
+      :tags 
+        '( ("ARA_DIAG_DEM_EVENTS_DEM_DTC_FWD_H_" variable (:constant-flag t) nil [871 905])
+            ("ara" type
+               (:members 
+                  ( ("diag" type
+                       (:members 
+                          ( ("dem" type
+                               (:members 
+                                  ( ("event" type
+                                       (:members 
+                                          ( ("DemDtc" type
+                                               (:prototype t
+                                                :type "class")
+                                                (reparse-symbol namespacesubparts) [974 987]))                                          
+                                        :type "namespace")
+                                        (reparse-symbol namespacesubparts) [956 990]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [940 1011]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [923 1030]))                  
+                :type "namespace")
+                nil [907 1050]))          
+      :file "dem_dtc_fwd.h"
+      :pointmax 1114
+      :fsize 1113
+      :lastmodtime '(24455 41031 115199 217000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("ARA_DIAG_DEM_EVENTS_DEM_DTC_FWD_H_")
+          )
+))
+  :file "!home!hyukmyeong!work!LARA!avin!avin-ap!dm!source!inc!private!dem!events!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

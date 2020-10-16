@@ -1,0 +1,1 @@
+("~/work/LARA/avin/avin-ap/dm/" "~/work/test/" "~/work/LARA/meta-lara/" "~/work/penetrate/" "~/work/sample/" "~/work/poky/")

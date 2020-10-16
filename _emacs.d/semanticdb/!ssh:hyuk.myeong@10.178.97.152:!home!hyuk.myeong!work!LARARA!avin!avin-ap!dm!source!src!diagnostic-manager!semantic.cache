@@ -1,0 +1,32 @@
+;; Object semanticdb-project-database-file-158e0177d710
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-158e0177d710"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-158e0177e6e0"
+      :major-mode c++-mode
+      :tags 
+        '( ("application_lifecycle.h" include nil nil [937 971])
+            ("common/diagnostic_manager.h" include nil nil [972 1010])
+            ("ara::log" using (:type ("ara::log" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [1012 1037])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [1103 1112])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1113 1126]))                  
+                :type "int")
+                nil [1094 1236]))          
+      :file "main.cpp"
+      :pointmax 1237
+      :fsize 1236
+      :lastmodtime '(24428 11225)
+      :unmatched-syntax nil))
+  :file "!ssh:hyuk.myeong@10.178.97.152:!home!hyuk.myeong!work!LARARA!avin!avin-ap!dm!source!src!diagnostic-manager!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

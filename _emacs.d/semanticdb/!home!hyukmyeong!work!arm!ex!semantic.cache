@@ -1,0 +1,36 @@
+;; Object semanticdb-project-database-file-15575d0bffd4
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-15575d0bffd4"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-15575ccd8718"
+      :major-mode c++-mode
+      :tags 
+        '( ("iostream" include (:system-flag t) nil [1 20])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [22 42])
+            ("main" function (:type "int") nil [44 107]))          
+      :file "gtest_main.cpp"
+      :pointmax 108
+      :fsize 107
+      :lastmodtime '(24453 17327 853102 329000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-15575c266ef0"
+      :major-mode c++-mode
+      :tags 
+        '( ("iostream" include (:system-flag t) nil [1 20])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [22 42])
+            ("main" function (:type "int") nil [44 107]))          
+      :file "main.cpp"
+      :pointmax 108
+      :fsize 107
+      :lastmodtime '(24453 17319 949193 883000)
+      :unmatched-syntax nil))
+  :file "!home!hyukmyeong!work!arm!ex!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

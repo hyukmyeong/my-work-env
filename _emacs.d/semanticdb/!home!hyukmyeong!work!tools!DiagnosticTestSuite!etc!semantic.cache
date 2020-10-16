@@ -1,0 +1,24 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode js-mode
+      :tags nil
+      :file "config.json"
+      :pointmax 141
+      :fsize 140
+      :lastmodtime '(24425 24245 759969 635000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode js-mode
+      :tags nil
+      :file "dm_config.json"
+      :pointmax 182008
+      :fsize 182007
+      :lastmodtime '(24363 36495 892547 969000)
+      :unmatched-syntax nil))
+  :file "!home!hyukmyeong!work!tools!DiagnosticTestSuite!etc!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

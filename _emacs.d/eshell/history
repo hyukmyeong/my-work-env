@@ -1,0 +1,128 @@
+ls
+myCscope
+ls
+myCscope
+vi myCscope 
+ls
+cd 
+cd work/poky/
+ls
+oe
+./oe-init-build-env 
+cd build/
+ls
+bitbake diagnostic-manager
+cd ..
+ls
+bash
+ls
+bitbake diagnostic-manager
+ll -
+ls -l
+chmod 777 oe-init-build-env 
+ls
+oe-init-build-env
+ls -l
+cd ~/bin/5_easy_go/
+ls
+cd ..
+ls
+cat myCscope 
+cd -
+cd ../../work/poky/
+cat oe-init-build-env 
+source oe-init-build-env 
+ls
+./oe-init-build-env 
+echo $BASH_SOURCE
+./oe-init-build-env 
+bitbake diagnostic-manager
+ls
+cd build/
+ls
+cd tmp/deploy/
+ls
+cd images/
+ls
+runqemu_server.py  qemux86-64 core-image-lara-devel qemuparams="-net socket,mcast=224.244.224.245:30490" nographic
+ls
+cd qemux86-64-daily/
+cd ..
+cd qemux86-64/
+ls
+runqemu_server.py  qemux86-64 core-image-lara-devel qemuparams="-net socket,mcast=224.244.224.245:30490" nographic
+ls
+runqemu_server.py  qemux86-64 core-image-lara-devel qemuparams="-net socket,mcast=224.244.224.245:30490" nographic
+ifconfig
+lsm
+cd work/poky/
+ls
+s
+ls
+ll
+ls -l
+cp oe-init-build-env ~/bin/
+oe-init-build-env 
+cd build/
+ls
+bitbake diagnostic-manager
+cd tmp/deploy/images/
+ls
+cd qemux86-64
+ls
+runqemu_server.py qemux86-64 core-image-lara-devel qemuparams="-net socket,mcast=224.244.224.245:30490" nographic
+ifconfig
+ls
+..
+ls
+cd tools/DiagnosticTestSuite/
+ls
+cd bin/
+ls
+./DiagnosticTestSuite 
+ping 192.168.7.2
+./DiagnosticTestSuite 
+10
+h
+history
+./DiagnosticTestSuite 
+ls
+cd
+ls
+cd work/poky/
+ls
+source ./oe-init-build-env 
+exit
+lls
+vi ../etc/config.json
+ls
+cd ../
+cd etc/
+ls
+cp config_icas3.json config.json
+ls
+cd ..
+cd bin/
+ls
+./DiagnosticTestSuite
+clear
+ls
+./DiagnosticTestSuite
+./DiagnosticTestSuite
+cat ../etc/config.json
+ping fd53:7cb8:383:3::73
+./DiagnosticTestSuite
+./DiagnosticTestSuite
+ls
+cd work/
+..
+cd work/
+clear
+ls
+clear
+ls
+cd my-work-env/
+cd ..
+clear
+ls
+h | grep ssh
