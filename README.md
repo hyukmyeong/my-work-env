@@ -1,2 +1,2 @@
-# vim-bash-env
-add `.` infront of some files to hide them when you use
+# for linux and cygwin
+change `_` into `.` for hidden files
