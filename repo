@@ -1,7 +1,0 @@
-fatal: Cannot get https://gerrit.googlesource.com/git-repo/clone.bundle
-
-# 에러 발생 시, 아래 두 줄 추가하기
-# 링크 : https://stackoverflow.com/questions/26646741/cannot-get-https-gerrit-googlesource-com-git-repo-clone-bundle
-
-import ssl
-ssl._create_default_https_context = ssl._create_unverified_context
