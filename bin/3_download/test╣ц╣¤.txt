@@ -1,2 +1,0 @@
-adb push touch.txt /sdcard/
-adb shell monkey -f /sdcard/touch.txt 100000000
