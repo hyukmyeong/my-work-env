@@ -1,2 +1,2 @@
-# Linux and Cygwin work environment
+# Linux and Cygwin
 change `_` into `.` for hidden files
