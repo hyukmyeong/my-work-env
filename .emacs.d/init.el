@@ -1,5 +1,5 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;; mikki start (초기화)
+;; basic begin
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 (setq user-full-name "Hyuk Myeong"
@@ -50,21 +50,23 @@
                           (bookmarks . 10)
                           (projects . 10))))
 
-;; No Menu Bar, No tool bar, No Scrollbar
+;; no menu bar, no tool bar, no scrollbar
 (menu-bar-mode -1)
 (tool-bar-mode -1)
 (scroll-bar-mode -1)
 
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;; mikki finish (초기화)
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-
-
-
-
+(defalias 'yes-or-no-p 'y-or-n-p)
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;; mikki start (테마, 윈도우)
+;; basic end
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+
+
+
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; theme begin
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 ;(set-frame-parameter nil 'alpha 1)
@@ -92,24 +94,22 @@
 (set-face-attribute 'default nil :height 96)
 (set-frame-font "DejaVu Sans Mono" t t)
 
-
-;; scroll 부드럽게
+;; scroll softly
 ;; for smooth scrolling and disabling the automatical recentering of emacs when moving the cursor
 (setq-default scroll-margin 0
               scroll-conservatively 0
               scroll-up-aggressively 0.01
               scroll-down-aggressively 0.01)
 
-;;; whell setup
+;; wheel setup
 ;(setq mouse-wheel-scroll-amount '(1 ((shift) . 1))) ;; one line at a time
 ;(setq mouse-wheel-progressive-speed nil) ;; don't accelerate scrolling
 ;(setq mouse-wheel-follow-mouse 't) ;; scroll window under mouse
 
-
 ;; always show line numbers
 (when (version<= "26.0.50" emacs-version )
   (global-display-line-numbers-mode))
-;; (global-linum-mode 1)
+; (global-linum-mode 1)
 
 
 (windmove-default-keybindings 'control)
@@ -121,7 +121,7 @@
 (global-set-key (kbd "<S-right>") 'enlarge-window-horizontally)
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;; mikki finish (테마, 윈도우)
+;; theme end
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 
@@ -129,7 +129,7 @@
 
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;; mikki start (helm)
+;; helm-related begin
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 (require 'setup-general)
@@ -157,6 +157,7 @@
 (define-key helm-gtags-mode-map (kbd "M-g <") 'helm-gtags-previous-history)
 (define-key helm-gtags-mode-map (kbd "M-g >") 'helm-gtags-next-history)
 ;(require 'helm-gtags)
+
 ;; Enable helm-gtags-mode
 ;(add-hook 'dired-mode-hook 'helm-gtags-mode)
 ;(add-hook 'eshell-mode-hook 'helm-gtags-mode)
@@ -164,7 +165,7 @@
 ;(add-hook 'c++-mode-hook 'helm-gtags-mode)
 ;(add-hook 'asm-mode-hook 'helm-gtags-mode)
 
-;; ~/.emacs.d/helm-cscope.el 파일 하단에 (add-to-list 'load-path ".") 를 추가해야 함
+;; (add-to-list 'load-path ".") was added at the bottom of ~/.emacs.d/helm-cscope.el
 (require 'xcscope)
 (require 'helm-cscope)
 
@@ -172,7 +173,7 @@
 ;(add-hook 'c-mode-hook 'helm-cscope-mode)
 ;(add-hook 'c++-mode-hook 'helm-cscope-mode)
 
-;; Set key bindings
+;; key bindings
 ;(eval-after-load "helm-cscope"
 ;  '(progn
 ;     (define-key helm-cscope-mode-map (kbd "C-\\ s") 'cscope-find-this-symbol)
@@ -185,16 +186,15 @@
 (global-set-key (kbd "C-[ s") 'cscope-find-this-symbol)
 (global-set-key (kbd "C-[ t") 'cscope-pop-mark)
 
-;; helm-projectile-find-file은 어디에서 실행했든 .git을 인식하고
-;; projectile-find-file은 실행한 폴더에서만 파일을 찾아줌
+;; projectile
 (global-set-key (kbd "M-p p") 'projectile-dired)
 ;(global-set-key (kbd "M-p f") 'project-find-file)
 (global-set-key (kbd "M-p f") 'projectile-find-file)
 (global-set-key (kbd "M-p s") 'projectile-switch-project)
-(global-set-key (kbd "M-p g") 'projectile-grep)
+;(global-set-key (kbd "M-p g") 'projectile-grep)
+(global-set-key (kbd "M-p g") 'rgrep)
 (global-set-key (kbd "M-p n") 'find-file)
 (global-set-key (kbd "M-p b") 'sr-speedbar-toggle)
-
 
 ;; helm's completion while using helm-mode
 ;; from ".emacs.d/elpa/helm-xxx/helm-mode.el"
@@ -210,18 +210,17 @@
 ;    (remove-hook 'helm-move-selection-after-hook 'helm-maybe-update-keymap)))
 ;    (remove-hook 'helm-after-update-hook 'helm-maybe-update-keymap)))
 	
-
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;; mikki finish (helm)
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; helm-related end
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 
 
 
 
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;; mikki start (speedbar)
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; speedbar begin
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 (require 'sr-speedbar)
 (setq sr-speedbar-auto-refresh nil)
@@ -262,17 +261,17 @@
 ;    (setq window-size-fixed 'width)
 ;   )
 
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;; mikki finish (speedbar)
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; speedbar end
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 
 
 
 
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;; mikki start (coding style)
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; coding style begin
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 ;; block and indent
 (global-set-key (kbd "C->") 'indent-rigidly-right-to-tab-stop)
@@ -322,21 +321,20 @@
 ;; show unncessary whitespace that can mess up your diff
 (add-hook 'prog-mode-hook (lambda () (interactive) (setq show-trailing-whitespace 1)))
 
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;; mikki finish (coding style)
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; coding style end
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 
 
 
 
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;; mikki start (ide)
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; c++ ide begin
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 ;; invalidate tags whenver it is updated
 (setq tags-revert-without-query 1)
-(defalias 'yes-or-no-p 'y-or-n-p)
 
 ;; company
 (require 'company-c-headers)
@@ -391,43 +389,40 @@
 ;(load-file (concat user-emacs-directory "/cedet/cedet-devel-load.el"))
 ;(load-file (concat user-emacs-directory "cedet/contrib/cedet-contrib-load.el"))
 
-;;(set
- ;; use gdb-many-windows by default
-;; gdb-many-windows t
+;(set
+; use gdb-many-windows by default
+; gdb-many-windows t
 
- ;; Non-nil means display source file containing the main routine at startup
-;; gdb-show-main t
-;; )
-
+;; Non-nil means display source file containing the main routine at startup
+; gdb-show-main t
+; )
 
 ;; syntax check
-;; (use-package flycheck
-;;  :ensure t
-;;  :init (global-flycheck-mode))
+;(use-package flycheck
+; :ensure t
+; :init (global-flycheck-mode))
 
-;; (add-hook 'after-init-hook #'global-flycheck-mode)
+;(add-hook 'after-init-hook #'global-flycheck-mode)
 
-;; (eval-after-load 'flycheck '(add-hook 'flycheck-mode-hook #'flycheck-irony-setup))
-;; (add-hook 'c++-mode-hook (lambda () (setq flycheck-gcc-language-standard "c++11"))
-;; (add-hook 'c++-mode-hook (lambda () (setq flycheck-gcc-include-path "/usr/include/c++/7.5.0"))
-;; (add-hook 'c++-mode-hook (lambda () (setq flycheck-gcc-standard-library "/usr/include/c++/7.5.0"))
+;(eval-after-load 'flycheck '(add-hook 'flycheck-mode-hook #'flycheck-irony-setup))
+;(add-hook 'c++-mode-hook (lambda () (setq flycheck-gcc-language-standard "c++11"))
+;(add-hook 'c++-mode-hook (lambda () (setq flycheck-gcc-include-path "/usr/include/c++/7.5.0"))
+;(add-hook 'c++-mode-hook (lambda () (setq flycheck-gcc-standard-library "/usr/include/c++/7.5.0"))
 
 ;(add-hook 'c++-mode-hook (lambda () (setq flycheck-clang-language-standard "c++11")))
 ;(setq flycheck-clang-standard-library "libc++")
 
-
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;; mikki finish (ide)
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; c++ ide end
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 
 
 
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;; mikki start (etc)
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; etc begin
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 (defun my-shell-hook ()
   (local-set-key "C-c l" 'comint-clear-buffer))
@@ -445,7 +440,6 @@
               ediff-split-window-function 'split-window-horizontally
               ediff-window-setup-function 'ediff-setup-windows-plain)
 
-
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;; mikki finish (etc)
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; etc end
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
