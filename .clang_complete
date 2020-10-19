@@ -1,0 +1,7 @@
+-std=c++11
+-Wall
+-Wextra
+-pthread
+-Iinclude
+-Ibuild
+-I/home/hyukmyeong/work/please
