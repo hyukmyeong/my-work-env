@@ -10,40 +10,56 @@ echo "1.generate 2.clean"
 echo ""
 read -p "you selected : " input
 
-check_kernel="`pwd | grep kernel`"
-if [ -e "$check_kernel" ]
+if [[ $PWD == ?(*)kernel?(*) ]]
 then
-    echo "it is kernel dir"
+    echo "I'm kernel"
     make ARCH=arm tags cscope
     exit 0
 fi
 
 if [ "$input" -eq 1 ]; then
 
-    # below needs for code completion with emacs company-rtags company-irony
-    # but this should be set in bitbake recipe in yocto
+    if [[ $PWD == ?(*)LARA?(*) ]]
+    then
+        echo "I'm lara"
+        # below needs for code completion with emacs company-rtags company-irony
+        # but this should be set in bitbake recipe in yocto
+        # EXTRA_OECMAKE += "-DCMAKE_EXPORT_COMPILE_COMMANDS=ON"
 
-    rm -rf build && mkdir build && cd build && cmake -DCMAKE_EXPORT_COMPILE_COMMANDS=ON .. && make
-    cp compile_commands.json .. && cd .. && rm -rf build
+        # cp -R /home/hyukmyeong/work/LARA/build/tmp/work/core2-64-poky-linux/diagnostic-manager/1.0-r8/recipe-sysroot/usr/include usr_include
 
-    ln -s /usr/include usr_include
+        # mkdir usr_ara
+        # cp -R /home/hyukmyeong/work/LARA/ara-api/core ./usr_ara/
+        # cp -R /home/hyukmyeong/work/LARA/ara-api/log  ./usr_ara/
+    else
+        echo "I'm not lara"
+        # mkdir usr_include
+        # cp -R /usr/include/c++/8 ./usr_include/
+        mkdir build && cd build && cmake -DCMAKE_EXPORT_COMPILE_COMMANDS=ON ..
+        cp compile_commands.json .. && cd .. && rm -rf build
+    fi
 
-    find . -type d \( -name .git -o -name oe-workdir -o -name oe-logs \) -prune -false -o -name '*.[chS]' -o -name '*.mk' -o -name '*.cc' -o -name '*.hpp' -o -name '*.cpp*' -o -name 'Makefile' ! -type l  >cscope.files
+    find . -type d \( -name .git -o -name oe-workdir -o -name oe-logs \) -prune -false \
+        -o -name '*.[chS]' -o -name '*.mk' -o -name '*.cc' -o -name '*.hpp' -o -name '*.cpp*' -o -name 'Makefile' ! -type l  >cscope.files
+
+
+
+    # find ./usr_include >>cscope.files
     # cscope -bqkv -i cscope.files
     # cscope -b -k
+
     cscope -b -q -k -R -v -i cscope.files
     ctags -R --c++-kinds=+p --fields=+iaS --extra=+q --exclude={.git,oe-workdir,oe-logs}
     gtags
 
     if [ ! -e .git ]; then
-        # git init .
         touch .projectile
     fi
 
 elif [ "$input" -eq 2 ]; then
 
-    rm -rf usr_include
-    rm -rf cscope*
+    rm -rf usr_*
+    rm -rf *cscope*
     rm -rf *tags*
     rm -rf GPATH GRTAGS GSYMS GTAGS
 
@@ -56,5 +72,5 @@ elif [ "$input" -eq 2 ]; then
     fi
 
 else
-    echo do nothing
+    echo "do nothing"
 fi
