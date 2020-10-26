@@ -440,6 +440,16 @@
               ediff-split-window-function 'split-window-horizontally
               ediff-window-setup-function 'ediff-setup-windows-plain)
 
+;(add-hook 'ediff-load-hook
+;          (lambda ()
+;            (set-face-foreground
+;             ediff-current-diff-face-B "red")
+;            (set-face-background
+;             ediff-current-diff-face-B "blue")
+;            (make-face-italic
+;             ediff-current-diff-face-B)))
+
+
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; etc end
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
