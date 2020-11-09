@@ -7,8 +7,7 @@ echo "your dir : $PWD"
 
 echo "what do you want?"
 echo "1.generate 2.clean"
-echo ""
-read -p "you selected : " input
+read -p "you selected : " input1
 
 if [[ $PWD == ?(*)kernel?(*) ]]
 then
@@ -17,7 +16,7 @@ then
     exit 0
 fi
 
-if [ "$input" -eq 1 ]; then
+if [ "$input1" -eq 1 ]; then
 
     if [[ $PWD == ?(*)LARA?(*) ]]
     then
@@ -35,12 +34,20 @@ if [ "$input" -eq 1 ]; then
         echo "I'm not lara"
         # mkdir usr_include
         # cp -R /usr/include/c++/8 ./usr_include/
-        mkdir build && cd build && cmake -DCMAKE_EXPORT_COMPILE_COMMANDS=ON ..
-        cp compile_commands.json .. && cd .. && rm -rf build
+
+        echo ""
+        echo "do you want clang for company-irony"
+        echo "1.yes 2.no"
+        read -p "you selected : " input2
+
+        if [ "$input2" -eq 1 ]; then
+            mkdir build && cd build && cmake -DCMAKE_EXPORT_COMPILE_COMMANDS=ON ..
+            cp compile_commands.json .. && cd .. && rm -rf build
+        fi
     fi
 
     find . -type d \( -name .git -o -name oe-workdir -o -name oe-logs \) -prune -false \
-        -o -name '*.[chS]' -o -name '*.mk' -o -name '*.cc' -o -name '*.hpp' -o -name '*.cpp*' -o -name 'Makefile' ! -type l  >cscope.files
+        -o -name '*.[chS]' -o -name '*.mk' -o -name '*.cc' -o -name '*.hpp' -o -name '*.cpp*' -o -name 'Makefile'-o -name 'CMakeLists.xtx' ! -type l  >cscope.files
 
 
 
@@ -56,12 +63,13 @@ if [ "$input" -eq 1 ]; then
         touch .projectile
     fi
 
-elif [ "$input" -eq 2 ]; then
+elif [ "$input1" -eq 2 ]; then
 
     rm -rf usr_*
     rm -rf *cscope*
     rm -rf *tags*
     rm -rf GPATH GRTAGS GSYMS GTAGS
+    rm compile_commands.json
 
     # if git log 2>&1 | grep fatal; then
     #    rm -rf .git
