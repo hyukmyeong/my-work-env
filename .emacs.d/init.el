@@ -91,8 +91,8 @@
   ;; Corrects (and improves) org-mode's native fontification.
   (doom-themes-org-config))
 
-(set-face-attribute 'default nil :height 96)
-(set-frame-font "DejaVu Sans Mono" t t)
+(set-face-attribute 'default nil :height 100)
+(set-frame-font "DejaVu Sans Mono-8" t t)
 
 ;; scroll softly
 ;; for smooth scrolling and disabling the automatical recentering of emacs when moving the cursor
