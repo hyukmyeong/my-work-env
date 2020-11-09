@@ -224,14 +224,15 @@
 
 (require 'sr-speedbar)
 (setq sr-speedbar-auto-refresh nil)
-(setq sr-speedbar-right-side nil) ; put on left side
-(setq sr-speedbar-width 35)
-(setq sr-speedbar-max-width 35)
-(setq speedbar-show-unknown-files t)
+(setq sr-speedbar-right-side t) ; put on left side
+(setq sr-speedbar-width 50)
+(setq sr-speedbar-max-width 100)
+(setq sr-speedbar-show-unknown-files t)
+;;(custom-set-variables '(speedbar-show-unknown-files t))
 
 ;(setq speedbar-show-unknown-files t)
-;(setq speedbar-use-images nil) ; use text for buttons
-;(setq window-size-fixed 'width))
+(setq sr-speedbar-use-images t) ; use text for buttons
+(setq window-size-fixed 'width))
 ;(with-current-buffer sr-speedbar-buffer-name
 
 ;(use-package dashboard
