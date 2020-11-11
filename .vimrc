@@ -1,12 +1,11 @@
 "============================================================================
-" basic options
+" Basic options
 "============================================================================
 set number                  "nu : show line
 set smartcase
 set ruler                   "ru : inform cursor position in right below side
 set nowrapscan
 "set background=dark
-set shiftwidth=4
 set ignorecase              "dont distinguish capital and little during searching
 set hlsearch                "highlight to searched string"
 set showmatch               "show coupled pharenthisis
@@ -48,21 +47,20 @@ set helplang=ko
 
 
 "============================================================================
-" hexa 
+" Mikki Command 
 "============================================================================
 ":%!xxd : show as hex
 ":%!xxd -r : show as text
 
-
 "============================================================================
-" window
+" Basic Exec
 "============================================================================
 "call feedkeys(":NERDTree\<cr>", 'n')
 "call feedkeys(":Tlist\<cr>", 'n')
 
 
 "============================================================================
-" color
+" Color
 "============================================================================
 "colorscheme torte
 "colorscheme ambient 
@@ -95,13 +93,13 @@ colorscheme minimalist
 "hi ModeMsg ctermfg=2 ctermbg=0
 
 "============================================================================
-" tetris
+" for Fun
 "============================================================================
 "source ~/.vim/plugin/tetris.vim
 
 
 "============================================================================
-" key biding
+" Toggle Key options
 "============================================================================
 "nmap <F2> :bp<cr>
 "nmap <F3> :bn<cr>
@@ -115,10 +113,10 @@ nmap <F8> z.:TlistSync<cr>
 "nmap <F9> :mkview<cr>:qa!<cr>
 "nmap <F10> :NERDTreeToggle<cr>:TlistToggle<cr>:SrcExplToggle<cr>
 nmap <F9> :NERDTreeToggle<cr>:TlistToggle<cr>
-nmap <F11> :mkview<cr>:qa<cr>
+"nmap <F11> :mkview<cr>:qa<cr>
 "nmap <F12> :mkview<cr>:q!<cr>:q!<cr>:q!<cr>:q!<cr>:q!<cr>
-nmap <F12> :%s/from/to/gc
-"nmap <F12> :qa
+nmap <F11> :%s/from/to/gc
+nmap <F12> :qa!<cr>
 "nmap <F7> :MarksBrowser<cr>
 "nmap <F7> :help functions<cr>
 "nmap <F11> :gitv<cr>
@@ -157,8 +155,15 @@ cnoremap <C-E>		<End>       "end of line
 cnoremap <C-F>		<Right>     "forward one character
 cnoremap <C-N>		<Down>      "recall newer command-line
 cnoremap <C-P>		<Up>        "recall previous (older) command-line
-cnoremap <Esc><C-B>	<S-Left>  "back one word
-cnoremap <Esc><C-F>	<S-Right> "forward one word
+cnoremap <Esc><C-B>	<S-Left>    "back one word
+cnoremap <Esc><C-F>	<S-Right>   "forward one word
+
+"terminal mode
+tnoremap <ESC><ESC> <C-\><C-N>
+tnoremap <C-H> <C-W>h
+tnoremap <C-J> <C-W>j
+tnoremap <C-K> <C-W>k
+tnoremap <C-L> <C-W>l
 
 
 "============================================================================
@@ -181,7 +186,7 @@ let marksCloseWhenSeleted=0
 
 
 "============================================================================
-" snippets initialization
+" Snippets initialization
 "============================================================================
 "let g:snipMate = {}
 "let g:snipMate.scope_aliases = {}
@@ -373,9 +378,8 @@ if has("cscope")
        nmap ;csg :call Csg()<cr>
 endif
 
-
 "============================================================================
-" etc
+" Functions
 "============================================================================
 let s:paren_hl_on = 0
 function s:Highlight_Matching_Paren()
