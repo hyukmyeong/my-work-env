@@ -140,6 +140,3 @@ export LD_LIBRARY_PATH=~/local/lib:$LD_LIBRARY_PATH
 
 # cool prompt with git
 #PS1="\u:\w "'$(type __git_ps1 &>/dev/null && __git_ps1 "\033[0;33m%s\033[0m"    )'"\n\$ "
-
-tmux source-file ~/.tmux.conf
-tmux
