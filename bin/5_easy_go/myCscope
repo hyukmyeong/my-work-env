@@ -43,7 +43,12 @@ if [ "$input1" -eq 1 ]; then
             cp compile_commands.json .. && cd .. && rm -rf build
         else
             mkdir usr_include
-            cp -R /usr/include/c++/8 ./usr_include/
+            cp -R /pkg/qnx700_post_cs4_v06_208/target/qnx7/usr/include/c++ usr_include/
+            cp -R /pkg/qnx700_post_cs4_v06_208/target/qnx7/usr/include/net usr_include/
+            cp -R /pkg/qnx700_post_cs4_v06_208/target/qnx7/usr/include/arpa usr_include/
+            cp -R /pkg/qnx700_post_cs4_v06_208/target/qnx7/usr/include/netinet usr_include/
+            cp -R /pkg/qnx700_post_cs4_v06_208/target/qnx7/usr/include/netinet6 usr_include/
+            cp -R /pkg/qnx700_post_cs4_v06_208/target/qnx7/usr/include/sys usr_include/
         fi
     fi
 
