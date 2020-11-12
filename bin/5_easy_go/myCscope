@@ -32,8 +32,6 @@ if [ "$input1" -eq 1 ]; then
         # cp -R /home/hyukmyeong/work/LARA/ara-api/log  ./usr_ara/
     else
         echo "I'm not lara"
-        # mkdir usr_include
-        # cp -R /usr/include/c++/8 ./usr_include/
 
         echo ""
         echo "do you want clang for company-irony"
@@ -43,6 +41,9 @@ if [ "$input1" -eq 1 ]; then
         if [ "$input2" -eq 1 ]; then
             mkdir build && cd build && cmake -DCMAKE_EXPORT_COMPILE_COMMANDS=ON ..
             cp compile_commands.json .. && cd .. && rm -rf build
+        else
+            mkdir usr_include
+            cp -R /usr/include/c++/8 ./usr_include/
         fi
     fi
 
@@ -69,14 +70,17 @@ elif [ "$input1" -eq 2 ]; then
     rm -rf *cscope*
     rm -rf *tags*
     rm -rf GPATH GRTAGS GSYMS GTAGS
-    rm compile_commands.json
-
-    # if git log 2>&1 | grep fatal; then
-    #    rm -rf .git
-    # fi
 
     if [ -e .projectile ]; then
         rm .projectile
+    fi
+
+    if [ -e compile_commands.json ]; then
+        rm compile_commands.json
+    fi
+
+    if [ -e usr_include ]; then
+        rm -rf usr_include
     fi
 
 else
