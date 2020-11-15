@@ -1,0 +1,12 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =0
+let g:netrw_dirhist_0='/home/mk/work/temp'
+let g:netrw_dirhist_9='/home/mk/work'
+let g:netrw_dirhist_8='/home/mk'
+let g:netrw_dirhist_7='/home/mk/work'
+let g:netrw_dirhist_6='/home/mk/work/temp'
+let g:netrw_dirhist_5='/home/mk/work/my-work-env'
+let g:netrw_dirhist_4='/home/mk/work/my-work-env/.vim'
+let g:netrw_dirhist_3='/home/mk/work/my-work-env'
+let g:netrw_dirhist_2='/home/mk/work/my-work-env/.vim'
+let g:netrw_dirhist_1='/home/mk/work/my-work-env'
