@@ -57,9 +57,10 @@ call vundle#begin()
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
 
-Plugin 'atom/fuzzy-finder'
+"Plugin 'atom/fuzzy-finder'
+Plugin 'junegunn/fzf'
+Plugin 'junegunn/fzf.vim'
 
-Plugin 'ervandew/supertab'
 Plugin 'MarcWeber/vim-addon-mw-utils'
 Plugin 'tomtom/tlib_vim'
 
@@ -94,32 +95,26 @@ filetype plugin indent on    " required
 
 
 "============================================================================
-" Ultisnap Setup
+" Ultisnap Setup 
 "============================================================================
 " Trigger configuration. You need to change this to something other than <tab>
 " if you use one of the following:
 " - https://github.com/Valloric/YouCompleteMe
 " - https://github.com/nvim-lua/completion-nvim
-let g:UltiSnipsExpandTrigger="<tab>"
-let g:UltiSnipsJumpForwardTrigger="<c-b>"
-let g:UltiSnipsJumpBackwardTrigger="<c-z>"
+"let g:UltiSnipsExpandTrigger="<c-i>"
+"let g:UltiSnipsJumpForwardTrigger="<c-n>"
+"let g:UltiSnipsJumpBackwardTrigger="<c-p>"
 
 " If you want :UltiSnipsEdit to split your window.
 let g:UltiSnipsEditSplit="vertical"
 
-let g:UltiSnipsExpandTrigger="<Tab>"
-let g:UltiSnipsJumpForwardTrigger="<Tab>"
-let g:UltiSnipsJumpBackwardTrigger="<S-Tab>"
-let g:UltiSnipsEditSplit="vertical"
-" let g:UltiSnipsSnippetDirectories = ['~/.vim/UltiSnips']
-" let g:UltiSnipsSnippetDirectories = ['UltiSnips']
-
 
 "============================================================================
-" Mikki Command
+" Mikki Command 
 "============================================================================
 ":%!xxd : show as hex
 ":%!xxd -r : show as text
+
 
 "============================================================================
 " Basic Exec
@@ -131,9 +126,6 @@ let g:UltiSnipsEditSplit="vertical"
 "============================================================================
 " Color
 "============================================================================
-"colorscheme torte
-"colorscheme ambient
-"colorscheme molokai
 colorscheme minimalist
 
 set t_Co=256
@@ -168,8 +160,8 @@ syntax on
 "============================================================================
 "nmap <F2> :bp<cr>
 "nmap <F3> :bn<cr>
-nmap <F2> <C-W>p
-nmap <F3> <C-W>b
+nmap <F2> <C-W>p 
+nmap <F3> <C-W>b 
 nmap <F4> :w!<cr>
 nmap <F5> :A<cr>
 nmap <F6> :marks<cr>
@@ -192,18 +184,10 @@ nmap <PageDown> :bn<cr>
 noremap <C-A> gg<S-V>G
 inoremap <C-A> <C-O>gg<C-O><S-V>G
 
-map <leader>sp :sp<cr>
-map <leader>vs :vs<cr>
-
 map <leader>tt :tabnew<cr>
 map <leader>tn :tabnext<cr>
 map <leader>tp :tabprevious<cr>
 map <leader>tc :tabclose<cr>
-"
-"map <C-x>t2 :tabnew<cr>
-"map <C-x>tn :tabnext<cr>
-"map <C-x>tp :tabprevious<cr>
-"map <C-x>t0 :tabclose<cr>
 
 nmap <C-H> <C-W>h
 nmap <C-J> <C-W>j
@@ -224,8 +208,7 @@ cnoremap <C-D>		<Del>       "delete character under cursor
 cnoremap <C-E>		<End>       "end of line
 cnoremap <C-F>		<Right>     "forward one character
 cnoremap <C-N>		<Down>      "recall newer command-line
-cnoremap <C-P>		<Up>        "recall previous (older) command-line
-cnoremap <Esc><C-B>	<S-Left>    "back one word
+cnoremap <C-P>		<Up>        "recall previous (older) command-line cnoremap <Esc><C-B>	<S-Left>    "back one word
 cnoremap <Esc><C-F>	<S-Right>   "forward one word
 
 "terminal mode
@@ -250,15 +233,13 @@ tnoremap <C-L> <C-W>l
 
 
 "============================================================================
-" FuzzyFinder initialization
+" Fuf initialization
 "============================================================================
-let g:fuf_file_exclude = '\v\~$|\.(o|exe|dll|bak|swp|class|pyc|orig)$|(^|[/\\])\.(hg|git|bzr)($|[/\\])'
-let g:fuf_ignoreCase = 0
-"map <leader>ff :FufFile .\*/\*/\*/
-map <leader>ff :FufFile ./**/<cr>
-map <leader>fd :FufDir **/<cr>
-map <leader>fm :FufMruCmd<cr>
-map <leader>fb :FufBuffer <cr>
+map <leader>ff :Files<cr>
+map <leader>fb :Buffers<cr>
+map <leader>fc :Commits<cr>
+map <leader>fs :Snippets<cr>
+map <leader>fh :History<cr>
 
 
 "============================================================================
@@ -269,20 +250,17 @@ set tags+=/usr/src/linux-headers-2.6.35-25-generic/tags
 
 au BufWritePost *.c,*.cpp,*.h silent! !ctags -R --c++-kinds=+p --fields=+iaS --extra=+q --exclude={.git,oe-workdir,oe-logs} &
 
-let g:SuperTabDefaultCompletionType = "<C-X><C-O>"
-let g:SuperTabDefaultCompletionType = "context"
-
 "au FileType {h,c,cpp} au BufWritePost <buffer> silent ! [ -e tags ] &&
 "    \ ( awk -F'\t' '$2\!="%:gs/'/'\''/"{print}' tags ; ctags -f- '%:gs/'/'\''/' )
 "    \ | sort -t$'\t' -k1,1 -o tags.new && mv tags.new tags
-
+ 	
 "set tags+=/home001/hyuk.myeong/ICS_cayman/android/kernel/tags
 "set tags+=/home001/hyuk.myeong/ICS_cayman/android/device/lge/tags
 "set tags+=/home001/hyuk.myeong/ICS_cayman/android/device/common/tags
 "set tags+=/home001/hyuk.myeong/ICS_cayman/bootable/bootloader/lk/tags
 "set tags+=/home001/hyuk.myeong/ICS_cayman/vendor/lge/tags
 
-set tags=./tags;
+"set tags=./tags;
 
 
 "============================================================================
@@ -301,21 +279,21 @@ if has("cscope")
        set cscopetag
 
        if filereadable("./cscope.out")
-	 cs add ./cscope.out . -C
+         cs add ./cscope.out . -C
        elseif filereadable("../cscope.out")
-	 cs add ../cscope.out . -C
+         cs add ../cscope.out . -C
        elseif filereadable("../../cscope.out")
-	 cs add ../../cscope.out . -C
+         cs add ../../cscope.out . -C
        elseif filereadable("../../../cscope.out")
-	 cs add ../../../cscope.out . -C
+         cs add ../../../cscope.out . -C
        elseif filereadable("../../../../cscope.out")
-	 cs add ../../../../cscope.out . -C
+         cs add ../../../../cscope.out . -C
        elseif filereadable("../../../../../cscope.out")
-	 cs add ../../../../../cscope.out . -C
+         cs add ../../../../../cscope.out . -C
        elseif filereadable("../../../../../../cscope.out")
-	 cs add ../../../../../../cscope.out . -C
+         cs add ../../../../../../cscope.out . -C
        else
-	 cs add /usr/src/linux/cscope.out
+         cs add /usr/src/linux/cscope.out
        endif
 
 "       if $CSCOPE_DB != ""
@@ -323,60 +301,60 @@ if has("cscope")
 "       endif
 
        if version >= 500
-	 func! Sts()
-	   let st = expand("<cword>")
-	   exe "sts ".st
-	 endfunc
-	 nmap ;st :call Sts()<cr>
+         func! Sts()
+           let st = expand("<cword>")
+           exe "sts ".st
+         endfunc
+         nmap ;st :call Sts()<cr>
 
-	 func! Tj()
-	   let tj = expand("<cword>")
-	   exe "tj ".tj
-	 endfunc
-	 nmap ;tj :call Tj()<cr>
+         func! Tj()
+           let tj = expand("<cword>")
+           exe "tj ".tj
+         endfunc
+         nmap ;tj :call Tj()<cr>
        endif
 
        func! Css()
-	 let css = expand("<cword>")
+         let css = expand("<cword>")
 "         new
-	 exe "cs find s .*".css
+         exe "cs find s .*".css
 
-	 if getline(1) == ""
-	   exe "q!"
-	 endif
+         if getline(1) == ""
+           exe "q!"
+         endif
        endfunc
        nmap ;css :call Css()<cr>
 
        func! Csc()
-	 let csc = expand("<cword>")
+         let csc = expand("<cword>")
 "         new
-	 exe "cs find c .*".csc
+         exe "cs find c .*".csc
 
-	 if getline(1) == ""
-	   exe "q!"
-	 endif
+         if getline(1) == ""
+           exe "q!"
+         endif
        endfunc
        nmap ;csc :call Csc()<cr>
 
        func! Csd()
-	 let csd = expand("<cword>")
+         let csd = expand("<cword>")
 "         new
-	 exe "cs find d .*".csd
+         exe "cs find d .*".csd
 
-	 if getline(1) == ""
-	   exe "q!"
-	 endif
+         if getline(1) == ""
+           exe "q!"
+         endif
        endfunc
        nmap ;csd :call Csd()<cr>
 
        func! Csg()
-	 let csg = expand("<cword>")
+         let csg = expand("<cword>")
 "         new
-	 exe "cs find g .*".csg
+         exe "cs find g .*".csg
 
-	 if getline(1) == ""
-	   exe "q!"
-	 endif
+         if getline(1) == ""
+           exe "q!"
+         endif
        endfunc
        nmap ;csg :call Csg()<cr>
 endif
@@ -434,3 +412,4 @@ autocmd InsertEnter * match none
 " for Fun
 "============================================================================
 "source ~/.vim/plugin/tetris.vim
+
