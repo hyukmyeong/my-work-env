@@ -29,8 +29,6 @@ set backspace=indent,eol,start whichwrap+=<,>,[,]
 set belloff=all
 "set km=startsel,stopesel    "use shift to select blocks
 set path+=~/src/current/android/kernel/include/**;
-"filetype on
-filetype plugin indent on
 let mapleader = ";"
 "set paste
 "set guioptions=gmrL        "eliminate tool box
@@ -44,6 +42,37 @@ let mapleader = ";"
 "set fillchars+=stl:\ ,stlnc:\
 "au BufWritePost *.c,*.cpp,*.h silent! !ctags -R &
 set helplang=ko
+
+
+"============================================================================
+" Vundle settings
+"============================================================================
+filetype off
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+" alternatively, pass a path where Vundle should install plugins
+"call vundle#begin('~/some/path/here')
+
+" let Vundle manage Vundle, required
+Plugin 'VundleVim/Vundle.vim'
+Plugin 'https://github.com/xolox/vim-misc'
+Plugin 'https://github.com/xolox/vim-easytags'
+Plugin 'atom/fuzzy-finder'
+
+" All of your Plugins must be added before the following line
+call vundle#end()            " required
+filetype plugin indent on    " required
+" To ignore plugin indent changes, instead use:
+"filetype plugin on
+"
+" Brief help
+" :PluginList       - lists configured plugins
+" :PluginInstall    - installs plugins; append `!` to update or just :PluginUpdate
+" :PluginSearch foo - searches for foo; append `!` to refresh local cache
+" :PluginClean      - confirms removal of unused plugins; append `!` to auto-approve removal
+"
+" see :h vundle for more details or wiki for FAQ
+" Put your non-Plugin stuff after this line
 
 
 "============================================================================
@@ -134,6 +163,11 @@ map <leader>tt :tabnew<cr>
 map <leader>tn :tabnext<cr>
 map <leader>tp :tabprevious<cr>
 map <leader>tc :tabclose<cr>
+"
+"map <C-x>t2 :tabnew<cr>
+"map <C-x>tn :tabnext<cr>
+"map <C-x>tp :tabprevious<cr>
+"map <C-x>t0 :tabclose<cr>
 
 nmap <C-H> <C-W>h
 nmap <C-J> <C-W>j
@@ -243,7 +277,6 @@ map <leader>ff :FufFile ./**/<cr>
 map <leader>fd :FufDir **/<cr>
 map <leader>fm :FufMruCmd<cr>
 map <leader>fb :FufBuffer <cr>
-
 
 
 "============================================================================
@@ -378,6 +411,7 @@ if has("cscope")
        nmap ;csg :call Csg()<cr>
 endif
 
+
 "============================================================================
 " Functions
 "============================================================================
@@ -424,3 +458,4 @@ endfunction
 
 autocmd CursorMoved,CursorMovedI * call s:Highlight_Matching_Paren()
 autocmd InsertEnter * match none
+
