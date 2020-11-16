@@ -1,67 +1,16 @@
 "============================================================================
-" Vundle packages 
-"============================================================================
-
-filetype off
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
-" alternatively, pass a path where Vundle should install plugins
-"call vundle#begin('~/some/path/here')
-
-" let Vundle manage Vundle, required
-Plugin 'VundleVim/Vundle.vim'
-
-"Plugin 'atom/fuzzy-finder'
-Plugin 'junegunn/fzf'
-Plugin 'junegunn/fzf.vim'
-
-Plugin 'https://tpope.io/vim/fugitive.git'
-
-Plugin 'vim-airline/vim-airline'
-Plugin 'dikiaap/minimalist'
-
-Plugin 'majutsushi/tagbar'
-Plugin 'scrooloose/nerdtree'
-
-Plugin 'valloric/youcompleteme'
-Plugin 'SirVer/ultisnips'
-Plugin 'honza/vim-snippets'
-Plugin 'ervandew/supertab'
-
-Plugin 'chazy/cscope_maps'
-Plugin 'taglist.vim'
-
-Plugin 'scrooloose/nerdcommenter'
-
-
-" All of your Plugins must be added before the following line
-call vundle#end()            " required
-filetype plugin indent on    " required
-" To ignore plugin indent changes, instead use:
-"filetype plugin on
-"
-" Brief help
-" :PluginList       - lists configured plugins
-" :PluginInstall    - installs plugins; append `!` to update or just :PluginUpdate
-" :PluginSearch foo - searches for foo; append `!` to refresh local cache
-" :PluginClean      - confirms removal of unused plugins; append `!` to auto-approve removal
-"
-" see :h vundle for more details or wiki for FAQ
-" Put your non-Plugin stuff after this line
-
-
-
-
-
-"============================================================================
 " Basic options
 "============================================================================
-
 set number                  "nu : show line
 set smartcase
 set ruler                   "ru : inform cursor position in right below side
 set nowrapscan
-set background=dark
+"set background=dark
+"set shiftwidth=2
+"set smartindent
+set tabstop=2
+set expandtab
+set shiftwidth=2
 set ignorecase              "dont distinguish capital and little during searching
 set hlsearch                "highlight to searched string"
 set showmatch               "show coupled pharenthisis
@@ -84,9 +33,10 @@ set mouse=a
 set backspace=indent,eol,start whichwrap+=<,>,[,]
 set belloff=all
 "set km=startsel,stopesel    "use shift to select blocks
-"set path+=~/src/current/android/kernel/include/**;
+set path+=~/src/current/android/kernel/include/**;
+"filetype on
+filetype plugin indent on
 let mapleader = ";"
-set nopaste
 "set paste
 "set guioptions=gmrL        "eliminate tool box
 "set guifont=Dina:h9:cANSI
@@ -101,16 +51,29 @@ set nopaste
 set helplang=ko
 
 
+"============================================================================
+" Mikki Command 
+"============================================================================
+":%!xxd : show as hex
+":%!xxd -r : show as text
 
+"============================================================================
+" Basic Exec
+"============================================================================
+"call feedkeys(":NERDTree\<cr>", 'n')
+"call feedkeys(":Tlist\<cr>", 'n')
 
 
 "============================================================================
 " Color
 "============================================================================
-
-"colorscheme minimalist
+"colorscheme torte
+"colorscheme ambient 
+"colorscheme molokai
+"
 set t_Co=256
 syntax on
+colorscheme minimalist
 
 "hi ModeMsg ctermfg=2 ctermbg=0
 "hi Todo ctermfg=4 ctermbg=0
@@ -134,48 +97,18 @@ syntax on
 "syntax on
 "hi ModeMsg ctermfg=2 ctermbg=0
 
-
-
-
-
 "============================================================================
-" plugins setup 
+" for Fun
 "============================================================================
-" Trigger configuration. You need to change this to something other than <tab>
-" if you use one of the following:
-" - https://github.com/Valloric/YouCompleteMe
-" - https://github.com/nvim-lua/completion-nvim
-
-" make YCM compatible with UltiSnips (using supertab)
-let g:ycm_key_list_select_completion = ['<C-n>', '<Down>']
-let g:ycm_key_list_previous_completion = ['<C-p>', '<Up>']
-" syntax check 
-let g:ycm_show_diagnostics_ui = 1
-"set splitbelow
-
-let g:SuperTabDefaultCompletionType = '<C-n>'
-
-" better key bindings for UltiSnipsExpandTrigger
-let g:UltiSnipsExpandTrigger = "<tab>"
-let g:UltiSnipsJumpForwardTrigger = "<tab>"
-let g:UltiSnipsJumpBackwardTrigger = "<s-tab>"
-
-" If you want :UltiSnipsEdit to split your window.
-let g:UltiSnipsEditSplit="vertical"
-
-let NERDTreeWinPos = "right"
-let g:tagbar_left = 1
-
-
-
+"source ~/.vim/plugin/tetris.vim
 
 
 "============================================================================
 " Toggle Key options
 "============================================================================
-"
-nmap <F2> :bp<cr>
-nmap <F3> :bn<cr> nmap <F2> <C-W>p 
+"nmap <F2> :bp<cr>
+"nmap <F3> :bn<cr>
+nmap <F2> <C-W>p 
 nmap <F3> <C-W>b 
 nmap <F4> :w!<cr>
 nmap <F5> :A<cr>
@@ -183,9 +116,12 @@ nmap <F6> :marks<cr>
 nmap <F7> <Leader>bv
 nmap <F8> z.:TlistSync<cr>
 "nmap <F9> :mkview<cr>:qa!<cr>
-nmap <F9> :NERDTreeToggle<cr>:TagbarToggle<cr>
-nmap <F11> :%s/from/to/gc
-nmap <F12> :qa!<cr>
+"nmap <F10> :NERDTreeToggle<cr>:TlistToggle<cr>:SrcExplToggle<cr>
+nmap <F9> :NERDTreeToggle<cr>:TlistToggle<cr>
+nmap <F11> :mkview<cr>:qa<cr>
+"nmap <F12> :mkview<cr>:q!<cr>:q!<cr>:q!<cr>:q!<cr>:q!<cr>
+nmap <F12> :%s/from/to/gc
+"nmap <F12> :qa
 "nmap <F7> :MarksBrowser<cr>
 "nmap <F7> :help functions<cr>
 "nmap <F11> :gitv<cr>
@@ -195,6 +131,9 @@ nmap <PageDown> :bn<cr>
 
 noremap <C-A> gg<S-V>G
 inoremap <C-A> <C-O>gg<C-O><S-V>G
+
+map <leader>sp :sp<cr>
+map <leader>vs :vs<cr>
 
 map <leader>tt :tabnew<cr>
 map <leader>tn :tabnext<cr>
@@ -214,58 +153,136 @@ vnoremap <BS> d
 vmap <Tab> >gv
 vmap <S-Tab> <gv
 
-cnoremap <C-A> <Home>      "start of line
-cnoremap <C-B> <Left>      "back one character
-cnoremap <C-D> <Del>       "delete character under cursor
-cnoremap <C-E> <End>       "end of line
-cnoremap <C-F> <Right>     "forward one character
-cnoremap <C-N> <Down>      "recall newer command-line
-cnoremap <C-P> <Up>        "recall previous (older) command-line cnoremap <Esc><C-B>	<S-Left>    "back one word
-cnoremap <Esc><C-F>	<S-Right>   "forward one word
-
-"" for terminal mode
-tnoremap <ESC><ESC> <C-\><C-N>
-tnoremap <C-H> <C-W>h
-tnoremap <C-J> <C-W>j
-tnoremap <C-K> <C-W>k
-tnoremap <C-L> <C-W>l
-
-"" for fuf
-map <leader>ff :Files<cr>
-map <leader>fb :Buffers<cr>
-map <leader>fc :Commits<cr>
-map <leader>fs :Snippets<cr>
-map <leader>fh :History<cr>
-
-"" for hexa
-":%!xxd : show as hex
-":%!xxd -r : show as text
+cnoremap <C-A>		<Home>      "start of line
+cnoremap <C-B>		<Left>      "back one character
+cnoremap <C-D>		<Del>       "delete character under cursor
+cnoremap <C-E>		<End>       "end of line
+cnoremap <C-F>		<Right>     "forward one character
+cnoremap <C-N>		<Down>      "recall newer command-line
+cnoremap <C-P>		<Up>        "recall previous (older) command-line
+cnoremap <Esc><C-B>	<S-Left>  "back one word
+cnoremap <Esc><C-F>	<S-Right> "forward one word
 
 
+"============================================================================
+" removes trailing spaces
+"============================================================================
+"function! TrimWhiteSpace()
+"	    %s/\s\+$//e
+"endfunction
+
+"autocmd FileWritePre    * :call TrimWhiteSpace()
+"autocmd FileAppendPre   * :call TrimWhiteSpace()
+"autocmd FilterWritePre  * :call TrimWhiteSpace()
+"autocmd BufWritePre     * :call TrimWhiteSpace()
+
+
+"============================================================================
+" Plugin, ETC.
+"============================================================================
+let marksCloseWhenSeleted=0
+
+
+"============================================================================
+" Snippets initialization
+"============================================================================
+"let g:snipMate = {}
+"let g:snipMate.scope_aliases = {}
+"let g:snipMate.scope_aliases['dosbatch'] = 'dosbatch,bat'
+autocmd BufNewFile,BufRead *.bat set filetype=bat
+
+
+"============================================================================
+" indent color
+"============================================================================
+"let g:indent_guides_auto_colors = 0
+"let g:indent_guides_autocmds_enabled = 1
+"autocmd VimEnter,Colorscheme * call indent_guides#enable()
+"au VimEnter * :IndentGuidesEnable
+"autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd  ctermbg=green
+"autocmd VimEnter,Colorscheme * :hi IndentGuidesEven ctermbg=white
+"let g:indent_guides_start_level = 2
+"let g:indent_guides_guide_size = 1
+
+
+"============================================================================
+" taglist, SrcExplorer, NERDTree initialization
+"============================================================================
+"let Tlist_Use_Right_Window=1
+let Tlist_Use_Left_Window=1
+let Tlist_Inc_WinWidth=0
+let Tlist_Auto_Open=1
+let Tlist_Auto_Update=1
+
+let NERDTreeWinPos = "right"
+let g:srcExpl_winHeight=8
+let g:srcExpl_refreshTime=100
+let g:srcExpl_jumpKey="<ENTER>"
+let g:SrcExpl_gobackKey="<SPACE>"
+let g:SrcExpl_searchLocalDef=1
+let g:SrcExpl_isUpdateTags=0
+let g:SrcExpl_updateTagsCmd="ctags --sort=foldcase -R ."
+let g:SrcExpl_updateTagsKey="<F11>"
+
+let g:SrcExpl_pluginList=[
+  \ "__Tag_List__",
+  \ "_NERD_tree_",
+  \ "Source_Explorer"
+\ ]
+
+
+"============================================================================
+" FuzzyFinder initialization
+"============================================================================
+let g:fuf_file_exclude = '\v\~$|\.(o|exe|dll|bak|swp|class|pyc|orig)$|(^|[/\\])\.(hg|git|bzr)($|[/\\])'
+let g:fuf_ignoreCase = 0
+"map <leader>ff :FufFile .\*/\*/\*/
+map <leader>ff :FufFile ./**/<cr>
+map <leader>fd :FufDir **/<cr>
+map <leader>fm :FufMruCmd<cr>
+map <leader>fb :FufBuffer <cr>
 
 
 
 "============================================================================
-" ctags, cscope initialization
+" OmniCppComplete initialization
 "============================================================================
-"
+" -- optional --
+" auto close options when exiting insert mode
+autocmd InsertLeave * if pumvisible() == 0|pclose|endif
+autocmd CursorMovedI * if pumvisible() == 0|pclose|endif
+set completeopt=menu,menuone
+
+" -- configs --
+let OmmniCpp_GlobalScopeSearch = 1 " search namespaces in this and included files
+let OmniCpp_NamespaceSearch = 1
+let OmniCpp_DisplayMode = 0
+let OmniCpp_ShowScopeInAbbr = 0
+let OmniCpp_ShowPrototypeInAbbr = 0       "show function prototype (i.e. parameters) in popup window
+let OmniCpp_ShowAccess = 1
+let OmniCpp_DefaultNamespaces = []
+let OmniCpp_MayCompleteDot = 1 " autocomplete with .
+let OmniCpp_MayCompleteArrow = 1 " autocomplete with ->
+let OmniCpp_MayCompleteScope = 1 " autocomplete with ::
+let OmniCpp_SelectFirstItem = 0
+let OmniCpp_LocalSearchDecl = 0
+
+
+"============================================================================
+" ctags initialization
+"============================================================================
 set tags=./tags,tags
 set tags+=/usr/src/linux-headers-2.6.35-25-generic/tags
-
-au BufWritePost *.c,*.cpp,*.h silent! !ctags -R --c++-kinds=+p --fields=+iaS --extra=+q --exclude={.git,oe-workdir,oe-logs} &
-
-"au FileType {h,c,cpp} au BufWritePost <buffer> silent ! [ -e tags ] &&
-"    \ ( awk -F'\t' '$2\!="%:gs/'/'\''/"{print}' tags ; ctags -f- '%:gs/'/'\''/' )
-"    \ | sort -t$'\t' -k1,1 -o tags.new && mv tags.new tags
- 	
 "set tags+=/home001/hyuk.myeong/ICS_cayman/android/kernel/tags
 "set tags+=/home001/hyuk.myeong/ICS_cayman/android/device/lge/tags
 "set tags+=/home001/hyuk.myeong/ICS_cayman/android/device/common/tags
 "set tags+=/home001/hyuk.myeong/ICS_cayman/bootable/bootloader/lk/tags
 "set tags+=/home001/hyuk.myeong/ICS_cayman/vendor/lge/tags
 
-"set tags=./tags;
 
+"============================================================================
+" cscope initialization
+"============================================================================
 "cscope reset
 "cscope show
 "cscope kill
@@ -359,9 +376,8 @@ if has("cscope")
        nmap ;csg :call Csg()<cr>
 endif
 
-
 "============================================================================
-" Highliht matching
+" Functions
 "============================================================================
 let s:paren_hl_on = 0
 function s:Highlight_Matching_Paren()
@@ -406,21 +422,3 @@ endfunction
 
 autocmd CursorMoved,CursorMovedI * call s:Highlight_Matching_Paren()
 autocmd InsertEnter * match none
-
-
-"============================================================================
-" Deprecated 
-"============================================================================
-"
-"" removes trailing spaces
-"function! TrimWhiteSpace()
-"	    %s/\s\+$//e
-"endfunction
-
-"autocmd FileWritePre    * :call TrimWhiteSpace()
-"autocmd FileAppendPre   * :call TrimWhiteSpace()
-"autocmd FilterWritePre  * :call TrimWhiteSpace()
-"autocmd BufWritePre     * :call TrimWhiteSpace()
-
-"" tetris 
-"source ~/.vim/plugin/tetris.vim

@@ -1,6 +1,62 @@
 "============================================================================
+" Vundle packages 
+"============================================================================
+
+filetype off
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+" alternatively, pass a path where Vundle should install plugins
+"call vundle#begin('~/some/path/here')
+
+" let Vundle manage Vundle, required
+Plugin 'VundleVim/Vundle.vim'
+
+"Plugin 'atom/fuzzy-finder'
+Plugin 'junegunn/fzf'
+Plugin 'junegunn/fzf.vim'
+
+Plugin 'https://tpope.io/vim/fugitive.git'
+
+Plugin 'vim-airline/vim-airline'
+Plugin 'dikiaap/minimalist'
+
+Plugin 'majutsushi/tagbar'
+Plugin 'scrooloose/nerdtree'
+
+Plugin 'valloric/youcompleteme'
+Plugin 'SirVer/ultisnips'
+Plugin 'honza/vim-snippets'
+Plugin 'ervandew/supertab'
+
+Plugin 'chazy/cscope_maps'
+Plugin 'taglist.vim'
+
+Plugin 'scrooloose/nerdcommenter'
+
+
+" All of your Plugins must be added before the following line
+call vundle#end()            " required
+filetype plugin indent on    " required
+" To ignore plugin indent changes, instead use:
+"filetype plugin on
+"
+" Brief help
+" :PluginList       - lists configured plugins
+" :PluginInstall    - installs plugins; append `!` to update or just :PluginUpdate
+" :PluginSearch foo - searches for foo; append `!` to refresh local cache
+" :PluginClean      - confirms removal of unused plugins; append `!` to auto-approve removal
+"
+" see :h vundle for more details or wiki for FAQ
+" Put your non-Plugin stuff after this line
+
+
+
+
+
+"============================================================================
 " Basic options
 "============================================================================
+
 set number                  "nu : show line
 set smartcase
 set ruler                   "ru : inform cursor position in right below side
@@ -45,89 +101,14 @@ set nopaste
 set helplang=ko
 
 
-"============================================================================
-" Vundle settings
-"============================================================================
-filetype off
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
-" alternatively, pass a path where Vundle should install plugins
-"call vundle#begin('~/some/path/here')
 
-" let Vundle manage Vundle, required
-Plugin 'VundleVim/Vundle.vim'
-
-"Plugin 'atom/fuzzy-finder'
-Plugin 'junegunn/fzf'
-Plugin 'junegunn/fzf.vim'
-
-Plugin 'MarcWeber/vim-addon-mw-utils'
-Plugin 'tomtom/tlib_vim'
-
-Plugin 'https://tpope.io/vim/fugitive.git'
-
-Plugin 'vim-airline/vim-airline'
-
-Plugin 'dikiaap/minimalist'
-
-" Track the engine.
-Plugin 'SirVer/ultisnips'
-" Snippets are separated from the engine. Add this if you want them:
-Plugin 'honza/vim-snippets'
-
-Plugin 'valloric/youcompleteme'
-
-
-" All of your Plugins must be added before the following line
-call vundle#end()            " required
-filetype plugin indent on    " required
-" To ignore plugin indent changes, instead use:
-"filetype plugin on
-"
-" Brief help
-" :PluginList       - lists configured plugins
-" :PluginInstall    - installs plugins; append `!` to update or just :PluginUpdate
-" :PluginSearch foo - searches for foo; append `!` to refresh local cache
-" :PluginClean      - confirms removal of unused plugins; append `!` to auto-approve removal
-"
-" see :h vundle for more details or wiki for FAQ
-" Put your non-Plugin stuff after this line
-
-
-"============================================================================
-" Ultisnap Setup 
-"============================================================================
-" Trigger configuration. You need to change this to something other than <tab>
-" if you use one of the following:
-" - https://github.com/Valloric/YouCompleteMe
-" - https://github.com/nvim-lua/completion-nvim
-"let g:UltiSnipsExpandTrigger="<c-i>"
-"let g:UltiSnipsJumpForwardTrigger="<c-n>"
-"let g:UltiSnipsJumpBackwardTrigger="<c-p>"
-
-" If you want :UltiSnipsEdit to split your window.
-let g:UltiSnipsEditSplit="vertical"
-
-
-"============================================================================
-" Mikki Command 
-"============================================================================
-":%!xxd : show as hex
-":%!xxd -r : show as text
-
-
-"============================================================================
-" Basic Exec
-"============================================================================
-"call feedkeys(":NERDTree\<cr>", 'n')
-"call feedkeys(":Tlist\<cr>", 'n')
 
 
 "============================================================================
 " Color
 "============================================================================
-colorscheme minimalist
 
+"colorscheme minimalist
 set t_Co=256
 syntax on
 
@@ -155,12 +136,46 @@ syntax on
 
 
 
+
+
+"============================================================================
+" plugins setup 
+"============================================================================
+" Trigger configuration. You need to change this to something other than <tab>
+" if you use one of the following:
+" - https://github.com/Valloric/YouCompleteMe
+" - https://github.com/nvim-lua/completion-nvim
+
+" make YCM compatible with UltiSnips (using supertab)
+let g:ycm_key_list_select_completion = ['<C-n>', '<Down>']
+let g:ycm_key_list_previous_completion = ['<C-p>', '<Up>']
+" syntax check 
+let g:ycm_show_diagnostics_ui = 1
+"set splitbelow
+
+let g:SuperTabDefaultCompletionType = '<C-n>'
+
+" better key bindings for UltiSnipsExpandTrigger
+let g:UltiSnipsExpandTrigger = "<tab>"
+let g:UltiSnipsJumpForwardTrigger = "<tab>"
+let g:UltiSnipsJumpBackwardTrigger = "<s-tab>"
+
+" If you want :UltiSnipsEdit to split your window.
+let g:UltiSnipsEditSplit="vertical"
+
+let NERDTreeWinPos = "right"
+let g:tagbar_left = 1
+
+
+
+
+
 "============================================================================
 " Toggle Key options
 "============================================================================
-"nmap <F2> :bp<cr>
-"nmap <F3> :bn<cr>
-nmap <F2> <C-W>p 
+"
+nmap <F2> :bp<cr>
+nmap <F3> :bn<cr> nmap <F2> <C-W>p 
 nmap <F3> <C-W>b 
 nmap <F4> :w!<cr>
 nmap <F5> :A<cr>
@@ -168,10 +183,7 @@ nmap <F6> :marks<cr>
 nmap <F7> <Leader>bv
 nmap <F8> z.:TlistSync<cr>
 "nmap <F9> :mkview<cr>:qa!<cr>
-"nmap <F10> :NERDTreeToggle<cr>:TlistToggle<cr>:SrcExplToggle<cr>
-nmap <F9> :NERDTreeToggle<cr>:TlistToggle<cr>
-"nmap <F11> :mkview<cr>:qa<cr>
-"nmap <F12> :mkview<cr>:q!<cr>:q!<cr>:q!<cr>:q!<cr>:q!<cr>
+nmap <F9> :NERDTreeToggle<cr>:TagbarToggle<cr>
 nmap <F11> :%s/from/to/gc
 nmap <F12> :qa!<cr>
 "nmap <F7> :MarksBrowser<cr>
@@ -202,49 +214,41 @@ vnoremap <BS> d
 vmap <Tab> >gv
 vmap <S-Tab> <gv
 
-cnoremap <C-A>		<Home>      "start of line
-cnoremap <C-B>		<Left>      "back one character
-cnoremap <C-D>		<Del>       "delete character under cursor
-cnoremap <C-E>		<End>       "end of line
-cnoremap <C-F>		<Right>     "forward one character
-cnoremap <C-N>		<Down>      "recall newer command-line
-cnoremap <C-P>		<Up>        "recall previous (older) command-line cnoremap <Esc><C-B>	<S-Left>    "back one word
+cnoremap <C-A> <Home>      "start of line
+cnoremap <C-B> <Left>      "back one character
+cnoremap <C-D> <Del>       "delete character under cursor
+cnoremap <C-E> <End>       "end of line
+cnoremap <C-F> <Right>     "forward one character
+cnoremap <C-N> <Down>      "recall newer command-line
+cnoremap <C-P> <Up>        "recall previous (older) command-line cnoremap <Esc><C-B>	<S-Left>    "back one word
 cnoremap <Esc><C-F>	<S-Right>   "forward one word
 
-"terminal mode
+"" for terminal mode
 tnoremap <ESC><ESC> <C-\><C-N>
 tnoremap <C-H> <C-W>h
 tnoremap <C-J> <C-W>j
 tnoremap <C-K> <C-W>k
 tnoremap <C-L> <C-W>l
 
-
-"============================================================================
-" removes trailing spaces
-"============================================================================
-"function! TrimWhiteSpace()
-"	    %s/\s\+$//e
-"endfunction
-
-"autocmd FileWritePre    * :call TrimWhiteSpace()
-"autocmd FileAppendPre   * :call TrimWhiteSpace()
-"autocmd FilterWritePre  * :call TrimWhiteSpace()
-"autocmd BufWritePre     * :call TrimWhiteSpace()
-
-
-"============================================================================
-" Fuf initialization
-"============================================================================
+"" for fuf
 map <leader>ff :Files<cr>
 map <leader>fb :Buffers<cr>
 map <leader>fc :Commits<cr>
 map <leader>fs :Snippets<cr>
 map <leader>fh :History<cr>
 
+"" for hexa
+":%!xxd : show as hex
+":%!xxd -r : show as text
+
+
+
+
 
 "============================================================================
-" ctags initialization
+" ctags, cscope initialization
 "============================================================================
+"
 set tags=./tags,tags
 set tags+=/usr/src/linux-headers-2.6.35-25-generic/tags
 
@@ -262,10 +266,6 @@ au BufWritePost *.c,*.cpp,*.h silent! !ctags -R --c++-kinds=+p --fields=+iaS --e
 
 "set tags=./tags;
 
-
-"============================================================================
-" cscope initialization
-"============================================================================
 "cscope reset
 "cscope show
 "cscope kill
@@ -361,7 +361,7 @@ endif
 
 
 "============================================================================
-" Functions
+" Highliht matching
 "============================================================================
 let s:paren_hl_on = 0
 function s:Highlight_Matching_Paren()
@@ -409,7 +409,18 @@ autocmd InsertEnter * match none
 
 
 "============================================================================
-" for Fun
+" Deprecated 
 "============================================================================
-"source ~/.vim/plugin/tetris.vim
+"
+"" removes trailing spaces
+"function! TrimWhiteSpace()
+"	    %s/\s\+$//e
+"endfunction
 
+"autocmd FileWritePre    * :call TrimWhiteSpace()
+"autocmd FileAppendPre   * :call TrimWhiteSpace()
+"autocmd FilterWritePre  * :call TrimWhiteSpace()
+"autocmd BufWritePre     * :call TrimWhiteSpace()
+
+"" tetris 
+"source ~/.vim/plugin/tetris.vim
