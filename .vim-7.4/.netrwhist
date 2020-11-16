@@ -1,0 +1,8 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =6
+let g:netrw_dirhist_1='/home/hyuk.myeong/work/LARA_final/meta-openembedded/meta-python/recipes-devtools/python/python-systemd'
+let g:netrw_dirhist_2='/home/hyuk.myeong/work/LARA_new/build/tmp/work/core2-64-poky-linux/diagnostic-manager/1.0-r8/diagnostic-manager-1.0/CMakeFiles/Export/_usr/lib/cmake/DiagnosticManager'
+let g:netrw_dirhist_3='/home/hyuk.myeong/work/LARA/sample-applications/ucm/swcl_pkgmgr_functional_test/platform/gen-manifest/ucm'
+let g:netrw_dirhist_4='/home/hyuk.myeong/work/I780/CPU/QNX/Apps/source/autosar/third_party/vector/amsr-vag-app-dsa/src/etc/production'
+let g:netrw_dirhist_5='/home/hyuk.myeong/work/I780/.repo'
+let g:netrw_dirhist_6='/home/hyuk.myeong'
