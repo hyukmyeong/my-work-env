@@ -84,7 +84,6 @@ set mouse=a
 set backspace=indent,eol,start whichwrap+=<,>,[,]
 set belloff=all
 "set km=startsel,stopesel    "use shift to select blocks
-"set path+=~/src/current/android/kernel/include/**;
 let mapleader = ";"
 set nopaste
 "set paste
@@ -97,7 +96,6 @@ set nopaste
 "set comments=sl:/*,mb:*,elx:*/
 "set loadplugins
 "set fillchars+=stl:\ ,stlnc:\
-"au BufWritePost *.c,*.cpp,*.h silent! !ctags -R &
 set helplang=ko
 
 
@@ -149,8 +147,9 @@ syntax on
 " make YCM compatible with UltiSnips (using supertab)
 let g:ycm_key_list_select_completion = ['<C-n>', '<Down>']
 let g:ycm_key_list_previous_completion = ['<C-p>', '<Up>']
-" syntax check 
 let g:ycm_show_diagnostics_ui = 1
+"let g:ycm_autoclose_preview_window_after_insertion = 1
+"let g:ycm_autoclose_preview_window_after_completion = 1
 "set splitbelow
 
 let g:SuperTabDefaultCompletionType = '<C-n>'
@@ -249,8 +248,12 @@ map <leader>fh :History<cr>
 " ctags, cscope initialization
 "============================================================================
 "
-set tags=./tags,tags
-set tags+=/usr/src/linux-headers-2.6.35-25-generic/tags
+set tags+=./tags;
+"set tags+=/home/mk/.vim/tags/wtags;
+"set isk+=:
+
+set path+=/usr/include,/usr/include/c++/9;
+set path+=/usr/local/include;
 
 au BufWritePost *.c,*.cpp,*.h silent! !ctags -R --c++-kinds=+p --fields=+iaS --extra=+q --exclude={.git,oe-workdir,oe-logs} &
 
@@ -258,14 +261,6 @@ au BufWritePost *.c,*.cpp,*.h silent! !ctags -R --c++-kinds=+p --fields=+iaS --e
 "    \ ( awk -F'\t' '$2\!="%:gs/'/'\''/"{print}' tags ; ctags -f- '%:gs/'/'\''/' )
 "    \ | sort -t$'\t' -k1,1 -o tags.new && mv tags.new tags
  	
-"set tags+=/home001/hyuk.myeong/ICS_cayman/android/kernel/tags
-"set tags+=/home001/hyuk.myeong/ICS_cayman/android/device/lge/tags
-"set tags+=/home001/hyuk.myeong/ICS_cayman/android/device/common/tags
-"set tags+=/home001/hyuk.myeong/ICS_cayman/bootable/bootloader/lk/tags
-"set tags+=/home001/hyuk.myeong/ICS_cayman/vendor/lge/tags
-
-"set tags=./tags;
-
 "cscope reset
 "cscope show
 "cscope kill

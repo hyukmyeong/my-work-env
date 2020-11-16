@@ -18,44 +18,29 @@ fi
 
 if [ "$input1" -eq 1 ]; then
 
-    if [[ $PWD == ?(*)LARA?(*) ]]
-    then
-        echo "I'm lara"
-        # below needs for code completion with emacs company-rtags company-irony
-        # but this should be set in bitbake recipe in yocto
-        # EXTRA_OECMAKE += "-DCMAKE_EXPORT_COMPILE_COMMANDS=ON"
+    echo ""
+    echo "Do you use clang for code-completion?"
+    echo "1.yes 2.no"
+    read -p "you selected : " input2
 
-        # cp -R /home/hyukmyeong/work/LARA/build/tmp/work/core2-64-poky-linux/diagnostic-manager/1.0-r8/recipe-sysroot/usr/include usr_include
+    if [ "$input2" -eq 1 ]; then
+        # clang completion plugins
+        # (1) emacs : company-rtags, company-irony
+        # (2) vim   : youcompleteme, clang_complete
 
-        # mkdir usr_ara
-        # cp -R /home/hyukmyeong/work/LARA/ara-api/core ./usr_ara/
-        # cp -R /home/hyukmyeong/work/LARA/ara-api/log  ./usr_ara/
+        # how to create compile_commands.json
+        echo "ok, then build your project like below";
+        echo "(1) cmake : cmake -DCMAKE_EXPORT_COMPILE_COMMANDS=ON ..";
+        echo "(2) yocto : EXTRA_OECMAKE += "-DCMAKE_EXPORT_COMPILE_COMMANDS=ON"";
     else
-        echo "I'm not lara"
-
-        echo ""
-        echo "do you want clang for company-irony"
-        echo "1.yes 2.no"
-        read -p "you selected : " input2
-
-        if [ "$input2" -eq 1 ]; then
-            mkdir build && cd build && cmake -DCMAKE_EXPORT_COMPILE_COMMANDS=ON ..
-            cp compile_commands.json .. && cd .. && rm -rf build
-        else
-            mkdir usr_include
-            cp -R /pkg/qnx700_post_cs4_v06_208/target/qnx7/usr/include/c++ usr_include/
-            cp -R /pkg/qnx700_post_cs4_v06_208/target/qnx7/usr/include/net usr_include/
-            cp -R /pkg/qnx700_post_cs4_v06_208/target/qnx7/usr/include/arpa usr_include/
-            cp -R /pkg/qnx700_post_cs4_v06_208/target/qnx7/usr/include/netinet usr_include/
-            cp -R /pkg/qnx700_post_cs4_v06_208/target/qnx7/usr/include/netinet6 usr_include/
-            cp -R /pkg/qnx700_post_cs4_v06_208/target/qnx7/usr/include/sys usr_include/
-        fi
+        echo "ok, then do nothing";
+        # below is substitude with the option, set path, in .vimrc
+        # mkdir usr_include
+        # cp -R /usr/include/c++/7 usr_include/
     fi
 
     find . -type d \( -name .git -o -name oe-workdir -o -name oe-logs \) -prune -false \
         -o -name '*.[chS]' -o -name '*.mk' -o -name '*.cc' -o -name '*.hpp' -o -name '*.cpp*' -o -name 'Makefile'-o -name 'CMakeLists.xtx' ! -type l  >cscope.files
-
-
 
     # find ./usr_include >>cscope.files
     # cscope -bqkv -i cscope.files
@@ -91,3 +76,4 @@ elif [ "$input1" -eq 2 ]; then
 else
     echo "do nothing"
 fi
+
