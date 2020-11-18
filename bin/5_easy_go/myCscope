@@ -47,8 +47,24 @@ if [ "$input1" -eq 1 ]; then
     # cscope -b -k
 
     cscope -b -q -k -R -v -i cscope.files
-    ctags -R --c++-kinds=+p --fields=+iaS --extra=+q --exclude={.git,oe-workdir,oe-logs}
     gtags
+    ctags -R --languages=c++ --langmap=c++:+.tcc. --c++-kinds=+p --fields=+iaS --extra=+q --exclude={.git,oe-workdir,oe-logs}
+
+    # a few more ways to create c++ tags
+    # https://stackoverflow.com/questions/24489855/generate-ctags-for-libstdc-from-current-gcc
+    # (step 1) copy standard source code
+    # cd ~/.vim
+    # cp -R /usr/include/c++/7.0 cpp_src
+    # find . -type f | xargs sed -i 's/namespace std _GLIBCXX_VISIBILITY(default)/namespace std/'
+    # find /usr/include/c++/ -type f -exec grep '_GLIBCXX_' {} \; | grep -v -E '^[#if|#end]' | sort -u > glibcxx.log
+    # (step 2-1)
+    # ctags -f cpp_tags -R --c++-kinds=+p --fields=+iaS --extra=+q --language-force=C++ -I _GLIBCXX_NOEXCEPT -n cpp_src
+    # (step 2-2)
+    # ctags -f cpp_tags --languages=c,c++ --langmap=c++:+.tcc. --c-kinds=cdefgmstuv --c++-kinds=cdefgmstuv --fields=+iaSmKz --extra=+q -I "_GLIBCXX_BEGIN_NAMESPACE_VERSION _GLIBCXX_END_NAMESPACE_VERSION _GLIBCXX_VISIBILITY+" -n cpp_src
+    # (step 2-3)
+    # ctags -f cpp_tags -R --languages=c++ --langmap=c++:+.tcc. --c++-kinds=+p --fields=+iaS --extra=+qf -I "_GLIBCXX_NOEXCEPT _GLIBCXX_USE_NOEXCEPT _GLIBCXX_NOTHROW _GLIBCXX_USE_CONSTEXPR _GLIBCXX_BEGIN_NAMESPACE_CONTAINER _GLIBCXX_END_NAMESPACE_CONTAINER _GLIBCXX_CONSTEXPR _GLIBCXX_NAMESPACE_LDBL _GLIBCXX_BEGIN_NAMESPACE_VERSION _GLIBCXX_END_NAMESPACE_VERSION _GLIBCXX_VISIBILITY+" -n cpp_src
+    # (step 3) add .vimrc
+    # tags+=/home/hyuk.myeong/.vim/cpp_tags
 
     if [ ! -e .git ]; then
         touch .projectile
@@ -76,4 +92,3 @@ elif [ "$input1" -eq 2 ]; then
 else
     echo "do nothing"
 fi
-
