@@ -48,7 +48,8 @@ if [ "$input1" -eq 1 ]; then
 
     cscope -b -q -k -R -v -i cscope.files
     gtags
-    ctags -R --languages=c++ --langmap=c++:+.tcc. --c++-kinds=+p --fields=+iaS --extra=+q --exclude={.git,oe-workdir,oe-logs}
+    # ctags -R --languages=c++ --langmap=c++:+.tcc. --c++-kinds=+p --fields=+iaS --extra=+q --exclude={.git,oe-workdir,oe-logs}
+    ctags -R --c++-kinds=+p --fields=+iaS --extra=+q --exclude={.git,oe-workdir,oe-logs}
 
     # a few more ways to create c++ tags
     # https://stackoverflow.com/questions/24489855/generate-ctags-for-libstdc-from-current-gcc
