@@ -16,15 +16,15 @@ echo
 echo =================================== result ======================================
 
 if [ "$input" == "c" ] || [ "$input" -eq 1 ]; then
-       egrep -Rin "$1" --include="*.c" --include="*.h" .
+       egrep -IHRin "$1" --include="*.c" --include="*.h" .
 elif [ "$input" == "cpp" ] || [ "$input" -eq 2 ]; then
-       egrep -Rin "$1" --include="*.cpp" --include="*.h" .
+       egrep -IHRin "$1" --include="*.cpp" --include="*.h" .
 elif [ "$input" == "java" ] || [ "$input" -eq 3 ]; then
-       egrep -Rin "$1" --include="*.java" --include="*.h" .
+       egrep -IHRin "$1" --include="*.java" --include="*.h" .
 elif [ "$input" == "mk" ] || [ "$input" -eq 4 ]; then
-       egrep -Rin "$1" --include="*.mk" --include="*.h" .
+       egrep -IHRin "$1" --include="*.mk" --include="*.h" .
 elif [ "$input" == "all" ] || [ "$input" -eq 5 ]; then
-       egrep -rin "$1" --exclude="*.o" --exclude="*.lib" --exclude-dir=".git" --exclude="cscope.out" --exclude="cscope.out.po" --exclude="cscope.out.in" --exclude="cscope.files" --exclude="tags" --exclude="log.txt" --exclude="GPATH" --exclude="GRTAGS" --exclude="GTAGS".
+       egrep -IHRin "$1" --exclude="*.o" --exclude="*.lib" --exclude-dir=".git" --exclude="cscope.out" --exclude="cscope.out.po" --exclude="cscope.out.in" --exclude="cscope.files" --exclude="tags" --exclude="log.txt" --exclude="GPATH" --exclude="GRTAGS" --exclude="GTAGS".
 else
        echo do nothing
 fi
