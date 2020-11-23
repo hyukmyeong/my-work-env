@@ -1,0 +1,36 @@
+#!/bin/bash
+
+declare -i input #r,ead/i,nteger/a,rray/f,unc/e,x,port
+
+if [ -z "$1" ]
+then
+    echo "usage : myQNX [file]"
+    exit
+fi
+
+echo "which one do you want?"
+echo "1.nm 2.strip 3.objdump 4.see all"
+read -p "you selected : " input
+
+echo -n "wait"
+
+#for (( i = 0; i < 2; i++ ))
+#do
+#       echo -n .
+#       sleep 1
+#done
+
+echo
+echo =================================== result ======================================
+
+if [ "$input" -eq 1 ]; then
+    /pkg/qnx700_post_cs4_v06_208/host/linux/x86_64/usr/bin/aarch64-unknown-nto-qnx7.0.0-nm "$1"
+elif [ "$input" -eq 2 ]; then
+    /pkg/qnx700_post_cs4_v06_208/host/linux/x86_64/usr/bin/aarch64-unknown-nto-qnx7.0.0-strip "$1"
+elif [ "$input" -eq 3 ]; then
+    /pkg/qnx700_post_cs4_v06_208/host/linux/x86_64/usr/bin/aarch64-unknown-nto-qnx7.0.0-objdump "$1"
+elif [ "$input" -eq 4 ]; then
+    ls /pkg/qnx700_post_cs4_v06_208/host/linux/x86_64/usr/bin/aarch64-unknown-nto-qnx7.0.0-*
+else
+       echo do nothing
+fi
