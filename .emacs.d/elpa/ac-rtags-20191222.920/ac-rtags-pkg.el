@@ -1,0 +1,2 @@
+;;; Generated package description from /home/mk/.emacs.d/elpa/ac-rtags-20191222.920/ac-rtags.el  -*- no-byte-compile: t -*-
+(define-package "ac-rtags" "20191222.920" "auto-complete back-end for RTags" '((auto-complete "1.4.0") (rtags "2.10")) :commit "e6c7005bfad5df335ce86378b642ebd33aa66f26" :authors '(("Jan Erik Hanssen" . "jhanssen@gmail.com") ("Anders Bakken" . "agbakken@gmail.com")) :maintainer '("Jan Erik Hanssen" . "jhanssen@gmail.com") :url "https://github.com/Andersbakken/rtags")

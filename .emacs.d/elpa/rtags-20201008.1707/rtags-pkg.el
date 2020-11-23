@@ -1,0 +1,2 @@
+;;; Generated package description from /home/mk/.emacs.d/elpa/rtags-20201008.1707/rtags.el  -*- no-byte-compile: t -*-
+(define-package "rtags" "20201008.1707" "A front-end for rtags" '((emacs "24.3")) :commit "e6c7005bfad5df335ce86378b642ebd33aa66f26" :authors '(("Jan Erik Hanssen" . "jhanssen@gmail.com") ("Anders Bakken" . "agbakken@gmail.com")) :maintainer '("Jan Erik Hanssen" . "jhanssen@gmail.com") :url "https://github.com/Andersbakken/rtags")

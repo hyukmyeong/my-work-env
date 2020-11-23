@@ -1,0 +1,2 @@
+;;; Generated package description from /home/mk/.emacs.d/elpa/helm-rtags-20191222.920/helm-rtags.el  -*- no-byte-compile: t -*-
+(define-package "helm-rtags" "20191222.920" "A front-end for rtags" '((helm "2.0") (rtags "2.10")) :commit "e6c7005bfad5df335ce86378b642ebd33aa66f26" :authors '(("Jan Erik Hanssen" . "jhanssen@gmail.com") ("Anders Bakken" . "agbakken@gmail.com")) :maintainer '("Jan Erik Hanssen" . "jhanssen@gmail.com") :url "https://github.com/Andersbakken/rtags")
