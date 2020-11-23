@@ -90,7 +90,7 @@
   (doom-themes-org-config))
 
 (set-face-attribute 'default nil :height 100)
-(set-frame-font "DejaVu Sans Mono-8" t t)
+(set-frame-font "DejaVu Sans Mono-12" t t)
 
 
 ;; scroll 부드럽게
