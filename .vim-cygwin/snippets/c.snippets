@@ -1,0 +1,204 @@
+# main()
+snippet main
+	int main(int argc, const char *argv[])
+	{
+		${1:/* code */}
+		return 0;
+	}
+	
+# #include <...>
+snippet inc
+	#include <${1:stdio}.h>${2}
+	
+# #include "..."
+snippet Inc
+	#include "${1:`Filename("$1.h")`}"${2}
+# #ifndef ... #define ... #endif
+	
+snippet Def
+	#ifndef $1
+	#define ${1:SYMBOL} ${2:value}
+	#endif
+	${3}
+snippet def
+	#define 
+snippet ifdef
+	#ifdef ${1:FOO}
+		${2:#define }
+	#endif
+	${2}
+snippet #if
+	#if ${1:FOO}
+		${2}
+	#endif
+	${3}
+	
+# Header Include-Guard
+# (the randomizer code is taken directly from TextMate; it could probably be
+# cleaner, I don't know how to do it in vim script)
+snippet once
+	#ifndef ${1:`toupper(Filename('', 'UNTITLED').'_'.system("/usr/bin/ruby -e 'print (rand * 2821109907455).round.to_s(36)'"))`}
+
+	#define $1
+
+	${2}
+
+	#endif /* end of include guard: $1 */
+	
+# If Condition
+snippet If
+	if (${1:/* condition */})
+	{
+		${2:/* code */}
+	}
+	else if (${3:/* condition */})
+	{
+		${4:/* code */}
+	else
+	{
+		${5:/* code */}
+	}
+	${6}
+	
+snippet Switch
+	switch (${1:/* variable */}) {
+	case ${2:/* condition */} :
+		${3:/* code */}
+		break;
+	case ${4:/* condition */} :
+		${5:/* code */}
+		break;
+	case ${6:/* condition */} :
+		${7:/* code */}
+		break;			
+	default :
+		${8:/* code */}
+		break;
+	}
+	${9:}
+	
+# Tertiary conditional
+snippet t
+	${1:/* condition */} ? ${2:a} : ${3:b}
+	${4:}
+	
+# Do While Loop
+snippet Do
+	do {
+		${2:/* code */}
+	} while (${1:/* condition */});
+	${3:}
+	
+# While Loop
+snippet While
+	while (${1:/* condition */}) {
+		${2:/* code */}
+	}
+	${3:}
+	
+# For Loop
+snippet For
+	for (${2:i} = 0; $2 < ${1:count}; $2${3:++}) {
+		${4:/* code */}
+	}
+	${5:}
+	
+# Custom For Loop
+snippet for2
+	for (${1:i} = ${2:0}; ${3:$1 < 10}; $1${4:++}) {
+		${5:/* code */}
+	}
+	${6:}
+	
+# Function
+snippet func
+	${1:void} ${2:function_name}(${3})
+	{
+		${4:/* code */}
+	}
+	${5:}
+	
+# Function Declaration
+snippet fund
+	${1:void} ${2:function_name}(${3});${4}
+	${5:}
+	
+# Typedef
+snippet td
+	typedef ${1:int} ${2:MyCustomType};${3}
+	${4:}
+	
+# Struct
+snippet st
+	struct ${1:`Filename('$1_t', 'name')`} {
+		${2:/* data */}
+	}${3: /* optional variable list */};
+	${4}
+	
+# Typedef struct
+snippet tds
+	typedef struct ${2:_$1 }{
+		${3:/* data */}
+	} ${1:`Filename('$1_t', 'name')`};
+	
+# Typdef enum
+snippet tde
+	typedef enum {
+		${1:/* data */}
+	} ${2:foo};
+	${3:}
+	
+# printf
+# unfortunately version this isn't as nice as TextMates's, given the lack of a
+# dynamic `...`
+snippet pri
+	printf("${1:%s}\n"${2});
+	${3}
+	
+# fprintf (again, this isn't as nice as TextMate's version, but it works)
+snippet fpr
+	fprintf(${1:stderr}, "${2:%s}\n"${3});${4}
+snippet un
+	unsigned
+
+# hyuk.myeong edition
+snippet go
+	/***** MDP_Dissection **********************
+	 * 
+	 * hyuk.myeong@lge.com, 010-2247-0942
+	 *
+	 ***** Function Name ***********************
+	 * 
+	 * ${1}
+	 *
+	 ***** Function Description ****************
+	 *
+	 * ${2}
+	 *	
+	 *******************************************/
+
+snippet func_comment
+	/**
+	 * anon_inode_getfile - creates a new file instance by hooking it up to an
+	 *                      anonymous inode, and a dentry that describe the "class"
+	 *                      of the file
+	 *
+	 * @name:    [in]    name of the "class" of the new file
+	 * @fops:    [in]    file operations for the new file
+	 * @priv:    [in]    private data for the new file (will be file's private_data)
+	 * @flags:   [in]    flags
+	 *
+	 * Creates a new file by hooking it on a single inode. This is useful for files
+	 * that do not need to have a full-fledged inode in order to operate correctly.
+	 * All the files created with anon_inode_getfile() will share a single inode,
+	 * hence saving memory and avoiding code duplication for the file/inode/dentry
+	 * setup.  Returns the newly created file* or an error pointer.
+	 */
+
+snippet lge 
+	/* LGE_CHANGE_START
+	 * hyuk.myeong@lge.com, 2012.09.15
+	 * Change the initial sest for GK
+	 */ 
+	${1:your code here}
+	/* LGE_CHANGE_END */

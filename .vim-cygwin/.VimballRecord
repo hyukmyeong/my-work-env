@@ -1,0 +1,5 @@
+supertab.vba: call delete('/home001/hyuk.myeong/.vim/doc/supertab.txt')|call delete('/home001/hyuk.myeong/.vim/plugin/supertab.vim')
+supertab.vmb: call delete('/home001/hyuk.myeong/.vim/doc/supertab.txt')|call delete('/home001/hyuk.myeong/.vim/plugin/supertab.vim')
+tcomment.vba: call delete('/home001/hyuk.myeong/.vim/doc/tcomment.txt')|call delete('/home001/hyuk.myeong/.vim/plugin/tcomment.vim')|call delete('/home001/hyuk.myeong/.vim/autoload/tcomment.vim')
+Mines.vba: call delete('/home001/hyuk.myeong/.vim/plugin/MinesPlugin.vim')|call delete('/home001/hyuk.myeong/.vim/autoload/Mines.vim')|call delete('/home001/hyuk.myeong/.vim/plugin/Rndm.vim')|call delete('/home001/hyuk.myeong/.vim/doc/Mines.txt')|call delete('/home001/hyuk.myeong/.vim/plugin/cecutil.vim')
+supertab.vmb: call delete('/home001/hyuk.myeong/.vim/doc/supertab.txt')|call delete('/home001/hyuk.myeong/.vim/plugin/supertab.vim')
