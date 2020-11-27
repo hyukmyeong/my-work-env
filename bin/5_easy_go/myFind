@@ -1,4 +1,31 @@
 #!/bin/bash
 
-find . -iname "*$1*" -print
-#find . -iname "*$1*" -exec mv {} ~/temp/
+declare -i input #r,ead/i,nteger/a,rray/f,unc/e,x,port
+
+echo "do you want find with special file type?"
+echo "1.prune 2.all"
+read -p "you selected : " input
+
+echo -n "wait"
+#for (( i = 0; i < 2; i++ ))
+#do
+#       echo -n .
+#       sleep 1
+#done
+
+echo
+echo =================================== result ======================================
+
+if [ "$input" -eq 1 ]; then
+    find . -name ".git" -prune \
+        -o -name ".projectile" -prune \
+        -o -name "oe-workdir" -prune \
+        -o -name "oe-logs" -prune \
+        -o -iname "*$1*" -print \
+        | grep "$1" --color=auto
+elif [ "$input" -eq 2 ]; then
+    find . -iname "*$1*" -print \
+        | grep "$1" --color=auto
+else
+       echo do nothing
+fi
