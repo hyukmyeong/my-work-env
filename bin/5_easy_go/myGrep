@@ -12,6 +12,7 @@ echo -n "wait"
 #       echo -n .
 #       sleep 1
 #done
+
 echo
 echo =================================== result ======================================
 
@@ -20,9 +21,9 @@ if [ "$input" == "c,cpp" ] || [ "$input" -eq 1 ]; then
 elif [ "$input" == "java" ] || [ "$input" -eq 2 ]; then
        egrep -IHRin "$1" --include=\*.{h,java} --color=auto .
 elif [ "$input" == "build script" ] || [ "$input" -eq 3 ]; then
-       egrep -IHRin "$1" --include="*.mk" --include="CMakeLists.txt" --color=auto .
+       egrep -IHRin "$1" --include={*.mk,Makefile,CMakeLists.txt} --color=auto .
 elif [ "$input" == "all" ] || [ "$input" -eq 4 ]; then
-       egrep -IHRin "$1" --exclude-dir=".git" --exclude-dir="oe-*" --exclude=\*.{o,lib} --exclude="cscope.*" --exclude="tags" --exclude="GPATH" --exclude="GRTAGS" --exclude="GTAGS" --color=auto .
+       egrep -IHRin "$1" --exclude-dir={.git,oe-workdir,oe-logs} --exclude=\*.{o,lib} --exclude={tags,cscope.*,GPATH,GRTAGS,GTAGS} --color=auto .
 else
        echo do nothing
 fi
