@@ -47,10 +47,10 @@ $ cp ~/.emacs.d/init.el-rtags ~/init.el
 
 $ cd ~/.emacs
 $ git clone --recursive https://github.com/Andersbakken/rtags.git
-$ cd rtags && mkdir build && cd build && cmake .. && make
+$ cd rtags && cmake . && make
 
-$ vi ~/.bashrc (++ export PATH=$PATH:$HOME/.emacs/rtags/bin)
-$ vi ~/.bash_profile (++ export PATH=$PATH:$HOME/.emacs/rtags/bin)
+$ vi ~/.bashrc (++ export PATH=$PATH:$HOME/.emacs.d/rtags/bin)
+$ vi ~/.bash_profile (++ export PATH=$PATH:$HOME/.emacs.d/rtags/bin)
 
 $ rdm &
 $ cd ~/work/src

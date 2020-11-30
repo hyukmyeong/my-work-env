@@ -132,9 +132,9 @@ shopt -s cdspell
 #git config --global alias.mylog 'log --pretty=format:"%H - %Cred %ai, %Creset %an : %s"'
 
 #export CSCOPE_DB=~/jb_apq8064/android/kernel/cscope.out
-export PATH=~/bin/:~/bin/5_easy_go/:~/bin/6_debugging/:~/bin/6_debugging/linux/:~/bin/6_debugging/64bit/:~/bin/6_debugging/crashex/:~/local/bin/:~/local/lib/:~/local/src/:$PATH
-export CRASH_EXTENSION=~/bin
+export PATH=$PATH:~/bin/:~/bin/5_easy_go/:~/bin/6_debugging/:~/bin/6_debugging/linux/:~/bin/6_debugging/64bit/:~/bin/6_debugging/crashex/:~/local/bin/:~/local/lib/:~/local/src/:~/.emacs.d/rtags/bin
 
+export CRASH_EXTENSION=~/bin
 export LD_LIBRARY_PATH=~/local/lib:$LD_LIBRARY_PATH
 
 
