@@ -40,7 +40,7 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(package-selected-packages
-   '(cmake-mode company-statistics company-irony-c-headers company-irony auto-complete company-c-headers sr-speedbar zygospore helm-gtags helm yasnippet ws-butler volatile-highlights use-package undo-tree iedit dtrt-indent counsel-projectile company clean-aindent-mode anzu)))
+   '(cmake-mode company-statistics company-irony-c-headers company-irony auto-complete company-c-headers sr-speedbar zygospore helm-gtags z yasnippet ws-butler volatile-highlights use-package undo-tree iedit dtrt-indent counsel-projectile company clean-aindent-mode anzu)))
 
 (use-package dashboard
   :ensure t
@@ -195,6 +195,8 @@
 (global-set-key (kbd "M-p n") 'find-file)
 (global-set-key (kbd "M-p b") 'sr-speedbar-toggle)
 
+;; Added to fix bug https://github.com/bbatsov/projectile/issues/1302
+(setq projectile-git-submodule-command nil)
 
 ;; helm's completion while using helm-mode
 ;; from ".emacs.d/elpa/helm-xxx/helm-mode.el"
