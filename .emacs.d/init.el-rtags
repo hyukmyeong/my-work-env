@@ -203,6 +203,8 @@
 (global-set-key (kbd "M-p n") 'find-file)
 (global-set-key (kbd "M-p b") 'sr-speedbar-toggle)
 
+;; Added to fix bug https://github.com/bbatsov/projectile/issues/1302
+(setq projectile-git-submodule-command nil)
 
 ;; helm's completion while using helm-mode
 ;; from ".emacs.d/elpa/helm-xxx/helm-mode.el"
