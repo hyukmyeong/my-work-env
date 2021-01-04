@@ -220,8 +220,7 @@ let OmniCpp_MayCompleteScope = 1
 "let OmniCpp_DefaultNamespaces = ["std", "_GLIBCXX_STD", "_GLIBCXX_STD_A", "_GLIBCXX_STD_C"]
 
 set completeopt=menu,menuone,preview
-
-
+autocmd InsertLeave,CompleteDone * if pumvisible() == 0 | pclose | endif
 
 
 
