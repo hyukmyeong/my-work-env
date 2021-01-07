@@ -89,8 +89,14 @@
   ;; Corrects (and improves) org-mode's native fontification.
   (doom-themes-org-config))
 
-(set-face-attribute 'default nil :height 100)
-(set-frame-font "DejaVu Sans Mono-12" t t)
+;(set-face-attribute 'default nil :height 100)
+;(set-default-font "DejaVu Sans Mono 7")
+(set-face-attribute 'default nil :font "DejaVu Sans Mono")
+(set-frame-font "DejaVu Sans Mono-8" t t)
+
+;; mouse wheel is also working
+(global-set-key (kbd "C-+") 'text-scale-increase)
+(global-set-key (kbd "C--") 'text-scale-decrease)
 
 
 ;; scroll 부드럽게
