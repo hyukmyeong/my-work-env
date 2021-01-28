@@ -1,0 +1,44 @@
+#!/bin/bash
+
+declare SCP_OPTION="-r" # default -r for recieving
+declare SOURCE_FILE=""
+declare OTTO_SERVER="10.178.97.152"
+declare ELSA_SERVER="10.177.223.57"
+declare COCKPIT_BOARD="fd53:7cb8:383:3::73"
+
+echo
+echo "=============================================================="
+echo "What is the remote server?"
+echo
+echo "1.otto_server  2.elsa_server  3.cockpit_board"
+read -p "you selected : " TARGET_SERVER
+
+echo
+echo "=============================================================="
+echo "Enter target file or directory you want to recieve"
+echo "(prefix: /home/hyuk.myeong/ for server)"
+read -p "source file: " SOURCE_FILE 
+
+if [ "$TARGET_SERVER" -eq 1 ]; then
+
+    echo
+    echo "sshpass -p 1234 scp $SCP_OPTION hyuk.myeong@$OTTO_SERVER:/home/hyuk.myeong/$SOURCE_FILE ."
+    sshpass -p 1234 scp $SCP_OPTION hyuk.myeong@$OTTO_SERVER:$SOURCE_FILE .
+
+elif [ "$TARGET_SERVER" -eq 2 ]; then
+
+    echo
+    echo "sshpass -p 1234 scp $SCP_OPTION hyuk.myeong@$ELSA_SERVER:/home/hyuk.myeong/$SOURCE_FILE ."
+    sshpass -p 1234 scp $SCP_OPTION hyuk.myeong@$ELSA_SERVER:$SOURCE_FILE .
+
+elif [ "$TARGET_SERVER" -eq 3 ]; then
+
+    echo
+    echo "sshpass -p Rkdckd1023ghdWl2020Qkrtjdakstp scp $SCP_OPTION root@[$COCKPIT_BOARD]:$SOURCE_FILE ."
+    sshpass -p Rkdckd1023ghdWl2020Qkrtjdakstp scp $SCP_OPTION root@[$COCKPIT_BOARD]:$SOURCE_FILE .
+
+else
+
+    echo "do nothing"
+
+fi

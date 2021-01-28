@@ -1,7 +1,6 @@
 #!/bin/bash
 
 declare SCP_OPTION=""
-declare SOURCE_FILE=""
 declare OTTO_SERVER="10.178.97.152"
 declare ELSA_SERVER="10.177.223.57"
 declare COCKPIT_BOARD="fd53:7cb8:383:3::73"
@@ -30,30 +29,21 @@ read -p "you selected : " TARGET_SERVER
 echo
 echo "==========================================="
 echo "Enter target directory you want to send"
-echo "(default : /home/hyuk.myeong/work for server , /var for board)"
+echo "(prefix: /home/hyuk.myeong/ for server)"
 read -p "target path: " TARGET_PATH
 
 if [ "$TARGET_SERVER" -eq 1 ]; then
 
-    if [ "$TARGET_PATH" = "" ]; then
-        TARGET_PATH="/home/hyuk.myeong/work/"
-    fi
     echo "copy to the $TARGET_PATH"
-    sshpass -p 1234 scp $SCP_OPTION $1 hyuk.myeong@$OTTO_SERVER:$TARGET_PATH
+    sshpass -p 1234 scp $SCP_OPTION $1 hyuk.myeong@$OTTO_SERVER:/home/hyuk.myeong/$TARGET_PATH
 
 elif [ "$TARGET_SERVER" -eq 2 ]; then
 
-    if [ "$TARGET_PATH" = "" ]; then
-        TARGET_PATH="/home/hyuk.myeong/work/"
-    fi
     echo "copy to the $TARGET_PATH"
-    sshpass -p 1234 scp $SCP_OPTION $1 hyuk.myeong@$ELSA_SERVER:$TARGET_PATH
+    sshpass -p 1234 scp $SCP_OPTION $1 hyuk.myeong@$ELSA_SERVER:/home/hyuk.myeong/$TARGET_PATH
 
 elif [ "$TARGET_SERVER" -eq 3 ]; then
 
-    if [ "$TARGET_PATH" = "" ]; then
-        TARGET_PATH="/var/"
-    fi
     echo "copy to the $TARGET_PATH"
     sshpass -p Rkdckd1023ghdWl2020Qkrtjdakstp scp $SCP_OPTION $1 root@[$COCKPIT_BOARD]:$TARGET_PATH
 
