@@ -1,0 +1,39 @@
+#!/bin/bash
+
+echo "==========================================="
+echo "what is the target to connect?"
+echo
+echo "1.otto_server  2.elsa_server  3.cockpit_board"
+read -p "you selected : " input
+
+if [ "$input" -eq 1 ]; then
+
+    echo ""
+    echo "connect to otto server"
+    echo "1.yes 2.no"
+
+    sshpass -p 1234 ssh -X 10.178.97.152 -l hyuk.myeong
+
+elif [ "$input" -eq 2 ]; then
+
+    echo ""
+    echo "connect to elsa server"
+    echo "1.yes 2.no"
+
+    sshpass -p 1234 ssh -X 10.177.223.57 -l hyuk.myeong
+
+elif [ "$input" -eq 3 ]; then
+
+    echo ""
+    echo "connect to cockpit_board"
+    echo "1.yes 2.no"
+
+    sshpass -p [password] ssh -X [[ip]] -l root
+
+else
+
+    echo "do nothing"
+
+fi
+
+exit
