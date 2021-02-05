@@ -1,3 +1,6 @@
+"uds"
+"-V -Y"
+"-V -x -T json"
 "Ethernet address 00:08:15:00:08:15" eth.addr == 00:08:15:00:08:15
 "Ethernet type 0x0806 (ARP)" eth.type == 0x0806
 "Ethernet broadcast" eth.addr == ff:ff:ff:ff:ff:ff
@@ -13,5 +16,3 @@
 "HTTP" http
 "No ARP and no DNS" not arp and !(udp.port == 53) 
 "Non-HTTP and non-SMTP to/from 192.168.0.1" not (tcp.port == 80) and not (tcp.port == 25) and ip.addr == 192.168.0.1
-"-V -Y"
-"-V -x -T json"
