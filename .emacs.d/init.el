@@ -50,10 +50,10 @@
                           (bookmarks . 10)
                           (projects . 10))))
 
-;; No Menu Bar, No tool bar, No Scrollbar
-(menu-bar-mode -1)
-(tool-bar-mode -1)
-(scroll-bar-mode -1)
+;; No Menu Bar, No tool bar (Use F10 instead)
+(menu-bar-mode -1) 
+(tool-bar-mode -1) 
+(scroll-bar-mode 1)
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; mikki finish (초기화)
