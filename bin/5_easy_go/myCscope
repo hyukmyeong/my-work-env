@@ -39,8 +39,13 @@ if [ "$input1" -eq 1 ]; then
         # cp -R /usr/include/c++/7 usr_include/
     fi
 
-    find . -type d \( -name .git -o -name oe-workdir -o -name oe-logs \) -prune -false \
-        -o -name '*.[chS]' -o -name '*.mk' -o -name '*.cc' -o -name '*.hpp' -o -name '*.cpp*' -o -name 'Makefile'-o -name 'CMakeLists.xtx' ! -type l  >cscope.files
+    find `pwd` -type d \( -name .git -o -name oe-workdir -o -name oe-logs \) -prune -false \                                                                                                               
+        -o -name '*.[chS]' -o -name '*.mk' -o -name '*.cc' -o -name '*.hpp' -o -name '*.cpp' -o -name 'Makefile'-o -name 'CMakeLists.txt' ! -type l >cscope.files                                          
+                                                                                                                                                                                                     
+    # apply 1 depth links only for now                                                                                                                                                                     
+    #if [ -e src-gen ]; then                                                                                                                                                                               
+        #find `readlink -f src-gen` -name '*.[chS]' -o -name '*.cc' -o -name '*.hpp' -o -name '*.cpp' >>cscope.files                                                                             
+    #fi
 
     # find ./usr_include >>cscope.files
     # cscope -bqkv -i cscope.files
