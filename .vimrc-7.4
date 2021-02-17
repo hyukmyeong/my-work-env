@@ -231,8 +231,8 @@ set tags+=./tags;
 set tags+=/home/hyuk.myeong/.vim/cpp_tags;
 "set tags+=/home/mk/.vim/tags/wtags;
 "set isk+=:
-"
-au BufWritePost *.c,*.cpp,*.h silent! !ctags -R --c++-kinds=+p --fields=+iaS --extra=+q --exclude={.git,oe-workdir,oe-logs} &
+
+au BufWritePost *.c,*.cc,*.cpp,*.h,*.hh silent! execute "!ctags -R --c++-kinds=+p --fields=+iaS --extra=+q --exclude={.git,oe-workdir,oe-logs} >/dev/null 2>&1 &"
 
 "" include all files in current directory
 let &path = getcwd() . '/**'
