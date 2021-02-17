@@ -255,7 +255,7 @@ set tags+=./tags;
 set path+=/usr/include,/usr/include/c++/9;
 set path+=/usr/local/include;
 
-au BufWritePost *.c,*.cpp,*.h silent! !ctags -R --c++-kinds=+p --fields=+iaS --extra=+q --exclude={.git,oe-workdir,oe-logs} &
+au BufWritePost *.c,*.cc,*.cpp,*.h,*.hh silent! execute "!ctags -R --c++-kinds=+p --fields=+iaS --extra=+q --exclude={.git,oe-workdir,oe-logs} >/dev/null 2>&1 &"
 
 "au FileType {h,c,cpp} au BufWritePost <buffer> silent ! [ -e tags ] &&
 "    \ ( awk -F'\t' '$2\!="%:gs/'/'\''/"{print}' tags ; ctags -f- '%:gs/'/'\''/' )
