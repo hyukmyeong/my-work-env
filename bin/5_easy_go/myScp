@@ -1,0 +1,87 @@
+#!/bin/bash
+
+declare SCP_OPTION=""
+declare OTTO_SERVER="10.178.97.152"
+declare ELSA_SERVER="10.177.223.57"
+declare COCKPIT_BOARD="fd53:7cb8:383:3::73"
+
+echo
+echo "==========================================="
+echo "where is the target?"
+echo
+echo "1.otto_server  2.elsa_server  3.cockpit_board"
+read -p "you selected : " TARGET_SERVER
+
+echo
+echo "==========================================="
+echo "send or recieve?"
+echo
+echo "1.send 2.recieve"
+read -p "you selected : " OPERATION
+
+if [ "$OPERATION" -eq 1 ]; then
+
+    if [ -z $1 ]
+    then
+        echo
+        echo 'usage to send: myScp [file or dir]'
+        exit -1
+    elif [ -d "$1" ] ; then
+        SCP_OPTION="-r";
+    else
+        if [ -f "$1" ]; then
+            SCP_OPTION="";
+        else
+            echo "$1 is not valid";
+            exit -1
+        fi
+    fi
+
+    echo
+    echo "==========================================="
+
+    if [ "$TARGET_SERVER" -eq 1 ]; then
+        echo
+        echo "copy to the otto server (/home/hyuk.myeong/work/)"
+        sshpass -p 1234 scp $SCP_OPTION $1 hyuk.myeong@$OTTO_SERVER:/home/hyuk.myeong/work
+
+    elif [ "$TARGET_SERVER" -eq 2 ]; then
+        echo
+        echo "copy to the else server (/home_ecu/hyuk.myeong/work/)"
+        sshpass -p 1234 scp $SCP_OPTION $1 hyuk.myeong@$ELSA_SERVER:/home_ecu/hyuk.myeong/work
+    elif [ "$TARGET_SERVER" -eq 3 ]; then
+        echo
+        echo "copy to the cockpic board (/UCM/)"
+        sshpass -p Rkdckd1023ghdWl2020Qkrtjdakstp scp $SCP_OPTION $1 root@[$COCKPIT_BOARD]:/UCM/
+    else
+        echo "do nothing"
+    fi
+
+elif [ "$OPERATION" -eq 2 ]; then
+
+    echo
+    echo "=============================================================="
+    echo "Enter target file or directory you want to recieve"
+    echo "(prefix: /home/hyuk.myeong/ for server)"
+    read -p "source file: " SOURCE_FILE 
+
+    if [ "$TARGET_SERVER" -eq 1 ]; then
+        echo
+        echo "sshpass -p 1234 scp $SCP_OPTION hyuk.myeong@$OTTO_SERVER:/home/hyuk.myeong/$SOURCE_FILE ."
+        sshpass -p 1234 scp $SCP_OPTION hyuk.myeong@$OTTO_SERVER:$SOURCE_FILE .
+    elif [ "$TARGET_SERVER" -eq 2 ]; then
+        echo
+        echo "sshpass -p 1234 scp $SCP_OPTION hyuk.myeong@$ELSA_SERVER:/home/hyuk.myeong/$SOURCE_FILE ."
+        sshpass -p 1234 scp $SCP_OPTION hyuk.myeong@$ELSA_SERVER:$SOURCE_FILE .
+    elif [ "$TARGET_SERVER" -eq 3 ]; then
+        echo
+        echo "sshpass -p Rkdckd1023ghdWl2020Qkrtjdakstp scp $SCP_OPTION root@[$COCKPIT_BOARD]:$SOURCE_FILE ."
+        sshpass -p Rkdckd1023ghdWl2020Qkrtjdakstp scp $SCP_OPTION root@[$COCKPIT_BOARD]:$SOURCE_FILE .
+    else
+        echo "do nothing"
+    fi
+
+else
+    echo "do nothing"
+fi
+
