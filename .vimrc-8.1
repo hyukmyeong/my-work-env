@@ -148,8 +148,10 @@ syntax on
 let g:ycm_key_list_select_completion = ['<C-n>', '<Down>']
 let g:ycm_key_list_previous_completion = ['<C-p>', '<Up>']
 let g:ycm_show_diagnostics_ui = 1
+let g:ycm_add_preview_to_completeopt = 1
 let g:ycm_autoclose_preview_window_after_insertion = 1
 let g:ycm_autoclose_preview_window_after_completion = 1
+let g:ycm_always_populate_location_list = 1
 "set splitbelow
 
 let g:SuperTabDefaultCompletionType = '<C-n>'
@@ -195,10 +197,27 @@ nmap <PageDown> :bn<cr>
 noremap <C-A> gg<S-V>G
 inoremap <C-A> <C-O>gg<C-O><S-V>G
 
+"using tab
 map <leader>tt :tabnew<cr>
 map <leader>tn :tabnext<cr>
 map <leader>tp :tabprevious<cr>
 map <leader>tc :tabclose<cr>
+
+"using vimgrep
+map <leader>gl :clist<cr>
+map <leader>gi :cc<cr>
+map <leader>gr :clast<cr>
+map <leader>gn :cnext<cr>
+map <leader>gp :cprevious<cr>
+"map <leader>gr :crewind<cr>
+
+"using quickfix
+map <leader>ll :llist<cr>
+map <leader>li :ll<cr>
+map <leader>lr :llast<cr>
+map <leader>ln :lnext<cr>
+map <leader>lp :lprevious<cr>
+"map <leader>lr :lrewind<cr>
 
 nmap <C-H> <C-W>h
 nmap <C-J> <C-W>j

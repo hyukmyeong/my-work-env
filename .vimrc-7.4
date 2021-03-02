@@ -148,10 +148,27 @@ inoremap <C-A> <C-O>gg<C-O><S-V>G
 map <leader>sp :sp<cr>
 map <leader>vs :vs<cr>
 
+"using tab
 map <leader>tt :tabnew<cr>
 map <leader>tn :tabnext<cr>
 map <leader>tp :tabprevious<cr>
 map <leader>tc :tabclose<cr>
+
+"using vimgrep
+map <leader>gl :clist<cr>
+map <leader>gi :cc<cr>
+map <leader>gr :clast<cr>
+map <leader>gn :cnext<cr>
+map <leader>gp :cprevious<cr>
+"map <leader>gr :crewind<cr>
+
+"using quickfix
+map <leader>ll :llist<cr>
+map <leader>li :ll<cr>
+map <leader>lr :llast<cr>
+map <leader>ln :lnext<cr>
+map <leader>lp :lprevious<cr>
+"map <leader>lr :lrewind<cr>
 
 nmap <C-H> <C-W>h
 nmap <C-J> <C-W>j
