@@ -476,6 +476,24 @@
 ;            (make-face-italic
 ;             ediff-current-diff-face-B)))
 
+;; use function keys in term-mode
+;; https://www.gnu.org/software/emacs/manual/html_node/elisp/Translation-Keymaps.html
+;; https://invisible-island.net/xterm/xterm-function-keys.html
+
+;(add-hook 'term-mode-hook 'my-shell-hook)
+
+;(global-set-key [f12] "\e[24~"))
+(defun term-send-f12  () (interactive) (term-send-raw-string "\e[24~"))
+(defun term-send-clear  () (interactive) (term-send-raw-string "clear"))
+
+(add-hook 'term-mode-hook (lambda () (global-set-key [f12] 'term-send-f12)))
+(add-hook 'term-mode-hook (lambda () (global-set-key (kbd "C-c l") 'comint-clear-buffer)))
+
+
+;; enable, disable some command in emacs
+;; https://www.emacswiki.org/emacs/DisabledCommands
+;; https://stackoverflow.com/questions/10026221/enable-all-disabled-commands-permanently/10026423
+; (setq disabled-command-function nil)
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; mikki finish (etc)
