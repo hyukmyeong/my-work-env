@@ -1,0 +1,48 @@
+#!/bin/bash
+
+# (1) commands
+# (1-1) check interfaces
+# tshark -G
+
+# (1-2) if interface is 5
+# save pcap, but cannot use -Y option for display
+# tshark -i 5 -w capture -F pcapng
+
+# (1-3) simply connect inteface by number
+# tshark -i 5 -Y uds
+
+# (1-4) simply dump to file
+# tshark -i 5 -w cpatured
+# dumpcap -i 5 -w captured -b filesize:500000 -b files:20
+
+# (1-5) dump to file and realtime view together
+dumpcap -i 5 -w captured -b filesize:500000 -b files:20 2>&1  | tshark -i 5 -Y uds
+
+# (1-6) filtering capture result
+# tshark -i 5 -r captured_00001_20210428110621 -Y uds
+# tshark -i 5 -r captured_00001_20210428110621 -V -x -T json
+
+
+# (2) reference
+# https://www.wireshark.org/docs/man-pages/wireshark-filter.html
+# https://m.blog.naver.com/dlansduq/221012550910
+# https://yangbongsoo.gitbook.io/study/tshark
+
+
+
+# (3) configuration
+# 개인PC라 아니라 서버에서는 보안에 문제 있을 수도 있음
+# $ sudo groupadd tshark
+# $ sudo usermod -a -G tshark hyukmyeong
+
+# $ sudo chgrp tshark /usr/bin/dumpcap
+# $ sudo chmod 755 /usr/bin/dumpcap
+# $ sudo setcap cap_net_raw,cap_net_admin=eip /usr/bin/dumpcap
+# $ sudo getcap /usr/bin/dumpcap
+# $ ll /usr/bin/dumpcap
+
+# $ sudo chgrp tshark /usr/bin/tshark
+# $ sudo chmod 755 /usr/bin/tshark
+# $ sudo setcap cap_net_raw,cap_net_admin=eip /usr/bin/tshark
+# $ sudo getcap /usr/bin/tshark
+# $ ll /usr/bin/tshar
