@@ -467,14 +467,13 @@
               ediff-split-window-function 'split-window-horizontally
               ediff-window-setup-function 'ediff-setup-windows-plain)
 
-;(add-hook 'ediff-load-hook
-;          (lambda ()
-;            (set-face-foreground
-;             ediff-current-diff-face-B "red")
-;            (set-face-background
-;             ediff-current-diff-face-B "blue")
-;            (make-face-italic
-;             ediff-current-diff-face-B)))
+(add-hook 'ediff-load-hook (lambda ()
+                             (set-face-foreground ediff-fine-diff-face-A "white")
+                             (set-face-foreground ediff-current-diff-face-A "blue")
+                             (set-face-foreground ediff-fine-diff-face-B "white")
+                             (set-face-foreground ediff-current-diff-face-B "blue")))
+;(make-face-italic ediff-current-diff-face-B)))
+
 
 ;; use function keys in term-mode
 ;; https://www.gnu.org/software/emacs/manual/html_node/elisp/Translation-Keymaps.html
