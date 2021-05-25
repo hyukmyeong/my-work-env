@@ -11,7 +11,6 @@ call vundle#begin()
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
 
-"Plugin 'atom/fuzzy-finder'
 Plugin 'junegunn/fzf'
 Plugin 'junegunn/fzf.vim'
 
@@ -30,9 +29,20 @@ Plugin 'ervandew/supertab'
 
 Plugin 'chazy/cscope_maps'
 Plugin 'taglist.vim'
+"Plugin 'ludovicchabant/vim-gutentags'
 
 Plugin 'scrooloose/nerdcommenter'
 
+"Javascript
+Plugin 'mxw/vim-jsx'
+Plugin 'dense-analysis/ale'
+Plugin 'prettier/vim-prettier'
+Plugin 'neoclide/coc.nvim'
+Plugin 'neoclide/coc-tsserver'
+Plugin 'pangloss/vim-javascript'
+Plugin 'maxmellon/vim-jsx-pretty'
+Plugin 'leafgarland/typescript-vim'
+Plugin 'peitalin/vim-jsx-typescript'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -48,6 +58,31 @@ filetype plugin indent on    " required
 "
 " see :h vundle for more details or wiki for FAQ
 " Put your non-Plugin stuff after this line
+
+
+
+
+
+"============================================================================
+" Javascript,Typescript,Python,etc.
+"============================================================================
+
+"https://thoughtbot.com/blog/modern-typescript-and-react-development-in-vim#highlighting-for-large-files
+
+autocmd BufEnter *.{js,jsx,ts,tsx} :syntax sync fromstart
+autocmd BufLeave *.{js,jsx,ts,tsx} :syntax sync clear
+
+autocmd FileType javascript      setlocal shiftwidth=2 tabstop=2 expandtab
+autocmd FileType typescriptreact setlocal shiftwidth=2 tabstop=2 expandtab
+autocmd FileType html            setlocal shiftwidth=2 tabstop=2 expandtab
+autocmd FileType python          setlocal shiftwidth=4 softtabstop=4 expandtab
+
+let g:ale_fixers = {'javascript': ['eslint'], 'typescript': ['tslint'],'typescriptreact': ['prettier', 'eslint'], 'python': ['autopep8', 'yapf'], 'json': ['fixjson']}
+let g:ale_linters_explicit = 1
+let g:ale_fix_on_save = 1
+let g:ale_javascript_prettier_options = '--single-quote --trailing-comma all'
+
+let g:jsx_ext_required = 1 
 
 
 
@@ -251,9 +286,10 @@ tnoremap <C-L> <C-W>l
 "" for fuf
 map <leader>ff :Files<cr>
 map <leader>fb :Buffers<cr>
+map <leader>fg :Rg<cr>
 map <leader>fc :Commits<cr>
-map <leader>fs :Snippets<cr>
 map <leader>fh :History<cr>
+"map <leader>fs :Snippets<cr>
 
 "" for hexa
 ":%!xxd : show as hex
@@ -268,7 +304,7 @@ map <leader>fh :History<cr>
 "============================================================================
 "
 set tags+=./tags;
-"set tags+=/home/mk/.vim/tags/wtags;
+set tags+=/home/hyukmyeong/.vim/tags/cpp_tags;
 "set isk+=:
 
 set path+=/usr/include,/usr/include/c++/9;
@@ -276,9 +312,9 @@ set path+=/usr/local/include;
 
 au BufWritePost *.c,*.cc,*.cpp,*.h,*.hh silent! execute "!ctags -R --c++-kinds=+p --fields=+iaS --extra=+q --exclude={.git,oe-workdir,oe-logs} >/dev/null 2>&1 &"
 
-"au FileType {h,c,cpp} au BufWritePost <buffer> silent ! [ -e tags ] &&
-"    \ ( awk -F'\t' '$2\!="%:gs/'/'\''/"{print}' tags ; ctags -f- '%:gs/'/'\''/' )
-"    \ | sort -t$'\t' -k1,1 -o tags.new && mv tags.new tags
+au FileType {h,c,cpp} au BufWritePost <buffer> silent ! [ -e tags ] &&
+    \ ( awk -F'\t' '$2\!="%:gs/'/'\''/"{print}' tags ; ctags -f- '%:gs/'/'\''/' )
+    \ | sort -t$'\t' -k1,1 -o tags.new && mv tags.new tags
  	
 "cscope reset
 "cscope show
@@ -431,7 +467,7 @@ autocmd InsertEnter * match none
 "============================================================================
 " Deprecated 
 "============================================================================
-"
+
 "" removes trailing spaces
 "function! TrimWhiteSpace()
 "	    %s/\s\+$//e
