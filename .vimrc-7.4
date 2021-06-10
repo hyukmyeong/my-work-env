@@ -64,6 +64,7 @@ Plugin 'junegunn/fzf'
 Plugin 'junegunn/fzf.vim'
 Plugin 'https://tpope.io/vim/fugitive.git'
 Plugin 'OmniCppComplete'
+Plugin 'ludovicchabant/vim-gutentags'
 "Plugin 'rip-rip/clang_complete'
 
 call vundle#end()            " required
@@ -124,7 +125,7 @@ syntax on
 " Toggle Key options
 "============================================================================
 
-call feedkeys(":TagbarToggle\<cr>", 'n')
+"call feedkeys(":TagbarToggle\<cr>", 'n')
 
 "nmap <F2> :bp<cr>
 "nmap <F3> :bn<cr>
@@ -138,7 +139,6 @@ nmap <F8> z.:TlistSync<cr>
 nmap <F9> :NERDTreeToggle<cr>:TagbarToggle<cr>
 nmap <F11> :mkview<cr>:qa<cr>
 nmap <F12> :%s/from/to/gc
-"nmap <F12> :qa!<cr>
 
 nmap <PageUp> :bp<cr>
 nmap <PageDown> :bn<cr>
@@ -170,6 +170,7 @@ map <leader>lr :lrewind<cr>
 "map <leader>lr :llast<cr>
 map <leader>ln :lnext<cr>
 map <leader>lp :lprevious<cr>
+
 
 nmap <C-H> <C-W>h
 nmap <C-J> <C-W>j
@@ -208,8 +209,9 @@ let NERDTreeWinPos = "right"
 map <leader>ff :Files<cr>
 map <leader>fb :Buffers<cr>
 map <leader>fc :Commits<cr>
-map <leader>fs :Snippets<cr>
+map <leader>fg :Rg<cr>
 map <leader>fh :History<cr>
+"map <leader>fs :Snippets<cr>
 
 let marksCloseWhenSeleted=0
 autocmd BufNewFile,BufRead *.bat set filetype=bat
@@ -217,6 +219,7 @@ autocmd BufNewFile,BufRead *.bat set filetype=bat
 " auto close options when exiting insert mode
 autocmd InsertLeave * if pumvisible() == 0|pclose|endif
 autocmd CursorMovedI * if pumvisible() == 0|pclose|endif
+autocmd CompleteDone * pclose
 
 " path to directory where library can be found
 " let g:clang_library_path='/usr/local/lib'
@@ -238,7 +241,9 @@ let OmniCpp_MayCompleteScope = 1
 "let OmniCpp_DefaultNamespaces = ["std", "_GLIBCXX_STD", "_GLIBCXX_STD_A", "_GLIBCXX_STD_C"]
 
 set completeopt=menu,menuone,preview
+
 autocmd InsertLeave,CompleteDone * if pumvisible() == 0 | pclose | endif
+
 
 
 
@@ -247,10 +252,13 @@ autocmd InsertLeave,CompleteDone * if pumvisible() == 0 | pclose | endif
 "============================================================================
 set tags+=./tags;
 set tags+=/home/hyuk.myeong/.vim/cpp_tags;
+set tags+=/home/hyuk.myeong/.vim/ara_tags;
+set tags+=/home/hyuk.myeong/.vim/avin_gen_tags;
 "set tags+=/home/mk/.vim/tags/wtags;
 "set isk+=:
-
-au BufWritePost *.c,*.cc,*.cpp,*.h,*.hh silent! execute "!ctags -R --c++-kinds=+p --fields=+iaS --extra=+q --exclude={.git,oe-workdir,oe-logs} >/dev/null 2>&1 &"
+"
+"au BufWritePost *.c,*.cpp,*.h silent! !ctags -R --c++-kinds=+p --fields=+iaS --extra=+q --exclude={.git,oe-workdir,oe-logs,src-gen} &
+"au BufWritePost *.c,*.cpp,*.h silent! !ctags -R --languages=c++ --langmap=c++:+.tcc. --c++-kinds=+p --fields=+iaS --extra=+q --exclude={.git,oe-workdir,oe-logs,src-gen} &
 
 "" include all files in current directory
 let &path = getcwd() . '/**'
@@ -262,6 +270,66 @@ let &path = getcwd() . '/**'
 set path+=/pkg/qnx700_post_cs4_v06_208/target/qnx7/usr/include
 set path+=/pkg/qnx700_post_cs4_v06_208/target/qnx7/usr/include/c++/5.4.0
 set path+=/home/hyuk.myeong/work/I781_1112/Apps/source/install/build/usr/include
+
+"gutentag
+
+let g:gutentags_add_default_project_roots = 0
+let g:gutentags_project_root = ['package.json', '.git', '.projectile']
+let g:gutentags_cache_dir = expand('~/.cache/vim/ctags/')
+command! -nargs=0 GutentagsClearCache call system('rm ' . g:gutentags_cache_dir . '/*')
+
+let g:gutentags_generate_on_new = 1
+let g:gutentags_generate_on_missing = 1
+let g:gutentags_generate_on_write = 1
+let g:gutentags_generate_on_empty_buffer = 0
+
+let g:gutentags_ctags_exclude = [
+      \ '*.git', '*.svg', '*.hg',
+      \ '*/tests/*',
+      \ 'build',
+      \ 'dist',
+      \ '*sites/*/files/*',
+      \ 'bin',
+      \ 'node_modules',
+      \ 'bower_components',
+      \ 'cache',
+      \ 'compiled',
+      \ 'docs',
+      \ 'example',
+      \ 'bundle',
+      \ 'vendor',
+      \ '*.md',
+      \ '*-lock.json',
+      \ '*.lock',
+      \ '*bundle*.js',
+      \ '*build*.js',
+      \ '.*rc*',
+      \ '*.json',
+      \ '*.min.*',
+      \ '*.map',
+      \ '*.bak',
+      \ '*.zip',
+      \ '*.pyc',
+      \ '*.class',
+      \ '*.sln',
+      \ '*.Master',
+      \ '*.csproj',
+      \ '*.tmp',
+      \ '*.csproj.user',
+      \ '*.cache',
+      \ '*.pdb',
+      \ 'tags*',
+      \ 'cscope.*',
+      \ '*.css',
+      \ '*.less',
+      \ '*.scss',
+      \ '*.exe', '*.dll',
+      \ '*.mp3', '*.ogg', '*.flac',
+      \ '*.swp', '*.swo',
+      \ '*.bmp', '*.gif', '*.ico', '*.jpg', '*.png',
+      \ '*.rar', '*.zip', '*.tar', '*.tar.gz', '*.tar.xz', '*.tar.bz2',
+      \ '*.pdf', '*.doc', '*.docx', '*.ppt', '*.pptx',
+      \ ]
 
 
 "cscope reset
