@@ -43,6 +43,7 @@ Plugin 'pangloss/vim-javascript'
 Plugin 'maxmellon/vim-jsx-pretty'
 Plugin 'leafgarland/typescript-vim'
 Plugin 'peitalin/vim-jsx-typescript'
+Plugin 'ludovicchabant/vim-gutentags'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -209,10 +210,13 @@ let g:tagbar_left = 1
 "============================================================================
 " Toggle Key options
 "============================================================================
+
+"call feedkeys(":TagbarToggle\<cr>", 'n')
 "
-nmap <F2> :bp<cr>
-nmap <F3> :bn<cr> nmap <F2> <C-W>p 
-nmap <F3> <C-W>b 
+"nmap <F2> :bp<cr>
+"nmap <F3> :bn<cr>
+nmap <F2> <C-W>p
+nmap <F3> <C-W>b
 nmap <F4> :w!<cr>
 nmap <F5> :A<cr>
 nmap <F6> :marks<cr>
@@ -220,17 +224,17 @@ nmap <F7> <Leader>bv
 nmap <F8> z.:TlistSync<cr>
 "nmap <F9> :mkview<cr>:qa!<cr>
 nmap <F9> :NERDTreeToggle<cr>:TagbarToggle<cr>
+nmap <F11> :mkview<cr>:qa<cr>
 nmap <F12> :%s/from/to/gc
-"nmap <F12> :qa!<cr>
-"nmap <F7> :MarksBrowser<cr>
-"nmap <F7> :help functions<cr>
-"nmap <F11> :gitv<cr>
 
 nmap <PageUp> :bp<cr>
 nmap <PageDown> :bn<cr>
 
 noremap <C-A> gg<S-V>G
 inoremap <C-A> <C-O>gg<C-O><S-V>G
+
+map <leader>sp :sp<cr>
+map <leader>vs :vs<cr>
 
 "using tab
 map <leader>tt :tabnew<cr>
@@ -272,9 +276,11 @@ cnoremap <C-B> <Left>      "back one character
 cnoremap <C-D> <Del>       "delete character under cursor
 cnoremap <C-E> <End>       "end of line
 cnoremap <C-F> <Right>     "forward one character
-cnoremap <C-N> <Down>      "recall newer command-line
-cnoremap <C-P> <Up>        "recall previous (older) command-line cnoremap <Esc><C-B>	<S-Left>    "back one word
-cnoremap <Esc><C-F>	<S-Right>   "forward one word
+cnoremap <C-N>		<Down>      "recall newer command-line
+cnoremap <C-P>		<Up>        "recall previous (older) command-line
+cnoremap <Esc><C-B>	<S-Left>  "back one word
+cnoremap <Esc><C-F>	<S-Right> "forward one word
+
 
 "" for terminal mode
 tnoremap <ESC><ESC> <C-\><C-N>
@@ -291,6 +297,17 @@ map <leader>fc :Commits<cr>
 map <leader>fh :History<cr>
 "map <leader>fs :Snippets<cr>
 
+
+
+
+
+"============================================================================
+" coding
+"============================================================================
+
+let g:tagbar_left = 1
+let NERDTreeWinPos = "right"
+
 "" for hexa
 ":%!xxd : show as hex
 ":%!xxd -r : show as text
@@ -302,24 +319,86 @@ map <leader>fh :History<cr>
 "============================================================================
 " ctags, cscope initialization
 "============================================================================
-"
+
 set tags+=./tags;
 set tags+=/home/hyukmyeong/.vim/tags/cpp_tags;
 "set isk+=:
+"
+let &path = getcwd() . '/**'
 
 set path+=/usr/include,/usr/include/c++/9;
 set path+=/usr/local/include;
 
-au BufWritePost *.c,*.cc,*.cpp,*.h,*.hh silent! execute "!ctags -R --c++-kinds=+p --fields=+iaS --extra=+q --exclude={.git,oe-workdir,oe-logs} >/dev/null 2>&1 &"
+"au BufWritePost *.c,*.cc,*.cpp,*.h,*.hh silent! execute "!ctags -R --c++-kinds=+p --fields=+ailmnS --extra=+q --exclude={.git,oe-workdir,oe-logs} >/dev/null 2>&1 &"
 
-au FileType {h,c,cpp} au BufWritePost <buffer> silent ! [ -e tags ] &&
-    \ ( awk -F'\t' '$2\!="%:gs/'/'\''/"{print}' tags ; ctags -f- '%:gs/'/'\''/' )
-    \ | sort -t$'\t' -k1,1 -o tags.new && mv tags.new tags
- 	
+"au FileType {h,c,cpp} au BufWritePost <buffer> silent ! [ -e tags ] &&
+    "\ ( awk -F'\t' '$2\!="%:gs/'/'\''/"{print}' tags ; ctags -f- '%:gs/'/'\''/' )
+    "\ | sort -t$'\t' -k1,1 -o tags.new && mv tags.new tags
+
+
+let g:gutentags_add_default_project_roots = 0
+let g:gutentags_project_root = ['package.json', '.git', '.projectile']
+let g:gutentags_cache_dir = expand('~/.cache/vim/ctags/')
+command! -nargs=0 GutentagsClearCache call system('rm ' . g:gutentags_cache_dir . '/*')
+
+let g:gutentags_generate_on_new = 1
+let g:gutentags_generate_on_missing = 1
+let g:gutentags_generate_on_write = 1
+let g:gutentags_generate_on_empty_buffer = 0
+
+let g:gutentags_ctags_exclude = [
+      \ '*.git', '*.svg', '*.hg',
+      \ '*/tests/*',
+      \ 'build',
+      \ 'dist',
+      \ '*sites/*/files/*',
+      \ 'bin',
+      \ 'node_modules',
+      \ 'bower_components',
+      \ 'cache',
+      \ 'compiled',
+      \ 'docs',
+      \ 'example',
+      \ 'bundle',
+      \ 'vendor',
+      \ '*.md',
+      \ '*-lock.json',
+      \ '*.lock',
+      \ '*bundle*.js',
+      \ '*build*.js',
+      \ '.*rc*',
+      \ '*.json',
+      \ '*.min.*',
+      \ '*.map',
+      \ '*.bak',
+      \ '*.zip',
+      \ '*.pyc',
+      \ '*.class',
+      \ '*.sln',
+      \ '*.Master',
+      \ '*.csproj',
+      \ '*.tmp',
+      \ '*.csproj.user',
+      \ '*.cache',
+      \ '*.pdb',
+      \ 'tags*',
+      \ 'cscope.*',
+      \ '*.css',
+      \ '*.less',
+      \ '*.scss',
+      \ '*.exe', '*.dll',
+      \ '*.mp3', '*.ogg', '*.flac',
+      \ '*.swp', '*.swo',
+      \ '*.bmp', '*.gif', '*.ico', '*.jpg', '*.png',
+      \ '*.rar', '*.zip', '*.tar', '*.tar.gz', '*.tar.xz', '*.tar.bz2',
+      \ '*.pdf', '*.doc', '*.docx', '*.ppt', '*.pptx',
+      \ ]
+
 "cscope reset
 "cscope show
 "cscope kill
 "cscope add
+
 
 if has("cscope")
        set csprg=/usr/bin/cscope
@@ -414,8 +493,9 @@ endif
 
 
 "============================================================================
-" Highliht matching
+" Functions
 "============================================================================
+
 let s:paren_hl_on = 0
 function s:Highlight_Matching_Paren()
 	if s:paren_hl_on
