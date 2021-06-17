@@ -1,5 +1,5 @@
 "============================================================================
-" Vundle packages 
+" Vundle packages
 "============================================================================
 
 filetype off
@@ -33,17 +33,21 @@ Plugin 'taglist.vim'
 
 Plugin 'scrooloose/nerdcommenter'
 
+Plugin 'mhinz/vim-startify'
+Plugin 'mhinz/vim-signify'
+Plugin 'tpope/vim-obsession'
+
 "Javascript
-Plugin 'mxw/vim-jsx'
-Plugin 'dense-analysis/ale'
-Plugin 'prettier/vim-prettier'
-Plugin 'neoclide/coc.nvim'
-Plugin 'neoclide/coc-tsserver'
-Plugin 'pangloss/vim-javascript'
-Plugin 'maxmellon/vim-jsx-pretty'
-Plugin 'leafgarland/typescript-vim'
-Plugin 'peitalin/vim-jsx-typescript'
-Plugin 'ludovicchabant/vim-gutentags'
+"Plugin 'mxw/vim-jsx'
+"Plugin 'dense-analysis/ale'
+"Plugin 'prettier/vim-prettier'
+"Plugin 'neoclide/coc.nvim'
+"Plugin 'neoclide/coc-tsserver'
+"Plugin 'pangloss/vim-javascript'
+"Plugin 'maxmellon/vim-jsx-pretty'
+"Plugin 'leafgarland/typescript-vim'
+"Plugin 'peitalin/vim-jsx-typescript'
+"Plugin 'ludovicchabant/vim-gutentags'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -170,11 +174,13 @@ syntax on
 
 
 
-
-
 "============================================================================
-" plugins setup 
+" coding
 "============================================================================
+
+let g:tagbar_left = 1
+let NERDTreeWinPos = "right"
+
 " Trigger configuration. You need to change this to something other than <tab>
 " if you use one of the following:
 " - https://github.com/Valloric/YouCompleteMe
@@ -200,8 +206,9 @@ let g:UltiSnipsJumpBackwardTrigger = "<s-tab>"
 " If you want :UltiSnipsEdit to split your window.
 let g:UltiSnipsEditSplit="vertical"
 
-let NERDTreeWinPos = "right"
-let g:tagbar_left = 1
+"" for hexa
+":%!xxd : show as hex
+":%!xxd -r : show as text
 
 
 
@@ -222,7 +229,6 @@ nmap <F5> :A<cr>
 nmap <F6> :marks<cr>
 nmap <F7> <Leader>bv
 nmap <F8> z.:TlistSync<cr>
-"nmap <F9> :mkview<cr>:qa!<cr>
 nmap <F9> :NERDTreeToggle<cr>:TagbarToggle<cr>
 nmap <F11> :mkview<cr>:qa<cr>
 nmap <F12> :%s/from/to/gc
@@ -281,7 +287,6 @@ cnoremap <C-P>		<Up>        "recall previous (older) command-line
 cnoremap <Esc><C-B>	<S-Left>  "back one word
 cnoremap <Esc><C-F>	<S-Right> "forward one word
 
-
 "" for terminal mode
 tnoremap <ESC><ESC> <C-\><C-N>
 tnoremap <C-H> <C-W>h
@@ -302,15 +307,31 @@ map <leader>fh :History<cr>
 
 
 "============================================================================
-" coding
+" project management
 "============================================================================
 
-let g:tagbar_left = 1
-let NERDTreeWinPos = "right"
+let g:startify_session_dir = '~/.vim/session'
+let g:startify_lists = [
+      \ { 'header': ['   MRU'],            'type': 'files' },
+      \ { 'header': ['   MRU '. getcwd()], 'type': 'dir' },
+      \ { 'header': ['   Sessions'],       'type': 'sessions' },
+      \ { 'header': ['   Bookmarks'],      'type': 'bookmarks' },
+      \ { 'header': ['   Commands'],       'type': 'commands' },
+      \ ]
 
-"" for hexa
-":%!xxd : show as hex
-":%!xxd -r : show as text
+"cabbrev SClose call helpers#startify#stopsession()
+"cabbrev SDelete call helpers#startify#deletesession()
+
+function Add_Session()
+  let project_name=system('basename `pwd`')
+  let cmd='Obsession ~/.vim/session/'.project_name
+  "echo project_name
+  "echo cmd
+  execute cmd
+endfunction
+
+"map <leader>ss :call Add_Session()<cr>
+map <leader>ss :call Add_Session()<cr>
 
 
 
@@ -493,7 +514,7 @@ endif
 
 
 "============================================================================
-" Functions
+" Show Matching Paren
 "============================================================================
 
 let s:paren_hl_on = 0
@@ -545,7 +566,7 @@ autocmd InsertEnter * match none
 
 
 "============================================================================
-" Deprecated 
+" Deprecated
 "============================================================================
 
 "" removes trailing spaces
