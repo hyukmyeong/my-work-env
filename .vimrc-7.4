@@ -1,7 +1,7 @@
 "============================================================================
 " Basic options
 "============================================================================
-"
+
 set number                  "nu : show line
 set smartcase
 set ruler                   "ru : inform cursor position in right below side
@@ -65,20 +65,13 @@ Plugin 'junegunn/fzf.vim'
 Plugin 'https://tpope.io/vim/fugitive.git'
 Plugin 'OmniCppComplete'
 Plugin 'ludovicchabant/vim-gutentags'
+Plugin 'mhinz/vim-startify'
+Plugin 'mhinz/vim-signify'
+Plugin 'tpope/vim-obsession'
 "Plugin 'rip-rip/clang_complete'
 
 call vundle#end()            " required
 filetype plugin indent on    " required
-
-
-
-
-
-"============================================================================
-" Mikki Command 
-"============================================================================
-":%!xxd : show as hex
-":%!xxd -r : show as text
 
 
 
@@ -94,6 +87,9 @@ filetype plugin indent on    " required
 colorscheme minimalist
 set t_Co=256
 syntax on
+
+"autocmd ColorScheme janah highlight Normal ctermbg=235
+"colorscheme janah
 
 "hi ModeMsg ctermfg=2 ctermbg=0
 "hi Todo ctermfg=4 ctermbg=0
@@ -241,8 +237,42 @@ let OmniCpp_MayCompleteScope = 1
 "let OmniCpp_DefaultNamespaces = ["std", "_GLIBCXX_STD", "_GLIBCXX_STD_A", "_GLIBCXX_STD_C"]
 
 set completeopt=menu,menuone,preview
-
 autocmd InsertLeave,CompleteDone * if pumvisible() == 0 | pclose | endif
+
+":%!xxd : show as hex
+":%!xxd -r : show as text
+
+
+
+
+
+"============================================================================
+" project management
+"============================================================================
+
+let g:startify_session_dir = '~/.vim/session'
+let g:startify_lists = [
+      \ { 'header': ['   MRU'],            'type': 'files' },
+      \ { 'header': ['   MRU '. getcwd()], 'type': 'dir' },
+      \ { 'header': ['   Sessions'],       'type': 'sessions' },
+      \ { 'header': ['   Bookmarks'],      'type': 'bookmarks' },
+      \ { 'header': ['   Commands'],       'type': 'commands' },
+      \ ]
+
+"cabbrev SClose call helpers#startify#stopsession()
+"cabbrev SDelete call helpers#startify#deletesession()
+
+function Add_Session()
+  let project_name=system('basename `pwd`')
+  let cmd='Obsession ~/.vim/session/'.project_name
+  "echo project_name
+  "echo cmd
+  execute cmd
+endfunction
+
+"map <leader>ss :call Add_Session()<cr>
+map <leader>ss :call Add_Session()<cr>
+
 
 
 
@@ -250,6 +280,7 @@ autocmd InsertLeave,CompleteDone * if pumvisible() == 0 | pclose | endif
 "============================================================================
 " ctags, cscope initialization
 "============================================================================
+
 set tags+=./tags;
 set tags+=/home/hyuk.myeong/.vim/cpp_tags;
 set tags+=/home/hyuk.myeong/.vim/ara_tags;
@@ -425,9 +456,14 @@ if has("cscope")
        nmap ;csg :call Csg()<cr>
 endif
 
+
+
+
+
 "============================================================================
-" Functions
+" Show Matching Paren
 "============================================================================
+
 let s:paren_hl_on = 0
 function s:Highlight_Matching_Paren()
 	if s:paren_hl_on
@@ -473,10 +509,13 @@ autocmd CursorMoved,CursorMovedI * call s:Highlight_Matching_Paren()
 autocmd InsertEnter * match none
 
 
+
+
+
 "============================================================================
 " Deprecated
 "============================================================================
-"
+
 "" removes trailing spaces
 "function! TrimWhiteSpace()
 "	    %s/\s\+$//e
