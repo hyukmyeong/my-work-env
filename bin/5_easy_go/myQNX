@@ -9,7 +9,7 @@ then
 fi
 
 echo "which one do you want?"
-echo "1.nm 2.strip 3.objdump 4.see all"
+echo "1.nm 2.strip 3.objdump 4.gdb 5.see all"
 read -p "you selected : " input
 
 echo -n "wait"
@@ -24,13 +24,16 @@ echo
 echo =================================== result ======================================
 
 if [ "$input" -eq 1 ]; then
-    /pkg/qnx700_post_cs4_v06_208/host/linux/x86_64/usr/bin/aarch64-unknown-nto-qnx7.0.0-nm "$1"
+    /pkg/sdp/host/linux/x86_64/usr/bin/aarch64-unknown-nto-qnx7.0.0-nm "$1"
 elif [ "$input" -eq 2 ]; then
-    /pkg/qnx700_post_cs4_v06_208/host/linux/x86_64/usr/bin/aarch64-unknown-nto-qnx7.0.0-strip "$1"
+    cp "$1" "$1".debug
+    /pkg/sdp/host/linux/x86_64/usr/bin/aarch64-unknown-nto-qnx7.0.0-strip "$1"
 elif [ "$input" -eq 3 ]; then
-    /pkg/qnx700_post_cs4_v06_208/host/linux/x86_64/usr/bin/aarch64-unknown-nto-qnx7.0.0-objdump "$1"
+    /pkg/sdp/host/linux/x86_64/usr/bin/aarch64-unknown-nto-qnx7.0.0-objdump "$1"
 elif [ "$input" -eq 4 ]; then
-    ls /pkg/qnx700_post_cs4_v06_208/host/linux/x86_64/usr/bin/aarch64-unknown-nto-qnx7.0.0-*
+    /pkg/sdp/host/linux/x86_64/usr/bin/ntoaarch64-gdb $1
+elif [ "$input" -eq 5 ]; then
+    ls /pkg/sdp/host/linux/x86_64/usr/bin/aarch64-unknown-nto-qnx7.0.0-*
 else
        echo do nothing
 fi
